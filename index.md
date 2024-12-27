@@ -1,5 +1,5 @@
-Here you can say lots of fun things about your site.
+ML & Neurotech/acc. 
 
-Maybe say a some things about yourself.
+Talking all things transhumanism. 
 
-Or maybe what you plan to blog about.
+P(A|B) = (P(B|A) * P(A)) / P(B)
