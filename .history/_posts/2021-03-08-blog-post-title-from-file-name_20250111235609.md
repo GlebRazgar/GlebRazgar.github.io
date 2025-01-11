@@ -1,5 +1,5 @@
 ---
-title: "Some Post 2"
+title: "Meditations on "
 date: 2021-10-02
 layout: post
 ---
