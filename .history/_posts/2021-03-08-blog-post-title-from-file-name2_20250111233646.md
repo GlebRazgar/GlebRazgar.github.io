@@ -1,8 +1,9 @@
 ---
-title: "Some Research Topic"
+title: "Achieving BCI super-resolution via Cross-Modal Inference"
 date: 2021-10-01
 layout: post
 ---
+
 
 Due to a plugin called `jekyll-titles-from-headings` which is supported by GitHub Pages by default. The above header (in the markdown file) will be automatically used as the pages title.
 
