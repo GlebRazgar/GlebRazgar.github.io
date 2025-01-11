@@ -9,11 +9,6 @@ twitter_username: "gleb_razgar"
 github_username: "ProjectGleb"
 linkedin_username: "linkedinuser"
 #facebook_username: username
-#flickr_username: username
-#instagram_username: username
-#pinterest_username: username
-#youtube_username: username
-#googleplus_username: +username
 
 #########################################################################################
 ######### Nothing below needs to be changed (unless you know what you're doing) #########
@@ -33,6 +28,10 @@ plugins:
 titles_from_headings:
   strip_title: true
   collections: true
+
+collections:
+  research:
+    output: true
 
 defaults:
   - scope:
