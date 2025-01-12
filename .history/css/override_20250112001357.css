@@ -48,3 +48,9 @@ body {
     background-color: #fce5cd;
 }
 
+.posts-list a,
+.research-list a {
+  font-size: 1.5em; /* Adjust the size as desired */
+  font-weight: bold; /* Optional: Make the titles bold */
+  text-decoration: none; /* Optional: Remove underline from links */
+}
