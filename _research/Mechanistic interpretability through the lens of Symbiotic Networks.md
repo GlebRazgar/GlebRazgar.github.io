@@ -3,8 +3,10 @@ title: "Mechanistic interpretability through the lens of Symbiotic Networks"
 date: 2024-10-15
 layout: post
 ---
-- Studying neural networks symbiotically illuminates their algorithmic circuitry, ansd lets us influence it through .
-<p align="center"><img src="../images/SymbioteNet.png" alt="Alt text" width="750" height="600" style="border-radius: 15px;"></p>
+---
+
+# Studying neural networks symbiotically illuminates their algorithmic circuitry, ansd lets us influence it through .
+<p align="center"><img src="../images/SymbioteNet.png" alt="Alt text" width="750" height="400" style="border-radius: 15px;"></p>
 
 High level purpose of the essay: Demonstrate the importance of analyzing networks through subsideary networks. 
 
