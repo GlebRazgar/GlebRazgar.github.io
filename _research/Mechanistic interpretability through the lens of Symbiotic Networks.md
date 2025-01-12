@@ -6,7 +6,7 @@ layout: post
 ---
 
 # Studying neural networks symbiotically illuminates their algorithmic circuitry, ansd lets us influence it through .
-<p align="center"><img src="../images/SymbioteNet.png" alt="Alt text" width="750" height="400" style="border-radius: 15px;"></p>
+<p align="center"><img src="../images/SymbioteNet.png" alt="Alt text" width="750" height="500" style="border-radius: 15px;"></p>
 
 High level purpose of the essay: Demonstrate the importance of analyzing networks through subsideary networks. 
 
