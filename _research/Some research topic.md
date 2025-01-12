@@ -1,5 +1,5 @@
 ---
-title: "Some Research Topic"
+title: "Mechanistic interpretability through the lens of Symbiotic Networks"
 date: 2021-10-01
 layout: post
 ---
