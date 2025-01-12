@@ -14,7 +14,7 @@ layout: post
 
 "Moloch!"
 
-<p align="center"><img src="../images/moloch.png" alt="Alt text" width="750" height="450" style="border-radius: 10px;"></p>
+<p align="center"><img src="../images/moloch.jpg" alt="Alt text" width="750" height="450" style="border-radius: 10px;"></p>
 
 In his famous poem called 'Moloh' Allen Ginsberg conceeds civilization as an individual entity. With Moloch and his "skyscraper-window eyes", "whose fingers are ten armies" and "in whom I am a consciousness without a body". Society indeed makes up an emerging organism. One that is also suseptible to pain, desire and cultural evolution. Societal mind virus becomes akin to the organisms mental disorder. Nuclear bombs bruise its skin. And economic policies set its evolutionary gradient.
 
