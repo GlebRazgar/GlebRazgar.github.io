@@ -24,9 +24,9 @@ How to align the systems.
 
 "Moloch!"
 
-In his analysis of Allen Ginsberg’s famous poem on Moloch, Scott Alexander beautifully points out how in it you can almost see the conception of civilization as an individual entity. With Moloch and his "skyscraper-window eyes", "Moloch whose fingers are ten armies" "Moloch in whom I am a consciousness without a body!"
+In his famous poerm called Molog, Allen Ginsberg conceeds civilization as an individual entity. With Moloch and his "skyscraper-window eyes", "Moloch whose fingers are ten armies" "Moloch in whom I am a consciousness without a body!"
 
-We make up an emerging organism. One that is also suseptible to senses, and evolution. Societal mind virus becomes the organisms mental disorder. Nuclear bombs bruise its skin. And economic policies make for its evolutionary gradient.
+We make up for an emerging organism. One that is also suseptible to senses, and evolution. Societal mind virus becomes the organisms mental disorder. Nuclear bombs bruise its skin. And economic policies make for its evolutionary gradient.
 
 The emergance, however, will not be limited to human societies. AGI will likely share such fait. Instead of being ascembled in a pandora's box, one might imagine the infrastructure that we design today to one day become conciouse, and in all likelyhood become conciouse faster than the AGI we can design in a lab.
 
