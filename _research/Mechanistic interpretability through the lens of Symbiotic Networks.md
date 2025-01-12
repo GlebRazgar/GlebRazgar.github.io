@@ -3,10 +3,43 @@ title: "Mechanistic interpretability through the lens of Symbiotic Networks"
 date: 2024-10-15
 layout: post
 ---
+
+<!-- width 750 is the perfect width for the blogs. height should be ~400 -->
+<p align="center"><img src="../images/SymbioteNet.png" alt="Alt text" width="500" height="300" style="border-radius: 10px;"></p>
+
+
+Some of the most important transitional points in the history of science have been moement when we quantized the world. Much like looking into sub-attomic interractions has brought us nuclear power, looking into neuronal interractions might bring us general intelligence 
+
+Mechanistic Interpretability takes this axiomatic approach to look beyond netowrks behaviour, and into their constituates at a microscopic level. 
+
+Interpreting networks can be studies through two lenses. Human scentric, and machine centric. In this post I propose new approach at uncovering network dynamics through machine centric interpretability. Similarly to how a neuro surgen interacts with a patient during craniotomy, I construct a Symbiotic network that can purtubate a primary model to eather inhibit or stimulate its activations to steer it.
+By doing so, SymbioteNet maps the circuits of the underlying network and in doing so illuminates a new way of stydying and steering artificial neural networks.
+
 ---
 
-# Studying neural networks symbiotically illuminates their algorithmic circuitry, ansd lets us influence it through .
-<p align="center"><img src="../images/SymbioteNet.png" alt="Alt text" width="750" height="500" style="border-radius: 15px;"></p>
+One of the earliest frameworks for Mechanistic universality was proposed by Chris Olah, who outlined three fundamental claims.
+
+Claim 1: Features
+Features are the fundamental unit of neural networks. They correspond to directions. These features can be rigorously studied and understood.
+
+Claim 2: Circuits
+Features are connected by weights, forming circuits.
+These circuits can also be rigorously studied and understood.
+
+Claim 3: Universality
+Analogous features and circuits form across models and tasks.
+
+
+
+
+
+ Modern AI models are made to function, rather than to be understood, yet in the quest to uncover their underlying principles we learn these functions.
+
+Studying neural networks symbiotically illuminates their algorithmic circuitry, and lets us influence it through .
+
+In this post I propose a symbiote network that controls other models behavior by dynamically inhibiting or stimulating its weights, enabling model steering.
+
+---
 
 High level purpose of the essay: Demonstrate the importance of analyzing networks through subsideary networks. 
 
