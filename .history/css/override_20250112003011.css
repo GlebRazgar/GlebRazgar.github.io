@@ -47,13 +47,13 @@ hr {
 /* Increase font size of post titles on the homepage */
 .posts-list a,
 .research-list a {
-  font-size: 1.4rem; /* Adjust the size as desired */
+  font-size: 1.5rem; /* Adjust the size as desired */
   text-decoration: none; /* Optional: Remove underline from links */
 }
 
-/*'Posts' and 'Research' headings maintain their size */
+/* Ensure 'Posts' and 'Research' headings maintain their size */
 .section-title {
-  font-size: 1.8rem; /* Adjust the size as desired */
+  font-size: 2rem; /* Adjust the size as desired */
   margin-top: 1em; /* Optional: adds space above headings */
 }
 
