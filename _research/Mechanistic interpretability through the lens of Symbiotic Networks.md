@@ -4,11 +4,12 @@ date: 2024-10-15
 layout: post
 ---
 
-Some of the most important transitional points in the history of science have been moement when we quantized the world. Much like looking into sub-attomic interractions has brought us nuclear power, looking into neuronal interractions might bring us general intelligence 
+Some of the most important transitional points in the history of science have been moement when we quantized the world. Much like looking into sub-attomic interractions has brought us nuclear power, looking into neuronal interractions holds promise at bringing us general intelligence.
 
-Mechanistic Interpretability takes this axiomatic approach to look beyond netowrks behaviour, and into their constituates at a microscopic level. 
+Mechanistic Interpretability is largely predicated on this assumption. Similarly to physics, it takes an axiomatic approach and tries to zoom into the network's constituents at their quanta.
+In todays interpretability research, networks can be studies through two lenses: Human scentric, and machine centric. In this post I propose new approach at uncovering network dynamics through machine centric interpretability.
 
-Interpreting networks can be studies through two lenses. Human scentric, and machine centric. In this post I propose new approach at uncovering network dynamics through machine centric interpretability. Similarly to how a neuro surgen interacts with a patient during craniotomy, I construct a Symbiotic network that can purtubate a primary model to eather inhibit or stimulate its activations to steer it.
+Similarly to how a neuro surgen interacts with a patient during craniotomy, I construct a Symbiotic network that can purtubate a primary model to eather inhibit or stimulate its activations to steer it.
 By doing so, SymbioteNet maps the circuits of the underlying network and in doing so illuminates a new way of stydying and steering artificial neural networks.
 
 
