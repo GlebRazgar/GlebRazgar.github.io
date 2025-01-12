@@ -48,7 +48,7 @@ hr {
 /* post & research title sizes */
 .posts-list a,
 .research-list a {
-  font-size: 1.4rem; /* Adjust the size as desired */
+  font-size: 1.2rem; /* Adjust the size as desired */
   text-decoration: none; /* Optional: Remove underline from links */
 }
 
