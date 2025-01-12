@@ -1,6 +1,6 @@
 ---
 title: "Breathing AGI into sand"
-date: 2021-10-02
+date: 2025-01-01
 layout: post
 ---
 
@@ -20,4 +20,4 @@ Society indeed makes up an emerging organism. One that is also suseptible to pai
 
 The collective emergance, however, will not be limited to human society. AGI will share a similar fait. One might imagine the infrastructure that we design today to hit general intelligence faster than a sigle model designed in the pandoras box. While a human is intellignet, collective society manifests as superintelligence. Similarly, a swarm of AI's surpasses a single agent, as intelligence is combinatorial. It then stands to reaosn that alignment is infrastructure dependant just as much as model dependant.
 
-We breathed reason into sand as if by linear combination of ideas, and now sand will breath reason into society by the same means.
+We breathed reason into sand as if by linear combination of ideas, and now sand will breath reason into society by the same means. 
