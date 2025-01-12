@@ -14,10 +14,8 @@ By doing so, SymbioteNet maps the circuits of the underlying network and illumin
 
 
 <!-- width 750 is the perfect width for the blogs. height should be ~400 -->
-<p align="center"><img src="../images/SymbioteNet.png" alt="Alt text" width="750" height="450" style="border-radius: 10px;"
-<em>Image of a Symbiotic network pertubating a primary network</em>
-</p>
-
+<p align="center"><img src="../images/SymbioteNet.png" alt="Alt text" width="750" height="450" style="border-radius: 10px;"</p>
+*<center>Image of a Symbiotic network pertubating a primary network</center>*
 
 ---
 
