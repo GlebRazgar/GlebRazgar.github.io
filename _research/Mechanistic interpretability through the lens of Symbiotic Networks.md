@@ -1,14 +1,40 @@
 ---
 title: "Mechanistic interpretability through the lens of Symbiotic Networks"
-date: 2021-10-01
+date: 2024-10-15
 layout: post
 ---
+### Studying neural networks symbiotically illuminates their algorithmic circuitry, ansd lets us influence it through .
 
-Due to a plugin called `jekyll-titles-from-headings` which is supported by GitHub Pages by default. The above header (in the markdown file) will be automatically used as the pages title.
+<img src="../images/Symbiotenet.png" alt="Alt text" width="500" height="300">
 
-If the file does not start with a header, then the post title will be derived from the filename.
 
-This is a sample blog post. You can talk about all sorts of fun things here..
+High level purpose of the essay: Demonstrate the importance of analyzing networks through subsideary networks. 
+
+
+
+Some of the most important transitional points in the history of science has been when science 
+From 
+
+
+
+have been moments when science “zoomed in.” 
+At these points, we develop a visualization or tool that allows us to see the world
+in a new level of detail, and a new field of science develops to study the world through this
+lens.
+
+For example, microscopes let us see cells, leading to cellular biology. Science zoomed in.
+Several techniques including x-ray crystallography let us see DNA, leading to the molecular
+revolution. Science zoomed in. Atomic theory. Subatomic particles. Neuroscience. Science
+zoomed in.
+
+These transitions weren’t just a change in precision: they were qualitative changes in what the
+objects of scientific inquiry are. For example, cellular biology isn’t just more careful zoology.
+It’s a new kind of inquiry that dramatically shifts what we can understand.
+The famous examples of this phenomenon happened at a very large scale, but it can also be
+the more modest shift of a small research community realizing they can now study their topic
+in a finer grained level of detail.
+
+Similarly to how Schwann 
 
 ---
 
