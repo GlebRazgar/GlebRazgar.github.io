@@ -15,7 +15,7 @@ By doing so, SymbioteNet maps the circuits of the underlying network and illumin
 
 <!-- width 750 is the perfect width for the blogs. height should be ~400 -->
 <p align="center"><img src="../images/SymbioteNet.png" alt="Alt text" width="750" height="450" style="border-radius: 10px;"></p>
-
+|[Image of a Symbiotic network pertubating a primary network]|
 ---
 
 One of the earliest frameworks for Mechanistic universality was proposed by Chris Olah, who outlined three fundamental claims.
