@@ -4,16 +4,16 @@ date: 2024-10-15
 layout: post
 ---
 
-<!-- width 750 is the perfect width for the blogs. height should be ~400 -->
-<p align="center"><img src="../images/SymbioteNet.png" alt="Alt text" width="500" height="300" style="border-radius: 10px;"></p>
-
-
 Some of the most important transitional points in the history of science have been moement when we quantized the world. Much like looking into sub-attomic interractions has brought us nuclear power, looking into neuronal interractions might bring us general intelligence 
 
 Mechanistic Interpretability takes this axiomatic approach to look beyond netowrks behaviour, and into their constituates at a microscopic level. 
 
 Interpreting networks can be studies through two lenses. Human scentric, and machine centric. In this post I propose new approach at uncovering network dynamics through machine centric interpretability. Similarly to how a neuro surgen interacts with a patient during craniotomy, I construct a Symbiotic network that can purtubate a primary model to eather inhibit or stimulate its activations to steer it.
 By doing so, SymbioteNet maps the circuits of the underlying network and in doing so illuminates a new way of stydying and steering artificial neural networks.
+
+
+<!-- width 750 is the perfect width for the blogs. height should be ~400 -->
+<p align="center"><img src="../images/SymbioteNet.png" alt="Alt text" width="750" height="450" style="border-radius: 10px;"></p>
 
 ---
 
