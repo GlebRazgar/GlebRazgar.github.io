@@ -2,21 +2,28 @@
 layout: default
 ---
 
-ML & Neurotech/acc. 
+ML & Neurotech/acc.
 
-Talking all things transhumanism. 
+Talking all things transhumanism.
 
 P(A:B)=(P(B:A)*P(A))/P(B)
 
+## Research
 
-# Research
-
+<ul class="research-list">
 {% for research in site.research %}
-- [{{ research.title }}]({{ research.url }}) - {{ research.date | date: "%B %d, %Y" }}
+  <li>
+    <a href="{{ research.url }}">{{ research.title }}</a> - {{ research.date | date: "%B %d, %Y" }}
+  </li>
 {% endfor %}
+</ul>
 
-# Posts
+## Posts
 
+<ul class="posts-list">
 {% for post in site.posts %}
-- [{{ post.title }}]({{ post.url }}) - {{ post.date | date: "%B %d, %Y" }}
+  <li>
+    <a href="{{ post.url }}">{{ post.title }}</a> - {{ post.date | date: "%B %d, %Y" }}
+  </li>
 {% endfor %}
+</ul>
