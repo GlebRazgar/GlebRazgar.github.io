@@ -44,7 +44,6 @@ hr {
   opacity: 0.3;
 }
 
-/* ------------------- My changes -------------- */
 /* post & research title sizes */
 .posts-list a,
 .research-list a {
@@ -53,13 +52,6 @@ hr {
 }
 
 /*'Posts' and 'Research' size */
-h1, h2, h3, h4, h5, h6,
-h1, h2, h3, h4, h5, h6,
-.section-title,
-.site-title {
-  font-family: "Times New Roman", Times, serif;
-}
-
 .section-title {
   font-size: 1.8rem; /* Adjust the size as desired */
   margin-top: 1em; /* Optional: adds space above headings */

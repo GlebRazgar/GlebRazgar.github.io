@@ -44,22 +44,14 @@ hr {
   opacity: 0.3;
 }
 
-/* ------------------- My changes -------------- */
-/* post & research title sizes */
+/* Increase font size of post titles on the homepage */
 .posts-list a,
 .research-list a {
   font-size: 1.4rem; /* Adjust the size as desired */
   text-decoration: none; /* Optional: Remove underline from links */
 }
 
-/*'Posts' and 'Research' size */
-h1, h2, h3, h4, h5, h6,
-h1, h2, h3, h4, h5, h6,
-.section-title,
-.site-title {
-  font-family: "Times New Roman", Times, serif;
-}
-
+/*'Posts' and 'Research size */
 .section-title {
   font-size: 1.8rem; /* Adjust the size as desired */
   margin-top: 1em; /* Optional: adds space above headings */
