@@ -4,13 +4,13 @@ date: 2024-10-15
 layout: post
 ---
 
-Some of the most important transitional points in the history of science have been moement when we quantized the world. Much like looking into sub-attomic interractions has brought us nuclear power, looking into neuronal interractions holds promise at bringing us general intelligence.
+Some of the most important transitional points in the history of science have been moement when we quantized the world. Much like looking into sub-attomic interractions has brought us nuclear power, looking into neuronal interractions holds promise in bringing us more capable intelligence.
 
 Mechanistic Interpretability is largely predicated on this assumption. Similarly to physics, it takes an axiomatic approach and tries to zoom into the network's constituents at their quanta.
 In todays interpretability research, networks can be studies through two lenses: Human scentric, and machine centric. In this post I propose new approach at uncovering network dynamics through machine centric interpretability.
 
-Similarly to how a neuro surgen interacts with a patient during craniotomy, I construct a Symbiotic network that can purtubate a primary model to eather inhibit or stimulate its activations to steer it.
-By doing so, SymbioteNet maps the circuits of the underlying network and in doing so illuminates a new way of stydying and steering artificial neural networks.
+Similarly to how a neuro surgen test purtubating the brain tissue of a patient during craniotomy, I construct a Symbiotic network that can eather inhibit or stimulate the circuitry of the primary model.
+By doing so, SymbioteNet maps the circuits of the underlying network and illuminates a new way of stydying and steering artificial neural networks.
 
 
 <!-- width 750 is the perfect width for the blogs. height should be ~400 -->
@@ -30,7 +30,15 @@ These circuits can also be rigorously studied and understood.
 Claim 3: Universality
 Analogous features and circuits form across models and tasks.
 
+These claims have recently been shown to be largely true[^1], yet still, very little applicable work has sipped out of this framework.
 
+
+[^1]: This concept was first introduced by Chris Olah in his 2020 paper "Zoom In: An Introduction to Circuits"
+
+
+
+Features (Claim 1):
+Tools like feature visualization, activation atlases, and channel attribution have shown consistent patterns
 
 
 
