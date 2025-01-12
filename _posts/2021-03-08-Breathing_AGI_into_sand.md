@@ -4,13 +4,17 @@ date: 2025-01-01
 layout: post
 ---
 
-"What sphinx of cement and aluminum bashed open their skulls and ate up their brains and imagination?"
+"What sphinx of cement and aluminum bashed open their skulls and ate up their brains and imagination?"\
+"Moloch whose mind is pure machinery!"
 
-"Moloch whose mind is pure machinery!"\n
 "Moloch whose blood is running money!" 
+
 "Moloch whose soul is electricity and banks!"
+
 "Moloch whose poverty is the specter of genius!"
+
 "Moloch whose fate is a cloud of sexless hydrogen!"
+
 "Moloch whose name is the Mind!"
 
 "Moloch!"

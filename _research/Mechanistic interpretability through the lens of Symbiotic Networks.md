@@ -14,7 +14,7 @@ Just as a neurosurgeon maps brain function by stimulating neural tissue during a
 
 <!-- width 750 is the perfect width for the blogs. height should be ~400 -->
 <p align="center"><img src="../images/SymbioteNet.png" alt="Alt text" width="750" height="450" style="border-radius: 10px;"></p>
-*<center>Image of a Symbiotic network pertubating a primary network</center>*
+*<center>[SymbioteNet inhibiting a CNN]</center>*
 
 
 ---
@@ -39,12 +39,25 @@ As such, this is my tribute to interpretability and uncovering the unknown.
 High level purpose of the essay: Demonstrate the importance of analyzing networks through subsideary networks. 
 
 ---
----
 # TABLE OF CONTENTS:
+Before diving into my contributions its important to consider the key mech interp techniques used to date. 
 
-### OVERVIEW
 
-### MODEL ARCHITECTURE
+
+
+### Neurons, Circuits, Features
+- SOTA ways of doing neuron analysis
+  - Activation Atlases: Visualizing individual neuron activations across many inputs
+  - Feature Visualization: Using optimization to find inputs that maximally activate specific neurons
+  - Network Dissection: Mapping neurons to human-interpretable concepts
+  - Direct Linear Probes: Testing if specific information is directly encoded in neuron activations
+
+
+
+
+- SOTA ways of analyzing circuits
+- SOTA way of analyzing features 
+- SOTA way of analyzing Universality
 
 
 ### 
@@ -64,7 +77,7 @@ ForEach ($thing in $things) {
 
 
 
-
+---
 ---
 References:
 [^1]: Olah, C., et al. (2020). ["Zoom In: An Introduction to Circuits."](https://distill.pub/2020/circuits/zoom-in/)
