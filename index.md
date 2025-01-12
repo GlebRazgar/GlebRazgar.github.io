@@ -2,11 +2,7 @@
 layout: default
 ---
 
-ML & Neurotech/acc.
-
-Talking all things transhumanism.
-
-P(A:B)=(P(B:A)*P(A))/P(B)
+ML & Neurotech/acc | Talking all things transhumanism | P(A:B)=(P(B:A)*P(A))/P(B)
 
 <h2 class="section-title">Research</h2>
 
