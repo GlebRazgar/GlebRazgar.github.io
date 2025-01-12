@@ -44,13 +44,20 @@ hr {
   opacity: 0.3;
 }
 
+/* Increase font size of post titles on the homepage */
 .posts-list a,
 .research-list a {
-  font-size: 1.6em; /* Adjust the size as desired */
-  /* font-weight: bold; Optional: Make the titles bold */
+  font-size: 1.6rem; /* Adjust the size as desired */
+  font-weight: bold; /* Optional: Make the titles bold */
   text-decoration: none; /* Optional: Remove underline from links */
 }
 
+/* Ensure 'Posts' and 'Research' headings maintain their size */
+.section-title {
+  font-size: 2rem; /* Adjust the size as desired */
+  margin-top: 1em; /* Optional: adds space above headings */
+}
+
 body {
-    background-color: #fce5cd;
+  background-color: #fce5cd;
 }

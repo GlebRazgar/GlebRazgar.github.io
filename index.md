@@ -8,7 +8,7 @@ Talking all things transhumanism.
 
 P(A:B)=(P(B:A)*P(A))/P(B)
 
-## Research
+<h2 class="section-title">Research</h2>
 
 <ul class="research-list">
 {% for research in site.research %}
@@ -18,7 +18,7 @@ P(A:B)=(P(B:A)*P(A))/P(B)
 {% endfor %}
 </ul>
 
-## Posts
+<h2 class="section-title">Posts</h2>
 
 <ul class="posts-list">
 {% for post in site.posts %}
