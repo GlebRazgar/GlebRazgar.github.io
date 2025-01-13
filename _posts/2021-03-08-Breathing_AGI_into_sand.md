@@ -29,4 +29,4 @@ I have previously conducted research on dynamic multi-agent swarms, whereby agen
 
 Perhaps a unifying sandbox for distributed agents is the answer, one thats unpredicated on existing apps and ready to coalesce into higher orders of intelligence. Or perhaps the unshackling lies in streamlining the agent access in existing ecosystems. Either way, the new intelligence will emerge from an aggregate of networks that embody Moloch.
 
-"Wake up in Moloch! Light streaming out of the sky!"
+"Wake up in Moloch, made from the sands!"
