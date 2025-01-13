@@ -1,5 +1,5 @@
 ---
-title: "Breathing Reason Into Sand"
+title: "Breathing ASI Into Sand"
 date: 2025-01-01
 layout: post
 ---
