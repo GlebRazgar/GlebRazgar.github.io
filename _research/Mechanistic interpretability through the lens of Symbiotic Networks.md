@@ -1,5 +1,5 @@
 ---
-title: "Mechanistic interpretability through the lens of Symbiotic Networks"
+title: "Mechanistic interpretability through the lens of Symbiosis"
 date: 2024-10-15
 layout: post
 ---
