@@ -22,9 +22,7 @@ Value1: Nobel cause
 In words of Bukowski, I feel the urge to die to my passions. I am the urge. It spans workaholism so obsessive that "life" is something I live viccariousely. My conciouseness says "Sacrifice is good". But why? The logical thinking here is straightforward. If I can work my life away, but save X lifes in turn, thats a worthy trade. My "Nobel" cause however, rings of social programming. Not convicing. Lets dig deeper!
 
 "Will to power" is rooted in me, no doubt. So, lets quantify it!
-What is X here? How many people do I think my life is worth? Societal programming urges 2. But no. its 1...
-1 Million. Dispicable. I, who just spoke of Nobel cause, wont trade my life for 1 Million soles?
-Indeed. For I can save more. 
+What is X here? How many people do I think my life is worth? Societal programming urges 2. But no. First answer I thought of was 1 Million, but instantly conciouseness said no. I can save more. 
 
 
 Value2: 
