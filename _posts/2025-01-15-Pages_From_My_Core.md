@@ -5,38 +5,39 @@ layout: post
 ---
 
 Nothing is of greater telling than to learn a persons truth.
-To unmask someones values, is to reduce him to his building blocks. To see like X-Ray through cause and effect. To know what is directing him, and extrapolate where he is directed. 
+To Understand someones values, is to reduce him to his building blocks. To see like X-Ray through cause and effect. To know what is directing him, and extrapolate where he is directed. 
 
 In human interactions, "Truth" awaits to be dispensed, for it is too intimate to give away at once, and omission of it may hold value. Learning else's truth is hence a lengthy process, but should it be? I argue that our caution is an artifact of instinct that in modernity harms more than helps. For human tribe is now boundless enough that the masquerade is folly; efficiency is in truth swiftly spoken, and rejection swiftly earned.
 
-In that vein, this post describes my 23yo "Truth", raw and unfiltered in hopes that my worldview will eather resonate, or repell. 
+In that vein, this post is intended to be a people filter. One that describes my "Truth", raw and unfiltered in hopes that my worldview will eather resonate, or repell. 
 
-<p align="center"><img src="/images/self.jpg" alt="Alt text" width="300" height="300" style="border-radius: 10px; transform: scaleX(-1);"></p>
+<p align="center"><img src="/images/self.jpg" alt="Alt text" width="300" height="300" style="border-radius: 10px; transform: scaleX(-1);"></p>  
 
-What sketch of mind, once conveyed, proxys the universe of one's future actions?
+What sketch of mind, once conveyed, proxys the universe of one's future actions?  
 
-Values might feel like a fitting place to start. Unfortunately, paraphrasing Nietzsche: values are commonly rationalized hiden biases, inherited from societal dogmas and smuggle into your cerebral constructs. When people claim an idea to be self evident, its often that these notions are deeply woven into the fabric of their perspective, obscuring the view of those convictions as anything but un-questionable truths. Thus, lets embark on a careful disection of both cause - background, and effect - values, using me as an exemplar frog in an attempt to avoid the same fate.
+Values might feel like a fitting place to start. Unfortunately, values are commonly rationalized hiden biases, inherited from societal dogmas and smuggle into your cerebral constructs. When people claim an idea to be self evident, its often that these notions are deeply woven into the fabric of their perspective, obscuring the view of those convictions as anything but UN-QUESTIONABLE truths. To avoid similar fait, let us, then, dissect my beliefs and expose both convictions and their hidden biases.  
 
 
 BACKGROUND:
-Values are the the effect, the cause of which is background. An intimate place to start. 
+Values are the the effect, the cause of which is background. An intimate place to start, yet one which might best convey the kinnetic behind my phsychology.
 
+I was spawned in Russia, Saint-Petersburg, on what I'd call to be the easy mode: in circumstances of a family that climed from lower class to the higher one throught my upbringing. At 12yo I moved to UK, without family, where I lived in international boarding-schools till the end of my teens. Away from family, once value function is morphed by the biases of flatmates rather than parents. In this diversity pool, people with scientific interests influenced me asymmetrically. The most pivotal moment in my value system was easily brought on by my fathers death, a year after my migration. I'll avoid going into depths of the bloodshedding chain of events it caused; from financial to phsychological, but its worth saying that the event pivoted my mental gradient disproportionately. There on it took a few years for my family to stabilize, upon which I found my escapism in academia, but the mental image of having to OVER-PROVIDE is still deeply rooted in my phsyche.  
 
+VALUES:
+Feewh. Sob storry over. Back to the fun stuff. 
+Values require a closer attention for people dont always adhear to the values they hold. Fortunately my values are rather simple:
+
+Golden Ideal: 
+• Contribute to a Noble Cause
+• Vibes 5%
 
 VALUE1: Noble Cause  
-In words of Bukowski, I feel the urge to die to my passions. I am the urge. It spans workaholism so obsessive that "life" is something I live viccariousely. My conciouseness says "Sacrifice is good". But why? The logical thinking here is straightforward. If I can work my life away, but save X lifes in turn, thats a worthy trade. My "Nobel" cause however, rings of social programming. Not convicing. Lets dig deeper!
+I feel the urge to die to my passions. I am the urge. Though I live life on the extreme end of work life distribution, which would make Bukowski proud of my workaholism, it rings of social programming. Lets investigate! 
 
-Why on earth would one value others lifes more than his own? At the end of the day, there is no certainty they will spend life as wisely. What if they smoke 'devils grass' and watch cartoons all day, smithering the preciousness of life? This might very whell be foolish, for value is subjective. In my books, That would be 
+Your and my values are largely shaped by the societals approval. But what does the society reinforce througout all stages of life?
+GOOD > EVIL!
+The emergent organism we call society deems anything GOOD that benefits it, and EVIL that which hurts it. There are many caveats to the rule, like societal relativism; where societies conflict between what is deemed beneficial or harmful, or the dicotemy of individual good vs collective good, yet all in all there is a clear ven-diagramatic intersection between harmful and helpful actions which members of this society are conditioned on.  
+From that perspective I'm clearly conditioned to add value to society, and I find pleasure in it, which pushes me to add more value to society, which the society then reinforces with praise. Fuck! Contribution is reinforced all the way down. I must be in the matrix.
 
-
- I led myself into a corner here, fighting my own objections clearly displays a bias. I'm tempted to continue constructing logical arguments for why saving is good. And this doesnt seem to be leading far. 
-
-Instead lets make it into a playfull discource unnatached to me. 
-
-
-First answer I thought of was 1 Million, but instantly conciouseness said no. I can save more. 
-
-
-Value2: 
-
+... Aboundunds the blogpost to become a nomad
 
