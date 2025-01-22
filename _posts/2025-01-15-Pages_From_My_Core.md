@@ -37,4 +37,4 @@ Your and my values are largely shaped by the societals approval. But what does t
 GOOD > EVIL!
 The emergent organism we call society deems anything GOOD that benefits it, and EVIL that which hurts it. There are many caveats to the rule, like societal relativism; where societies conflict between what is deemed beneficial or harmful, or the dicotemy of individual good vs collective good, yet all in all there is a clear ven-diagramatic intersection between harmful and helpful actions which members of this society are conditioned on.  
 From that perspective society clearly rewards for contributing to it. But I like persuing the nobel cause for it's intellectual stimulation, which my peers then reinforces with praise, which causes me to do more of it, which is met with more praise... Fuck! Contribution is reinforced all the way down. It must be a matrix loop. 
-[...Aboundunds the blogpost to become a munk.]
+[...Aboundunds the blogpost to become a munk]
