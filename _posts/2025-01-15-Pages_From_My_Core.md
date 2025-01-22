@@ -27,8 +27,8 @@ Feewh. Sob storry over. Back to the fun stuff.
 Values require a closer attention for people dont always adhear to the values they hold. Fortunately my values are rather simple:  
 
 Golden Ideal: 
-• Contribute to a NOBEL CAUSE
-• Have FUN whilst doing so  
+• Contribute to a NOBEL CAUSE  
+• Have FUN whilst doing so.  
 
 VALUE1: Noble Cause  
 I feel the urge to die to my passions. I am the urge. Though I live life on the extreme end of work life distribution, which would make Bukowski proud of my workaholism, it rings of social programming. Lets investigate!  
