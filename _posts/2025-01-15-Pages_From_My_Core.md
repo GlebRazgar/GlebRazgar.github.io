@@ -22,8 +22,8 @@ Values are the the effect, the cause of which is background. An intimate place t
 
 I was spawned in Russia, Saint-Petersburg, in what I'd call to be the easy mode: a family that climed from lower class to the higher one throught my upbringing. At 12yo I moved to UK, without family, where I lived in boarding-schools till the end of my teens. Away from family, once value function is morphed by the biases of flatmates rather than parents. In this diversity pool, people with scientific interests influenced me asymmetrically. The most pivotal moment however in my value system was easily brought on by my fathers death, a year after me moving. I'll avoid going into depths of the bloodshedding chain of events it caused; from financial to phsychological, but its worth saying that the event pivoted my mental gradient disproportionately. There on it took a few years for my family to stabilize, upon which I found my escapism in academia, but the mental image of having to OVER-PROVIDE is still deeply rooted in my phsyche.  
 
-VALUES:
-Feewh. Sob storry over. Back to the fun stuff. 
+VALUES:  
+Feewh. Sob storry over. Back to the fun stuff.  
 Values require a closer attention for people dont always adhear to the values they hold. Fortunately my values are rather simple:  
 
 Golden Ideal: 
@@ -33,8 +33,8 @@ Golden Ideal:
 VALUE1: Noble Cause  
 I feel the urge to die to my passions. I am the urge. Though I live life on the extreme end of work life distribution, which would make Bukowski proud of my workaholism, it rings of social programming. Lets investigate!  
 
-Your and my values are largely shaped by the societals approval. But what does the society reinforce througout all stages of life?
-GOOD > EVIL!
+Your and my values are largely shaped by the societals approval. But what does the society reinforce througout all stages of life?  
+GOOD > EVIL!  
 The emergent organism we call society deems anything GOOD that benefits it, and EVIL that which hurts it. There are many caveats to the rule, like societal relativism; where societies conflict between what is deemed beneficial or harmful, or the dicotemy of individual good vs collective good, yet all in all there is a clear ven-diagramatic intersection between harmful and helpful actions which members of this society are conditioned on.  
-From that perspective society clearly rewards for contributing to it. But I like persuing the nobel cause for it's intellectual stimulation, which my peers then reinforces with praise, which causes me to do more of it, which is met with more praise... Fuck! Contribution is reinforced all the way down. It must be a matrix loop. 
-[...Aboundunds the blogpost to become a munk]
+From that perspective society clearly rewards for contributing to it. But I like persuing the nobel cause for it's intellectual stimulation, which my peers then reinforces with praise, which causes me to do more of it, which is met with more praise... Fuck! Contribution is reinforced all the way down. It must be a matrix loop.  
+{...Aboundunds the blogpost to become a munk}
