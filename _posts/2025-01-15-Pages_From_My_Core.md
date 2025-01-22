@@ -17,27 +17,24 @@ What sketch of mind, once conveyed, proxys the universe of one's future actions?
 
 Values might feel like a fitting place to start. Unfortunately, values are commonly rationalized hiden biases, inherited from societal dogmas and smuggle into your cerebral constructs. When people claim an idea to be self evident, its often that these notions are deeply woven into the fabric of their perspective, obscuring the view of those convictions as anything but UN-QUESTIONABLE truths. To avoid similar fait, let us, then, dissect my beliefs and expose both convictions and their hidden biases.  
 
-
-BACKGROUND:
+BACKGROUND:  
 Values are the the effect, the cause of which is background. An intimate place to start, yet one which might best convey the kinnetic behind my phsychology.
 
-I was spawned in Russia, Saint-Petersburg, on what I'd call to be the easy mode: in circumstances of a family that climed from lower class to the higher one throught my upbringing. At 12yo I moved to UK, without family, where I lived in international boarding-schools till the end of my teens. Away from family, once value function is morphed by the biases of flatmates rather than parents. In this diversity pool, people with scientific interests influenced me asymmetrically. The most pivotal moment in my value system was easily brought on by my fathers death, a year after my migration. I'll avoid going into depths of the bloodshedding chain of events it caused; from financial to phsychological, but its worth saying that the event pivoted my mental gradient disproportionately. There on it took a few years for my family to stabilize, upon which I found my escapism in academia, but the mental image of having to OVER-PROVIDE is still deeply rooted in my phsyche.  
+I was spawned in Russia, Saint-Petersburg, in what I'd call to be the easy mode: a family that climed from lower class to the higher one throught my upbringing. At 12yo I moved to UK, without family, where I lived in boarding-schools till the end of my teens. Away from family, once value function is morphed by the biases of flatmates rather than parents. In this diversity pool, people with scientific interests influenced me asymmetrically. The most pivotal moment however in my value system was easily brought on by my fathers death, a year after me moving. I'll avoid going into depths of the bloodshedding chain of events it caused; from financial to phsychological, but its worth saying that the event pivoted my mental gradient disproportionately. There on it took a few years for my family to stabilize, upon which I found my escapism in academia, but the mental image of having to OVER-PROVIDE is still deeply rooted in my phsyche.  
 
 VALUES:
 Feewh. Sob storry over. Back to the fun stuff. 
-Values require a closer attention for people dont always adhear to the values they hold. Fortunately my values are rather simple:
+Values require a closer attention for people dont always adhear to the values they hold. Fortunately my values are rather simple:  
 
 Golden Ideal: 
-• Contribute to a Noble Cause
-• Vibes 5%
+• Contribute to a NOBEL CAUSE
+• Have FUN whilst doing so  
 
 VALUE1: Noble Cause  
-I feel the urge to die to my passions. I am the urge. Though I live life on the extreme end of work life distribution, which would make Bukowski proud of my workaholism, it rings of social programming. Lets investigate! 
+I feel the urge to die to my passions. I am the urge. Though I live life on the extreme end of work life distribution, which would make Bukowski proud of my workaholism, it rings of social programming. Lets investigate!  
 
 Your and my values are largely shaped by the societals approval. But what does the society reinforce througout all stages of life?
 GOOD > EVIL!
 The emergent organism we call society deems anything GOOD that benefits it, and EVIL that which hurts it. There are many caveats to the rule, like societal relativism; where societies conflict between what is deemed beneficial or harmful, or the dicotemy of individual good vs collective good, yet all in all there is a clear ven-diagramatic intersection between harmful and helpful actions which members of this society are conditioned on.  
-From that perspective I'm clearly conditioned to add value to society, and I find pleasure in it, which pushes me to add more value to society, which the society then reinforces with praise. Fuck! Contribution is reinforced all the way down. I must be in the matrix.
-
-... Aboundunds the blogpost to become a nomad
-
+From that perspective society clearly rewards for contributing to it. But I like persuing the nobel cause for it's intellectual stimulation, which my peers then reinforces with praise, which causes me to do more of it, which is met with more praise... Fuck! Contribution is reinforced all the way down. It must be a matrix loop. 
+[...Aboundunds the blogpost to become a munk.]
