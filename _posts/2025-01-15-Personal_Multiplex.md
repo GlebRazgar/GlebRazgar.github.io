@@ -22,7 +22,7 @@ Values are the the effect, the cause of which is background. An intimate place t
 
 I was spawned in Russia, Saint-Petersburg, in what I'd call to be the easy mode: a family that climed from lower class to the higher one throught my upbringing. At 12yo I moved to UK, without family, where I lived in boarding-schools till the end of my teens. Away from family, once value function is morphed by the biases of flatmates rather than parents. In this diversity pool, people with scientific interests influenced me asymmetrically. The most pivotal moment however in my value system was easily brought on by my fathers death, a year after my move to UK. I'll avoid going into the depths personal issues it caused; from financial to phsychological, but its worth saying that the event pivoted my mental gradient disproportionately. For one my family suddenly had to rellie on me. An un-usual circumstance for a 13 years old. And for two, I had to rely on my family in a much deeper sense. If one was to analyze my consciousness vector, would make it clear that most of my patterns stem directly from those two causes. The mentality of OVER-PROVIDING which is still deeply barried in my mind creates a "DO-MORE" vector which is irrationally magnified, whilst the gratitude for my fortunate upbringing thanks to my support system derives a "RETURN THE GOOD" vector. Mean-pooling of those two compounds to: "DO MORE and RETURN THE GOOD" vector, which is to say: "CONTRIBUTE TO A NOBEL CAUSE".
 
-Fewh... That felt personal. Back to the fun stuff. 
+Whew...That was intimate, huh? Back to lighter ground.
 
 VALUES:  
 Values require a closer attention for people dont always adhear to the values they hold. Fortunately my values are rather simple:  
