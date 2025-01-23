@@ -20,10 +20,12 @@ Values might feel like a fitting place to start. Unfortunately, values are commo
 BACKGROUND:  
 Values are the the effect, the cause of which is background. An intimate place to start, yet one which might best convey the kinnetic behind my phsychology.
 
-I was spawned in Russia, Saint-Petersburg, in what I'd call to be the easy mode: a family that climed from lower class to the higher one throught my upbringing. At 12yo I moved to UK, without family, where I lived in boarding-schools till the end of my teens. Away from family, once value function is morphed by the biases of flatmates rather than parents. In this diversity pool, people with scientific interests influenced me asymmetrically. The most pivotal moment however in my value system was easily brought on by my fathers death, a year after me moving. I'll avoid going into depths of the bloodshedding chain of events it caused; from financial to phsychological, but its worth saying that the event pivoted my mental gradient disproportionately. There on it took a few years for my family to stabilize, upon which I found my escapism in academia, but the mental image of having to OVER-PROVIDE is still deeply rooted in my phsyche.  
+I was spawned in Russia, Saint-Petersburg, in what I'd call to be the easy mode: a family that climed from lower class to the higher one throught my upbringing. At 12yo I moved to UK, without family, where I lived in boarding-schools till the end of my teens. Away from family, once value function is morphed by the biases of flatmates rather than parents. In this diversity pool, people with scientific interests influenced me asymmetrically. The most pivotal moment however in my value system was easily brought on by my fathers death, a year after my move to UK. I'll avoid going into depths of the chain of tragic issues it caused; from financial to phsychological, but its worth saying that the event pivoted my mental gradient disproportionately. For one my family suddenly had to rellie on me. An un-usual circumstance for a 13 years old. And for two, I had to rely on my family in a much deeper sense. If one was to analyze my phsycho vector, its extremely obviouse that most of my patterns are derivatives of those two causes. The mentality of OVER-PROVIDING which is still deeply barried in my mind creates a "DO-MORE" vector which is irrationally magnified, whilst the gratitude for my fortunate upbringing and support system derives a "RETURN THE GOOD" vector. Mean-pooling of those two compounds to: "CONTRIBUTE TO A NOBEL CAUSE" vector.  
+
+Fewh... That felt personal. Back to the fun stuff. 
+  
 
 VALUES:  
-Feewh. Sob storry over. Back to the fun stuff.  
 Values require a closer attention for people dont always adhear to the values they hold. Fortunately my values are rather simple:  
 
 Golden Ideal: 
@@ -38,3 +40,5 @@ GOOD > EVIL!
 The emergent organism we call society deems anything GOOD that benefits it, and EVIL that which hurts it. There are many caveats to the rule, like societal relativism; where societies conflict between what is deemed beneficial or harmful, or the dicotemy of individual good vs collective good, yet all in all there is a clear ven-diagramatic intersection between harmful and helpful actions which members of this society are conditioned on.  
 From that perspective society clearly rewards for contributing to it. But I like persuing the nobel cause for it's intellectual stimulation, which my peers then reinforces with praise, which causes me to do more of it, which is met with more praise... Fuck! Contribution is reinforced all the way down. It must be a matrix loop.  
 {...Aboundunds the blogpost to become a munk}
+
+It feels wrong to like what you're conditioned to do, for it is not your true expresison. 
