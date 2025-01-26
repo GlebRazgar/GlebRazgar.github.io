@@ -5,11 +5,11 @@ layout: post
 ---
 
 Nothing is of greater telling than to learn a persons truth.
-To Understand someones values, is to reduce him to his building blocks. To see like X-Ray through cause and effect. To know what is directing him, and extrapolate where he is directed. 
+To Understand someones values, is to map his function. To see like X-Ray through cause and effect. To know what is directing him, and extrapolate where he is directed. 
 
 In human interactions, "Truth" awaits to be dispensed, for it is too intimate to give away at once, and omission of it may hold value. Learning else's truth is hence a lengthy process, but should it be? I argue that our caution is an artifact of instinct that in modernity harms more than helps. For human tribe is now boundless enough that the masquerade is folly; efficiency is in truth swiftly spoken, and rejection swiftly earned.
 
-In that vein, this post is intended to be a people filter. One that describes my "Truth", raw and unfiltered in hopes that my worldview will eather resonate, or repell. 
+In that vein, this post is a filter. One that conveys my "Truth", raw and unfiltered in hopes that it will eather resonate, or repell. 
 
 <p align="center"><img src="/images/self.jpg" alt="Alt text" width="300" height="300" style="border-radius: 10px; transform: scaleX(-1);"></p>  
 
