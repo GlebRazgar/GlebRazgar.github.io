@@ -5,7 +5,7 @@ layout: post
 ---
 
 Nothing is of greater telling than to learn a persons truth.
-To Understand someones values, is to map his function. To see like X-Ray through cause and effect. To know what is directing him, and extrapolate where he is directed. 
+To Understand someones values, is to reduce him to his building vectors. To see like X-Ray through cause and effect. To know what is directing him, and extrapolate where he is directed. 
 
 In human interactions, "Truth" awaits to be dispensed, for it is too intimate to give away at once, and omission of it may hold value. Learning else's truth is hence a lengthy process, but should it be? I argue that our caution is an artifact of instinct that in modernity harms more than helps. For human tribe is now boundless enough that the masquerade is folly; efficiency is in truth swiftly spoken, and rejection swiftly earned.
 
