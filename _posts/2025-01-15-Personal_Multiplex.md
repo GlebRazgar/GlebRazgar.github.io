@@ -17,12 +17,16 @@ What sketch of mind, once conveyed, proxys the universe of one's future actions?
 
 Values might feel like a fitting place to start. Unfortunately, values are commonly rationalized hiden biases, inherited from societal dogmas and smuggle into our cerebral constructs. When people claim an idea to be self evident, its often that these notions are deeply woven into the fabric of their perspective, obscuring the view of those convictions as anything but UN-QUESTIONABLE truths. To avoid similar fait, let us, then, dissect my beliefs in an  expose both convictions and their hidden biases.  
 
+---
+
 BACKGROUND:  
 Values are the the effect, the cause of which is background. An intimate place to start, yet one which might best convey the kinnetic behind my madness.
 
 I was spawned in Russia, Saint-Petersburg, in what I'd call to be the EASY mode: a family that climed from lower class to the higher one throught my upbringing. At 12yo I moved to UK, without family, where I lived in boarding-schools till the end of my teens. Away from family, once value function is morphed by the biases of flatmates rather than parents. In this diversity pool, people with scientific interests influenced me most. Above all  moments that pivoted my value system worth mentioning, was my fathers death, which happened a year after my moving to UK. I'll avoid going into the depths of personal issues it caused; from financial to phsychological, but its worth saying that the event pivoted my mental gradient disproportionately. For one, my family suddenly had to relly on me. An un-usual circumstance for a 13 years old. And for two, I had to rely on my family in a much deeper sense. If one was to analyze my vector, one would note that most of my actions stem directly from those two causes. The mentality of OVER-PROVIDING which is still deeply barried in my mind creates a "DO-MORE" vector which is irrationally magnified, whilst the gratitude for my fortunate upbringing thanks to my support system derives a "RETURN THE GOOD" vector. Mean-pooling of those two compounds to: "DO MORE and RETURN THE GOOD" vector, which is to say: "CONTRIBUTE TO A NOBEL CAUSE".
 
-Back to lighter multiplex.
+Back to a lighter multiplex.
+
+---
 
 VALUES:  
 Values require a closer attention as the gulf between knowledge and capacity is larger than most take to consider. That is to say people dont always adhear to the values they hold. Additionally humans instinctively convert selfish desires into cooperative systems which end up justifying SELFISHNESS as GOOD WILL. Let us then not be fooled by nobility.
@@ -44,14 +48,33 @@ The societal organism deems anything GOOD that benefits it, and EVIL which hurts
 
 1. Become a seperate organism (By abolishing society)
 2. Become a cancer cell (By living in society, but acting orthoganal to its value system)
-3. Become a new, helpful cell (By building on-top of / creating new value system)
+3. Become a new, helpful cell (By building on-top of / creating new values for the organism)
 
-My choice falls on the latter, hence why I
-
-
+My rational and irational choice falls on the latter. In me, contribution to a NOBEL CAUSE is a part of societal/upbringing wiring. Attempting to evolve humanity to it's next evolutionary - tranhumanistic stage is my personal curiosity. Both are entangled. Both are me.  
 
 
-I like persuing the nobel cause for it's intellectual stimulation, which my peers then reinforces with praise, which causes me to do more of it, which is met with more praise... Fuck! Contribution is reinforced all the way down. It must be a matrix loop.  
-{...Aboundunds the blogpost to become a munk}
+VALUE2:  
+This value is but a hidonistic excuse that allows me to invest more time into Value 1.  
 
-It feels wrong to like what you're conditioned to do, for it is not your true expresison. 
+Once I upload humans, or distill our values into the new form of intelligence, perhaps then I'll stop to consider my values more. Unitl then, you have a comprehensive mapping of my function.
+
+<!-- Hexagon with my strength disposition so that its easier to understand my disposition -->
+<p align="center"><img src="/images/HexagonRating.jpg" alt="Alt text" width="300" height="300" style="border-radius: 10px; transform: scaleX(-1);"></p> 
+
+
+---
+
+POLITICS:
+Polictics is a fun one. My politics are those that align with my mission of evolving humanity. 
+- Go into talking about democracy and its downsides
+- Come out talking about capitalism. 
+
+---
+
+INTERESTS:
+
+
+
+My self:
+<!-- Hexagon with my strength disposition so that its easier to understand my disposition -->
+<p align="center"><img src="/images/HexagonRating.jpg" alt="Alt text" width="300" height="300" style="border-radius: 10px; transform: scaleX(-1);"></p> 

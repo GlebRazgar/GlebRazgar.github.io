@@ -6,11 +6,8 @@ layout: post
 
 Some of the most important transitional points in the history of science have been moement when we quantized the world. Much like zooming into sub-attomic interractions has brought us nuclear power, zooming into neuronal interractions holds promise in bringing us more capable intelligence.
 
-Mechanistic Interpretability is largely predicated on this notion. Similarly to physics, it takes an axiomatic approach and tries to look into the network's constituents at their quanta.
-In todays interpretability research, networks can be studies through two lenses: Human scentric, and machine centric. In this post I propose new approach at uncovering network dynamics through machine centric interpretability.
-
-Just as a neurosurgeon maps brain function by stimulating neural tissue during a craniotomy, I develop a Symbiotic network that can selectively inhibit or stimulate the primary model's weights, revealing its internal circuitry and offering a novel approach to studying and steering artificial neural networks.
-
+Hitherto, network interpretability has been studies through two key lenses: Representational and Mechanistic. Both deal with different units of analyis. Representation engineering (RepE) studies high level network effects (top-down), whilst Mechanistic Interpretability (MI), similarly to physics, takes an axiomatic approach and tries to look into the network's constituents at their quanta (bottom-up). Though mechanistic view of networks is vastly more precise, representation engineering has found more practical applications. 
+MI allowed us to zoom into networks, but scaling it's attomic precision for practical applications has not yet been done. In this post I propose a new, automated approach which builds on mechanistic precision but acts to make it practical as-if via representation modeling. 
 
 <!-- width 750 is the perfect width for the blogs. height should be ~400 -->
 <p align="center"><img src="../images/SymbioteNet.png" alt="Alt text" width="750" height="450" style="border-radius: 10px;"></p>
