@@ -1,5 +1,5 @@
 ---
-title: "Mechanistically Interpreting Network Symbiosis"
+title: "Mechanistic Interpretability Through Network Symbiosis"
 date: 2024-10-15
 layout: post
 ---
