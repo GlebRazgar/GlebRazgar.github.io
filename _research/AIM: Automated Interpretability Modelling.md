@@ -1,5 +1,5 @@
 ---
-title: "Automated Interpretability Mechanism Neural Analysis"
+title: "Automated Interpretability Modelling"
 date: 2021-10-01
 layout: post
 ---
