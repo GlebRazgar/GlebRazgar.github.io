@@ -1,6 +1,6 @@
 ---
 title: "Automated Interpretability Modelling"
-date: 2021-10-01
+date: 2025-01-10
 layout: post
 ---
   
@@ -62,7 +62,7 @@ beyond expert analysis while preserving the scientific method.
   </div>
 </p>
 
-<p align="center">Fig1: High-level function of AIM, depicting a query followd by</p>
+<p align="center">Fig1: High-level purpose of AIM (Automated Interpretability Modeling). AIM procesess an interpretability query and programatically generates executable code experiments, analyzes circuit activations and identifies their functions.</p>
 
 This paper introduces AIM (Automated Interpretability Model), a system
 that combines a vision-language model for neural network analysis. AIMs
