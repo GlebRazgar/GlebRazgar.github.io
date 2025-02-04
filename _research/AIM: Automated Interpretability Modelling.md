@@ -3,34 +3,38 @@ title: "Automated Interpretability Modelling"
 date: 2021-10-01
 layout: post
 ---
----
-<h1 style="text-align: center;">AIM: Automated Interpretability Modelling</h1>
+  
+<div align="center">
 
----
-**Gleb Razgar** 
-**Simon Malzard** 
-**Nitish Mital**
+<table>
+  <tr>
+    <td align="center"><strong>Gleb Razgar</strong><br><a href="mailto:gleb.razgar@gmail.com">gleb.razgar@gmail.com</a></td>
+    <td align="center"><strong>Simon Malzard</strong><br><a href="mailto:piyush@turing.ac.uk">salmon.malzard@turing.ac.uk</a></td>
+    <td align="center"><strong>Piyush Ahuia</strong><br><a href="mailto:piyush@turing.ac.uk">piyush@turing.ac.uk</a></td>
+    <td align="center"><strong>Nitish Mital</strong><br><a href="mailto:nitish.m@cam.ac.uk">nitish.m@cam.ac.uk</a></td>
+  </tr>
+</table>
 
-[`gleb.razgar@gmail.com`](mailto:gleb.razgar@gmail.com)
-piyush@turing.ac.uk [`piyush@turing.ac.uk`](mailto:piyush@turing.ac.uk)
-nitish.m@cam.ac.uk
+</div>
 
-<h1 style="text-align: center;">### Abstract</h1>
+<h3 style="text-align: center;">Abstract</h3>
 
-> In this paper we propose Automated Interpretability Modelling (AIM) -
-> a method that uses neural models to automate mechanistic
-> interpretability experiments like circuit discovery and
-> explainability. At its core, AMI utilises a pre-trained
-> vision-language model with the capacity to extract
-> sparse representations, compose and modify inputs, assess circuit
-> activations, and summarize experimental results---all to support
-> iterative experiments that explain neural network behaviours. We test
-> AIMs prowess in computer vision, where it decodes neural and circuit
-> features in models learned image representations. Using trained models
-> and ground-truth neurons as our testing ground, AIM matches---and
-> often surpasses---human experts in decoding neural features.
+<div style="max-width: 600px; margin: auto; text-align: justify;">
+In this paper we propose Automated Interpretability Modelling (AIM) -
+a method that uses neural models to automate mechanistic
+interpretability experiments like circuit discovery and
+explainability. At its core, AMI utilises a pre-trained
+vision-language model with the capacity to extract
+sparse representations, compose and modify inputs, assess circuit
+activations, and summarize experimental results - all to support
+iterative experiments that explain neural network behaviours. We test
+AIMs prowess in computer vision, where it decodes neural and circuit
+features in models learned image representations. Using trained models
+and ground-truth neurons as our testing ground, AIM matches - and
+often surpasses human experts in decoding neural features.
+</div>
 
-1.  **Introduction**
+<h3 style="text-align: center;">1.Introduction</h3>
 
 Mechanistic interpretability is in effect unconstrained neuroscience. It
 holds no risk, and almost no physical friction. Yet, despite being less
@@ -54,7 +58,7 @@ beyond expert analysis while preserving the scientific method.
 
 **Automated Interpretability Modelling**
 
-![image](media/image1.png){width="4.7713in" height="1.71545in"}
+<p align="center"><img src="../images/high-level.png" alt="Alt text" width="750" height="275" style="border-radius: 10px;"></p>
 
 Fig1: High level overview of the AIM system
 

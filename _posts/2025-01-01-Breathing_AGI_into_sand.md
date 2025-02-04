@@ -13,7 +13,7 @@ layout: post
 
 <p align="center"><img src="/images/moloch.jpg" alt="Alt text" width="750" height="450" style="border-radius: 10px;"></p>
 
-In his famous poem called 'Moloch,' Allen Ginsberg concedes civilization as an individual entity. With Moloch and his "skyscraper-window eyes," "whose fingers are ten armies," "in whom I am a consciousness without a body." Society indeed makes up an emerging organism, one that is also susceptible to pain, desire, and cultural evolution. Societal mind virus becomes akin to the organism's mental disorder. Nuclear bombs bruise its skin and make it retract. And economic policies set its evolutionary gradient.
+In his famous poem called 'Moloch,' Allen Ginsberg concedes civilization as an individual entity. With Moloch and his "skyscraper-window eyes", "whose fingers are ten armies", "in whom I am a consciousness without a body". Society indeed makes up an emerging organism, one that is also susceptible to pain, desire, and cultural evolution. Societal mind virus becomes akin to the organism's mental disorder. Nuclear bombs bruise its skin and make it retract. And economic policies set its evolutionary gradient.
 
 The collective emergence, however, will not be limited to human society. ASI will share a similar fate. Whilst a single human is intelligent, the linear combination of humans manifests as super-intelligence. Similarly, one might imagine the infrastructure that we design today to reach ASI far before any single model designed in a Pandora's box of a research lab could do so.
 
