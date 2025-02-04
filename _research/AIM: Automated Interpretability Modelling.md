@@ -7,13 +7,16 @@ layout: post
 <div align="center">
 <table>
   <tr>
-    <td align="center"><strong>Gleb Razgar</strong><br><a href="mailto:gleb.razgar@gmail.com">gleb.razgar@gmail.com</a></td>
-    <td align="center"><strong>Simon Malzard</strong><br><a href="mailto:piyush@turing.ac.uk">salmon.malzard@turing.ac.uk</a></td>
-    <td align="center"><strong>Piyush Ahuia</strong><br><a href="mailto:piyush@turing.ac.uk">piyush@turing.ac.uk</a></td>
-    <td align="center"><strong>Nitish Mital</strong><br><a href="mailto:nitish.m@cam.ac.uk">nitish.m@cam.ac.uk</a></td>
+    <td align="center">Gleb Razgar<br><a href="mailto:gleb.razgar@gmail.com">gleb.razgar@gmail.com</a></td>
+    <td align="center">Simon Malzard<br><a href="mailto:piyush@turing.ac.uk">salmon.malzard@turing.ac.uk</a></td>
+    <td align="center">Piyush Ahuia<br><a href="mailto:piyush@turing.ac.uk">piyush@turing.ac.uk</a></td>
+    <td align="center">Nitish Mital<br><a href="mailto:nitish.m@cam.ac.uk">nitish.m@cam.ac.uk</a></td>
   </tr>
 </table>
 </div>
+
+
+<h3 align="center" style="font-weight: 500">Abstract</h3>
 
 <h3 align="center"><strong>Abstract</strong></h3>
 
