@@ -96,6 +96,8 @@ necessitates both advanced tooling and improved experimental reasoning
 capabilities.
 <br><br>
 
+---
+
 <h3 style="text-align: center;">2. Related Work</h3>
 
 <h4 style="margin-bottom: 0"><u>2.1 Interpretability</u></h4>
@@ -152,7 +154,9 @@ with neural networks.
 <p align="center"><img src="../images/low-level.png" alt="Alt text" width="750" height="373" style="border-radius: 10px;"></p>
 
 <div style="max-width: 600px; margin: auto; text-align: justify;">
-<p><b>Figure 2:</b> Low-level overview of AIM. At each itteration input images are fed through a ResNet, where a Sparse Auto-Encoder extracts and maps circuit activations of requested layers. The sparse activation maps are analyzed by a multi-modal agent which formulates hypotheses and generates experimental code to validate circuit behavior.</p></div>  
+<p><b>Figure 2:</b> Low-level overview of AIM. At each iteration input images are fed through a neural network, where a Sparse Auto-Encoder extracts and maps circuit activations of requested layers. The sparse activation maps are analyzed by a multi-modal agent which formulates hypotheses and generates experiments to itteratively validate circuit behavior.</p></div>
+
+---
 
 <h3 align="center">3. AIM Methodology</h3>
 
@@ -184,8 +188,8 @@ et al., 2023; Gupta & Kembhavi, 2023), while specifically addressing the
 requirements of iterative neural network analysis.  
 
 <p align="center"><img src="../images/flow.png" alt="Alt text" width="750" height="1010" style="border-radius: 10px;"></p>
-
-**Figure 3:** **Some description!**  
+<div style="max-width: 600px; margin: auto; text-align: justify;">
+<p><b>Figure 3:</b> Low-level overview of AIM. At each iteration input images are fed through a neural network, where a Sparse Auto-Encoder extracts and maps circuit activations of requested layers. The sparse activation maps are analyzed by a multi-modal agent which formulates hypotheses and generates experiments to itteratively validate circuit behavior.</p></div>
 
 <h4 style="margin-bottom: 0"><u>3.2 System</u></h4> 
 The System class in AIM provides programmatic access to internal
@@ -254,6 +258,8 @@ circuits and evidence accumulation throughout the
 interpretation process.
 <br><br>
 
+---
+
 <h3 align="center">4. Evaluation</h3>
 AIM is evalueated across three dimensions:  
 
@@ -294,6 +300,8 @@ Results demonstrate AIMs superior performance over MILAN across all
 architectures, with accuracy often matching human experts (Figure 4).
 Layer-specific analyses are detailed in Table A3.\"  
 <br><br>
+
+---
 
 <h3 align="center">5. Applications</h3>
 AIM is a flexible system that automates model understanding tasks at
@@ -337,6 +345,8 @@ categories. Additional experiments validate these findings
 across diverse bias types.
 <br><br>
 
+---
+
 <h3 align="center">6. Conclusion</h3>
 We present AIM, a system that automates interpretability workflows
 through programmatic experimentation on neural networks. While current
@@ -352,7 +362,9 @@ focus on developing more rigorous verification methods and expanding the
 experimental toolkit.
 <br><br>
 
-<h3 align="center">8. References</h3>
+---
+
+<h3 align="center">7. References</h3>
 Bau, D., Zhou, B., Khosla, A., Oliva, A., and Torralba, A. Network
 dissection: Quantifying interpretability of deep visual representations.
 In Computer Vision and Pattern Recognition, 2017.
