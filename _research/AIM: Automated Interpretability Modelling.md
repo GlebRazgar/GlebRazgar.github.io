@@ -8,9 +8,9 @@ layout: post
 <table>
   <tr>
     <td align="center">Gleb Razgar<br><a href="mailto:gleb.razgar@gmail.com">gleb.razgar@gmail.com</a></td>
-    <td align="center">Simon Malzard<br><a href="mailto:piyush@turing.ac.uk">salmon.malzard@turing.ac.uk</a></td>
-    <td align="center">Piyush Ahuia<br><a href="mailto:piyush@turing.ac.uk">piyush@turing.ac.uk</a></td>
-    <td align="center">Nitish Mital<br><a href="mailto:nitish.m@cam.ac.uk">nitish.m@cam.ac.uk</a></td>
+    <td align="center">Simon Malzard<br><a href="mailto:smalzard@turing.ac.uk">smalzard@turing.ac.uk</a></td>
+    <td align="center">Piyush Ahuia<br><a href="mailto:piyush@cam.ac.uk">piyush@turing.ac.uk</a></td>
+    <td align="center">Nitish Mital<br><a href="mailto:nitish.@turing.ac.uk">nitish.m@cam.ac.uk</a></td>
   </tr>
 </table>
 </div>
@@ -62,8 +62,7 @@ beyond expert analysis while preserving the scientific method.
   </div>
 </p>
 
-<p1 style="text-align: center;">Fig1: High-level function of AIM, depicting a query followd by </p1>
-
+<p align="center">Fig1: High-level function of AIM, depicting a query followd by</p>
 
 This paper introduces AIM (Automated Interpretability Model), a system
 that combines a vision-language model for neural network analysis. AIMs
