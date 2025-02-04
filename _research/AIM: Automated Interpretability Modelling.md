@@ -62,8 +62,9 @@ beyond expert analysis while preserving the scientific method.
   </div>
 </p>
 
-<p align="center"><b>Figure 1</b></p>
-<p align="center">High-level overview of AIM (Automated Interpretability Modeling). The system processes interpretability queries through iterative code experiments to analyze and identify neural circuit functions.</p>
+
+<div style="max-width: 600px; margin: auto; text-align: justify;">
+<p><b>Figure 1:</b> High-level overview of AIM (Automated Interpretability Modelling). The framework procesess interpretability queries, iteratively generates executable code experiments, analyzes circuit activations and identifies their functions</p>  
 
 This paper introduces AIM (Automated Interpretability Model), a system
 that combines a vision-language model for neural network analysis. AIMs
