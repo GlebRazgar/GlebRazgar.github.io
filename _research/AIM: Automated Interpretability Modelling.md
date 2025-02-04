@@ -58,7 +58,7 @@ decisive challenge: how to build tools that scale interpretability
 beyond expert analysis while preserving the scientific method.
 
 
-<p align="center"><img src="../images/high-level.png" alt="Alt text" width="750" height="265" style="border-radius: 10px;"></p>
+<p align="center"><img src="../images/high-level.png" alt="Alt text" width="750" height="275" style="border-radius: 10px;"></p>
 
 <p1 style="text-align: center;">Fig1: High level overview of the AIM system</p1>
 
@@ -147,8 +147,8 @@ these capabilities further, enabling direct image-based interaction
 with neural networks.  
 <br><br>
 
-![image](media/image2.png){width="4.97249in" height="2.47522in"}
-<br><br>
+
+<p align="center"><img src="../images/low-level.png" alt="Alt text" width="750" height="450" style="border-radius: 10px;"></p>
 
 <h3 align="center">3. AIM Methodology</h3>
 
