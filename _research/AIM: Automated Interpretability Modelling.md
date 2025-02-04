@@ -34,8 +34,6 @@ often surpasses human experts in decoding neural features.
 
 <h3 align="center"><strong>Introduction</strong></h3>
 
-<h3 style="text-align: center;">1.Introduction</h3>
-
 Mechanistic interpretability is in effect unconstrained neuroscience. It
 holds no risk, and almost no physical friction. Yet, despite being less
 constrained, our understanding of models is proportionally shrinking.
