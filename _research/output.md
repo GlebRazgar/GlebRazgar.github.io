@@ -1,9 +1,4 @@
----
-title: "Automated Interpretability Modelling"
-date: 2021-10-01
-layout: post
----
-**Automated Interpretability Modelling**
+**AIM:** **Automated** **Interpretability Modelling**
 
 > **Gleb Razgar** [**Simon
 > Malzard**](https://www.linkedin.com/in/simon-malzard/) **[Piyush
