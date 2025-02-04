@@ -25,9 +25,9 @@ a method that uses neural models to automate mechanistic
 interpretability experiments like circuit discovery and
 explainability. At its core, AIM utilises a pre-trained
 vision-language model with the capacity to extract
-sparse representations, compose and modify inputs, assess circuit
-activations, and summarize experimental results - all to support
-iterative experiments that explain neural network behaviours. We test
+sparse representations, compose and modify experiments, assess circuit
+activations, and summarize results - all to support
+iterative experimentation that explains neural network behaviours. We test
 AIM's prowess in computer vision, where it decodes neural and circuit
 features in models learned image representations. Using trained models
 and ground-truth neurons as our testing ground, AIM matches - and
