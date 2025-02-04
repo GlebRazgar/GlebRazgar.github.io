@@ -45,9 +45,9 @@ interpretability efforts, and for two, there is a scarcity of
 interpretability researchers. Interpreting a neural network is a
 multi-faceted enterprise. When auditing circuits we might need to detect
 demographic biases, surface systematic errors, or identify architectural
-improvements. These audits demand intensive researcher experience---from
+improvements. These audits demand intensive researcher experience-from
 hypothesis formation to conducting experiments and result
-analysis (Nushi et al., 2018; Zhang et al., 2018) --- creating weighty
+analysis (Nushi et al., 2018; Zhang et al., 2018) - creating weighty
 barriers for people outside of the field. Recent work on automated
 interpretability attempted to alleviate this by allowing the models to
 analyse themselves through synthesizing description of their learned
@@ -73,7 +73,7 @@ the systems technical components, including modules for image synthesis
 and editing that enable direct hypothesis testing. For evaluation, we
 develop a benchmark dataset of synthetic neurons with text-specified
 ground-truth selectivity, built from an open-set concept detector. We
-assess AIM through the neuron description paradigm---a fundamental
+assess AIM through the neuron description paradigm - a fundamental
 component in interpretability workflows (Bau et al., 2017; 2020;
 Oikarinen & Weng, 2022; Bills et al., 2023; Singh et al., 2023;
 Schwettmann et al., 2023).
@@ -95,7 +95,7 @@ capabilities.
 
 <h3 style="text-align: center;">2. Related Work</h3>
 
-<h4 style="margin-bottom: 0"><u>Interpretability</u></h4>
+<h4 style="margin-bottom: 0"><u>2.1 Interpretability</u></h4>
 Interpreting deep features has progressed through several
 methodological advances. Initial investigations of individual neurons
 in deep networks established methods for understanding learned features
@@ -108,7 +108,7 @@ vocabularies (Park et al., 2019; Hendricks et al., 2018) or programmatic
 specifications (Mu & Andreas, 2020).
 <br><br>
 
-<h4 style="margin-bottom: 0"><u>Circuit Identification</u></h4>
+<h4 style="margin-bottom: 0"><u>2.2 Circuit Identification</u></h4>
 Identifying circuits in neural networks has revealed fundamental
 computational patterns. Early work established methods for
 discovering and validating circuits through techniques like activation
@@ -126,7 +126,7 @@ require significant manual effort to design and execute experiments,
 limiting their utility and accessibility to researchers without deep
 expertise in circuit analysis.
 
-<h4 style="margin-bottom: 0"><u>Automated Interpretability with Agents</u></h4>
+<h4 style="margin-bottom: 0"><u>2.3 Automated Interpretability with Agents</u></h4>
 Subsequent work on automated interpretability developed methods for
 generating open-ended descriptions of learned features, either curated
 from human labelers (Anthropic, 2023) or generated directly by learned
@@ -150,39 +150,29 @@ with neural networks.
 ![image](media/image2.png){width="4.97249in" height="2.47522in"}
 <br><br>
 
-<h3 align="center">3. AIM Framework</h3>
+<h3 align="center">3. AIM Methodology</h3>
 
-<h4 style="margin-bottom: 0"><u>3. AIM Model</u></h4> 
+<h4 style="margin-bottom: 0"><u>3.1 Framework</u></h4> 
 AIM is an automated interpretability engine that designs and executes
 experimental code programs to analyze neural networks. The system
 combines a multimodal language model backbone with a specialized API for
 interpretability experiments, enabling iterative hypothesis testing and
-analysis.  
-
-<h4><u>Architecture</u></h4> 
-At its core, AIM uses Gemini (DeepMind, 2023b) as its reasoning engine,
+analysis. At its core, AIM uses Gemini (DeepMind, 2023b) as its reasoning engine,
 allowing direct processing of both visual and textual information. The
-system operates through two primary components:
+system operates through two primary components:  
 
 1\) <u>Structure</u> that provides access to the target neural network
 through a Sparse Auto Encoder (SAE),  
-
 2\) <u>Tools</u> that implement experimental primitives. These components
 are exposed through a Python-based MAIA API that enables programmatic
 composition of interpretability experiments (Shaham et al., 2024).  
-<br><br>
-
-
-<h4 style="margin-bottom: 0"><u>Operation</u></h4> 
+ 
 Given an interpretability query (e.g., analyzing neuron selectivity or
 identifying failure modes), AIM constructs a series of experimental
 programs. Each program tests specific hypotheses by manipulating inputs,
 measuring activations, and analyzing results. The system iteratively
 refines its understanding based on experiments until it can address the
-original query.
-
-<h4 style="margin-bottom: 0"><u>Implementation</u></h4> 
-AIM uses MAIA's implementation to generate executable Python code
+original query. AIM uses MAIA's implementation to generate executable Python code
 (Shaham et al., 2024) that leverages standard scientific computing
 libraries, including PyTorch for neural network operations. The systems
 design builds on recent advances in tool-use by language models (Surís
@@ -193,15 +183,13 @@ requirements of iterative neural network analysis.
 
 **Figure 3:** **Some description!**  
 
-<h4 style="margin-bottom: 0"><u>3.1 System</u></h4> 
+<h4 style="margin-bottom: 0"><u>3.2 System</u></h4> 
 The System class in AIM provides programmatic access to internal
 components of the target neural network. This instrumentation enables
 fine-grained experimental control over individual model elements. For
 instance, when analyzing neurons in a vision transformer's MLP block,
 AIM initializes a layer or neuron object by specifying its location and
-model context:  
-
-system = System(unit_id, layer_id, model_name)  
+model context: system = System(unit_id, layer_id, model_name)  
 
 The System class supports targeted experiments through methods like
 system.neuron(image_list), which returns both activation values and
@@ -211,7 +199,7 @@ interpretation that require task-specific model training (Hernandez et
 al., 2022), AIMs System class enables direct experimentation on
 arbitrary vision systems using an SAE.  
 
-<h4 style="margin-bottom: 0"><u>3.2 Tools</u></h4> 
+<h4 style="margin-bottom: 0"><u>3.3 Tools</u></h4> 
 The Tools provides a modular framework for hypothesis testing through
 programmatic experiments. Building on established interpretability
 methods and kits (Shaham et al., 2024), these tools incorporate
@@ -229,7 +217,7 @@ facilitates straightforward incorporation of new interpretability
 methods as they emerge. For the experiments in this paper, we
 implement the following set of tools:  
 
-<h4 style="margin-bottom: 0"><u>3.2 Exemplar Generation</u></h4> 
+<h4 style="margin-bottom: 0">Exemplar Generation:</h4> 
 The system identifies prototypical circuit behavior by analyzing
 activation patterns across large image datasets (Bau et al., 2017; Zhou
 et al., 2017; 2020). This functionality is implemented through ImageNet
@@ -237,7 +225,7 @@ validation set analysis (Deng et al., 2009), with AIM typically
 beginning experimentation by retrieving the top-5 maximally activating
 images for the target system (Figure 2, Section 4.3).  
 
-<h4 style="margin-bottom: 0"><u>Image Generation and Editing Tools</u></h4> 
+<h4 style="margin-bottom: 0">Image Generation and Editing Tools:</h4> 
 AIM employs Unity Game engine with Moose, as well as Stable Diffusion
 v1.5 (Rombach et al., 2022) for image synthesis via text2image(prompt).
 This enables both testing system sensitivity to specific visual concepts
@@ -247,14 +235,14 @@ InstantID/IPix (Brooks et al., 2023), supports targeted image
 modifications for testing specific hypotheses, such as transforming
 object attributes while preserving background context.  
 
-<h4 style="margin-bottom: 0"><u>Image Description and Summarization Tools</u></h4> 
+<h4 style="margin-bottom: 0">Image Description and Summarization Tools:</h4> 
 For experimental result analysis, AIM leverages Gemini to
 describe(image_list) individual images or summarize(image_list) shared
 characteristics across image sets. This multi-agent framework enables
 iterative refinement of visual hypotheses based on experimental
 outcomes.  
 
-<h4 style="margin-bottom: 0"><u>Experiment Logs</u></h4> 
+<h4 style="margin-bottom: 0">Experiment Logs:</h4> 
 The log_experiment tool records experimental results (e.g., activations,
 modifications) and maintains an accessible history for subsequent
 analysis. AIM uses this log to track hypothesis evolution, neural
@@ -266,21 +254,18 @@ interpretation process.
 AIM is evalueated across three dimensions:  
 
 1\) Behavior prediction accuracy for neurons and circuits in trained
-architecture  
-
-2\) Performance on synthetic neurons with known ground-truth selectivity  
-
-3\) Comparative analysis against the MILAN baseline (Hernandez et al.,
-1) and human experts using the AIM.  
+architecture.  
+2\) Performance on synthetic neurons with known ground-truth selectivity.  
+3\) Comparative analysis against the MILAN baseline (Hernandez et al., 2022) and human experts using the AIM.  
 
 The framework enables interpretability tasks through natural language
 specification in the VLM prompt. We evaluate this capability through a
 series of increasingly complex experiments, focusing initially on neuron
-description---a fundamental interpretability task with applications in
+description - a fundamental interpretability task with applications in
 model auditing and editing (Gandelsman et al., 2024; Yang et al., 2023;
 Hernandez et al., 2022).
 
-<h4 style="margin-bottom: 0"><u>4.1 Cross-Architecture Evaluation</u></h4> 
+<h4 style="margin-bottom: 0"><u>4.1 Architecture Evaluation</u></h4> 
 We evaluate AIM on neurons from three architectures: ResNet-152 for
 supervised classification (He et al., 2016), DINO for unsupervised
 representation learning (Caron et al., 2021; Grill et al., 2020; Chen &
@@ -314,8 +299,7 @@ for producing actionable insights for human users (Vaughan & Wallach,
 2020), we conduct experiments that apply AIM to two model-level tasks:
 (i) spurious feature removal and (ii) bias identification in a
 downstream classification task. In both cases AIM uses the API as
-described in Section 3.
-<br><br>
+described in Section 3.  
 
 <h4 style="margin-bottom: 0"><u>5.1 Feature Decontamination</u></h4>  
 Polysemantic features present significant challenges when deploying
@@ -354,19 +338,14 @@ We present AIM, a system that automates interpretability workflows
 through programmatic experimentation on neural networks. While current
 limitations necessitate human oversight for error detection and
 confirmation bias mitigation, our experimental results demonstrate
-AIMs potential as interpretability tools grow in sophistication.
-<br><br>
-
-<h3 align="center">7. Impact Statment</h3>
-The increasing deployment of high-stakes AI systems necessitates robust
-interpretability methods. AIM represents an initial step toward
+AIMs potential as interpretability tools grow in sophistication. The increasing deployment of high-stakes AI systems necessitates robust interpretability methods. AIM represents an initial step toward
 systematic, automated auditing capabilities. However, we emphasize that
-AIMs current limitations---particularly in confirmation bias and image
-generation reliability---require human supervision. While AIM enables
+AIMs current limitations-particularly in confirmation bias and image
+generation reliability-require human supervision. While AIM enables
 causal interventions for behavioral analysis, negative results should
 not be interpreted as definitive evidence of absence. Future work should
 focus on developing more rigorous verification methods and expanding the
-experimental toolkit.\"
+experimental toolkit.
 <br><br>
 
 <h3 align="center">8. References</h3>
