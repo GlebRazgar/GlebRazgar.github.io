@@ -64,7 +64,7 @@ beyond expert analysis while preserving the scientific method.
 
 
 <div style="max-width: 600px; margin: auto; text-align: justify;">
-<p><b>Figure 1:</b> High-level overview of AIM (Automated Interpretability Modelling). The framework procesess interpretability queries, iteratively generates executable code experiments, analyzes circuit activations and identifies their functions</p>  
+<p><b>Figure 1:</b> High-level overview of AIM (Automated Interpretability Modelling). The framework procesess interpretability queries, iteratively generates executable code experiments, analyzes circuit activations and identifies their functions</p></div>  
 
 This paper introduces AIM (Automated Interpretability Model), a system
 that combines a vision-language model for neural network analysis. AIMs
@@ -150,6 +150,9 @@ these capabilities further, enabling direct image-based interaction
 with neural networks.  
 
 <p align="center"><img src="../images/low-level.png" alt="Alt text" width="750" height="373" style="border-radius: 10px;"></p>
+
+<div style="max-width: 600px; margin: auto; text-align: justify;">
+<p><b>Figure 1:</b> Figure 2: Low-level overview of AIM workflow. Input images are processed through a ResNet, where a Sparse Auto-Encoder extracts and maps circuit activations of requested layers. These activation maps are analyzed by a multi-modal agent which formulates hypotheses and generates experimental code. The system iteratively tests these hypotheses by feeding generated or modified images back through the network to validate circuit behavior.</p></div>  
 
 <h3 align="center">3. AIM Methodology</h3>
 
