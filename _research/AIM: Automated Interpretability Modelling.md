@@ -9,8 +9,8 @@ layout: post
   <tr>
     <td align="center">Gleb Razgar<br><a href="mailto:gleb.razgar@gmail.com">gleb.razgar@gmail.com</a></td>
     <td align="center">Simon Malzard<br><a href="mailto:smalzard@turing.ac.uk">smalzard@turing.ac.uk</a></td>
-    <td align="center">Piyush Ahuia<br><a href="mailto:piyush@cam.ac.uk">piyush@turing.ac.uk</a></td>
-    <td align="center">Nitish Mital<br><a href="mailto:nitishmital@turing.ac.uk">nitish.m@cam.ac.uk</a></td>
+    <td align="center">Piyush Ahuia<br><a href="mailto:piyush@cam.ac.uk">piyush@cam.ac.uk</a></td>
+    <td align="center">Nitish Mital<br><a href="mailto:nitishmital@turing.ac.uk">nitishmital@turing.ac.uk</a></td>
   </tr>
 </table>
 </div>
@@ -62,7 +62,8 @@ beyond expert analysis while preserving the scientific method.
   </div>
 </p>
 
-<p align="center">Fig1: High-level purpose of AIM (Automated Interpretability Modeling). AIM procesess an interpretability query and programatically generates executable code experiments, analyzes circuit activations and identifies their functions.</p>
+<p align="center"><b>Figure 1</b></p>
+<p align="center">High-level overview of AIM (Automated Interpretability Modeling). The system processes interpretability queries through iterative code experiments to analyze and identify neural circuit functions.</p>
 
 This paper introduces AIM (Automated Interpretability Model), a system
 that combines a vision-language model for neural network analysis. AIMs
