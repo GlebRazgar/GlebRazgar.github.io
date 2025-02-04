@@ -10,7 +10,7 @@ layout: post
     <td align="center">Gleb Razgar<br><a href="mailto:gleb.razgar@gmail.com">gleb.razgar@gmail.com</a></td>
     <td align="center">Simon Malzard<br><a href="mailto:smalzard@turing.ac.uk">smalzard@turing.ac.uk</a></td>
     <td align="center">Piyush Ahuia<br><a href="mailto:piyush@cam.ac.uk">piyush@turing.ac.uk</a></td>
-    <td align="center">Nitish Mital<br><a href="mailto:nitish.@turing.ac.uk">nitish.m@cam.ac.uk</a></td>
+    <td align="center">Nitish Mital<br><a href="mailto:nitishmital@turing.ac.uk">nitish.m@cam.ac.uk</a></td>
   </tr>
 </table>
 </div>
