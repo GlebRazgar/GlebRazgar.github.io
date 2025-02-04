@@ -364,7 +364,7 @@ experimental toolkit.
 
 <h3 align="center">7. References</h3>
 
-Paper's Github repository: https://github.com/GlebRazgar/AIM
+AMI paper's code: [github link](https://github.com/GlebRazgar/AIM)
 
 Bau, D., Zhou, B., Khosla, A., Oliva, A., and Torralba, A. Network
 dissection: Quantifying interpretability of deep visual representations.
