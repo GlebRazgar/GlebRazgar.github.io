@@ -58,7 +58,7 @@ decisive challenge: how to build tools that scale interpretability
 beyond expert analysis while preserving the scientific method.
 
 
-<p align="center"><img src="../images/high-level.png" alt="Alt text" width="750" height="275" style="border-radius: 10px;"></p>
+<p align="center"><img src="../images/high-level.png" alt="Alt text" width="750" height="265" style="border-radius: 10px;"></p>
 
 <p1 style="text-align: center;">Fig1: High level overview of the AIM system</p1>
 
@@ -95,7 +95,9 @@ capabilities.
 
 <h3 style="text-align: center;">1. Related Work</h3>
 
-<h4 style="font-weight: 500;">Interpretability</h4>
+
+
+<h4><u>Interpretability</u></h4>
 Interpreting deep features has progressed through several
 methodological advances. Initial investigations of individual neurons
 in deep networks established methods for understanding learned features
@@ -106,8 +108,9 @@ Lillian et al., 2022). Early approaches to automated interpretation
 translated visual exemplars into language descriptions using fixed
 vocabularies (Park et al., 2019; Hendricks et al., 2018) or programmatic
 specifications (Mu & Andreas, 2020).
+<br><br>
 
-**Circuit Identification**  
+<h4><u>Circuit Identification</u></h4>
 Identifying circuits in neural networks has revealed fundamental
 computational patterns. Early work established methods for
 discovering and validating circuits through techniques like activation
@@ -124,8 +127,9 @@ targeted interventions (Cunningham et al., 2023). However, these methods
 require significant manual effort to design and execute experiments,
 limiting their utility and accessibility to researchers without deep
 expertise in circuit analysis.
+<br><br>
 
-**Automated Interpretability via Agents**  
+<h4><u>Automated Interpretability with Agents</u></h4>
 Subsequent work on automated interpretability developed methods for
 generating open-ended descriptions of learned features, either curated
 from human labelers (Anthropic, 2023) or generated directly by learned
@@ -214,7 +218,7 @@ The Tools provides a modular framework for hypothesis testing through
 programmatic experiments. Building on established interpretability
 methods and kits (Shaham et al., 2024), these tools incorporate
 procedures for analysing circuits with real-world images (Bau et al.,
-2017) and performing causal interventions on inputs (Hernandez et al.,
+1)    and performing causal interventions on inputs (Hernandez et al.,
 2022; Casper et al., 2022). AIM composes these fundamental operations
 into more sophisticated experimental programs (Figure 2).
 
