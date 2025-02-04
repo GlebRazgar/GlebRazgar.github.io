@@ -15,7 +15,7 @@ layout: post
 </table>
 </div>
 
----
+<hr style="border-top: 1px solid black;">
 
 <h3 align="center">Abstract</h3>
 
@@ -62,7 +62,6 @@ beyond expert analysis while preserving the scientific method.
   </div>
 </p>
 
-
 <div style="max-width: 600px; margin: auto; text-align: justify;">
 <p><b>Figure 1:</b> High-level overview of AIM (Automated Interpretability Modelling). The framework procesess interpretability queries, iteratively generates executable code experiments, analyzes circuit activations and identifies their functions</p></div>  
 
@@ -96,7 +95,8 @@ necessitates both advanced tooling and improved experimental reasoning
 capabilities.
 <br><br>
 
----
+<hr style="border-top: 1px solid black;">
+
 
 <h3 style="text-align: center;">2. Related Work</h3>
 
@@ -156,7 +156,7 @@ with neural networks.
 <div style="max-width: 600px; margin: auto; text-align: justify;">
 <p><b>Figure 2:</b> Low-level overview of AIM. At each iteration input images are fed through a neural network, where a Sparse Auto-Encoder extracts and maps circuit activations of requested layers. The sparse activation maps are analyzed by a multi-modal agent which formulates hypotheses and generates experiments to itteratively validate circuit behavior.</p></div>
 
----
+<hr style="border-top: 1px solid black;">
 
 <h3 align="center">3. AIM Methodology</h3>
 
@@ -188,8 +188,8 @@ et al., 2023; Gupta & Kembhavi, 2023), while specifically addressing the
 requirements of iterative neural network analysis.  
 
 <p align="center"><img src="../images/flow.png" alt="Alt text" width="750" height="1010" style="border-radius: 10px;"></p>
-<div style="max-width: 600px; margin: auto; text-align: justify;">
-<p><b>Figure 3:</b> Low-level overview of AIM. At each iteration input images are fed through a neural network, where a Sparse Auto-Encoder extracts and maps circuit activations of requested layers. The sparse activation maps are analyzed by a multi-modal agent which formulates hypotheses and generates experiments to itteratively validate circuit behavior.</p></div>
+
+<p><b>Figure 3:</b> Low-level overview of AIM. At each iteration input images are fed through a neural network, where a Sparse Auto-Encoder extracts and maps circuit activations of requested layers. The sparse activation maps are analyzed by a multi-modal agent which formulates hypotheses and generates experiments to itteratively validate circuit behavior.</p>
 
 <h4 style="margin-bottom: 0"><u>3.2 System</u></h4> 
 The System class in AIM provides programmatic access to internal
@@ -258,7 +258,7 @@ circuits and evidence accumulation throughout the
 interpretation process.
 <br><br>
 
----
+<hr style="border-top: 1px solid black;">
 
 <h3 align="center">4. Evaluation</h3>
 AIM is evalueated across three dimensions:  
@@ -301,7 +301,7 @@ architectures, with accuracy often matching human experts (Figure 4).
 Layer-specific analyses are detailed in Table A3.\"  
 <br><br>
 
----
+<hr style="border-top: 1px solid black;">
 
 <h3 align="center">5. Applications</h3>
 AIM is a flexible system that automates model understanding tasks at
