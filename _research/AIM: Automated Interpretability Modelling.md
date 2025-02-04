@@ -148,7 +148,7 @@ with neural networks.
 <br><br>
 
 
-<p align="center"><img src="../images/low-level.png" alt="Alt text" width="750" height="350" style="border-radius: 10px;"></p>
+<p align="center"><img src="../images/low-level.png" alt="Alt text" width="750" height="360" style="border-radius: 10px;"></p>
 
 <h3 align="center">3. AIM Methodology</h3>
 
