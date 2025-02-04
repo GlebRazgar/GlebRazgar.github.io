@@ -145,8 +145,6 @@ interaction with vision systems through code generation (Anthropic,
 2023; OpenAI, 2023). Large multimodal language models have expanded
 these capabilities further, enabling direct image-based interaction
 with neural networks.  
-<br><br>
-
 
 <p align="center"><img src="../images/low-level.png" alt="Alt text" width="750" height="370" style="border-radius: 10px;"></p>
 
@@ -179,7 +177,7 @@ design builds on recent advances in tool-use by language models (Surís
 et al., 2023; Gupta & Kembhavi, 2023), while specifically addressing the
 requirements of iterative neural network analysis.  
 
-<p align="center"><img src="../images/flow.png" alt="Alt text" width="750" height="1060" style="border-radius: 10px;"></p>
+<p align="center"><img src="../images/flow.png" alt="Alt text" width="750" height="1000" style="border-radius: 10px;"></p>
 
 **Figure 3:** **Some description!**  
 
