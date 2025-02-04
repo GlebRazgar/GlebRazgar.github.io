@@ -5,7 +5,6 @@ layout: post
 ---
   
 <div align="center">
-
 <table>
   <tr>
     <td align="center"><strong>Gleb Razgar</strong><br><a href="mailto:gleb.razgar@gmail.com">gleb.razgar@gmail.com</a></td>
@@ -14,10 +13,9 @@ layout: post
     <td align="center"><strong>Nitish Mital</strong><br><a href="mailto:nitish.m@cam.ac.uk">nitish.m@cam.ac.uk</a></td>
   </tr>
 </table>
-
 </div>
 
-<h3 style="text-align: center;">Abstract</h3>
+<h3 align="center"><strong>Abstract</strong></h3>
 
 <div style="max-width: 600px; margin: auto; text-align: justify;">
 In this paper we propose Automated Interpretability Modelling (AIM) -
@@ -56,11 +54,11 @@ behavioural analysis (Huang et al., 2023). Thus, here stands our
 decisive challenge: how to build tools that scale interpretability
 beyond expert analysis while preserving the scientific method.
 
-**Automated Interpretability Modelling**
 
 <p align="center"><img src="../images/high-level.png" alt="Alt text" width="750" height="275" style="border-radius: 10px;"></p>
 
-Fig1: High level overview of the AIM system
+<p1 style="text-align: center;">Fig1: High level overview of the AIM system</p1>
+
 
 This paper introduces AIM (Automated Interpretability Model), a system
 that combines a vision-language model for neural network analysis. AIMs
@@ -91,7 +89,8 @@ and sampling adequacy. Full automation of model interpretation
 necessitates both advanced tooling and improved experimental reasoning
 capabilities.
 
-1.  **Related Work**
+<h3 style="text-align: center;">1. Related Work**
+</h3>
 
 **Interpretability**
 
