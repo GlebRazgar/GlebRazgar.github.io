@@ -32,7 +32,6 @@ features in models learned image representations. Using trained models
 and ground-truth neurons as our testing ground, AIM matches - and
 often surpasses human experts in decoding neural features.
 </div>  
-<br><br>
 
 <h3 align="center">1. Introduction</h3>
 
@@ -153,7 +152,7 @@ with neural networks.
 <p align="center"><img src="../images/low-level.png" alt="Alt text" width="750" height="373" style="border-radius: 10px;"></p>
 
 <div style="max-width: 600px; margin: auto; text-align: justify;">
-<p><b>Figure 2:</b> Low-level overview of AIM. At each iteration input images are fed through a neural network, where a Sparse Auto-Encoder extracts and maps circuit activations of requested layers. The sparse activation maps are analyzed by a vision-language model agent which formulates hypotheses about circuit behaviour. By writing executable python experiments, the agent can utilize different tools in its toolkit (e.g: generate images, edit images, check logs, etc.) to iteratively validate or refute these hypotheses.</p></div>
+<p><b>Figure 2:</b> Low-level overview of AIM. At each iteration input images are fed through a neural network, where a Sparse Auto-Encoder extracts and maps circuit activations of requested layers. The sparse activation maps are analyzed by a vision-language model agent which formulates hypotheses about circuit behaviour. By writing executable python experiments, the agent can utilize different tools in its toolkit (e.g: generate images, edit images, check logs, etc.) to iteratively validate or refute these hypotheses.</p></div>  
 
 <hr style="border-top: 1px solid black;">
 
@@ -299,7 +298,6 @@ the generated images to assess prediction accuracy.
 Results demonstrate AIM's superior performance over MILAN across all
 architectures, with accuracy often matching human experts (Figure 4).
 Layer-specific analyses are detailed in Table A3.\"  
-<br><br>
 
 <hr style="border-top: 1px solid black;">
 
@@ -365,6 +363,9 @@ experimental toolkit.
 ---
 
 <h3 align="center">7. References</h3>
+
+Paper's Github repository: https://github.com/GlebRazgar/AIM
+
 Bau, D., Zhou, B., Khosla, A., Oliva, A., and Torralba, A. Network
 dissection: Quantifying interpretability of deep visual representations.
 In Computer Vision and Pattern Recognition, 2017.
