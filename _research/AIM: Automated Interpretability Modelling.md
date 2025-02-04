@@ -58,11 +58,11 @@ decisive challenge: how to build tools that scale interpretability
 beyond expert analysis while preserving the scientific method.
 <p align="center">
   <div style="overflow: hidden; height: 342px;">
-    <img src="../images/high-level.png" alt="Alt text" width="750" height="422" style="border-radius: 10px; margin-top: -40px;">
+    <img src="../images/high-level.png" alt="Alt text" width="750" height="422" style="border-radius: 10px; margin-top: -60px;">
   </div>
 </p>
 
-<p1 style="text-align: center;">Fig1: High level overview of the AIM system</p1>
+<p1 style="text-align: center;">Fig1: High-level function of AIM, depicting a query followd by </p1>
 
 
 This paper introduces AIM (Automated Interpretability Model), a system
