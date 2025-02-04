@@ -15,7 +15,7 @@ layout: post
 </table>
 </div>
 
-
+---
 
 <h3 align="center">Abstract</h3>
 
@@ -33,7 +33,7 @@ features in models learned image representations. Using trained models
 and ground-truth neurons as our testing ground, AIM matches - and
 often surpasses human experts in decoding neural features.
 </div>  
-  
+<br><br>
 
 <h3 align="center">1. Introduction</h3>
 
@@ -91,11 +91,11 @@ Current limitations require human oversight to address confirmation bias
 and sampling adequacy. Full automation of model interpretation
 necessitates both advanced tooling and improved experimental reasoning
 capabilities.
+<br><br>
 
-<h3 style="text-align: center;">1. Related Work**
-</h3>
+<h3 style="text-align: center;">1. Related Work</h3>
 
-**Interpretability**  
+<h4>Interpretability</h4>
 Interpreting deep features has progressed through several
 methodological advances. Initial investigations of individual neurons
 in deep networks established methods for understanding learned features
@@ -143,9 +143,10 @@ generally restricted to textual interfaces, recent work has demonstrated
 interaction with vision systems through code generation (Anthropic,
 2023; OpenAI, 2023). Large multimodal language models have expanded
 these capabilities further, enabling direct image-based interaction
-with neural networks.
+with neural networks.  
 
 ![image](media/image2.png){width="4.97249in" height="2.47522in"}
+<br><br>
 
 <h3 align="center">3. AIM Framework</h3>
 
