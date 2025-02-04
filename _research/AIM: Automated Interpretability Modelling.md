@@ -58,7 +58,11 @@ decisive challenge: how to build tools that scale interpretability
 beyond expert analysis while preserving the scientific method.
 
 
-<p align="center"><img src="../images/high-level.png" alt="Alt text" width="750" height="422" style="border-radius: 10px;"></p>
+<p align="center">
+  <div style="overflow: hidden; height: 342px;">
+    <img src="../images/high-level.png" alt="Alt text" width="750" height="422" style="border-radius: 10px; margin-top: -40px;">
+  </div>
+</p>
 
 <p1 style="text-align: center;">Fig1: High level overview of the AIM system</p1>
 
