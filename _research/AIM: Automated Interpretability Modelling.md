@@ -3,18 +3,19 @@ title: "Automated Interpretability Modelling"
 date: 2021-10-01
 layout: post
 ---
-**Automated Interpretability Modelling**
+---
+<h1 style="text-align: center;">AIM: Automated Interpretability Modelling</h1>
 
-> **Gleb Razgar** [**Simon
-> Malzard**](https://www.linkedin.com/in/simon-malzard/) **[Piyush
-> Ahuja](https://www.linkedin.com/in/piyush-ahuja-2006041b/) [Nitish
-> Mital](https://www.linkedin.com/in/nitish-mital-phd-89202647/)**
+---
+**Gleb Razgar** 
+**Simon Malzard** 
+**Nitish Mital**
 
 [`gleb.razgar@gmail.com`](mailto:gleb.razgar@gmail.com)
 piyush@turing.ac.uk [`piyush@turing.ac.uk`](mailto:piyush@turing.ac.uk)
 nitish.m@cam.ac.uk
 
-<h1 style="text-align: center;">**Abstract**</h1>
+<h1 style="text-align: center;">### Abstract</h1>
 
 > In this paper we propose Automated Interpretability Modelling (AIM) -
 > a method that uses neural models to automate mechanistic
