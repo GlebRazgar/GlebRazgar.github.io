@@ -57,8 +57,8 @@ behavioural analysis (Huang et al., 2023). Thus, here stands our
 decisive challenge: how to build tools that scale interpretability
 beyond expert analysis while preserving the scientific method.
 <p align="center">
-  <div style="overflow: hidden; height: 342px;">
-    <img src="../images/high-level.png" alt="Alt text" width="750" height="422" style="border-radius: 10px; margin-top: -80px;">
+  <div style="overflow: hidden; height: 342px; position: relative;">
+    <img src="../images/high-level.png" alt="Alt text" width="750" height="422" style="border-radius: 10px; position: absolute; top: 50%; transform: translateY(-50%);">
   </div>
 </p>
 
