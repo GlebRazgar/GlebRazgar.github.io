@@ -345,7 +345,7 @@ categories. Additional experiments validate these findings
 across diverse bias types.
 <br><br>
 
----
+<hr style="border-top: 1px solid black;">
 
 <h3 align="center">6. Conclusion</h3>
 We present AIM, a system that automates interpretability workflows
