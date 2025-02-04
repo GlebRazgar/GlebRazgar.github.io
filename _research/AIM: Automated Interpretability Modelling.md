@@ -35,6 +35,10 @@ and ground-truth neurons as our testing ground, AIM matches - and
 often surpasses human experts in decoding neural features.
 </div>
 
+<h3 align="center" style="font-weight: 600">Introduction</h3>
+<h3 align="center" style="font-weight: 700">Introduction</h3>
+<h3 align="center" style="font-weight: 800">Introduction</h3>
+
 <h3 align="center"><strong>Introduction</strong></h3>
 
 Mechanistic interpretability is in effect unconstrained neuroscience. It
