@@ -58,7 +58,7 @@ decisive challenge: how to build tools that scale interpretability
 beyond expert analysis while preserving the scientific method.
 
 
-<p align="center"><img src="../images/high-level.png" alt="Alt text" width="750" height="275" style="border-radius: 10px;"></p>
+<p align="center"><img src="../images/high-level.png" alt="Alt text" width="750" height="422" style="border-radius: 10px;"></p>
 
 <p1 style="text-align: center;">Fig1: High level overview of the AIM system</p1>
 
@@ -146,7 +146,7 @@ interaction with vision systems through code generation (Anthropic,
 these capabilities further, enabling direct image-based interaction
 with neural networks.  
 
-<p align="center"><img src="../images/low-level.png" alt="Alt text" width="750" height="500" style="border-radius: 10px;"></p>
+<p align="center"><img src="../images/low-level.png" alt="Alt text" width="750" height="370" style="border-radius: 10px;"></p>
 
 <h3 align="center">3. AIM Methodology</h3>
 
