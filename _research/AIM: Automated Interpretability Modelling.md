@@ -93,11 +93,9 @@ necessitates both advanced tooling and improved experimental reasoning
 capabilities.
 <br><br>
 
-<h3 style="text-align: center;">1. Related Work</h3>
+<h3 style="text-align: center;">2. Related Work</h3>
 
-
-
-<h4><u>Interpretability</u></h4>
+<h4 style="margin-bottom: 0"><u>Interpretability</u></h4>
 Interpreting deep features has progressed through several
 methodological advances. Initial investigations of individual neurons
 in deep networks established methods for understanding learned features
@@ -110,7 +108,7 @@ vocabularies (Park et al., 2019; Hendricks et al., 2018) or programmatic
 specifications (Mu & Andreas, 2020).
 <br><br>
 
-<h4><u>Circuit Identification</u></h4>
+<h4 style="margin-bottom: 0"><u>Circuit Identification</u></h4>
 Identifying circuits in neural networks has revealed fundamental
 computational patterns. Early work established methods for
 discovering and validating circuits through techniques like activation
@@ -127,9 +125,8 @@ targeted interventions (Cunningham et al., 2023). However, these methods
 require significant manual effort to design and execute experiments,
 limiting their utility and accessibility to researchers without deep
 expertise in circuit analysis.
-<br><br>
 
-<h4><u>Automated Interpretability with Agents</u></h4>
+<h4 style="margin-bottom: 0"><u>Automated Interpretability with Agents</u></h4>
 Subsequent work on automated interpretability developed methods for
 generating open-ended descriptions of learned features, either curated
 from human labelers (Anthropic, 2023) or generated directly by learned
@@ -148,19 +145,19 @@ interaction with vision systems through code generation (Anthropic,
 2023; OpenAI, 2023). Large multimodal language models have expanded
 these capabilities further, enabling direct image-based interaction
 with neural networks.  
+<br><br>
 
 ![image](media/image2.png){width="4.97249in" height="2.47522in"}
 <br><br>
 
 <h3 align="center">3. AIM Framework</h3>
 
-<h4><u>3. AIM Model</u></h4> 
+<h4 style="margin-bottom: 0"><u>3. AIM Model</u></h4> 
 AIM is an automated interpretability engine that designs and executes
 experimental code programs to analyze neural networks. The system
 combines a multimodal language model backbone with a specialized API for
 interpretability experiments, enabling iterative hypothesis testing and
-analysis.
-<br><br>
+analysis.  
 
 <h4><u>Architecture</u></h4> 
 At its core, AIM uses Gemini (DeepMind, 2023b) as its reasoning engine,
@@ -176,29 +173,27 @@ composition of interpretability experiments (Shaham et al., 2024).
 <br><br>
 
 
-<h4><u>Operation</u></h4> 
+<h4 style="margin-bottom: 0"><u>Operation</u></h4> 
 Given an interpretability query (e.g., analyzing neuron selectivity or
 identifying failure modes), AIM constructs a series of experimental
 programs. Each program tests specific hypotheses by manipulating inputs,
 measuring activations, and analyzing results. The system iteratively
 refines its understanding based on experiments until it can address the
 original query.
-<br><br>
 
-<h4><u>Implementation</u></h4> 
+<h4 style="margin-bottom: 0"><u>Implementation</u></h4> 
 AIM uses MAIA's implementation to generate executable Python code
 (Shaham et al., 2024) that leverages standard scientific computing
 libraries, including PyTorch for neural network operations. The systems
 design builds on recent advances in tool-use by language models (Surís
 et al., 2023; Gupta & Kembhavi, 2023), while specifically addressing the
-requirements of iterative neural network analysis.
+requirements of iterative neural network analysis.  
 
 ![image](media/image3.png){width="6.26389in" height="8.86389in"}
 
-**Figure 3:** **Some description!**
-<br><br>
+**Figure 3:** **Some description!**  
 
-<h4><u>3.1 System</u></h4> 
+<h4 style="margin-bottom: 0"><u>3.1 System</u></h4> 
 The System class in AIM provides programmatic access to internal
 components of the target neural network. This instrumentation enables
 fine-grained experimental control over individual model elements. For
@@ -215,9 +210,8 @@ regions from the SAE (Figure 2). Unlike existing approaches to neuron
 interpretation that require task-specific model training (Hernandez et
 al., 2022), AIMs System class enables direct experimentation on
 arbitrary vision systems using an SAE.  
-<br><br>
 
-<h4><u>3.2 Tools</u></h4> 
+<h4 style="margin-bottom: 0"><u>3.2 Tools</u></h4> 
 The Tools provides a modular framework for hypothesis testing through
 programmatic experiments. Building on established interpretability
 methods and kits (Shaham et al., 2024), these tools incorporate
@@ -233,19 +227,17 @@ to generate synthetic images in a game environment, allowing AIM to test
 neuron responses to specific visual concepts. The modular architecture
 facilitates straightforward incorporation of new interpretability
 methods as they emerge. For the experiments in this paper, we
-implement the following set of tools:
-<br><br>
+implement the following set of tools:  
 
-<h4><u>3.2 Exemplar Generation</u></h4> 
+<h4 style="margin-bottom: 0"><u>3.2 Exemplar Generation</u></h4> 
 The system identifies prototypical circuit behavior by analyzing
 activation patterns across large image datasets (Bau et al., 2017; Zhou
 et al., 2017; 2020). This functionality is implemented through ImageNet
 validation set analysis (Deng et al., 2009), with AIM typically
 beginning experimentation by retrieving the top-5 maximally activating
-images for the target system (Figure 2, Section 4.3).
-<br><br>
+images for the target system (Figure 2, Section 4.3).  
 
-<h4><u>Image Generation and Editing Tools</u></h4> 
+<h4 style="margin-bottom: 0"><u>Image Generation and Editing Tools</u></h4> 
 AIM employs Unity Game engine with Moose, as well as Stable Diffusion
 v1.5 (Rombach et al., 2022) for image synthesis via text2image(prompt).
 This enables both testing system sensitivity to specific visual concepts
@@ -253,17 +245,16 @@ and evaluating concept consistency across contexts (Figure 2). The
 edit_image(image, edit_instructions) function, building on
 InstantID/IPix (Brooks et al., 2023), supports targeted image
 modifications for testing specific hypotheses, such as transforming
-object attributes while preserving background context.
-<br><br>
+object attributes while preserving background context.  
 
-<h4><u>Image Description and Summarization Tools</u></h4> 
+<h4 style="margin-bottom: 0"><u>Image Description and Summarization Tools</u></h4> 
 For experimental result analysis, AIM leverages Gemini to
 describe(image_list) individual images or summarize(image_list) shared
 characteristics across image sets. This multi-agent framework enables
 iterative refinement of visual hypotheses based on experimental
-outcomes.
+outcomes.  
 
-<h4><u>Experiment Logs</u></h4> 
+<h4 style="margin-bottom: 0"><u>Experiment Logs</u></h4> 
 The log_experiment tool records experimental results (e.g., activations,
 modifications) and maintains an accessible history for subsequent
 analysis. AIM uses this log to track hypothesis evolution, neural
@@ -288,9 +279,8 @@ series of increasingly complex experiments, focusing initially on neuron
 description---a fundamental interpretability task with applications in
 model auditing and editing (Gandelsman et al., 2024; Yang et al., 2023;
 Hernandez et al., 2022).
-<br><br>
 
-<h4><u>4.1 Cross-Architecture Evaluation</u></h4> 
+<h4 style="margin-bottom: 0"><u>4.1 Cross-Architecture Evaluation</u></h4> 
 We evaluate AIM on neurons from three architectures: ResNet-152 for
 supervised classification (He et al., 2016), DINO for unsupervised
 representation learning (Caron et al., 2021; Grill et al., 2020; Chen &
@@ -327,7 +317,7 @@ downstream classification task. In both cases AIM uses the API as
 described in Section 3.
 <br><br>
 
-<h4><u>5.1 Feature Decontamination</u></h4>  
+<h4 style="margin-bottom: 0"><u>5.1 Feature Decontamination</u></h4>  
 Polysemantic features present significant challenges when deploying
 models under distribution shift (Storkey et al., 2009; Beery et al.,
 2018; Bissoto et al., 2020; Xiao et al., 2020; Singla et al., 2021). We
@@ -344,10 +334,9 @@ achieving performance comparable to balanced-data approaches despite
 using only unbalanced data. Comparative experiments with ℓ1
 regularization on both balanced and unbalanced datasets validate that
 AIMs performance stems from meaningful feature selection rather than
-mere sparsity (detailed in Appendix F2).
-<br><br>
+mere sparsity (detailed in Appendix F2).  
 
-<h4><u>5.2 Capturing Prejudice</u></h4>  
+<h4 style="margin-bottom: 0"><u>5.2 Capturing Prejudice</u></h4>  
 We demonstrate AIMs capability to automatically surface model-level
 biases in a supervised ImageNet CNN (ResNet-152) classifier. Given a
 target class, AIM instruments the system class to analyze output
