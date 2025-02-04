@@ -189,7 +189,8 @@ requirements of iterative neural network analysis.
 
 <p align="center"><img src="../images/flow.png" alt="Alt text" width="750" height="1010" style="border-radius: 10px;"></p>
 
-<p><b>Figure 3:</b> Low-level overview of AIM. At each iteration input images are fed through a neural network, where a Sparse Auto-Encoder extracts and maps circuit activations of requested layers. The sparse activation maps are analyzed by a multi-modal agent which formulates hypotheses and generates experiments to itteratively validate circuit behavior.</p>
+<div style="max-width: 600px; margin: auto; text-align: justify;">
+<p><b>Figure 3:</b> Practical example of the AIM flow. Upon receiving an input query, the framework initializes by passing stock dataset images through the network. Using the sparse activation maps, the vision-language model agent constructs an initial hypothesis (e.g., circuits exhibiting person-selective behavior). The agent then generates experimental code to synthesize targeted test images (e.g., images of people). By passing these experiments through the network in subsequent iterations, the agent observes changes in circuit activation maps to validate or refute its hypothesis. This programmatic iteration continues until the agent achieves sufficient confidence to conclude the experiment and formulate its findings.</p></div>
 
 <h4 style="margin-bottom: 0"><u>3.2 System</u></h4> 
 The System class in AIM provides programmatic access to internal
