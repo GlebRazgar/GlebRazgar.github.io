@@ -14,7 +14,7 @@ layout: post
 piyush@turing.ac.uk [`piyush@turing.ac.uk`](mailto:piyush@turing.ac.uk)
 nitish.m@cam.ac.uk
 
-**Abstract**
+<h1 style="text-align: center;">**Abstract**</h1>
 
 > In this paper we propose Automated Interpretability Modelling (AIM) -
 > a method that uses neural models to automate mechanistic
