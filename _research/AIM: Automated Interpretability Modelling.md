@@ -23,7 +23,7 @@ layout: post
 In this paper we propose Automated Interpretability Modelling (AIM) -
 a method that uses neural models to automate mechanistic
 interpretability experiments like circuit discovery and
-explainability. At its core, AMI utilises a pre-trained
+explainability. At its core, AIM utilises a pre-trained
 vision-language model with the capacity to extract
 sparse representations, compose and modify inputs, assess circuit
 activations, and summarize experimental results - all to support
@@ -154,7 +154,7 @@ with neural networks.
 <p align="center"><img src="../images/low-level.png" alt="Alt text" width="750" height="373" style="border-radius: 10px;"></p>
 
 <div style="max-width: 600px; margin: auto; text-align: justify;">
-<p><b>Figure 2:</b> Low-level overview of AIM. At each iteration input images are fed through a neural network, where a Sparse Auto-Encoder extracts and maps circuit activations of requested layers. The sparse activation maps are analyzed by a multi-modal agent which formulates hypotheses and generates experiments to itteratively validate circuit behavior.</p></div>
+<p><b>Figure 2:</b> Low-level overview of AIM. At each iteration input images are fed through a neural network, where a Sparse Auto-Encoder extracts and maps circuit activations of requested layers. The sparse activation maps are analyzed by a vision-language model agent which formulates hypotheses about circuit behaviour. By writing executable python experiments, the agent can utilize different tools in its toolkit (e.g: generate images, edit images, check logs, etc.) to iteratively validate or refute these hypotheses.</p></div>
 
 <hr style="border-top: 1px solid black;">
 
@@ -190,7 +190,7 @@ requirements of iterative neural network analysis.
 <p align="center"><img src="../images/flow.png" alt="Alt text" width="750" height="1010" style="border-radius: 10px;"></p>
 
 <div style="max-width: 600px; margin: auto; text-align: justify;">
-<p><b>Figure 3:</b> Practical example of the AIM flow. Upon receiving an input query, the framework initializes by passing stock dataset images through the network. Using the sparse activation maps, the vision-language model agent constructs an initial hypothesis (e.g., circuits exhibiting person-selective behavior). The agent then generates experimental code to synthesize targeted test images (e.g., images of people). By passing these experiments through the network in subsequent iterations, the agent observes changes in circuit activation maps to validate or refute its hypothesis. This programmatic iteration continues until the agent achieves sufficient confidence to conclude the experiment and formulate its findings.</p></div>
+<p><b>Figure 3:</b> Practical example of the AIM flow. Upon receiving an input query, the framework initializes by passing stock dataset images through the network. Based on the sparse activation maps and the initial hypothesis (e.g: Circuit X encodes people) the multi-modal agent generates a set of images to confirm or deny it. In the following iterations the agent acts to increase the circuit activations by either modifying or generating new images based on the results. Through varied placement of the sparse auto-encoder, the agent observes different neuronal activations and forms corresponding hypotheses. This programmatic iteration continues until the agent accumulates sufficient confidence to conclude the experiment and formulate its findings.</p></div>
 
 <h4 style="margin-bottom: 0"><u>3.2 System</u></h4> 
 The System class in AIM provides programmatic access to internal
