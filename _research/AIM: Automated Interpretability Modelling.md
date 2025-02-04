@@ -95,7 +95,7 @@ capabilities.
 
 <h3 style="text-align: center;">1. Related Work</h3>
 
-<h4>Interpretability</h4>
+<h4 style="font-weight: 500;">Interpretability</h4>
 Interpreting deep features has progressed through several
 methodological advances. Initial investigations of individual neurons
 in deep networks established methods for understanding learned features
