@@ -148,7 +148,7 @@ with neural networks.
 <br><br>
 
 
-<p align="center"><img src="../images/low-level.png" alt="Alt text" width="750" height="360" style="border-radius: 10px;"></p>
+<p align="center"><img src="../images/low-level.png" alt="Alt text" width="750" height="370" style="border-radius: 10px;"></p>
 
 <h3 align="center">3. AIM Methodology</h3>
 
@@ -179,7 +179,7 @@ design builds on recent advances in tool-use by language models (Surís
 et al., 2023; Gupta & Kembhavi, 2023), while specifically addressing the
 requirements of iterative neural network analysis.  
 
-<p align="center"><img src="../images/flow.png" alt="Alt text" width="750" height="10" style="border-radius: 10px;"></p>
+<p align="center"><img src="../images/flow.png" alt="Alt text" width="750" height="1080" style="border-radius: 10px;"></p>
 
 **Figure 3:** **Some description!**  
 
