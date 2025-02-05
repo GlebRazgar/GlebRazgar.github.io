@@ -268,36 +268,36 @@ architecture.
 2\) Performance on synthetic neurons and circuits with known ground-truth selectivity.  
 3\) Comparative analysis against the MILAN baseline (Hernandez et al., 2022) and human experts.  
 
-<div class="table-container" style="overflow-x: auto;">
-  <table cellspacing="0" cellpadding="6" border="1" style="border: 1px solid black; border-collapse: collapse;">
-    <caption style="caption-side: top; padding: 10px;"><b>Table 1.</b> 2AFC test. Circuit & Neuron descriptions vs. ground-truth labels</caption>
-    <thead>
-      <tr>
-        <th style="border: 1px solid black;">AIM vs. MILAN</th>
-        <th style="border: 1px solid black;">AIM vs. MAIA</th>
-        <th style="border: 1px solid black;">AIM vs. Human</th>
-        <th style="border: 1px solid black;">MAIA vs. Human</th>
-        <th style="border: 1px solid black;">Human vs. MILAN</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td style="border: 1px solid black;">Neurons</td>
-        <td style="border: 1px solid black;">Neurons</td>
-        <td style="border: 1px solid black;">Circuits</td>
-        <td style="border: 1px solid black;">Neurons</td>
-        <td style="border: 1px solid black;">Neurons</td>
-      </tr>
-      <tr>
-        <td style="border: 1px solid black;">0.78 ± 4e⁻⁴</td>
-        <td style="border: 1px solid black;">0.68 ± 1e⁻³</td>
-        <td style="border: 1px solid black;">0.61 ± 1e⁻³</td>
-        <td style="border: 1px solid black;">0.53 ± 1e⁻³</td>
-        <td style="border: 1px solid black;">0.83 ± 5e⁻⁴</td>
-      </tr>
-    </tbody>
-  </table>
+
+<div align="center">
+<table>
+  <tr>
+    <td colspan="5" style="text-align: center"><b>Table 1:</b> 2AFC test. Circuit & Neuron descriptions vs. ground-truth labels</td>
+  </tr>
+  <tr>
+    <th>AIM vs. MILAN</th>
+    <th>AIM vs. MAIA</th>
+    <th>AIM vs. Human</th>
+    <th>MAIA vs. Human</th>
+    <th>Human vs. MILAN</th>
+  </tr>
+  <tr>
+    <td>Neurons</td>
+    <td>Neurons</td>
+    <td>Circuits</td>
+    <td>Neurons</td>
+    <td>Neurons</td>
+  </tr>
+  <tr>
+    <td>0.78 ± 4e⁻⁴</td>
+    <td>0.68 ± 1e⁻³</td>
+    <td>0.61 ± 1e⁻³</td>
+    <td>0.53 ± 1e⁻³</td>
+    <td>0.83 ± 5e⁻⁴</td>
+  </tr>
+</table>
 </div>
+<br>
 
 The framework enables interpretability tasks through natural language
 specification in the VLM prompt. We evaluate this capability through a
@@ -365,77 +365,75 @@ regularization on both balanced and unbalanced datasets validate that
 AIM's performance stems from meaningful feature selection as well as the SAE's sparsity.
 <br><br>
 
-<div class="table-container" style="overflow-x: auto;">
-  <table cellspacing="0" cellpadding="6" border="1" style="border: 1px solid black; border-collapse: collapse;">
-    <caption style="caption-side: top; padding: 10px;"><b>Table 2.</b> Final layer spurious feature removal results.</caption>
-    <thead>
-      <tr>
-        <th style="border: 1px solid black;">Subset</th>
-        <th style="border: 1px solid black;">Selection Method</th>
-        <th style="border: 1px solid black;"># Units</th>
-        <th style="border: 1px solid black;">Balanced</th>
-        <th style="border: 1px solid black;">Test Acc.</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td style="border: 1px solid black;">All</td>
-        <td style="border: 1px solid black;">Original Model</td>
-        <td style="border: 1px solid black;">512</td>
-        <td style="border: 1px solid black;">✗</td>
-        <td style="border: 1px solid black;">0.731</td>
-      </tr>
-      <tr>
-        <td style="border: 1px solid black;">ℓ₁ Top 50</td>
-        <td style="border: 1px solid black;">All</td>
-        <td style="border: 1px solid black;">50</td>
-        <td style="border: 1px solid black;">✗</td>
-        <td style="border: 1px solid black;">0.779</td>
-      </tr>
-      <tr>
-        <td style="border: 1px solid black;"></td>
-        <td style="border: 1px solid black;">Random</td>
-        <td style="border: 1px solid black;">22</td>
-        <td style="border: 1px solid black;">✗</td>
-        <td style="border: 1px solid black;">0.705 ± 0.05</td>
-      </tr>
-      <tr>
-        <td style="border: 1px solid black;"></td>
-        <td style="border: 1px solid black;">ℓ₁ Top 22</td>
-        <td style="border: 1px solid black;">22</td>
-        <td style="border: 1px solid black;">✗</td>
-        <td style="border: 1px solid black;">0.757</td>
-      </tr>
-      <tr>
-        <td style="border: 1px solid black;"></td>
-        <td style="border: 1px solid black;"><b>AIM</b></td>
-        <td style="border: 1px solid black;">22</td>
-        <td style="border: 1px solid black;">✗</td>
-        <td style="border: 1px solid black;"><b>0.852</b></td>
-      </tr>
-      <tr>
-        <td style="border: 1px solid black;"></td>
-        <td style="border: 1px solid black;">MAIA</td>
-        <td style="border: 1px solid black;">22</td>
-        <td style="border: 1px solid black;">✗</td>
-        <td style="border: 1px solid black;">0.837</td>
-      </tr>
-      <tr>
-        <td style="border: 1px solid black;">All</td>
-        <td style="border: 1px solid black;">ℓ₁ Hyper. Tuning</td>
-        <td style="border: 1px solid black;">147</td>
-        <td style="border: 1px solid black;">✓</td>
-        <td style="border: 1px solid black;">0.830</td>
-      </tr>
-      <tr>
-        <td style="border: 1px solid black;"></td>
-        <td style="border: 1px solid black;">ℓ₁ Top 22</td>
-        <td style="border: 1px solid black;">22</td>
-        <td style="border: 1px solid black;">✓</td>
-        <td style="border: 1px solid black;"><b>0.865</b></td>
-      </tr>
-    </tbody>
-  </table>
+<div align="center">
+<table>
+  <tr>
+    <td colspan="5" align="center"><b>Table 2.</b> Final layer spurious feature removal results.</td>
+  </tr>
+  <tr>
+    <th>Subset</th>
+    <th>Selection Method</th>
+    <th># Units</th>
+    <th>Balanced</th>
+    <th>Test Acc.</th>
+  </tr>
+  <tr>
+    <td>All</td>
+    <td>Original Model</td>
+    <td>512</td>
+    <td>✗</td>
+    <td>0.731</td>
+  </tr>
+  <tr>
+    <td>ℓ₁ Top 50</td>
+    <td>All</td>
+    <td>50</td>
+    <td>✗</td>
+    <td>0.779</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Random</td>
+    <td>22</td>
+    <td>✗</td>
+    <td>0.705 ± 0.05</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>ℓ₁ Top 22</td>
+    <td>22</td>
+    <td>✗</td>
+    <td>0.757</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td><b>AIM</b></td>
+    <td>22</td>
+    <td>✗</td>
+    <td><b>0.852</b></td>
+  </tr>
+    <tr>
+    <td></td>
+    <td><b>MAIA</b></td>
+    <td>22</td>
+    <td>✗</td>
+    <td>0.837</td>
+  </tr>
+  <tr>
+    <td>All</td>
+    <td>ℓ₁ Hyper. Tuning</td>
+    <td>147</td>
+    <td>✓</td>
+    <td>0.830</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>ℓ₁ Top 22</td>
+    <td>22</td>
+    <td>✓</td>
+    <td><b>0.865</b></td>
+  </tr>
+</table>
 </div>
 
 <div style="max-width: 600px; margin: auto; text-align: justify;">
