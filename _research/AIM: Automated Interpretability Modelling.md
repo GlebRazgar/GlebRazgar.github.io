@@ -268,36 +268,36 @@ architecture.
 2\) Performance on synthetic neurons and circuits with known ground-truth selectivity.  
 3\) Comparative analysis against the MILAN baseline (Hernandez et al., 2022) and human experts.  
 
-
-<div align="center">
-<table>
-  <tr>
-    <td colspan="5" style="text-align: center"><b>Table 1:</b> 2AFC test. Circuit & Neuron descriptions vs. ground-truth labels</td>
-  </tr>
-  <tr>
-    <th>AIM vs. MILAN</th>
-    <th>AIM vs. MAIA</th>
-    <th>AIM vs. Human</th>
-    <th>MAIA vs. Human</th>
-    <th>Human vs. MILAN</th>
-  </tr>
-  <tr>
-    <td>Neurons</td>
-    <td>Neurons</td>
-    <td>Circuits</td>
-    <td>Neurons</td>
-    <td>Neurons</td>
-  </tr>
-  <tr>
-    <td>0.78 ± 4e⁻⁴</td>
-    <td>0.68 ± 1e⁻³</td>
-    <td>0.61 ± 1e⁻³</td>
-    <td>0.53 ± 1e⁻³</td>
-    <td>0.83 ± 5e⁻⁴</td>
-  </tr>
-</table>
+<div class="table-container" style="overflow-x: auto;">
+  <table cellspacing="0" cellpadding="6" border="1" style="border: 1px solid black; border-collapse: collapse;">
+    <caption style="caption-side: top; padding: 10px;"><b>Table 1.</b> 2AFC test. Circuit & Neuron descriptions vs. ground-truth labels</caption>
+    <thead>
+      <tr>
+        <th style="border: 1px solid black;">AIM vs. MILAN</th>
+        <th style="border: 1px solid black;">AIM vs. MAIA</th>
+        <th style="border: 1px solid black;">AIM vs. Human</th>
+        <th style="border: 1px solid black;">MAIA vs. Human</th>
+        <th style="border: 1px solid black;">Human vs. MILAN</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="border: 1px solid black;">Neurons</td>
+        <td style="border: 1px solid black;">Neurons</td>
+        <td style="border: 1px solid black;">Circuits</td>
+        <td style="border: 1px solid black;">Neurons</td>
+        <td style="border: 1px solid black;">Neurons</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid black;">0.78 ± 4e⁻⁴</td>
+        <td style="border: 1px solid black;">0.68 ± 1e⁻³</td>
+        <td style="border: 1px solid black;">0.61 ± 1e⁻³</td>
+        <td style="border: 1px solid black;">0.53 ± 1e⁻³</td>
+        <td style="border: 1px solid black;">0.83 ± 5e⁻⁴</td>
+      </tr>
+    </tbody>
+  </table>
 </div>
-<br>
 
 The framework enables interpretability tasks through natural language
 specification in the VLM prompt. We evaluate this capability through a
@@ -415,7 +415,7 @@ AIM's performance stems from meaningful feature selection as well as the SAE's s
       </tr>
       <tr>
         <td style="border: 1px solid black;"></td>
-        <td style="border: 1px solid black;"><b>MAIA</b></td>
+        <td style="border: 1px solid black;">MAIA</td>
         <td style="border: 1px solid black;">22</td>
         <td style="border: 1px solid black;">✗</td>
         <td style="border: 1px solid black;">0.837</td>
