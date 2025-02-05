@@ -236,13 +236,12 @@ images for the target system (Figure 2, Section 4.3).
 
 <h4 style="margin-bottom: 0">Image Generation and Editing Tools:</h4> 
 AIM employs Unity Game engine with Moose, as well as Stable Diffusion
-v1.5 (Rombach et al., 2022) for image synthesis via text2image(prompt).
-This enables both testing system sensitivity to specific visual concepts
-and evaluating concept consistency across contexts (Figure 2). The
-edit_image(image, edit_instructions) function, building on
+v1.5 (Rombach et al., 2022) for image synthesis via text2model(prompt) or text2image(prompt).
+The edit_image(image, edit_instructions) function, building on
 InstantID/IPix (Brooks et al., 2023), supports targeted image
 modifications for testing specific hypotheses, such as transforming
-object attributes while preserving background context.  
+object attributes while preserving background context.
+This enables testing circuit sensitivity to specific visual concepts (Figure 2).
 
 <h4 style="margin-bottom: 0">Image Description and Summarization Tools:</h4> 
 For experimental result analysis, AIM leverages Gemini to
@@ -252,7 +251,7 @@ iterative refinement of visual hypotheses based on experimental
 outcomes.  
 
 <h4 style="margin-bottom: 0">Experiment Logs:</h4> 
-The log_experiment tool records experimental results (e.g., activations,
+The MAIA's log_experiment tool records experimental results (e.g., activations,
 modifications) and maintains an accessible history for subsequent
 analysis. AIM uses this log to track hypothesis evolution, neural
 circuits and evidence accumulation throughout the
@@ -266,8 +265,8 @@ AIM is evaluated across three dimensions:
 
 1\) Behavior prediction accuracy for neurons and circuits in trained
 architecture.  
-2\) Performance on synthetic neurons with known ground-truth selectivity.  
-3\) Comparative analysis against the MILAN baseline (Hernandez et al., 2022) and human experts using the AIM.  
+2\) Performance on synthetic neurons and circuits with known ground-truth selectivity.  
+3\) Comparative analysis against the MILAN baseline (Hernandez et al., 2022) and human experts.  
 
 The framework enables interpretability tasks through natural language
 specification in the VLM prompt. We evaluate this capability through a
@@ -276,50 +275,78 @@ description - a fundamental interpretability task with applications in
 model auditing and editing (Gandelsman et al., 2024; Yang et al., 2023;
 Hernandez et al., 2022).
 
+<p align="center"><img src="../images/stats.png" alt="Alt text" width="750" height="327" style="border-radius: 10px;"></p>
+
 <h4 style="margin-bottom: 0"><u>4.1 Architecture Evaluation</u></h4> 
-We evaluate AIM on neurons from three architectures: ResNet-152 for
+We evaluate AIM on circuits from three architectures: ResNet-152 for
 supervised classification (He et al., 2016), DINO for unsupervised
 representation learning (Caron et al., 2021; Grill et al., 2020; Chen &
 He, 2021), and CLIP's ResNet-50 visual encoder for image-text
 alignment (Radford et al., 2021). From each architecture, we sample 100
 units across representative layers (ResNet-152 conv.1, res.1-4; DINO
 MLP 1-11; CLIP res.1-4), with example experiments and labels shown in
-Figure 2.  
+Figure 3.
 
 Our evaluation framework assesses description accuracy through
 behavioral prediction on unseen test images, building on contrastive
 evaluation approaches (Gardner et al., 2020; Kaushik et al., 2020). We
 compare three description methods: AIM's interactive analysis, MILAN's
 static dataset exemplar labeling (Hernandez et al., 2022), and human
-experts using the AIM API on a 25% subset (Appendix C1). For each
-description, GPT-4 generates seven positive and seven neutral exemplar
-prompts, which are then paired with descriptions by a separate GPT-4
+experts using the MAIA's API on a 25% subset. For each
+description, Gemini generates seven positive and seven neutral exemplar
+prompts, which are then paired with descriptions by a separate Gemini
 instance based on predicted relevance. We measure neuron activations on
-the generated images to assess prediction accuracy.  
+the generated images to assess prediction accuracy.
 
-Results demonstrate AIM's superior performance over MILAN across all
-architectures, with accuracy often matching human experts (Figure 4).
-Layer-specific analyses are detailed in Table A3.\"  
+<br><br>
+<div align="center">
+<table>
+  <tr>
+    <td colspan="5" style="text-align: center"><b>Table 1:</b> 2AFC test. Circuit & Neuron descriptions vs. ground-truth labels</td>
+  </tr>
+  <tr>
+    <th>AIM vs. MILAN</th>
+    <th>AIM vs. MAIA</th>
+    <th>AIM vs. Human</th>
+    <th>MAIA vs. Human</th>
+    <th>Human vs. MILAN</th>
+  </tr>
+  <tr>
+    <td>Neurons</td>
+    <td>Neurons</td>
+    <td>Circuits</td>
+    <td>Neurons</td>
+    <td>Neurons</td>
+  </tr>
+  <tr>
+    <td>0.78 ± 4e⁻⁴</td>
+    <td>0.68 ± 1e⁻³</td>
+    <td>0.61 ± 1e⁻³</td>
+    <td>0.53 ± 1e⁻³</td>
+    <td>0.83 ± 5e⁻⁴</td>
+  </tr>
+</table>
+</div>
 
 <hr style="border-top: 1px solid black;">
 
 <h3 align="center">5. Applications</h3>
-AIM is a flexible system that automates model understanding tasks at
+AIM automates model understanding tasks at
 different levels of granularity: from labeling individual features to
-diagnosing model-level failure modes. To demonstrate the utility of AIM
+diagnosing model-level failure modes. Akin to MAIA, to demonstrate the utility of AIM
 for producing actionable insights for human users (Vaughan & Wallach,
 2020), we conduct experiments that apply AIM to two model-level tasks:
 (i) spurious feature removal and (ii) bias identification in a
 downstream classification task. In both cases AIM uses the API as
-described in Section 3.  
+described in Section 3.  <br>
 
 <h4 style="margin-bottom: 0"><u>5.1 Feature Decontamination</u></h4>  
 Polysemantic features present significant challenges when deploying
 models under distribution shift (Storkey et al., 2009; Beery et al.,
 2018; Bissoto et al., 2020; Xiao et al., 2020; Singla et al., 2021). We
 evaluate AIM's ability to identify and remove such features in a
-classification network where dog breeds are correlated with
-backgrounds in training but decorrelated in testing (Figure 8). Unlike
+classification ResNet-152 where dog breeds are correlated with
+backgrounds in training but decorrelated in testing. Unlike
 methods requiring balanced data (Kirichenko et al., 2023), AIM
 identifies robust features using only unbalanced validation
 set examples. From 50 initially selected informative neurons (via ℓ1
@@ -329,8 +356,83 @@ significantly improves accuracy under distribution shift (Table 2),
 achieving performance comparable to balanced-data approaches despite
 using only unbalanced data. Comparative experiments with ℓ1
 regularization on both balanced and unbalanced datasets validate that
-AIM's performance stems from meaningful feature selection rather than
-mere sparsity (detailed in Appendix F2).    
+AIM's performance stems from meaningful feature selection as well as the SAE's sparsity.
+<br><br>
+
+<div align="center">
+<table>
+  <tr>
+    <td colspan="5" align="center"><b>Table 2.</b> Final layer spurious feature removal results.</td>
+  </tr>
+  <tr>
+    <th>Subset</th>
+    <th>Selection Method</th>
+    <th># Units</th>
+    <th>Balanced</th>
+    <th>Test Acc.</th>
+  </tr>
+  <tr>
+    <td>All</td>
+    <td>Original Model</td>
+    <td>512</td>
+    <td>✗</td>
+    <td>0.731</td>
+  </tr>
+  <tr>
+    <td>ℓ₁ Top 50</td>
+    <td>All</td>
+    <td>50</td>
+    <td>✗</td>
+    <td>0.779</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Random</td>
+    <td>22</td>
+    <td>✗</td>
+    <td>0.705 ± 0.05</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>ℓ₁ Top 22</td>
+    <td>22</td>
+    <td>✗</td>
+    <td>0.757</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td><b>AIM</b></td>
+    <td>22</td>
+    <td>✗</td>
+    <td><b>0.852</b></td>
+  </tr>
+    <tr>
+    <td></td>
+    <td><b>MAIA</b></td>
+    <td>22</td>
+    <td>✗</td>
+    <td>0.837</td>
+  </tr>
+  <tr>
+    <td>All</td>
+    <td>ℓ₁ Hyper. Tuning</td>
+    <td>147</td>
+    <td>✓</td>
+    <td>0.830</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>ℓ₁ Top 22</td>
+    <td>22</td>
+    <td>✓</td>
+    <td><b>0.865</b></td>
+  </tr>
+</table>
+</div>
+
+<div style="max-width: 600px; margin: auto; text-align: justify;">
+<p><b>Table2</b>: Results from testing AIM on picking stable neurons in the un-stable dataset against ℓ1 regularization on a stable dataset.</p></div>
+
 
 <h4 style="margin-bottom: 0"><u>5.2 Capturing Prejudice</u></h4>  
 We demonstrate AIM's capability to automatically surface model-level
@@ -338,7 +440,7 @@ biases in a supervised ImageNet CNN (ResNet-152) classifier. Given a
 target class, AIM instruments the system class to analyze output
 probabilities and synthesizes images to identify ranking biases.
 The system generates class-label pairs with unexpectedly low
-probabilities and clear reference sets (see Appendix G). In a simple
+probabilities and clear reference sets. In a simple
 experiment targeting ImageNet classes, AIM's synthetic data generation
 reveals regions of poor model performance, surfacing broad failure
 categories. Additional experiments validate these findings
