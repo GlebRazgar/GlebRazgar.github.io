@@ -288,8 +288,8 @@ architecture.
       <tr>
         <td style="border: 1px solid black;">0.78 ± 4e⁻⁴</td>
         <td style="border: 1px solid black;">0.68 ± 1e⁻³</td>
-        <td style="border: 1px solid black;">0.61 ± 1e⁻³</td>
-        <td style="border: 1px solid black;">0.53 ± 1e⁻³</td>
+        <td style="border: 1px solid black;">0.52 ± 1e⁻³</td>
+        <td style="border: 1px solid black;">0.56 ± 1e⁻³</td>
         <td style="border: 1px solid black;">0.83 ± 5e⁻⁴</td>
       </tr>
     </tbody>
@@ -305,7 +305,7 @@ Hernandez et al., 2022).
 
 <p align="center"><img src="../images/stats1.png" alt="Alt text" width="750" height="327" style="border-radius: 10px;"></p>
 <div style="max-width: 600px; margin: auto; text-align: justify;">
-<p><b>Figure 4:</b> Activation Analysis. AIM's neuron descriptions achieve higher average activation scores than MILAN, reaching performance levels similar to human annotations across both synthetic and real circuits. </p></div></p></div><br>
+<p><b>Figure 4:</b> Activation Analysis. AIM's neuron descriptions achieve higher average activation scores than MILAN, reaching performance levels similar to human annotations across both synthetic and real circuits. </p></div><br>
 
 <h4 style="margin-bottom: 0"><u>4.1 Architecture Evaluation</u></h4> 
 We evaluate AIM on circuits from three architectures: ResNet-152 for
