@@ -44,17 +44,16 @@ interpretability efforts, and for two, there is a scarcity of
 interpretability researchers. Interpreting a neural network is a
 multi-faceted enterprise. When auditing circuits we might need to detect
 demographic biases, surface systematic errors, or identify architectural
-improvements. These audits demand intensive researcher experience-from
-hypothesis formation to conducting experiments and result
-analysis (Nushi et al., 2018; Zhang et al., 2018) - creating weighty
+improvements. These audits demand intensive researcher experience, which creates weighty
 barriers for people outside of the field. Recent work on automated
-interpretability attempted to alleviate this by allowing the models to
-analyse themselves through synthesizing description of their learned
+interpretability attempted to alleviate this by allowing models to
+analyse themselves through synthesizing description of their single-neuron
 representations (Shaham et al., 2024). But these approaches remain
-confined to single-neuron interpretability which limits the scope of
+narowly interpretable which limits the scope of
 behavioural analysis (Huang et al., 2023). Thus, here stands our
 decisive challenge: how to build tools that scale interpretability
-beyond expert analysis while preserving the scientific method.
+to higher units of analysis while expanding its accessibility beyond specialist researchers.
+
 <p align="center">
   <div style="overflow: hidden; height: 300px; position: relative;">
     <img src="../images/high-level.png" alt="Alt text" width="750" height="422" style="border-radius: 10px; position: absolute; top: 50%; transform: translateY(-50%);">
