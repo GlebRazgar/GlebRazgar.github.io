@@ -324,8 +324,8 @@ Our evaluation framework assesses description accuracy through
 behavioral prediction on unseen test images, building on contrastive
 evaluation approaches (Gardner et al., 2020; Kaushik et al., 2020). We
 compare three description methods: AIM's interactive analysis, MILAN's
-static dataset exemplar labeling (Hernandez et al., 2022), and human
-experts using the MAIA's API on a 25% subset. For each
+static dataset exemplar labeling (Hernandez et al., 2022), MAIA's interactive analysis (Shaham et al., 2024) and human
+experts using the API on a 25% subset. For each
 description, Gemini generates seven positive and seven neutral exemplar
 prompts, which are then paired with descriptions by a separate Gemini
 instance based on predicted relevance. We measure neuron activations on
@@ -348,8 +348,7 @@ downstream classification task. In both cases AIM uses the API as
 described in Section 3.  <br>
 
 <h4 style="margin-bottom: 0"><u>5.1 Feature Decontamination</u></h4>  
-Polysemantic features present significant challenges when deploying
-models under distribution shift (Storkey et al., 2009; Beery et al.,
+As unintelligible polysemantic features disrupt models under distribution shift (Storkey et al., 2009; Beery et al.,
 2018; Bissoto et al., 2020; Xiao et al., 2020; Singla et al., 2021). We
 evaluate AIM's ability to identify and remove such features in a
 classification ResNet-152 where dog breeds are correlated with
@@ -438,7 +437,7 @@ AIM's performance stems from meaningful feature selection as well as the SAE's s
 </div>
 
 <div style="max-width: 600px; margin: auto; text-align: justify;">
-<p><b>Table2</b>: Results from testing AIM on picking stable neurons in the un-stable dataset against ℓ1 regularization on a stable dataset.</p></div>
+<p><b>Table2</b>: Results from testing AIM on picking stable circuits in the un-stable dataset against ℓ1 regularization on a stable dataset.</p></div>
 
 
 <h4 style="margin-bottom: 0"><u>5.2 Capturing Prejudice</u></h4>  
