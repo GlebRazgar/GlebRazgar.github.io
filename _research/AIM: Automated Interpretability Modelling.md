@@ -366,72 +366,72 @@ AIM's performance stems from meaningful feature selection as well as the SAE's s
 <br><br>
 
 <div align="center">
-<table>
+<table style="border-collapse: collapse; width: auto;">
   <tr>
-    <td colspan="5" align="center"><b>Table 2.</b> Final layer spurious feature removal results.</td>
+    <td colspan="5" style="border-bottom: 1px solid black; text-align: center; padding: 8px;"><b>Table 2.</b> Final layer spurious feature removal results.</td>
   </tr>
-  <tr>
-    <th>Subset</th>
-    <th>Selection Method</th>
-    <th># Units</th>
-    <th>Balanced</th>
-    <th>Test Acc.</th>
+  <tr style="border-bottom: 1px solid black;">
+    <th style="padding: 8px; text-align: left;">Subset</th>
+    <th style="padding: 8px; text-align: left;">Selection Method</th>
+    <th style="padding: 8px; text-align: left;"># Units</th>
+    <th style="padding: 8px; text-align: left;">Balanced</th>
+    <th style="padding: 8px; text-align: left;">Test Acc.</th>
   </tr>
-  <tr>
-    <td>All</td>
-    <td>Original Model</td>
-    <td>512</td>
-    <td>✗</td>
-    <td>0.731</td>
+  <tr style="border-bottom: 1px solid black;">
+    <td style="padding: 8px;">All</td>
+    <td style="padding: 8px;">Original Model</td>
+    <td style="padding: 8px;">512</td>
+    <td style="padding: 8px;">✗</td>
+    <td style="padding: 8px;">0.731</td>
   </tr>
-  <tr>
-    <td>ℓ₁ Top 50</td>
-    <td>All</td>
-    <td>50</td>
-    <td>✗</td>
-    <td>0.779</td>
+  <tr style="border-bottom: 1px solid black;">
+    <td style="padding: 8px;">ℓ₁ Top 50</td>
+    <td style="padding: 8px;">All</td>
+    <td style="padding: 8px;">50</td>
+    <td style="padding: 8px;">✗</td>
+    <td style="padding: 8px;">0.779</td>
   </tr>
-  <tr>
-    <td></td>
-    <td>Random</td>
-    <td>22</td>
-    <td>✗</td>
-    <td>0.705 ± 0.05</td>
+  <tr style="border-bottom: 1px solid black;">
+    <td style="padding: 8px;"></td>
+    <td style="padding: 8px;">Random</td>
+    <td style="padding: 8px;">22</td>
+    <td style="padding: 8px;">✗</td>
+    <td style="padding: 8px;">0.705 ± 0.05</td>
   </tr>
-  <tr>
-    <td></td>
-    <td>ℓ₁ Top 22</td>
-    <td>22</td>
-    <td>✗</td>
-    <td>0.757</td>
+  <tr style="border-bottom: 1px solid black;">
+    <td style="padding: 8px;"></td>
+    <td style="padding: 8px;">ℓ₁ Top 22</td>
+    <td style="padding: 8px;">22</td>
+    <td style="padding: 8px;">✗</td>
+    <td style="padding: 8px;">0.757</td>
   </tr>
-  <tr>
-    <td></td>
-    <td><b>AIM</b></td>
-    <td>22</td>
-    <td>✗</td>
-    <td><b>0.852</b></td>
+  <tr style="border-bottom: 1px solid black;">
+    <td style="padding: 8px;"></td>
+    <td style="padding: 8px;"><b>AIM</b></td>
+    <td style="padding: 8px;">22</td>
+    <td style="padding: 8px;">✗</td>
+    <td style="padding: 8px;"><b>0.852</b></td>
   </tr>
-    <tr>
-    <td></td>
-    <td><b>MAIA</b></td>
-    <td>22</td>
-    <td>✗</td>
-    <td>0.837</td>
+  <tr style="border-bottom: 1px solid black;">
+    <td style="padding: 8px;"></td>
+    <td style="padding: 8px;"><b>MAIA</b></td>
+    <td style="padding: 8px;">22</td>
+    <td style="padding: 8px;">✗</td>
+    <td style="padding: 8px;">0.837</td>
   </tr>
-  <tr>
-    <td>All</td>
-    <td>ℓ₁ Hyper. Tuning</td>
-    <td>147</td>
-    <td>✓</td>
-    <td>0.830</td>
+  <tr style="border-bottom: 1px solid black;">
+    <td style="padding: 8px;">All</td>
+    <td style="padding: 8px;">ℓ₁ Hyper. Tuning</td>
+    <td style="padding: 8px;">147</td>
+    <td style="padding: 8px;">✓</td>
+    <td style="padding: 8px;">0.830</td>
   </tr>
-  <tr>
-    <td></td>
-    <td>ℓ₁ Top 22</td>
-    <td>22</td>
-    <td>✓</td>
-    <td><b>0.865</b></td>
+  <tr style="border-bottom: 1px solid black;">
+    <td style="padding: 8px;"></td>
+    <td style="padding: 8px;">ℓ₁ Top 22</td>
+    <td style="padding: 8px;">22</td>
+    <td style="padding: 8px;">✓</td>
+    <td style="padding: 8px;"><b>0.865</b></td>
   </tr>
 </table>
 </div>
