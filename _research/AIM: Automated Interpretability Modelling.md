@@ -61,7 +61,7 @@ to higher units of analysis while expanding its accessibility beyond specialist 
 </p>
 
 <div style="max-width: 600px; margin: auto; text-align: justify;">
-<p><b>Figure 1:</b> High-level overview of AIM (Automated Interpretability Modelling). The framework procesess interpretability queries, iteratively generates executable code experiments, analyzes circuit activations and identifies their functions</p></div>  
+<p><b>Figure 1:</b> High-level overview of AIM (Automated Interpretability Modelling). The framework procesess interpretability queries, iteratively generates executable code experiments, analyzes circuit activations and identifies their functions.</p></div>  
 
 This paper introduces AIM (Automated Interpretability Model), a system
 that combines a vision-language model for neural network analysis. AIM's
@@ -80,17 +80,17 @@ Schwettmann et al., 2023).
 
 Experimental results in Section 4 demonstrate that AIM's
 descriptions achieve higher behavioral predictivity than baselines for
-both synthetic and real neurons, approaching human-level performance. We
+both synthetic and real neurons, rivalling human-level performance. We
 extend this framework to model-level interpretation tasks, applying
 AIM's iterative experimental approach to downstream applications
 including spurious feature removal and bias detection. These
 applications demonstrate the system's extensibility: novel tasks are
 specified via prompts, which AIM translates into experimental programs.
 
+This work is the first in the series of steps towards automated interpretability.
 Current limitations require human oversight to address confirmation bias
-and sampling adequacy. Full automation of model interpretation
-necessitates both advanced tooling and improved experimental reasoning
-capabilities.
+and sampling adequacy. Full automation of interpretation will
+necessitate both higher diversity of tooling and improved model reasoning.
 <br><br>
 
 <hr style="border-top: 1px solid black;">
@@ -108,7 +108,8 @@ from real-world datasets (Mu & Andreas, 2020; Carter et al., 2019;
 Lillian et al., 2022). Early approaches to automated interpretation
 translated visual exemplars into language descriptions using fixed
 vocabularies (Park et al., 2019; Hendricks et al., 2018) or programmatic
-specifications (Mu & Andreas, 2020).
+specifications (Mu & Andreas, 2020). While these methods excel at describing individual features, they remain narrowly applicable due to slow iteration speeds. 
+
 <br><br>
 
 <h4 style="margin-bottom: 0"><u>2.2 Circuit Identification</u></h4>
@@ -147,12 +148,12 @@ generally restricted to textual interfaces, recent work has demonstrated
 interaction with vision systems through code generation (Anthropic,
 2023; OpenAI, 2023). Large multimodal language models have expanded
 these capabilities further, enabling direct image-based interaction
-with neural networks.  
+with neural networks. While these systems make interpretability more programatic, they remain constrained by their inability to design and execute causal experiments, or in cases where experiments are made programatic, confined to single-neuron interpretability.  
 
 <p align="center"><img src="../images/low-level.png" alt="Alt text" width="750" height="373" style="border-radius: 10px;"></p>
 
 <div style="max-width: 600px; margin: auto; text-align: justify;">
-<p><b>Figure 2:</b> Low-level overview of AIM. At each iteration input images are fed through a neural network, where a Sparse Auto-Encoder extracts and maps circuit activations of requested layers. The sparse activation maps are analyzed by a vision-language model agent which formulates hypotheses about circuit behaviour. By writing executable python experiments, the agent can utilize different tools in its toolkit (e.g: generate images, edit images, check logs, etc.) to iteratively validate or refute these hypotheses.</p></div>  
+<p><b>Figure 2:</b> Low-level overview of AIM. At each iteration input images are fed through a vision model, where a Sparse Auto-Encoder extracts and maps circuit activations of requested layers. The sparse activation maps are analyzed by a vision-language model agent which formulates hypotheses about circuit behaviour. By writing executable python experiments, the agent can utilize different tools in its toolkit (e.g: generate images, edit images, check logs, etc.) to iteratively validate or refute these hypotheses.</p></div>  
 
 
 <hr style="border-top: 1px solid black;">
@@ -168,7 +169,7 @@ analysis. At its core, AIM uses Gemini (DeepMind, 2023b) as its reasoning engine
 allowing direct processing of both visual and textual information. The
 system operates through two primary components:  
 
-1\) <u>Structure</u> that provides access to the target neural network
+1\) <u>Structure</u> that provides access to the target layers
 through a Sparse Auto Encoder (SAE),  
 2\) <u>Tools</u> that implement experimental primitives. These components
 are exposed through a Python-based MAIA API that enables programmatic
@@ -189,18 +190,18 @@ requirements of iterative neural network analysis.
 <p align="center"><img src="../images/flow.png" alt="Alt text" width="750" height="1010" style="border-radius: 10px;"></p>
 
 <div style="max-width: 600px; margin: auto; text-align: justify;">
-<p><b>Figure 3:</b> Practical example of the AIM flow. Upon receiving an input query, the framework initializes by passing stock dataset images through the network. Based on the sparse activation maps and the initial hypothesis (e.g: Circuit X encodes people) the multi-modal agent generates a set of images to confirm or deny it. In the following iterations the agent acts to increase the circuit activations by either modifying or generating new images based on the results. Through varied placement of the sparse auto-encoder, the agent observes different neuronal activations and forms corresponding hypotheses. This programmatic iteration continues until the agent accumulates sufficient confidence to conclude the experiment and formulate its findings.</p></div>
+<p><b>Figure 3:</b> Practical example of the AIM flow. Upon receiving an input query, the framework initializes by passing stock dataset images through the network. Based on the sparse activation maps and the initial hypothesis (e.g: Units X,Y,Z encode people) the multi-modal agent generates a set of images to confirm or deny it. In the following iterations the agent acts to increase the circuit activations by either modifying or generating new images based on the results. Through varied placement of the Sparse Auto-Encoder, the agent observes different circuit activations and forms corresponding hypotheses. This programmatic iteration continues until the agent accumulates sufficient confidence about a circuit to conclude the experiment and formulate its findings.</p></div>
 
 <h4 style="margin-bottom: 0"><u>3.2 System</u></h4> 
-The System class in AIM provides programmatic access to internal
+The System class provides programmatic access to internal
 components of the target neural network. This instrumentation enables
 fine-grained experimental control over individual model elements. For
 instance, when analyzing neurons in a vision transformer's MLP block,
 AIM initializes a layer or neuron object by specifying its location and
 model context: system = System(unit_id, layer_id, model_name)  
 
-The System class supports targeted experiments through methods like
-system.neuron(image_list), which returns both activation values and
+The System class also supports targeted experiments through methods like
+system.neuron(image_list), which returns both activation values and sparse
 activation-weighted visualizations highlighting influential image
 regions from the SAE (Figure 2). Unlike existing approaches to neuron
 interpretation that require task-specific model training (Hernandez et
@@ -208,7 +209,7 @@ al., 2022), AIM's System class enables direct experimentation on
 arbitrary vision systems using an SAE.  
 
 <h4 style="margin-bottom: 0"><u>3.3 Tools</u></h4> 
-Tools provides a modular framework for hypothesis testing through
+Tools class provides a modular framework for hypothesis testing through
 programmatic experiments. Building on established interpretability
 methods and kits (Shaham et al., 2024), these tools incorporate
 procedures for analyzing circuits with real-world images (Bau et al.,
