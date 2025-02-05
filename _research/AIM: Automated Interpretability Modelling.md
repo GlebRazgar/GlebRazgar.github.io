@@ -268,37 +268,7 @@ architecture.
 2\) Performance on synthetic neurons and circuits with known ground-truth selectivity.  
 3\) Comparative analysis against the MILAN baseline (Hernandez et al., 2022) and human experts.  
 
-The framework enables interpretability tasks through natural language
-specification in the VLM prompt. We evaluate this capability through a
-series of increasingly complex experiments, focusing initially on neuron
-description - a fundamental interpretability task with applications in
-model auditing and editing (Gandelsman et al., 2024; Yang et al., 2023;
-Hernandez et al., 2022).
 
-<p align="center"><img src="../images/stats.png" alt="Alt text" width="750" height="327" style="border-radius: 10px;"></p>
-
-<h4 style="margin-bottom: 0"><u>4.1 Architecture Evaluation</u></h4> 
-We evaluate AIM on circuits from three architectures: ResNet-152 for
-supervised classification (He et al., 2016), DINO for unsupervised
-representation learning (Caron et al., 2021; Grill et al., 2020; Chen &
-He, 2021), and CLIP's ResNet-50 visual encoder for image-text
-alignment (Radford et al., 2021). From each architecture, we sample 100
-units across representative layers (ResNet-152 conv.1, res.1-4; DINO
-MLP 1-11; CLIP res.1-4), with example experiments and labels shown in
-Figure 3.
-
-Our evaluation framework assesses description accuracy through
-behavioral prediction on unseen test images, building on contrastive
-evaluation approaches (Gardner et al., 2020; Kaushik et al., 2020). We
-compare three description methods: AIM's interactive analysis, MILAN's
-static dataset exemplar labeling (Hernandez et al., 2022), and human
-experts using the MAIA's API on a 25% subset. For each
-description, Gemini generates seven positive and seven neutral exemplar
-prompts, which are then paired with descriptions by a separate Gemini
-instance based on predicted relevance. We measure neuron activations on
-the generated images to assess prediction accuracy.
-
-<br><br>
 <div align="center">
 <table>
   <tr>
@@ -327,6 +297,43 @@ the generated images to assess prediction accuracy.
   </tr>
 </table>
 </div>
+<br>
+
+The framework enables interpretability tasks through natural language
+specification in the VLM prompt. We evaluate this capability through a
+series of increasingly complex experiments, focusing initially on neuron
+description - a fundamental interpretability task with applications in
+model auditing and editing (Gandelsman et al., 2024; Yang et al., 2023;
+Hernandez et al., 2022).
+
+<p align="center"><img src="../images/stats1.png" alt="Alt text" width="750" height="327" style="border-radius: 10px;"></p>
+<div style="max-width: 600px; margin: auto; text-align: justify;">
+<p><b>Figure 4:</b> Activation Analysis. AIM's neuron descriptions achieve higher average activation scores than MILAN, reaching performance levels similar to human annotations across both synthetic and real circuits. </p></div></p></div><br>
+
+<h4 style="margin-bottom: 0"><u>4.1 Architecture Evaluation</u></h4> 
+We evaluate AIM on circuits from three architectures: ResNet-152 for
+supervised classification (He et al., 2016), DINO for unsupervised
+representation learning (Caron et al., 2021; Grill et al., 2020; Chen &
+He, 2021), and CLIP's ResNet-50 visual encoder for image-text
+alignment (Radford et al., 2021). From each architecture, we sample 100
+units across representative layers (ResNet-152 conv.1, res.1-4; DINO
+MLP 1-11; CLIP res.1-4), with example experiments and labels shown in
+Figure 4.  
+
+Our evaluation framework assesses description accuracy through
+behavioral prediction on unseen test images, building on contrastive
+evaluation approaches (Gardner et al., 2020; Kaushik et al., 2020). We
+compare three description methods: AIM's interactive analysis, MILAN's
+static dataset exemplar labeling (Hernandez et al., 2022), and human
+experts using the MAIA's API on a 25% subset. For each
+description, Gemini generates seven positive and seven neutral exemplar
+prompts, which are then paired with descriptions by a separate Gemini
+instance based on predicted relevance. We measure neuron activations on
+the generated images to assess prediction accuracy.  
+
+<p align="center"><img src="../images/stats2.png" alt="Alt text" width="750" height="327" style="border-radius: 10px;"></p>
+<div style="max-width: 600px; margin: auto; text-align: justify;">
+<p><b>Figure 5:</b> Abalation Study </p></div><br>
 
 <hr style="border-top: 1px solid black;">
 
