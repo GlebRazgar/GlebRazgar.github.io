@@ -26,10 +26,11 @@ interpretability experiments like circuit discovery and
 explainability. At its core, AIM utilises a pre-trained
 vision-language model with the capacity to extract
 sparse representations, assess circuit activations, compose experiments,
-and summarize results - all to support iterative analysis that explains neural network behaviours. We test
-AIM's prowess in computer vision, where it decodes neural and circuit
-features in models learned image representations. Using trained models
-and ground-truth neurons as our testing ground, AIM matches - and
+and summarize results - all to support iterative analysis that explains 
+neural network behaviours. We test
+AIM's prowess in computer vision, where it decodes neural circuits
+from model's learned representations. Using a trained netowrk
+and ground-truth neurons as the evaluation framework, AIM matches - and
 often surpasses human experts in decoding neural features.
 </div>  
 
