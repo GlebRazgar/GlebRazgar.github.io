@@ -38,7 +38,7 @@ often surpasses human experts in decoding neural features.
 
 Mechanistic interpretability is in effect unconstrained neuroscience. It
 holds no risk, and almost no physical friction. Yet, despite being less
-constrained, our understanding of models is proportionally shrinking.
+constrained, our understanding of models is paradoxically declining.
 For one, exponential increase in model complexity outpaces or
 interpretability efforts, and for two, there is a scarcity of
 interpretability researchers. Interpreting a neural network is a
