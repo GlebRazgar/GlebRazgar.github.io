@@ -108,9 +108,7 @@ from real-world datasets (Mu & Andreas, 2020; Carter et al., 2019;
 Lillian et al., 2022). Early approaches to automated interpretation
 translated visual exemplars into language descriptions using fixed
 vocabularies (Park et al., 2019; Hendricks et al., 2018) or programmatic
-specifications (Mu & Andreas, 2020). While these methods excel at describing individual features, they remain narrowly applicable due to slow iteration speeds. 
-
-<br><br>
+specifications (Mu & Andreas, 2020). While these methods excel at describing individual features, they remain narrowly applicable due to slow iteration speeds.  
 
 <h4 style="margin-bottom: 0"><u>2.2 Circuit Identification</u></h4>
 Identifying circuits in neural networks has revealed fundamental
@@ -188,7 +186,6 @@ et al., 2023; Gupta & Kembhavi, 2023), while specifically addressing the
 requirements of iterative neural network analysis.  
 
 <p align="center"><img src="../images/flow.png" alt="Alt text" width="750" height="1010" style="border-radius: 10px;"></p>
-
 <div style="max-width: 600px; margin: auto; text-align: justify;">
 <p><b>Figure 3:</b> Practical example of the AIM flow. Upon receiving an input query, the framework initializes by passing stock dataset images through the network. Based on the sparse activation maps and the initial hypothesis (e.g: Units X,Y,Z encode people) the multi-modal agent generates a set of images to confirm or deny it. In the following iterations the agent acts to increase the circuit activations by either modifying or generating new images based on the results. Through varied placement of the Sparse Auto-Encoder, the agent observes different circuit activations and forms corresponding hypotheses. This programmatic iteration continues until the agent accumulates sufficient confidence about a circuit to conclude the experiment and formulate its findings.</p></div>
 
