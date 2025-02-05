@@ -29,7 +29,7 @@ sparse representations, assess circuit activations, compose experiments,
 and summarize results - all to support iterative analysis that explains 
 neural network behaviours. We test
 AIM's prowess in computer vision, where it decodes neural circuits
-from model's learned representations. Using a trained netowrk
+from model learned representations. Using a trained network
 and ground-truth neurons as the evaluation framework, AIM matches - and
 often surpasses human experts in decoding neural features.
 </div>  
