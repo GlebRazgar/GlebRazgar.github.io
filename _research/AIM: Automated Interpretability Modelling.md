@@ -44,14 +44,14 @@ interpretability efforts, and for two, there is a scarcity of
 interpretability researchers. Interpreting a neural network is a
 multi-faceted enterprise. When auditing circuits we might need to detect
 demographic biases, surface systematic errors, or identify architectural
-improvements. These audits demand intensive researcher experience, which creates weighty
+improvements. These audits demand intensive researcher experience, which creates weighty
 barriers for people outside of the field. Recent work on automated
 interpretability attempted to alleviate this by allowing models to
 analyse themselves through synthesizing description of their single-neuron
-representations (Shaham et al., 2024). But these approaches remain
-narowly interpretable which limits the scope of
+representations (Shaham et al., 2024). But these approaches remain
+narowly interpretable which limits the scope of
 behavioural analysis (Huang et al., 2023). Thus, here stands our
-decisive challenge: how to build tools that scale interpretability
+decisive challenge: how to build tools that scale interpretability
 to higher units of analysis while expanding its accessibility beyond specialist researchers.
 
 <p align="center">
@@ -99,56 +99,56 @@ necessitate both higher diversity of tooling and improved model reasoning.
 <h3 style="text-align: center;">2. Related Work</h3>
 
 <h4 style="margin-bottom: 0"><u>2.1 Interpretability</u></h4>
-Interpreting deep features has progressed through several
-methodological advances. Initial investigations of individual neurons
-in deep networks established methods for understanding learned features
-through direct visualization (Zhou et al., 2018; Bau et al., 2020; Goh
-et al., 2021) and identification of maximally-activating inputs
-from real-world datasets (Mu & Andreas, 2020; Carter et al., 2019;
-Lillian et al., 2022). Early approaches to automated interpretation
-translated visual exemplars into language descriptions using fixed
-vocabularies (Park et al., 2019; Hendricks et al., 2018) or programmatic
-specifications (Mu & Andreas, 2020). While these methods excel at describing individual features, they remain narrowly applicable due to slow iteration speeds. 
+Interpreting deep features has progressed through several
+methodological advances. Initial investigations of individual neurons
+in deep networks established methods for understanding learned features
+through direct visualization (Zhou et al., 2018; Bau et al., 2020; Goh
+et al., 2021) and identification of maximally-activating inputs
+from real-world datasets (Mu & Andreas, 2020; Carter et al., 2019;
+Lillian et al., 2022). Early approaches to automated interpretation
+translated visual exemplars into language descriptions using fixed
+vocabularies (Park et al., 2019; Hendricks et al., 2018) or programmatic
+specifications (Mu & Andreas, 2020). While these methods excel at describing individual features, they remain narrowly applicable due to slow iteration speeds. 
 
 <br><br>
 
 <h4 style="margin-bottom: 0"><u>2.2 Circuit Identification</u></h4>
 Identifying circuits in neural networks has revealed fundamental
 computational patterns. Early work established methods for
-discovering and validating circuits through techniques like activation
+discovering and validating circuits through techniques like activation
 clustering, feature attribution, and causal intervention (McGill &
 Fergus, 2021; Sundararajan et al., 2020). Circuit analysis has since
-expanded to include automated discovery of computational motifs (Lange
+expanded to include automated discovery of computational motifs (Lange
 et al., 2022), systematic study of attention heads (Anthropic, 2023),
-and investigation of specific capabilities like indirect object
-identification (Lindner et al., 2023) and mathematical reasoning (Zhang
-et al., 2023). Recent work has also developed automated tools for
+and investigation of specific capabilities like indirect object
+identification (Lindner et al., 2023) and mathematical reasoning (Zhang
+et al., 2023). Recent work has also developed automated tools for
 circuit discovery, including approaches based on gradient flow
-(Fiacco et al., 2023), activation patterns (Li et al., 2023), and
-targeted interventions (Cunningham et al., 2023). However, these methods
-require significant manual effort to design and execute experiments,
-limiting their utility and accessibility to researchers without deep
+(Fiacco et al., 2023), activation patterns (Li et al., 2023), and
+targeted interventions (Cunningham et al., 2023). However, these methods
+require significant manual effort to design and execute experiments,
+limiting their utility and accessibility to researchers without deep
 expertise in circuit analysis.
 
 <h4 style="margin-bottom: 0"><u>2.3 Automated Interpretability with Agents</u></h4>
-Subsequent work on automated interpretability developed methods for
-generating open-ended descriptions of learned features, either curated
+Subsequent work on automated interpretability developed methods for
+generating open-ended descriptions of learned features, either curated
 from human labelers (Anthropic, 2023) or generated directly by learned
-models (OpenAI, 2023; DeepMind, 2023; Anthropic, 2023). However, these
+models (OpenAI, 2023; DeepMind, 2023; Anthropic, 2023). However, these
 approaches produced unreliable or causal descriptions of model behavior
 without further experimentation (Stanford, 2023). Recent work introduced
 automated experimentation protocols using language model agents, though
-these operated purely on language-based exploration of inputs, limiting
+these operated purely on language-based exploration of inputs, limiting
 their action space. When deployed as agents with access to analytical
-tools, language models can now perform multi-step reasoning tasks
-in complex environments (Google, 2023), generate and test hypotheses
+tools, language models can now perform multi-step reasoning tasks
+in complex environments (Google, 2023), generate and test hypotheses
 about neural networks trained on vision tasks (Meta, 2023), and leverage
-image-based tools (DeepMind, 2023). While ordinary LM agents are
+image-based tools (DeepMind, 2023). While ordinary LM agents are
 generally restricted to textual interfaces, recent work has demonstrated
 interaction with vision systems through code generation (Anthropic,
-2023; OpenAI, 2023). Large multimodal language models have expanded
-these capabilities further, enabling direct image-based interaction
-with neural networks. While these systems make interpretability more programatic, they remain constrained by their inability to design and execute causal experiments, or in cases where experiments are made programatic, confined to single-neuron interpretability.  
+2023; OpenAI, 2023). Large multimodal language models have expanded
+these capabilities further, enabling direct image-based interaction
+with neural networks. While these systems make interpretability more programatic, they remain constrained by their inability to design and execute causal experiments, or in cases where experiments are made programatic, confined to single-neuron interpretability.  
 
 <p align="center"><img src="../images/low-level.png" alt="Alt text" width="750" height="373" style="border-radius: 10px;"></p>
 
@@ -169,9 +169,9 @@ analysis. At its core, AIM uses Gemini (DeepMind, 2023b) as its reasoning engine
 allowing direct processing of both visual and textual information. The
 system operates through two primary components:  
 
-1\) <u>Structure</u> that provides access to the target layers
+1) <u>Structure</u> that provides access to the target layers
 through a Sparse Auto Encoder (SAE),  
-2\) <u>Tools</u> that implement experimental primitives. These components
+2) <u>Tools</u> that implement experimental primitives. These components
 are exposed through a Python-based MAIA API that enables programmatic
 composition of interpretability experiments (Shaham et al., 2024).  
  
@@ -193,27 +193,27 @@ requirements of iterative neural network analysis.
 <p><b>Figure 3:</b> Practical example of the AIM flow. Upon receiving an input query, the framework initializes by passing stock dataset images through the network. Based on the sparse activation maps and the initial hypothesis (e.g: Units X,Y,Z encode people) the multi-modal agent generates a set of images to confirm or deny it. In the following iterations the agent acts to increase the circuit activations by either modifying or generating new images based on the results. Through varied placement of the Sparse Auto-Encoder, the agent observes different circuit activations and forms corresponding hypotheses. This programmatic iteration continues until the agent accumulates sufficient confidence about a circuit to conclude the experiment and formulate its findings.</p></div>
 
 <h4 style="margin-bottom: 0"><u>3.2 System</u></h4> 
-The System class provides programmatic access to internal
-components of the target neural network. This instrumentation enables
-fine-grained experimental control over individual model elements. For
+The System class provides programmatic access to internal
+components of the target neural network. This instrumentation enables
+fine-grained experimental control over individual model elements. For
 instance, when analyzing neurons in a vision transformer's MLP block,
 AIM initializes a layer or neuron object by specifying its location and
 model context: system = System(unit_id, layer_id, model_name)  
 
-The System class also supports targeted experiments through methods like
+The System class also supports targeted experiments through methods like
 system.neuron(image_list), which returns both activation values and sparse
 activation-weighted visualizations highlighting influential image
-regions from the SAE (Figure 2). Unlike existing approaches to neuron
-interpretation that require task-specific model training (Hernandez et
+regions from the SAE (Figure 2). Unlike existing approaches to neuron
+interpretation that require task-specific model training (Hernandez et
 al., 2022), AIM's System class enables direct experimentation on
-arbitrary vision systems using an SAE.  
+arbitrary vision systems using an SAE.  
 
 <h4 style="margin-bottom: 0"><u>3.3 Tools</u></h4> 
 Tools class provides a modular framework for hypothesis testing through
 programmatic experiments. Building on established interpretability
 methods and kits (Shaham et al., 2024), these tools incorporate
 procedures for analyzing circuits with real-world images (Bau et al.,
-1)    and performing causal interventions on inputs (Hernandez et al.,
+1) and performing causal interventions on inputs (Hernandez et al.,
 2022; Casper et al., 2022). AIM composes these fundamental operations
 into more sophisticated experimental programs (Figure 2).
 
@@ -263,10 +263,10 @@ interpretation process.
 <h3 align="center">4. Evaluation</h3>
 AIM is evaluated across three dimensions:  
 
-1\) Behavior prediction accuracy for neurons and circuits in trained
+1) Behavior prediction accuracy for neurons and circuits in trained
 architecture.  
-2\) Performance on synthetic neurons and circuits with known ground-truth selectivity.  
-3\) Comparative analysis against the MILAN baseline (Hernandez et al., 2022) and human experts.  
+2) Performance on synthetic neurons and circuits with known ground-truth selectivity.  
+3) Comparative analysis against the MILAN baseline (Hernandez et al., 2022) and human experts.  
 
 
 <div align="center">
@@ -324,7 +324,7 @@ Our evaluation framework assesses description accuracy through
 behavioral prediction on unseen test images, building on contrastive
 evaluation approaches (Gardner et al., 2020; Kaushik et al., 2020). We
 compare three description methods: AIM's interactive analysis, MILAN's
-static dataset exemplar labeling (Hernandez et al., 2022), MAIA's interactive analysis (Shaham et al., 2024) and human
+static dataset exemplar labeling (Hernandez et al., 2022), MAIA's interactive analysis (Shaham et al., 2024) and human
 experts using the API on a 25% subset. For each
 description, Gemini generates seven positive and seven neutral exemplar
 prompts, which are then paired with descriptions by a separate Gemini
@@ -365,73 +365,95 @@ regularization on both balanced and unbalanced datasets validate that
 AIM's performance stems from meaningful feature selection as well as the SAE's sparsity.
 <br><br>
 
+<style>
+.results-table {
+    border-collapse: collapse;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    margin: auto;
+}
+.results-table tr {
+    border-bottom: 1px solid black;
+}
+.results-table td, .results-table th {
+    padding: 8px;
+    text-align: left;
+}
+.results-table th {
+    font-weight: bold;
+}
+.bold-value {
+    font-weight: bold;
+}
+</style>
+
 <div align="center">
-<table style="border-collapse: collapse; width: auto;">
+<table class="results-table">
   <tr>
-    <td colspan="5" style="border-bottom: 1px solid black; text-align: center; padding: 8px;"><b>Table 2.</b> Final layer spurious feature removal results.</td>
+    <td colspan="5" align="center"><b>Table 2.</b> Final layer spurious feature removal results.</td>
   </tr>
-  <tr style="border-bottom: 1px solid black;">
-    <th style="padding: 8px; text-align: left;">Subset</th>
-    <th style="padding: 8px; text-align: left;">Selection Method</th>
-    <th style="padding: 8px; text-align: left;"># Units</th>
-    <th style="padding: 8px; text-align: left;">Balanced</th>
-    <th style="padding: 8px; text-align: left;">Test Acc.</th>
+  <tr>
+    <th>Subset</th>
+    <th>Selection Method</th>
+    <th># Units</th>
+    <th>Balanced</th>
+    <th>Test Acc.</th>
   </tr>
-  <tr style="border-bottom: 1px solid black;">
-    <td style="padding: 8px;">All</td>
-    <td style="padding: 8px;">Original Model</td>
-    <td style="padding: 8px;">512</td>
-    <td style="padding: 8px;">✗</td>
-    <td style="padding: 8px;">0.731</td>
+  <tr>
+    <td>All</td>
+    <td>Original Model</td>
+    <td>512</td>
+    <td>✗</td>
+    <td>0.731</td>
   </tr>
-  <tr style="border-bottom: 1px solid black;">
-    <td style="padding: 8px;">ℓ₁ Top 50</td>
-    <td style="padding: 8px;">All</td>
-    <td style="padding: 8px;">50</td>
-    <td style="padding: 8px;">✗</td>
-    <td style="padding: 8px;">0.779</td>
+  <tr>
+    <td>ℓ₁ Top 50</td>
+    <td>All</td>
+    <td>50</td>
+    <td>✗</td>
+    <td>0.779</td>
   </tr>
-  <tr style="border-bottom: 1px solid black;">
-    <td style="padding: 8px;"></td>
-    <td style="padding: 8px;">Random</td>
-    <td style="padding: 8px;">22</td>
-    <td style="padding: 8px;">✗</td>
-    <td style="padding: 8px;">0.705 ± 0.05</td>
+  <tr>
+    <td></td>
+    <td>Random</td>
+    <td>22</td>
+    <td>✗</td>
+    <td>0.705 ± 0.05</td>
   </tr>
-  <tr style="border-bottom: 1px solid black;">
-    <td style="padding: 8px;"></td>
-    <td style="padding: 8px;">ℓ₁ Top 22</td>
-    <td style="padding: 8px;">22</td>
-    <td style="padding: 8px;">✗</td>
-    <td style="padding: 8px;">0.757</td>
+  <tr>
+    <td></td>
+    <td>ℓ₁ Top 22</td>
+    <td>22</td>
+    <td>✗</td>
+    <td>0.757</td>
   </tr>
-  <tr style="border-bottom: 1px solid black;">
-    <td style="padding: 8px;"></td>
-    <td style="padding: 8px;"><b>AIM</b></td>
-    <td style="padding: 8px;">22</td>
-    <td style="padding: 8px;">✗</td>
-    <td style="padding: 8px;"><b>0.852</b></td>
+  <tr>
+    <td></td>
+    <td class="bold-value">AIM</td>
+    <td>22</td>
+    <td>✗</td>
+    <td class="bold-value">0.852</td>
   </tr>
-  <tr style="border-bottom: 1px solid black;">
-    <td style="padding: 8px;"></td>
-    <td style="padding: 8px;"><b>MAIA</b></td>
-    <td style="padding: 8px;">22</td>
-    <td style="padding: 8px;">✗</td>
-    <td style="padding: 8px;">0.837</td>
+  <tr>
+    <td></td>
+    <td class="bold-value">MAIA</td>
+    <td>22</td>
+    <td>✗</td>
+    <td>0.837</td>
   </tr>
-  <tr style="border-bottom: 1px solid black;">
-    <td style="padding: 8px;">All</td>
-    <td style="padding: 8px;">ℓ₁ Hyper. Tuning</td>
-    <td style="padding: 8px;">147</td>
-    <td style="padding: 8px;">✓</td>
-    <td style="padding: 8px;">0.830</td>
+  <tr>
+    <td>All</td>
+    <td>ℓ₁ Hyper. Tuning</td>
+    <td>147</td>
+    <td>✓</td>
+    <td>0.830</td>
   </tr>
-  <tr style="border-bottom: 1px solid black;">
-    <td style="padding: 8px;"></td>
-    <td style="padding: 8px;">ℓ₁ Top 22</td>
-    <td style="padding: 8px;">22</td>
-    <td style="padding: 8px;">✓</td>
-    <td style="padding: 8px;"><b>0.865</b></td>
+  <tr>
+    <td></td>
+    <td>ℓ₁ Top 22</td>
+    <td>22</td>
+    <td>✓</td>
+    <td class="bold-value">0.865</td>
   </tr>
 </table>
 </div>
@@ -441,30 +463,30 @@ AIM's performance stems from meaningful feature selection as well as the SAE's s
 
 
 <h4 style="margin-bottom: 0"><u>5.2 Capturing Prejudice</u></h4>  
-We demonstrate AIM's capability to automatically surface model-level
-biases in a supervised ImageNet CNN (ResNet-152) classifier. Given a
-target class, AIM instruments the system class to analyze output
+We demonstrate AIM's capability to automatically surface model-level
+biases in a supervised ImageNet CNN (ResNet-152) classifier. Given a
+target class, AIM instruments the system class to analyze output
 probabilities and synthesizes images to identify ranking biases.
-The system generates class-label pairs with unexpectedly low
-probabilities and clear reference sets. In a simple
+The system generates class-label pairs with unexpectedly low
+probabilities and clear reference sets. In a simple
 experiment targeting ImageNet classes, AIM's synthetic data generation
-reveals regions of poor model performance, surfacing broad failure
+reveals regions of poor model performance, surfacing broad failure
 categories. Additional experiments validate these findings
-across diverse bias types.
+across diverse bias types.
 <br><br>
 
 <hr style="border-top: 1px solid black;">
 
 <h3 align="center">6. Conclusion</h3>
-We present AIM, a system that automates interpretability workflows
-through programmatic experimentation on neural networks. While current
+We present AIM, a system that automates interpretability workflows
+through programmatic experimentation on neural networks. While current
 limitations necessitate human oversight for error detection and
-confirmation bias mitigation, our experimental results demonstrate
-AIM's potential as interpretability tools grow in sophistication. The increasing deployment of high-stakes AI systems necessitates robust interpretability methods. AIM represents an initial step toward
+confirmation bias mitigation, our experimental results demonstrate
+AIM's potential as interpretability tools grow in sophistication. The increasing deployment of high-stakes AI systems necessitates robust interpretability methods. AIM represents an initial step toward
 systematic, automated auditing capabilities. However, we emphasize that
-AIM's current limitations-particularly in confirmation bias and image
-generation reliability-require human supervision. While AIM enables
-causal interventions for behavioral analysis, negative results should
+AIM's current limitations-particularly in confirmation bias and image
+generation reliability-require human supervision. While AIM enables
+causal interventions for behavioral analysis, negative results should
 not be interpreted as definitive evidence of absence. Future work should
 focus on developing more rigorous verification methods and expanding the
 experimental toolkit.
@@ -706,7 +728,7 @@ Storkey, A. et al. When training and test sets are different:
 characterizing learning transfer. Dataset shift in machine learning,
 30(3-28):6, 2009.
 
-Sur´ıs, D., Menon, S., and Vondrick, C. Vipergpt: Visual inference via
+Surís, D., Menon, S., and Vondrick, C. Vipergpt: Visual inference via
 python execution for reasoning, 2023.
 
 Vaughan, J. W. and Wallach, H. A human-centered agenda for intelligible
