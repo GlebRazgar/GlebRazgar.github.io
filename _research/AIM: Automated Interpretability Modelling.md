@@ -4,8 +4,8 @@ date: 2025-01-10
 layout: post
 ---
   
-<div class="table-container">
-  <table class="responsive-table">
+  <div class="table-container">
+  <table>
     <tr>
       <td align="center">
         <strong>Gleb Razgar</strong><br>
@@ -26,7 +26,6 @@ layout: post
     </tr>
   </table>
 </div>
-
 <hr style="border-top: 1px solid black;">
 
 <h3 align="center">Abstract</h3>
@@ -44,7 +43,7 @@ AIM's prowess in computer vision, where it decodes neural circuits
 from model learned representations. Using a trained network
 and ground-truth neurons as the evaluation framework, AIM matches - and
 often surpasses human experts in decoding neural features.
-</div>  
+</div><br>
 
 <h3 align="center">1. Introduction</h3>
 
