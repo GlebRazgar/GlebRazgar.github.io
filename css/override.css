@@ -113,11 +113,12 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 0.9em;        /* Reduced font size if necessary */
 }
 
-/* Optional: Adjust table caption styling */
-.table-container caption {
-  caption-side: top;
-  padding: 5px;
-  font-weight: bold;
+/* Remove borders from the name table */
+.name-table,
+.name-table td,
+.name-table th {
+  border: none;
+  background: transparent;
 }
 
 /* Global scrollbar styling */
