@@ -439,9 +439,9 @@ AIM's performance stems from meaningful feature selection as well as the SAE's s
     </tbody>
   </table>
 </div>
-<br>
 <div style="width: 80%; margin: auto; text-align: justify;">
 <p><b>Table2</b>: Results from testing AIM on picking stable circuits in the un-stable dataset against ℓ1 regularization on a stable dataset.</p></div>
+<br>
 
 
 <h4 style="margin-bottom: 0"><u>5.2 Capturing Prejudice</u></h4>  
