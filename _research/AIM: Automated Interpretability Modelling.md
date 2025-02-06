@@ -3,6 +3,7 @@ title: "Automated Interpretability Modelling"
 date: 2025-01-10
 layout: post
 ---
+<br>
   <div class="table-container">
   <table>
     <tr>
@@ -27,6 +28,7 @@ layout: post
 </div>
 <hr style="border-top: 1px solid black;">
 <h3 align="center">Abstract</h3>
+<br>
 
 <div style="width: 80%; margin: auto; text-align: justify;">
 In this paper we propose Automated Interpretability Modelling (AIM) -
@@ -368,7 +370,7 @@ regularization on both balanced and unbalanced datasets validate that
 AIM's performance stems from meaningful feature selection as well as the SAE's sparsity.
 <br><br>
 
-<div class="table-container" style="overflow-x: auto;">
+<div class="table-container" style="overflow-x: auto; display: flex; justify-content: center;">
   <table cellspacing="0" cellpadding="6" border="1" style="border: 1px solid black; border-collapse: collapse;">
     <caption style="caption-side: top; padding: 10px;"><b>Table 2.</b> Final layer spurious feature removal results.</caption>
     <thead>
