@@ -368,7 +368,7 @@ achieving performance comparable to balanced-data approaches despite
 using only unbalanced data. Comparative experiments with ℓ1
 regularization on both balanced and unbalanced datasets validate that
 AIM's performance stems from meaningful feature selection as well as the SAE's sparsity.
-<br><br>
+<br>
 
 <div class="table-container" style="overflow-x: auto; display: flex; justify-content: center;">
   <table cellspacing="0" cellpadding="6" border="1" style="border: 1px solid black; border-collapse: collapse;">
