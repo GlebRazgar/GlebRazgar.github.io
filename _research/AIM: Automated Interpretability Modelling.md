@@ -3,7 +3,6 @@ title: "Automated Interpretability Modelling"
 date: 2025-01-10
 layout: post
 ---
-<br>
   <div class="table-container">
   <table>
     <tr>

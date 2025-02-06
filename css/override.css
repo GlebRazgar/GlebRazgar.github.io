@@ -94,11 +94,13 @@ h1, h2, h3, h4, h5, h6 {
 
 
 
-/* Test */
-/* Make the table container scrollable horizontally */
+/* Adjusted table container */
 .table-container {
   overflow-x: auto;
   -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+  margin: 0; /* Remove default margins */
+  padding: 0; /* Remove default padding */
+  display: inline-block; /* Shrink container to fit content */
 }
 
 /* Ensure the table doesn't shrink below its content width */
@@ -106,6 +108,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   min-width: 600px; /* Adjust based on your table's natural width */
   border-collapse: collapse;
+  margin: 0; /* Remove default margins */
 }
 
 /* Style the table cells */
@@ -121,9 +124,10 @@ h1, h2, h3, h4, h5, h6 {
   border: none;
 }
 
-
-
-
+/* Remove extra space after the table */
+.table-container + * {
+  margin-top: 0;
+}
 
 
 
