@@ -3,6 +3,7 @@ title: "Automated Interpretability Modelling"
 date: 2025-01-10
 layout: post
 ---
+<br>
   <div class="table-container">
   <table>
     <tr>
@@ -26,7 +27,6 @@ layout: post
   </table>
 </div>
 <hr style="border-top: 1px solid black;">
-
 <h3 align="center">Abstract</h3>
 
 <div style="width: 80%; margin: auto; text-align: justify;">
