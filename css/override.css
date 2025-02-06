@@ -111,8 +111,6 @@ h1, h2, h3, h4, h5, h6 {
   vertical-align: top;
   line-height: 1.2;        /* Adjusted line height */
   font-size: 0.9em;        /* Reduced font size if necessary */
-  border: none; /* Remove borders */
-  background-color: transparent; /* Make background transparent */
 }
 
 /* Optional: Adjust table caption styling */
