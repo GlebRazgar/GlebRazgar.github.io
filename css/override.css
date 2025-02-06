@@ -1,6 +1,6 @@
 hr {
-  margin-top: 40px;
-  margin-bottom: 40px;
+  margin-top: 30px;
+  margin-bottom: 20px;
 }
 
 /* Post navigation links */
@@ -91,13 +91,16 @@ h1, h2, h3, h4, h5, h6 {
     background-image: none;
 }
 
+
+
+
 /* Adjusted table container */
 .table-container {
   overflow-x: auto;
   -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
   margin: 0; /* Remove default margins */
   padding: 0; /* Remove default padding */
-  display: block; /* Use block instead of inline-block */
+  display: inline-block; /* Shrink container to fit content */
 }
 
 /* Ensure the table doesn't shrink below its content width */
@@ -125,6 +128,8 @@ h1, h2, h3, h4, h5, h6 {
 .table-container + * {
   margin-top: 0;
 }
+
+
 
 /* test */
 /* Global scrollbar styling */
