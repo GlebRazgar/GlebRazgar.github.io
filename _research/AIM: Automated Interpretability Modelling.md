@@ -3,7 +3,6 @@ title: "Automated Interpretability Modelling"
 date: 2025-01-10
 layout: post
 ---
-<br>
   <div class="table-container">
   <table>
     <tr>
@@ -28,7 +27,6 @@ layout: post
 </div>
 <hr style="border-top: 1px solid black;">
 <h3 align="center">Abstract</h3>
-<br>
 
 <div style="width: 80%; margin: auto; text-align: justify;">
 In this paper we propose Automated Interpretability Modelling (AIM) -
