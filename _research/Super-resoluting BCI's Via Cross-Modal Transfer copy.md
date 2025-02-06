@@ -185,7 +185,10 @@ design builds on recent advances in tool-use by language models (Surís
 et al., 2023; Gupta & Kembhavi, 2023), while specifically addressing the
 requirements of iterative neural network analysis.  
 
-<p align="center"><img src="../images/flow.png" alt="Alt text" width="750" height="1010" style="border-radius: 10px;"></p>
+<p align="center">
+  <img src="../images/flow.png" alt="Alt text" style="max-width: 100%; height: auto; border-radius: 10px;">
+</p>
+
 <div style="max-width: 600px; margin: auto; text-align: justify;">
 <p><b>Figure 3:</b> Practical example of the AIM flow. Upon receiving an input query, the framework initializes by passing stock dataset images through the network. Based on the sparse activation maps and the initial hypothesis (e.g: Units X,Y,Z encode people) the multi-modal agent generates a set of images to confirm or deny it. In the following iterations the agent acts to increase the circuit activations by either modifying or generating new images based on the results. Through varied placement of the Sparse Auto-Encoder, the agent observes different circuit activations and forms corresponding hypotheses. This programmatic iteration continues until the agent accumulates sufficient confidence about a circuit to conclude the experiment and formulate its findings.</p></div>
 
