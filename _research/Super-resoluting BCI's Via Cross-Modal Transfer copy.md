@@ -306,7 +306,7 @@ description - a fundamental interpretability task with applications in
 model auditing and editing (Gandelsman et al., 2024; Yang et al., 2023;
 Hernandez et al., 2022).
 
-<p align="center"><img src="../images/stats1.png" alt="Alt text" width="750" height="327" style="border-radius: 10px;"></p>
+<p align="center"><img src="../images/stats1.png" alt="Alt text" style="max-width: 100%; height: auto; border-radius: 10px;></p>
 <div style="max-width: 600px; margin: auto; text-align: justify;">
 <p><b>Figure 4:</b> Activation Analysis. AIM's neuron descriptions achieve higher average activation scores than MILAN, reaching performance levels similar to human annotations across both synthetic and real circuits. </p></div><br>
 
@@ -331,7 +331,7 @@ prompts, which are then paired with descriptions by a separate Gemini
 instance based on predicted relevance. We measure neuron activations on
 the generated images to assess prediction accuracy.  
 
-<p align="center"><img src="../images/stats2.png" alt="Alt text" width="750" height="327" style="border-radius: 10px;"></p>
+<p align="center"><img src="../images/stats2.png" alt="Alt text" style="max-width: 100%; height: auto; border-radius: 10px;"></p>
 <div style="max-width: 600px; margin: auto; text-align: justify;">
 <p><b>Figure 5:</b> Abalation Study </p></div><br>
 
@@ -365,74 +365,75 @@ regularization on both balanced and unbalanced datasets validate that
 AIM's performance stems from meaningful feature selection as well as the SAE's sparsity.
 <br><br>
 
-<div class="table-container" style="overflow-x: auto;">
-  <table cellspacing="0" cellpadding="6" border="1" style="border: 1px solid black; border-collapse: collapse;">
-    <caption style="caption-side: top; padding: 10px;"><b>Table 2.</b> Final layer spurious feature removal results.</caption>
+
+<div class="table-container">
+  <table>
+    <caption><b>Table 2.</b> Final layer spurious feature removal results.</caption>
     <thead>
       <tr>
-        <th style="border: 1px solid black;">Subset</th>
-        <th style="border: 1px solid black;">Selection Method</th>
-        <th style="border: 1px solid black;"># Units</th>
-        <th style="border: 1px solid black;">Balanced</th>
-        <th style="border: 1px solid black;">Test Acc.</th>
+        <th>Subset</th>
+        <th>Selection Method</th>
+        <th># Units</th>
+        <th>Balanced</th>
+        <th>Test Acc.</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td style="border: 1px solid black;">All</td>
-        <td style="border: 1px solid black;">Original Model</td>
-        <td style="border: 1px solid black;">512</td>
-        <td style="border: 1px solid black;">✗</td>
-        <td style="border: 1px solid black;">0.731</td>
+        <td data-label="Subset">All</td>
+        <td data-label="Selection Method">Original Model</td>
+        <td data-label="# Units">512</td>
+        <td data-label="Balanced">✗</td>
+        <td data-label="Test Acc.">0.731</td>
       </tr>
       <tr>
-        <td style="border: 1px solid black;">ℓ₁ Top 50</td>
-        <td style="border: 1px solid black;">All</td>
-        <td style="border: 1px solid black;">50</td>
-        <td style="border: 1px solid black;">✗</td>
-        <td style="border: 1px solid black;">0.779</td>
+        <td data-label="Subset">ℓ₁ Top 50</td>
+        <td data-label="Selection Method">All</td>
+        <td data-label="# Units">50</td>
+        <td data-label="Balanced">✗</td>
+        <td data-label="Test Acc.">0.779</td>
       </tr>
       <tr>
-        <td style="border: 1px solid black;"></td>
-        <td style="border: 1px solid black;">Random</td>
-        <td style="border: 1px solid black;">22</td>
-        <td style="border: 1px solid black;">✗</td>
-        <td style="border: 1px solid black;">0.705 ± 0.05</td>
+        <td data-label="Subset"></td>
+        <td data-label="Selection Method">Random</td>
+        <td data-label="# Units">22</td>
+        <td data-label="Balanced">✗</td>
+        <td data-label="Test Acc.">0.705 ± 0.05</td>
       </tr>
       <tr>
-        <td style="border: 1px solid black;"></td>
-        <td style="border: 1px solid black;">ℓ₁ Top 22</td>
-        <td style="border: 1px solid black;">22</td>
-        <td style="border: 1px solid black;">✗</td>
-        <td style="border: 1px solid black;">0.757</td>
+        <td data-label="Subset"></td>
+        <td data-label="Selection Method">ℓ₁ Top 22</td>
+        <td data-label="# Units">22</td>
+        <td data-label="Balanced">✗</td>
+        <td data-label="Test Acc.">0.757</td>
       </tr>
       <tr>
-        <td style="border: 1px solid black;"></td>
-        <td style="border: 1px solid black;"><b>AIM</b></td>
-        <td style="border: 1px solid black;">22</td>
-        <td style="border: 1px solid black;">✗</td>
-        <td style="border: 1px solid black;"><b>0.852</b></td>
+        <td data-label="Subset"></td>
+        <td data-label="Selection Method"><b>AIM</b></td>
+        <td data-label="# Units">22</td>
+        <td data-label="Balanced">✗</td>
+        <td data-label="Test Acc."><b>0.852</b></td>
       </tr>
       <tr>
-        <td style="border: 1px solid black;"></td>
-        <td style="border: 1px solid black;">MAIA</td>
-        <td style="border: 1px solid black;">22</td>
-        <td style="border: 1px solid black;">✗</td>
-        <td style="border: 1px solid black;">0.837</td>
+        <td data-label="Subset"></td>
+        <td data-label="Selection Method">MAIA</td>
+        <td data-label="# Units">22</td>
+        <td data-label="Balanced">✗</td>
+        <td data-label="Test Acc.">0.837</td>
       </tr>
       <tr>
-        <td style="border: 1px solid black;">All</td>
-        <td style="border: 1px solid black;">ℓ₁ Hyper. Tuning</td>
-        <td style="border: 1px solid black;">147</td>
-        <td style="border: 1px solid black;">✓</td>
-        <td style="border: 1px solid black;">0.830</td>
+        <td data-label="Subset">All</td>
+        <td data-label="Selection Method">ℓ₁ Hyper. Tuning</td>
+        <td data-label="# Units">147</td>
+        <td data-label="Balanced">✓</td>
+        <td data-label="Test Acc.">0.830</td>
       </tr>
       <tr>
-        <td style="border: 1px solid black;"></td>
-        <td style="border: 1px solid black;">ℓ₁ Top 22</td>
-        <td style="border: 1px solid black;">22</td>
-        <td style="border: 1px solid black;">✓</td>
-        <td style="border: 1px solid black;"><b>0.865</b></td>
+        <td data-label="Subset"></td>
+        <td data-label="Selection Method">ℓ₁ Top 22</td>
+        <td data-label="# Units">22</td>
+        <td data-label="Balanced">✓</td>
+        <td data-label="Test Acc."><b>0.865</b></td>
       </tr>
     </tbody>
   </table>
