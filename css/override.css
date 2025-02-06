@@ -94,30 +94,39 @@ h1, h2, h3, h4, h5, h6 {
 
 
 
-/* Make the table container scrollable horizontally */
+/* Responsive Table for Author Names */
 .table-container {
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
-}
-
-/* Ensure the table doesn't shrink below its content width */
-.table-container table {
   width: 100%;
-  min-width: 600px; /* Adjust based on your table's natural width */
+  overflow-x: auto;
+}
+
+.responsive-table {
+  width: 100%;
   border-collapse: collapse;
+  table-layout: fixed;
 }
 
-/* Style the table cells */
-.table-container td {
+.responsive-table td {
+  width: 25%; /* Adjust based on number of columns */
   padding: 10px;
-  text-align: center;
-  vertical-align: top;
 }
 
-/* Optional: Remove table borders if not needed */
-.table-container table,
-.table-container td {
-  border: none;
+@media screen and (max-width: 600px) {
+  .responsive-table, 
+  .responsive-table tr, 
+  .responsive-table td {
+    display: block;
+    width: 100%;
+  }
+
+  .responsive-table td {
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .responsive-table tr {
+    margin-bottom: 15px;
+  }
 }
 
 /* test */
