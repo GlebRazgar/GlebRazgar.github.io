@@ -97,7 +97,6 @@ This work is the first in the series of steps towards automated interpretability
 Current limitations require human oversight to address confirmation bias
 and sampling adequacy. Full automation of interpretation will
 necessitate both higher diversity of tooling and improved model reasoning.
-<br><br>
 
 <hr style="border-top: 1px solid black;">
 
@@ -157,9 +156,7 @@ with neural networks. While these systems make interpretability more programati
 <p align="center"><img src="../images/low-level.png" alt="Alt text" style="max-width: 100%; height: auto; border-radius: 10px;"></p>
 
 <div style="width: 80%; margin: auto; text-align: justify;">
-<p><b>Figure 2:</b> Low-level overview of AIM. At each iteration input images are fed through a vision model, where a Sparse Auto-Encoder extracts and maps circuit activations of requested layers. The sparse activation maps are analyzed by a vision-language model agent which formulates hypotheses about circuit behaviour. By writing executable python experiments, the agent can utilize different tools in its toolkit (e.g: generate images, edit images, check logs, etc.) to iteratively validate or refute these hypotheses.</p></div>  
-<br>
-
+<p><b>Figure 2:</b> Low-level overview of AIM. At each iteration input images are fed through a vision model, where a Sparse Auto-Encoder extracts and maps circuit activations of requested layers. The sparse activation maps are analyzed by a vision-language model agent which formulates hypotheses about circuit behaviour. By writing executable python experiments, the agent can utilize different tools in its toolkit (e.g: generate images, edit images, check logs, etc.) to iteratively validate or refute these hypotheses.</p></div>
 
 <hr style="border-top: 1px solid black;">
 
@@ -195,6 +192,7 @@ requirements of iterative neural network analysis.
 <p align="center"><img src="../images/flow.png" alt="Alt text" style="max-width: 100%; height: auto; border-radius: 10px;"></p>
 <div style="width: 80%; margin: auto; text-align: justify;">
 <p><b>Figure 3:</b> Practical example of the AIM flow. Upon receiving an input query, the framework initializes by passing stock dataset images through the network. Based on the sparse activation maps and the initial hypothesis (e.g: Units X,Y,Z encode people) the multi-modal agent generates a set of images to confirm or deny it. In the following iterations the agent acts to increase the circuit activations by either modifying or generating new images based on the results. Through varied placement of the Sparse Auto-Encoder, the agent observes different circuit activations and forms corresponding hypotheses. This programmatic iteration continues until the agent accumulates sufficient confidence about a circuit to conclude the experiment and formulate its findings.</p></div>
+<br>
 
 <h4 style="margin-bottom: 0"><u>3.2 System</u></h4> 
 The System class provides programmatic access to internal
@@ -260,13 +258,11 @@ modifications) and maintains an accessible history for subsequent
 analysis. AIM uses this log to track hypothesis evolution, neural
 circuits and evidence accumulation throughout the
 interpretation process.
-<br><br>
 
 <hr style="border-top: 1px solid black;">
 
 <h3 align="center">4. Evaluation</h3>
 AIM is evaluated across three dimensions:  
-
 1\) Behavior prediction accuracy for neurons and circuits in trained
 architecture.  
 2\) Performance on synthetic neurons and circuits with known ground-truth selectivity.  
@@ -338,7 +334,7 @@ the generated images to assess prediction accuracy.
 
 <p align="center"><img src="../images/stats2.png" alt="Alt text" style="max-width: 100%; height: auto; border-radius: 10px;"></p>
 <div style="width: 80%; margin: auto; text-align: justify;">
-<p><b>Figure 5:</b> Abalation Study </p></div><br>
+<p><b>Figure 5:</b> Abalation Study </p></div>
 
 <hr style="border-top: 1px solid black;">
 
@@ -458,7 +454,6 @@ experiment targeting ImageNet classes, AIM's synthetic data generation
 reveals regions of poor model performance, surfacing broad failure
 categories. Additional experiments validate these findings
 across diverse bias types.
-<br><br>
 
 <hr style="border-top: 1px solid black;">
 
