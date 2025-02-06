@@ -27,7 +27,7 @@ layout: post
   </table>
 </div>
 
-<hr style="border-top: 1px solid black;">
+<hr style="border-top: 1px solid black; margin-top: 0;">
 <h3 align="center">Abstract</h3>
 
 <div style="width: 80%; margin: auto; text-align: justify;">
