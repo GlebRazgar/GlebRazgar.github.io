@@ -113,7 +113,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Style the table cells */
 .table-container td,
 .table-container th {
-  padding: 10px;
+  padding: 0px;
   text-align: center;
   vertical-align: top;
 }
