@@ -101,6 +101,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   min-width: 600px; /* Adjust based on your table's natural width */
   border-collapse: collapse;
+  background-color: transparent; /* Make the table background transparent */
 }
 
 /* Style the table cells */
@@ -111,14 +112,34 @@ h1, h2, h3, h4, h5, h6 {
   vertical-align: top;
   line-height: 1.2;        /* Adjusted line height */
   font-size: 0.9em;        /* Reduced font size if necessary */
+  background-color: transparent; /* Make the background of cells transparent */
+  border: 1px solid black; /* Optional: Set border color */
 }
 
-/* Remove borders from the name table */
-.name-table,
-.name-table td,
-.name-table th {
-  border: none;
-  background: transparent;
+/* Ensure the table has a transparent background */
+.table-container table {
+  background-color: transparent; /* Make the table background transparent */
+}
+
+/* Optional: Adjust table borders */
+.table-container table,
+.table-container th,
+.table-container td {
+  border-color: black;     /* Set border color */
+}
+
+/* Remove borders entirely if desired */
+.table-container table,
+.table-container th,
+.table-container td {
+  border: none;            /* Remove borders to make cells invisible */
+}
+
+/* Optional: Adjust table caption styling */
+.table-container caption {
+  caption-side: top;
+  padding: 5px;
+  font-weight: bold;
 }
 
 /* Global scrollbar styling */
