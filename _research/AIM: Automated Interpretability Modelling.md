@@ -301,6 +301,7 @@ architecture.
     </tbody>
   </table>
 </div>
+<br>
 
 The framework enables interpretability tasks through natural language
 specification in the VLM prompt. We evaluate this capability through a
@@ -440,7 +441,7 @@ AIM's performance stems from meaningful feature selection as well as the SAE's s
     </tbody>
   </table>
 </div>
-
+<br>
 <div style="width: 80%; margin: auto; text-align: justify;">
 <p><b>Table2</b>: Results from testing AIM on picking stable circuits in the un-stable dataset against ℓ1 regularization on a stable dataset.</p></div>
 
