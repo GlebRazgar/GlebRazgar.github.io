@@ -66,7 +66,7 @@ behavioural analysis (Huang et al., 2023). Thus, here stands our
 decisive challenge: how to build tools that scale interpretability
 to higher units of analysis while expanding its accessibility beyond specialist researchers.
 
-<p align="center"><img src="../images/high-level.png" alt="Alt text" style="max-width: 100%; height: auto; border-radius: 10px;">></p>
+<p align="center"><img src="../images/high-level.png" alt="Alt text" style="max-width: 100%; height: auto; border-radius: 10px;"></p>
 
 <div style="max-width: 600px; margin: auto; text-align: justify;">
 <p><b>Figure 1:</b> High-level overview of AIM (Automated Interpretability Modelling). The framework procesess interpretability queries, iteratively generates executable code experiments, analyzes circuit activations and identifies their functions.</p></div>  
@@ -156,7 +156,7 @@ interaction with vision systems through code generation (Anthropic,
 these capabilities further, enabling direct image-based interaction
 with neural networks. While these systems make interpretability more programatic, they remain constrained by their inability to design and execute causal experiments, or in cases where experiments are made programatic, confined to single-neuron interpretability.  
 
-<p align="center"><img src="../images/low-level.png" alt="Alt text" style="max-width: 100%; height: auto; border-radius: 10px;">></p>
+<p align="center"><img src="../images/low-level.png" alt="Alt text" style="max-width: 100%; height: auto; border-radius: 10px;"></p>
 
 <div style="max-width: 600px; margin: auto; text-align: justify;">
 <p><b>Figure 2:</b> Low-level overview of AIM. At each iteration input images are fed through a vision model, where a Sparse Auto-Encoder extracts and maps circuit activations of requested layers. The sparse activation maps are analyzed by a vision-language model agent which formulates hypotheses about circuit behaviour. By writing executable python experiments, the agent can utilize different tools in its toolkit (e.g: generate images, edit images, check logs, etc.) to iteratively validate or refute these hypotheses.</p></div>  
@@ -193,7 +193,7 @@ design builds on recent advances in tool-use by language models (Surís
 et al., 2023; Gupta & Kembhavi, 2023), while specifically addressing the
 requirements of iterative neural network analysis.  
 
-<p align="center"><img src="../images/flow.png" alt="Alt text" style="max-width: 100%; height: auto; border-radius: 10px;">></p>
+<p align="center"><img src="../images/flow.png" alt="Alt text" style="max-width: 100%; height: auto; border-radius: 10px;"></p>
 <div style="max-width: 600px; margin: auto; text-align: justify;">
 <p><b>Figure 3:</b> Practical example of the AIM flow. Upon receiving an input query, the framework initializes by passing stock dataset images through the network. Based on the sparse activation maps and the initial hypothesis (e.g: Units X,Y,Z encode people) the multi-modal agent generates a set of images to confirm or deny it. In the following iterations the agent acts to increase the circuit activations by either modifying or generating new images based on the results. Through varied placement of the Sparse Auto-Encoder, the agent observes different circuit activations and forms corresponding hypotheses. This programmatic iteration continues until the agent accumulates sufficient confidence about a circuit to conclude the experiment and formulate its findings.</p></div>
 
@@ -311,7 +311,7 @@ description - a fundamental interpretability task with applications in
 model auditing and editing (Gandelsman et al., 2024; Yang et al., 2023;
 Hernandez et al., 2022).
 
-<p align="center"><img src="../images/stats1.png" alt="Alt text" style="max-width: 100%; height: auto; border-radius: 10px;">></p>
+<p align="center"><img src="../images/stats1.png" alt="Alt text" style="max-width: 100%; height: auto; border-radius: 10px;"></p>
 <div style="max-width: 600px; margin: auto; text-align: justify;">
 <p><b>Figure 4:</b> Activation Analysis. AIM's neuron descriptions achieve higher average activation scores than MILAN, reaching performance levels similar to human annotations across both synthetic and real circuits. </p></div><br>
 
@@ -336,7 +336,7 @@ prompts, which are then paired with descriptions by a separate Gemini
 instance based on predicted relevance. We measure neuron activations on
 the generated images to assess prediction accuracy.  
 
-<p align="center"><img src="../images/stats2.png" alt="Alt text" style="max-width: 100%; height: auto; border-radius: 10px;">></p>
+<p align="center"><img src="../images/stats2.png" alt="Alt text" style="max-width: 100%; height: auto; border-radius: 10px;"></p>
 <div style="max-width: 600px; margin: auto; text-align: justify;">
 <p><b>Figure 5:</b> Abalation Study </p></div><br>
 
