@@ -158,6 +158,7 @@ with neural networks. While these systems make interpretability more programati
 
 <div style="width: 80%; margin: auto; text-align: justify;">
 <p><b>Figure 2:</b> Low-level overview of AIM. At each iteration input images are fed through a vision model, where a Sparse Auto-Encoder extracts and maps circuit activations of requested layers. The sparse activation maps are analyzed by a vision-language model agent which formulates hypotheses about circuit behaviour. By writing executable python experiments, the agent can utilize different tools in its toolkit (e.g: generate images, edit images, check logs, etc.) to iteratively validate or refute these hypotheses.</p></div>  
+<br>
 
 
 <hr style="border-top: 1px solid black;">
