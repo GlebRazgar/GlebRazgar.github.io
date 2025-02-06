@@ -66,11 +66,7 @@ behavioural analysis (Huang et al., 2023). Thus, here stands our
 decisive challenge: how to build tools that scale interpretability
 to higher units of analysis while expanding its accessibility beyond specialist researchers.
 
-<p align="center">
-  <div style="overflow: hidden; height: 300px; position: relative;">
-    <img src="../images/high-level.png" alt="Alt text" style="max-width: 100%; height: auto; border-radius: 10px;"> position: absolute; top: 50%; transform: translateY(-50%);">
-  </div>
-</p>
+<p align="center"><img src="../images/high-level.png" alt="Alt text" style="max-width: 100%; height: auto; border-radius: 10px;">></p>
 
 <div style="max-width: 600px; margin: auto; text-align: justify;">
 <p><b>Figure 1:</b> High-level overview of AIM (Automated Interpretability Modelling). The framework procesess interpretability queries, iteratively generates executable code experiments, analyzes circuit activations and identifies their functions.</p></div>  
