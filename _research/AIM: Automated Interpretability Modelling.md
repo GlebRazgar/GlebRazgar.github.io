@@ -442,7 +442,7 @@ AIM's performance stems from meaningful feature selection as well as the SAE's s
   </table>
 </div>
 
-<div style="max-width: 600px; margin: auto; text-align: justify;">
+<div style="width: 80%; margin: auto; text-align: justify;">
 <p><b>Table2</b>: Results from testing AIM on picking stable circuits in the un-stable dataset against ℓ1 regularization on a stable dataset.</p></div>
 
 
