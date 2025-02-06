@@ -262,7 +262,8 @@ interpretation process.
 <hr style="border-top: 1px solid black;">
 
 <h3 align="center">4. Evaluation</h3>
-AIM is evaluated across three dimensions:  
+AIM is evaluated across three dimensions:
+
 1\) Behavior prediction accuracy for neurons and circuits in trained
 architecture.  
 2\) Performance on synthetic neurons and circuits with known ground-truth selectivity.  
