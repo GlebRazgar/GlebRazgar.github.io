@@ -4,15 +4,27 @@ date: 2025-01-10
 layout: post
 ---
   
-<div align="center">
-<table>
-  <tr>
-    <td align="center">Gleb Razgar<br><a href="mailto:gleb.razgar@gmail.com">gleb.razgar@gmail.com</a></td>
-    <td align="center">Simon Malzard<br><a href="mailto:smalzard@turing.ac.uk">smalzard@turing.ac.uk</a></td>
-    <td align="center">Piyush Ahuia<br><a href="mailto:piyush@cam.ac.uk">piyush@cam.ac.uk</a></td>
-    <td align="center">Nitish Mital<br><a href="mailto:nitishmital@turing.ac.uk">nitishmital@turing.ac.uk</a></td>
-  </tr>
-</table>
+<div class="table-container">
+  <table class="responsive-table">
+    <tr>
+      <td align="center">
+        <strong>Gleb Razgar</strong><br>
+        <a href="mailto:gleb.razgar@gmail.com">gleb.razgar@gmail.com</a>
+      </td>
+      <td align="center">
+        <strong>Simon Malzard</strong><br>
+        <a href="mailto:smalzard@turing.ac.uk">smalzard@turing.ac.uk</a>
+      </td>
+      <td align="center">
+        <strong>Piyush Ahuja</strong><br>
+        <a href="mailto:piyush@cam.ac.uk">piyush@cam.ac.uk</a>
+      </td>
+      <td align="center">
+        <strong>Nitish Mital</strong><br>
+        <a href="mailto:nitishmital@turing.ac.uk">nitishmital@turing.ac.uk</a>
+      </td>
+    </tr>
+  </table>
 </div>
 
 <hr style="border-top: 1px solid black;">

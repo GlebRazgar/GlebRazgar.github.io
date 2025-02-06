@@ -90,3 +90,43 @@ h1, h2, h3, h4, h5, h6 {
     background-color: transparent;
     background-image: none;
 }
+
+
+
+
+
+/* Test */
+/* Responsive Table for Author Names */
+.table-container {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.responsive-table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+.responsive-table td {
+  width: 25%; /* Adjust based on number of columns */
+  padding: 10px;
+}
+
+@media screen and (max-width: 600px) {
+  .responsive-table, 
+  .responsive-table tr, 
+  .responsive-table td {
+    display: block;
+    width: 100%;
+  }
+
+  .responsive-table td {
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .responsive-table tr {
+    margin-bottom: 15px;
+  }
+}
