@@ -94,11 +94,11 @@ h1, h2, h3, h4, h5, h6 {
 
 
 
-/* Adjusted table container */
+/* Adjusted table container with consistent top and bottom margins */
 .table-container {
   overflow-x: auto;
   -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
-  margin: 0; /* Remove default margins */
+  margin: 20px 0; /* Add 20px margin to the top and bottom */
   padding: 0; /* Remove default padding */
   display: inline-block; /* Shrink container to fit content */
 }
@@ -128,7 +128,6 @@ h1, h2, h3, h4, h5, h6 {
 .table-container + * {
   margin-top: 0;
 }
-
 
 
 /* test */
