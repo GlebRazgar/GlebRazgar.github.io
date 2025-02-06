@@ -45,15 +45,14 @@ hr {
 }
 
 /* ------------------- My changes -------------- */
-/* post & research title sizes */
+/* Post & research title sizes */
 .posts-list a,
 .research-list a {
   font-size: 1.2rem; /* Adjust the size as desired */
   text-decoration: none; /* Optional: Remove underline from links */
 }
 
-/*'Posts' and 'Research' size */
-h1, h2, h3, h4, h5, h6,
+/* 'Posts' and 'Research' size */
 h1, h2, h3, h4, h5, h6,
 .section-title,
 .site-title {
@@ -86,21 +85,15 @@ h1, h2, h3, h4, h5, h6 {
   box-shadow: none;
 }
 
-  .site-title {
-    background-color: transparent;
-    background-image: none;
+.site-title {
+  background-color: transparent;
+  background-image: none;
 }
-
-
-
-/* Existing styles */
 
 /* Make the table container scrollable horizontally */
 .table-container {
   overflow-x: auto;
   -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
-  margin-top: 0;    /* Add this line to remove top margin */
-  margin-bottom: 0; /* Add this line to remove bottom margin */
 }
 
 /* Ensure the table doesn't shrink below its content width */
@@ -113,14 +106,21 @@ h1, h2, h3, h4, h5, h6 {
 /* Style the table cells */
 .table-container td,
 .table-container th {
-  padding: 0px;
+  padding: 5px;            /* Reduced padding to decrease cell height */
   text-align: center;
   vertical-align: top;
+  line-height: 1.2;        /* Adjusted line height */
+  font-size: 0.9em;        /* Reduced font size if necessary */
 }
 
-/* Optional: Add or adjust other styles as needed */
+/* Optional: Adjust table caption styling */
+.table-container caption {
+  caption-side: top;
+  padding: 5px;
+  font-weight: bold;
+}
 
-/* Scrollbar styling (optional) */
+/* Global scrollbar styling */
 ::-webkit-scrollbar {
   height: 8px;
   width: 8px;
