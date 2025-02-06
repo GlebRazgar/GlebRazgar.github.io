@@ -29,10 +29,6 @@ layout: post
 
 <h3 align="center">Abstract</h3>
 
-<div style="width: 85%; margin: auto; text-align: justify;">
-  <p><b>Figure 1:</b> High-level overview of AIM (Automated Interpretability Modelling). The framework processes interpretability queries, iteratively generates executable code experiments, analyzes circuit activations, and identifies their functions.</p>
-</div>
-
 <div style="max-width: 600px; margin: auto; text-align: justify;">
 In this paper we propose Automated Interpretability Modelling (AIM) -
 a method that uses neural models to automate mechanistic
@@ -70,8 +66,9 @@ to higher units of analysis while expanding its accessibility beyond specialist 
 
 <p align="center"><img src="../images/high-level.png" alt="Alt text" style="max-width: 100%; height: auto; border-radius: 10px;"></p>
 
-<div style="max-width: 600px; margin: auto; text-align: justify;">
-<p><b>Figure 1:</b> High-level overview of AIM (Automated Interpretability Modelling). The framework procesess interpretability queries, iteratively generates executable code experiments, analyzes circuit activations and identifies their functions.</p></div>  
+<div style="width: 85%; margin: auto; text-align: justify;">
+  <p><b>Figure 1:</b> High-level overview of AIM (Automated Interpretability Modelling). The framework processes interpretability queries, iteratively generates executable code experiments, analyzes circuit activations, and identifies their functions.</p>
+</div>
 
 This paper introduces AIM (Automated Interpretability Model), a system
 that combines a vision-language model for neural network analysis. AIM's
