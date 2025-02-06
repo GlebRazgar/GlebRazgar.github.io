@@ -4,22 +4,22 @@ date: 2025-01-10
 layout: post
 ---
 <div class="table-container">
-  <table class="responsive-table">
+  <table>
     <tr>
       <td align="center">
-        <strong>Gleb Razgar</strong><br>
+        Gleb Razgar<br>
         <a href="mailto:gleb.razgar@gmail.com">gleb.razgar@gmail.com</a>
       </td>
       <td align="center">
-        <strong>Simon Malzard</strong><br>
+        Simon Malzard<br>
         <a href="mailto:smalzard@turing.ac.uk">smalzard@turing.ac.uk</a>
       </td>
       <td align="center">
-        <strong>Piyush Ahuja</strong><br>
+        Piyush Ahuja<br>
         <a href="mailto:piyush@cam.ac.uk">piyush@cam.ac.uk</a>
       </td>
       <td align="center">
-        <strong>Nitish Mital</strong><br>
+        Nitish Mital<br>
         <a href="mailto:nitishmital@turing.ac.uk">nitishmital@turing.ac.uk</a>
       </td>
     </tr>
