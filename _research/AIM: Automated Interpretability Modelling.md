@@ -3,28 +3,29 @@ title: "Automated Interpretability Modelling"
 date: 2025-01-10
 layout: post
 ---
-  <div class="table-container">
-  <table>
+<div class="table-container">
+  <table class="responsive-table">
     <tr>
       <td align="center">
-        Gleb Razgar<br>
+        <strong>Gleb Razgar</strong><br>
         <a href="mailto:gleb.razgar@gmail.com">gleb.razgar@gmail.com</a>
       </td>
       <td align="center">
-        Simon Malzard<br>
+        <strong>Simon Malzard</strong><br>
         <a href="mailto:smalzard@turing.ac.uk">smalzard@turing.ac.uk</a>
       </td>
       <td align="center">
-        Piyush Ahuja<br>
+        <strong>Piyush Ahuja</strong><br>
         <a href="mailto:piyush@cam.ac.uk">piyush@cam.ac.uk</a>
       </td>
       <td align="center">
-        Nitish Mital<br>
+        <strong>Nitish Mital</strong><br>
         <a href="mailto:nitishmital@turing.ac.uk">nitishmital@turing.ac.uk</a>
       </td>
     </tr>
   </table>
 </div>
+
 <hr style="border-top: 1px solid black;">
 <h3 align="center">Abstract</h3>
 
