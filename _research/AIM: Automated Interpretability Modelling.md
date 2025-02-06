@@ -269,7 +269,7 @@ AIM is evaluated across three dimensions:
 1\) Behavior prediction accuracy for neurons and circuits in trained
 architecture.  
 2\) Performance on synthetic neurons and circuits with known ground-truth selectivity.  
-3\) Comparative analysis against the MILAN baseline (Hernandez et al., 2022) and human experts.  
+3\) Comparative analysis against the MILAN baseline (Hernandez et al., 2022) and human experts.
 
 <div class="table-container" style="overflow-x: auto;">
   <table cellspacing="0" cellpadding="6" border="1" style="border: 1px solid black; border-collapse: collapse;">
