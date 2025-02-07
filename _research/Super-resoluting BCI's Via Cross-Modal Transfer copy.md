@@ -17,7 +17,7 @@ layout: post
 
 <h3 align="center">Abstract</h3>
 
-<p align="center"><img src="../images/electromagnetic.png" alt="Alt text" style="max-width: 100%; height: auto; border-radius: 10px;"></p>
+<p align="center"><img src="../images/Electro.png" alt="Alt text" style="max-width: 100%; height: auto; border-radius: 10px;"></p>
 
 <div style="max-width: 600px; margin: auto; text-align: justify;">
 In this paper we propose Automated Interpretability Modelling (AIM) -
