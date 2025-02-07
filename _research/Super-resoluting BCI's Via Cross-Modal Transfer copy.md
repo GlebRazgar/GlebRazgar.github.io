@@ -17,6 +17,8 @@ layout: post
 
 <h3 align="center">Abstract</h3>
 
+<p align="center"><img src="../images/dummy.png" alt="Alt text" style="max-width: 100%; height: auto; border-radius: 10px;"></p>
+
 <div style="max-width: 600px; margin: auto; text-align: justify;">
 In this paper we propose Automated Interpretability Modelling (AIM) -
 a method that uses neural models to automate mechanistic
