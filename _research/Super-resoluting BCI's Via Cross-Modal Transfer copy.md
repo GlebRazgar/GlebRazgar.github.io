@@ -1,5 +1,5 @@
 ---
-title: "Making Meaning of Noise: Super-Resoluting BCIs Via Cross-Modal Transfer"
+title: "Super-Resoluting BCIs Via Cross-Modal Transfer"
 date: 2021-10-01
 layout: post
 ---
