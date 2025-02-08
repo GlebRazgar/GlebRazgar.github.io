@@ -203,7 +203,7 @@ In creating a reliable mapping between EEG and MEG signal its crucial to have bo
 A.	We calculate Mutual Information (MI) between each EEG and MEG electrode per recording. In this context MI quantifies mutual dependency between signals recorded from electrodes across the two modalities. Higher MI indicates stronger correspondence between the signals, suggesting they are likely capturing activity from similar neural sources.
 
 <p align="center"><img src="../images/eeg&meg.png" alt="Alt text" style="max-width: 100%; height: auto; border-radius: 10px;"></p>
-<div style="width: 60%; margin: auto; text-align: justify;">
+<div style="width: 80%; margin: auto; text-align: justify;">
 <p><b>Figure 4:</b> Activation Analysis. AIM's neuron descriptions achieve higher average activation scores than MILAN, reaching performance levels similar to human annotations across both synthetic and real circuits. </p></div><br>
 
 We calculate MI between each EEG and MEG electrode pair for a given recording frame in a window using the following formula:
