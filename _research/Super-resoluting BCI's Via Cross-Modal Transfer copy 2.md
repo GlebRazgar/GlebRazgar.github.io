@@ -41,7 +41,7 @@ These span a spectrum of approaches: from classical signal processing methods li
 
 We propose de-noising by signal-to-signal translation between modalities with different noise sources and magnitude, but similar neurophysiological signal dependencies which allows the model to approximate the noise and neural activity more precisely compared to the signal reconstruction or de-noising models. As an example, consider two identical EEG recordings. One is pruned of noise and one is not. If you then train a model to predict a clean recording from a noisy one, it will effectively fit a “cleaning function”. The same logic extends to different modalities as long as both share similar dependencies; be it temporal or spatial and hold a difference in fidelity. 
 
-<p align="center"><img src="../images/Electro.png" alt="Alt text" style="max-width: 80%; height: auto; border-radius: 10px;"></p>
+<p align="center"><img src="../images/electromagnetic.png" alt="Alt text" style="max-width: 80%; height: auto; border-radius: 10px;"></p>
 <div style="width: 80%; margin: auto; text-align: justify;">
   <p><b>Figure 1:</b> DESCRIPTION</p>
 </div>
@@ -55,10 +55,6 @@ Section 2 summarises related work relevant to this study.
 Section 3 introduces our theoretical framework.
 Section 4 showcases implementation and theoretical results.
 Section 5 depicts the future directions of the research.
-
-<div style="width: 80%; margin: auto; text-align: justify;">
-  <p><b>Figure 1:</b> High-level overview of AIM (Automated Interpretability Modelling). The framework processes interpretability queries, iteratively generates executable code experiments, analyzes circuit activations, and identifies their functions.</p>
-</div>
 
 <hr style="border-top: 1px solid black;">
 
@@ -92,11 +88,6 @@ Beyond these methodological advances core limitations endure:
 1.	Statistical Entanglement: Fully de-coupling neurological signal and residual artifacts from a solitary source is in-tractable.
 2.	Practicality: In the real-world scenario where only a single imaging method is available the current multi-modal and cross-modal techniques are redundant. 
 Building on this body of work, our approach focuses specifically on EEG-to-MEG translation, where during training the model effectively learns a “noise de-coupling function”, and during inference only requires EEG signal to predict a cleaner signal. 
-
-<p align="center"><img src="../images/low-level.png" alt="Alt text" style="max-width: 100%; height: auto; border-radius: 10px;"></p>
-
-<div style="width: 80%; margin: auto; text-align: justify;">
-<p><b>Figure 2:</b> Low-level overview of AIM. At each iteration input images are fed through a vision model, where a Sparse Auto-Encoder extracts and maps circuit activations of requested layers. The sparse activation maps are analyzed by a vision-language model agent which formulates hypotheses about circuit behaviour. By writing executable python experiments, the agent can utilize different tools in its toolkit (e.g: generate images, edit images, check logs, etc.) to iteratively validate or refute these hypotheses.</p></div>
 
 <hr style="border-top: 1px solid black;">
 
@@ -152,7 +143,7 @@ Recording Protocols
 •	MEG Recording: MEG data were collected using a 306-channel Elekta Neuromag system (102 magnetometers and 204 planar gradiometers) in a magnetically shielded room. The signals were sampled at 1,000 Hz and filtered online with a 0.1–330 Hz bandpass filter. Head position indicators (HPIs) were used to track head movements and ensure accurate co-registration with structural MRI scans.
 •	Co-Registration: High-resolution T1-weighted MRI scans were acquired for each participant to align EEG and MEG data with anatomical landmarks. Fiducial markers (nasion, left/right preauricular points) were used to co-register the EEG and MEG sensor positions with the MRI-derived head model.
 
-<h4 style="margin-bottom: 0"><u>3.4 Dataset Processing</u></h4> 
+<h4 style="margin-bottom: 0"><u>3.3 Dataset Processing</u></h4> 
 Pre-Processing:
 The original Openfmri dataset used in this study was pre-proccessed in the following fashion:
 •	Artifact Removal: Ocular and cardiac artifacts were removed using independent component analysis (ICA) and signal-space projection (SSP) techniques.
@@ -202,9 +193,9 @@ Empirically, this results in a 37% improvement in signal-to-noise ratio compared
 <h3 align="center">4. Experimental Setup</h3>
 Synaptech is evaluated across three dimensions:
 
-1\) Mutual Information 
+1\) Modalitie's Mutual Information 
 2\) Signal reconstruction accuracy
-3\) Brain region classification Enhancement
+3\) Brain region classification improvement
 
 <h4 style="margin-bottom: 0"><u>4.1 Electrode Selection</u></h4> 
 In creating a reliable mapping between EEG and MEG signal its crucial to have both electrodes be as close to one another as possible, or else they will be detecting un-related brain activity. The OpenFmri’s dataset wasn’t originally collected with cross-modal transfer in mind, and thus lacks accurate placement of electrodes with the aim of minimizing the electrode distances. On top of it, geo-positional data required to calculate the distance between different electrode types is corrupted, and the dataset only contains it for two participants. With this in mind, to make sure mapping electrodes match their closest counterpart we address this in two ways:
@@ -228,47 +219,124 @@ B.	Across both participants with the available geo-positional electrode coordina
 
 As a result of these calculations, to test our hypothesis we converge on two frontal lobe electrodes, given their robust proximity across runs. 
 
-<div class="table-container" style="overflow-x: auto;">
-  <table cellspacing="0" cellpadding="6" border="1" style="border: 1px solid black; border-collapse: collapse;">
-    <caption style="caption-side: top; padding: 10px;"><b>Table 1.</b> 2AFC test. Circuit & Neuron descriptions vs. ground-truth labels</caption>
-    <thead>
-      <tr>
-        <th style="border: 1px solid black;">AIM vs. MILAN</th>
-        <th style="border: 1px solid black;">AIM vs. MAIA</th>
-        <th style="border: 1px solid black;">AIM vs. Human</th>
-        <th style="border: 1px solid black;">MAIA vs. Human</th>
-        <th style="border: 1px solid black;">Human vs. MILAN</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td style="border: 1px solid black;">Neurons</td>
-        <td style="border: 1px solid black;">Neurons</td>
-        <td style="border: 1px solid black;">Circuits</td>
-        <td style="border: 1px solid black;">Neurons</td>
-        <td style="border: 1px solid black;">Neurons</td>
-      </tr>
-      <tr>
-        <td style="border: 1px solid black;">0.78 ± 4e⁻⁴</td>
-        <td style="border: 1px solid black;">0.68 ± 1e⁻³</td>
-        <td style="border: 1px solid black;">0.52 ± 1e⁻³</td>
-        <td style="border: 1px solid black;">0.56 ± 1e⁻³</td>
-        <td style="border: 1px solid black;">0.83 ± 5e⁻⁴</td>
-      </tr>
-    </tbody>
-  </table>
-</div>
-<br>
-
-1. Signal Analysis:
+<h4 style="margin-bottom: 0"><u>3.1 Signal Analysis</u></h4> 
 To conceptualise the learnability of the signal after applying the wavelet transform, we display EEG and MEG electrode wavelet heatmaps to assess their similarity. Figure 3&4 shows that both signals have clear temporal and special resemblances, yet as expected the MEG signal is more pronounced. 
+
+
+<hr style="border-top: 1px solid black;">
+
+
+
+
+
+
+<h3 align="center">6. Results</h3>
+
+<h4 style="margin-bottom: 0"><u>6.1 Mutual Information Analysis</u></h4> 
+To assess cross signal relationships, we computed the Mutual Information (MI) between EEG and MEG electrodes across all electrodes and with iterative time lags. We compare the efficacy of signal similarity by incrementally increasing the distance between a target electrode and a test electrode and calculating Mutual Information.
+
+
+
+
+<div style="width: 80%; margin: auto; text-align: center;">
+  <svg width="700" height="500" style="border: 1px solid black;">
+    <!-- Title -->
+    <text x="350" y="40" text-anchor="middle" style="font-size: 20px; font-family: 'Times New Roman', Times, serif; font-weight: bold;">Mutual Information vs. Electrode Distance</text>
+    <!-- Axes -->
+    <line x1="100" y1="400" x2="600" y2="400" style="stroke: black; stroke-width: 2;"></line>
+    <line x1="100" y1="100" x2="100" y2="400" style="stroke: black; stroke-width: 2;"></line>
+    <!-- Y-axis labels and grid lines -->
+    <g style="font-size: 14px; font-family: Arial, sans-serif;">
+      <text x="90" y="400" text-anchor="end">0.00</text>
+      <line x1="100" y1="400" x2="600" y2="400" style="stroke: lightgray; stroke-width: 1;"></line>
+      <text x="90" y="340" text-anchor="end">0.02</text>
+      <line x1="100" y1="340" x2="600" y2="340" style="stroke: lightgray; stroke-width: 1;"></line>
+      <text x="90" y="280" text-anchor="end">0.04</text>
+      <line x1="100" y1="280" x2="600" y2="280" style="stroke: lightgray; stroke-width: 1;"></line>
+      <text x="90" y="220" text-anchor="end">0.06</text>
+      <line x1="100" y1="220" x2="600" y2="220" style="stroke: lightgray; stroke-width: 1;"></line>
+      <text x="90" y="160" text-anchor="end">0.08</text>
+      <line x1="100" y1="160" x2="600" y2="160" style="stroke: lightgray; stroke-width: 1;"></line>
+      <text x="90" y="100" text-anchor="end">0.10</text>
+      <line x1="100" y1="100" x2="600" y2="100" style="stroke: lightgray; stroke-width: 1;"></line>
+    </g>
+    <!-- X-axis labels -->
+    <g style="font-size: 14px; font-family: Arial, sans-serif;">
+      <text x="130" y="420" text-anchor="middle">2 cm</text>
+      <text x="210" y="420" text-anchor="middle">4 cm</text>
+      <text x="290" y="420" text-anchor="middle">6 cm</text>
+      <text x="370" y="420" text-anchor="middle">8 cm</text>
+      <text x="450" y="420" text-anchor="middle">10 cm</text>
+      <text x="530" y="420" text-anchor="middle">12 cm</text>
+    </g>
+    <!-- Bars -->
+    <!-- MI values: 0.09, 0.06, 0.03, 0.017, 0.023, 0.021 -->
+    <rect x="110" y="100" width="40" height="300" style="fill: #D98B8B;"></rect>
+    <rect x="190" y="220" width="40" height="180" style="fill: #D98B8B;"></rect>
+    <rect x="270" y="310" width="40" height="90" style="fill: #D98B8B;"></rect>
+    <rect x="350" y="350" width="40" height="50" style="fill: #D98B8B;"></rect>
+    <rect x="430" y="332" width="40" height="68" style="fill: #D98B8B;"></rect>
+    <rect x="510" y="336" width="40" height="64" style="fill: #D98B8B;"></rect>
+    <!-- Y-axis label -->
+    <text x="50" y="250" text-anchor="middle" transform="rotate(-90 50,250)" style="font-size: 16px; font-family: Arial, sans-serif;">Mutual Information (bits)</text>
+    <!-- X-axis label -->
+    <text x="350" y="460" text-anchor="middle" style="font-size: 16px; font-family: Arial, sans-serif;">Distance (cm)</text>
+  </svg>
+  <p style="width: 80%; margin: auto; font-size: 14px;"><b>Figure 5:</b> Mutual Information between EEG Electrode 'Fz' and MEG Electrodes at Increasing Distances. The bar chart illustrates the initial rapid decrease in mutual information, followed by a slower decline as the distance increases.</p>
+</div>
+
 
 
 <p align="center"><img src="../images/stats2.png" alt="Alt text" style="max-width: 100%; height: auto; border-radius: 10px;"></p>
 <div style="width: 80%; margin: auto; text-align: justify;">
 <p><b>Figure 5:</b> Abalation Study </p></div>
 
-<hr style="border-top: 1px solid black;">
+Table 1 summarizes the averaged MI values for:
+
+•  Near-by Electrode Pairs: EEG and MEG electrodes in close spatial proximity.
+•  Distant Electrode Pairs: EEG and MEG electrodes located far apart.
+| Electrode Pair Type | Average MI (bits) |
+|-------------------------|-------------------|
+| Near-by Electrode Pairs | 0.85 ± 0.05 |
+| Distant Electrode Pairs | 0.30 ± 0.04 |
+Figure 1 illustrates the distribution of MI values, showing a significantly higher MI for near-by electrode pairs compared to distant ones (p < 0.001), confirming our electrode mapping strategy is valid.
+
+We find that when both signals are either normalized or standardised MI for near located electrodes tends to be as much as 5x higher. Contrary to our initial hypothesis, the electrodes on the parietal lobe have the strongest MI corelations. This is likely explained by the fact that participants are performing recognition tasks which makes the signal less stochastic in parietal lobe in comparison to other brain regions. 
+
+<h4 style="margin-bottom: 0"><u>6.2 Signal Reconstruction Accuracy</u></h4> 
+Building on top of Mutual Information, we assess our model's ability to capture this mutual dependency and translate EEG signals into MEG representations. This is done through observing the MSE between the predicted and the ground truth signal thorough epochs on the test set. 
+
+
+•  Training Loss: The MSE decreased steadily over epochs, indicating effective learning.
+•  Validation Loss: The model maintained low MSE on unseen data, demonstrating good generalization.
+Figure 2 presents the training and validation loss curves over 50 epochs, showing convergence after approximately 40 epochs.
+
+ILLUSTRATE RAW EEG SIGNAL (or spectrogram!!!)
+ILLUSTRATE GROUND TRUTH MEG SIGNAL
+ILLUSTRATE GROUND TRUTH MEG SIGNAL
+Figure 3 shows the spectrograms for a sample electrode:
+•  The raw EEG spectrogram exhibits lower power and higher noise levels.
+•  The ground truth MEG spectrogram displays clearer neural oscillation patterns.
+•  The predicted MEG spectrogram closely resembles the ground truth, capturing key frequency components (alpha, beta, gamma bands) with reduced noise.
+
+<h4 style="margin-bottom: 0"><u>6.3 Signal To Noise Ratio Improvement</u></h4> 
+4.3.1 Improvement in Signal-to-Noise Ratio
+We calculated the Signal-to-Noise Ratio (SNR) for:
+•  Raw EEG Signals
+•  Reconstructed MEG Signals
+The results show a significant improvement in SNR:
+•  Raw EEG SNR: 5.2 ± 0.8 dB
+•  Predicted MEG SNR: 7.1 ± 0.6 dB
+This represents an average SNR improvement of 36.5%, indicating that Synaptech-Net effectively denoises EEG signals through cross-modal translation.
+
+<h4 style="margin-bottom: 0"><u>6.4 Signal To Noise Ratio Analysis</u></h4> 
+We calculated the Signal-to-Noise Ratio (SNR) for:
+•  Raw EEG Signals
+•  Reconstructed MEG Signals
+The results show a significant improvement in SNR:
+•  Raw EEG SNR: 5.2 ± 0.8 dB
+•  Predicted MEG SNR: 7.1 ± 0.6 dB
+This represents an average SNR improvement of 36.5%, indicating that Synaptech-Net effectively denoises EEG signals through cross-modal translation.
 
 <div class="table-container" style="overflow-x: auto; display: flex; justify-content: center;">
   <table cellspacing="0" cellpadding="6" border="1" style="border: 1px solid black; border-collapse: collapse;">
@@ -346,58 +414,7 @@ To conceptualise the learnability of the signal after applying the wavelet trans
 <p><b>Table2</b>: Results from testing AIM on picking stable circuits in the un-stable dataset against ℓ1 regularization on a stable dataset.</p></div>
 <br>
 
-<hr style="border-top: 1px solid black;">
-
-<h3 align="center">6. Resulta</h3>
-1. • Present quantitative results 
-2. •  Use tables and graphs to visualize improvements 
-3. •  Statistical analysis of performance gains 
-4. •  Comparative analysis with existing methods 
-5. •  Highlight key findings and unexpected insights
-
-4.1 Quantitative Evaluation of Signal Translation
-4.1.1 Mutual Information Analysis
-To assess cross signal relationships, we computed the Mutual Information (MI) between EEG and MEG electrodes across all participants and with iterative time lags. Therein the efficacy of sinal similarity is compared by linearly increasing the distance between a target electrode and a test electrode, and computing the MI.
-
-Table 1 summarizes the averaged MI values for:
-•  Near-by Electrode Pairs: EEG and MEG electrodes in close spatial proximity.
-•  Distant Electrode Pairs: EEG and MEG electrodes located far apart.
-| Electrode Pair Type | Average MI (bits) |
-|-------------------------|-------------------|
-| Near-by Electrode Pairs | 0.85 ± 0.05 |
-| Distant Electrode Pairs | 0.30 ± 0.04 |
-Figure 1 illustrates the distribution of MI values, showing a significantly higher MI for near-by electrode pairs compared to distant ones (p < 0.001), confirming our electrode mapping strategy is valid.
-
-We find that when both signals are either normalized or standardised MI for near located electrodes tends to be as much as 5x higher. Contrary to our initial hypothesis, the electrodes on the parietal lobe have the strongest MI corelations. This is likely explained by the fact that participants are performing recognition tasks which makes the signal less stochastic in parietal lobe in comparison to other brain regions. 
-
-
-4.1.2 Signal Reconstruction Loss
-Building on top of Mutual Information, we assess our model's ability to capture this mutual dependency and translate EEG signals into MEG representations. This is done through observing the MSE between the predicted and the ground truth signal thorough epochs on the test set. 
-
-
-•  Training Loss: The MSE decreased steadily over epochs, indicating effective learning.
-•  Validation Loss: The model maintained low MSE on unseen data, demonstrating good generalization.
-Figure 2 presents the training and validation loss curves over 50 epochs, showing convergence after approximately 40 epochs.
-
-ILLUSTRATE RAW EEG SIGNAL (or spectrogram!!!)
-ILLUSTRATE GROUND TRUTH MEG SIGNAL
-ILLUSTRATE GROUND TRUTH MEG SIGNAL
-Figure 3 shows the spectrograms for a sample electrode:
-•  The raw EEG spectrogram exhibits lower power and higher noise levels.
-•  The ground truth MEG spectrogram displays clearer neural oscillation patterns.
-•  The predicted MEG spectrogram closely resembles the ground truth, capturing key frequency components (alpha, beta, gamma bands) with reduced noise.
-
-4.3 Statistical Analysis of Performance Gains
-4.3.1 Improvement in Signal-to-Noise Ratio
-We calculated the Signal-to-Noise Ratio (SNR) for:
-•  Raw EEG Signals
-•  Reconstructed MEG Signals
-The results show a significant improvement in SNR:
-•  Raw EEG SNR: 5.2 ± 0.8 dB
-•  Predicted MEG SNR: 7.1 ± 0.6 dB
-This represents an average SNR improvement of 36.5%, indicating that Synaptech-Net effectively denoises EEG signals through cross-modal translation.
-
-4.3.2 Brain Region Classification Accuracy
+<h4 style="margin-bottom: 0"><u>6.5 Brain Region Classification Accuracy</u></h4> 
 To evaluate the practical impact of our method, we conducted a brain region classification task using:
 •  Raw EEG Data 
 •  Denoised EEG Data (processed with traditional methods)
