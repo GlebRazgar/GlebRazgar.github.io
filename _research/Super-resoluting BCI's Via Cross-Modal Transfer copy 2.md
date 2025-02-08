@@ -298,10 +298,8 @@ We find that when both signals are either normalized or standardised MI for near
 
 This can also be intuitively seen in the waveleted signal, where closer electrodes share more resemblance.
 
-<p align="center"><img src="../images/Wavelet2.png" alt="Alt text" style="max-width: 80%; height: auto; border-radius: 10px;"></p>
-<p align="center"><img src="../images/Wavelet1.png" alt="Alt text" style="max-width: 80%; height: auto; border-radius: 10px;"></p>
-<p align="center"><img src="../images/goodwavelet.png" alt="Alt text" style="max-width: 80%; height: auto; border-radius: 10px;"></p>
-<p align="center"><img src="../images/badwavelet.png" alt="Alt text" style="max-width: 80%; height: auto; border-radius: 10px;"></p>
+<p align="center"><img src="../images/refelectrode.png" alt="Alt text" style="max-width: 80%; height: auto; border-radius: 10px;"></p>
+
 
 <h4 style="margin-bottom: 0"><u>6.2 Signal Reconstruction Accuracy</u></h4> 
 Building on top of Mutual Information, we assess our model's ability to capture this mutual dependency and translate EEG signals into MEG representations. This is done through observing the MSE between the predicted and the ground truth signal thorough epochs on the test set. 
