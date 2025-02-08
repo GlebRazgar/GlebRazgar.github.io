@@ -222,7 +222,6 @@ As a result of these calculations, to test our hypothesis we converge on two fro
 <h4 style="margin-bottom: 0"><u>3.1 Signal Analysis</u></h4> 
 To conceptualise the learnability of the signal after applying the wavelet transform, we display EEG and MEG electrode wavelet heatmaps to assess their similarity. Figure 3&4 shows that both signals have clear temporal and special resemblances, yet as expected the MEG signal is more pronounced. 
 
-
 <hr style="border-top: 1px solid black;">
 
 
@@ -237,59 +236,54 @@ To assess cross signal relationships, we computed the Mutual Information (MI) be
 
 
 
-
-<div style="width: 80%; margin: auto; text-align: center;">
-  <svg width="700" height="500" style="border: 1px solid black;">
-    <!-- Title -->
-    <text x="350" y="40" text-anchor="middle" style="font-size: 20px; font-family: 'Times New Roman', Times, serif; font-weight: bold;">Mutual Information vs. Electrode Distance</text>
-    <!-- Axes -->
-    <line x1="100" y1="400" x2="600" y2="400" style="stroke: black; stroke-width: 2;"></line>
-    <line x1="100" y1="100" x2="100" y2="400" style="stroke: black; stroke-width: 2;"></line>
-    <!-- Y-axis labels and grid lines -->
-    <g style="font-size: 14px; font-family: Arial, sans-serif;">
-      <text x="90" y="400" text-anchor="end">0.00</text>
-      <line x1="100" y1="400" x2="600" y2="400" style="stroke: lightgray; stroke-width: 1;"></line>
-      <text x="90" y="340" text-anchor="end">0.02</text>
-      <line x1="100" y1="340" x2="600" y2="340" style="stroke: lightgray; stroke-width: 1;"></line>
-      <text x="90" y="280" text-anchor="end">0.04</text>
-      <line x1="100" y1="280" x2="600" y2="280" style="stroke: lightgray; stroke-width: 1;"></line>
-      <text x="90" y="220" text-anchor="end">0.06</text>
-      <line x1="100" y1="220" x2="600" y2="220" style="stroke: lightgray; stroke-width: 1;"></line>
-      <text x="90" y="160" text-anchor="end">0.08</text>
-      <line x1="100" y1="160" x2="600" y2="160" style="stroke: lightgray; stroke-width: 1;"></line>
-      <text x="90" y="100" text-anchor="end">0.10</text>
-      <line x1="100" y1="100" x2="600" y2="100" style="stroke: lightgray; stroke-width: 1;"></line>
-    </g>
-    <!-- X-axis labels -->
-    <g style="font-size: 14px; font-family: Arial, sans-serif;">
-      <text x="130" y="420" text-anchor="middle">2 cm</text>
-      <text x="210" y="420" text-anchor="middle">4 cm</text>
-      <text x="290" y="420" text-anchor="middle">6 cm</text>
-      <text x="370" y="420" text-anchor="middle">8 cm</text>
-      <text x="450" y="420" text-anchor="middle">10 cm</text>
-      <text x="530" y="420" text-anchor="middle">12 cm</text>
-    </g>
-    <!-- Bars -->
-    <!-- MI values: 0.09, 0.06, 0.03, 0.017, 0.023, 0.021 -->
-    <rect x="110" y="100" width="40" height="300" style="fill: #D98B8B;"></rect>
-    <rect x="190" y="220" width="40" height="180" style="fill: #D98B8B;"></rect>
-    <rect x="270" y="310" width="40" height="90" style="fill: #D98B8B;"></rect>
-    <rect x="350" y="350" width="40" height="50" style="fill: #D98B8B;"></rect>
-    <rect x="430" y="332" width="40" height="68" style="fill: #D98B8B;"></rect>
-    <rect x="510" y="336" width="40" height="64" style="fill: #D98B8B;"></rect>
-    <!-- Y-axis label -->
-    <text x="50" y="250" text-anchor="middle" transform="rotate(-90 50,250)" style="font-size: 16px; font-family: Arial, sans-serif;">Mutual Information (bits)</text>
-    <!-- X-axis label -->
-    <text x="350" y="460" text-anchor="middle" style="font-size: 16px; font-family: Arial, sans-serif;">Distance (cm)</text>
-  </svg>
-  <p style="width: 80%; margin: auto; font-size: 14px;"><b>Figure 5:</b> Mutual Information between EEG Electrode 'Fz' and MEG Electrodes at Increasing Distances. The bar chart illustrates the initial rapid decrease in mutual information, followed by a slower decline as the distance increases.</p>
+<div style="width: 100%; display: flex; justify-content: center; align-items: center;">
+  <div style="width: 80%; text-align: center;">
+    <svg width="700" height="500">
+      <!-- Title -->
+      <text x="350" y="40" text-anchor="middle" style="font-size: 20px; font-family: 'Times New Roman', Times, serif;">Mutual Information vs. Electrode Distance</text>
+      <!-- Axes -->
+      <line x1="100" y1="400" x2="600" y2="400" style="stroke: black; stroke-width: 2;"></line>
+      <line x1="100" y1="100" x2="100" y2="400" style="stroke: black; stroke-width: 2;"></line>
+      <!-- Y-axis labels and grid lines -->
+      <g style="font-size: 14px; font-family: Arial, sans-serif;">
+        <text x="90" y="400" text-anchor="end">0.00</text>
+        <line x1="100" y1="400" x2="600" y2="400" style="stroke: lightgray; stroke-width: 1;"></line>
+        <text x="90" y="340" text-anchor="end">0.02</text>
+        <line x1="100" y1="340" x2="600" y2="340" style="stroke: lightgray; stroke-width: 1;"></line>
+        <text x="90" y="280" text-anchor="end">0.04</text>
+        <line x1="100" y1="280" x2="600" y2="280" style="stroke: lightgray; stroke-width: 1;"></line>
+        <text x="90" y="220" text-anchor="end">0.06</text>
+        <line x1="100" y1="220" x2="600" y2="220" style="stroke: lightgray; stroke-width: 1;"></line>
+        <text x="90" y="160" text-anchor="end">0.08</text>
+        <line x1="100" y1="160" x2="600" y2="160" style="stroke: lightgray; stroke-width: 1;"></line>
+        <text x="90" y="100" text-anchor="end">0.10</text>
+        <line x1="100" y1="100" x2="600" y2="100" style="stroke: lightgray; stroke-width: 1;"></line>
+      </g>
+      <!-- X-axis labels -->
+      <g style="font-size: 14px; font-family: Arial, sans-serif;">
+        <text x="130" y="420" text-anchor="middle">2 cm</text>
+        <text x="210" y="420" text-anchor="middle">4 cm</text>
+        <text x="290" y="420" text-anchor="middle">6 cm</text>
+        <text x="370" y="420" text-anchor="middle">8 cm</text>
+        <text x="450" y="420" text-anchor="middle">10 cm</text>
+        <text x="530" y="420" text-anchor="middle">12 cm</text>
+      </g>
+      <!-- Bars -->
+      <!-- MI values: 0.09, 0.04, 0.03, 0.017, 0.023, 0.021 -->
+      <rect x="110" y="110" width="40" height="290" style="fill: #D98B8B;"></rect>
+      <rect x="190" y="260" width="40" height="140" style="fill: #D98B8B;"></rect>
+      <rect x="270" y="310" width="40" height="90" style="fill: #D98B8B;"></rect>
+      <rect x="350" y="350" width="40" height="50" style="fill: #D98B8B;"></rect>
+      <rect x="430" y="332" width="40" height="68" style="fill: #D98B8B;"></rect>
+      <rect x="510" y="336" width="40" height="64" style="fill: #D98B8B;"></rect>
+      <!-- Y-axis label -->
+      <text x="50" y="250" text-anchor="middle" transform="rotate(-90 50,250)" style="font-size: 16px; font-family: Arial, sans-serif;">Mutual Information (bits)</text>
+      <!-- X-axis label -->
+      <text x="350" y="460" text-anchor="middle" style="font-size: 16px; font-family: Arial, sans-serif;">Electrode Distance (cm)</text>
+    </svg>
+    <p style="width: 80%; margin: auto; font-size: 14px;">Figure 5: Mutual Information between EEG Electrode 'Fz' and MEG Electrodes at Increasing Distances. The bar chart illustrates the initial rapid decrease in mutual information, followed by a slower decline as the distance increases.</p>
+  </div>
 </div>
-
-
-
-<p align="center"><img src="../images/stats2.png" alt="Alt text" style="max-width: 100%; height: auto; border-radius: 10px;"></p>
-<div style="width: 80%; margin: auto; text-align: justify;">
-<p><b>Figure 5:</b> Abalation Study </p></div>
 
 Table 1 summarizes the averaged MI values for:
 
@@ -302,6 +296,13 @@ Table 1 summarizes the averaged MI values for:
 Figure 1 illustrates the distribution of MI values, showing a significantly higher MI for near-by electrode pairs compared to distant ones (p < 0.001), confirming our electrode mapping strategy is valid.
 
 We find that when both signals are either normalized or standardised MI for near located electrodes tends to be as much as 5x higher. Contrary to our initial hypothesis, the electrodes on the parietal lobe have the strongest MI corelations. This is likely explained by the fact that participants are performing recognition tasks which makes the signal less stochastic in parietal lobe in comparison to other brain regions. 
+
+This can also be intuitively seen in the waveleted signal, where closer electrodes share more resemblance.
+
+<p align="center"><img src="../images/Wavelet2.png" alt="Alt text" style="max-width: 80%; height: auto; border-radius: 10px;"></p>
+<p align="center"><img src="../images/Wavelet1.png" alt="Alt text" style="max-width: 80%; height: auto; border-radius: 10px;"></p>
+<p align="center"><img src="../images/goodwavelet.png" alt="Alt text" style="max-width: 80%; height: auto; border-radius: 10px;"></p>
+<p align="center"><img src="../images/badwavelet.png" alt="Alt text" style="max-width: 80%; height: auto; border-radius: 10px;"></p>
 
 <h4 style="margin-bottom: 0"><u>6.2 Signal Reconstruction Accuracy</u></h4> 
 Building on top of Mutual Information, we assess our model's ability to capture this mutual dependency and translate EEG signals into MEG representations. This is done through observing the MSE between the predicted and the ground truth signal thorough epochs on the test set. 
