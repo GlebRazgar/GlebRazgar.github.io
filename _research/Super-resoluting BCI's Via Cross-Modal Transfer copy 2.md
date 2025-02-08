@@ -298,7 +298,7 @@ We find that when both signals are either normalized or standardised MI for near
 
 This can also be intuitively seen in the waveleted signal, where closer electrodes share more resemblance.
 
-<p align="center"><img src="../images/refelectrode.png" alt="Alt text" style="max-width: 80%; height: auto; border-radius: 10px;"></p>
+<p align="center"><img src="../images/refelectrode.png" alt="Alt text" style="max-width: 100%; height: auto; border-radius: 10px;"></p>
 
 
 <h4 style="margin-bottom: 0"><u>6.2 Signal Reconstruction Accuracy</u></h4> 
