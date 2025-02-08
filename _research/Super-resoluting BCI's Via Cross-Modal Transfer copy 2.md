@@ -206,7 +206,6 @@ A.	We calculate Mutual Information (MI) between each EEG and MEG electrode per r
 <div style="width: 60%; margin: auto; text-align: justify;">
 <p><b>Figure 4:</b> Activation Analysis. AIM's neuron descriptions achieve higher average activation scores than MILAN, reaching performance levels similar to human annotations across both synthetic and real circuits. </p></div><br>
 
-
 We calculate MI between each EEG and MEG electrode pair for a given recording frame in a window using the following formula:
 
 I(X;Y)=H(X)-H(X|Y)
