@@ -19,15 +19,18 @@ layout: post
   </table>
 </div>
 
+
+
+
 <hr style="border-top: 1px solid black; margin-top: 0; margin-bottom: 30;">
 <h3 align="center">Abstract</h3>
 
 <div style="width: 80%; margin: auto; text-align: justify;">
 REWORK THE ABSTRACT, START TALKING ABOUT MY METHOD FASTER
-Neural nets trained on EEG signal have seen prolific applications in the medical field. However, EEG’s signal to noise ratio critically hinders their utility even with the most sophisticating de-noising techniques. Synaptech is a method to address this impasse. The key idea is to train a deep neural network to predict a higher order modality from a lower order one via cross-modal learning (e.g. MEG from EEG). When both modalities are bound by a similar causality, cross-modal training captures signal dependencies and deduces fidelity from a higher resolution BCI. During inference, the model transmutes lower-order signals into their higher-order counterparts, purging noise in the process. Much like translating choppy English into clean French, cross-modal loss function penalizes the model for translating noisy signal tokens. We show that Synaptech considerably improves the brain region classification performance on a set of visual recognition tasks over existing approaches, and obtains state-of-the-art results on most de-noising benchmarks. We propose directions for future work, positing that cross-modal inference could find broader application across other BCI modalities, enhancing their precision and utility.
+Despite the widespread adoption of neuroimaging, many BCI modalities like EEG remain confined to low-fidelity applications due to persistent noise interference  that contemporary methods have failed to resolve. To address this impasse, we introduce a cross-modal transfer method that leverages higher-fidelity modality during model training to denoise lower-fidelity one through supervised signal translation. Provided that both BCI methods share underlying neurophysiological origins, cross-modal transfer captures signal dependencies and extracts high-resolution features from the superior signal. Using EEG and MEG as a test case, we quantify the transferable signal dependanciy between both modalities and compare it's denoising prowes in improving brain region classification against other methods. At last, we posit future research directions, suggesting broader applications of cross-modal transfer across BCI modalities to enhance their precision and utility.
 </div><br>
 
-
+<div style="color: red;">
 
 
 <h3 align="center">1. Introduction</h3>
@@ -239,7 +242,6 @@ Where:
 
 
 
-
 <h3 align="center">6. Results</h3>
 
 <h4 style="margin-bottom: 0"><u>6.1 Mutual Information Analysis</u></h4> 
@@ -440,6 +442,8 @@ By transforming EEG signals into MEG-like representations, our model boosts the 
 The experimental results substantiate the effectiveness of Synaptech-Net in enhancing EEG signals through cross-modal EEG to MEG translation. The significant improvements in signal quality and downstream classification tasks validate our approach and highlight the potential of cross-modal learning in overcoming the limitations of single-modality BCIs.
 <br><br>
 
+
+</div>
 ---
 
 <h3 align="center">8. References</h3>
