@@ -202,7 +202,7 @@ In creating a reliable mapping between EEG and MEG signal its crucial to have bo
 
 A.	We calculate Mutual Information (MI) between each EEG and MEG electrode per recording. In this context MI quantifies mutual dependency between signals recorded from electrodes across the two modalities. Higher MI indicates stronger correspondence between the signals, suggesting they are likely capturing activity from similar neural sources.
 
-<p align="center"><img src="../images/eeg&meg.png" alt="Alt text" style="max-width: 80%; height: auto; border-radius: 10px;"></p>
+<p align="center"><img src="../images/eeg&meg.png" alt="Alt text" style="max-width: 70%; height: auto; border-radius: 10px;"></p>
 <div style="width: 80%; margin: auto; text-align: justify;">
 <p><b>Figure 4:</b> Activation Analysis. AIM's neuron descriptions achieve higher average activation scores than MILAN, reaching performance levels similar to human annotations across both synthetic and real circuits. </p></div><br>
 
@@ -292,7 +292,7 @@ We find that when both signals are either normalized or standardised MI for near
 
 This can also be intuitively seen in the waveleted signal, where closer electrodes share more resemblance.
 
-<p align="center"><img src="../images/refelectrode.png" alt="Alt text" style="max-width: 100%; height: auto; border-radius: 10px;"></p>
+<p align="center"><img src="../images/refelectrode.png" alt="Alt text" style="max-width: 80%; height: auto; border-radius: 10px;"></p>
 
 
 <h4 style="margin-bottom: 0"><u>6.2 Signal Reconstruction Accuracy</u></h4> 
@@ -305,6 +305,11 @@ Building on top of Mutual Information, we assess our model's ability to capture 
 •  Validation Loss: The model maintained low MSE on unseen data, demonstrating good generalization.
 Figure 2 presents the training and validation loss curves over 50 epochs, showing convergence after approximately 40 epochs.
 
+<p align="center"><img src="../images/loss.png" alt="Alt text" style="max-width: 80%; height: auto; border-radius: 10px;"></p>
+
+<p align="center"><img src="../images/spectogram.png" alt="Alt text" style="max-width: 80%; height: auto; border-radius: 10px;"></p>
+
+
 ILLUSTRATE RAW EEG SIGNAL (or spectrogram!!!)
 ILLUSTRATE GROUND TRUTH MEG SIGNAL
 ILLUSTRATE GROUND TRUTH MEG SIGNAL
@@ -312,25 +317,6 @@ Figure 3 shows the spectrograms for a sample electrode:
 •  The raw EEG spectrogram exhibits lower power and higher noise levels.
 •  The ground truth MEG spectrogram displays clearer neural oscillation patterns.
 •  The predicted MEG spectrogram closely resembles the ground truth, capturing key frequency components (alpha, beta, gamma bands) with reduced noise.
-
-<h4 style="margin-bottom: 0"><u>6.3 Signal To Noise Ratio Improvement</u></h4> 
-4.3.1 Improvement in Signal-to-Noise Ratio
-We calculated the Signal-to-Noise Ratio (SNR) for:
-•  Raw EEG Signals
-•  Reconstructed MEG Signals
-The results show a significant improvement in SNR:
-•  Raw EEG SNR: 5.2 ± 0.8 dB
-•  Predicted MEG SNR: 7.1 ± 0.6 dB
-This represents an average SNR improvement of 36.5%, indicating that Synaptech-Net effectively denoises EEG signals through cross-modal translation.
-
-<h4 style="margin-bottom: 0"><u>6.4 Signal To Noise Ratio Analysis</u></h4> 
-We calculated the Signal-to-Noise Ratio (SNR) for:
-•  Raw EEG Signals
-•  Reconstructed MEG Signals
-The results show a significant improvement in SNR:
-•  Raw EEG SNR: 5.2 ± 0.8 dB
-•  Predicted MEG SNR: 7.1 ± 0.6 dB
-This represents an average SNR improvement of 36.5%, indicating that Synaptech-Net effectively denoises EEG signals through cross-modal translation.
 
 <div class="table-container" style="overflow-x: auto; display: flex; justify-content: center;">
   <table cellspacing="0" cellpadding="6" border="1" style="border: 1px solid black; border-collapse: collapse;">
