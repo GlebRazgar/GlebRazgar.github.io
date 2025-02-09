@@ -35,7 +35,7 @@ MAKE INTRODUCTION MORE TO THE POINT IF TIME ALLOWS
 
 Why don’t most people have a BCI that extends their mind? One that they use on daily basis like headphones, to increase the brains information throughput. EEG is a non-invasive BCI with a superb temporal resolution, which makes it a great contender for such future. With a high signal to noise ratio however, it becomes problematic to accurately classify brain region activation consistently which leads to EEGs only being applicable in a fraction of possible use-cases, and thus many de-noising techniques have been developed for combating it. 
  
-<p align="center"><img src="../images/eeg2meg.png" alt="Alt text" style="max-width: 80%; height: auto; border-radius: 10px;"></p>
+<p align="center"><img src="../images/eeg2meg.png" alt="Alt text" style="max-width: 70%; height: auto; border-radius: 10px;"></p>
 
 These span a spectrum of approaches: from classical signal processing methods like bandpass filtering and Independent Component Analysis, through statistical techniques such as wavelet decomposition, to contemporary deep learning models including convolutional neural networks and generative adversarial networks that can dynamically parse and remove noise while preserving the intricate neurophysiological signal characteristics. Theoretically, with a wholistic knowledge of both pure and noise signal’s independent statistical properties, and ability to distinguish between the two at a quantum level resolution, the best way to de-noise the signal would be to use a filter that optimally separates signal from noise by frequency components based on their power spectral densities, applying frequency-domain suppression proportional to the local signal-to-noise ratio, ensuring that regions with higher signal prominence are preserved while noise-dominant frequencies are attenuated. This can sometimes be approximated quite well using Wiener-Kolmogorov filter which optimally separates signal from noise given their statistical properties, but with incomplete information, these signals can’t be treated as independent, and thereby its utility in the real world yet remains inadequate. 
 
@@ -203,7 +203,7 @@ In creating a reliable mapping between EEG and MEG signal its crucial to have bo
 A.	We calculate Mutual Information (MI) between each EEG and MEG electrode per recording. In this context MI quantifies mutual dependency between signals recorded from electrodes across the two modalities. Higher MI indicates stronger correspondence between the signals, suggesting they are likely capturing activity from similar neural sources.
 
 <p align="center"><img src="../images/eeg&meg.png" alt="Alt text" style="max-width: 100%; height: auto; border-radius: 10px;"></p>
-<div style="width: 60%; margin: auto; text-align: justify;">
+<div style="width: 40%; margin: auto; text-align: justify;">
 <p><b>Figure 4:</b> Activation Analysis. AIM's neuron descriptions achieve higher average activation scores than MILAN, reaching performance levels similar to human annotations across both synthetic and real circuits. </p></div><br>
 
 We calculate MI between each EEG and MEG electrode pair for a given recording frame in a window using the following formula:
