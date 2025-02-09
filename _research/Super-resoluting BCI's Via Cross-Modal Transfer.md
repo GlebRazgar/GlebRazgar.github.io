@@ -57,8 +57,6 @@ Section 5 depicts the future directions of the research.
 
 
 
-
-
 <h3 style="text-align: center;">2. Backgroung and Related Work</h3>
 
 <h4 style="margin-bottom: 0"><u>2.1 EEG Signal Processing Techniques</u></h4>
@@ -436,8 +434,6 @@ By transforming EEG signals into MEG-like representations, our model boosts the 
 The experimental results substantiate the effectiveness of Synaptech-Net in enhancing EEG signals through cross-modal EEG to MEG translation. The significant improvements in signal quality and downstream classification tasks validate our approach and highlight the potential of cross-modal learning in overcoming the limitations of single-modality BCIs.
 <br><br>
 
-
-</div>
 ---
 
 <h3 align="center">8. References</h3>
