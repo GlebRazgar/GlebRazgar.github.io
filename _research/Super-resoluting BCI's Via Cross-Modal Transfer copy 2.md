@@ -241,22 +241,22 @@ To assess cross signal relationships, we computed the Mutual Information (MI) be
       <!-- Title -->
       <text x="350" y="40" text-anchor="middle" style="font-size: 20px; font-family: 'Times New Roman', Times, serif;">Mutual Information vs. Electrode Distance</text>
       <!-- Axes -->
-      <line x1="100" y1="400" x2="600" y2="400" style="stroke: black; stroke-width: 2;"></line>
-      <line x1="100" y1="100" x2="100" y2="400" style="stroke: black; stroke-width: 2;"></line>
+      <line x1="100" y1="400" x2="600" y2="400" style="stroke: black; stroke-width: 5;"></line>
+      <line x1="100" y1="100" x2="100" y2="400" style="stroke: black; stroke-width: 5;"></line>
       <!-- Y-axis labels and grid lines -->
       <g style="font-size: 14px; font-family: Arial, sans-serif;">
         <text x="90" y="400" text-anchor="end">0.00</text>
-        <line x1="100" y1="400" x2="600" y2="400" style="stroke: lightgray; stroke-width: 1;"></line>
+        <line x1="100" y1="400" x2="600" y2="400" style="stroke: black; stroke-width: 1;"></line>
         <text x="90" y="340" text-anchor="end">0.02</text>
-        <line x1="100" y1="340" x2="600" y2="340" style="stroke: lightgray; stroke-width: 1;"></line>
+        <line x1="100" y1="340" x2="600" y2="340" style="stroke: black; stroke-width: 1;"></line>
         <text x="90" y="280" text-anchor="end">0.04</text>
-        <line x1="100" y1="280" x2="600" y2="280" style="stroke: lightgray; stroke-width: 1;"></line>
+        <line x1="100" y1="280" x2="600" y2="280" style="stroke: black; stroke-width: 1;"></line>
         <text x="90" y="220" text-anchor="end">0.06</text>
-        <line x1="100" y1="220" x2="600" y2="220" style="stroke: lightgray; stroke-width: 1;"></line>
+        <line x1="100" y1="220" x2="600" y2="220" style="stroke: black; stroke-width: 1;"></line>
         <text x="90" y="160" text-anchor="end">0.08</text>
-        <line x1="100" y1="160" x2="600" y2="160" style="stroke: lightgray; stroke-width: 1;"></line>
+        <line x1="100" y1="160" x2="600" y2="160" style="stroke: black; stroke-width: 1;"></line>
         <text x="90" y="100" text-anchor="end">0.10</text>
-        <line x1="100" y1="100" x2="600" y2="100" style="stroke: lightgray; stroke-width: 1;"></line>
+        <line x1="100" y1="100" x2="600" y2="100" style="stroke: black; stroke-width: 1;"></line>
       </g>
       <!-- X-axis labels -->
       <g style="font-size: 14px; font-family: Arial, sans-serif;">
