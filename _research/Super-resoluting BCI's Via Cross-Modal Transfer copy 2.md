@@ -203,7 +203,7 @@ In creating a reliable mapping between EEG and MEG signal its crucial to have bo
 A.	We calculate Mutual Information (MI) between each EEG and MEG electrode per recording. In this context MI quantifies mutual dependency between signals recorded from electrodes across the two modalities. Higher MI indicates stronger correspondence between the signals, suggesting they are likely capturing activity from similar neural sources.
 
 <p align="center"><img src="../images/eeg&meg.png" alt="Alt text" style="max-width: 100%; height: auto; border-radius: 10px;"></p>
-<div style="width: 80%; margin: auto; text-align: justify;">
+<div style="width: 60%; margin: auto; text-align: justify;">
 <p><b>Figure 4:</b> Activation Analysis. AIM's neuron descriptions achieve higher average activation scores than MILAN, reaching performance levels similar to human annotations across both synthetic and real circuits. </p></div><br>
 
 We calculate MI between each EEG and MEG electrode pair for a given recording frame in a window using the following formula:
@@ -284,15 +284,9 @@ To assess cross signal relationships, we computed the Mutual Information (MI) be
   </div>
 </div>
 
-Table 1 summarizes the averaged MI values for:
 
-•  Near-by Electrode Pairs: EEG and MEG electrodes in close spatial proximity.
-•  Distant Electrode Pairs: EEG and MEG electrodes located far apart.
-| Electrode Pair Type | Average MI (bits) |
-|-------------------------|-------------------|
 | Near-by Electrode Pairs | 0.85 ± 0.05 |
 | Distant Electrode Pairs | 0.30 ± 0.04 |
-Figure 1 illustrates the distribution of MI values, showing a significantly higher MI for near-by electrode pairs compared to distant ones (p < 0.001), confirming our electrode mapping strategy is valid.
 
 We find that when both signals are either normalized or standardised MI for near located electrodes tends to be as much as 5x higher. Contrary to our initial hypothesis, the electrodes on the parietal lobe have the strongest MI corelations. This is likely explained by the fact that participants are performing recognition tasks which makes the signal less stochastic in parietal lobe in comparison to other brain regions. 
 
@@ -302,7 +296,9 @@ This can also be intuitively seen in the waveleted signal, where closer electrod
 
 
 <h4 style="margin-bottom: 0"><u>6.2 Signal Reconstruction Accuracy</u></h4> 
-Building on top of Mutual Information, we assess our model's ability to capture this mutual dependency and translate EEG signals into MEG representations. This is done through observing the MSE between the predicted and the ground truth signal thorough epochs on the test set. 
+Building on top of Mutual Information, we assess our model's ability to capture this mutual dependency and translate EEG signals into MEG representations. This is done by observing the MSE between the predicted and the ground truth signal thorough model training on the test set. 
+
+<p align="center"><img src="../images/loss.png" alt="Alt text" style="max-width: 100%; height: auto; border-radius: 10px;"></p>
 
 
 •  Training Loss: The MSE decreased steadily over epochs, indicating effective learning.
