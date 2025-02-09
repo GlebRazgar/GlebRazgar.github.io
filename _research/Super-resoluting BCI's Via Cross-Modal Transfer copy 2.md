@@ -100,7 +100,7 @@ Building on this body of work, our approach focuses specifically on EEG-to-MEG t
 To achive neurological signal to signal conversion with a minimum amount of available data this study proposes a new model architecture – Synaptech-Net aimed at capturing both special and temporal characteristics of neurological signal [Fig 2].
 Synaptech-Net is a U-Net – LSTM symbiote that utilizes the modified convolutional down sampling layers to capture special correlations, which then feed into a bi-directional LSTM bottleneck that captures temporal dependencies. On the other end, the classic U-net skip connections give the network an option to preserve spatial information of the signal, and simply overlay it with required changes which makes the model much more parameter efficient. At last, to map a smaller number of EEG electrodes (74) onto the larger array of MAG sensors (102), the networks de-coder block up-samples electrode dimensions, thereby increasing the outputs special resolution.
 
-<p align="center"><img src="../images/unet.png" alt="Alt text" style="max-width: 100%; height: auto; border-radius: 10px;"></p>
+<p align="center"><img src="../images/unet.png" alt="Alt text" style="max-width: 80%; height: auto; border-radius: 10px;"></p>
 <div style="width: 80%; margin: auto; text-align: justify;">
 <p><b>Figure 3:</b> Practical example of the AIM flow. Upon receiving an input query, the framework initializes by passing stock dataset images through the network. Based on the sparse activation maps and the initial hypothesis (e.g: Units X,Y,Z encode people) the multi-modal agent generates a set of images to confirm or deny it. In the following iterations the agent acts to increase the circuit activations by either modifying or generating new images based on the results. Through varied placement of the Sparse Auto-Encoder, the agent observes different circuit activations and forms corresponding hypotheses. This programmatic iteration continues until the agent accumulates sufficient confidence about a circuit to conclude the experiment and formulate its findings.</p></div>
 <br>
@@ -284,19 +284,15 @@ To assess cross signal relationships, we computed the Mutual Information (MI) be
   </div>
 </div>
 
-
-| Near-by Electrode Pairs | 0.85 ± 0.05 |
-| Distant Electrode Pairs | 0.30 ± 0.04 |
-
 We find that when both signals are either normalized or standardised MI for near located electrodes tends to be as much as 5x higher. Contrary to our initial hypothesis, the electrodes on the parietal lobe have the strongest MI corelations. This is likely explained by the fact that participants are performing recognition tasks which makes the signal less stochastic in parietal lobe in comparison to other brain regions. 
 
 This can also be intuitively seen in the waveleted signal, where closer electrodes share more resemblance.
-
-<p align="center"><img src="../images/refelectrode.png" alt="Alt text" style="max-width: 80%; height: auto; border-radius: 10px;"></p>
+<p align="center"><img src="../images/refelectrode.png" alt="Alt text" style="max-width: 100%; height: auto; border-radius: 10px;"></p>
 
 
 <h4 style="margin-bottom: 0"><u>6.2 Signal Reconstruction Accuracy</u></h4> 
-Building on top of Mutual Information, we assess our model's ability to capture this mutual dependency and translate EEG signals into MEG representations. This is done by observing the MSE between the predicted and the ground truth signal thorough model training on the test set. 
+Building on top of Mutual Information, we assess our model's ability to capture this mutual dependency and translate EEG signals into MEG representations. This is done by observing the MSE between the predicted and the ground truth signal thorough model training on the validation set. 
+<p align="center"><img src="../images/spectogram.png" alt="Alt text" style="max-width: 80%; height: auto; border-radius: 10px;"></p>
 
 <p align="center"><img src="../images/loss.png" alt="Alt text" style="max-width: 100%; height: auto; border-radius: 10px;"></p>
 
@@ -305,9 +301,6 @@ Building on top of Mutual Information, we assess our model's ability to capture 
 •  Validation Loss: The model maintained low MSE on unseen data, demonstrating good generalization.
 Figure 2 presents the training and validation loss curves over 50 epochs, showing convergence after approximately 40 epochs.
 
-<p align="center"><img src="../images/loss.png" alt="Alt text" style="max-width: 80%; height: auto; border-radius: 10px;"></p>
-
-<p align="center"><img src="../images/spectogram.png" alt="Alt text" style="max-width: 80%; height: auto; border-radius: 10px;"></p>
 
 
 ILLUSTRATE RAW EEG SIGNAL (or spectrogram!!!)
@@ -318,95 +311,90 @@ Figure 3 shows the spectrograms for a sample electrode:
 •  The ground truth MEG spectrogram displays clearer neural oscillation patterns.
 •  The predicted MEG spectrogram closely resembles the ground truth, capturing key frequency components (alpha, beta, gamma bands) with reduced noise.
 
+<h4 style="margin-bottom: 0"><u>6.5 Brain Region Classification Accuracy</u></h4> 
+
+As a final showdown we test Synaptech's prowess in improving brain region classification of a standard CNN classifier through active denoising.
+
 <div class="table-container" style="overflow-x: auto; display: flex; justify-content: center;">
   <table cellspacing="0" cellpadding="6" border="1" style="border: 1px solid black; border-collapse: collapse;">
-    <caption style="caption-side: top; padding: 10px;"><b>Table 2.</b> Final layer spurious feature removal results.</caption>
+    <caption style="caption-side: top; padding: 10px;"><b>Table 2.</b> Brain Region Activation Performance Comparison.</caption>
     <thead>
       <tr>
-        <th style="border: 1px solid black;">Subset</th>
-        <th style="border: 1px solid black;">Selection Method</th>
-        <th style="border: 1px solid black;"># Units</th>
-        <th style="border: 1px solid black;">Balanced</th>
-        <th style="border: 1px solid black;">Test Acc.</th>
+        <th style="border: 1px solid black;">Condition</th>
+        <th style="border: 1px solid black;">Method</th>
+        <th style="border: 1px solid black;">Brain Region</th>
+        <th style="border: 1px solid black;">Activation Metric (μV)</th>
+        <th style="border: 1px solid black;">Classification Accuracy (%)</th>
       </tr>
     </thead>
     <tbody>
+      <!-- Familiar Faces -->
       <tr>
-        <td style="border: 1px solid black;">All</td>
-        <td style="border: 1px solid black;">Original Model</td>
-        <td style="border: 1px solid black;">512</td>
-        <td style="border: 1px solid black;">✗</td>
-        <td style="border: 1px solid black;">0.731</td>
+        <td style="border: 1px solid black;" rowspan="3">Familiar Faces</td>
+        <td style="border: 1px solid black;">Raw EEG</td>
+        <td style="border: 1px solid black;">Fusiform Face Area (FFA)</td>
+        <td style="border: 1px solid black;">2.5</td>
+        <td style="border: 1px solid black;">78%</td>
       </tr>
       <tr>
-        <td style="border: 1px solid black;">ℓ₁ Top 50</td>
-        <td style="border: 1px solid black;">All</td>
-        <td style="border: 1px solid black;">50</td>
-        <td style="border: 1px solid black;">✗</td>
-        <td style="border: 1px solid black;">0.779</td>
+        <td style="border: 1px solid black;">Classic Denoising (ICA)</td>
+        <td style="border: 1px solid black;">Fusiform Face Area (FFA)</td>
+        <td style="border: 1px solid black;">3.0</td>
+        <td style="border: 1px solid black;">85%</td>
       </tr>
       <tr>
-        <td style="border: 1px solid black;"></td>
-        <td style="border: 1px solid black;">Random</td>
-        <td style="border: 1px solid black;">22</td>
-        <td style="border: 1px solid black;">✗</td>
-        <td style="border: 1px solid black;">0.705 ± 0.05</td>
+        <td style="border: 1px solid black;">Synaptech (Predicted MEG)</td>
+        <td style="border: 1px solid black;">Fusiform Face Area (FFA)</td>
+        <td style="border: 1px solid black;">1.0</td>
+        <td style="border: 1px solid black;">37%</td>
+      </tr>
+      <!-- Unfamiliar Faces -->
+      <tr>
+        <td style="border: 1px solid black;" rowspan="3">Unfamiliar Faces</td>
+        <td style="border: 1px solid black;">Raw EEG</td>
+        <td style="border: 1px solid black;">Occipital Face Area (OFA)</td>
+        <td style="border: 1px solid black;">2.0</td>
+        <td style="border: 1px solid black;">74%</td>
       </tr>
       <tr>
-        <td style="border: 1px solid black;"></td>
-        <td style="border: 1px solid black;">ℓ₁ Top 22</td>
-        <td style="border: 1px solid black;">22</td>
-        <td style="border: 1px solid black;">✗</td>
-        <td style="border: 1px solid black;">0.757</td>
+        <td style="border: 1px solid black;">Classic Denoising (ICA)</td>
+        <td style="border: 1px solid black;">Occipital Face Area (OFA)</td>
+        <td style="border: 1px solid black;">2.7</td>
+        <td style="border: 1px solid black;">82%</td>
       </tr>
       <tr>
-        <td style="border: 1px solid black;"></td>
-        <td style="border: 1px solid black;"><b>AIM</b></td>
-        <td style="border: 1px solid black;">22</td>
-        <td style="border: 1px solid black;">✗</td>
-        <td style="border: 1px solid black;"><b>0.852</b></td>
+        <td style="border: 1px solid black;">Synaptech (Predicted MEG)</td>
+        <td style="border: 1px solid black;">Occipital Face Area (OFA)</td>
+        <td style="border: 1px solid black;">0.8</td>
+        <td style="border: 1px solid black;">32%</td>
+      </tr>
+      <!-- Scrambled Faces -->
+      <tr>
+        <td style="border: 1px solid black;" rowspan="3">Scrambled Faces</td>
+        <td style="border: 1px solid black;">Raw EEG</td>
+        <td style="border: 1px solid black;">Temporal Pole</td>
+        <td style="border: 1px solid black;">1.5</td>
+        <td style="border: 1px solid black;">60%</td>
       </tr>
       <tr>
-        <td style="border: 1px solid black;"></td>
-        <td style="border: 1px solid black;">MAIA</td>
-        <td style="border: 1px solid black;">22</td>
-        <td style="border: 1px solid black;">✗</td>
-        <td style="border: 1px solid black;">0.837</td>
+        <td style="border: 1px solid black;">Classic Denoising (ICA)</td>
+        <td style="border: 1px solid black;">Temporal Pole</td>
+        <td style="border: 1px solid black;">1.9</td>
+        <td style="border: 1px solid black;">68%</td>
       </tr>
       <tr>
-        <td style="border: 1px solid black;">All</td>
-        <td style="border: 1px solid black;">ℓ₁ Hyper. Tuning</td>
-        <td style="border: 1px solid black;">147</td>
-        <td style="border: 1px solid black;">✓</td>
-        <td style="border: 1px solid black;">0.830</td>
-      </tr>
-      <tr>
-        <td style="border: 1px solid black;"></td>
-        <td style="border: 1px solid black;">ℓ₁ Top 22</td>
-        <td style="border: 1px solid black;">22</td>
-        <td style="border: 1px solid black;">✓</td>
-        <td style="border: 1px solid black;"><b>0.865</b></td>
+        <td style="border: 1px solid black;">Synaptech (Predicted MEG)</td>
+        <td style="border: 1px solid black;">Temporal Pole</td>
+        <td style="border: 1px solid black;">0.6</td>
+        <td style="border: 1px solid black;">26%</td>
       </tr>
     </tbody>
   </table>
 </div>
 <div style="width: 80%; margin: auto; text-align: justify;">
-<p><b>Table2</b>: Results from testing AIM on picking stable circuits in the un-stable dataset against ℓ1 regularization on a stable dataset.</p></div>
+<p><b>Table 2:</b> Comparison of brain region activation performance across different conditions and methods. The classic denoising method (ICA) outperforms both the raw EEG and Synaptech-Net in terms of activation metrics and classification accuracy.</p>
+</div>
 <br>
-
-<h4 style="margin-bottom: 0"><u>6.5 Brain Region Classification Accuracy</u></h4> 
-To evaluate the practical impact of our method, we conducted a brain region classification task using:
-•  Raw EEG Data 
-•  Denoised EEG Data (processed with traditional methods)
-•  Predicted MEG Data from Synaptech-Net
-We utilized a standard convolutional neural network (CNN) classifier trained to identify activated brain regions during the visual recognition tasks.
-Table 2 summarizes the classification accuracies:
-| Data Type | Classification Accuracy (%) |
-|-------------------------|-----------------------------|
-| Raw EEG | 68.4 ± 2.1 |
-| Denoised EEG (Traditional Methods) | 74.2 ± 1.8 |
-| Predicted MEG (Synaptech-Net) | 82.7 ± 1.5 |
-Statistical analysis using paired t-tests indicates that the accuracy improvement of Synaptech-Net over traditional denoising methods is significant (p < 0.01).
 
 4.4 Comparative Analysis with Existing Methods
 We compared Synaptech-Net with established EEG denoising methods:
