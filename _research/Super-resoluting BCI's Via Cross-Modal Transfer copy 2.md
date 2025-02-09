@@ -100,7 +100,7 @@ Building on this body of work, our approach focuses specifically on EEG-to-MEG t
 To achive neurological signal to signal conversion with a minimum amount of available data this study proposes a new model architecture – Synaptech-Net aimed at capturing both special and temporal characteristics of neurological signal [Fig 2].
 Synaptech-Net is a U-Net – LSTM symbiote that utilizes the modified convolutional down sampling layers to capture special correlations, which then feed into a bi-directional LSTM bottleneck that captures temporal dependencies. On the other end, the classic U-net skip connections give the network an option to preserve spatial information of the signal, and simply overlay it with required changes which makes the model much more parameter efficient. At last, to map a smaller number of EEG electrodes (74) onto the larger array of MAG sensors (102), the networks de-coder block up-samples electrode dimensions, thereby increasing the outputs special resolution.
 
-<p align="center"><img src="../images/unet.png" alt="Alt text" style="max-width: 80%; height: auto; border-radius: 10px;"></p>
+<p align="center"><img src="../images/unet.png" alt="Alt text" style="max-width: 100%; height: auto; border-radius: 10px;"></p>
 <div style="width: 80%; margin: auto; text-align: justify;">
 <p><b>Figure 3:</b> Practical example of the AIM flow. Upon receiving an input query, the framework initializes by passing stock dataset images through the network. Based on the sparse activation maps and the initial hypothesis (e.g: Units X,Y,Z encode people) the multi-modal agent generates a set of images to confirm or deny it. In the following iterations the agent acts to increase the circuit activations by either modifying or generating new images based on the results. Through varied placement of the Sparse Auto-Encoder, the agent observes different circuit activations and forms corresponding hypotheses. This programmatic iteration continues until the agent accumulates sufficient confidence about a circuit to conclude the experiment and formulate its findings.</p></div>
 <br>
@@ -231,7 +231,7 @@ To conceptualise the learnability of the signal after applying the wavelet trans
 <h3 align="center">6. Results</h3>
 
 <h4 style="margin-bottom: 0"><u>6.1 Mutual Information Analysis</u></h4> 
-To assess cross signal relationships, we computed the Mutual Information (MI) between EEG and MEG electrodes across all electrodes and with iterative time lags. We compare the efficacy of signal similarity by incrementally increasing the distance between a target electrode and a test electrode and calculating Mutual Information.
+To assess cross signal relationships, we computed the Mutual Information (MI) between EEG and MEG electrodes with iterative time lags. The efficacy of the signal signal similarity is compared by incrementally increasing the distance between a target electrode and a test electrode and calculating Mutual Information.
 
 
 
@@ -284,9 +284,7 @@ To assess cross signal relationships, we computed the Mutual Information (MI) be
   </div>
 </div>
 
-We find that when both signals are either normalized or standardised MI for near located electrodes tends to be as much as 5x higher. Contrary to our initial hypothesis, the electrodes on the parietal lobe have the strongest MI corelations. This is likely explained by the fact that participants are performing recognition tasks which makes the signal less stochastic in parietal lobe in comparison to other brain regions. 
-
-This can also be intuitively seen in the waveleted signal, where closer electrodes share more resemblance.
+The resemblance of the signal is then double checked by (non-empirically) visually observing the waveleted signal across different electrode distances. 
 <p align="center"><img src="../images/refelectrode.png" alt="Alt text" style="max-width: 100%; height: auto; border-radius: 10px;"></p>
 
 
@@ -303,9 +301,6 @@ Figure 2 presents the training and validation loss curves over 50 epochs, showin
 
 
 
-ILLUSTRATE RAW EEG SIGNAL (or spectrogram!!!)
-ILLUSTRATE GROUND TRUTH MEG SIGNAL
-ILLUSTRATE GROUND TRUTH MEG SIGNAL
 Figure 3 shows the spectrograms for a sample electrode:
 •  The raw EEG spectrogram exhibits lower power and higher noise levels.
 •  The ground truth MEG spectrogram displays clearer neural oscillation patterns.
@@ -396,72 +391,45 @@ As a final showdown we test Synaptech's prowess in improving brain region classi
 </div>
 <br>
 
-4.4 Comparative Analysis with Existing Methods
-We compared Synaptech-Net with established EEG denoising methods:
-•  Independent Component Analysis (ICA)
-•  Wavelet Thresholding
-•  CNN-Based Denoising Autoencoders
-Table 3 presents the SNR improvement and classification accuracy for each method:
-| Method | SNR Improvement (%) | Classification Accuracy (%) |
-|-----------------------------|---------------------|-----------------------------|
-| Raw EEG | N/A | 68.4 ± 2.1 |
-| ICA | 12.3 | 71.0 ± 2.0 |
-| Wavelet Thresholding | 18.7 | 72.5 ± 1.9 |
-| CNN Denoising Autoencoder | 24.5 | 73.8 ± 1.7 |
-| Synaptech-Net (Ours) | 36.5 | 82.7 ± 1.5 |
-Our method outperforms existing techniques in both SNR improvement and classification accuracy, highlighting the effectiveness of cross-modal learning for EEG signal enhancement.
-
-4.5 Key Findings and Insights
-4.5.1 Effective Cross-Modal Translation
-Evaluation criteria:
-- 1. Higher level of mutual information between near-by electrodes in comparison to far out electrodes. 
-- 2. Convergent asymptotic loss curve!!!
-- 3. Higher level of brain region classification accuracy compared to normal methods 
-
-The results demonstrate that Synaptech-Net successfully learns the mapping from EEG to MEG signals, effectively enhancing the signal quality of EEG data. The significant increase in SNR and the preservation of key neural oscillation patterns confirm the efficacy of cross-modal translation in denoising EEG signals.
-4.5.2 Improved Brain Region Classification
-By transforming EEG signals into MEG-like representations, our model boosts the performance of downstream tasks, such as brain region classification. The considerable improvement over traditional denoising methods suggests that the enriched signal contains more discriminative features crucial for accurate classification.
-4.5.3 Advantages over Single-Modality Approaches
-Our comparative analysis highlights that single-modality denoising methods are inherently limited by the quality of the EEG signals and their entangled noise characteristics. In contrast, Synaptech-Net leverages the high-fidelity MEG signals during training to learn a more precise noise separation, which is not attainable through EEG-only approaches.
-4.5.4 Model Convergence and Stability
-The training and validation loss curves indicate that Synaptech-Net achieves stable convergence without overfitting, suggesting that the model generalizes well to unseen data. The asymmetric dropout regularization strategy effectively balances the learning, preserving temporal coherence while preventing over-reliance on specific features.
-4.5.5 Potential for Broader Applications
-The success of Synaptech-Net in EEG to MEG translation opens avenues for applying cross-modal learning to other BCI modalities, such as fNIRS or fMRI. By harnessing the complementary strengths of different neuroimaging techniques, we can enhance the precision and utility of non-invasive BCIs in various applications.
-4.6 Unexpected Insights
-4.6.1 Spatial Generalization Across Participants
-Despite the variability in head shapes and electrode placements among participants, Synaptech-Net maintained high performance across the dataset. This suggests that the model captures underlying neural patterns that generalize well beyond individual-specific characteristics.
-4.6.2 Reduction of Non-Neural Artifacts
-Interestingly, the model not only enhances neural signals but also effectively suppresses non-neural artifacts, such as muscle movements and environmental noise, without explicit artifact removal steps. This indicates that cross-modal learning inherently promotes the separation of neural activity from extraneous noise sources.
----
-Figures and Tables:
-•  Figure 1: Distribution of Mutual Information (MI) values between EEG and MEG electrode pairs.
-•  Figure 2: Training and validation loss curves for Synaptech-Net over 50 epochs.
-•  Figure 3: Time-frequency spectrograms of raw EEG, ground truth MEG, and predicted MEG signals.
-•  Figure 4: Spatial mapping of neural activity for ground truth MEG and predicted MEG signals.
-•  Table 1: Average Mutual Information between electrode pairs.
-•  Table 2: Brain region classification accuracies for different data types.
-•  Table 3: Comparative performance of Synaptech-Net and existing denoising methods.
----
-Conclusion of Results Section:
-The experimental results substantiate the effectiveness of Synaptech-Net in enhancing EEG signals through cross-modal EEG to MEG translation. The significant improvements in signal quality and downstream classification tasks validate our approach and highlight the potential of cross-modal learning in overcoming the limitations of single-modality BCIs.
-
 <br><br>
 
 <hr style="border-top: 1px solid black;">
 
 <h3 align="center">6. Discussion</h3>
+
+WRITE OUT DISCUSSION FOR EACH SECTION IN THE RESULTS.
+
+<h4 style="margin-bottom: 0"><u>6.1 Mutual Information Insights</u></h4> 
+We find that when both signals are either normalized or standardised MI for near located electrodes tends to be as much as 5x higher. Contrary to our initial hypothesis, the electrodes on the parietal lobe have the strongest MI corelations. This is likely explained by the fact that participants are performing recognition tasks which makes the signal less stochastic in parietal lobe in comparison to other brain regions. 
+
 1. •  Interpret your results 
 2. •  Explain the theoretical and practical implications 
 3. •  Address limitations of your approach 
 4. •  Suggest potential improvements 
 5. •  Discuss generalizability of your method
-<br><br>
+
+<h4 style="margin-bottom: 0"><u>6.2 Signal Translation Insights</u></h4> 
+4.4 Key Findings and Insights
+The results demonstrate that Synaptech-Net successfully learns the mapping from EEG to MEG signals, effectively enhancing the signal quality of EEG data. The significant increase in SNR and the preservation of key neural oscillation patterns confirm the efficacy of cross-modal translation in denoising EEG signals.
+
+
+<h4 style="margin-bottom: 0"><u>6.3 Signal Translation Insights</u></h4> 
+By transforming EEG signals into MEG-like representations, our model boosts the performance of downstream tasks, such as brain region classification. The considerable improvement over traditional denoising methods suggests that the enriched signal contains more discriminative features crucial for accurate classification.
+
+
+<h4 style="margin-bottom: 0"><u>6.4 Limitation of Synaptech Insights</u></h4> 
+
+<h4 style="margin-bottom: 0"><u>6.5 Limitation of Synaptech Insights</u></h4> 
+
+<h4 style="margin-bottom: 0"><u>6.6 Suggestions For Future Work</u></h4> 
 
 <h3 align="center">7. Conclusion</h3>
 1. •  Summarize key contributions 
 2. •  Restate the significance of your research 
 3. •  Propose future research directions 
 4. •  Emphasize potential real-world applications
+
+The experimental results substantiate the effectiveness of Synaptech-Net in enhancing EEG signals through cross-modal EEG to MEG translation. The significant improvements in signal quality and downstream classification tasks validate our approach and highlight the potential of cross-modal learning in overcoming the limitations of single-modality BCIs.
 <br><br>
 
 ---
