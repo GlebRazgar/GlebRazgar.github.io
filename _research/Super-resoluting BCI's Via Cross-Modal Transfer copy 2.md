@@ -231,8 +231,7 @@ To conceptualise the learnability of the signal after applying the wavelet trans
 <h3 align="center">6. Results</h3>
 
 <h4 style="margin-bottom: 0"><u>6.1 Mutual Information Analysis</u></h4> 
-To assess cross signal relationships, we computed the Mutual Information (MI) between EEG and MEG electrodes with iterative time lags. The efficacy of the signal signal similarity is compared by incrementally increasing the distance between a target electrode and a test electrode and calculating Mutual Information.
-
+The efficacy of the cross signal similarity is compared by incrementally increasing the distance between a target MEG electrode and a set of reference EEG electrodes, upon which MI is computed. The optimal MI score is determined and chosen by calculating mutual information across a range of time lags to account for potential temporal differences between modalities.
 
 
 <div style="width: 100%; display: flex; justify-content: center; align-items: center;">
@@ -280,26 +279,27 @@ To assess cross signal relationships, we computed the Mutual Information (MI) be
       <!-- X-axis label -->
       <text x="350" y="460" text-anchor="middle" style="font-size: 16px; font-family: Arial, sans-serif;">Electrode Distance (cm)</text>
     </svg>
-    <p style="width: 80%; margin: auto; font-size: 14px;">Figure 5: Mutual Information between EEG Electrode 'Fz' and MEG Electrodes at Increasing Distances. The bar chart illustrates the initial rapid decrease in mutual information, followed by a slower decline as the distance increases.</p>
+    <p style="width: 80%; font-size: 14px; text-align: justify;">Figure 5: Mutual Information between EEG Electrode 'Fz' and MEG Electrodes at Increasing Distances. The bar chart illustrates exponential decay in MI score with increasing distance.</p>
   </div>
 </div>
+<br>
 
-The resemblance of the signal is then double checked by (non-empirically) visually observing the waveleted signal across different electrode distances. 
+The MI analysis showed that the MI scores is a function of electrode distance. Quantitatively, the MI score decreased by approximately 50% when the electrode distance increased exponentially from 2 cm to 4 cm, and after 8 cm, the rate of change staled out, suggesting most mutual information is power-law distributed.
+The effects of spatial dynamics of mutual information, is further explored in the Discussion section.
+
+To further substantiate these findings, Transfer Entropy (TE) analysis was conducted to assess the directional information flow between EEG and MEG signals.
+TE analysis corroborated the spatial dependancy observed in the MI results, showing a near identical trend where information flow decreases exponentially with increased electrode distance.
+
 <p align="center"><img src="../images/refelectrode.png" alt="Alt text" style="max-width: 100%; height: auto; border-radius: 10px;"></p>
 
+To add to the intuition behind MI and TE, we visualise wavelet transform between reference and target electrodes across distances. (Figure XXX)
 
 <h4 style="margin-bottom: 0"><u>6.2 Signal Reconstruction Accuracy</u></h4> 
 Building on top of Mutual Information, we assess our model's ability to capture this mutual dependency and translate EEG signals into MEG representations. This is done by observing the MSE between the predicted and the ground truth signal thorough model training on the validation set. 
-<p align="center"><img src="../images/spectogram.png" alt="Alt text" style="max-width: 80%; height: auto; border-radius: 10px;"></p>
 
 <p align="center"><img src="../images/loss.png" alt="Alt text" style="max-width: 100%; height: auto; border-radius: 10px;"></p>
-
-
-•  Training Loss: The MSE decreased steadily over epochs, indicating effective learning.
-•  Validation Loss: The model maintained low MSE on unseen data, demonstrating good generalization.
-Figure 2 presents the training and validation loss curves over 50 epochs, showing convergence after approximately 40 epochs.
-
-
+<div style="width: 80%; margin: auto; text-align: justify;">
+<p><b>Figure XXX:</b> Training and validation loss curves over 10 epochs, showing model convergance.</p></div><br>
 
 Figure 3 shows the spectrograms for a sample electrode:
 •  The raw EEG spectrogram exhibits lower power and higher noise levels.
@@ -312,7 +312,7 @@ As a final showdown we test Synaptech's prowess in improving brain region classi
 
 <div class="table-container" style="overflow-x: auto; display: flex; justify-content: center;">
   <table cellspacing="0" cellpadding="6" border="1" style="border: 1px solid black; border-collapse: collapse;">
-    <caption style="caption-side: top; padding: 10px;"><b>Table 2.</b> Brain Region Activation Performance Comparison.</caption>
+    <caption style="caption-side: top; padding: 10px;"><b>Table 2.</b> Brain Region Classifiaction Comparison.</caption>
     <thead>
       <tr>
         <th style="border: 1px solid black;">Condition</th>
@@ -338,7 +338,7 @@ As a final showdown we test Synaptech's prowess in improving brain region classi
         <td style="border: 1px solid black;">85%</td>
       </tr>
       <tr>
-        <td style="border: 1px solid black;">Synaptech (Predicted MEG)</td>
+        <td style="border: 1px solid black;">Synaptech</td>
         <td style="border: 1px solid black;">Fusiform Face Area (FFA)</td>
         <td style="border: 1px solid black;">1.0</td>
         <td style="border: 1px solid black;">37%</td>
@@ -358,7 +358,7 @@ As a final showdown we test Synaptech's prowess in improving brain region classi
         <td style="border: 1px solid black;">82%</td>
       </tr>
       <tr>
-        <td style="border: 1px solid black;">Synaptech (Predicted MEG)</td>
+        <td style="border: 1px solid black;">Synaptech</td>
         <td style="border: 1px solid black;">Occipital Face Area (OFA)</td>
         <td style="border: 1px solid black;">0.8</td>
         <td style="border: 1px solid black;">32%</td>
@@ -378,7 +378,7 @@ As a final showdown we test Synaptech's prowess in improving brain region classi
         <td style="border: 1px solid black;">68%</td>
       </tr>
       <tr>
-        <td style="border: 1px solid black;">Synaptech (Predicted MEG)</td>
+        <td style="border: 1px solid black;">Synaptech</td>
         <td style="border: 1px solid black;">Temporal Pole</td>
         <td style="border: 1px solid black;">0.6</td>
         <td style="border: 1px solid black;">26%</td>
