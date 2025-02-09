@@ -193,33 +193,45 @@ Empirically, this results in a 37% improvement in signal-to-noise ratio compared
 <h3 align="center">4. Experimental Setup</h3>
 Synaptech is evaluated across three dimensions:
 
-1\) Modalitie's Mutual Information 
-2\) Signal reconstruction accuracy
+1\) Signal Mutual Information 
+2\) Model's signal reconstruction accuracy
 3\) Brain region classification improvement
 
 <h4 style="margin-bottom: 0"><u>4.1 Electrode Selection</u></h4> 
-In creating a reliable mapping between EEG and MEG signal its crucial to have both electrodes be as close to one another as possible, or else they will be detecting un-related brain activity. The OpenFmri’s dataset wasn’t originally collected with cross-modal transfer in mind, and thus lacks accurate placement of electrodes with the aim of minimizing the electrode distances. On top of it, geo-positional data required to calculate the distance between different electrode types is corrupted, and the dataset only contains it for two participants. With this in mind, to make sure mapping electrodes match their closest counterpart we address this in two ways:
+In creating a reliable mapping between EEG and MEG signal its crucial to have both electrodes be as close to one another as possible, or else they will be detecting un-related brain activity. The OpenFmri’s dataset wasn’t originally collected with cross-modal transfer in mind, and thus lacks accurate placement of electrodes with the aim of minimizing the electrode distances. On top of it, geo-positional data required to calculate the distance between different electrode types is corrupted and such to make sure mapping electrodes match their closest counterpart we address this in two ways:
 
-A.	We calculate Mutual Information (MI) between each EEG and MEG electrode per recording. In this context MI quantifies mutual dependency between signals recorded from electrodes across the two modalities. Higher MI indicates stronger correspondence between the signals, suggesting they are likely capturing activity from similar neural sources.
+A.  We prune un-related electrodes based on multiple Eucledian distance threasholds. One for each of 3 dimensions.
+B.	We quantify the transferable signal across EEG and MEG electrodes to make sure the signal shares capturable dependancies.  
 
 <p align="center"><img src="../images/eeg&meg.png" alt="Alt text" style="max-width: 70%; height: auto; border-radius: 10px;"></p>
 <div style="width: 80%; margin: auto; text-align: justify;">
 <p><b>Figure 4:</b> Activation Analysis. AIM's neuron descriptions achieve higher average activation scores than MILAN, reaching performance levels similar to human annotations across both synthetic and real circuits. </p></div><br>
 
-We calculate MI between each EEG and MEG electrode pair for a given recording frame in a window using the following formula:
+Apart from the threshold, MEG electrode selection was optimized for cortical geometry. MEG exhibits maximal sensitivity to tangential neural currents, particularly those originating from sulcal sources, due to the orthogonal orientation of magnetic fields relative to electrical current flow. Therefore, sensors positioned above major cortical folds, like longitudinal fissure or Sylvian fissure were manually prioritized for analysis.
 
-I(X;Y)=H(X)-H(X|Y)
+<p align="center"><img src="../images/refelectrode.png" alt="Alt text" style="max-width: 100%; height: auto; border-radius: 10px;"></p>
 
-Where: 
-• H(X) represents the entropy of the EEG signal, quantifying its overall information content. 
-• H(X|Y) is the conditional entropy of the EEG signal given the MEG signal, measuring the residual uncertainty in EEG after considering the influence of MEG.
+When observing the waveleted signal between EEG and MEG electrodes in close proximity, it's clear that there is some resemblance in the signal when asessed visually (Figure XXX). However, the level of information varies depending on the distance between electrodes (Figure XXX). As such we poise to quantify the shared information between both modalities across distances. This is best done through two distinct methods, Mutual Information (MI) and Transfer Entropy (TE). In the context of this study, MI provides a metric for assessing the degree of dependency between these modalities and thus tells us how much information about the MEG signal can be inferred from the EEG signal. TE, on the other hand, measures the directed transfer of information between two systems, capturing the influence of one signal on another over time. TE is particularly useful in this study as it allows us to assess the causal relationship between EEG and MEG signals, identifying the directionality of information flow.
 
-B.	Across both participants with the available geo-positional electrode coordinates we compute Euclidian distance for each electrode, to find the closest counterparts.
+The formula for Mutual Information (MI) is given by:
+$$
+I(X;Y) = H(X) - H(X|Y)
+$$
 
-As a result of these calculations, to test our hypothesis we converge on two frontal lobe electrodes, given their robust proximity across runs. 
+Where:
+- $H(X)$ represents the entropy of the EEG signal, quantifying its overall information content.
+- $H(X|Y)$ is the conditional entropy of the EEG signal given the MEG signal, measuring the residual uncertainty in EEG after considering the influence of MEG.
 
-<h4 style="margin-bottom: 0"><u>3.1 Signal Analysis</u></h4> 
-To conceptualise the learnability of the signal after applying the wavelet transform, we display EEG and MEG electrode wavelet heatmaps to assess their similarity. Figure 3&4 shows that both signals have clear temporal and special resemblances, yet as expected the MEG signal is more pronounced. 
+Transfer Entropy (TE) is calculated as:
+$$
+TE_{X \to Y} = \sum p(y_{t+1}, y_t, x_t) \log \frac{p(y_{t+1} | y_t, x_t)}{p(y_{t+1} | y_t)}
+$$
+
+Where:
+- $y_{t+1}$ is the future state of the MEG signal.
+- $y_t$ is the current state of the MEG signal.
+- $x_t$ is the current state of the EEG signal.
+- $p(y_{t+1}, y_t, x_t)$ is the joint probability distribution of these states.
 
 <hr style="border-top: 1px solid black;">
 
@@ -289,10 +301,6 @@ The effects of spatial dynamics of mutual information, is further explored in th
 
 To further substantiate these findings, Transfer Entropy (TE) analysis was conducted to assess the directional information flow between EEG and MEG signals.
 TE analysis corroborated the spatial dependancy observed in the MI results, showing a near identical trend where information flow decreases exponentially with increased electrode distance.
-
-<p align="center"><img src="../images/refelectrode.png" alt="Alt text" style="max-width: 100%; height: auto; border-radius: 10px;"></p>
-
-To add to the intuition behind MI and TE, we visualise wavelet transform between reference and target electrodes across distances. (Figure XXX)
 
 <h4 style="margin-bottom: 0"><u>6.2 Signal Reconstruction Accuracy</u></h4> 
 Building on top of Mutual Information, we assess our model's ability to capture this mutual dependency and translate EEG signals into MEG representations. This is done by observing the MSE between the predicted and the ground truth signal thorough model training on the validation set. 
