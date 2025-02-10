@@ -13,7 +13,7 @@ layout: post
       </td>
       <td align="center">
         Tim Farkas<br>
-        <a href="mailto:timfarkas@ucl.edu">timfarhas@ucl.edu</a>
+        <a href="mailto:timfarkas@ucl.edu">timfarkas@ucl.edu</a>
       </td>
     </tr>
   </table>
