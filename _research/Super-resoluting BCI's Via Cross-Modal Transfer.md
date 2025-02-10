@@ -408,7 +408,9 @@ The primary constraint likely stems from the scarcity of simultaneous EEG-MEG re
 
 1. The framework could be extended to other modality pairs with a stronger shared neurophysiological origins.
 2. Synaptech could be applied to newly harvested and more plentiful simultaneouse EEG-MEG datasets.
-3. Initially training the model on non-simultaneouse recordings of both modalities before fine-tuning it on simultaneouse recordings could prove useful.
+3. Exploring self-supervised pre-training on non-simultaneous recordings before fine-tuning the model on simultaneouse EEG-MEG recording.
+
+Exploring self-supervised pre-training on non-simultaneous recordings
 
 <h3 align="center">7. Conclusion</h3>
 
