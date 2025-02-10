@@ -237,41 +237,40 @@ Where:
 The efficacy of the cross signal similarity is compared by incrementally increasing the distance between a target MEG electrode and a set of reference EEG electrodes, upon which MI is computed. The optimal MI score is determined and chosen by calculating mutual information across a range of time lags to account for potential temporal differences between modalities.
 
 <div style="width: 100%; display: flex; justify-content: center;">
-  <svg width="700" height="500" viewBox="0 0 700 500" style="max-width: 100%;">
+  <svg width="700" height="400" viewBox="0 0 700 400" style="max-width: 100%; height: auto;">
     <!-- Title -->
-    <text x="350" y="40" text-anchor="middle" style="font-size: 20px; font-family: 'Times New Roman', Times, serif; font-weight: bold;">Mutual Information vs. Electrode Distance</text>
+    <text x="350" y="30" text-anchor="middle" style="font-size: 20px; font-family: 'Times New Roman', Times, serif; font-weight: bold;">Mutual Information vs. Electrode Distance</text>
     <!-- Axes -->
-    <line x1="100" y1="400" x2="600" y2="400" style="stroke: black; stroke-width: 2;"></line>
-    <line x1="100" y1="100" x2="100" y2="400" style="stroke: black; stroke-width: 2;"></line>
+    <line x1="100" y1="300" x2="600" y2="300" style="stroke: black; stroke-width: 2;"></line>
+    <line x1="100" y1="50" x2="100" y2="300" style="stroke: black; stroke-width: 2;"></line>
     <!-- Y-axis labels -->
     <g style="font-size: 14px; font-family: Arial, sans-serif;">
-      <text x="90" y="400" text-anchor="end">0.00</text>
-      <text x="90" y="340" text-anchor="end">0.02</text>
-      <text x="90" y="280" text-anchor="end">0.04</text>
-      <text x="90" y="220" text-anchor="end">0.06</text>
-      <text x="90" y="160" text-anchor="end">0.08</text>
-      <text x="90" y="100" text-anchor="end">0.10</text>
+      <text x="90" y="300" text-anchor="end">0.00</text>
+      <text x="90" y="250" text-anchor="end">0.02</text>
+      <text x="90" y="200" text-anchor="end">0.04</text>
+      <text x="90" y="150" text-anchor="end">0.06</text>
+      <text x="90" y="100" text-anchor="end">0.08</text>
+      <text x="90" y="50" text-anchor="end">0.10</text>
     </g>
     <!-- X-axis labels -->
     <g style="font-size: 14px; font-family: Arial, sans-serif;">
-      <text x="130" y="420" text-anchor="middle">2 cm</text>
-      <text x="210" y="420" text-anchor="middle">4 cm</text>
-      <text x="290" y="420" text-anchor="middle">6 cm</text>
-      <text x="370" y="420" text-anchor="middle">8 cm</text>
-      <text x="450" y="420" text-anchor="middle">10 cm</text>
-      <text x="530" y="420" text-anchor="middle">12 cm</text>
+      <text x="130" y="320" text-anchor="middle">2 cm</text>
+      <text x="210" y="320" text-anchor="middle">4 cm</text>
+      <text x="290" y="320" text-anchor="middle">6 cm</text>
+      <text x="370" y="320" text-anchor="middle">8 cm</text>
+      <text x="450" y="320" text-anchor="middle">10 cm</text>
+      <text x="530" y="320" text-anchor="middle">12 cm</text>
     </g>
     <!-- Bars -->
-    <rect x="110" y="110" width="40" height="290" style="fill: #D98B8B;"></rect>
-    <rect x="190" y="260" width="40" height="140" style="fill: #D98B8B;"></rect>
-    <rect x="270" y="310" width="40" height="90" style="fill: #D98B8B;"></rect>
-    <rect x="350" y="350" width="40" height="50" style="fill: #D98B8B;"></rect>
-    <rect x="430" y="332" width="40" height="68" style="fill: #D98B8B;"></rect>
-    <rect x="510" y="336" width="40" height="64" style="fill: #D98B8B;"></rect>
-    <!-- Y-axis label -->
-    <text x="50" y="250" text-anchor="middle" transform="rotate(-90 50,250)" style="font-size: 16px; font-family: Arial, sans-serif;">Mutual Information (bits)</text>
-    <!-- X-axis label -->
-    <text x="350" y="460" text-anchor="middle" style="font-size: 16px; font-family: Arial, sans-serif;">Distance (cm)</text>
+    <rect x="110" y="60" width="40" height="240" style="fill: #D98B8B;"></rect>
+    <rect x="190" y="180" width="40" height="120" style="fill: #D98B8B;"></rect>
+    <rect x="270" y="220" width="40" height="80" style="fill: #D98B8B;"></rect>
+    <rect x="350" y="250" width="40" height="50" style="fill: #D98B8B;"></rect>
+    <rect x="430" y="237" width="40" height="63" style="fill: #D98B8B;"></rect>
+    <rect x="510" y="240" width="40" height="60" style="fill: #D98B8B;"></rect>
+    <!-- Axis labels -->
+    <text x="50" y="175" text-anchor="middle" transform="rotate(-90 50,175)" style="font-size: 16px; font-family: Arial, sans-serif;">Mutual Information (bits)</text>
+    <text x="350" y="360" text-anchor="middle" style="font-size: 16px; font-family: Arial, sans-serif;">Distance (cm)</text>
   </svg>
 </div>
 <div style="width: 80%; margin: auto; text-align: justify;">
