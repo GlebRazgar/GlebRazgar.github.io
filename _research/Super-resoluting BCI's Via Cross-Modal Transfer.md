@@ -82,7 +82,8 @@ Recent deep learning (DL) methods have attempted to improve on traditional EEG d
 The scarcity of ground-truth noise-less EEG recordings has motivated the self-supervised trend that followed. Masking random signal segments and learning to reconstruct them has been used to coerce models to encode richer temporal and frequency details [10]. Contrastive learning schemes further refined latent representations by distinguishing genuine neural patterns from simulated artifacts. Generative adversarial networks (GANs) and their time-series counterparts TimeGAN have also been explored for EEG denoising due to their ability to learn spatiotemporal correlations through adversarial training, where the discriminator learns to identify subtle statistical deviations from clean signal characteristics. Nevertheless, single-modal approaches—however advanced—are constrained by the limited fidelity of EEG as the sole training signal. These EEG-only methods still risk modelling artifacts as valid signals due the statistical entanglement between neural activity and noise in spectrotemporal domains.
 
 <h4 style="margin-bottom: 0"><u>2.3 Multi-modal and Cross-Modal Learning inference</u></h4>
-The specific area of DL denoising that has shown most promise combines multiple neuroimaging modalities, and can be broadly split into two main approaches: simultaneous multi-modal inference and cross-modal translation.
+The specific area of DL denoising that has shown most promise combines multiple neuroimaging modalities, and can be broadly split into two main approaches:
+Simultaneous multi-modal inference and Cross-modal translation.  
 
 Multi-modal inference architectures process concurrent recordings from different modalities to improve classification or detection tasks. In the EEG-fNIRS domain, Chiarelli et al. [18] developed a hybrid CNN-LSTM architecture that improved motor imagery classification by 15% over single-modal approaches by combining EEG's temporal precision with fNIRS's spatial resolution. Similarly, Zhang et al. [19] demonstrated that EEG-fMRI inference through cross-attention networks could enhance source localization accuracy, particularly in deep brain regions where EEG signals are traditionally weak.
 
@@ -214,7 +215,9 @@ Apart from the threshold, MEG electrode selection was optimized for cortical geo
 <div style="width: 80%; margin: auto; text-align: justify;">
 <p><b>Figure 5:</b> Signal wavelets showing signal similarity between near by electrodes. </p></div><br>
 
-When observing the waveleted signal between EEG and MEG electrodes in close proximity, it's clear that there is some resemblance in the signal when asessed visually (Figure XXX). However, the level of information varies depending on the distance between electrodes (Figure XXX). As such we poise to quantify the shared information between both modalities across distances. This is best done through two distinct methods, Mutual Information (MI) and Transfer Entropy (TE). In the context of this study, MI provides a metric for assessing the degree of dependency between these modalities and thus tells us how much information about the MEG signal can be inferred from the EEG signal. TE, on the other hand, measures the directed transfer of information between two systems, capturing the influence of one signal on another over time. TE is particularly useful in this study as it allows us to assess the causal relationship between EEG and MEG signals, identifying the directionality of information flow.
+When observing the waveleted signal between EEG and MEG electrodes in close proximity, it's clear that there is some resemblance in the signal when asessed visually (Figure 5). However, the level of information varies depending on the distance between electrodes (Figure 5). As such we poise to quantify the shared information between both modalities across distances.
+
+Shared information is best measured through Mututal Information. In the context of this study, MI provides a metric for assessing the degree of dependency between these modalities and thus tells us how much information about the MEG signal can be inferred from the EEG signal.  
 
 The formula for Mutual Information (MI) is given by:  
 
@@ -223,17 +226,6 @@ $$I(X;Y) = H(X) - H(X\|Y)$$
 Where:
 - $H(X)$ represents the entropy of the EEG signal, quantifying its overall information content.
 - $H(X\|Y)$ is the conditional entropy of the EEG signal given the MEG signal, measuring the residual uncertainty in EEG after considering the influence of MEG.
-
-Transfer Entropy (TE) is calculated as:  
-
-$$TE_{X \to Y} = \sum p(y_{t+1}, y_t, x_t) \log \frac{p(y_{t+1} \| y_t, x_t)}{p(y_{t+1} \| y_t)}$$
-
-Where:
-- $y_{t+1}$ is the future state of the MEG signal.
-- $y_t$ is the current state of the MEG signal.
-- $x_t$ is the current state of the EEG signal.
-- $p(y_{t+1}, y_t, x_t)$ is the joint probability distribution of these states.
-
 <hr style="border-top: 1px solid black;">
 
 
@@ -264,19 +256,19 @@ The efficacy of the cross signal similarity is compared by incrementally increas
       <tr>
         <td style="border: 1px solid black;" rowspan="3">Familiar Faces</td>
         <td style="border: 1px solid black;">Raw EEG</td>
-        <td style="border: 1px solid black;">Fusiform Face Area (FFA)</td>
+        <td style="border: 1px solid black;">FFA</td>
         <td style="border: 1px solid black;">2.5</td>
         <td style="border: 1px solid black;">78%</td>
       </tr>
       <tr>
         <td style="border: 1px solid black;">Classic Denoising (ICA)</td>
-        <td style="border: 1px solid black;">Fusiform Face Area (FFA)</td>
+        <td style="border: 1px solid black;">FFA</td>
         <td style="border: 1px solid black;">3.0</td>
         <td style="border: 1px solid black;">85%</td>
       </tr>
       <tr>
         <td style="border: 1px solid black;">Synaptech</td>
-        <td style="border: 1px solid black;">Fusiform Face Area (FFA)</td>
+        <td style="border: 1px solid black;">FFA</td>
         <td style="border: 1px solid black;">1.0</td>
         <td style="border: 1px solid black;">37%</td>
       </tr>
@@ -284,19 +276,19 @@ The efficacy of the cross signal similarity is compared by incrementally increas
       <tr>
         <td style="border: 1px solid black;" rowspan="3">Unfamiliar Faces</td>
         <td style="border: 1px solid black;">Raw EEG</td>
-        <td style="border: 1px solid black;">Occipital Face Area (OFA)</td>
+        <td style="border: 1px solid black;">OFA</td>
         <td style="border: 1px solid black;">2.0</td>
         <td style="border: 1px solid black;">74%</td>
       </tr>
       <tr>
         <td style="border: 1px solid black;">Classic Denoising (ICA)</td>
-        <td style="border: 1px solid black;">Occipital Face Area (OFA)</td>
+        <td style="border: 1px solid black;">OFA</td>
         <td style="border: 1px solid black;">2.7</td>
         <td style="border: 1px solid black;">82%</td>
       </tr>
       <tr>
         <td style="border: 1px solid black;">Synaptech</td>
-        <td style="border: 1px solid black;">Occipital Face Area (OFA)</td>
+        <td style="border: 1px solid black;">OFA</td>
         <td style="border: 1px solid black;">0.8</td>
         <td style="border: 1px solid black;">32%</td>
       </tr>
@@ -304,19 +296,19 @@ The efficacy of the cross signal similarity is compared by incrementally increas
       <tr>
         <td style="border: 1px solid black;" rowspan="3">Scrambled Faces</td>
         <td style="border: 1px solid black;">Raw EEG</td>
-        <td style="border: 1px solid black;">Temporal Pole</td>
+        <td style="border: 1px solid black;">TP</td>
         <td style="border: 1px solid black;">1.5</td>
         <td style="border: 1px solid black;">60%</td>
       </tr>
       <tr>
         <td style="border: 1px solid black;">Classic Denoising (ICA)</td>
-        <td style="border: 1px solid black;">Temporal Pole</td>
+        <td style="border: 1px solid black;">TP</td>
         <td style="border: 1px solid black;">1.9</td>
         <td style="border: 1px solid black;">68%</td>
       </tr>
       <tr>
         <td style="border: 1px solid black;">Synaptech</td>
-        <td style="border: 1px solid black;">Temporal Pole</td>
+        <td style="border: 1px solid black;">TP</td>
         <td style="border: 1px solid black;">0.6</td>
         <td style="border: 1px solid black;">26%</td>
       </tr>
@@ -329,11 +321,10 @@ The efficacy of the cross signal similarity is compared by incrementally increas
   <p><b>Table 1:</b> Comparison of brain region activation performance across different conditions and methods. The classic denoising method (ICA) outperforms both the raw EEG and Synaptech-Net in terms of activation metrics and classification accuracy.</p>
 </div>
 
-The MI analysis showed that the MI scores is a function of electrode distance. Quantitatively, the MI score decreased by approximately 50% when the electrode distance increased exponentially from 2 cm to 4 cm, and after 8 cm, the rate of change staled out, suggesting most mutual information is power-law distributed.
+The MI analysis shows that the MI scores is a function of electrode distance. Quantitatively, the MI score decreases by approximately 50% when the electrode distance increase from 2 cm to 4 cm, and after 8 cm, the rate of change staled out, suggesting most mutual information is power-law distributed.
 The effects of spatial dynamics of mutual information, is further explored in the Discussion section.
 
-To further substantiate these findings, Transfer Entropy (TE) analysis was conducted to assess the directional information flow between EEG and MEG signals.
-TE analysis corroborated the spatial dependancy observed in the MI results, showing a near identical trend where information flow decreases exponentially with increased electrode distance.
+To further substantiate these findings, Transfer Entropy (TE) analysis was conducted to assess the directional information flow from electric field to magnetic field. TE analysis confirms the spatial dependancy observed in the MI results, showing an identical trend where information flow decreases exponentially with increased electrode distance.
 
 <h4 style="margin-bottom: 0"><u>6.2 Signal Reconstruction Accuracy</u></h4> 
 Building on top of Mutual Information, we assess our model's ability to capture this mutual dependency and translate EEG signals into MEG representations. This is done by observing the MSE between the predicted and the ground truth signal thorough model training on the validation set. 
