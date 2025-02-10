@@ -221,18 +221,15 @@ Apart from the threshold, MEG electrode selection was optimized for cortical geo
 When observing the waveleted signal between EEG and MEG electrodes in close proximity, it's clear that there is some resemblance in the signal when asessed visually (Figure XXX). However, the level of information varies depending on the distance between electrodes (Figure XXX). As such we poise to quantify the shared information between both modalities across distances. This is best done through two distinct methods, Mutual Information (MI) and Transfer Entropy (TE). In the context of this study, MI provides a metric for assessing the degree of dependency between these modalities and thus tells us how much information about the MEG signal can be inferred from the EEG signal. TE, on the other hand, measures the directed transfer of information between two systems, capturing the influence of one signal on another over time. TE is particularly useful in this study as it allows us to assess the causal relationship between EEG and MEG signals, identifying the directionality of information flow.
 
 The formula for Mutual Information (MI) is given by:
-$$
-I(X;Y) = H(X) - H(X|Y)
-$$
+
+$$I(X;Y) = H(X) - H(X\|Y)$$
 
 Where:
 - $H(X)$ represents the entropy of the EEG signal, quantifying its overall information content.
-- $H(X|Y)$ is the conditional entropy of the EEG signal given the MEG signal, measuring the residual uncertainty in EEG after considering the influence of MEG.
+- $H(X\|Y)$ is the conditional entropy of the EEG signal given the MEG signal, measuring the residual uncertainty in EEG after considering the influence of MEG.
 
 Transfer Entropy (TE) is calculated as:
-$$
-TE_{X \to Y} = \sum p(y_{t+1}, y_t, x_t) \log \frac{p(y_{t+1} | y_t, x_t)}{p(y_{t+1} | y_t)}
-$$
+$$TE_{X \to Y} = \sum p(y_{t+1}, y_t, x_t) \log \frac{p(y_{t+1} \| y_t, x_t)}{p(y_{t+1} \| y_t)}$$
 
 Where:
 - $y_{t+1}$ is the future state of the MEG signal.
