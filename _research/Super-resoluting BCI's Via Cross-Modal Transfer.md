@@ -114,7 +114,7 @@ Synaptech-Net is a U-Net – LSTM symbiote that utilizes the modified convolutio
 
 <p align="center"><img src="../images/unet.png" alt="Alt text" style="max-width: 100%; height: auto; border-radius: 10px;"></p>
 <div style="width: 80%; margin: auto; text-align: justify;">
-<p><b>Figure 3:</b> Synaptech-Net architecture — a modified U-Net with an LSTM bridge that maps EEG to MEG signals by combining spatial convolutions and temporal modeling.</p>
+<p><b>Figure 3:</b> Synaptech-Net architecture — a modified U-Net with an LSTM bridge that maps EEG to MEG signals by combining spatial convolutions and temporal modeling.</p></div>
 <br>
 
 Though in this paper we run experiments on different SynaptechNet sizes, the core model elements and their purpose is structured as follows:
