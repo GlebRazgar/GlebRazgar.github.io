@@ -229,6 +229,7 @@ Where:
 - $H(X\|Y)$ is the conditional entropy of the EEG signal given the MEG signal, measuring the residual uncertainty in EEG after considering the influence of MEG.
 
 Transfer Entropy (TE) is calculated as:
+
 $$TE_{X \to Y} = \sum p(y_{t+1}, y_t, x_t) \log \frac{p(y_{t+1} \| y_t, x_t)}{p(y_{t+1} \| y_t)}$$
 
 Where:
