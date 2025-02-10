@@ -429,7 +429,6 @@ Expanding on our body of work, we suggest future body of work to focus on:
 
 While current data limitations constrain practical implementation, this work establishes the theoretical and empirical foundations for cross-modal transfer in BCI enhancement, paving the way for next-generation portable neural interfaces.
 
-While current data limitations constrain practical implementation, this work establishes the theoretical and empirical foundations for cross-modal transfer in BCI enhancement, paving the way for future research.
 ---
 
 <h3 align="center">8. References</h3>
