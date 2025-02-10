@@ -4,14 +4,14 @@ date: 2021-10-01
 layout: post
 ---
 <br>
-<div class="table-container" style="width: 50%; margin: auto;">
-  <table style="border-spacing: 0;">
+<div style="width: 60%; margin: auto;">
+  <table style="width: 100%; border-spacing: 0;">
     <tr>
-      <td align="center" style="padding: 5px;">
+      <td style="padding: 5px; text-align: center;">
         Gleb Razgar<br>
         <a href="mailto:gleb.razgar@gmail.com">gleb.razgar@gmail.com</a>
       </td>
-      <td align="center" style="padding: 5px;">
+      <td style="padding: 5px; text-align: center;">
         Tim Farkas<br>
         <a href="mailto:timfarkas@ucl.edu">timfarkas@ucl.edu</a>
       </td>
