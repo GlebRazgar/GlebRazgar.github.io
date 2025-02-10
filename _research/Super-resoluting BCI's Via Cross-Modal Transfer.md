@@ -31,7 +31,7 @@ Despite the widespread adoption of neuroimaging, many BCI modalities like EEG re
 <h4 style="margin-bottom: 0"><u>1.1 Rational</u></h4>
 
 Why don't most people have a BCI that extends their mind? One that they use on daily basis like headphones, to increase the brains information throughput. As a non-invasive method with high temporal resolution, electroencephalography (EEG) is well-suited for such applications. However, its poor signal-to-noise ratio limits reliable brain region classification, restricting EEG to a subset of possible applications despite numerous advances in denoising techniques.
-
+<br>
 <p align="center"><img src="../images/eeg2meg.png" alt="Alt text" style="max-width: 70%; height: auto; border-radius: 10px;"></p>
 <div style="width: 80%; margin: auto; text-align: justify;">
   <p><b>Figure 1:</b> Synaptech's cross-modal transfer of EEG signal into MEG signal of higher-fideligty. Illustration showing both the inference stage, where only the modality at hand is used to predict a higher resolution mode, and traning stage, where the DNN uses both signals to learn their dependancies. </p>
@@ -44,7 +44,7 @@ Theoretically, with a wholistic knowledge of both pure and noise signal’s inde
 
 <h4 style="margin-bottom: 0"><u>1.3 Synaptech</u></h4>
 We propose Synaptech as a cross-modal signal translation method that leverages modalities with shared neurophysiological origins but different noise characteristics. Synaptech enables more precise signal-noise separation compared to traditional denoising techniques by learning the mapping between a lower-fidelity and higher-fidelity modality. The principle is analogous to supervised denoising: given paired clean and noisy signals, a model learns the transformation function between them. This generalizes to cross-modal translation when the modalities share underlying temporal or spatial dependencies while exhibiting different signal-to-noise ratios.
-
+<br>
 <p align="center"><img src="../images/electromagnetic.png" alt="Alt text" style="max-width: 80%; height: auto; border-radius: 10px;"></p>
 <div style="width: 80%; margin: auto; text-align: justify;">
   <p><b>Figure 2:</b> Illustration of the electric current in neurons causing electric fields which in turn derive magnetic fields. Both signals originate from the same ionic current derivatives, but magnetic fields propagate through tissue without distortion, enabling cross-modal fidelity transfer.</p>
@@ -111,7 +111,7 @@ Building on this body of work, our approach focuses on EEG-to-MEG translation, w
 <h4 style="margin-bottom: 0"><u>3.1 Model Architecture</u></h4> 
 To achive neurological signal to signal conversion with a minimum amount of available data this study proposes a new model architecture – Synaptech-Net aimed at capturing both special and temporal characteristics of neurological signal [Fig 2].
 Synaptech-Net is a U-Net – LSTM symbiote that utilizes the modified convolutional down sampling layers to capture special correlations, which then feed into a bi-directional LSTM bottleneck that captures temporal dependencies. On the other end, the classic U-net skip connections give the network an option to preserve spatial information of the signal, and simply overlay it with required changes, which makes the model highly parameter efficient. At last, to map a smaller number of EEG electrodes (74) onto the larger array of MAG sensors (102), the networks de-coder block up-samples electrode dimensions, thereby increasing the outputs special resolution.
-
+<br>
 <p align="center"><img src="../images/unet.png" alt="Alt text" style="max-width: 100%; height: auto; border-radius: 10px;"></p>
 <div style="width: 80%; margin: auto; text-align: justify;">
 <p><b>Figure 3:</b> Synaptech-Net architecture — a modified U-Net with an LSTM bridge that maps EEG to MEG signals by combining spatial convolutions and temporal modeling.</p></div><br>
@@ -206,13 +206,13 @@ In creating a reliable mapping between EEG and MEG signal its crucial to have bo
 
 A.  We prune un-related electrodes based on Eucledian distance threasholds.  
 B.	We quantify the transferable signal across EEG and MEG electrodes to make sure the signal shares capturable dependancies.  
-
+<br>
 <p align="center"><img src="../images/eeg&meg.png" alt="Alt text" style="max-width: 70%; height: auto; border-radius: 10px;"></p>
 <div style="width: 80%; margin: auto; text-align: justify;">
 <p><b>Figure 4:</b> The plot shows EEG and MEG electrode overlay before prewning, demonstrating massive variability in electrode mappings. </p></div><br>
 
 Apart from the threshold, MEG electrode selection was optimized for cortical geometry. MEG exhibits maximal sensitivity to tangential neural currents, particularly those originating from sulcal sources, due to the orthogonal orientation of magnetic fields relative to electrical current flow. Therefore, sensors positioned above major cortical folds, like longitudinal fissure or Sylvian fissure were manually prioritized for analysis.
-
+<br>
 <p align="center"><img src="../images/refelectrode.png" alt="Alt text" style="max-width: 100%; height: auto; border-radius: 10px;"></p>
 <div style="width: 80%; margin: auto; text-align: justify;">
 <p><b>Figure 5:</b> Signal wavelets showing signal similarity between near by electrodes. </p></div><br>
@@ -220,6 +220,7 @@ Apart from the threshold, MEG electrode selection was optimized for cortical geo
 When observing the waveleted signal between EEG and MEG electrodes in close proximity, it's clear that there is some resemblance in the signal when asessed visually (Figure XXX). However, the level of information varies depending on the distance between electrodes (Figure XXX). As such we poise to quantify the shared information between both modalities across distances. This is best done through two distinct methods, Mutual Information (MI) and Transfer Entropy (TE). In the context of this study, MI provides a metric for assessing the degree of dependency between these modalities and thus tells us how much information about the MEG signal can be inferred from the EEG signal. TE, on the other hand, measures the directed transfer of information between two systems, capturing the influence of one signal on another over time. TE is particularly useful in this study as it allows us to assess the causal relationship between EEG and MEG signals, identifying the directionality of information flow.
 
 The formula for Mutual Information (MI) is given by:  
+
 $$I(X;Y) = H(X) - H(X\|Y)$$
 
 Where:
@@ -227,6 +228,7 @@ Where:
 - $H(X\|Y)$ is the conditional entropy of the EEG signal given the MEG signal, measuring the residual uncertainty in EEG after considering the influence of MEG.
 
 Transfer Entropy (TE) is calculated as:  
+
 $$TE_{X \to Y} = \sum p(y_{t+1}, y_t, x_t) \log \frac{p(y_{t+1} \| y_t, x_t)}{p(y_{t+1} \| y_t)}$$
 
 Where:
@@ -308,6 +310,7 @@ TE analysis corroborated the spatial dependancy observed in the MI results, show
 <h4 style="margin-bottom: 0"><u>6.2 Signal Reconstruction Accuracy</u></h4> 
 Building on top of Mutual Information, we assess our model's ability to capture this mutual dependency and translate EEG signals into MEG representations. This is done by observing the MSE between the predicted and the ground truth signal thorough model training on the validation set. 
 
+<br>
 <p align="center"><img src="../images/loss.png" alt="Alt text" style="max-width: 100%; height: auto; border-radius: 10px;"></p>
 <div style="width: 80%; margin: auto; text-align: justify;">
 <p><b>Figure 7:</b> Training and validation loss curves over 10 epochs, showing model convergance.</p></div><br>
@@ -320,7 +323,7 @@ Figure 7 shows the spectrograms for a sample electrode:
 <h4 style="margin-bottom: 0"><u>6.5 Brain Region Classification Accuracy</u></h4> 
 
 As a final showdown we test Synaptech's prowess in improving brain region classification of a standard CNN classifier through active denoising.
-
+<br>
 <div class="table-container" style="overflow-x: auto; width: 80%; margin: auto;">
   <table cellspacing="0" cellpadding="6" border="1" style="border: 1px solid black; border-collapse: collapse; width: 100%;">
     <caption style="caption-side: top; padding: 10px;"><b>Table 1.</b> Brain Region Classification Comparison.</caption>
