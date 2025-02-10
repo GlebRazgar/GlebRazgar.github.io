@@ -194,9 +194,9 @@ In short, this paper’s contributions are as follows:
 <h3 align="center">4. Experimental Setup</h3>
 Synaptech is evaluated across three dimensions:  
 
-1. Signal Mutual Information  
-2. Model's signal reconstruction accuracy  
-3. Brain region classification improvement  
+1. **Signal Mutual Information**
+2. **Model's signal reconstruction accuracy**
+3. **Brain region classification improvement**
 
 <h4 style="margin-bottom: 0"><u>4.1 Electrode Selection</u></h4> 
 In creating a reliable mapping between EEG and MEG signal its crucial to have both electrodes be as close to one another as possible, or else they will be detecting un-related brain activity. The OpenFmri’s dataset wasn’t originally collected with cross-modal transfer in mind, and thus lacks accurate placement of electrodes with the aim of minimizing the electrode distances. On top of it, geo-positional data required to calculate the distance between different electrode types is corrupted and such to make sure mapping electrodes match their closest counterpart we address this in two ways:  
@@ -246,53 +246,87 @@ Where:
 The efficacy of the cross signal similarity is compared by incrementally increasing the distance between a target MEG electrode and a set of reference EEG electrodes, upon which MI is computed. The optimal MI score is determined and chosen by calculating mutual information across a range of time lags to account for potential temporal differences between modalities.
 
 
-<div style="width: 100%; display: flex; justify-content: center; align-items: center;">
-  <div style="width: 80%; text-align: center;">
-    <svg width="700" height="500">
-      <!-- Title -->
-      <text x="350" y="40" text-anchor="middle" style="font-size: 20px; font-family: 'Times New Roman', Times, serif;">Mutual Information vs. Electrode Distance</text>
-      <!-- Axes -->
-      <line x1="100" y1="400" x2="600" y2="400" style="stroke: black; stroke-width: 5;"></line>
-      <line x1="100" y1="100" x2="100" y2="400" style="stroke: black; stroke-width: 5;"></line>
-      <!-- Y-axis labels and grid lines -->
-      <g style="font-size: 14px; font-family: Arial, sans-serif;">
-        <text x="90" y="400" text-anchor="end">0.00</text>
-        <line x1="100" y1="400" x2="600" y2="400" style="stroke: black; stroke-width: 1;"></line>
-        <text x="90" y="340" text-anchor="end">0.02</text>
-        <line x1="100" y1="340" x2="600" y2="340" style="stroke: black; stroke-width: 1;"></line>
-        <text x="90" y="280" text-anchor="end">0.04</text>
-        <line x1="100" y1="280" x2="600" y2="280" style="stroke: black; stroke-width: 1;"></line>
-        <text x="90" y="220" text-anchor="end">0.06</text>
-        <line x1="100" y1="220" x2="600" y2="220" style="stroke: black; stroke-width: 1;"></line>
-        <text x="90" y="160" text-anchor="end">0.08</text>
-        <line x1="100" y1="160" x2="600" y2="160" style="stroke: black; stroke-width: 1;"></line>
-        <text x="90" y="100" text-anchor="end">0.10</text>
-        <line x1="100" y1="100" x2="600" y2="100" style="stroke: black; stroke-width: 1;"></line>
-      </g>
-      <!-- X-axis labels -->
-      <g style="font-size: 14px; font-family: Arial, sans-serif;">
-        <text x="130" y="420" text-anchor="middle">2 cm</text>
-        <text x="210" y="420" text-anchor="middle">4 cm</text>
-        <text x="290" y="420" text-anchor="middle">6 cm</text>
-        <text x="370" y="420" text-anchor="middle">8 cm</text>
-        <text x="450" y="420" text-anchor="middle">10 cm</text>
-        <text x="530" y="420" text-anchor="middle">12 cm</text>
-      </g>
-      <!-- Bars -->
-      <!-- MI values: 0.09, 0.04, 0.03, 0.017, 0.023, 0.021 -->
-      <rect x="110" y="110" width="40" height="290" style="fill: #D98B8B;"></rect>
-      <rect x="190" y="260" width="40" height="140" style="fill: #D98B8B;"></rect>
-      <rect x="270" y="310" width="40" height="90" style="fill: #D98B8B;"></rect>
-      <rect x="350" y="350" width="40" height="50" style="fill: #D98B8B;"></rect>
-      <rect x="430" y="332" width="40" height="68" style="fill: #D98B8B;"></rect>
-      <rect x="510" y="336" width="40" height="64" style="fill: #D98B8B;"></rect>
-      <!-- Y-axis label -->
-      <text x="50" y="250" text-anchor="middle" transform="rotate(-90 50,250)" style="font-size: 16px; font-family: Arial, sans-serif;">Mutual Information (bits)</text>
-      <!-- X-axis label -->
-      <text x="350" y="460" text-anchor="middle" style="font-size: 16px; font-family: Arial, sans-serif;">Electrode Distance (cm)</text>
-    </svg>
-    <div style="width: 80%; margin: auto; text-align: justify;">
-    <p><b>Figure 6:</b> Bar chart showing Mutual Information between reference EEG electrode 'Fz' and target MEG electrodes at increasing distances. The figure illustrates exponential decay in MI score with linearly increase of electrode diestances.</p></div><br>
+
+<div class="table-container" style="overflow-x: auto; width: 80%; margin: auto;">
+  <table cellspacing="0" cellpadding="6" border="1" style="border: 1px solid black; border-collapse: collapse; width: 100%;">
+    <caption style="caption-side: top; padding: 10px;"><b>Table 1.</b> Brain Region Classification Comparison.</caption>
+    <thead>
+      <tr>
+        <th style="border: 1px solid black;">Condition</th>
+        <th style="border: 1px solid black;">Method</th>
+        <th style="border: 1px solid black;">Brain Region</th>
+        <th style="border: 1px solid black;">Activation Metric (μV)</th>
+        <th style="border: 1px solid black;">Classification Accuracy (%)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Familiar Faces -->
+      <tr>
+        <td style="border: 1px solid black;" rowspan="3">Familiar Faces</td>
+        <td style="border: 1px solid black;">Raw EEG</td>
+        <td style="border: 1px solid black;">Fusiform Face Area (FFA)</td>
+        <td style="border: 1px solid black;">2.5</td>
+        <td style="border: 1px solid black;">78%</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid black;">Classic Denoising (ICA)</td>
+        <td style="border: 1px solid black;">Fusiform Face Area (FFA)</td>
+        <td style="border: 1px solid black;">3.0</td>
+        <td style="border: 1px solid black;">85%</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid black;">Synaptech</td>
+        <td style="border: 1px solid black;">Fusiform Face Area (FFA)</td>
+        <td style="border: 1px solid black;">1.0</td>
+        <td style="border: 1px solid black;">37%</td>
+      </tr>
+      <!-- Unfamiliar Faces -->
+      <tr>
+        <td style="border: 1px solid black;" rowspan="3">Unfamiliar Faces</td>
+        <td style="border: 1px solid black;">Raw EEG</td>
+        <td style="border: 1px solid black;">Occipital Face Area (OFA)</td>
+        <td style="border: 1px solid black;">2.0</td>
+        <td style="border: 1px solid black;">74%</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid black;">Classic Denoising (ICA)</td>
+        <td style="border: 1px solid black;">Occipital Face Area (OFA)</td>
+        <td style="border: 1px solid black;">2.7</td>
+        <td style="border: 1px solid black;">82%</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid black;">Synaptech</td>
+        <td style="border: 1px solid black;">Occipital Face Area (OFA)</td>
+        <td style="border: 1px solid black;">0.8</td>
+        <td style="border: 1px solid black;">32%</td>
+      </tr>
+      <!-- Scrambled Faces -->
+      <tr>
+        <td style="border: 1px solid black;" rowspan="3">Scrambled Faces</td>
+        <td style="border: 1px solid black;">Raw EEG</td>
+        <td style="border: 1px solid black;">Temporal Pole</td>
+        <td style="border: 1px solid black;">1.5</td>
+        <td style="border: 1px solid black;">60%</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid black;">Classic Denoising (ICA)</td>
+        <td style="border: 1px solid black;">Temporal Pole</td>
+        <td style="border: 1px solid black;">1.9</td>
+        <td style="border: 1px solid black;">68%</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid black;">Synaptech</td>
+        <td style="border: 1px solid black;">Temporal Pole</td>
+        <td style="border: 1px solid black;">0.6</td>
+        <td style="border: 1px solid black;">26%</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div style="width: 80%; margin: auto; text-align: justify;">
+  <br>
+  <p><b>Table 1:</b> Comparison of brain region activation performance across different conditions and methods. The classic denoising method (ICA) outperforms both the raw EEG and Synaptech-Net in terms of activation metrics and classification accuracy.</p>
 </div>
 
 The MI analysis showed that the MI scores is a function of electrode distance. Quantitatively, the MI score decreased by approximately 50% when the electrode distance increased exponentially from 2 cm to 4 cm, and after 8 cm, the rate of change staled out, suggesting most mutual information is power-law distributed.
