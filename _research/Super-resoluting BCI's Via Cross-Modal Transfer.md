@@ -379,7 +379,7 @@ As a final showdown we test Synaptech's prowess in improving brain region classi
 <div style="width: 80%; margin: auto; text-align: justify;">
 <br>
   <p><b>Table 1:</b> Comparison of brain region activation performance across different conditions and methods. The classic denoising method (ICA) outperforms both the raw EEG and Synaptech-Net in terms of activation metrics and classification accuracy.</p>
-</div>
+</div><br>
 
 As expected from the models inability to cohesively reconstruct the signal, models performance on classification tasks shows marginal de-noising reulsts at best, given by methods downperformance when compared to ICA. 
 
