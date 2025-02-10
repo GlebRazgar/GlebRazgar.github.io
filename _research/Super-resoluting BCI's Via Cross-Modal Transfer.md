@@ -51,8 +51,9 @@ We propose Synaptech as a cross-modal signal translation method that leverages m
 </div>
 
 <h4 style="margin-bottom: 0"><u>1.4 Selected Modalities </u></h4>
-The exemplar modalities chosen for this study are EEG and MEG due to their derivative signal origin and isomorphic temporal resolution. Both MEG and EEG signals originate from the net effect of ionic currents flowing in the dendrites of neurons. Whilst EEG measures changes in electric fields and MEG measures variations in magnetic fields, one directly derives from another (Figure 2). 
-
+The exemplar modalities chosen for this study are EEG and MEG due to their derivative signal origin and isomorphic temporal resolution. Both MEG and EEG signals originate from the net effect of ionic currents flowing in the dendrites of neurons. Whilst EEG measures changes in electric fields and MEG measures variations in magnetic fields, one directly derives from another (Figure 2).  
+<br
+<br>
 An advantage of MEG over EEG is that the magnetic fields are not distorted by the intervening organic matter, as is the case with electric fields, which makes MEG much more accurate. On the other hand, MEG systems are considerably more expensive, rare, bulky and non-portable. Due to these reasons it’s extremely desirable to gain MEG like quality on EEG headsets through the act of de-noising. This paper attempts to accomplish exactly that throgh cross-modal transfer that leverages a higher SNR modality as a supervisory signal, thereby enhancing the target BCI modality.
 
 <h4 style="margin-bottom: 0"><u>1.5 Organization of This Paper</u></h4>
@@ -74,11 +75,13 @@ This paper is structured as follows:
 <h4 style="margin-bottom: 0"><u>2.1 EEG Signal Processing Techniques</u></h4>
 EEG signal processing has seen a set of methods intended to mitigate noise sources, including muscle artifacts, environmental interference, and inherent instrument limitations. Early approaches involved classical filtering—such as low-pass, high-pass, or bandpass filters—to focus on specific frequency bands (e.g., alpha, beta, gamma) where meaningful neurophysiological activity is dominant [1]. Independent Component Analysis (ICA) [2], intends to disentangle superimposed source signals based on assumptions of mutual statistical independence. More sophisticated approaches like wavelet transform have been used to decompose the signal for precise time-frequency analysis, allowing different segments of the signal to undergo tailored noise reduction [3].
 
+<br>
 Further refinements in classical techniques include canonical correlation analysis for artifact subspace separation [4] and spatial filtering (such as beamformers [5]) that emphasize specific cortical sources while suppressing external interference. However, each technique has its own set of limits. Traditional filtering relies on preselected cutoff frequencies that don’t generalize to all contexts, while ICA is sensitive to algorithmic selections and non-Gaussianity. Wavelet decompositions require domain expertise in choosing suitable mother wavelets and in defining thresholding schemes, which abolishes them from large-scale or automated applications. Thus, the neuroimaging field is still converging on more robust methods.
 
 <h4 style="margin-bottom: 0"><u>2.2 Deep Learning for Neural Signal Cleaning</u></h4>
 Recent deep learning (DL) methods have attempted to improve on traditional EEG denoising algorithms (e.g., wavelet thresholding or ICA) by automatically learning complex mappings between noisy signals and their cleaner representations. Early CNN-based frameworks, such as Schirrmeister et al. [6], showed the feasibility of end-to-end filtering in the spatial dimension. However, these approaches have at large been superseded by hybrid architectures that integrate temporal modeling. For instance, architectures merging convolutional front-ends with LSTM or GRUs can also capture long-range dependencies needed to isolate artifacts spanning multiple time steps. Such hybrid designs have shown better performance on tasks involving nonstationary noise sources like motion artifacts or power-line interference [9], but still struggle from the artifacts present in most data.
 
+<br>
 The scarcity of ground-truth noise-less EEG recordings has motivated the self-supervised trend that followed. Masking random signal segments and learning to reconstruct them has been used to coerce models to encode richer temporal and frequency details [10]. Contrastive learning schemes further refined latent representations by distinguishing genuine neural patterns from simulated artifacts. Generative adversarial networks (GANs) and their time-series counterparts TimeGAN have also been explored for EEG denoising due to their ability to learn spatiotemporal correlations through adversarial training, where the discriminator learns to identify subtle statistical deviations from clean signal characteristics. Nevertheless, single-modal approaches—however advanced—are constrained by the limited fidelity of EEG as the sole training signal. These EEG-only methods still risk modelling artifacts as valid signals due the statistical entanglement between neural activity and noise in spectrotemporal domains.
 
 <h4 style="margin-bottom: 0"><u>2.3 Multi-modal and Cross-Modal Learning inference</u></h4>
@@ -114,15 +117,13 @@ Synaptech-Net is a U-Net – LSTM symbiote that utilizes the modified convolutio
 <p><b>Figure 3:</b> Synaptech-Net architecture — a modified U-Net with an LSTM bridge that maps EEG to MEG signals by combining spatial convolutions and temporal modeling.</p>
 <br>
 
-
-
-As such, the Synaptech model architecture is structured as follows:
-1. **Spatial Encoder**: A modified U-Net downsampling path processes the input EEG signal (64 channels × T timepoints) through four consecutive blocks. Each block comprises:
+Though in this paper we run experiments on different SynaptechNet sizes, the core model elements and their purpose is structured as follows:
+1. **Spatial Encoder**: A modified U-Net downsampling path processes the input EEG signal (74 channels × T timepoints) through four consecutive blocks. Each block comprises:
    - 2D convolution (kernel: 3×3, stride: 1)
    - Instance normalization
    - LeakyReLU activation (α=0.2)
    - Max pooling (2×2)
-   The channel dimensionality follows [64 → 128 → 256 → 512], progressively extracting hierarchical spatial features.
+   The channel dimensionality follows [74 → 128 → 256 → 512], progressively extracting hierarchical spatial features.
 
 2. **Temporal Bridge**: The encoded representations feed into a bi-directional LSTM module that processes sequences of spatial features. This bridge consists of:
    - 2 stacked Bi-LSTM layers (hidden size: 512)
@@ -135,65 +136,58 @@ As such, the Synaptech model architecture is structured as follows:
    - Instance normalization
    - ReLU activation
    - Skip connections from encoder
-   The channel dimensionality contracts [512 → 256 → 128 → 306] to match MEG sensor topology.
+   The channel dimensionality contracts [512 → 256 → 128 → 102] to match MEG sensor topology.
 
 <h4 style="margin-bottom: 0"><u>3.2 Dataset</u></h4> 
-To train and evaluate our cross-modal network, this study leverages the only publicly available to date dataset containing simultaneous EEG and MEG recordings. This dataset  comprises approximately 160 GB of raw neural imaging data collected from 16 participants performing visual recognition tasks.
+To train and evaluate our cross-modal network, we use the only publicly available to date dataset containing simultaneous EEG and MEG recordings. This dataset comprises approximately 160 GB of raw neural imaging data collected from 16 participants performing visual recognition tasks.
 
-Experimental Design
-The dataset was collected as part of a study investigating the neural correlates of visual recognition and memory. Participants were presented with images of faces, objects, and scrambled patterns while their neural activity was recorded using simultaneous EEG and MEG. The visual stimuli were designed to evoke distinct neural responses in the visual cortex and higher-order brain regions involved in object recognition and memory encoding. Each trial consisted of:
-•	Stimulus Presentation: Images were displayed for 500 ms, followed by a 1,500 ms inter-stimulus interval (ISI).
-•	Task Conditions: Participants performed either a recognition task (indicating whether they had seen the image before) or a passive viewing task (observing the images without any explicit task).
-•	Trial Structure: The experiment included 720 trials per participant, evenly distributed across the three stimulus categories (faces, objects, scrambled patterns).
+Experimental Design:
+The dataset was collected as part of a study investigating the neural correlates of visual recognition and memory. Participants were presented with images of faces, objects, and scrambled patterns while their neural activity was recorded using simultaneous EEG and MEG. The visual stimuli were designed to evoke distinct neural responses in the visual cortex and higher-order brain regions involved in object recognition and memory encoding. 
 
-Participant Demographics
-The dataset includes recordings from 16 healthy adult participants (8 male, 8 female) aged between 23 and 37 years. All participants had normal or corrected-to-normal vision and no history of neurological or psychiatric disorders. Written informed consent was obtained from all participants prior to the experiment, and the study was approved by the local ethics committee.
+Each trial consisted of:  
+-	Stimulus Presentation: Images were displayed for 500 ms, followed by a 1,500 ms inter-stimulus interval (ISI).  
+-	Task Conditions: Participants performed either a recognition task (indicating whether they had seen the image before) or a passive viewing task (observing the images without any explicit task).  
+-	Trial Structure: The experiment included 720 trials per participant, evenly distributed across the three stimulus categories (faces, objects, scrambled patterns).  
 
-Recording Protocols
-•	EEG Recording: EEG data were acquired using a 70-channel EasyCap system with electrodes placed according to the 10-10 international system. The signals were sampled at 1,000 Hz and referenced to the average of all electrodes and impedances were kept below 10 kΩ.
-•	MEG Recording: MEG data were collected using a 306-channel Elekta Neuromag system (102 magnetometers and 204 planar gradiometers) in a magnetically shielded room. The signals were sampled at 1,000 Hz and filtered online with a 0.1–330 Hz bandpass filter. Head position indicators (HPIs) were used to track head movements and ensure accurate co-registration with structural MRI scans.
-•	Co-Registration: High-resolution T1-weighted MRI scans were acquired for each participant to align EEG and MEG data with anatomical landmarks. Fiducial markers (nasion, left/right preauricular points) were used to co-register the EEG and MEG sensor positions with the MRI-derived head model.
+Participant Demographics:
+The dataset includes recordings from 16 healthy adult participants (8 male, 8 female) aged between 23 and 37 years. All participants had normal or corrected-to-normal vision and no history of neurological or psychiatric disorders. Written informed consent was obtained from all participants prior to the experiment, and the study was approved by the local ethics committee.  
+
+Recording Protocols:  
+1.	EEG Recording: EEG data were acquired using a 70-channel EasyCap system with electrodes placed according to the 10-10 international system. The signals were sampled at 1,000 Hz and referenced to the average of all electrodes and impedances were kept below 10 kΩ.  
+2.	MEG Recording: MEG data were collected using a 306-channel Elekta Neuromag system (102 magnetometers and 204 planar gradiometers) in a magnetically shielded room. The signals were sampled at 1,000 Hz and filtered online with a 0.1–330 Hz bandpass filter. Head position indicators (HPIs) were used to track head movements and ensure accurate co-registration with structural MRI scans.  
+3.	Co-Registration: High-resolution T1-weighted MRI scans were acquired for each participant to align EEG and MEG data with anatomical landmarks. Fiducial markers (nasion, left/right preauricular points) were used to co-register the EEG and MEG sensor positions with the MRI-derived head model.  
 
 <h4 style="margin-bottom: 0"><u>3.3 Dataset Processing</u></h4> 
-Pre-Processing:
-The original Openfmri dataset used in this study was pre-proccessed in the following fashion:
-•	Artifact Removal: Ocular and cardiac artifacts were removed using independent component analysis (ICA) and signal-space projection (SSP) techniques.
-•	Filtering: Both EEG and MEG signals were bandpass-filtered between 0.1 Hz and 100 Hz to focus on physiologically relevant frequency bands.
-•	Epoching: The continuous data were segmented into 2-second epochs centered on stimulus onset, with a 500 ms pre-stimulus baseline for baseline correction.
+Pre-Processing:  
 
-Processing: 
-To further process the data the raw EEG and MEG signals were transformed into time-frequency representations using continuous wavelet transforms (CWT) with a Complex Morlet wavelet (cmor1.5-1.0). This transformation extracts information from three key frequency bands:
-•	Alpha (8-13 Hz)
-•	beta (13-30 Hz), 
-•	Gamma (30-100 Hz). 
+The original Openfmri dataset used in this study was pre-proccessed in the following fashion:  
+1.	Artifact Removal: Ocular and cardiac artifacts were removed using independent component analysis (ICA) and signal-space projection (SSP) techniques.  
+2.	Filtering: Both EEG and MEG signals were bandpass-filtered between 0.1 Hz and 100 Hz to focus on physiologically relevant frequency bands.  
+3.	Epoching: The continuous data were segmented into 2-second epochs centered on stimulus onset, with a 500 ms pre-stimulus baseline for baseline correction.  
 
-The frequency range was sampled logarithmically from 1 to 100 Hz to provide coverage of neural oscillations while maintaining computational efficiency.
+Processing:  
+To further process the data the raw EEG and MEG signals were transformed into time-frequency representations using continuous wavelet transforms (CWT) with a Complex Morlet wavelet (cmor1.5-1.0). This transformation extracts information from three key frequency bands:  
+- Alpha (8-13 Hz)  
+- Beta (13-30 Hz)  
+-	Gamma (30-100 Hz)  
 
-Since both modalities operate at different scales, to ensure valid cross-modal relationships could be learned during training we apply two stage normalization where we:
-stage 1: Min-max normalize both signals separately 
-stage 2: log-1-transform MEG data to equally distribute its normalized values.
+The frequency range was sampled logarithmically from 1 to 100 Hz to provide coverage of neural oscillations while maintaining computational efficiency.  
 
-To further process the data, we performed the following steps:
-1.	Time-frequency transformation:
-Raw EEG and MEG signals were converted into time-frequency representations using continuous wavelet transforms (cwt) with a complex morlet wavelet (cmor1.5-1.0). this step extracts key frequency information across:
-•	alpha band (8-13 hz): associated with relaxed yet alert states.
-•	beta band (13-30 hz): linked to active thinking and focus.
-•	gamma band (30-100 hz): indicative of cognitive processing and integration.
-•	the frequency range was sampled logarithmically from 1 to 100 hz to ensure broad coverage of neural oscillations without inflating computational demands.
+Since both modalities operate at different scales, to ensure valid relationships could be learned during training we apply two stage normalization where we:  
+stage 1: Min-max normalize both signals separately   
+stage 2: log-1-transform MEG data to equally distribute its normalized values.  
 
 <h4 style="margin-bottom: 0"><u>3.4 Training Policies</u></h4> 
-We optimize the learning between EEG and MEG conversion using Mean Squared Error (MSE) loss in the time domain, directly targeting signal reconstruction ability. 
+We optimize the learning between EEG and MEG conversion using Mean Squared Error (MSE) loss in the time domain, directly targeting signal reconstruction ability.  
 
-Notably, we apply asymmetric model averaging using dropout only to post-pooling in the encoder and post-LSTM in the bridge, while omitting it in the decoder pathway. This asymmetric regularization preserves temporal coherence during reconstruction while preventing feature co-adaptation during encoding.
+Notably, we apply asymmetric model averaging using dropout only to post-pooling in the encoder and post-LSTM in the bridge, while omitting it in the decoder pathway. This asymmetric regularization preserves temporal coherence during reconstruction while preventing feature co-adaptation during encoding.  
 
-The Adam optimizer per-parameter learning rate adaptation is particularly beneficial for our U-Net architecture, where different layers (especially in the encoder and decoder paths) may require different scales of updates. It’s adaptive behaviour helps when learning the complex mapping between EEG's lower signal-to-noise ratio and MEG's higher fidelity signals, as gradient magnitudes can vary significantly across different frequency components and temporal scales.
+The Adam optimizer per-parameter learning rate adaptation is particularly beneficial for our U-Net architecture, where different layers (especially in the encoder and decoder paths) may require different scales of updates. It’s adaptive behaviour helps when learning the complex mapping between EEG's lower signal-to-noise ratio and MEG's higher fidelity signals, as gradient magnitudes can vary significantly across different frequency components and temporal scales.  
 
-In short, this paper’s contributions are as follows: 
-(1)	We introduce cross-modal learning as a theoretical framework for BCI signal enhancement. 
-(2)	We develop and test an MEG to EEG cross-modal transfer architecture. 
-(3)	We provide suggestions for future research and applications. 
-
-Empirically, this results in a 37% improvement in signal-to-noise ratio compared to single-modality approaches when reconstructing EEG signals.
+In short, this paper’s contributions are as follows:  
+1.	We quantify the transferability of EEG and MEG signals.  
+2.	We introduce cross-modal learning as a theoretical framework for BCI signal enhancement.  
+3.	We develop and test an MEG to EEG cross-modal transfer architecture.  
 
 <hr style="border-top: 1px solid black;">
 
@@ -202,16 +196,16 @@ Empirically, this results in a 37% improvement in signal-to-noise ratio compared
 
 
 <h3 align="center">4. Experimental Setup</h3>
-Synaptech is evaluated across three dimensions:
+Synaptech is evaluated across three dimensions:  
 
-1\) Signal Mutual Information 
-2\) Model's signal reconstruction accuracy
-3\) Brain region classification improvement
+1. Signal Mutual Information  
+2. Model's signal reconstruction accuracy  
+3. Brain region classification improvement  
 
 <h4 style="margin-bottom: 0"><u>4.1 Electrode Selection</u></h4> 
 In creating a reliable mapping between EEG and MEG signal its crucial to have both electrodes be as close to one another as possible, or else they will be detecting un-related brain activity. The OpenFmri’s dataset wasn’t originally collected with cross-modal transfer in mind, and thus lacks accurate placement of electrodes with the aim of minimizing the electrode distances. On top of it, geo-positional data required to calculate the distance between different electrode types is corrupted and such to make sure mapping electrodes match their closest counterpart we address this in two ways:
 
-A.  We prune un-related electrodes based on multiple Eucledian distance threasholds. One for each of 3 dimensions.
+A.  We prune un-related electrodes based on Eucledian distance threasholds.
 B.	We quantify the transferable signal across EEG and MEG electrodes to make sure the signal shares capturable dependancies.  
 
 <p align="center"><img src="../images/eeg&meg.png" alt="Alt text" style="max-width: 70%; height: auto; border-radius: 10px;"></p>
@@ -221,6 +215,8 @@ B.	We quantify the transferable signal across EEG and MEG electrodes to make sur
 Apart from the threshold, MEG electrode selection was optimized for cortical geometry. MEG exhibits maximal sensitivity to tangential neural currents, particularly those originating from sulcal sources, due to the orthogonal orientation of magnetic fields relative to electrical current flow. Therefore, sensors positioned above major cortical folds, like longitudinal fissure or Sylvian fissure were manually prioritized for analysis.
 
 <p align="center"><img src="../images/refelectrode.png" alt="Alt text" style="max-width: 100%; height: auto; border-radius: 10px;"></p>
+<p><b>Figure 5:</b>EEG and MEG electrode overlay before prewning</p></div><br>
+
 
 When observing the waveleted signal between EEG and MEG electrodes in close proximity, it's clear that there is some resemblance in the signal when asessed visually (Figure XXX). However, the level of information varies depending on the distance between electrodes (Figure XXX). As such we poise to quantify the shared information between both modalities across distances. This is best done through two distinct methods, Mutual Information (MI) and Transfer Entropy (TE). In the context of this study, MI provides a metric for assessing the degree of dependency between these modalities and thus tells us how much information about the MEG signal can be inferred from the EEG signal. TE, on the other hand, measures the directed transfer of information between two systems, capturing the influence of one signal on another over time. TE is particularly useful in this study as it allows us to assess the causal relationship between EEG and MEG signals, identifying the directionality of information flow.
 
@@ -301,10 +297,12 @@ The efficacy of the cross signal similarity is compared by incrementally increas
       <!-- X-axis label -->
       <text x="350" y="460" text-anchor="middle" style="font-size: 16px; font-family: Arial, sans-serif;">Electrode Distance (cm)</text>
     </svg>
-    <p style="width: 80%; font-size: 14px; text-align: justify;">Figure 5: Mutual Information between EEG Electrode 'Fz' and MEG Electrodes at Increasing Distances. The bar chart illustrates exponential decay in MI score with increasing distance.</p>
+    <p><b>Figure 6:</b> Bar chart showing Mutual Information between reference EEG electrode 'Fz' and target MEG electrodes at increasing distances. The figure illustrates exponential decay in MI score with linearly increase of electrode diestances.</p></div><br>
   </div>
 </div>
 <br>
+<p><b>Figure 6:</b>Mutual Information between EEG Electrode 'Fz' and MEG Electrodes at Increasing Distances. The bar chart illustrates exponential decay in MI score with increasing distance.</p></div><br>
+
 
 The MI analysis showed that the MI scores is a function of electrode distance. Quantitatively, the MI score decreased by approximately 50% when the electrode distance increased exponentially from 2 cm to 4 cm, and after 8 cm, the rate of change staled out, suggesting most mutual information is power-law distributed.
 The effects of spatial dynamics of mutual information, is further explored in the Discussion section.
@@ -317,7 +315,7 @@ Building on top of Mutual Information, we assess our model's ability to capture 
 
 <p align="center"><img src="../images/loss.png" alt="Alt text" style="max-width: 100%; height: auto; border-radius: 10px;"></p>
 <div style="width: 80%; margin: auto; text-align: justify;">
-<p><b>Figure XXX:</b> Training and validation loss curves over 10 epochs, showing model convergance.</p></div><br>
+<p><b>Figure 7:</b> Training and validation loss curves over 10 epochs, showing model convergance.</p></div><br>
 
 Figure 3 shows the spectrograms for a sample electrode:
 •  The raw EEG spectrogram exhibits lower power and higher noise levels.
@@ -328,9 +326,9 @@ Figure 3 shows the spectrograms for a sample electrode:
 
 As a final showdown we test Synaptech's prowess in improving brain region classification of a standard CNN classifier through active denoising.
 
-<div class="table-container" style="overflow-x: auto; display: flex; justify-content: center;">
-  <table cellspacing="0" cellpadding="6" border="1" style="border: 1px solid black; border-collapse: collapse;">
-    <caption style="caption-side: top; padding: 10px;"><b>Table 2.</b> Brain Region Classifiaction Comparison.</caption>
+<div class="table-container" style="overflow-x: auto; width: 80%; margin: auto;">
+  <table cellspacing="0" cellpadding="6" border="1" style="border: 1px solid black; border-collapse: collapse; width: 100%;">
+    <caption style="caption-side: top; padding: 10px;"><b>Table 1.</b> Brain Region Classification Comparison.</caption>
     <thead>
       <tr>
         <th style="border: 1px solid black;">Condition</th>
@@ -405,11 +403,9 @@ As a final showdown we test Synaptech's prowess in improving brain region classi
   </table>
 </div>
 <div style="width: 80%; margin: auto; text-align: justify;">
-<p><b>Table 2:</b> Comparison of brain region activation performance across different conditions and methods. The classic denoising method (ICA) outperforms both the raw EEG and Synaptech-Net in terms of activation metrics and classification accuracy.</p>
-</div>
 <br>
-
-<br><br>
+  <p><b>Table 1:</b> Comparison of brain region activation performance across different conditions and methods. The classic denoising method (ICA) outperforms both the raw EEG and Synaptech-Net in terms of activation metrics and classification accuracy.</p>
+</div>
 
 <hr style="border-top: 1px solid black;">
 
@@ -420,11 +416,11 @@ WRITE OUT DISCUSSION FOR EACH SECTION IN THE RESULTS.
 <h4 style="margin-bottom: 0"><u>6.1 Mutual Information Insights</u></h4> 
 We find that when both signals are either normalized or standardised MI for near located electrodes tends to be as much as 5x higher. Contrary to our initial hypothesis, the electrodes on the parietal lobe have the strongest MI corelations. This is likely explained by the fact that participants are performing recognition tasks which makes the signal less stochastic in parietal lobe in comparison to other brain regions. 
 
-1. •  Interpret your results 
-2. •  Explain the theoretical and practical implications 
-3. •  Address limitations of your approach 
-4. •  Suggest potential improvements 
-5. •  Discuss generalizability of your method
+1\) Interpret your results  
+2\) Explain the theoretical and practical implications  
+3\) Address limitations of your approach  
+4\) Suggest potential improvements  
+5\) Discuss generalizability of your method  
 
 <h4 style="margin-bottom: 0"><u>6.2 Signal Translation Insights</u></h4> 
 4.4 Key Findings and Insights

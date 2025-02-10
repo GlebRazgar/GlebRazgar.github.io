@@ -1,14 +1,12 @@
 title: "Gleb's Neo Cortex"
 author: "Gleb Razgar"
-description: "My prefrontal cortex at your disposal" # This will show up in places like twitter, linkedin, etc, if you share your sites url as a post.
+description: "My prefrontal cortex at your disposal"
 
 # Email / Social media user names used by the minima theme:
-# All of these are optional and can be removed or commented out
 email: "gleb.studios@gmail.com"
 twitter_username: "gleb_razgar"
 github_username: "ProjectGleb"
 linkedin_username: "linkedinuser"
-#facebook_username: username
 
 #########################################################################################
 ######### Nothing below needs to be changed (unless you know what you're doing) #########
@@ -18,6 +16,7 @@ theme: "minima"
 rss: rss
 
 kramdown:
+  math_engine: mathjax
   syntax_highlighter_opts:
     disable: true
     
@@ -39,3 +38,7 @@ defaults:
       type: post
     values:
       tags: Other
+  - scope:
+      path: ""
+    values:
+      mathjax: true
