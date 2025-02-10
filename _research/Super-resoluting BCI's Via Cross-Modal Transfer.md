@@ -237,7 +237,7 @@ Where:
 <h4 style="margin-bottom: 0"><u>6.1 Mutual Information Analysis</u></h4> 
 The efficacy of the cross signal similarity is compared by incrementally increasing the distance between a target MEG electrode and a set of reference EEG electrodes, upon which MI is computed. The optimal MI score is determined and chosen by calculating mutual information across a range of time lags to account for potential temporal differences between modalities.
 
-<div style="width: 100%; display: flex; justify-content: center; margin: 20px 0;">
+<div style="width: 100%; display: flex; justify-content: center;">
   <svg width="700" height="500" viewBox="0 0 700 500" style="max-width: 100%;">
     <!-- Title -->
     <text x="350" y="40" text-anchor="middle" style="font-size: 20px; font-family: 'Times New Roman', Times, serif; font-weight: bold;">Mutual Information vs. Electrode Distance</text>
