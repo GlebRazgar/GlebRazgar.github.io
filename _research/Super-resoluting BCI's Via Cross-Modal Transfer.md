@@ -276,14 +276,14 @@ The efficacy of the cross signal similarity is compared by incrementally increas
   </svg>
 </div>
 <div style="width: 80%; margin: auto; text-align: justify;">
-  <b>Figure 5:</b> Mutual Information between EEG Electrode 'Fz' and MEG Electrodes at Increasing Distances. The bar chart illustrates the initial rapid decrease in mutual information, followed by a slower decline as the distance increases.</p>
+  <b>Figure 6:</b> Mutual Information between EEG Electrode 'Fz' and MEG Electrodes at Increasing Distances. The bar chart illustrates the exponential decrease in mutual information, followed by a slower decline as the distance increases.
 </div>
+<br>
 
-
-The MI analysis shows that the MI scores is a function of electrode distance. Quantitatively, the MI score decreases by approximately 50% when the electrode distance increase from 2 cm to 4 cm, and after 8 cm, the rate of change staled out, suggesting most mutual information is power-law distributed.
+The results in Figure 6 show that the MI scores is a function of electrode distance. Quantitatively, the MI score decreases by approximately 50% when the electrode distance increase from 2 cm to 4 cm, and after 8 cm, the rate of change staled out, suggesting most mutual information is power-law distributed.
 The effects of spatial dynamics of mutual information, is further explored in the Discussion section.
 
-To further substantiate these findings, Transfer Entropy (TE) analysis was conducted to assess the directional information flow from electric field to magnetic field. TE analysis confirms the spatial dependancy observed in the MI results, showing an identical trend where information flow decreases exponentially with increased electrode distance.
+To further substantiate these findings, Transfer Entropy was measured to assess the directional information flow from electric field to magnetic field. TE analysis tells the same storry observed in the MI results, showing an identical trend where information flow decreases exponentially with increased electrode distance.
 
 <h4 style="margin-bottom: 0"><u>6.2 Signal Reconstruction Accuracy</u></h4> 
 Building on top of Mutual Information, we assess our model's ability to capture this mutual dependency and translate EEG signals into MEG representations. This is done by observing the MSE between the predicted and the ground truth signal thorough model training on the validation set. 
@@ -294,6 +294,8 @@ Building on top of Mutual Information, we assess our model's ability to capture 
 <p><b>Figure 7:</b> Training and validation loss curves over 10 epochs, showing model convergance.</p></div><br>
 
 At first sight the model successfully reduces the MSE loss in the expected exponential fasion. However taking into account that the data is normalized to be between zero and one, looking at the values of reduction it's clear that the model memorizes the data, as the error decline on the training and validation set close to null, suggesting more data is needed for model training. 
+
+Though we've tried combating this this by increaing the electrode count, it other unstable electrodes with lower mutual information scores proved to worsen the models generalizability. 
 
 <h4 style="margin-bottom: 0"><u>6.5 Brain Region Classification Accuracy</u></h4> 
 
@@ -380,45 +382,52 @@ As a final showdown we test Synaptech's prowess in improving brain region classi
   <p><b>Table 1:</b> Comparison of brain region activation performance across different conditions and methods. The classic denoising method (ICA) outperforms both the raw EEG and Synaptech-Net in terms of activation metrics and classification accuracy.</p>
 </div>
 
-As expected from the signal reconstruction resluts, models performance on classification tasks shows marginal de-noising at best, given by methods downperformance when compared to ICA. 
+As expected from the models inability to cohesively reconstruct the signal, models performance on classification tasks shows marginal de-noising reulsts at best, given by methods downperformance when compared to ICA. 
 
 <hr style="border-top: 1px solid black;">
 
 <h3 align="center">6. Discussion</h3>
 
 <h4 style="margin-bottom: 0"><u>6.1 Mutual Information Insights</u></h4> 
-We find that when both signals are either normalized or standardised MI for near located electrodes tends to be as much as 5x higher. Contrary to our initial hypothesis, the electrodes on the parietal lobe have the strongest MI corelations. This is likely explained by the fact that participants are performing recognition tasks which makes the signal less stochastic in parietal lobe in comparison to other brain regions. 
+We find that when both signals are either normalized or standardised MI for near located electrodes tends to be as much as 5x higher. Contrary to our initial hypothesis, the electrodes on the parietal lobe have the strongest MI corelations. This is likely explained by the fact that participants are performing recognition tasks which makes the signal less stochastic in parietal lobe in comparison to other brain regions. Mutual Infofrmation and Transfer Entropy both confirm the cross-modal dependancy of EEG and MEG signals. 
 
-1\) Interpret your results  
-2\) Explain the theoretical and practical implications  
-3\) Address limitations of your approach  
-4\) Suggest potential improvements  
-5\) Discuss generalizability of your method  
+<h4 style="margin-bottom: 0"><u>6.2 Signal Reconstruction Insights</u></h4> 
+Despite the apparent ven-diagramatic intersection of both modalities in their mutual information, the model has failed to cohesively learn and generalise to un-seen signal. There are two likely reasons behind this observation. 
+1. The insuficciency of data
+   - The model's tendency toward memorization rather than generalization suggests insufficient training data. The limited spatial sampling from a single stable electrode appears inadequate for learning robust cross-modal mappings.
 
-<h4 style="margin-bottom: 0"><u>6.2 Signal Translation Insights</u></h4> 
-4.4 Key Findings and Insights
-The results demonstrate that Synaptech-Net successfully learns the mapping from EEG to MEG signals, effectively enhancing the signal quality of EEG data. The significant increase in SNR and the preservation of key neural oscillation patterns confirm the efficacy of cross-modal translation in denoising EEG signals.
-
-
-<h4 style="margin-bottom: 0"><u>6.3 Signal Translation Insights</u></h4> 
-By transforming EEG signals into MEG-like representations, our model boosts the performance of downstream tasks, such as brain region classification. The considerable improvement over traditional denoising methods suggests that the enriched signal contains more discriminative features crucial for accurate classification.
-
-
-<h4 style="margin-bottom: 0"><u>6.4 Limitation of Synaptech Insights</u></h4> 
+2. Lack of dependancy
+   - In cases where data availability is not the limiting factor, the model's generalization issue likely stems from insufficient cross-modal signal dependency. While mutual information analysis confirmed shared information between modalities, the spatial stochasticity of electrode placement and inter-electrode distances (2-4cm) appear to degrade the signal correlation below the threshold required for effective cross-modal translation.
 
 <h4 style="margin-bottom: 0"><u>6.5 Limitation of Synaptech Insights</u></h4> 
+While Synaptech demonstrates a novel approach for quantifying cross-modal signal dependencies and learning their mapping functions, several limitations warrant discussion.
 
-<h4 style="margin-bottom: 0"><u>6.6 Suggestions For Future Work</u></h4> 
+<h4 style="margin-bottom: 0"><u>6.5 Directions For Future Work</u></h4> 
+
+The primary constraint likely stems from the scarcity of simultaneous EEG-MEG recordings, which currently limits the model's practical implementation. However, this limitation presents opportunities for future research:  
+
+1. The framework could be extended to other modality pairs with a stronger shared neurophysiological origins.
+2. Synaptech could be applied to newly harvested and more plentiful simultaneouse EEG-MEG datasets.
+3. Initially training the model on non-simultaneouse recordings of both modalities before fine-tuning it on simultaneouse recordings could prove useful.
 
 <h3 align="center">7. Conclusion</h3>
-1. •  Summarize key contributions 
-2. •  Restate the significance of your research 
-3. •  Propose future research directions 
-4. •  Emphasize potential real-world applications
 
-The experimental results substantiate the effectiveness of Synaptech-Net in enhancing EEG signals through cross-modal EEG to MEG translation. The significant improvements in signal quality and downstream classification tasks validate our approach and highlight the potential of cross-modal learning in overcoming the limitations of single-modality BCIs.
-<br><br>
+This work introduces three key contributions to the field of BCI signal enhancement:
 
+1. **Quantitative Cross-Modal Analysis**: We present the first comprehensive quantification of mutual information between EEG and MEG signals, demonstrating significant shared information content (up to 0.08 bits) for electrodes within 2-4cm proximity.
+
+2. **Novel Architecture**: We introduce Synaptech-Net, a hybrid U-Net-LSTM architecture specifically designed for neurological signal translation. The architecture's asymmetric regularization and specialized bottleneck demonstrate a new approach to handling cross-modal BCI signal processing.
+
+3. **Theoretical Framework**: We establish a mathematical foundation for cross-modal transfer in BCIs, providing a systematic approach to quantifying signal dependencies between modalities sharing neurophysiological origins.
+
+Expanding on our body of work, we suggest future body of work to focus on:
+- Expanding the framework to other BCI modality pairs (e.g., EEG-fNIRS, MEG-ECoG)
+- Leveraging larger datasets with precise electrode co-registration
+- Exploring self-supervised pre-training on non-simultaneous recordings
+
+While current data limitations constrain practical implementation, this work establishes the theoretical and empirical foundations for cross-modal transfer in BCI enhancement, paving the way for next-generation portable neural interfaces.
+
+While current data limitations constrain practical implementation, this work establishes the theoretical and empirical foundations for cross-modal transfer in BCI enhancement, paving the way for future research.
 ---
 
 <h3 align="center">8. References</h3>
