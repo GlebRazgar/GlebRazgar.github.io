@@ -295,8 +295,6 @@ The efficacy of the cross signal similarity is compared by incrementally increas
   </div>
 </div>
 <br>
-<p><b>Figure 6:</b>Mutual Information between EEG Electrode 'Fz' and MEG Electrodes at Increasing Distances. The bar chart illustrates exponential decay in MI score with increasing distance.</p></div><br>
-
 
 The MI analysis showed that the MI scores is a function of electrode distance. Quantitatively, the MI score decreased by approximately 50% when the electrode distance increased exponentially from 2 cm to 4 cm, and after 8 cm, the rate of change staled out, suggesting most mutual information is power-law distributed.
 The effects of spatial dynamics of mutual information, is further explored in the Discussion section.
