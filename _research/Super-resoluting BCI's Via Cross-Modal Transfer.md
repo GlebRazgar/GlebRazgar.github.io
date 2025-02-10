@@ -358,19 +358,19 @@ As a final showdown we test Synaptech's prowess in improving brain region classi
       <tr>
         <td style="border: 1px solid black;" rowspan="3">Scrambled Faces</td>
         <td style="border: 1px solid black;">Raw EEG</td>
-        <td style="border: 1px solid black;">Temporal Pole</td>
+        <td style="border: 1px solid black;">TP</td>
         <td style="border: 1px solid black;">1.5</td>
         <td style="border: 1px solid black;">60%</td>
       </tr>
       <tr>
         <td style="border: 1px solid black;">Classic Denoising (ICA)</td>
-        <td style="border: 1px solid black;">Temporal Pole</td>
+        <td style="border: 1px solid black;">TP</td>
         <td style="border: 1px solid black;">1.9</td>
         <td style="border: 1px solid black;">68%</td>
       </tr>
       <tr>
         <td style="border: 1px solid black;">Synaptech</td>
-        <td style="border: 1px solid black;">Temporal Pole</td>
+        <td style="border: 1px solid black;">TP</td>
         <td style="border: 1px solid black;">0.6</td>
         <td style="border: 1px solid black;">26%</td>
       </tr>
