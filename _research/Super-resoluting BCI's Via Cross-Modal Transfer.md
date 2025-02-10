@@ -411,6 +411,8 @@ The primary constraint likely stems from the scarcity of simultaneous EEG-MEG re
 
 Exploring self-supervised pre-training on non-simultaneous recordings
 
+<hr style="border-top: 1px solid black;">
+
 <h3 align="center">7. Conclusion</h3>
 
 This work introduces three key contributions to the field of BCI signal enhancement:
@@ -428,7 +430,7 @@ Expanding on our body of work, we suggest future body of work to focus on:
 
 While current data limitations constrain practical implementation, this work establishes the theoretical and empirical foundations for cross-modal transfer in BCI enhancement, paving the way for next-generation portable neural interfaces.
 
----
+<hr style="border-top: 1px solid black;">
 
 <h3 align="center">8. References</h3>
 
