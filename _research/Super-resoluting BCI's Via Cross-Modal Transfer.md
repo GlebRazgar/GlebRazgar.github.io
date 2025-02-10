@@ -27,6 +27,9 @@ Despite the widespread adoption of neuroimaging, many BCI modalities like EEG re
 </div><br>
 
 <h3 align="center">1. Introduction</h3>
+
+<h4 style="margin-bottom: 0"><u>1.1 Rational</u></h4>
+
 Why don't most people have a BCI that extends their mind? One that they use on daily basis like headphones, to increase the brains information throughput. As a non-invasive method with high temporal resolution, electroencephalography (EEG) is well-suited for such applications. However, its poor signal-to-noise ratio limits reliable brain region classification, restricting EEG to a subset of possible applications despite numerous advances in denoising techniques.
 
 <p align="center"><img src="../images/eeg2meg.png" alt="Alt text" style="max-width: 70%; height: auto; border-radius: 10px;"></p>
@@ -34,26 +37,33 @@ Why don't most people have a BCI that extends their mind? One that they use on d
   <p><b>Figure 1:</b> Synaptech's cross-modal transfer of EEG signal into MEG signal of higher-fideligty. Illustration showing both the inference stage, where only the modality at hand is used to predict a higher resolution mode, and traning stage, where the DNN uses both signals to learn their dependancies. </p>
 </div>
 
-These span a spectrum of approaches: from classical signal processing methods like bandpass filtering and Independent Component Analysis, through statistical techniques such as wavelet decomposition, to contemporary deep learning models including convolutional neural networks and generative adversarial networks that can dynamically parse and remove noise while preserving the intricate neurophysiological signal characteristics. Theoretically, with a wholistic knowledge of both pure and noise signal’s independent statistical properties, and ability to distinguish between the two at a quantum level resolution, the best way to de-noise the signal would be to use a filter that optimally separates signal from noise by frequency components based on their power spectral densities, applying frequency-domain suppression proportional to the local signal-to-noise ratio, ensuring that regions with higher signal prominence are preserved while noise-dominant frequencies are attenuated. This can sometimes be approximated using Wiener-Kolmogorov filter which optimally separates signal from noise given their statistical properties, but with incomplete information, these signals can’t be treated as independent, and thereby its utility in the real world yet remains inadequate. 
+These span a spectrum of approaches: from classical signal processing methods like bandpass filtering and Independent Component Analysis, through statistical techniques such as wavelet decomposition, to contemporary deep learning models including convolutional neural networks and generative adversarial networks that can dynamically parse and remove noise while preserving the intricate neurophysiological signal characteristics. 
 
+<h4 style="margin-bottom: 0"><u>1.2 Theoretical Idealism</u></h4>
+Theoretically, with a wholistic knowledge of both pure and noise signal’s independent statistical properties, and ability to distinguish between the two at a quantum level resolution, the best way to de-noise the signal would be to use a filter that optimally separates signal from noise by frequency components based on their power spectral densities, applying frequency-domain suppression proportional to the local signal-to-noise ratio, ensuring that regions with higher signal prominence are preserved while noise-dominant frequencies are attenuated. This can sometimes be approximated using Wiener-Kolmogorov filter which optimally separates signal from noise given their statistical properties, but with incomplete information, these signals can’t be treated as independent, and thereby its utility in the real world yet remains inadequate. 
+
+<h4 style="margin-bottom: 0"><u>1.3 Synaptech</u></h4>
 We propose Synaptech as a cross-modal signal translation method that leverages modalities with shared neurophysiological origins but different noise characteristics. Synaptech enables more precise signal-noise separation compared to traditional denoising techniques by learning the mapping between a lower-fidelity and higher-fidelity modality. The principle is analogous to supervised denoising: given paired clean and noisy signals, a model learns the transformation function between them. This generalizes to cross-modal translation when the modalities share underlying temporal or spatial dependencies while exhibiting different signal-to-noise ratios.
 
 <p align="center"><img src="../images/electromagnetic.png" alt="Alt text" style="max-width: 80%; height: auto; border-radius: 10px;"></p>
 <div style="width: 80%; margin: auto; text-align: justify;">
-  <p><b>Figure 2:</b> Illustration of the electric current in neurons causing electric fields which in turn derive magnetic fields. Both hold roots in the ionic current dependancy that could be used to train a Synaptech transfer model.</p>
+  <p><b>Figure 2:</b> Illustration of the electric current in neurons causing electric fields which in turn derive magnetic fields. Both signals originate from the same ionic current derivatives, but magnetic fields propagate through tissue without distortion, enabling cross-modal fidelity transfer.</p>
 </div>
 
-**Figure 1:** Illustration of the electric current in neurons causing electric fields which in turn derive magnetic fields. Both hold roots in the ionic current dependency that could be used to train a Synaptech transfer model.
+<h4 style="margin-bottom: 0"><u>1.4 Selected Modalities </u></h4>
+The exemplar modalities chosen for this study are EEG and MEG due to their derivative signal origin and isomorphic temporal resolution. Both MEG and EEG signals originate from the net effect of ionic currents flowing in the dendrites of neurons. Whilst EEG measures changes in electric fields and MEG measures variations in magnetic fields, one directly derives from another (Figure 2). 
 
-The exemplar modalities chosen for this study are EEG and MEG due to their derivative signal origin and isomorphic temporal resolution. Both MEG and EEG signals originate from the net effect of ionic currents flowing in the dendrites of neurons (Figure 2). Whilst EEG measures changes in electric fields and MEG measures variations in magnetic fields, one directly derives from another. An advantage of MEG over EEG is that the magnetic fields are not distorted by the intervening organic matter, as is the case with electric fields, which makes MEG much more accurate. On the other hand, MEG systems are considerably more expensive, rare, bulky and non-portable. Due to these reasons it’s extremely desirable to gain MEG like quality on EEG headsets through the act of de-noising. 
+An advantage of MEG over EEG is that the magnetic fields are not distorted by the intervening organic matter, as is the case with electric fields, which makes MEG much more accurate. On the other hand, MEG systems are considerably more expensive, rare, bulky and non-portable. Due to these reasons it’s extremely desirable to gain MEG like quality on EEG headsets through the act of de-noising. This paper attempts to accomplish exactly that throgh cross-modal transfer that leverages a higher SNR modality as a supervisory signal, thereby enhancing the target BCI modality.
 
-To summarise, this paper proposes cross-modal transfer that leverages a higher SNR modality as a supervisory signal for learning spatio-temporal dynamics, thereby enhancing the target BCI modality.
+<h4 style="margin-bottom: 0"><u>1.5 Organization of This Paper</u></h4>
 
-As such, this paper’s structure is as follows: 
-Section 2 summarises related work relevant to this study.
-Section 3 introduces our theoretical framework.
-Section 4 showcases implementation and theoretical results.
-Section 5 depicts the future directions of the research.
+This paper is structured as follows:  
+• Section 1 introduces the cross-modal transfer.  
+• Section 2 reviews signal processing techniques, deep learning approaches, and cross-modal methods in BCI denoising.  
+• Section 3 presents Synaptech's architecture and theoretical framework for cross-modal signal translation.  
+• Section 4 details experimental methodology, including electrode selection, mutual information analysis, and evaluation metrics.  
+• Section 5 analyzes results across signal fidelity, reconstruction accuracy, and classification performance.  
+• Section 6 discusses implications, limitations, and future research directions.  
 
 <hr style="border-top: 1px solid black;">
 
@@ -64,14 +74,14 @@ Section 5 depicts the future directions of the research.
 <h4 style="margin-bottom: 0"><u>2.1 EEG Signal Processing Techniques</u></h4>
 EEG signal processing has seen a set of methods intended to mitigate noise sources, including muscle artifacts, environmental interference, and inherent instrument limitations. Early approaches involved classical filtering—such as low-pass, high-pass, or bandpass filters—to focus on specific frequency bands (e.g., alpha, beta, gamma) where meaningful neurophysiological activity is dominant [1]. Independent Component Analysis (ICA) [2], intends to disentangle superimposed source signals based on assumptions of mutual statistical independence. More sophisticated approaches like wavelet transform have been used to decompose the signal for precise time-frequency analysis, allowing different segments of the signal to undergo tailored noise reduction [3].
 
-Further refinements in classical techniques include canonical correlation analysis for artifact subspace separation [4] and spatial filtering (such as beamformers [5]) that emphasize specific cortical sources while suppressing external interference. However, each technique has its own set of limits. Traditional filtering relies on preselected cutoff frequencies that don’t generalize to all contexts, while ICA is sensitive to algorithmic selections and non-Gaussianity. Wavelet decompositions require domain expertise in choosing suitable mother wavelets and in defining thresholding schemes, which abolishes them from large-scale or automated applications. Thus, the field is still converging on more robust set of methods.
+Further refinements in classical techniques include canonical correlation analysis for artifact subspace separation [4] and spatial filtering (such as beamformers [5]) that emphasize specific cortical sources while suppressing external interference. However, each technique has its own set of limits. Traditional filtering relies on preselected cutoff frequencies that don’t generalize to all contexts, while ICA is sensitive to algorithmic selections and non-Gaussianity. Wavelet decompositions require domain expertise in choosing suitable mother wavelets and in defining thresholding schemes, which abolishes them from large-scale or automated applications. Thus, the neuroimaging field is still converging on more robust methods.
 
 <h4 style="margin-bottom: 0"><u>2.2 Deep Learning for Neural Signal Cleaning</u></h4>
 Recent deep learning (DL) methods have attempted to improve on traditional EEG denoising algorithms (e.g., wavelet thresholding or ICA) by automatically learning complex mappings between noisy signals and their cleaner representations. Early CNN-based frameworks, such as Schirrmeister et al. [6], showed the feasibility of end-to-end filtering in the spatial dimension. However, these approaches have at large been superseded by hybrid architectures that integrate temporal modeling. For instance, architectures merging convolutional front-ends with LSTM or GRUs can also capture long-range dependencies needed to isolate artifacts spanning multiple time steps. Such hybrid designs have shown better performance on tasks involving nonstationary noise sources like motion artifacts or power-line interference [9], but still struggle from the artifacts present in most data.
 
 The scarcity of ground-truth noise-less EEG recordings has motivated the self-supervised trend that followed. Masking random signal segments and learning to reconstruct them has been used to coerce models to encode richer temporal and frequency details [10]. Contrastive learning schemes further refined latent representations by distinguishing genuine neural patterns from simulated artifacts. Generative adversarial networks (GANs) and their time-series counterparts TimeGAN have also been explored for EEG denoising due to their ability to learn spatiotemporal correlations through adversarial training, where the discriminator learns to identify subtle statistical deviations from clean signal characteristics. Nevertheless, single-modal approaches—however advanced—are constrained by the limited fidelity of EEG as the sole training signal. These EEG-only methods still risk modelling artifacts as valid signals due the statistical entanglement between neural activity and noise in spectrotemporal domains.
 
-<h4 style="margin-bottom: 0"><u>2.3 Multi-modal and Cross-Modal Deep Learning inference</u></h4>
+<h4 style="margin-bottom: 0"><u>2.3 Multi-modal and Cross-Modal Learning inference</u></h4>
 The specific area of DL denoising that has shown most promise combines multiple neuroimaging modalities, and can be broadly split into two main approaches: simultaneous multi-modal inference and cross-modal translation.
 
 Multi-modal inference architectures process concurrent recordings from different modalities to improve classification or detection tasks. In the EEG-fNIRS domain, Chiarelli et al. [18] developed a hybrid CNN-LSTM architecture that improved motor imagery classification by 15% over single-modal approaches by combining EEG's temporal precision with fNIRS's spatial resolution. Similarly, Zhang et al. [19] demonstrated that EEG-fMRI inference through cross-attention networks could enhance source localization accuracy, particularly in deep brain regions where EEG signals are traditionally weak.
@@ -83,8 +93,10 @@ Of particular relevance to our work are cross-modal translation approaches, whic
 Beyond these methodological advances core limitations endure:
 
 1.	Statistical Entanglement: Fully de-coupling neurological signal and residual artifacts from a solitary source is in-tractable.
-2.	Practicality: In the real-world scenario where only a single imaging method is available the current multi-modal and cross-modal techniques are redundant. 
-Building on this body of work, our approach focuses specifically on EEG-to-MEG translation, where during training the model effectively learns a “noise de-coupling function”, and during inference only requires EEG signal to predict a cleaner signal. 
+2.	Signal Correspondence: Prior work lacks rigorous quantification of cross-modal signal dependencies to asess it's usefulness.
+3.	Practicality: In the real-world scenario where only a single imaging method is available the current multi-modal and cross-modal techniques are redundant. 
+
+Building on this body of work, our approach focuses on EEG-to-MEG translation, where during training the model learns a noise de-coupling function, and during inference can seperate EEG's noise by translating it inot a cleaner modality.
 
 <hr style="border-top: 1px solid black;">
 
@@ -95,14 +107,16 @@ Building on this body of work, our approach focuses specifically on EEG-to-MEG t
 
 <h4 style="margin-bottom: 0"><u>3.1 Model Architecture</u></h4> 
 To achive neurological signal to signal conversion with a minimum amount of available data this study proposes a new model architecture – Synaptech-Net aimed at capturing both special and temporal characteristics of neurological signal [Fig 2].
-Synaptech-Net is a U-Net – LSTM symbiote that utilizes the modified convolutional down sampling layers to capture special correlations, which then feed into a bi-directional LSTM bottleneck that captures temporal dependencies. On the other end, the classic U-net skip connections give the network an option to preserve spatial information of the signal, and simply overlay it with required changes which makes the model much more parameter efficient. At last, to map a smaller number of EEG electrodes (74) onto the larger array of MAG sensors (102), the networks de-coder block up-samples electrode dimensions, thereby increasing the outputs special resolution.
+Synaptech-Net is a U-Net – LSTM symbiote that utilizes the modified convolutional down sampling layers to capture special correlations, which then feed into a bi-directional LSTM bottleneck that captures temporal dependencies. On the other end, the classic U-net skip connections give the network an option to preserve spatial information of the signal, and simply overlay it with required changes, which makes the model highly parameter efficient. At last, to map a smaller number of EEG electrodes (74) onto the larger array of MAG sensors (102), the networks de-coder block up-samples electrode dimensions, thereby increasing the outputs special resolution.
 
 <p align="center"><img src="../images/unet.png" alt="Alt text" style="max-width: 100%; height: auto; border-radius: 10px;"></p>
 <div style="width: 80%; margin: auto; text-align: justify;">
-<p><b>Figure 3:</b> Practical example of the AIM flow. Upon receiving an input query, the framework initializes by passing stock dataset images through the network. Based on the sparse activation maps and the initial hypothesis (e.g: Units X,Y,Z encode people) the multi-modal agent generates a set of images to confirm or deny it. In the following iterations the agent acts to increase the circuit activations by either modifying or generating new images based on the results. Through varied placement of the Sparse Auto-Encoder, the agent observes different circuit activations and forms corresponding hypotheses. This programmatic iteration continues until the agent accumulates sufficient confidence about a circuit to conclude the experiment and formulate its findings.</p></div>
+<p><b>Figure 3:</b> Synaptech-Net architecture — a modified U-Net with an LSTM bridge that maps EEG to MEG signals by combining spatial convolutions and temporal modeling.</p>
 <br>
 
-As such, the larger Synaptech model architecture is structured as follows:
+
+
+As such, the Synaptech model architecture is structured as follows:
 1. **Spatial Encoder**: A modified U-Net downsampling path processes the input EEG signal (64 channels × T timepoints) through four consecutive blocks. Each block comprises:
    - 2D convolution (kernel: 3×3, stride: 1)
    - Instance normalization
