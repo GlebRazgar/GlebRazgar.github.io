@@ -291,6 +291,7 @@ The efficacy of the cross signal similarity is compared by incrementally increas
       <!-- X-axis label -->
       <text x="350" y="460" text-anchor="middle" style="font-size: 16px; font-family: Arial, sans-serif;">Electrode Distance (cm)</text>
     </svg>
+    <div style="width: 80%; margin: auto; text-align: justify;">
     <p><b>Figure 6:</b> Bar chart showing Mutual Information between reference EEG electrode 'Fz' and target MEG electrodes at increasing distances. The figure illustrates exponential decay in MI score with linearly increase of electrode diestances.</p></div><br>
   </div>
 </div>
