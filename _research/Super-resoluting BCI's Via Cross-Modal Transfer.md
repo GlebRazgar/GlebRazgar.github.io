@@ -19,9 +19,6 @@ layout: post
   </table>
 </div>
 
-
-
-
 <hr style="border-top: 1px solid black; margin-top: 0; margin-bottom: 30;">
 <h3 align="center">Abstract</h3>
 
@@ -33,6 +30,9 @@ Despite the widespread adoption of neuroimaging, many BCI modalities like EEG re
 Why don't most people have a BCI that extends their mind? One that they use on daily basis like headphones, to increase the brains information throughput. As a non-invasive method with high temporal resolution, electroencephalography (EEG) is well-suited for such applications. However, its poor signal-to-noise ratio limits reliable brain region classification, restricting EEG to a subset of possible applications despite numerous advances in denoising techniques.
 
 <p align="center"><img src="../images/eeg2meg.png" alt="Alt text" style="max-width: 70%; height: auto; border-radius: 10px;"></p>
+<div style="width: 80%; margin: auto; text-align: justify;">
+  <p><b>Figure 1:</b> Synaptech's cross-modal transfer of EEG signal into MEG signal of higher-fideligty. Illustration showing both the inference stage, where only the modality at hand is used to predict a higher resolution mode, and traning stage, where the DNN uses both signals to learn their dependancies. </p>
+</div>
 
 These span a spectrum of approaches: from classical signal processing methods like bandpass filtering and Independent Component Analysis, through statistical techniques such as wavelet decomposition, to contemporary deep learning models including convolutional neural networks and generative adversarial networks that can dynamically parse and remove noise while preserving the intricate neurophysiological signal characteristics. Theoretically, with a wholistic knowledge of both pure and noise signal’s independent statistical properties, and ability to distinguish between the two at a quantum level resolution, the best way to de-noise the signal would be to use a filter that optimally separates signal from noise by frequency components based on their power spectral densities, applying frequency-domain suppression proportional to the local signal-to-noise ratio, ensuring that regions with higher signal prominence are preserved while noise-dominant frequencies are attenuated. This can sometimes be approximated using Wiener-Kolmogorov filter which optimally separates signal from noise given their statistical properties, but with incomplete information, these signals can’t be treated as independent, and thereby its utility in the real world yet remains inadequate. 
 
@@ -40,12 +40,14 @@ We propose Synaptech as a cross-modal signal translation method that leverages m
 
 <p align="center"><img src="../images/electromagnetic.png" alt="Alt text" style="max-width: 80%; height: auto; border-radius: 10px;"></p>
 <div style="width: 80%; margin: auto; text-align: justify;">
-  <p><b>Figure 1:</b> DESCRIPTION</p>
+  <p><b>Figure 2:</b> Illustration of the electric current in neurons causing electric fields which in turn derive magnetic fields. Both hold roots in the ionic current dependancy that could be used to train a Synaptech transfer model.</p>
 </div>
 
-The exemplar modalities chosen for this study are EEG and MEG due to their derivative signal origin and isomorphic temporal resolution. Both MEG and EEG signals originate from the net effect of ionic currents flowing in the dendrites of neurons. Whilst EEG measures changes in electric fields and MEG measures variations in magnetic fields, one directly derives from another. An advantage of MEG over EEG is that the magnetic fields are not distorted by the intervening organic matter, as is the case with electric fields, which makes MEG much more accurate. On the other hand, MEG systems are considerably more expensive, rare, bulky and non-portable. Due to these reasons it’s extremely desirable to gain MEG like quality on EEG headsets. Synaptech attempts to do just that via a DNN that converts EEG signal into MEG signal, denoising it in the process. 
+**Figure 1:** Illustration of the electric current in neurons causing electric fields which in turn derive magnetic fields. Both hold roots in the ionic current dependency that could be used to train a Synaptech transfer model.
 
-In summary, this paper proposes cross-modal transfer that leverages a higher SNR modality as a supervisory signal for learning spatio-temporal dynamics, thereby enhancing the target BCI modality.
+The exemplar modalities chosen for this study are EEG and MEG due to their derivative signal origin and isomorphic temporal resolution. Both MEG and EEG signals originate from the net effect of ionic currents flowing in the dendrites of neurons (Figure 2). Whilst EEG measures changes in electric fields and MEG measures variations in magnetic fields, one directly derives from another. An advantage of MEG over EEG is that the magnetic fields are not distorted by the intervening organic matter, as is the case with electric fields, which makes MEG much more accurate. On the other hand, MEG systems are considerably more expensive, rare, bulky and non-portable. Due to these reasons it’s extremely desirable to gain MEG like quality on EEG headsets through the act of de-noising. 
+
+To summarise, this paper proposes cross-modal transfer that leverages a higher SNR modality as a supervisory signal for learning spatio-temporal dynamics, thereby enhancing the target BCI modality.
 
 As such, this paper’s structure is as follows: 
 Section 2 summarises related work relevant to this study.
@@ -200,7 +202,7 @@ B.	We quantify the transferable signal across EEG and MEG electrodes to make sur
 
 <p align="center"><img src="../images/eeg&meg.png" alt="Alt text" style="max-width: 70%; height: auto; border-radius: 10px;"></p>
 <div style="width: 80%; margin: auto; text-align: justify;">
-<p><b>Figure 4:</b> Activation Analysis. AIM's neuron descriptions achieve higher average activation scores than MILAN, reaching performance levels similar to human annotations across both synthetic and real circuits. </p></div><br>
+<p><b>Figure 4:</b>EEG and MEG electrode overlay before prewning</p></div><br>
 
 Apart from the threshold, MEG electrode selection was optimized for cortical geometry. MEG exhibits maximal sensitivity to tangential neural currents, particularly those originating from sulcal sources, due to the orthogonal orientation of magnetic fields relative to electrical current flow. Therefore, sensors positioned above major cortical folds, like longitudinal fissure or Sylvian fissure were manually prioritized for analysis.
 
