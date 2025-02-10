@@ -13,7 +13,7 @@ layout: post
       </td>
       <td align="center">
         Tim Farkas<br>
-        <a href="mailto:smalzard@turing.ac.uk">timfarhas@mit.edu</a>
+        <a href="mailto:smalzard@turing.ac.uk">timfarhas@ucl.edu</a>
       </td>
     </tr>
   </table>
@@ -237,88 +237,45 @@ Where:
 <h4 style="margin-bottom: 0"><u>6.1 Mutual Information Analysis</u></h4> 
 The efficacy of the cross signal similarity is compared by incrementally increasing the distance between a target MEG electrode and a set of reference EEG electrodes, upon which MI is computed. The optimal MI score is determined and chosen by calculating mutual information across a range of time lags to account for potential temporal differences between modalities.
 
-
-
-<div class="table-container" style="overflow-x: auto; width: 80%; margin: auto;">
-  <table cellspacing="0" cellpadding="6" border="1" style="border: 1px solid black; border-collapse: collapse; width: 100%;">
-    <caption style="caption-side: top; padding: 10px;"><b>Table 1.</b> Brain Region Classification Comparison.</caption>
-    <thead>
-      <tr>
-        <th style="border: 1px solid black;">Condition</th>
-        <th style="border: 1px solid black;">Method</th>
-        <th style="border: 1px solid black;">Brain Region</th>
-        <th style="border: 1px solid black;">Activation Metric (μV)</th>
-        <th style="border: 1px solid black;">Classification Accuracy (%)</th>
-      </tr>
-    </thead>
-    <tbody>
-      <!-- Familiar Faces -->
-      <tr>
-        <td style="border: 1px solid black;" rowspan="3">Familiar Faces</td>
-        <td style="border: 1px solid black;">Raw EEG</td>
-        <td style="border: 1px solid black;">FFA</td>
-        <td style="border: 1px solid black;">2.5</td>
-        <td style="border: 1px solid black;">78%</td>
-      </tr>
-      <tr>
-        <td style="border: 1px solid black;">Classic Denoising (ICA)</td>
-        <td style="border: 1px solid black;">FFA</td>
-        <td style="border: 1px solid black;">3.0</td>
-        <td style="border: 1px solid black;">85%</td>
-      </tr>
-      <tr>
-        <td style="border: 1px solid black;">Synaptech</td>
-        <td style="border: 1px solid black;">FFA</td>
-        <td style="border: 1px solid black;">1.0</td>
-        <td style="border: 1px solid black;">37%</td>
-      </tr>
-      <!-- Unfamiliar Faces -->
-      <tr>
-        <td style="border: 1px solid black;" rowspan="3">Unfamiliar Faces</td>
-        <td style="border: 1px solid black;">Raw EEG</td>
-        <td style="border: 1px solid black;">OFA</td>
-        <td style="border: 1px solid black;">2.0</td>
-        <td style="border: 1px solid black;">74%</td>
-      </tr>
-      <tr>
-        <td style="border: 1px solid black;">Classic Denoising (ICA)</td>
-        <td style="border: 1px solid black;">OFA</td>
-        <td style="border: 1px solid black;">2.7</td>
-        <td style="border: 1px solid black;">82%</td>
-      </tr>
-      <tr>
-        <td style="border: 1px solid black;">Synaptech</td>
-        <td style="border: 1px solid black;">OFA</td>
-        <td style="border: 1px solid black;">0.8</td>
-        <td style="border: 1px solid black;">32%</td>
-      </tr>
-      <!-- Scrambled Faces -->
-      <tr>
-        <td style="border: 1px solid black;" rowspan="3">Scrambled Faces</td>
-        <td style="border: 1px solid black;">Raw EEG</td>
-        <td style="border: 1px solid black;">TP</td>
-        <td style="border: 1px solid black;">1.5</td>
-        <td style="border: 1px solid black;">60%</td>
-      </tr>
-      <tr>
-        <td style="border: 1px solid black;">Classic Denoising (ICA)</td>
-        <td style="border: 1px solid black;">TP</td>
-        <td style="border: 1px solid black;">1.9</td>
-        <td style="border: 1px solid black;">68%</td>
-      </tr>
-      <tr>
-        <td style="border: 1px solid black;">Synaptech</td>
-        <td style="border: 1px solid black;">TP</td>
-        <td style="border: 1px solid black;">0.6</td>
-        <td style="border: 1px solid black;">26%</td>
-      </tr>
-    </tbody>
-  </table>
+<div style="width: 100%; display: flex; justify-content: center; margin: 20px 0;">
+  <svg width="700" height="500" viewBox="0 0 700 500" style="max-width: 100%;">
+    <!-- Title -->
+    <text x="350" y="40" text-anchor="middle" style="font-size: 20px; font-family: 'Times New Roman', Times, serif; font-weight: bold;">Mutual Information vs. Electrode Distance</text>
+    <!-- Axes -->
+    <line x1="100" y1="400" x2="600" y2="400" style="stroke: black; stroke-width: 2;"></line>
+    <line x1="100" y1="100" x2="100" y2="400" style="stroke: black; stroke-width: 2;"></line>
+    <!-- Y-axis labels -->
+    <g style="font-size: 14px; font-family: Arial, sans-serif;">
+      <text x="90" y="400" text-anchor="end">0.00</text>
+      <text x="90" y="340" text-anchor="end">0.02</text>
+      <text x="90" y="280" text-anchor="end">0.04</text>
+      <text x="90" y="220" text-anchor="end">0.06</text>
+      <text x="90" y="160" text-anchor="end">0.08</text>
+      <text x="90" y="100" text-anchor="end">0.10</text>
+    </g>
+    <!-- X-axis labels -->
+    <g style="font-size: 14px; font-family: Arial, sans-serif;">
+      <text x="130" y="420" text-anchor="middle">2 cm</text>
+      <text x="210" y="420" text-anchor="middle">4 cm</text>
+      <text x="290" y="420" text-anchor="middle">6 cm</text>
+      <text x="370" y="420" text-anchor="middle">8 cm</text>
+      <text x="450" y="420" text-anchor="middle">10 cm</text>
+      <text x="530" y="420" text-anchor="middle">12 cm</text>
+    </g>
+    <!-- Bars -->
+    <rect x="110" y="110" width="40" height="290" style="fill: #D98B8B;"></rect>
+    <rect x="190" y="260" width="40" height="140" style="fill: #D98B8B;"></rect>
+    <rect x="270" y="310" width="40" height="90" style="fill: #D98B8B;"></rect>
+    <rect x="350" y="350" width="40" height="50" style="fill: #D98B8B;"></rect>
+    <rect x="430" y="332" width="40" height="68" style="fill: #D98B8B;"></rect>
+    <rect x="510" y="336" width="40" height="64" style="fill: #D98B8B;"></rect>
+    <!-- Y-axis label -->
+    <text x="50" y="250" text-anchor="middle" transform="rotate(-90 50,250)" style="font-size: 16px; font-family: Arial, sans-serif;">Mutual Information (bits)</text>
+    <!-- X-axis label -->
+    <text x="350" y="460" text-anchor="middle" style="font-size: 16px; font-family: Arial, sans-serif;">Distance (cm)</text>
+  </svg>
 </div>
-
-<div style="width: 80%; margin: auto; text-align: justify;">
-  <br>
-  <p><b>Table 1:</b> Comparison of brain region activation performance across different conditions and methods. The classic denoising method (ICA) outperforms both the raw EEG and Synaptech-Net in terms of activation metrics and classification accuracy.</p>
+  <p style="width: 80%; margin: auto; font-size: 14px; justify"><b>Figure 5:</b> Mutual Information between EEG Electrode 'Fz' and MEG Electrodes at Increasing Distances. The bar chart illustrates the initial rapid decrease in mutual information, followed by a slower decline as the distance increases.</p>
 </div>
 
 The MI analysis shows that the MI scores is a function of electrode distance. Quantitatively, the MI score decreases by approximately 50% when the electrode distance increase from 2 cm to 4 cm, and after 8 cm, the rate of change staled out, suggesting most mutual information is power-law distributed.
@@ -334,10 +291,7 @@ Building on top of Mutual Information, we assess our model's ability to capture 
 <div style="width: 80%; margin: auto; text-align: justify;">
 <p><b>Figure 7:</b> Training and validation loss curves over 10 epochs, showing model convergance.</p></div><br>
 
-Figure 7 shows the spectrograms for a sample electrode:
-•  The raw EEG spectrogram exhibits lower power and higher noise levels.
-•  The ground truth MEG spectrogram displays clearer neural oscillation patterns.
-•  The predicted MEG spectrogram closely resembles the ground truth, capturing key frequency components (alpha, beta, gamma bands) with reduced noise.
+At first sight the model successfully reduces the MSE loss in the expected exponential fasion. However taking into account that the data is normalized to be between zero and one, looking at the values of reduction it's clear that the model memorizes the data, as the error decline on the training and validation set close to null, suggesting more data is needed for model training. 
 
 <h4 style="margin-bottom: 0"><u>6.5 Brain Region Classification Accuracy</u></h4> 
 
@@ -360,19 +314,19 @@ As a final showdown we test Synaptech's prowess in improving brain region classi
       <tr>
         <td style="border: 1px solid black;" rowspan="3">Familiar Faces</td>
         <td style="border: 1px solid black;">Raw EEG</td>
-        <td style="border: 1px solid black;">Fusiform Face Area (FFA)</td>
+        <td style="border: 1px solid black;">FFA</td>
         <td style="border: 1px solid black;">2.5</td>
         <td style="border: 1px solid black;">78%</td>
       </tr>
       <tr>
         <td style="border: 1px solid black;">Classic Denoising (ICA)</td>
-        <td style="border: 1px solid black;">Fusiform Face Area (FFA)</td>
+        <td style="border: 1px solid black;">FFA</td>
         <td style="border: 1px solid black;">3.0</td>
         <td style="border: 1px solid black;">85%</td>
       </tr>
       <tr>
         <td style="border: 1px solid black;">Synaptech</td>
-        <td style="border: 1px solid black;">Fusiform Face Area (FFA)</td>
+        <td style="border: 1px solid black;">FFA</td>
         <td style="border: 1px solid black;">1.0</td>
         <td style="border: 1px solid black;">37%</td>
       </tr>
@@ -380,19 +334,19 @@ As a final showdown we test Synaptech's prowess in improving brain region classi
       <tr>
         <td style="border: 1px solid black;" rowspan="3">Unfamiliar Faces</td>
         <td style="border: 1px solid black;">Raw EEG</td>
-        <td style="border: 1px solid black;">Occipital Face Area (OFA)</td>
+        <td style="border: 1px solid black;">OFA</td>
         <td style="border: 1px solid black;">2.0</td>
         <td style="border: 1px solid black;">74%</td>
       </tr>
       <tr>
         <td style="border: 1px solid black;">Classic Denoising (ICA)</td>
-        <td style="border: 1px solid black;">Occipital Face Area (OFA)</td>
+        <td style="border: 1px solid black;">OFA</td>
         <td style="border: 1px solid black;">2.7</td>
         <td style="border: 1px solid black;">82%</td>
       </tr>
       <tr>
         <td style="border: 1px solid black;">Synaptech</td>
-        <td style="border: 1px solid black;">Occipital Face Area (OFA)</td>
+        <td style="border: 1px solid black;">OFA</td>
         <td style="border: 1px solid black;">0.8</td>
         <td style="border: 1px solid black;">32%</td>
       </tr>
@@ -424,11 +378,11 @@ As a final showdown we test Synaptech's prowess in improving brain region classi
   <p><b>Table 1:</b> Comparison of brain region activation performance across different conditions and methods. The classic denoising method (ICA) outperforms both the raw EEG and Synaptech-Net in terms of activation metrics and classification accuracy.</p>
 </div>
 
+As expected from the signal reconstruction resluts, models performance on classification tasks shows marginal de-noising at best, given by methods downperformance when compared to ICA. 
+
 <hr style="border-top: 1px solid black;">
 
 <h3 align="center">6. Discussion</h3>
-
-WRITE OUT DISCUSSION FOR EACH SECTION IN THE RESULTS.
 
 <h4 style="margin-bottom: 0"><u>6.1 Mutual Information Insights</u></h4> 
 We find that when both signals are either normalized or standardised MI for near located electrodes tends to be as much as 5x higher. Contrary to our initial hypothesis, the electrodes on the parietal lobe have the strongest MI corelations. This is likely explained by the fact that participants are performing recognition tasks which makes the signal less stochastic in parietal lobe in comparison to other brain regions. 
