@@ -44,12 +44,12 @@ Theoretically, with a wholistic knowledge of both pure and noise signal’s inde
 
 <h4 style="margin-bottom: 0"><u>1.3 Synaptech</u></h4>
 We propose Synaptech as a cross-modal signal translation method that leverages modalities with shared neurophysiological origins but different noise characteristics. Synaptech enables more precise signal-noise separation compared to traditional denoising techniques by learning the mapping between a lower-fidelity and higher-fidelity modality. The principle is analogous to supervised denoising: given paired clean and noisy signals, a model learns the transformation function between them. This generalizes to cross-modal translation when the modalities share underlying temporal or spatial dependencies while exhibiting different signal-to-noise ratios.
+
 <br>
 <p align="center"><img src="../images/electromagnetic.png" alt="Alt text" style="max-width: 80%; height: auto; border-radius: 10px;"></p>
 <div style="width: 80%; margin: auto; text-align: justify;">
   <p><b>Figure 2:</b> Illustration of the electric current in neurons causing electric fields which in turn derive magnetic fields. Both signals originate from the same ionic current derivatives, but magnetic fields propagate through tissue without distortion, enabling cross-modal fidelity transfer.</p>
 </div><br>
-
 <h4 style="margin-bottom: 0"><u>1.4 Selected Modalities </u></h4>
 The exemplar modalities chosen for this study are EEG and MEG due to their derivative signal origin and isomorphic temporal resolution. Both MEG and EEG signals originate from the net effect of ionic currents flowing in the dendrites of neurons. Whilst EEG measures changes in electric fields and MEG measures variations in magnetic fields, one directly derives from another (Figure 2).  
 
