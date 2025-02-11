@@ -42,9 +42,11 @@ defaults:
       path: ""
     values:
       mathjax: true
+  - scope:
+      path: "images"
+    values:
+      image: true
 
-assets:
-  plugins:
-    jpegtran: {}
-    optipng: {}
-    gifsicle: {}
+include:
+  - "images"
+  - "*.gif"
