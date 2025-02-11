@@ -20,6 +20,7 @@ For the reasons of higher fidelity, micro scale connectomics is much more promis
 <hr style="border-top: 1px solid black;">
 
 <h3 align="center">2. Methods</h3>
+<hr style="border-top: 1px solid black;">
 
 <h4 style="margin-bottom: 0"><u>2.0 Microscale Connectomics</u></h4> 
  Microscale connectomes focus on resolving individual cell-to-cell connectivity within much smaller volumes of nervous system tissue. These datasets are commonly collected using electron microscopy (EM) and offer single synapse resolution. The first microscale connectome encompassing an entire nervous system was produced for the nematode C. elegans in 1986. This was done by manually annotating printouts of the EM scans. Advances in EM acquisition, image alignment and segmentation, and manipulation of large datasets have since allowed for larger volumes to be imaged and segmented more easily. EM has been used to produce connectomes from a variety of nervous system samples, including publicly available datasets that encompass the entire brain and ventral nerve cord of adult Drosophila melanogaster, the full central nervous system (connected brain and ventral nerve cord) of larval Drosophila melanogaster, and volumes from mouse and human cortex. The National Institutes of Health (NIH) has now invested in creating an EM connectome of an entire mouse brain.
