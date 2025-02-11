@@ -1,5 +1,5 @@
 ---
-title: "Automated Interpretability Modelling"
+title: "Connectomics: Modelling the Mind"
 date: 2025-01-10
 layout: post
 ---
@@ -16,10 +16,8 @@ layout: post
 </div>
 
 <hr style="border-top: 1px solid black; margin-top: 0; margin-bottom: 30;">
-<h3 align="center">Abstract</h3>
 
-
-<h3 align="center">1. Introduction</h3>
+<h3 align="center">1. Connectomics Overview</h3>
 
 In general, a network is a function, one that is dependent on the pattern of its interconnections. In spite of intense efforts to elucidate the structure and function of the brain — which, after all, is just an example of such a complex network — and its neural systems, we do not currently have a comprehensive map of the network connectivity that is modellable.
 
