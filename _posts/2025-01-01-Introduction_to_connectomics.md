@@ -53,3 +53,10 @@ Neuromodulation allows clinicians to utilize stimulatory techniques to treat neu
 
 
 <h4 style="margin-bottom: 0"><u>2.1 Electrophysiological Methods</u></h4> 
+
+
+
+<p align="center"><img src="../images/eeg2meg.png" alt="Alt text" style="max-width: 70%; height: auto; border-radius: 10px;"></p>
+<div style="width: 80%; margin: auto; text-align: justify;">
+  <p><b>Figure 1:</b> Synaptech's cross-modal transfer of EEG signal into MEG signal of higher-fideligty. Illustration showing both the inference stage, where only the modality at hand is used to predict a higher resolution mode, and traning stage, where the DNN uses both signals to learn their dependancies. </p>
+</div><br>
