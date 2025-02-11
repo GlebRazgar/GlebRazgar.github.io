@@ -31,7 +31,7 @@ Connectomics is the production and study of connectomes: comprehensive maps of c
 Generally speaking, there are two types of connectomes; macroscale and microscale. Macroscale connectomics refers to using functional and structural MRI data to map out large fiber tracts and functional gray matter areas within the brain in terms of blood flow (functional) and water diffusivity (structural). Microscale connectomics is the mapping of small organisms' complete connectome using microscopy and histology. That is, all connections that exist in their central nervous system.
 
 
-<p align="center"><img src="../images/high-level.png" alt="Alt text" style="max-width: 100%; height: auto; border-radius: 10px;"></p>
+<p align="center"><img src="../images/flyconnectome.png" alt="Alt text" style="max-width: 100%; height: auto; border-radius: 10px;"></p>
 
 <div style="width: 80%; margin: auto; text-align: justify;">
   <p><b>Figure 1:</b>IMAGE DESCRIPTION.</p>
