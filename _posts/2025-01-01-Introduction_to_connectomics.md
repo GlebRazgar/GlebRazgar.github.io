@@ -15,6 +15,9 @@ layout: post
   </table>
 </div>
 
+
+<p align="center"><img src="/images/moloch.jpg" alt="Alt text" width="750" height="450" style="border-radius: 10px;"></p>
+
 <p align="center"><img src="/images/fly.jpg" alt="Alt text" width="750" height="450" style="border-radius: 10px;"></p>
 
 <hr style="border-top: 1px solid black; margin-top: 0; margin-bottom: 30;">
