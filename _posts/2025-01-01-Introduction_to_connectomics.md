@@ -15,6 +15,9 @@ layout: post
   </table>
 </div>
 
+
+<p align="center"><img src="/images/moloch.jpg" alt="Alt text" width="750" height="450" style="border-radius: 10px;"></p>
+
 <hr style="border-top: 1px solid black; margin-top: 0; margin-bottom: 30;">
 
 <h3 align="center">1. Connectomics Overview</h3>
@@ -60,3 +63,6 @@ Neuromodulation allows clinicians to utilize stimulatory techniques to treat neu
 <div style="width: 80%; margin: auto; text-align: justify;">
   <p><b>Figure 1:</b> Synaptech's cross-modal transfer of EEG signal into MEG signal of higher-fideligty. Illustration showing both the inference stage, where only the modality at hand is used to predict a higher resolution mode, and traning stage, where the DNN uses both signals to learn their dependancies. </p>
 </div><br>
+
+
+<p align="center"><img src="/images/moloch.jpg" alt="Alt text" width="750" height="450" style="border-radius: 10px;"></p>
