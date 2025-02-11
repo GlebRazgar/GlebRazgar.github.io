@@ -19,7 +19,7 @@ Generally speaking, there are two main types of connectomes; macroscale and micr
 <div style="width: 100%; margin: auto; text-align: justify;"></div><br>
 
 <div style="width: 80%; margin: auto; text-align: center;">
-  <p><b>Figure 1:</b>Connectome of a fruit displaying using two units of analysis: MRI mapping (left) and Electorn Microscopy (right).</p>
+  <p><b>Figure 1:</b>Connectome of a fruit fly using two units of analysis: MRI mapping (left) and Electorn Microscopy (right).</p>
 </div>
 
 <hr style="border-top: 1px solid black;">
@@ -29,6 +29,10 @@ Generally speaking, there are two main types of connectomes; macroscale and micr
 <h4 style="margin-bottom: 0"><u>2.1 Macroscale Connectomics</u></h4> 
 
 Macroscale connectomes are commonly collected using diffusion-weighted magnetic resonance imaging (dMRI or DW-MRI) and functional magnetic resonance imaging (fMRI). dMRI datasets can span the entire brain, imaging white matter between the cortex and subcortex, providing information about the diffusion of water molecules in brain tissue, and allowing researchers to infer the orientation and integrity of white matter pathways. dMRI can be used in conjunction with tractography where it enables the reconstruction of white matter tracts in the brain. It does so by measuring the diffusion of water molecules in multiple directions, as dMRI can estimate the local fiber orientations and generate a model of the brain's fiber pathways. Meanwhile, tractography algorithms trace the likely trajectories of these pathways, providing a representation of the brain's anatomical connectivity. Metrics such as fractional anisotropy (FA), mean diffusivity (MD), or connectivity strength can be computed from dMRI data to assess the microstructural properties of white matter and quantify the strength of (long-range) connections between brain regions.
+
+
+<p align="center"><img src="/images/vsconnectome.png" alt="Alt text" style="max-width: 70%; height: auto; border-radius: 10px;"></p>
+<div style="width: 100%; margin: auto; text-align: justify;"></div><br>
 
 In contrast to dMRI, fMRI datasets measure cerebral blood flow in the brain, as a marker of neuronal activation. One of the benefits of MRI is it offers in vivo information about the connectivity between different brain areas. fMRI measures the blood oxygenation level-dependent (BOLD) signal, which reflects changes in cerebral blood flow and oxygenation associated with neural activity, as regulated by the neurovascular unit. Resting-state functional connectivity (RSFC) analysis is a common method to measure connectomes using fMRI that involves acquiring fMRI data while the subject is at rest and not performing any specific tasks or stimuli. RSFC examines the temporal correlation of the BOLD signals between different brain regions (after accounting for the confounding effect of other regions), providing insights into functional connectivity.
 
