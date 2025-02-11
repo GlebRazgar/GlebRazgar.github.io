@@ -18,7 +18,7 @@ layout: post
 
 <p align="center"><img src="/images/moloch.jpg" alt="Alt text" width="750" height="450" style="border-radius: 10px;"></p>
 
-<p align="center"><img src="/images/fly.jpg" alt="Alt text" width="750" height="450" style="border-radius: 10px;"></p>
+<p align="center"><img src="/images/fly.png" alt="Alt text" width="750" height="450" style="border-radius: 10px;"></p>
 
 <hr style="border-top: 1px solid black; margin-top: 0; margin-bottom: 30;">
 
@@ -28,15 +28,9 @@ In general, a network is a function, one that is dependent on the pattern of its
 
 Connectomics is the production and study of connectomes: comprehensive maps of connections within an organism's nervous system. More generally, it can be thought of as the study of neuronal wiring diagrams with a focus on how structural connectivity, individual synapses, cellular morphology, and cellular ultrastructure contribute to the make up of a network. The nervous system is a network made of up to billions of connections and these connections are responsible for our thoughts, emotions, actions, memories, function and dysfunction. Therefore, the study of connectomics aims to advance our understanding of mental health and cognition by understanding how cells in the nervous system are connected and communicate. Because these structures are extremely complex, methods within this field use a high-throughput application of functional and structural neural imaging, most commonly magnetic resonance imaging (MRI), electron microscopy, and histological techniques in order to increase the speed, efficiency, and resolution of these nervous system maps. To date, tens of large scale datasets have been collected spanning the nervous system including the various areas of cortex, cerebellum,[1][2] the retina,[3] the peripheral nervous system[4] and neuromuscular junctions.[5]
 
-<div style="width: 80%; margin: auto;">
-  <p align="center"><img src="../images/fly.png" alt="Alt text" style="max-width: 100%; height: auto; border-radius: 10px;"></p>
-  <p><b>Figure 2:</b> A connectome map showing neural connections in the fruit fly brain.</p>
-</div>
 
 Generally speaking, there are two types of connectomes; macroscale and microscale. Macroscale connectomics refers to using functional and structural MRI data to map out large fiber tracts and functional gray matter areas within the brain in terms of blood flow (functional) and water diffusivity (structural). Microscale connectomics is the mapping of small organisms' complete connectome using microscopy and histology. That is, all connections that exist in their central nervous system.
 
-
-<p align="center"><img src="../images/fly.png" alt="Alt text" style="max-width: 100%; height: auto; border-radius: 10px;"></p>
 
 <div style="width: 80%; margin: auto; text-align: justify;">
   <p><b>Figure 1:</b>IMAGE DESCRIPTION.</p>
@@ -59,12 +53,3 @@ Neuromodulation allows clinicians to utilize stimulatory techniques to treat neu
 
 <h4 style="margin-bottom: 0"><u>2.1 Electrophysiological Methods</u></h4> 
 
-
-
-<p align="center"><img src="../images/eeg2meg.png" alt="Alt text" style="max-width: 70%; height: auto; border-radius: 10px;"></p>
-<div style="width: 80%; margin: auto; text-align: justify;">
-  <p><b>Figure 1:</b> Synaptech's cross-modal transfer of EEG signal into MEG signal of higher-fideligty. Illustration showing both the inference stage, where only the modality at hand is used to predict a higher resolution mode, and traning stage, where the DNN uses both signals to learn their dependancies. </p>
-</div><br>
-
-
-<p align="center"><img src="/images/moloch.jpg" alt="Alt text" width="750" height="450" style="border-radius: 10px;"></p>
