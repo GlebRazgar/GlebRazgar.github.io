@@ -3,32 +3,14 @@ title: "Connectomics: Modelling The Mind"
 date: 2025-01-10
 layout: post
 ---
-<br>
-<div class="table-container">
-  <table>
-    <tr>
-      <td align="center">
-        Gleb Razgar<br>
-        <a href="mailto:gleb.razgar@gmail.com">gleb.razgar@gmail.com</a>
-      </td>
-    </tr>
-  </table>
-</div>
-
-
-<p align="center"><img src="/images/fly.jpg" alt="Alt text" width="750" height="450" style="border-radius: 10px;"></p> 
-
-
-<p align="center"><img src="/images/fly.png" alt="Alt text" style="max-width: 70%; height: auto; border-radius: 10px;"></p>
-<div style="width: 80%; margin: auto; text-align: justify;">
-  <p><b>Figure 1:</b> Connectome of a fruit fly </p>
-</div><br>
-
-<hr style="border-top: 1px solid black; margin-top: 0; margin-bottom: 30;">
 
 <h3 align="center">1. Connectomics Overview</h3>
 
 In general, a network is a function, one that is dependent on the pattern of its interconnections. In spite of intense efforts to elucidate the structure and function of the brain — which, after all, is just an example of such a complex function, we do not currently have a comprehensive map of the network connectivity that is functionally modellable. As you can imagine having a modellable function of the brain would be an un-precidented paridigm shift. Providing us the ability to test drugs, mental disorder cures, alzhimers, and others. Perhaps most intriguing is a different angle to AGI, but one that preserves human values, for it would be human. Connectomics is a field that tries to create such model of the brian. 
+
+<p align="center"><img src="/images/fly.png" alt="Alt text" style="max-width: 70%; height: auto; border-radius: 10px;"></p>
+<div style="width: 1000%; margin: auto; text-align: justify;">
+</div><br>
 
 Connectomics is the production and study of connectomes: comprehensive maps of connections within an organism's nervous system. More generally, it can be thought of as the study of neuronal wiring diagrams with a focus on how structural connectivity, individual synapses, cellular morphology, and cellular ultrastructure contribute to the make up of a network. Because these structures are extremely complex, methods within this field use a high-throughput application of functional and structural neural imaging, most commonly magnetic resonance imaging (MRI), electron microscopy, and histological techniques in order to increase the speed, efficiency, and resolution of these nervous system maps. To date, tens of large scale datasets have been collected spanning the nervous system including the various areas of cortex, cerebellum, the retina, the peripheral nervous system and neuromuscular junctions.
 
@@ -37,7 +19,8 @@ Connectomics is the production and study of connectomes: comprehensive maps of c
   <p><b>Figure 2:</b> A connectome map showing neural connections in the fruit fly brain.</p>
 </div>
 
-Generally speaking, there are two types of connectomes; macroscale and microscale. Macroscale connectomics refers to using functional and structural MRI data to map out large fiber tracts and functional gray matter areas within the brain in terms of blood flow (functional) and water diffusivity (structural). Microscale connectomics is the mapping of small organisms' complete connectome using microscopy and histology. That is, all connections that exist in their central nervous system.
+Generally speaking, there are two main types of connectomes; macroscale and microscale. Both deal with different units of analysis. Macroscale connectomics deals with high-level functional and structural MRI data to map out large fiber tracts and functional gray matter areas within the brain in terms of blood flow (functional) and water diffusivity (structural). Microscale connectomics is the mapping of small organisms' complete connectome using microscopy and histology. That is, all connections that exist in their central nervous system.
+
 
 
 <p align="center"><img src="../images/fly.png" alt="Alt text" style="max-width: 100%; height: auto; border-radius: 10px;"></p>
