@@ -86,6 +86,11 @@ Human connectomes have an individual variability, which can be measured with the
 <h4 style="margin-bottom: 0"><u>4.1 Caenorhabditis Elegans</u></h4> 
 The Caenorhabditis Elegans roundworm is a highly researched organism in the field of connectomics, of which a full connectome has been mapped using various imaging techniques, mainly serial-electron microscopy. This process involved studying the aging process of the C. elegans brain by comparing varying worms from birth to adulthood. Researchers found the biggest change with age is the wiring circuits, and that connectivity between and within brain regions increases with age. Regardless of the massive achievement of mapping the full C. Elegans connectome, more information is yet to be discovered about this brain network; The researchers noted that this can be done using comparative connectomics, comparing and contrasting different species' brain networks to pinpoint relations in behavior.
 
+<p align="center"><img src="/images/celegan.jpeg" alt="Alt text" style="max-width: 80%; height: auto; border-radius: 10px; mix-blend-mode: multiply;"></p>
+<div style="width: 80%; margin: auto; text-align: center;">
+  <p><b>Figure 1:</b>Connectome of a C.elecan</p>
+</div>
+
 The C. elegans has a simple nervous system, and data collection is more attainable. A study created a code that searches the connections within the C. elegans mapped connectome, as this data is already readily available. The findings were able to collect information about sensory neurons, interneurons, neck motor neurons, behavior, environmental influences, and more in deep detail. Overall, the experiment investigates the connection between neuroanatomy and behavior given that there is a lot of available information about the worm already discovered.
 
 To provide context, the C. elegans roundworm has 302 neurons and 5000 synaptic connections, while the human brain has 100 billion neurons and more than 100 trillion chemical synapses. The human connectome has yet to be fully mapped with a limiting factor being the sheer amount of data collection that this will require in addition to the complexity in comparing individual connectomes given the great degree of variation in human neural circuits.
@@ -115,8 +120,8 @@ While the HCP represents a significant advancement in understanding human brain 
 
 Electron microscopy reconstruction of human brain tissue offers the potential for synapse-level mapping of neural circuits. Modern EM techniques can achieve resolutions below 5nm, sufficient to identify individual synaptic vesicles and postsynaptic densities. However, scaling these approaches to human brain volumes presents substantial technical challenges. At current imaging speeds and computational capabilities, it would take an estimated several thousand years to fully map a human brain at the synaptic level. Mapping just 1 cubic millimeter of brain tissue currently takes months of imaging time and generates petabytes of data requiring extensive processing. 
 
-**Expansion microscopy**  
-Recent advances in expansion microscopy (ExM) offer promising solutions to accelerate human connectome mapping. ExM is a sample preparation tool for biological samples that allows investigators to identify small structures by expanding them using a polymer system. The premise is to introduce a polymer network into cellular or tissue samples, and then physically expand that polymer network using chemical reactions to increase the size of the biological structures. Among other benefits, ExM allows those small structures to be imaged with a wider range of microscopy techniques. 
+<h4 style="margin-bottom: 0"><u>4.3 Speeding up connectomics</u></h4> 
+Mapping the human brain will require faster imaging techniques. Recent advances in expansion microscopy (ExM) offer promising solutions to accelerate human connectome mapping and address this need for faster techniques. ExM is a sample preparation tool for biological samples that allows investigators to identify small structures by expanding them using a polymer system. The premise is to introduce a polymer network into cellular or tissue samples, and then physically expand that polymer network using chemical reactions to increase the size of the biological structures. Among other benefits, ExM allows those small structures to be imaged with a wider range of microscopy techniques.
 It was 
 
 
@@ -130,5 +135,11 @@ Several labs have demonstrated successful expansion of human brain tissue sample
 
 
 
+<p align="center"><img src="/images/celegan.jpeg" alt="Alt text" style="max-width: 80%; height: auto; border-radius: 10px; mix-blend-mode: multiply; filter: grayscale(100%) contrast(1000%);"></p>
+<div style="width: 80%; margin: auto; text-align: center;">
+  <p><b>Figure 1:</b>Connectome of a C.elecan</p>
+</div>
+
+The C. elegans has a simple nervous sys
 
 
