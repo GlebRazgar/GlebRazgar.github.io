@@ -86,7 +86,7 @@ Human connectomes have an individual variability, which can be measured with the
 <h4 style="margin-bottom: 0"><u>4.1 Caenorhabditis Elegans</u></h4> 
 The Caenorhabditis Elegans roundworm is a highly researched organism in the field of connectomics, of which a full connectome has been mapped using various imaging techniques, mainly serial-electron microscopy. This process involved studying the aging process of the C. elegans brain by comparing varying worms from birth to adulthood. Researchers found the biggest change with age is the wiring circuits, and that connectivity between and within brain regions increases with age. Regardless of the massive achievement of mapping the full C. Elegans connectome, more information is yet to be discovered about this brain network; The researchers noted that this can be done using comparative connectomics, comparing and contrasting different species' brain networks to pinpoint relations in behavior.
 
-<p align="center"><img src="/images/celegan.jpeg" alt="Alt text" style="max-width: 80%; height: auto; border-radius: 10px; mix-blend-mode: multiply;"></p>
+<p align="center"><img src="/images/celegan.jpg" alt="Alt text" style="max-width: 80%; height: auto; border-radius: 10px; mix-blend-mode: multiply;"></p>
 <div style="width: 80%; margin: auto; text-align: center;">
   <p><b>Figure 1:</b>Connectome of a C.elecan</p>
 </div>
@@ -135,7 +135,7 @@ Several labs have demonstrated successful expansion of human brain tissue sample
 
 
 
-<p align="center"><img src="/images/celegan.jpeg" alt="Alt text" style="max-width: 80%; height: auto; border-radius: 10px; mix-blend-mode: multiply; filter: grayscale(100%) contrast(1000%);"></p>
+<p align="center"><img src="/images/celegan.jpg" alt="Alt text" style="max-width: 80%; height: auto; border-radius: 10px; mix-blend-mode: multiply; filter: grayscale(100%) contrast(1000%);"></p>
 <div style="width: 80%; margin: auto; text-align: center;">
   <p><b>Figure 1:</b>Connectome of a C.elecan</p>
 </div>
