@@ -9,7 +9,7 @@ layout: post
 
 <h3 align="center">1. Connectomics Overview</h3>
 
-In general, a network is a function, one that is dependent on the pattern of its interconnections. In spite of intense efforts to elucidate the structure and function of the brain — which, after all, is just an example of such a complex function, we do not currently have a comprehensive map of the network connectivity that is functionally modellable. As you can imagine having an emulatable brain would be un-precidented. It would give us the ability to simulate drug effects, meantal disorders, brain disease and perhaps one day transgress death through uploading. Connectomics is a discipline that tries to create such mappings.
+In general, a network is a function that is dependent on the pattern of its interconnections. In spite of intense efforts to elucidate the structure of the brain — which, after all, is just an example of such a complex function, we do not currently have a comprehensive map of the network connectivity that is functionally modellable. As you can imagine having an emulatable brain would be un-precidented. It would give us the ability to simulate drug effects, meantal disorders, brain disease and perhaps one day transgress death through uploading. Connectomics is a discipline that tries to create such mappings.
 
 Connectomics is the production and study of connectomes: maps of connections within an organism's nervous system. More generally, it can be thought of as the study of neuronal wiring diagrams with a focus on how structural connectivity, individual synapses, cellular morphology, and cellular ultrastructure contribute to the make up of a network. Because these structures are extremely complex, methods within this field use a high-throughput application of functional and structural neural imaging, most commonly magnetic resonance imaging (MRI), electron microscopy, and histological techniques in order to increase the speed, efficiency, and resolution of these nervous system maps. To date, tens of large scale datasets have been collected spanning the nervous system including the various areas of cortex, cerebellum, the retina, the peripheral nervous system and neuromuscular junctions.
 
@@ -88,7 +88,7 @@ The Caenorhabditis Elegans roundworm is a highly researched organism in the fiel
 
 <p align="center"><img src="/images/celegan.jpg" alt="Alt text" style="max-width: 80%; height: auto; border-radius: 10px; mix-blend-mode: multiply;"></p>
 <div style="width: 80%; margin: auto; text-align: center;">
-  <p><b>Figure 1:</b>Connectome of a C.elecan</p>
+  <p><b>Figure X:</b>Connectome of a C.elecan</p>
 </div>
 
 The C. elegans has a simple nervous system, and data collection is more attainable. A study created a code that searches the connections within the C. elegans mapped connectome, as this data is already readily available. The findings were able to collect information about sensory neurons, interneurons, neck motor neurons, behavior, environmental influences, and more in deep detail. Overall, the experiment investigates the connection between neuroanatomy and behavior given that there is a lot of available information about the worm already discovered.
@@ -120,26 +120,33 @@ While the HCP represents a significant advancement in understanding human brain 
 
 Electron microscopy reconstruction of human brain tissue offers the potential for synapse-level mapping of neural circuits. Modern EM techniques can achieve resolutions below 5nm, sufficient to identify individual synaptic vesicles and postsynaptic densities. However, scaling these approaches to human brain volumes presents substantial technical challenges. At current imaging speeds and computational capabilities, it would take an estimated several thousand years to fully map a human brain at the synaptic level. Mapping just 1 cubic millimeter of brain tissue currently takes months of imaging time and generates petabytes of data requiring extensive processing. 
 
-<h4 style="margin-bottom: 0"><u>4.3 Speeding up connectomics</u></h4> 
-Mapping the human brain will require faster imaging techniques. Recent advances in expansion microscopy (ExM) offer promising solutions to accelerate human connectome mapping and address this need for faster techniques. ExM is a sample preparation tool for biological samples that allows investigators to identify small structures by expanding them using a polymer system. The premise is to introduce a polymer network into cellular or tissue samples, and then physically expand that polymer network using chemical reactions to increase the size of the biological structures. Among other benefits, ExM allows those small structures to be imaged with a wider range of microscopy techniques.
-It was 
+<hr style="border-top: 1px solid black;">
+
+<h3 align="center">5. Speeding up Connectomics</h3>
+
+<h4 style="margin-bottom: 0"><u>5.1 Expansion Microscopy</u></h4> 
+
+Mapping the human brain will require faster imaging techniques. Recent advances in expansion microscopy (ExM) offer promising solutions to accelerate human connectome mapping and address this need for faster techniques. ExM physically enlarges biological specimens while maintaining their structural integrity, allowing to aboundun slow and expensive electron microscopes in favour of conventional light microscopes to achieve effective nanoscale resolution, The technique works by embedding tissue in a swellable polymer that expands uniformly, increasing the physical size of the specimen while preserving relative spatial relationships between cellular structures. This physical magnification enables imaging of synaptic proteins and other nanoscale features using standard light microscopes, which can image larger volumes much faster than traditional EM approaches.
 
 
- ExM physically enlarges biological specimens while maintaining their structural integrity, allowing conventional microscopes to achieve effective nanoscale resolution. When combined with light microscopy, ExM can image larger volumes of tissue much faster than traditional EM approaches. The technique works by embedding tissue in a swellable polymer that expands uniformly, increasing the physical size of the specimen while preserving relative spatial relationships between cellular structures. This physical magnification enables imaging of synaptic proteins and other nanoscale features using standard light microscopes.
 <p align="center"><img src="/images/exm.jpg" alt="Alt text" style="max-width: 80%; height: auto; border-radius: 10px; mix-blend-mode: multiply; filter: brightness(1.2) contrast(1.1);"></p>
 <div style="width: 80%; margin: auto; text-align: center;">
-  <p><b>Figure 1:</b>High-level MRI conectome of the human brain.</p>
+  <p><b>Figure 1:</b>Expansion Microsope Proceedure.</p>
 </div>
 
-Several labs have demonstrated successful expansion of human brain tissue samples by factors of 4-20x, achieving effective resolutions down to ~25nm. At these scales, individual synapses become clearly visible under conventional microscopes. The faster imaging speeds of light microscopy, combined with the ability to process larger tissue volumes simultaneously, could potentially reduce the time required for human connectome mapping by orders of magnitude. While challenges remain in handling the expanded specimens and processing the resulting data, ExM represents a promising path toward making comprehensive human connectome mapping more tractable within reasonable timeframes.
+
+Several labs have demonstrated successful expansion of human brain tissue samples by factors of 4-20x, achieving effective resolutions down to ~25nm. Thousands of studies have used EM at different scales, and it has been applied even to expand the whele brain in a single proceedure. At these scales, individual synapses become clearly visible under conventional microscopes. The faster imaging speeds of light microscopy, combined with the ability to process larger tissue volumes simultaneously, reduce the time required for human connectome mapping by orders of magnitude.
+
+Complementary technologies are also emerging to address the speed bottleneck in connectome mapping. Multi-beam scanning electron microscopes with 61-169 parallel beams increase throughput by orders of magnitude compared to single-beam systems. Advanced tissue clearing methods like CLARITY and iDISCO+ enable rapid whole-brain imaging with light-sheet microscopy while preserving molecular information. 
+
+On the computational front, automated segmentation using transformers has improved reconstruction accuracy while reducing manual proofreading requirements. Platforms like VAST and Neuroglancer leverage cloud computing for distributed annotation of massive datasets. High-throughput automated synapse detection algorithms using deep learning achieve human-level accuracy while processing volumes thousands of times faster than manual annotation.
+
+These complementary approaches - from sample preparation to imaging to computational analysis - are creating a technological ecosystem that makes comprehensive connectome mapping increasingly feasible at larger scales even if the full brain mapping is currently ellusive. 
 
 
 
-<p align="center"><img src="/images/celegan.jpg" alt="Alt text" style="max-width: 80%; height: auto; border-radius: 10px; mix-blend-mode: multiply; filter: grayscale(100%) contrast(1000%);"></p>
-<div style="width: 80%; margin: auto; text-align: center;">
-  <p><b>Figure 1:</b>Connectome of a C.elecan</p>
-</div>
-
-The C. elegans has a simple nervous sys
 
 
+<h3 align="center">6. The Future</h3>
+
+Having spoken to the god fathers of connectomics, it's apparent that whole human brain uploading is inevitable. We already have all the neccesary techniques to map the human brain, we just need to scale them. By the estimates of Ed Boyden, a full mapping of a human brain will follow withing the next 8 years. The biggest issue is funding. But can you place a pricing tag on digital immorality?
