@@ -52,17 +52,6 @@ Macroscale connectomes are commonly collected using diffusion-weighted magnetic 
 
 Once the brain imaging data is collected, it can be transformed into a graph neural network (GNN) representation for computational analysis. In this process, brain regions identified through imaging are represented as nodes in the graph, while the white matter connections between regions become edges. The edge weights are typically derived from connectivity metrics like FA values or fiber counts from tractography. This graph representation allows researchers to apply powerful GNN algorithms to analyze the brain's network properties, detect communities of highly connected regions, and model information flow through neural circuits. The GNN framework is particularly valuable as it can capture both the structural topology of brain connections and learn representations of how activity propagates through the network. This computational approach enables systematic study of brain organization and function at the network level.
 
-<p align="center">
-    <img src="/images/matricies.png" 
-         alt="Alt text" 
-         style="max-width: 80%; height: auto; border-radius: 10px; mix-blend-mode: multiply;">
-</p>
-<div style="width: 80%; margin: auto; text-align: center;">
-  <p><b>Figure 1:</b>High-level MRI conectome of the human brain.</p>
-</div>
-
-
-
 
 
 
@@ -71,8 +60,10 @@ Once the brain imaging data is collected, it can be transformed into a graph neu
 <h3 align="center">3. Applications</h3>
 By comparing diseased and healthy connectomes, we can gain insight into certain psychopathologies, such as neuropathic pain, and potential therapies for them. Generally, the field of neuroscience would benefit from standardization and raw data. For example, connectome maps can be used to inform computational models of whole-brain dynamics. Current neural networks mostly rely on probabilistic representations of connectivity patterns. Connectivity matrices (checkerboard diagrams of connectomics) have been used in stroke recovery to evaluate the response to treatment via Transcranial Magnetic Stimulation. Similarly, connectograms (circular diagrams of connectomics) have been used in traumatic brain injury cases to document the extent of damage to neural networks.  
 
-<p align="center"><img src="/images/connectome_line.png" alt="Alt text" style="max-width: 80%; height: auto; border-radius: 10px;"></p>
-<div style="width: 100%; margin: auto; text-align: justify;"></div><br>
+<p align="center"><img src="/images/matricies.png" alt="Alt text" style="max-width: 80%; height: auto; border-radius: 10px; mix-blend-mode: multiply;"></p>
+<div style="width: 80%; margin: auto; text-align: center;">
+  <p><b>Figure 1:</b>High-level MRI conectome of the human brain.</p>
+</div>
 
 Looking into these methods of research, they can reveal information about different mental illnesses and brain disorders. The tracking of brain networks in alignment with diseases and illnesses would be enhanced by these advanced technologies that can produce complex images of neural networks. With this in mind, diseases can not only be tracked, but predicted based on behavior of previous cases, a process that would take an extensive period of time to collect and record. Specifically, studies on different brain disorders such as schizophrenia and bipolar disorder with a focus on the connectomics involved reveal information. Both of these disorders have a similar genetic origin, and research found that those with higher polygenic scores for schizophrenia and bipolar disorder have lower amounts of connectivity shown through neuroimaging. This method of research tackles real-world applications of connectomics, combining methods of imaging with genetics to dig deeper into the origins and outcomes of genetically related disorders. Another study supports the finding that there is relation between connectivity and likelihood of disease, as researchers found those diagnosed with schizophrenia have less structurally complete brain networks. The main drawback in this area of connectomics is not being able to achieve images of whole-brain networks, therefore it is hard to make complete and accurate assumptions about cause and effect of diseases' neural pathways. Connectomics has been used to study patients with strokes using MRI imaging, however because such little research is done in this specific area, conclusions cannot be drawn regarding the relation between strokes and connectivity. The research did find results that highlight an association between poor connectivity in the language system and poor motor coordination, however the results were not substantial enough to make a bold claim. For behavioral disorders, it can be difficult to diagnose and treat because most situations revolve on a symptoms-based approach. However, this can be difficult because many disorders have overlapping symptoms. Connectomics has been used to find neuromarkers associated with social anxiety disorder (SAD) at a high precision rate in improving related symptoms. This is an expanding field and there is room for greater application to mental health disorders and brain malfunction, in which current research is building on neural networks and the psychopathology involved.
 
@@ -118,4 +109,24 @@ An online database known as MouseLight displays over 1000 neurons mapped in the 
 Mice models in the lab have provided insight into genetic brain disorders, one study manipulated mice with a deletion of 22q11.2 (chromosome 22, a likely known genetic risk factor that leads to schizophrenia). The findings of this study showed that this impaired neural activity in mice's working memory is similar to what it does in humans.
 
 <h4 style="margin-bottom: 0"><u>4.3 Human Connectome Project</u></h4> 
-TO BE CONTINUED ...
+The Human Connectome Project (HCP), launched in 2009 by the National Institutes of Health, aimed to construct a comprehensive map of neural connections in the human brain. The project utilized advanced neuroimaging techniques, primarily diffusion MRI and resting-state functional MRI, to analyze brain connectivity patterns across a large cohort of healthy adults. Through the development of specialized acquisition protocols and analysis pipelines, the HCP has generated standardized connectivity data at approximately 2mm resolution, enabling the identification of major white matter pathways and functional networks. The project has also established protocols for data sharing, leading to the creation of a substantial open-access database of human brain connectivity.
+
+While the HCP represents a significant advancement in understanding human brain organization, it operates at a macroscopic scale, mapping connections between brain regions rather than individual neurons. Unlike the complete neural reconstructions achieved in C. elegans or Drosophila, the HCP cannot resolve individual synaptic connections or local circuit architecture. This limitation stems from the fundamental resolution constraints of MRI-based techniques.
+
+Electron microscopy reconstruction of human brain tissue offers the potential for synapse-level mapping of neural circuits. Modern EM techniques can achieve resolutions below 5nm, sufficient to identify individual synaptic vesicles and postsynaptic densities. However, scaling these approaches to human brain volumes presents substantial technical challenges. At current imaging speeds and computational capabilities, it would take an estimated several thousand years to fully map a human brain at the synaptic level. Mapping just 1 cubic millimeter of brain tissue currently takes months of imaging time and generates petabytes of data requiring extensive processing. 
+
+**Expansion microscopy**  
+Recent advances in expansion microscopy (ExM) offer promising solutions to accelerate human connectome mapping. ExM physically enlarges biological specimens while maintaining their structural integrity, allowing conventional microscopes to achieve effective nanoscale resolution. When combined with light microscopy, ExM can image larger volumes of tissue much faster than traditional EM approaches. The technique works by embedding tissue in a swellable polymer that expands uniformly, increasing the physical size of the specimen while preserving relative spatial relationships between cellular structures. This physical magnification enables imaging of synaptic proteins and other nanoscale features using standard light microscopes.
+
+
+<p align="center"><img src="/images/exm.jpg" alt="Alt text" style="max-width: 80%; height: auto; border-radius: 10px; mix-blend-mode: multiply;"></p>
+<div style="width: 80%; margin: auto; text-align: center;">
+  <p><b>Figure 1:</b>High-level MRI conectome of the human brain.</p>
+</div>
+
+Several labs have demonstrated successful expansion of human brain tissue samples by factors of 4-20x, achieving effective resolutions down to ~25nm. At these scales, individual synapses become clearly visible under conventional microscopes. The faster imaging speeds of light microscopy, combined with the ability to process larger tissue volumes simultaneously, could potentially reduce the time required for human connectome mapping by orders of magnitude. While challenges remain in handling the expanded specimens and processing the resulting data, ExM represents a promising path toward making comprehensive human connectome mapping more tractable within reasonable timeframes.
+
+
+
+
+
