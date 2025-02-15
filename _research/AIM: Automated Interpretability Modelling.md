@@ -11,18 +11,18 @@ layout: post
         Gleb Razgar<br>
         <a href="mailto:gleb.razgar@gmail.com">gleb.razgar@gmail.com</a>
       </td>
-      <td align="center">
+      <!-- <td align="center">
         Simon Malzard<br>
         <a href="mailto:smalzard@turing.ac.uk">smalzard@turing.ac.uk</a>
-      </td>
-      <td align="center">
+      </td> -->
+      <!-- <td align="center">
         Piyush Ahuja<br>
         <a href="mailto:piyush@cam.ac.uk">piyush@cam.ac.uk</a>
-      </td>
-      <td align="center">
+      </td> -->
+      <!-- <td align="center">
         Nitish Mital<br>
         <a href="mailto:nitishmital@turing.ac.uk">nitishmital@turing.ac.uk</a>
-      </td>
+      </td> -->
     </tr>
   </table>
 </div>
