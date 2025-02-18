@@ -27,7 +27,7 @@ Nanoscale connectomes are the microscopic maps of neuron-to-neuron connections, 
 
 <p align="center"><img src="/images/connectome2.png" alt="Alt text" style="max-width: 70%; height: auto; border-radius: 10px;"></p>
 <div style="width: 100%; text-align: justify;"></div><br>
-<p align="center"><img src="/images/multiconn.png" alt="Alt text" style="max-width: 80%; height: auto; border-radius: 0px; mix-blend-mode: screen; filter: brightness(1.2) contrast(1.2);"></p>
+<p align="center"><img src="/images/multiconn.png" alt="Alt text" style="max-width: 80%; height: auto; border-radius: 0px; mix-blend-mode: multiply;"></p>
 
 <div style="width: 80%; margin: auto; text-align: center;">
   <p><b>Figure 2:</b>Connectome of a fruit fly (Drosophila melanogaster) obtained using Electron Microscopy, showing different neuronal types. The connectome consists of 140,000 neurons and is the size of the grain of sand.</p>
