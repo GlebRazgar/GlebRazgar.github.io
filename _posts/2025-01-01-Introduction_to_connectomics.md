@@ -49,8 +49,8 @@ Macroscale connectomes are typically mapped using diffusion-weighted magnetic re
 <p align="center"><img src="/images/connectome_line.png" alt="Alt text" style="max-width: 80%; height: auto; border-radius: 10px;"></p>
 <div style="width: 80%; margin: auto; text-align: justify;">
   <p><b>Figure 4:</b> High-level human brain connectome is mapped in a three-step process: 
-  1. Diffusion-weighted MRI (dMRI) is used to chart the brain's white matter tracts
-  2. Tractography algorithms establish the edges by tracing these pathways.
+  1. Diffusion-weighted MRI (dMRI) is used to chart the brain's white matter tracts.
+  2. Tractography algorithms establish the edges by tracing these pathways.  
   3. Nodes are defined by identifying brain regions connected by the edges.</p>
 </div><br>
 
@@ -85,7 +85,7 @@ Caenorhabditis Elegans, the humble roundworm, is the darling of connectomics. We
 <p align="center"><img src="/images/celegan.jpg" alt="Alt text" style="max-width: 80%; height: auto; border-radius: 10px; mix-blend-mode: multiply;"></p>
 <div style="width: 80%; margin: auto; text-align: center;">
   <p><b>Figure 6:</b>Connectome of a C.elecan</p>
-</div>
+</div><br>
 
 C. elegans is a staple in neuroscience for its simplicity (302 neurons & 5000 synaptic connections), but let's not overstate its utility for human brain modeling. Its neurons lack the complex electrophysiological properties and synaptic plasticity that are hallmarks of human neurons. The neurotransmitter systems in C. elegans are basic, lacking the intricate signaling pathways found in humans. While uploading its neural data is insightful, it underscores the limitations of using C. elegans to model human brain functions.
 
@@ -120,7 +120,7 @@ Mapping the human brain will require faster imaging techniques. Recent advances 
 <p align="center"><img src="/images/exm.jpg" alt="Alt text" style="max-width: 80%; height: auto; border-radius: 10px; mix-blend-mode: multiply; filter: brightness(1.2) contrast(1.1);"></p>
 <div style="width: 80%; margin: auto; text-align: center;">
   <p><b>Figure 1:</b>Expansion Microsope Proceedure.</p>
-</div>
+</div><br>
 
 
 Several labs have demonstrated successful expansion of human brain tissue samples by factors of 4-20x, achieving effective resolutions down to ~25nm. Thousands of studies have used EM at different scales, and it has been applied even to expand the whele brain in a single proceedure. At these scales, individual synapses become clearly visible under conventional microscopes. The faster imaging speeds of light microscopy, combined with the ability to process larger tissue volumes simultaneously, reduce the time required for human connectome mapping by orders of magnitude.
