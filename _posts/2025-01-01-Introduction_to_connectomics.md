@@ -30,7 +30,7 @@ Nanoscale connectomes are the microscopic maps of neuron-to-neuron connections, 
 <div style="width: 100%; text-align: justify;"></div><br>
 <p align="center"><img src="/images/multiconn.png" alt="Alt text" style="max-width: 80%; height: auto; border-radius: 0px; mix-blend-mode: multiply;"></p>
 
-<div style="width: 80%; margin: auto; text-align: center;">
+<div style="width: 80%; margin: auto; text-align: justify;">
   <p><b>Figure 1:</b> Connectome of a fruit fly (Drosophila melanogaster) obtained using Electron Microscopy, showing different neuronal types. The connectome consists of 140,000 neurons and is the size of the grain of sand.</p>
 </div>
 
@@ -38,8 +38,8 @@ Electron microscopy reigns supreme in spatial resolution, making it essential fo
 
 <p align="center"><img src="/images/ssm.png" alt="Alt text" style="max-width: 80%; height: auto; border-radius: 0px; mix-blend-mode: multiply;"></p>
 
-<div style="width: 80%; margin: auto; text-align: center;">
-  <p><b>Figure 2:</b> Illustration showing how the fruit fly connecome like the one above was obtained. This involves slicing the fly's brain into ultra-thin sections and imaging each section with an electron microscope after which a semi-supervised cellular classifier creates a detailed 3D reconstruction of neural structures.</p>
+<div style="width: 80%; margin: auto; text-align: justify;">
+  <p><b>Figure 2:</b> Illustration showing how the fruit fly connectome, like the one above, was obtained. This involves slicing the fly's brain into ultra-thin sections and imaging each section with an electron microscope, after which a semi-supervised cellular classifier creates a detailed 3D reconstruction of neural structures.</p>
 </div>
 
 
@@ -47,13 +47,19 @@ Electron microscopy reigns supreme in spatial resolution, making it essential fo
 Macroscale connectomes are typically mapped using diffusion-weighted magnetic resonance imaging (dMRI) and functional magnetic resonance imaging (fMRI). dMRI is like the Google Maps of the brain, charting the main highways of white matter that connect the cortex to the subcortex. It does this by tracking the diffusion of water molecules, which reveal the orientation of these neural pathways. When paired with tractography, dMRI doesn't just stop at mapping; it reconstructs the brain's white matter tracts by measuring water diffusion in multiple directions, estimating local fiber orientations, and modeling the brain's fiber pathways. Tractography algorithms then take the baton, tracing the probable routes of these pathways to sketch out the brain's anatomical connectivity. From this data, we can extract metrics like fractional anisotropy (FA), mean diffusivity (MD), and connectivity strength, which help us assess the microstructural properties of white matter and quantify the robustness of long-range connections between brain regions. 
 
 <p align="center"><img src="/images/connectome_line.png" alt="Alt text" style="max-width: 80%; height: auto; border-radius: 10px;"></p>
-<div style="width: 100%; margin: auto; text-align: justify;"></div><br>
+<div style="width: 80%; margin: auto; text-align: center;">
+  <p><b>Figure 4:</b> High-level human brain connectome is mapped in a three-step process: 
+  1. Diffusion-weighted MRI (dMRI) is used to chart the brain's white matter tracts
+  2. Tractography algorithms establish the edges by tracing these pathways.
+  3. Nodes are defined by identifying brain regions connected by the edges.</p>
+</div>
+
 
 So, you've got your brain imaging data. What next? Turn it into a graph neural network (GNN) to make it functional. Imagine each brain region as a node and the white matter connections as edges. The weights? They come from metrics like FA values or fiber counts. This graph setup lets us use GNN algorithms to dissect the brain's network dynamics, spot clusters of tightly-knit regions, and trace the flow of information through neural circuits. The beauty of the GNN framework lies in its dual ability to map the structural layout of brain connections and to learn how activity zips through the network. This computational method is poweful for systematically exploring brain organization and function at the network level.
 
 <p align="center"><img src="/images/matricies.png" alt="Alt text" style="max-width: 80%; height: auto; border-radius: 10px; mix-blend-mode: multiply;"></p>
 <div style="width: 80%; margin: auto; text-align: center;">
-  <p><b>Figure 4:</b>High-level MRI conectome of the human brain.</p>
+  <p><b>Figure 5:</b> Connectivity matrices of different species.</p>
 </div>
 
 <hr style="border-top: 1px solid black;">
@@ -61,10 +67,6 @@ So, you've got your brain imaging data. What next? Turn it into a graph neural n
 <h3 align="center">3. Applications</h3>
 
 By comparing the connectomes of the diseased and the healthy, we can glean insights into psychopathologies like neuropathic pain and potential therapies. Connectomics offers a window into the tangled web of mental illnesses and brain disorders. Advanced imaging technologies enhance our ability to track and even predict diseases based on historical data, though this is a time-consuming endeavor. Take schizophrenia and bipolar disorder, for instance—both share genetic roots, and studies show that individuals with higher polygenic scores for these conditions exhibit reduced connectivity in neuroimaging. This research marries imaging with genetics to probe the origins and outcomes of genetically linked disorders. Another study corroborates the link between connectivity and disease likelihood, noting that schizophrenia patients have less structurally complete brain networks. The Achilles' heel of connectomics is its current inability to capture whole-brain networks, complicating the task of drawing definitive cause-and-effect conclusions about neural pathways. While connectomics has been applied to stroke patients via MRI, the paucity of research in this niche means we can't yet make sweeping claims about strokes and connectivity. Some findings suggest a link between poor connectivity in the language system and motor coordination issues, but the evidence isn't robust enough for bold assertions. Behavioral disorders pose their own challenges, often diagnosed and treated based on symptoms that overlap across conditions. Connectomics has identified neuromarkers for social anxiety disorder (SAD) with high precision, improving symptom management. This burgeoning field holds promise for broad applications in all-things brain function related, as current research continues to build on neural networks and the associated psychopathology.
-
-
-<p align="center"><img src="/images/em.png" alt="Alt text" style="max-width: 80%; height: auto; border-radius: 0px; mix-blend-mode: multiply;"></p>
-
 
 When you compare the connectomes of healthy women and men, the data reveals something intriguing: women's connectomes are not just slightly better connected, but significantly so. They boast more edges, a higher minimum bipartition width, a larger eigengap, and a greater minimum vertex cover. In simpler terms, women's brains are like a finely tuned network machine, with fewer communication bottlenecks and superior expansion capabilities. The minimum bipartition width, a metric borrowed from computer network design, indicates how well a network can handle communication without congestion. A larger eigengap suggests that women's connectomes are better at expanding, akin to a network that can grow without losing its coherence. These factors collectively highlight a superior network connectivity in female braingraphs, offering a fascinating glimpse into the intricacies of human brain networks.
 
@@ -82,7 +84,7 @@ Caenorhabditis Elegans, the humble roundworm, is the darling of connectomics. We
 
 <p align="center"><img src="/images/celegan.jpg" alt="Alt text" style="max-width: 80%; height: auto; border-radius: 10px; mix-blend-mode: multiply;"></p>
 <div style="width: 80%; margin: auto; text-align: center;">
-  <p><b>Figure X:</b>Connectome of a C.elecan</p>
+  <p><b>Figure 6:</b>Connectome of a C.elecan</p>
 </div>
 
 C. elegans is a staple in neuroscience for its simplicity (302 neurons & 5000 synaptic connections), but let's not overstate its utility for human brain modeling. Its neurons lack the complex electrophysiological properties and synaptic plasticity that are hallmarks of human neurons. The neurotransmitter systems in C. elegans are basic, lacking the intricate signaling pathways found in humans. While uploading its neural data is insightful, it underscores the limitations of using C. elegans to model human brain functions.
