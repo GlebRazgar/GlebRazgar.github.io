@@ -7,7 +7,8 @@ ML & Neurotech/acc    I     Talking all things transhumanism     I     P(AIB)=P(
 <h2 class="section-title">Research</h2>
 
 <ul class="research-list">
-{% for research in site.research %}
+{% assign sorted_research = site.research | sort: 'date' | reverse %}
+{% for research in sorted_research %}
   <li>
     <a href="{{ research.url }}">{{ research.title }}</a> - {{ research.date | date: "%B %d, %Y" }}
   </li>
@@ -17,7 +18,8 @@ ML & Neurotech/acc    I     Talking all things transhumanism     I     P(AIB)=P(
 <h2 class="section-title">Posts</h2>
 
 <ul class="posts-list">
-{% for post in site.posts %}
+{% assign sorted_posts = site.posts | sort: 'date' | reverse %}
+{% for post in sorted_posts %}
   <li>
     <a href="{{ post.url }}">{{ post.title }}</a> - {{ post.date | date: "%B %d, %Y" }}
   </li>
