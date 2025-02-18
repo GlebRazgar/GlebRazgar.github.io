@@ -29,7 +29,7 @@ Nanoscale connectomes are the microscopic maps of neuron-to-neuron connections, 
 <div style="width: 100%; margin: auto; text-align: justify;"></div><br>
 
 <div style="width: 80%; margin: auto; text-align: center;">
-  <p><b>Figure 1:</b>Connectome of a fruit fly obtained through electron microscopy imaging</p>
+  <p><b>Figure 1:</b>Connectome of a fruit fly (Drosophila melanogaster) using Electron Microscopy. The connectome consists of 140,000 neurons and is the size of the grain of sand.</p>
 </div>
 
 Electron microscopy reigns supreme in spatial resolution, making it essential for capturing the intricate dance of presynaptic and postsynaptic sites along with their delicate morphological nuances. However, this supremacy is not without challengers. X-ray nanotomography, which utilizes a synchrotron source to achieve sub-100 nm resolution, is gaining popularity. Its appeal lies in its ability to bypass the need for heavy metal staining and physical sectioning, offering potential for further refinement. In contrast, conventional light microscopy remains limited by diffraction, resulting in lower resolution, a topic I will delve into later. There are other methods methods bein tested, for instance stimulated emission depletion (STED) microscopy, which reconstructs neurites and identifies synaptic connections using fluorescent markers, but their resolution (130nm+) or mapping speed tends to render them less applicable.
