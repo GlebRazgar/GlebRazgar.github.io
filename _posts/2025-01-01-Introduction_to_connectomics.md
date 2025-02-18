@@ -32,7 +32,7 @@ Nanoscale connectomes are the microscopic maps of neuron-to-neuron connections, 
 
 <div style="width: 80%; margin: auto; text-align: justify;">
   <p><b>Figure 1:</b> Connectome of a fruit fly (Drosophila melanogaster) obtained using Electron Microscopy, showing different neuronal types. The connectome consists of 140,000 neurons and is the size of the grain of sand.</p>
-</div>
+</div><br>
 
 Electron microscopy reigns supreme in spatial resolution, making it essential for capturing the intricate dance of presynaptic and postsynaptic sites along with their delicate morphological nuances. However, this supremacy is not without challengers. X-ray nanotomography, which utilizes a synchrotron source to achieve sub-100 nm resolution, is gaining popularity. Its appeal lies in its ability to bypass the need for heavy metal staining and physical sectioning, offering potential for further refinement. In contrast, conventional light microscopy remains limited by diffraction, resulting in lower resolution, a topic I will delve into later. There are other methods methods bein tested, for instance stimulated emission depletion (STED) microscopy, which reconstructs neurites and identifies synaptic connections using fluorescent markers, but their resolution (130nm+) or mapping speed tends to render them less applicable.
 
@@ -40,19 +40,19 @@ Electron microscopy reigns supreme in spatial resolution, making it essential fo
 
 <div style="width: 80%; margin: auto; text-align: justify;">
   <p><b>Figure 2:</b> Illustration showing how the fruit fly connectome, like the one above, was obtained. This involves slicing the fly's brain into ultra-thin sections and imaging each section with an electron microscope, after which a semi-supervised cellular classifier creates a detailed 3D reconstruction of neural structures.</p>
-</div>
+</div><br>
 
 
 <h4 style="margin-bottom: 0"><u>2.1 Macroscale Connectomics</u></h4> 
 Macroscale connectomes are typically mapped using diffusion-weighted magnetic resonance imaging (dMRI) and functional magnetic resonance imaging (fMRI). dMRI is like the Google Maps of the brain, charting the main highways of white matter that connect the cortex to the subcortex. It does this by tracking the diffusion of water molecules, which reveal the orientation of these neural pathways. When paired with tractography, dMRI doesn't just stop at mapping; it reconstructs the brain's white matter tracts by measuring water diffusion in multiple directions, estimating local fiber orientations, and modeling the brain's fiber pathways. Tractography algorithms then take the baton, tracing the probable routes of these pathways to sketch out the brain's anatomical connectivity. From this data, we can extract metrics like fractional anisotropy (FA), mean diffusivity (MD), and connectivity strength, which help us assess the microstructural properties of white matter and quantify the robustness of long-range connections between brain regions. 
 
 <p align="center"><img src="/images/connectome_line.png" alt="Alt text" style="max-width: 80%; height: auto; border-radius: 10px;"></p>
-<div style="width: 80%; margin: auto; text-align: center;">
+<div style="width: 80%; margin: auto; text-align: justify;">
   <p><b>Figure 4:</b> High-level human brain connectome is mapped in a three-step process: 
   1. Diffusion-weighted MRI (dMRI) is used to chart the brain's white matter tracts
   2. Tractography algorithms establish the edges by tracing these pathways.
   3. Nodes are defined by identifying brain regions connected by the edges.</p>
-</div>
+</div><br>
 
 
 So, you've got your brain imaging data. What next? Turn it into a graph neural network (GNN) to make it functional. Imagine each brain region as a node and the white matter connections as edges. The weights? They come from metrics like FA values or fiber counts. This graph setup lets us use GNN algorithms to dissect the brain's network dynamics, spot clusters of tightly-knit regions, and trace the flow of information through neural circuits. The beauty of the GNN framework lies in its dual ability to map the structural layout of brain connections and to learn how activity zips through the network. This computational method is poweful for systematically exploring brain organization and function at the network level.
