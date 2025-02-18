@@ -8,7 +8,7 @@ layout: post
 <br>
 
 <h3 align="center">1. Connectomics Overview</h3>
-Death is bad engineering...
+Death is bad engineering.
 
 Our brain - the jewl of conciseness - is a dynamic function. One that is dependant on it's temporal dynamics, neuronal activations and synaptic weights. As you could imagine, being able to model such a function would be **UN-PRECEDENTED**. To model the brains is to simulate it. And simulating the brain gives us the ability to emulate **meantal disorders**, **brain disease**, **drug responses** and possibly one day **<u>transgress death</u>**.
 
@@ -31,7 +31,7 @@ Nanoscale connectomes are the microscopic maps of neuron-to-neuron connections, 
 <p align="center"><img src="/images/multiconn.png" alt="Alt text" style="max-width: 80%; height: auto; border-radius: 0px; mix-blend-mode: multiply;"></p>
 
 <div style="width: 80%; margin: auto; text-align: center;">
-  <p><b>Figure 2:</b>Connectome of a fruit fly (Drosophila melanogaster) obtained using Electron Microscopy, showing different neuronal types. The connectome consists of 140,000 neurons and is the size of the grain of sand.</p>
+  <p><b>Figure 1:</b> Connectome of a fruit fly (Drosophila melanogaster) obtained using Electron Microscopy, showing different neuronal types. The connectome consists of 140,000 neurons and is the size of the grain of sand.</p>
 </div>
 
 Electron microscopy reigns supreme in spatial resolution, making it essential for capturing the intricate dance of presynaptic and postsynaptic sites along with their delicate morphological nuances. However, this supremacy is not without challengers. X-ray nanotomography, which utilizes a synchrotron source to achieve sub-100 nm resolution, is gaining popularity. Its appeal lies in its ability to bypass the need for heavy metal staining and physical sectioning, offering potential for further refinement. In contrast, conventional light microscopy remains limited by diffraction, resulting in lower resolution, a topic I will delve into later. There are other methods methods bein tested, for instance stimulated emission depletion (STED) microscopy, which reconstructs neurites and identifies synaptic connections using fluorescent markers, but their resolution (130nm+) or mapping speed tends to render them less applicable.
@@ -39,7 +39,7 @@ Electron microscopy reigns supreme in spatial resolution, making it essential fo
 <p align="center"><img src="/images/ssm.png" alt="Alt text" style="max-width: 80%; height: auto; border-radius: 0px; mix-blend-mode: multiply;"></p>
 
 <div style="width: 80%; margin: auto; text-align: center;">
-  <p><b>Figure 2:</b>Animation showing the process of electron microscopy imaging. The microscope scans across brain tissue in sequential slices, and a semi-supervised cellular classifier creates a detailed 3D reconstruction of neural structures.</p>
+  <p><b>Figure 2:</b> Illustration showing how the fruit fly connecome like the one above was obtained. This involves slicing the fly's brain into ultra-thin sections and imaging each section with an electron microscope after which a semi-supervised cellular classifier creates a detailed 3D reconstruction of neural structures.</p>
 </div>
 
 
