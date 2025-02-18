@@ -1,6 +1,6 @@
 ---
 title: "Super-Resoluting BCIs Via Cross-Modal Transfer"
-date: 2024-12-21
+date: 2024-12-20
 layout: post
 ---
 <br>
