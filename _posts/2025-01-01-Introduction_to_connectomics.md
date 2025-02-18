@@ -35,7 +35,7 @@ Nanoscale connectomes are the microscopic maps of neuron-to-neuron connections, 
 
 Electron microscopy reigns supreme in spatial resolution, making it essential for capturing the intricate dance of presynaptic and postsynaptic sites along with their delicate morphological nuances. However, this supremacy is not without challengers. X-ray nanotomography, which utilizes a synchrotron source to achieve sub-100 nm resolution, is gaining popularity. Its appeal lies in its ability to bypass the need for heavy metal staining and physical sectioning, offering potential for further refinement. In contrast, conventional light microscopy remains limited by diffraction, resulting in lower resolution, a topic I will delve into later. There are other methods methods bein tested, for instance stimulated emission depletion (STED) microscopy, which reconstructs neurites and identifies synaptic connections using fluorescent markers, but their resolution (130nm+) or mapping speed tends to render them less applicable.
 
-<p align="center"><img src="/images/section.jpg" alt="Alt text" style="max-width: 80%; height: auto; border-radius: 0px; mix-blend-mode: darken;"></p>
+<p align="center"><img src="/images/section.jpg" alt="Alt text" style="max-width: 80%; height: auto; border-radius: 0px; mix-blend-mode: screen;"></p>
 
 <div style="width: 80%; margin: auto; text-align: center;">
   <p><b>Figure 2:</b>Animation showing the process of electron microscopy imaging. The microscope scans across brain tissue in sequential slices, and a semi-supervised cellular classifier creates a detailed 3D reconstruction of neural structures.</p>
