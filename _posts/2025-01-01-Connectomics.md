@@ -1,6 +1,6 @@
 ---
 title: "Connectomics: Modelling The Mind"
-date: 2025-01-10
+date: 2025-02-15
 layout: post
 ---
 
