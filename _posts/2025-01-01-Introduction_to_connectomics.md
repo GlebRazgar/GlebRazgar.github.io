@@ -10,7 +10,7 @@ layout: post
 <h3 align="center">1. Connectomics Overview</h3>
 Death is bad engineering.
 
-Our brain (the jewl of conciseness) is a dynamic function. One that is dependant on it's temporal states, nodes and wiring. As you could imagine, being able to model such a function would be **UN-PRECEDENTED**. To model the brains manifold is to simulate it. And simulating the brain gives us the ability to emulate meantal disorders, brain disease, drug effects and possibly one day transgress death.
+Our brain - the jewl of conciseness - is a dynamic function. One that is dependant on it's temporal states, activations and wiring weights. As you could imagine, being able to model such a function would be **UN-PRECEDENTED**. To model the brains is to simulate it. And simulating the brain gives us the ability to emulate **meantal disorders**, **brain disease**, **drug effects** and possibly one day <u>**transgress death**</u>.
 
 Connectomics is a discipline that tries to create such brain upload. To be concrete, connectomics is the production and study of connectomes: maps of connections within an organism’s nervous system. More generally, it can be thought of as the study of neuronal wiring diagrams with a focus on how structural connectivity, individual synapses, cellular morphology, and cellular ultrastructure contribute to the make up of a network. Because these structures are extremely complex, methods within this field use a high-throughput application of functional and structural neural imaging in order to increase the speed, efficiency, and resolution of these nervous system maps.
 
