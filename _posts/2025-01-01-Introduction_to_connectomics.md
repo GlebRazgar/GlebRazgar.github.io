@@ -8,7 +8,7 @@ layout: post
 <br>
 
 <h3 align="center">1. Connectomics Overview</h3>
-Death is bad engineering.
+Death is bad engineering...
 
 Our brain - the jewl of conciseness - is a dynamic function. One that is dependant on it's temporal dynamics, neuronal activations and synaptic weights. As you could imagine, being able to model such a function would be **UN-PRECEDENTED**. To model the brains is to simulate it. And simulating the brain gives us the ability to emulate **meantal disorders**, **brain disease**, **drug responses** and possibly one day **<u>transgress death</u>**.
 
@@ -53,7 +53,7 @@ So, you've got your brain imaging data. What next? Turn it into a graph neural n
 
 <p align="center"><img src="/images/matricies.png" alt="Alt text" style="max-width: 80%; height: auto; border-radius: 10px; mix-blend-mode: multiply;"></p>
 <div style="width: 80%; margin: auto; text-align: center;">
-  <p><b>Figure 1:</b>High-level MRI conectome of the human brain.</p>
+  <p><b>Figure 4:</b>High-level MRI conectome of the human brain.</p>
 </div>
 
 <hr style="border-top: 1px solid black;">
