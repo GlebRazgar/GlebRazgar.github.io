@@ -1,6 +1,6 @@
 ---
 title: "Breathing ASI Into Sand"
-date: 2025-01-15
+date: 2024-10-35
 layout: post
 ---
 
