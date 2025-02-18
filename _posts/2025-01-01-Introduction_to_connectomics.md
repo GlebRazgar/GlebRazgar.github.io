@@ -25,7 +25,8 @@ Generally speaking, we can split connectomes into two categories: low-resolution
 <h4 style="margin-bottom: 0"><u>2.1 Nanoscale Connectomics</u></h4> 
 Nanoscale connectomes are the microscopic maps of neuron-to-neuron connections, captured in tiny volumes of nervous tissue. Electron microscopy (EM) is the tool of choice here, offering the precision to see individual synapses. Back in 1986, the first full nervous system connectome was painstakingly mapped for C. elegans, using hand-annotating EM scans. Fast forward to today, and EM technology has evolved—improvements in image capture, alignment, and data labelling now allow us to map larger volumes with ease. EM has been pivotal in creating connectomes from various samples, including the entire brain and ventral nerve cord of adult fruit flies (Drosophila melanogaster) and sections of mouse and human cortex. The NIH is now ambitiously working on an EM connectome of a whole mouse brain.
 
-<p align="center"><img src="/images/connectome2.png" alt="Alt text" style="max-width: 45%; height: auto; border-radius: 0px;"></p>
+<p align="center" style="margin-bottom: 0;"><img src="/images/connectome2.png" alt="Alt text" style="max-width: 45%; height: auto; border-radius: 0px;"></p>
+
 <div style="width: 100%; text-align: justify;"></div><br>
 <p align="center"><img src="/images/multiconn.png" alt="Alt text" style="max-width: 80%; height: auto; border-radius: 0px; mix-blend-mode: multiply;"></p>
 
