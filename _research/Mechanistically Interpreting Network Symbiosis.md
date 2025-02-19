@@ -78,4 +78,4 @@ Smaller networks have the propensity to learn concepts easily, so, motivated by 
 <h4 style="margin-bottom: 0"><u>4.3 Results </u></h4>
 BLa Bla Bla
 
-<p align="center"><img src="../images/polysemanticity.png" alt="Alt text" style="max-width: 100%; height: auto; mix-blend-mode: multiply;"></p>
+<p align="center"><img src="../images/confusion_matrix.png" alt="Alt text" style="max-width: 100%; height: auto; mix-blend-mode: multiply;"></p>
