@@ -1,20 +1,46 @@
 ---
 title: "Mechanistic Interpretability Through Network Symbiosis"
-date: 2024-10-15
+date: 2024-11-15
 layout: post
 ---
 
-Some of the most important transitional points in the history of science have been moement when we quantized the world. Much like zooming into sub-attomic interractions has brought us nuclear power, zooming into neuronal interractions holds promise in bringing us more capable intelligence.
+<br>
+<div class="table-container">
+  <table>
+    <tr>
+      <td align="center">
+        Gleb Razgar<br>
+        <a href="mailto:gleb.razgar@gmail.com">gleb.razgar@gmail.com</a>
+      </td>
+      <td align="center">
+        Hiroki Kozuki<br>
+        <a href="mailto:hirokozuki@icl.ac.uk">hirokozuki@icl.ac.uk</a>
+      </td>
+    </tr>
+  </table>
+</div>
 
-Hitherto, network interpretability has been studies through two key lenses: Representational and Mechanistic. Both deal with different units of analyis. Representation engineering (RepE) studies high level network effects (top-down), whilst Mechanistic Interpretability (MI), similarly to physics, takes an axiomatic approach and tries to look into the network's constituents at their quanta (bottom-up). Though mechanistic view of networks is vastly more precise, representation engineering has found more practical applications. 
-MI allowed us to zoom into networks, but scaling it's attomic precision for practical applications has not yet been done. In this post I propose a new, automated approach which builds on mechanistic precision but acts to make it practical as-if via representation modeling. 
-
-<!-- width 750 is the perfect width for the blogs. height should be ~400 -->
-<p align="center"><img src="../images/SymbioteNet.png" alt="Alt text" width="750" height="450" style="border-radius: 10px;"></p>
-*<center>[SymbioteNet inhibiting a CNN]</center>*
+<h3 align="center">1. Background </h3>
 
 
----
+AIs read our thoughts. Literally. In the context of neuroscience this is ever more so. For people with Brain Computer Interfaces (BCIs), AI doesnt just read their thoughts - it reads their intentions - and soon will be able to control them.
+
+Learning to read and control AIs intentions before AI learns to control ours is a logical goal we should strive to accomplish. But how do we?
+
+Hirerto, interpreting and steering AI's has mainly been done through two key lenses: Mechanistic and Representational. Both deal with different units of analysis. [Representation engineering](https://glebrazgar.github.io/2025/01/10/RepE.html) (RepE) is a top-down study of the network effects exibited by the populations of neurons, whilst Mechanistic Interpretability (MI), is a bottom-up study attempting to reverse engineer those effects from individual neurons and circuits. MI is precise but impractical, RepE is practical but imprecise. If we were to make it practica and precise to controll AI models, both of the techniques are insufficient. To solve this we [Hiro Kozuki](https://www.linkedin.com/in/hiroki-kozuki/) propose network symbiosis as a possible solution. 
+
+<p align="center"><img src="../images/SymbioteNet.png" alt="Alt text" style="max-width: 50%; height: auto; mix-blend-mode: multiply;"></p>
+
+<hr style="border-top: 1px solid black;">
+
+<h3 align="center">2. Network Symbiosis </h3>
+
+To understand network Symbiosis consider brain computer interfaces. Putting neuro-plasticity aside BCIs learn your neuronal representations that map to a desired output. The idea behind Symbiotic networks is similar. You have a primary network (akin to the brain) and a secondary network (akin to Neuralink). 
+
+- BCIs for networks.  
+- Functional Overview.
+
+<h3 align="center">3. Interpreting Networks </h3>
 
 One of the earliest frameworks for Mechanistic universality was proposed by Chris Olah, who outlined three fundamental claims.
 
