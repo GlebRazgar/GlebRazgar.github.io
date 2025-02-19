@@ -29,7 +29,11 @@ Learning to read and control AIs intentions before AI learns to control ours is 
 
 Hirerto, interpreting and steering AI's has mainly been done through two key lenses: Mechanistic and Representational. Both deal with different units of analysis. [Representation engineering](https://glebrazgar.github.io/2025/01/10/RepE.html) (RepE) is a top-down study of the network effects exibited by the populations of neurons, whilst Mechanistic Interpretability (MI), is a bottom-up study attempting to reverse engineer those effects from individual neurons and circuits. MI is precise but impractical, RepE is practical but imprecise. If we were to make it practica and precise to controll AI models, both of the techniques are insufficient. To solve this we propose network Symbiosis as a possible solution. 
 
-<p align="center"><img src="../images/SymbioteNet.png" alt="Alt text" style="max-width: 100%; height: auto; mix-blend-mode: multiply;"></p>
+<p align="center"><img src="../images/SymbioteNet.png" alt="Alt text" style="max-width: 90%; height: auto; mix-blend-mode: multiply;"></p>
+
+<div style="width: 80%; margin: auto; text-align: justify;">
+  <p><b>Figure 1:</b> SymbioteNet (left) steering the primary neural network (right) by inhibiting it's representations</p>
+</div>
 
 <hr style="border-top: 1px solid black;">
 
@@ -74,6 +78,9 @@ These claims have been shown to be true across the networks, even though by caus
 Before scaling to larger networks like transformers we conducted our experiment on the setup discribed in Section 2. Having trained and frozen the weights of the Primary MNIST CNN, we taught the SymbioteNet to inhibit each digit itteratively without missclassifying the un-stated digit until it's turn.   
 
 <p align="center"><img src="../images/training.png" alt="Alt text" style="max-width: 80%; height: auto; mix-blend-mode: multiply;"></p>
+<div style="width: 80%; margin: auto; text-align: justify;">
+  <p><b>Figure 2:</b> Training and validation Loss of SymbioteNet. A can be extrapolated from the validation loss, it takes the model significantly longer to learn the weight representations than to memorize the data.</p>
+</div>
 
 <h4 style="margin-bottom: 0"><u>4.2 Polysemanticity </u></h4>
 Smaller networks have the propensity to learn concepts easily, so, motivated by the BIMT paper, we induce polysemanticity by progressively preuning the waker weights away during training of the Primary network (Figure3). This forces the network to become more parameter efficient and forces concepts to superimpose in a mixed representation.
@@ -86,7 +93,6 @@ After training both networks and freezing their weights we test it on the un-see
 Importantly, SymbioteNet is made two times smaller than the primary network such that it is forced to learn the compressed representation of the subsidiary models weights rather than simply memorizing the digit activations. That's where the advantage of training SymbioteNet on the CNNs weights rather than activations really shines.
 
 <p align="center"><img src="../images/confusion_matrix.png" alt="Alt text" style="max-width: 60%; height: auto; mix-blend-mode: multiply;"></p>
-
 
 
 
