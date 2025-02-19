@@ -29,81 +29,53 @@ Learning to read and control AIs intentions before AI learns to control ours is 
 
 Hirerto, interpreting and steering AI's has mainly been done through two key lenses: Mechanistic and Representational. Both deal with different units of analysis. [Representation engineering](https://glebrazgar.github.io/2025/01/10/RepE.html) (RepE) is a top-down study of the network effects exibited by the populations of neurons, whilst Mechanistic Interpretability (MI), is a bottom-up study attempting to reverse engineer those effects from individual neurons and circuits. MI is precise but impractical, RepE is practical but imprecise. If we were to make it practica and precise to controll AI models, both of the techniques are insufficient. To solve this we [Hiro Kozuki](https://www.linkedin.com/in/hiroki-kozuki/) propose network symbiosis as a possible solution. 
 
-<p align="center"><img src="../images/SymbioteNet.png" alt="Alt text" style="max-width: 80%; height: auto; mix-blend-mode: multiply;"></p>
+<p align="center"><img src="../images/SymbioteNet.png" alt="Alt text" style="max-width: 100%; height: auto; mix-blend-mode: multiply;"></p>
 
-<hr style="border-top: 1px solid black;">
 
 <h3 align="center">2. Network Symbiosis </h3>
 
+<h4 style="margin-bottom: 0"><u>2.1 Intuition </u></h4>
 To understand network Symbiosis consider brain computer interfaces. Putting neuro-plasticity aside BCIs learn your brain representations that map to a desired output. The idea behind Symbiotic networks is similar. There are always at least two networks involved (Figure 1):  
 1. Primary feed-forward network - acting like the brain
 2. Symbiote feed-forward network - acting like the BCI
 
 The Primary network is trained to map input to output as per usual, whilst the SymbioteNet uses the Primaries models activations or weights as it's input and tries to manipulate them to get the Primary network to behave in the desired fashion.
 
-A simple example would illustrate the setup. Like in Figure1 say we're training a classic MNIST CNN to classify digits 1-10. Once we've trained the Primarty CNN, we would then train a SymbioteNet by feeding in a digit we would like the Primary network to missclassify and backpropagate the error depending on how well it managed to inhibit the digit (by inhibiting all the CNN's neurons apart from the once in the first and last layers). An important detail is that the cross-entropy loss should punish the model for miss-classifying ALL digits, and instead be rewarded if it classifies them all correctly except for the undesired digit. 
+<h4 style="margin-bottom: 0"><u>2.2 Example </u></h4>
+A simple example would illustrate the concept. Like in Figure1 say we're training a classic MNIST CNN to classify digits 1-10. Once we've trained the Primarty CNN, we would then train a SymbioteNet by feeding in a digit we would like the Primary network to missclassify and backpropagate the error depending on how well it managed to inhibit the digit (by inhibiting all the CNN's neurons apart from the once in the first and last layers). An important detail is that the cross-entropy loss should punish the model for miss-classifying ALL digits, and instead be rewarded if it classifies them all correctly except for the undesired digit. 
+
+
+
+
+
 
 <h3 align="center">3. Interpreting Networks </h3>
+SymbioteNet's role is to elucidate the low level representations of the Primary network. This implies being able to capture mechanistically universal concepts amongst networks first highlighted by Chris Olah and his team: 
 
-One of the earliest frameworks for Mechanistic universality was proposed by Chris Olah, who outlined three fundamental claims.
+**Claim 1: Features**
+Features are the fundamental unit of information of a network. Can SymbioteNet reveal the features of the studied model?
 
-Claim 1: Features
-Features are the fundamental unit of neural networks. They correspond to directions. These features can be rigorously studied and understood.
+**Claim 2: Circuits**
+Features are connected by weights, forming circuits. Can SymbioteNet reveal circuits?
 
-Claim 2: Circuits
-Features are connected by weights, forming circuits.
-These circuits can also be rigorously studied and understood.
+**Claim 3: Universality**
+Analogous features and circuits form across models and tasks. Can SymbioteNet reveal those circuits recursively?
 
-Claim 3: Universality
-Analogous features and circuits form across models and tasks.
+These claims have been shown to be true across the networks, even though by causation and with low degrees of success. SymbioteNet tries solving exactly that.
 
-These claims have recently been shown to be largely true[^1], and yet very little applicable work has sipped out of this framework.
-As such, this is my tribute to interpretability and uncovering the unknown.  
+<hr style="border-top: 1px solid black;">
 
----
+<h3 align="center">4. Experiment </h3>
+<h4 style="margin-bottom: 0"><u>4.1 Basics </u></h4>
+Before scaling to larger networks like transformers we conducted our experiment on the setup discribed in Section 2. Having trained and frozen the weights of the Primary MNIST CNN, we taught the SymbioteNet to inhibit each digit itteratively without missclassifying the un-stated digit until it's turn.
 
-High level purpose of the essay: Demonstrate the importance of analyzing networks through subsideary networks. 
+<p align="center"><img src="../images/training.png" alt="Alt text" style="max-width: 100%; height: auto; mix-blend-mode: multiply;"></p>
 
----
-# TABLE OF CONTENTS:
-Before diving into my contributions its important to consider the key mech interp techniques used to date. 
+<h4 style="margin-bottom: 0"><u>4.2 Polysemanticity </u></h4>
+Smaller networks have the propensity to learn concepts easily, so, motivated by the BIMT paper, we induce polysemanticity by progressively preuning the waker weights away during training of the Primary network (Figure3). This forces the network to become more parameter efficient and forces concepts to superimpose in a mixed representation.
+<p align="center"><img src="../images/polysemanticity.png" alt="Alt text" style="max-width: 100%; height: auto; mix-blend-mode: multiply;"></p>
 
+<h4 style="margin-bottom: 0"><u>4.3 Results </u></h4>
+BLa Bla Bla
 
-
-
-### Neurons, Circuits, Features
-- SOTA ways of doing neuron analysis
-  - Activation Atlases: Visualizing individual neuron activations across many inputs
-  - Feature Visualization: Using optimization to find inputs that maximally activate specific neurons
-  - Network Dissection: Mapping neurons to human-interpretable concepts
-  - Direct Linear Probes: Testing if specific information is directly encoded in neuron activations
-
-
-
-
-- SOTA ways of analyzing circuits
-- SOTA way of analyzing features 
-- SOTA way of analyzing Universality
-
-
-### 
-
-
-#### Some PowerShell Code
-
-```powershell
-Write-Host "This is a powershell Code block";
-
-# There are many other languages you can use, but the style has to be loaded first
-
-ForEach ($thing in $things) {
-    Write-Output "It highlights it using the GitHub style"
-}
-```
-
-
-
----
----
-References:
-[^1]: Olah, C., et al. (2020). ["Zoom In: An Introduction to Circuits."](https://distill.pub/2020/circuits/zoom-in/)
+<p align="center"><img src="../images/polysemanticity.png" alt="Alt text" style="max-width: 100%; height: auto; mix-blend-mode: multiply;"></p>
