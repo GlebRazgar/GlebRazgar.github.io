@@ -1,5 +1,5 @@
 ---
-title: "Mechanistic Interpretability Through Network Symbiosis"
+title: "Interpretability Through Network Symbiosis"
 date: 2024-11-15
 layout: post
 ---
@@ -31,6 +31,11 @@ Hirerto, interpreting and steering AI's has mainly been done through two key len
 
 <p align="center"><img src="../images/SymbioteNet.png" alt="Alt text" style="max-width: 100%; height: auto; mix-blend-mode: multiply;"></p>
 
+<hr style="border-top: 1px solid black;">
+
+
+
+
 
 <h3 align="center">2. Network Symbiosis </h3>
 
@@ -44,8 +49,7 @@ The Primary network is trained to map input to output as per usual, whilst the S
 <h4 style="margin-bottom: 0"><u>2.2 Example </u></h4>
 A simple example would illustrate the concept. Like in Figure1 say we're training a classic MNIST CNN to classify digits 1-10. Once we've trained the Primarty CNN, we would then train a SymbioteNet by feeding in a digit we would like the Primary network to missclassify and backpropagate the error depending on how well it managed to inhibit the digit (by inhibiting all the CNN's neurons apart from the once in the first and last layers). An important detail is that the cross-entropy loss should punish the model for miss-classifying ALL digits, and instead be rewarded if it classifies them all correctly except for the undesired digit. 
 
-
-
+<hr style="border-top: 1px solid black;">
 
 
 
@@ -67,15 +71,21 @@ These claims have been shown to be true across the networks, even though by caus
 
 <h3 align="center">4. Experiment </h3>
 <h4 style="margin-bottom: 0"><u>4.1 Basics </u></h4>
-Before scaling to larger networks like transformers we conducted our experiment on the setup discribed in Section 2. Having trained and frozen the weights of the Primary MNIST CNN, we taught the SymbioteNet to inhibit each digit itteratively without missclassifying the un-stated digit until it's turn.
+Before scaling to larger networks like transformers we conducted our experiment on the setup discribed in Section 2. Having trained and frozen the weights of the Primary MNIST CNN, we taught the SymbioteNet to inhibit each digit itteratively without missclassifying the un-stated digit until it's turn.   
 
-<p align="center"><img src="../images/training.png" alt="Alt text" style="max-width: 100%; height: auto; mix-blend-mode: multiply;"></p>
+<p align="center"><img src="../images/training.png" alt="Alt text" style="max-width: 80%; height: auto; mix-blend-mode: multiply;"></p>
 
 <h4 style="margin-bottom: 0"><u>4.2 Polysemanticity </u></h4>
 Smaller networks have the propensity to learn concepts easily, so, motivated by the BIMT paper, we induce polysemanticity by progressively preuning the waker weights away during training of the Primary network (Figure3). This forces the network to become more parameter efficient and forces concepts to superimpose in a mixed representation.
-<p align="center"><img src="../images/polysemanticity.png" alt="Alt text" style="max-width: 100%; height: auto; mix-blend-mode: multiply;"></p>
+<p align="center"><img src="../images/polysemanticity.png" alt="Alt text" style="max-width: 95%; height: auto; mix-blend-mode: multiply;"></p>
+
 
 <h4 style="margin-bottom: 0"><u>4.3 Results </u></h4>
-BLa Bla Bla
+After training both networks and freezing their weights we test it on the un-seen dataset by checking how many times Symbiote net manages to successfully steer the Primary network away from correctly classifying the digit 3.  
 
-<p align="center"><img src="../images/confusion_matrix.png" alt="Alt text" style="max-width: 100%; height: auto; mix-blend-mode: multiply;"></p>
+Importantly, SymbioteNet is made two times smaller than the primary network such that it is forced to learn the compressed representation of the subsidiary models weights rather than simply memorizing the digit activations. That's where the advantage of training SymbioteNet on the CNNs weights rather than activations really shines.
+
+<p align="center"><img src="../images/confusion_matrix.png" alt="Alt text" style="max-width: 60%; height: auto; mix-blend-mode: multiply;"></p>
+
+
+<h3 align="center">5. Future Work </h3>
