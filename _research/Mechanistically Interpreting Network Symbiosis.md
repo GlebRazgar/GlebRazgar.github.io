@@ -79,13 +79,15 @@ Before scaling to larger networks like transformers we conducted our experiment 
 
 <p align="center"><img src="../images/training.png" alt="Alt text" style="max-width: 80%; height: auto; mix-blend-mode: multiply;"></p>
 <div style="width: 80%; margin: auto; text-align: justify;">
-  <p><b>Figure 2:</b> Training and validation Loss of SymbioteNet. A can be extrapolated from the validation loss, it takes the model significantly longer to learn the weight representations than to memorize the data.</p>
+  <p><b>Figure 2:</b> Training and validation Loss of SymbioteNet. As can be deducted from the validation loss, it takes the model significantly longer to learn the weight representations than for the CNN to learn classification.</p>
 </div>
 
 <h4 style="margin-bottom: 0"><u>4.2 Polysemanticity </u></h4>
 Smaller networks have the propensity to learn concepts easily, so, motivated by the BIMT paper, we induce polysemanticity by progressively preuning the waker weights away during training of the Primary network (Figure3). This forces the network to become more parameter efficient and forces concepts to superimpose in a mixed representation.
 <p align="center"><img src="../images/polysemanticity.png" alt="Alt text" style="max-width: 95%; height: auto; mix-blend-mode: multiply;"></p>
-
+<div style="width: 80%; margin: auto; text-align: justify;">
+  <p><b>Figure 3:</b> Enforcement of polysemanticity through BIMT like weight preuing.</p>
+</div>
 
 <h4 style="margin-bottom: 0"><u>4.3 Results </u></h4>
 After training both networks and freezing their weights we test it on the un-seen dataset by checking how many times Symbiote net manages to successfully steer the Primary network away from correctly classifying the digit 3.  
@@ -93,8 +95,13 @@ After training both networks and freezing their weights we test it on the un-see
 Importantly, SymbioteNet is made two times smaller than the primary network such that it is forced to learn the compressed representation of the subsidiary models weights rather than simply memorizing the digit activations. That's where the advantage of training SymbioteNet on the CNNs weights rather than activations really shines.
 
 <p align="center"><img src="../images/confusion_matrix.png" alt="Alt text" style="max-width: 60%; height: auto; mix-blend-mode: multiply;"></p>
+<div style="width: 80%; margin: auto; text-align: justify;">
+  <p><b>Figure 4:</b> Confusion matrix showing SymbioteNet's success in learning the circuits of the Primary network and inhibiting them to correctly missclassify the digit 3 on command.</p>
+</div>
 
+As seen in the confusion matrix, after training SymbioteNet managed to prevent the Primary model from classifying 100% of the digits 3 from an equall data distribution. Combined with the loss observations, and equally spreading the models capacity to inhibit the weights across layers whith the exclusion of first and last. The only reasonable deduction is that SymbioteNet has learned the intrinsic representations of both features and circuits.
 
+<hr style="border-top: 1px solid black;">
 
 <h3 align="center">5. Future Work </h3>
-This brief study has just scratched the surface of symbiotic networks. The next steps in the inquiry are rooted in scaling this approach to much larger modelsl, such as transformers, as though our mimickry of polysemanticity is representitive of larger networks, transformers encode information in a different dimension of complexity.
+This brief study has just scratched the surface of symbiotic networks. The next steps in the inquiry are rooted in scaling this approach to much larger modelsl, such as transformers, as though our mimickry of polysemanticity is representitive of larger networks, transformers encode information in a different dimension of complexity. If successfully scaled to transformers it's evident that netowrk symbiosys would make for a new way to interpret and steer models. 
