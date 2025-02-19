@@ -35,10 +35,13 @@ Hirerto, interpreting and steering AI's has mainly been done through two key len
 
 <h3 align="center">2. Network Symbiosis </h3>
 
-To understand network Symbiosis consider brain computer interfaces. Putting neuro-plasticity aside BCIs learn your neuronal representations that map to a desired output. The idea behind Symbiotic networks is similar. You have a primary network (akin to the brain) and a secondary network (akin to Neuralink). 
+To understand network Symbiosis consider brain computer interfaces. Putting neuro-plasticity aside BCIs learn your brain representations that map to a desired output. The idea behind Symbiotic networks is similar. There are always at least two networks involved (Figure 1):  
+1. Primary feed-forward network - acting like the brain
+2. Symbiote feed-forward network - acting like the BCI
 
-- BCIs for networks.  
-- Functional Overview.
+The Primary network is trained to map input to output as per usual, whilst the SymbioteNet uses the Primaries models activations or weights as it's input and tries to manipulate them to get the Primary network to behave in the desired fashion.
+
+A simple example would illustrate the setup. Like in Figure1 say we're training a classic MNIST CNN to classify digits 1-10. Once we've trained the Primarty CNN, we would then train a SymbioteNet by feeding in a digit we would like the Primary network to missclassify and backpropagate the error depending on how well it managed to inhibit the digit (by inhibiting all the CNN's neurons apart from the once in the first and last layers). An important detail is that the cross-entropy loss should punish the model for miss-classifying ALL digits, and instead be rewarded if it classifies them all correctly except for the undesired digit. 
 
 <h3 align="center">3. Interpreting Networks </h3>
 
