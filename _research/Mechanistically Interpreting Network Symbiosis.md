@@ -27,7 +27,7 @@ AIs read our thoughts. Literally. In the context of neuroscience this is ever mo
 
 Learning to read and control AIs intentions before AI learns to control ours is a logical goal we should strive to accomplish. But how do we?
 
-Hirerto, interpreting and steering AI's has mainly been done through two key lenses: Mechanistic and Representational. Both deal with different units of analysis. [Representation engineering](https://glebrazgar.github.io/2025/01/10/RepE.html) (RepE) is a top-down study of the network effects exibited by the populations of neurons, whilst Mechanistic Interpretability (MI), is a bottom-up study attempting to reverse engineer those effects from individual neurons and circuits. MI is precise but impractical, RepE is practical but imprecise. If we were to make it practica and precise to controll AI models, both of the techniques are insufficient. To solve this we [Hiro Kozuki](https://www.linkedin.com/in/hiroki-kozuki/) propose network symbiosis as a possible solution. 
+Hirerto, interpreting and steering AI's has mainly been done through two key lenses: Mechanistic and Representational. Both deal with different units of analysis. [Representation engineering](https://glebrazgar.github.io/2025/01/10/RepE.html) (RepE) is a top-down study of the network effects exibited by the populations of neurons, whilst Mechanistic Interpretability (MI), is a bottom-up study attempting to reverse engineer those effects from individual neurons and circuits. MI is precise but impractical, RepE is practical but imprecise. If we were to make it practica and precise to controll AI models, both of the techniques are insufficient. To solve this we propose network Symbiosis as a possible solution. 
 
 <p align="center"><img src="../images/SymbioteNet.png" alt="Alt text" style="max-width: 100%; height: auto; mix-blend-mode: multiply;"></p>
 
@@ -88,4 +88,7 @@ Importantly, SymbioteNet is made two times smaller than the primary network such
 <p align="center"><img src="../images/confusion_matrix.png" alt="Alt text" style="max-width: 60%; height: auto; mix-blend-mode: multiply;"></p>
 
 
+
+
 <h3 align="center">5. Future Work </h3>
+This brief study has just scratched the surface of symbiotic networks. The next steps in the inquiry are rooted in scaling this approach to much larger modelsl, such as transformers, as though our mimickry of polysemanticity is representitive of larger networks, transformers encode information in a different dimension of complexity.
