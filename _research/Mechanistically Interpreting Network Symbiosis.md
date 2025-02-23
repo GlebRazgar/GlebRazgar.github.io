@@ -16,15 +16,13 @@ layout: post
   </table>
 </div>
 
-### MATS 8.0 Submission
+<h3 align="center">1. MATS 8.0 Submission! </h3>
 
-<h3 align="center">1. Background </h3>
+AIs read our thoughts. Literally. In the context of neuroscience, this is even more so. For people with Brain-Computer Interfaces (BCIs), AI doesn't just read their thoughts - it reads their representations, and can often control them.
 
-AIs read our thoughts. Literally. In the context of neuroscience, this is even more so. For people with Brain-Computer Interfaces (BCIs), AI doesn't just read their thoughts - it reads the difference between them, and can often control them.
+Hitherto, Mechanistic Interpretability researchers have been semi-manually inspecting model diffs to find circuits and features, but what if we could more reliably learn from thousands of diffs to elucidate the models circuits? 
 
-Hitherto, Mechanistic Interpretability researchers have been inspecting model diffs to find circuits and features, but what if we could more reliably learn from thousands of diffs to elucidate the circuits? 
-
-For this submission I built SymbioteNet - a model that learns neural circuits of a Primary network through active diffing. By applying and analyzing thousands of weight perturbations and their impact on model behavior, SymbioteNet systematically maps the relationship between weights and model capabilities, providing a scalable approach to mechanistic interpretability. 
+For this submission I built SymbioteNet - a model that learns neural circuits of a Primary network through active "diff" generation. By applying and analyzing thousands of weight permutations and their impact on model behavior, SymbioteNet systematically maps the relationship between weights and model capabilities, providing a scalable approach to circuit mapping. 
 
 <p align="center"><img src="../images/SymbioteNet.png" alt="Alt text" style="max-width: 90%; height: auto; mix-blend-mode: multiply;"></p>
 
@@ -41,11 +39,12 @@ For this submission I built SymbioteNet - a model that learns neural circuits of
 <h3 align="center">2. Network Symbiosis </h3>
 
 <h4 style="margin-bottom: 0"><u>2.1 Intuition </u></h4>
-To understand network Symbiosis, consider brain-computer interfaces. Putting neuroplasticity aside, BCIs effectively learn your brains "diffs", that map to a desired output. In this process the BCI's AI model leans how those diffs, correspond to a desired output. The idea behind Symbiotic networks is similar. There are always at least two networks involved (Figure 1):  
+To understand network Symbiosis, consider brain-computer interfaces. Putting neuroplasticity aside, BCIs effectively learn your brains "diffs", that map to a desired output. The idea behind Symbiotic networks is similar. There are always at least two networks involved (Figure 1):  
 1. Primary feed-forward network - acting like the brain
 2. Symbiote feed-forward network - acting like the BCI
 
-The Primary network is trained to map input to output as per usual, whilst the SymbioteNet uses the Primary model's activations or weights as its input and tries to manipulate them to get the Primary network to behave in the desired fashion.
+The Primary network is trained normally on its target task (e.g., classification). SymbioteNet then learns to generate targeted weight modifications ("diffs") to the Primary network. When given an input and a desired intervention (e.g., "inhibit the detection of feature X"), SymbioteNet produces the precise weight changes needed to achieve that intervention while preserving other capabilities of the Primary network.
+
 
 <h4 style="margin-bottom: 0"><u>2.2 Example </u></h4>
 A simple example would illustrate the concept. Like in Figure 1, say we're training a classic MNIST CNN to classify digits 1-10. Once we've trained the Primary CNN, we would then train a SymbioteNet by feeding in a digit we would like the Primary network to misclassify and backpropagate the error depending on how well it managed to inhibit the digit (by inhibiting all the CNN's neurons apart from the ones in the first and last layers). An important detail is that the cross-entropy loss should punish the model for misclassifying ALL digits and instead be rewarded if it classifies them all correctly except for the undesired digit. 
