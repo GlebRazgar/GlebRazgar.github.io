@@ -1,6 +1,6 @@
 ---
 title: "Connectomics: Modelling The Mind"
-date: 2025-02-15
+date: 2025-03-01
 layout: post
 ---
 
@@ -136,5 +136,4 @@ These complementary approaches - from sample preparation to imaging to computati
 
 
 <h3 align="center">6. The Future</h3>
-
-Having spoken to the god fathers of connectomics, it's apparent that whole human brain uploading is inevitable. We already have all the neccesary techniques to map the human brain, we just need to scale them. By the estimates of Ed Boyden, a full mapping of a human brain will follow withing the next 8 years. The biggest issue is funding. But can you place a pricing tag on digital immorality?
+There is an invisible path to the first human connectome. Cost, fidelity and speed are still to give way to this future, but once they do, massive gpu orchestras will buzz the melody of first human AIs.
