@@ -18,6 +18,96 @@ While the complete human connectome remains unmapped today, this will change in 
 
 <hr style="border-top: 1px solid black;">
 
+
+
+<h3 align="center">2. Modelling (IN WRITING!!!)</h3>
+It can be debetated as for what parts of the brain need modelling to obtain a sufficient full brain simulation. Yet, it is widely believed that just like with language models - we can likely "quantize" or approximate some of the brain features without significant loss of precision. If this holds, we should be able to achieve a nearly indistinguishable brain simulation of you or I - without the neccessity to model each atom in your brain.  
+
+To distinguish between a two - in this essay we coin a 1:1 model of the brain as an **emulation** whilst aproximate model as a **simulation**.
+
+To figure out the feasability of the full brain simulation let's first examine the brains key compnents and their functions!
+
+<div class="table-container" style="overflow-x: auto;">
+  <table cellspacing="0" cellpadding="6" border="1" style="border: 1px solid black; border-collapse: collapse;">
+    <caption style="caption-side: top; padding: 10px;"><b>Table 1.</b> Key functional companents of the brain</caption>
+    <thead>
+      <tr>
+        <th style="border: 1px solid black;">Component</th>
+        <th style="border: 1px solid black;">Class</th>
+        <th style="border: 1px solid black;">Function</th>
+        <th style="border: 1px solid black;">Location</th>
+        <th style="border: 1px solid black;">Digital Twin</th>
+        <th style="border: 1px solid black;">Approximate simulation accuracy</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="border: 1px solid black;">Astrocytes</td>
+        <td style="border: 1px solid black;">Glial Cell</td>
+        <td style="border: 1px solid black;">Maintain the permeability of the blood-brain barrier by sensing and regulating glucose and ion levels</td>
+        <td style="border: 1px solid black;">Central Nervouse System</td>
+        <td style="border: 1px solid black;">DIGITAL TWIN???</td>
+        <td style="border: 1px solid black;">ACCURACY???</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid black;">Oligodendrocytes</td>
+        <td style="border: 1px solid black;">Glial Cell</td>
+        <td style="border: 1px solid black;">Form myelin sheaths around  axons to insulate them and allow for faster impulse transduction</td>
+        <td style="border: 1px solid black;">Central Nervouse System</td>
+        <td style="border: 1px solid black;">DIGITAL TWIN???</td>
+        <td style="border: 1px solid black;">ACCURACY???</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid black;">Ependymal Cell</td>
+        <td style="border: 1px solid black;">Glial Cell</td>
+        <td style="border: 1px solid black;">Create and absorb cerebral spinal fluid (CSF). They also help to distribute neurotransmitters and hormones associated with the central nervous system</td>
+        <td style="border: 1px solid black;">Central Nervouse System</td>
+        <td style="border: 1px solid black;">DIGITAL TWIN???</td>
+        <td style="border: 1px solid black;">ACCURACY???</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid black;">Radial Glia</td>
+        <td style="border: 1px solid black;">Glial Cell</td>
+        <td style="border: 1px solid black;">Crucial in brain development. Give birth to neurons and macroglia (oligodendrocytes and astrocytes) and providing pathways for migration of neurons from the ventricular surface to their final positions in the brain</td>
+        <td style="border: 1px solid black;">Central Nervouse System</td>
+        <td style="border: 1px solid black;">DIGITAL TWIN???</td>
+        <td style="border: 1px solid black;">ACCURACY???</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid black;">Microglia</td>
+        <td style="border: 1px solid black;">Glial Cell</td>
+        <td style="border: 1px solid black;">Microglia phagocytose and remove foreign or damaged material, cells, or organisms</td>
+        <td style="border: 1px solid black;">Central Nervouse System</td>
+        <td style="border: 1px solid black;">DIGITAL TWIN???</td>
+        <td style="border: 1px solid black;">ACCURACY???</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid black;">Schwann Cells</td>
+        <td style="border: 1px solid black;">Glial Cell</td>
+        <td style="border: 1px solid black;">Surrounds neurons, keeping them alive and covering them with a myelin sheath. They play essential roles in the development, maintenance, function, and regeneration of peripheral nerves.</td>
+        <td style="border: 1px solid black;">Peripheral Nervouse System</td>
+        <td style="border: 1px solid black;">DIGITAL TWIN???</td>
+        <td style="border: 1px solid black;">ACCURACY???</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid black;">Satellite Cells</td>
+        <td style="border: 1px solid black;">Glial Cell</td>
+        <td style="border: 1px solid black;">Ensheath the somata of neuron bodies in sensory, sympathetic and parasympathetic ganglia. They supply nutrients to the surrounding neurons and also have some structural function and are thus thought to have a similar role to astrocytes in the central nervous system (CNS).</td>
+        <td style="border: 1px solid black;">Peripheral Nervouse System</td>
+        <td style="border: 1px solid black;">DIGITAL TWIN???</td>
+        <td style="border: 1px solid black;">ACCURACY???</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<br>
+
+at minor cost of precision without significant deviation from the actual persons characteristics. To understand what may be abstracted let's first run through ALL of the key brain functionalitis.  
+
+
+<hr style="border-top: 1px solid black;">
+
+
 <h3 align="center">2. Methods</h3>
 
 Generally speaking, we can split connectomes into two categories: low-resolution (~macroscale) and high-resolution (~nanoscale), each focusing on different levels of analysis. Macroscale connectomics involves the use of high-level functional and structural MRI data to map large fiber tracts and functional gray matter regions within the brain, analyzing aspects such as blood flow for functional insights and water diffusivity for structural details. On the other hand, nanoscale connectomics focuses on mapping the entire connectome of small organisms through microscopy and histology, capturing all the connections present in their central nervous systems.
@@ -137,4 +227,3 @@ These complementary approaches - from sample preparation to imaging to computati
 
 <h3 align="center">6. The Future</h3>
 There is an invisible path to the first human connectome. Cost, fidelity and speed are still to give way to this future, but once they do, massive gpu orchestras will buzz the melody of first human AIs.
-
