@@ -24,11 +24,14 @@ layout: post
   </table>
 </div>
 
-<p align="center"><img src="/images/logo_b.png
-.png" alt="Alt text" style="max-width: 60%; height: auto; border-radius: 10px;"></p>
-<br>
+<p align="center"><img src="/images/logo_b.png" alt="Alt text" style="max-width: 50%; height: auto; mix-blend-mode: multiply;"></p>
+
 
 <h3 align="center">1. Overview</h3>
+
+Duality is a startup building towards full human brain emulation.
+We automate 
+
 
 Our brain - the jewel of consciousness - is a dynamic function. One that is dependent on its temporal dynamics, neuronal activations, and synaptic weights. As you could imagine, being able to model such a function would be **UN-PRECEDENTED**. To model the brain is to simulate it. And simulating the brain gives us the ability to emulate **mental disorders**, **brain disease**, **drug responses**, and possibly one day **<u>transgress death</u>**.
 
