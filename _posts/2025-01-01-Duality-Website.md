@@ -4,7 +4,7 @@ date: 2025-03-21
 layout: post
 ---
 
-<p align="center"><img src="/images/logo_b.png" alt="Alt text" style="max-width: 10%; height: auto; mix-blend-mode: multiply;"></p>
+<p align="center"><img src="/images/logo_b.png" alt="Alt text" style="max-width: 30%; height: auto; mix-blend-mode: multiply;"></p>
 
 <br>
 <div class="table-container">
@@ -25,9 +25,6 @@ layout: post
     </tr>
   </table>
 </div>
-
-<p align="center"><img src="/images/logo_b.png" alt="Alt text" style="max-width: 50%; height: auto; mix-blend-mode: multiply;"></p>
-
 
 <h3 align="center">1. Overview</h3>
 
