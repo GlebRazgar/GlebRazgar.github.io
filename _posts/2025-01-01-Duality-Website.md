@@ -4,6 +4,8 @@ date: 2025-03-21
 layout: post
 ---
 
+<p align="center"><img src="/images/logo_b.png" alt="Alt text" style="max-width: 10%; height: auto; mix-blend-mode: multiply;"></p>
+
 <br>
 <div class="table-container">
   <table>

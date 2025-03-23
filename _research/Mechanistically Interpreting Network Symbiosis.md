@@ -20,8 +20,6 @@ layout: post
   </table>
 </div>
 
-###
-
 <h3 align="center">1. Background </h3>
 
 
