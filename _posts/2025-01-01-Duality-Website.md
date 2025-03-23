@@ -38,4 +38,4 @@ To do so, we are building two key frontiers:
 **1. Automating Uploading Engine** (to make nano-scale brain imaging 100x cheaper and 1000x faster)  
 **2. Simulation Engine** (to make brain data simulatable)
 
-For more details about our research and commercial efforts - [get in touch](linkedin.com/in/gleb-razgar-6931a7220)
+For more details about our research and commercial efforts - [get in touch](https://www.linkedin.com/in/gleb-razgar-6931a7220)
