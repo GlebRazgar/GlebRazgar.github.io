@@ -10,15 +10,15 @@ layout: post
 <div class="table-container" style="max-width: 800px; margin: auto;">
   <table style="width: 100%; border-collapse: collapse;">
     <tr>
-      <td align="center">
+      <td style="width: 33.33%; text-align: center;">
         Gleb Razgar<br>
         <a href="mailto:gleb.razgar@gmail.com">CEO</a>
       </td>
-      <td align="center">
+      <td style="width: 33.33%; text-align: center;">
         Tim Farkas<br>
         <a href="mailto:timfarkas@ucl.edu">CTO</a>
       </td>
-      <td align="center">
+      <td style="width: 33.33%; text-align: center;">
         Anders Sandberg<br>
         <a href="mailto:xxx@gmail.com">Advisor</a>
       </td>
@@ -28,7 +28,7 @@ layout: post
 
 <h3 align="center">1. Overview</h3>
 
-Duality is a startup building towards full human brain emulation.
+Duality - building towards full human brain emulation.
 We automate 
 
 
