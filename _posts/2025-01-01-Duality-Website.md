@@ -7,8 +7,8 @@ layout: post
 <p align="center"><img src="/images/logo_b.png" alt="Alt text" style="max-width: 30%; height: auto; mix-blend-mode: multiply;"></p>
 
 <br>
-<div class="table-container">
-  <table>
+<div class="table-container" style="max-width: 800px; margin: auto;">
+  <table style="width: 100%; border-collapse: collapse;">
     <tr>
       <td align="center">
         Gleb Razgar<br>
