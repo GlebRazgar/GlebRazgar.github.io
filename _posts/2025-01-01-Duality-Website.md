@@ -30,7 +30,7 @@ layout: post
 
 **Duality is a startup / lab building toward human brain uploading.**
 
-We don't understand the brain - and thus can't cure it, augment it, or replicate its intelligence. To solve all three of these issues, we are working toward digitizing the first human brain. If successful - this will unlock brain diseases emulation, drug testing, and possibly one day help humans transgress death.
+We don't understand the brain - and thus can't cure it, augment it, or replicate it's intelligence. At Duality we are working towards solving this by digitizing the first human brain. If successful - this will unlock brain diseases emulation, drug testing,human AIs, and possibly one day allow humans transgress death.
 
 As sci-fi as it sounds, brain uploading has already been successfully done with insects and animals. Duality's efforts attempt to scale the same line of research to much bigger - human brains.
 
