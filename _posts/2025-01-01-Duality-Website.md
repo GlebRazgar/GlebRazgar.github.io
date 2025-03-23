@@ -34,10 +34,11 @@ We dont understand the brain - and thus cant cure it, augment it, or replicate i
 
 Sci-fi as it sounds, brain uplaoding has already been successfully done on incects and animals. Our efforts attempt to scale those methods to much bigger - human brains.  
 
-To do so - we are building two key frontiers:
-**1. Automating Uploading Engine**
-  - Making nano-scale brain imaging 100x cheaper and 1000x faster
-**2. Simulation Engine** 
-  - Making brain data simulatable
+To do so - we are building two key frontiers:  
+**1. Automating Uploading Engine**  
+  - Making nano-scale brain imaging 100x cheaper and 1000x faster  
+
+**2. Simulation Engine**  
+  - Making brain data simulatable  
 
 
