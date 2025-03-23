@@ -11,16 +11,16 @@ layout: post
   <table style="width: 100%; border-collapse: collapse;">
     <tr>
       <td style="width: 33.33%; text-align: center;">
-        Gleb Razgar<br>
-        <a href="mailto:gleb.razgar@gmail.com">Gleb Razgar</a>
+        CEO<br>
+        <a href=linkedin.com/in/gleb-razgar-6931a7220">Gleb Razgar</a>
       </td>
       <td style="width: 33.33%; text-align: center;">
-        Tim Farkas<br>
-        <a href="mailto:timfarkas@ucl.edu">CTO</a>
+        CTO<br>
+        <a href="https://www.linkedin.com/in/tim-farkas/">CTO</a>
       </td>
       <td style="width: 33.33%; text-align: center;">
-        Anders Sandberg<br>
-        <a href="mailto:xxx@gmail.com">Advisor</a>
+        Advisor<br>
+        <a href="https://www.linkedin.com/in/anders-sandberg-9215ab145/">Advisor</a>
       </td>
     </tr>
   </table>
