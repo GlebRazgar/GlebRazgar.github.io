@@ -21,8 +21,6 @@ To do so, we are building two key frontiers:
 
 For more details about our research and commercial efforts - [get in touch](https://www.linkedin.com/in/gleb-razgar-6931a7220)
 
-
-<br>
 <div class="table-container" style="max-width: 800px; margin: auto;">
   <table style="width: 100%; border-collapse: collapse;">
     <tr>
