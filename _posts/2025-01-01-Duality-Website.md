@@ -12,15 +12,15 @@ layout: post
     <tr>
       <td style="width: 33.33%; text-align: center;">
         CEO<br>
-        <a href=linkedin.com/in/gleb-razgar-6931a7220">Gleb Razgar</a>
+        <a href="linkedin.com/in/gleb-razgar-6931a7220">Gleb Razgar</a>
       </td>
       <td style="width: 33.33%; text-align: center;">
         CTO<br>
-        <a href="https://www.linkedin.com/in/tim-farkas/">CTO</a>
+        <a href="https://www.linkedin.com/in/tim-farkas/">Tim Farkas</a>
       </td>
       <td style="width: 33.33%; text-align: center;">
         Advisor<br>
-        <a href="https://www.linkedin.com/in/anders-sandberg-9215ab145/">Advisor</a>
+        <a href="https://www.linkedin.com/in/anders-sandberg-9215ab145/">Anders Sandberg</a>
       </td>
     </tr>
   </table>
