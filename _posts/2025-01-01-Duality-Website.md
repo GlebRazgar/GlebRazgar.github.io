@@ -12,7 +12,7 @@ layout: post
     <tr>
       <td style="width: 33.33%; text-align: center;">
         Gleb Razgar<br>
-        <a href="mailto:gleb.razgar@gmail.com">CEO</a>
+        <a href="mailto:gleb.razgar@gmail.com">Gleb Razgar</a>
       </td>
       <td style="width: 33.33%; text-align: center;">
         Tim Farkas<br>
@@ -26,16 +26,14 @@ layout: post
   </table>
 </div>
 
-<h3 align="center">1. Overview</h3>
+<h3 align="center">Overview</h3>
 
-Duality is a startup/lab building towards human brain uploaidng.  
+**Duality is a startup/lab building towards human brain uploading.**
 
-<h3 align="center">2. Motivation</h3>
 We dont understand the brain - and thus cant cure it, augment it, or replicate it and it's intelligence. To solve all three of these issues, we are working towards digitising the first human brain. 
 
 Sci-fi as it sounds, brain uplaoding has already been successfully done on incects and animals. Our efforts attempt to scale those methods to much bigger - human brains.  
 
-<h3 align="center">3. Contribution</h3>
 To do so - we are building two key frontiers:  
 **1. Automating Uploading Engine** (to make nano-scale brain imaging 100x cheaper and 1000x faster)  
 **2. Simulation Engine** (to make brain data simulatable)
