@@ -108,6 +108,58 @@ at minor cost of precision without significant deviation from the actual persons
 <hr style="border-top: 1px solid black;">
 
 
+<h3 align="center">3. AI vs Brain Uploads (IN WRITING!!!)</h3>
+
+Akin to how digital computing overshadows analog computing due to scale economies, AI will overshadow human uploads. LLMs are already more intelligent than the uper quartile of humans, and the gap is growing exponentially.
+
+Though an argument can be made that human uploading can get to truly generalisable intelligenece faster than current AI models - I wouldnt recommend taking bets on such future - for it could easily be the other way round.
+
+In the AGI driven future, 
+
+In the age of intelligence, AI systems will overpower human uploads, 
+This begs a question: is it worth creatign human brain uploads? 
+For humans - sure! 
+
+If the future is destopian, AGI wont care much for what humans want
+But it is concevable that economic boogyman wont care for what humans want. At the end of the day - if human uploads dont provide any more value than the infinitly smarter AIs - captialism will agressively filter them out of existance. Even though this view rings true, it might turn out to be overly reductive. While e-books, are cheaper and more efficient to buy and distribute, physical books still represent 80% of the book market due to their subjectively "nicer" qualia. Similarly, one could argue that the experience of human uploads is subjectively more important than that of AI models, but this is an argument that in 200 years will be looked down upon akin to how we now look down on geo-centrism. 
+
+If we were to play a devils advocate against human uploading further - if AI outpaces human uploads to the extent that it will obtain all the same temporal, intellectual, and conciouse properties, this will reduce brain uploading utility in the intelligence landscape.  
+
+then the fairer comparison will be more akin to efficient e-books vs inneficient e-books. In such twist the only benefit of uploading stands to be the preservation of objective self, or aggregation of real world data from the uploads. 
+
+Ether way, 
+In the same fashion, it's concivable that human emulations will have a more human qualia. 
+
+
+If one was to compare two e-books which might be a more parative comparison, wimilar conclusion can be drawn. 
+To play a devils advocate though, what if we are comparing two e-books, which would seem more akin to AI vs EM comparison. One e-book (AI) would be cheaper, nicer, better written and easier to distribute, whilst the other will have a more-human quality. 
+
+
+photography has largely replaced analog due to commercial purposes, analog photography still thrives as an art form. Similarly, human uploads might find their value not in competing with AI's raw capabilities, but in preserving the unique qualities of human consciousness, personal identity, and subjective experience - aspects that transcend pure economic utility.
+
+- E-books haven't eliminated physical books, which retain unique emotional and tactile value
+
+
+// ... existing code ...
+
+A comparitive example in toways world would be a metropolitan that selectively repells people that can't keep up with it's ever growing appartment prices. People outside of the metrapolitant also dragged in the direction of the general economy, and thus arent saved by the rural outcome eather.  
+
+Much like how calculators replaced human computers, or how automation displaced manual labor in manufacturing - superior technology tends to dominate when it can perform the same function more efficiently. 
+
+This begs a question of how likely 
+
+AI's intelligence is scaling too quickly and sees no constrains but that of information the model can get it's metaphysical hands on. Human upload research is much farther behind. So ... Is there a need for human uploads? My bias would lead me to scream YES, for it is my field of fascination. Yet lets analyze it huristically.
+
+
+
+
+
+
+
+
+
+<hr style="border-top: 1px solid black;">
+
 <h3 align="center">2. Methods</h3>
 
 Generally speaking, we can split connectomes into two categories: low-resolution (~macroscale) and high-resolution (~nanoscale), each focusing on different levels of analysis. Macroscale connectomics involves the use of high-level functional and structural MRI data to map large fiber tracts and functional gray matter regions within the brain, analyzing aspects such as blood flow for functional insights and water diffusivity for structural details. On the other hand, nanoscale connectomics focuses on mapping the entire connectome of small organisms through microscopy and histology, capturing all the connections present in their central nervous systems.
