@@ -147,7 +147,7 @@ hidden: false
 
 <div class="contact-container">
   <div class="contact-title">Get in Touch</div>
-  <form class="contact-form" id="contact-form" action="https://formspree.io/f/your-formspree-endpoint" method="POST">
+  <form class="contact-form" id="contact-form" action="mailto:gleb.studios@gmail.com" method="POST" enctype="text/plain">
     <div class="form-group">
       <label for="name">Name</label>
       <input type="text" id="name" name="name" required>
@@ -165,4 +165,8 @@ hidden: false
     
     <button type="submit" class="submit-button">Send Message</button>
   </form>
+  
+  <div style="text-align: center; margin-top: 20px; color: #999;">
+    <p>Or email us directly at: <a href="mailto:gleb.studios@gmail.com" style="color: #5ED464;">gleb.studios@gmail.com</a></p>
+  </div>
 </div>
