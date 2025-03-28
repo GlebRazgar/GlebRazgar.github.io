@@ -31,55 +31,19 @@ hidden: false
     overflow: hidden;
   }
 
-  /* Navigation buttons - similar to main page */
-  .nav-buttons {
-    position: fixed;
-    top: 20px;
-    right: 10%;
-    z-index: 1000;
-    display: flex;
-    gap: 30px;
-  }
-  
-  .nav-button {
-    background-color: transparent;
-    color: white;
-    border: none;
-    padding: 8px 0;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    text-decoration: underline;
-    text-decoration-color: #5ED464;
-    text-decoration-thickness: 2px;
-    text-underline-offset: 5px;
-  }
-  
-  .nav-button:hover {
-    color: #5ED464;
-  }
-
   .thankyou-container {
     max-width: 600px;
-    margin: 100px auto;
+    margin: 150px auto;
     padding: 0 20px;
     text-align: center;
   }
 
   .thankyou-title {
-    font-size: 3rem;
+    font-size: 2.5rem;
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
     font-family: "Times New Roman", Times, serif;
-  }
-
-  .thankyou-message {
-    font-size: 1.2rem;
-    line-height: 1.6;
-    margin-bottom: 40px;
-    background-color: #222;
-    padding: 40px;
-    border-radius: 8px;
+    line-height: 1.4;
   }
 
   .home-button {
@@ -96,25 +60,16 @@ hidden: false
   }
 
   .home-button:hover {
-    background-color: #4BC054;
+    background-color: #5ED464;
   }
 
   @media (max-width: 768px) {
-    .nav-buttons {
-      top: 10px;
-      right: 5%;
-    }
-
-    .nav-button {
-      font-size: 0.9rem;
-    }
-
     .thankyou-title {
-      font-size: 2.5rem;
+      font-size: 2rem;
     }
 
     .thankyou-container {
-      margin: 70px auto;
+      margin: 100px auto;
     }
   }
 
@@ -124,17 +79,7 @@ hidden: false
   }
 </style>
 
-<!-- Navigation buttons -->
-<div class="nav-buttons">
-  <button class="nav-button" onclick="window.location.href='https://glebrazgar.github.io/Duality/'">Home</button>
-  <button class="nav-button" onclick="window.location.href='https://glebrazgar.github.io/Connectomics/'">Research</button>
-</div>
-
 <div class="thankyou-container">
-  <div class="thankyou-title">Thank You</div>
-  <div class="thankyou-message">
-    <p>Thank you for getting in touch. We will get back to you shortly.</p>
-    <p>Keep brain uploading!</p>
-  </div>
-  <a href="https://glebrazgar.github.io/Duality/" class="home-button">Return to Home</a>
+  <div class="thankyou-title">Thank you. We will get back to you ASAP.</div>
+  <a href="https://glebrazgar.github.io/Duality/" class="home-button">Return To Home Page</a>
 </div>
