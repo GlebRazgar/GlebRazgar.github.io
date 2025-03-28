@@ -168,7 +168,7 @@ hidden: true
     <!-- These are optional FormSubmit configurations -->
     <input type="hidden" name="_subject" value="New contact form submission">
     <input type="hidden" name="_captcha" value="false">
-    <input type="hidden" name="_next" value="https://glebrazgar.github.io/thank-you">
+    <input type="hidden" name="_next" value="https://glebrazgar.github.io/Duality-Contact-Thankyou">
   </form>
   
   <div style="text-align: center; margin-top: 20px; color: #999;">
