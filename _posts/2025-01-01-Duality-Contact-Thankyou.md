@@ -29,6 +29,7 @@ hidden: true
     flex-direction: column;
     min-height: 100vh;
     overflow: hidden;
+    border: none !important;
   }
 
   .thankyou-container {
@@ -48,7 +49,7 @@ hidden: true
 
   .home-button {
     background-color: #5ED464;
-    color: black;
+    color: black !important;
     border: none;
     padding: 12px 30px;
     cursor: pointer;
@@ -60,7 +61,9 @@ hidden: true
   }
 
   .home-button:hover {
-    background-color: #5ED464;
+    background-color: #4BC054;
+    color: black !important;
+    text-decoration: none;
   }
 
   @media (max-width: 768px) {
