@@ -30,11 +30,12 @@ hidden: true
     min-height: 100vh;
     overflow: hidden;
     border: none !important;
+    justify-content: center;
+    align-items: center;
   }
 
   .thankyou-container {
-    max-width: 600px;
-    margin: 150px auto;
+    max-width: 800px;
     padding: 0 20px;
     text-align: center;
   }
@@ -45,6 +46,7 @@ hidden: true
     margin-bottom: 60px;
     font-family: "Times New Roman", Times, serif;
     line-height: 1.4;
+    white-space: nowrap;
   }
 
   .home-button {
