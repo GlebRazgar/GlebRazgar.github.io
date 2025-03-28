@@ -80,6 +80,26 @@ hidden: true
   .site-header, .post-header, .share-links, .post_navi, .site-footer, footer {
     display: none !important;
   }
+  
+  /* Remove any horizontal rules or borders */
+  hr {
+    display: none !important;
+  }
+  
+  /* Additional fix for the white line at bottom */
+  html::after, body::after {
+    display: none !important;
+  }
+  
+  /* Target any potential dividers */
+  .divider, .separator, .horizontal-line {
+    display: none !important;
+  }
+  
+  /* Override any border-bottom that might be causing the line */
+  * {
+    border-bottom-color: black !important;
+  }
 </style>
 
 <div class="thankyou-container">
