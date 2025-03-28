@@ -147,7 +147,7 @@ hidden: false
 
 <div class="contact-container">
   <div class="contact-title">Get in Touch</div>
-  <form class="contact-form" id="contact-form" action="mailto:gleb.studios@gmail.com" method="POST" enctype="text/plain">
+  <form class="contact-form" id="contact-form" action="https://formsubmit.co/gleb.studios@gmail.com" method="POST">
     <div class="form-group">
       <label for="name">Name</label>
       <input type="text" id="name" name="name" required>
@@ -164,6 +164,11 @@ hidden: false
     </div>
     
     <button type="submit" class="submit-button">Send Message</button>
+    
+    <!-- These are optional FormSubmit configurations -->
+    <input type="hidden" name="_subject" value="New contact form submission">
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_next" value="https://glebrazgar.github.io/thank-you">
   </form>
   
   <div style="text-align: center; margin-top: 20px; color: #999;">
