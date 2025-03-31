@@ -13,12 +13,12 @@ AI x Neurotech    I     Accelerating brain uploading     I     P(AIB)=P(BIA)*P(A
   }
   
   .left-image {
-    left: 2%;
+    left: 10%;
     top: 30%; /* Position as percentage of viewport height */
   }
   
   .right-image {
-    right: 2%;
+    right: 10%;
     top: 30%; /* Position as percentage of viewport height */
   }
   
@@ -27,7 +27,8 @@ AI x Neurotech    I     Accelerating brain uploading     I     P(AIB)=P(BIA)*P(A
     max-width: 250px; /* Maximum width to prevent too large images */
     height: auto;
     border-radius: 10px;
-    mix-blend-mode: multiply;
+    mix-blend-mode: multiply !important;
+    opacity: 0.9; /* Slightly reduce opacity to help with blending */
   }
   
   /* Only show on screens wider than 1200px */
