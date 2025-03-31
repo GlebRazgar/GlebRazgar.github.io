@@ -7,19 +7,19 @@ AI x Neurotech    I     Accelerating brain uploading     I     P(AIB)=P(BIA)*P(A
 <!-- Side images - only visible on desktop -->
 <style>
   .side-image-container {
-    position: fixed;
-    top: 50%;
-    transform: translateY(-50%);
+    position: absolute;
     z-index: -1;
     display: none; /* Hidden by default */
   }
   
   .left-image {
     left: 5%;
+    top: 300px; /* Position at a specific location from the top */
   }
   
   .right-image {
     right: 5%;
+    top: 300px; /* Position at a specific location from the top */
   }
   
   /* Only show on screens wider than 1200px */
