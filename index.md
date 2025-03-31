@@ -13,13 +13,21 @@ AI x Neurotech    I     Accelerating brain uploading     I     P(AIB)=P(BIA)*P(A
   }
   
   .left-image {
-    left: 5%;
-    top: 300px; /* Position at a specific location from the top */
+    left: 2%;
+    top: 30%; /* Position as percentage of viewport height */
   }
   
   .right-image {
-    right: 5%;
-    top: 300px; /* Position at a specific location from the top */
+    right: 2%;
+    top: 30%; /* Position as percentage of viewport height */
+  }
+  
+  .side-image {
+    width: 15vw; /* Width as percentage of viewport width */
+    max-width: 250px; /* Maximum width to prevent too large images */
+    height: auto;
+    border-radius: 10px;
+    mix-blend-mode: multiply;
   }
   
   /* Only show on screens wider than 1200px */
@@ -32,12 +40,12 @@ AI x Neurotech    I     Accelerating brain uploading     I     P(AIB)=P(BIA)*P(A
 
 <!-- Left side image -->
 <div class="side-image-container left-image">
-  <img src="./images/first-neuron2.jpg" alt="First Neuron" style="max-width: 200px; height: auto; border-radius: 10px; mix-blend-mode: multiply;">
+  <img src="./images/first-neuron2.jpg" alt="First Neuron" class="side-image">
 </div>
 
 <!-- Right side image -->
 <div class="side-image-container right-image">
-  <img src="./images/first-neuron.jpg" alt="First Neuron" style="max-width: 200px; height: auto; border-radius: 10px; mix-blend-mode: multiply;">
+  <img src="./images/first-neuron.jpg" alt="First Neuron" class="side-image">
 </div>
 
 <h2 class="section-title">Research</h2>
