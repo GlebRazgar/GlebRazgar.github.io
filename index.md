@@ -1,12 +1,44 @@
 ---
 layout: default
 ---
-<!-- Added image below Posts section -->
-<div style="text-align: center; margin-top: none; margin-bottom: none;">
-  <img src="./images/first-neuron.jpg" alt="First Neuron" style="max-width: 40%; height: auto; border-radius: 10px; mix-blend-mode: multiply; display: block; margin: 0 auto;">
-</div>
 
 AI x Neurotech    I     Accelerating brain uploading     I     P(AIB)=P(BIA)*P(A)/P(B)
+
+<!-- Side images - only visible on desktop -->
+<style>
+  .side-image-container {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: -1;
+    display: none; /* Hidden by default */
+  }
+  
+  .left-image {
+    left: 5%;
+  }
+  
+  .right-image {
+    right: 5%;
+  }
+  
+  /* Only show on screens wider than 1200px */
+  @media (min-width: 1200px) {
+    .side-image-container {
+      display: block;
+    }
+  }
+</style>
+
+<!-- Left side image -->
+<div class="side-image-container left-image">
+  <img src="./images/first-neuron2.jpg" alt="First Neuron" style="max-width: 200px; height: auto; border-radius: 10px; mix-blend-mode: multiply;">
+</div>
+
+<!-- Right side image -->
+<div class="side-image-container right-image">
+  <img src="./images/first-neuron.jpg" alt="First Neuron" style="max-width: 200px; height: auto; border-radius: 10px; mix-blend-mode: multiply;">
+</div>
 
 <h2 class="section-title">Research</h2>
 
