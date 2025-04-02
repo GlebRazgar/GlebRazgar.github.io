@@ -28,5 +28,5 @@ AI x Neurotech    I     Accelerating brain uploading     I     P(AIB)=P(BIA)*P(A
 
 <!-- Added image below Posts section -->
 <div style="text-align: center; margin-top: 20px; margin-bottom: -20px;">
-  <img src="./images/first-neuron.jpg" alt="First Neuron" style="max-width: 25%; height: auto; border-radius: 10px; mix-blend-mode: multiply; display: block; margin-bottom: -40px;">
+  <img src="./images/first-neuron.jpg" alt="First Neuron" style="max-width: 30%; height: auto; border-radius: 10px; mix-blend-mode: multiply; display: block; margin-bottom: -40px;">
 </div>
