@@ -9,6 +9,7 @@ vendor/
 .bundle/
 Gemfile.lock
 Gemfile 2.lock
+Gemfile
 
 # OS specific
 .DS_Store
