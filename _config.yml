@@ -6,15 +6,15 @@ description: "My prefrontal cortex at your disposal"
 email: "gleb.studios@gmail.com"
 twitter_username: "gleb_razgar"
 github_username: "ProjectGleb"
-# linkedin_username: "Gleb "
+linkedin_username: "gleb-razgar-6931a7220"
 
 #########################################################################################
 ######### Nothing below needs to be changed (unless you know what you're doing) #########
 #########################################################################################
 theme: "minima"
 
-rss: rss
-permalink: /:title/
+# rss: rss
+# permalink: /:title/
 
 kramdown:
   math_engine: mathjax

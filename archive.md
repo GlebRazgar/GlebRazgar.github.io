@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Post Archive
+exclude: true
 ---
 
 {% for tag in site.tags %}
