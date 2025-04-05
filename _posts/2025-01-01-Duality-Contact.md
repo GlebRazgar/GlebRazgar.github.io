@@ -6,6 +6,14 @@ hidden: true
 ---
 
 <style>
+  @font-face {
+    font-family: 'C&C Red Alert';
+    src: url('/fonts/c_c_red_alert_inet/candc.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+  
   html {
     overflow-x: hidden;
     position: relative;
@@ -61,21 +69,24 @@ hidden: true
 
   .contact-container {
     max-width: 600px;
-    margin: 100px auto;
+    margin: 40px auto;
     padding: 0 20px;
   }
 
   .contact-title {
-    font-size: 3rem;
+    font-size: 4.2rem;
     text-align: center;
-    margin-bottom: 40px;
-    font-family: "Times New Roman", Times, serif;
+    margin-bottom: 20px;
+    font-family: 'C&C Red Alert', Helvetica, Arial, sans-serif !important;
+    color: #5ED464;
   }
 
   .contact-form {
-    background-color: #222;
+    background-color: rgba(94, 212, 100, 0.1);
     padding: 40px;
     border-radius: 8px;
+    border: 1px solid #5ED464;
+    box-shadow: 0 0 20px rgba(94, 212, 100, 0.1);
   }
 
   .form-group {
@@ -92,10 +103,19 @@ hidden: true
   .form-group textarea {
     width: 100%;
     padding: 10px;
-    background-color: #333;
+    background-color: rgba(94, 212, 100, 0.05);
     color: white;
-    border: 1px solid #444;
+    border: 1px solid rgba(180, 180, 180, 0.4);
     border-radius: 4px;
+    transition: all 0.3s ease;
+  }
+
+  .form-group input:focus,
+  .form-group textarea:focus {
+    border-color: #5ED464;
+    background-color: rgba(94, 212, 100, 0.1);
+    outline: none;
+    box-shadow: 0 0 5px rgba(94, 212, 100, 0.3);
   }
 
   .submit-button {
@@ -125,11 +145,11 @@ hidden: true
     }
 
     .contact-title {
-      font-size: 2.5rem;
+      font-size: 3.5rem;
     }
 
     .contact-container {
-      margin: 70px auto;
+      margin: 30px auto;
     }
   }
 
@@ -137,13 +157,31 @@ hidden: true
   .site-header, .post-header, .share-links, .post_navi, .site-footer, footer {
     display: none !important;
   }
+
+  /* Remove any potential white lines */
+  hr, .horizontal-line {
+    display: none !important;
+  }
+  
+  /* Custom green divider matching main site */
+  .section-divider {
+    border: none;
+    height: 1px;
+    background: linear-gradient(to right, 
+                               rgba(94, 212, 100, 0.05), 
+                               rgba(94, 212, 100, 0.3) 20%, 
+                               rgba(94, 212, 100, 0.8) 40%, 
+                               rgba(94, 212, 100, 0.8) 60%, 
+                               rgba(94, 212, 100, 0.3) 80%, 
+                               rgba(94, 212, 100, 0.05));
+    width: 100%;
+    margin: 40px 0 20px;
+    position: relative;
+  }
 </style>
 
 <!-- Navigation buttons -->
-<div class="nav-buttons">
-  <button class="nav-button" onclick="window.location.href='https://glebrazgar.github.io/Duality/'">Home</button>
-  <button class="nav-button" onclick="window.location.href='https://glebrazgar.github.io/Connectomics/'">Research</button>
-</div>
+<!-- Navigation buttons removed as requested -->
 
 <div class="contact-container">
   <div class="contact-title">Get in Touch</div>
@@ -171,7 +209,10 @@ hidden: true
     <input type="hidden" name="_next" value="https://glebrazgar.github.io/Duality-Contact-Thankyou">
   </form>
   
-  <div style="text-align: center; margin-top: 20px; color: #999;">
+  <div style="text-align: center; margin-top: 40px; color: #999; margin-bottom: 40px;">
     <p>Or email us directly at: <a href="mailto:gleb.studios@gmail.com" style="color: #5ED464;">gleb.studios@gmail.com</a></p>
   </div>
+  
+  <!-- Add green divider if desired -->
+  <div class="section-divider"></div>
 </div>

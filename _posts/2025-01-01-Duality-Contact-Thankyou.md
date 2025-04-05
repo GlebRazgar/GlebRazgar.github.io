@@ -6,6 +6,14 @@ hidden: true
 ---
 
 <style>
+  @font-face {
+    font-family: 'C&C Red Alert';
+    src: url('/fonts/c_c_red_alert_inet/candc.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+
   html {
     overflow-x: hidden;
     position: relative;
@@ -38,19 +46,25 @@ hidden: true
     max-width: 800px;
     padding: 0 20px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    width: 100%;
   }
 
   .thankyou-title {
-    font-size: 2.5rem;
+    font-size: 4.2rem;
     text-align: center;
     margin-bottom: 60px;
-    font-family: "Times New Roman", Times, serif;
+    font-family: 'C&C Red Alert', Helvetica, Arial, sans-serif !important;
     line-height: 1.4;
     white-space: nowrap;
+    color: #5ED464;
   }
 
   .home-button {
@@ -74,7 +88,8 @@ hidden: true
 
   @media (max-width: 768px) {
     .thankyou-title {
-      font-size: 2rem;
+      font-size: 2.8rem;
+      white-space: normal;
     }
 
     .thankyou-container {
