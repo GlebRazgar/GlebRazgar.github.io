@@ -490,12 +490,12 @@ hidden: true
 </div>
 
 <!-- Main Header -->
-<div class="header-title-container" style="text-align: center; margin-top: 100px; margin-bottom: 60px; position: relative; height: 120px;">
-  <h1 class="centered-title" style="margin-top: 0;">Our Team</h1>
+<div class="header-title-container" style="text-align: center; margin-top: 100px; margin-bottom: 20px; position: relative; height: 120px;">
+  <h1 class="centered-title" style="margin-top: 0; color: #5ED464; font-size: 4.8rem;">Our Team</h1>
 </div>
 
 <!-- Team Members Section -->
-<div class="centered-section">
+<div class="centered-section" style="margin-top: -10px;">
   <div class="team-boxes">
     <!-- Team Member 1 -->
     <div class="team-box">
