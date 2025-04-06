@@ -33,6 +33,9 @@ collections:
   research:
     output: true
     permalink: /:title/
+  duality:
+    output: true
+    permalink: /:title/
 
 defaults:
   - scope:
