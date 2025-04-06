@@ -1,6 +1,7 @@
 ---
 title: "Duality"
 layout: post
+permalink: /Duality/
 hidden: true
 ---
 <!-- URL of the post: https://glebrazgar.github.io/Duality/ -->

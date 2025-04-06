@@ -35,10 +35,10 @@ collections:
     permalink: /:title/
   duality:
     output: true
-    permalink: Duality/:title/
+    permalink: /Duality/:title/
   duality-research:
     output: true
-    permalink: /Duality/Research/:title/
+    permalink: /Duality/research/:title/
 defaults:
   - scope:
       path: ""
