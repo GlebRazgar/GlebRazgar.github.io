@@ -466,9 +466,6 @@ hidden: false
   <div class="team-boxes">
     <!-- Team Member 1 -->
     <div class="team-box">
-      <div class="team-avatar">
-        <img src="/images/team/team1.jpg" alt="Team Member 1" onerror="this.src='/images/brain.svg'; this.style.padding='15px';">
-      </div>
       <div class="team-name">Anders Sandberg - Professor @ Oxford</div>
       <div class="team-title">Adviser</div>
       <div class="team-bio">
@@ -486,9 +483,6 @@ hidden: false
     
     <!-- Team Member 2 -->
     <div class="team-box">
-      <div class="team-avatar">
-        <img src="/images/team/team2.jpg" alt="Team Member 2" onerror="this.src='/images/micro.svg'; this.style.padding='15px';">
-      </div>
       <div class="team-name">Gleb Razgar - AI Researcher @ UoM</div>
       <div class="team-title">Founder</div>
       <div class="team-bio">
@@ -506,9 +500,6 @@ hidden: false
     
     <!-- Team Member 3 -->
     <div class="team-box">
-      <div class="team-avatar">
-        <img src="/images/team/team3.jpg" alt="Team Member 3" onerror="this.src='/images/gear.svg'; this.style.padding='15px';">
-      </div>
       <div class="team-name">Tim Farkas - Neuroscientist @ UCL</div>
       <div class="team-title">Founder</div>
       <div class="team-bio">
@@ -526,9 +517,6 @@ hidden: false
     
     <!-- Team Member 4 -->
     <div class="team-box">
-      <div class="team-avatar">
-        <img src="/images/team/team4.jpg" alt="Team Member 4" onerror="this.src='/images/chart.svg'; this.style.padding='15px';">
-      </div>
       <div class="team-name">You?</div>
       <div class="team-title">Founding Engineer</div>
       <div class="team-bio">
