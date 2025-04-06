@@ -73,11 +73,12 @@ hidden: true
   }
 
   .contact-title {
-    font-size: 4.2rem;
+    font-size: 4.8rem;
     text-align: center;
     margin-bottom: 20px;
     font-family: 'C&C Red Alert', Helvetica, Arial, sans-serif !important;
     color: #5ED464;
+    font-weight: bold;
   }
 
   .contact-form {

@@ -485,7 +485,7 @@ hidden: true
 <div class="nav-buttons">
   <button class="nav-button" onclick="window.location.href='https://glebrazgar.github.io/Duality/'">Home</button>
   <button class="nav-button" onclick="window.location.href='https://glebrazgar.github.io/Duality-Contact/'">Contact</button>
-  <button class="nav-button" onclick="window.location.href='https://glebrazgar.github.io/Connectomics/'">Research</button>
+  <button class="nav-button" onclick="window.location.href='https://glebrazgar.github.io/Duality-Research/'">Research</button>
 </div>
 
 <!-- Main Header -->
@@ -571,7 +571,7 @@ hidden: true
     <div class="footer-links">
       <a href="https://www.linkedin.com/in/gleb-razgar-6931a7220" class="footer-link">LinkedIn</a>
       <a href="https://glebrazgar.github.io/Duality-Contact/" class="footer-link">Contact</a>
-      <a href="https://glebrazgar.github.io/Connectomics/" class="footer-link">Research</a>
+      <a href="https://glebrazgar.github.io/Duality-Research/" class="footer-link">Research</a>
     </div>
     <div class="footer-copyright">© 2025 Duality. All rights reserved.</div>
   </div>

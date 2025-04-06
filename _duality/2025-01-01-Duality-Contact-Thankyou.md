@@ -1,7 +1,7 @@
 ---
 title: "Contact Duality Thankyou"
 layout: post
-hidden: true
+hidden: false
 ---
 
 <style>
@@ -57,13 +57,14 @@ hidden: true
   }
 
   .thankyou-title {
-    font-size: 4.2rem;
+    font-size: 4.8rem;
     text-align: center;
     margin-bottom: 60px;
     font-family: 'C&C Red Alert', Helvetica, Arial, sans-serif !important;
     line-height: 1.4;
     white-space: nowrap;
     color: #5ED464;
+    font-weight: bold;
   }
 
   .home-button {
