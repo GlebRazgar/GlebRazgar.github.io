@@ -230,13 +230,13 @@ hidden: true
     background-color: rgba(94, 212, 100, 0.1);
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 12px;
-    padding: 30px;
+    padding: 25px;
     width: 40%; /* Two boxes per row */
     max-width: 500px; /* Maximum width */
     transition: all 0.3s ease;
     display: flex;
     flex-direction: column;
-    min-height: 400px;
+    min-height: 320px; /* Reduced from 400px */
     transform: translateY(0); /* Initial position */
     box-shadow: 0 0 0 rgba(94, 212, 100, 0); /* Initial shadow */
     position: relative;
@@ -272,16 +272,23 @@ hidden: true
     font-weight: bold;
     margin-bottom: 5px;
     transition: color 0.3s ease;
+    color: white; /* Default color is white */
   }
   
   .team-title {
     font-size: 1.1rem;
-    color: #5ED464;
+    color: white; /* Changed from #5ED464 to white */
     margin-bottom: 15px;
   }
   
+  /* Override hover effect for team name */
   .team-box:hover .team-name {
-    color: #5ED464;
+    color: white; /* Keep the main text white on hover */
+  }
+  
+  /* Ensure name-part stays green on hover */
+  .team-box:hover .name-part {
+    color: #5ED464; /* Keep the name part green on hover */
   }
   
   .team-bio {
@@ -437,10 +444,38 @@ hidden: true
     color: #ffffff; /* White text instead of black */
   }
   
+  /* Contact button styling - updated to match main page */
+  .contact-button {
+    padding: 15px 30px;
+    border-radius: 30px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-decoration: none;
+    background-color: white;
+    color: black;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    margin-top: 20px;
+  }
+  
+  .contact-button:hover {
+    background-color: #5ED464;
+    color: white;
+  }
+  
   h1, h2, h3, 
   .section-title,
   .centered-title {
     font-family: 'C&C Red Alert', Helvetica, Arial, sans-serif !important;
+  }
+  
+  /* Style for name part */
+  .name-part {
+    color: #5ED464; /* Green color */
   }
 </style>
 
@@ -459,17 +494,15 @@ hidden: true
   <h1 class="centered-title" style="margin-top: 0;">Our Team</h1>
 </div>
 
-<hr class="section-divider">
-
 <!-- Team Members Section -->
 <div class="centered-section">
   <div class="team-boxes">
     <!-- Team Member 1 -->
     <div class="team-box">
-      <div class="team-name">Anders Sandberg - Professor @ Oxford</div>
-      <div class="team-title">Adviser</div>
+      <div class="team-name"><span class="name-part">Anders Sandberg</span></div>
+      <div class="team-title"><i>Adviser x Professor @ Oxford</i></div>
       <div class="team-bio">
-        Leading our research advisery with over 30 years of experience in full brain emulation and computational neuro-science. Previously led breakthroughs at the Future of Humanity Institute and The Foresight Institute.
+        Leading our research advisory with over 30 years of experience in full brain emulation and computational neuro-science. Previously led breakthroughs at the Future of Humanity Institute and The Foresight Institute.
       </div>
       <div class="team-skills">
         <div class="skill-label">Expertise:</div>
@@ -483,10 +516,10 @@ hidden: true
     
     <!-- Team Member 2 -->
     <div class="team-box">
-      <div class="team-name">Gleb Razgar - AI Researcher @ UoM</div>
-      <div class="team-title">Founder</div>
+      <div class="team-name"><span class="name-part">Gleb Razgar</span> </div>
+      <div class="team-title"><i>Founder x AI Researcher</i></div>
       <div class="team-bio">
-        Bridging our neuroscience and ai research. Previousely leading effors in building brain computer interfaces and mechanistic interpretability  - with focus on neurodegenerative diseases.
+        Bridging our neuroscience and AI research. Previously leading efforts in building brain computer interfaces and mechanistic interpretability  - with focus on neurodegenerative diseases.
       </div>
       <div class="team-skills">
         <div class="skill-label">Expertise:</div>
@@ -500,10 +533,10 @@ hidden: true
     
     <!-- Team Member 3 -->
     <div class="team-box">
-      <div class="team-name">Tim Farkas - Neuroscientist @ UCL</div>
-      <div class="team-title">Founder</div>
+      <div class="team-name"><span class="name-part">Tim Farkas</span></div>
+      <div class="team-title"><i>Founder x Neuroscientist</i></div>
       <div class="team-bio">
-        Leading our neuro-scince efforts with experties in connectomics. Previousely worked on some of the earliest efforts in fruit fly brain uploading @ UoA and UCL.
+        Leading our neuroscience efforts with expertise in connectomics. Previously worked on some of the earliest efforts in fruit fly brain uploading @ UoA and UCL.
       </div>
       <div class="team-skills">
         <div class="skill-label">Expertise:</div>
@@ -517,32 +550,14 @@ hidden: true
     
     <!-- Team Member 4 -->
     <div class="team-box">
-      <div class="team-name">You?</div>
-      <div class="team-title">Founding Engineer</div>
+      <div class="team-name"><span class="name-part">You?</span></div>
+      <div class="team-title"><i>Founding Engineer</i></div>
       <div class="team-bio">
-        AI / Neuroscience researcher with a backround in connectomics. Previousely worked in the Google Brain Team on protein folding and staining. 
+        <p>We're always looking for exceptional talent to help us push the boundaries of whole brain emulation.</p>
+        <p>If you're passionate about understanding or digitizing the human brain, we'd love to hear from you.</p>
       </div>
-      <div class="team-skills">
-        <div class="skill-label">Expertise:</div>
-        <div class="skill-tags">
-          <span class="skill-tag">Bio-chemistry</span>
-          <span class="skill-tag">Protein Staining</span>
-          <span class="skill-tag">AI Research</span>
-        </div>
-      </div>
+      <button id="funding-button" class="contact-button" onclick="window.location.href='https://glebrazgar.github.io/Duality-Contact/'">Get in Touch</button>
     </div>
-  </div>
-</div>
-
-<hr class="section-divider">
-
-<!-- Join Our Team Section -->
-<div class="centered-section" style="margin-bottom: 30px;">
-  <div class="centered-title" style="font-size: 3rem;">Join Our Team</div>
-  <div class="centered-content">
-    <p>We're always looking for exceptional talent to help us push the boundaries of whole brain emulation.</p>
-    <p>If you're passionate about understanding or digitizing the human brain, we'd love to hear from you.</p>
-    <button class="nav-button" style="margin-top: 20px; font-size: 1.1rem;" onclick="window.location.href='https://glebrazgar.github.io/Duality-Contact/'">Contact Us</button>
   </div>
 </div>
 
