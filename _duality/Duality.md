@@ -1296,8 +1296,8 @@ hidden: true
 <!-- Navigation buttons -->
 <div class="nav-buttons">
   <button class="nav-button" onclick="document.getElementById('funding-container').scrollIntoView({behavior: 'smooth'})">Get in Touch</button>
-  <button class="nav-button" onclick="window.location.href='https://glebrazgar.github.io/Duality-Team/'">Team</button>
-  <button class="nav-button" onclick="window.location.href='https://glebrazgar.github.io/Duality-Research/'">Research</button>
+  <button class="nav-button" onclick="window.location.href='https://glebrazgar.github.io/Duality/team/'">Team</button>
+  <button class="nav-button" onclick="window.location.href='https://glebrazgar.github.io/Duality/research/'">Research</button>
 </div>
 
 <!-- URL of the post: https://glebrazgar.github.io/Duality/ -->

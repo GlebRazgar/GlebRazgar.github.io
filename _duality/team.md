@@ -3,7 +3,7 @@ title: "Team"
 layout: post
 hidden: true
 ---
-<!-- URL of the post: https://glebrazgar.github.io/Duality-Team/ -->
+<!-- URL of the post: https://glebrazgar.github.io/Duality/team/ -->
 
 <!-- STYLING THE PAGE -->
 
@@ -484,8 +484,8 @@ hidden: true
 <!-- Navigation buttons -->
 <div class="nav-buttons">
   <button class="nav-button" onclick="window.location.href='https://glebrazgar.github.io/Duality/'">Home</button>
-  <button class="nav-button" onclick="window.location.href='https://glebrazgar.github.io/Duality-Contact/'">Contact</button>
-  <button class="nav-button" onclick="window.location.href='https://glebrazgar.github.io/Duality-Research/'">Research</button>
+  <button class="nav-button" onclick="window.location.href='https://glebrazgar.github.io/Duality/contact/'">Contact</button>
+  <button class="nav-button" onclick="window.location.href='https://glebrazgar.github.io/Duality/research/'">Research</button>
 </div>
 
 <!-- Main Header -->
