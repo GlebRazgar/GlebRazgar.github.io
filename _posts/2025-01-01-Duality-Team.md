@@ -461,11 +461,6 @@ hidden: false
 
 <hr class="section-divider">
 
-<!-- Team intro text -->
-<div class="motivation-text">
-  We're a multidisciplinary team of scientists, engineers, and innovators dedicated to mapping and simulating the human brain at unprecedented resolution.
-</div>
-
 <!-- Team Members Section -->
 <div class="centered-section">
   <div class="team-boxes">
@@ -474,17 +469,17 @@ hidden: false
       <div class="team-avatar">
         <img src="/images/team/team1.jpg" alt="Team Member 1" onerror="this.src='/images/brain.svg'; this.style.padding='15px';">
       </div>
-      <div class="team-name">Alex Morgan, Ph.D.</div>
-      <div class="team-title">Chief Scientific Officer</div>
+      <div class="team-name">Anders Sandberg - Professor @ Oxford</div>
+      <div class="team-title">Adviser</div>
       <div class="team-bio">
-        Leading our research efforts with over 15 years of experience in computational neuroscience and brain imaging techniques. Previously led breakthrough projects at Harvard Neuroscience and the Connectome Project.
+        Leading our research advisery with over 30 years of experience in full brain emulation and computational neuro-science. Previously led breakthroughs at the Future of Humanity Institute and The Foresight Institute.
       </div>
       <div class="team-skills">
         <div class="skill-label">Expertise:</div>
         <div class="skill-tags">
-          <span class="skill-tag">Neuroimaging</span>
           <span class="skill-tag">Connectomics</span>
-          <span class="skill-tag">Machine Learning</span>
+          <span class="skill-tag">Comp. Neuroscience</span>
+          <span class="skill-tag">Philosophy</span>
         </div>
       </div>
     </div>
@@ -494,17 +489,17 @@ hidden: false
       <div class="team-avatar">
         <img src="/images/team/team2.jpg" alt="Team Member 2" onerror="this.src='/images/micro.svg'; this.style.padding='15px';">
       </div>
-      <div class="team-name">Sarah Chen, M.D.</div>
-      <div class="team-title">Medical Director</div>
+      <div class="team-name">Gleb Razgar - AI Researcher @ UoM</div>
+      <div class="team-title">Founder</div>
       <div class="team-bio">
-        Bridging the gap between neuroscience research and clinical applications. Background in neurosurgery and brain imaging with special focus on neurodegenerative diseases and brain preservation techniques.
+        Bridging our neuroscience and ai research. Previousely leading effors in building brain computer interfaces and mechanistic interpretability  - with focus on neurodegenerative diseases.
       </div>
       <div class="team-skills">
         <div class="skill-label">Expertise:</div>
         <div class="skill-tags">
-          <span class="skill-tag">Neurology</span>
-          <span class="skill-tag">Brain Preservation</span>
-          <span class="skill-tag">Clinical Research</span>
+          <span class="skill-tag">Neural Networks</span>
+          <span class="skill-tag">Comp. Neuroscience</span>
+          <span class="skill-tag">Connectomics</span>
         </div>
       </div>
     </div>
@@ -514,17 +509,17 @@ hidden: false
       <div class="team-avatar">
         <img src="/images/team/team3.jpg" alt="Team Member 3" onerror="this.src='/images/gear.svg'; this.style.padding='15px';">
       </div>
-      <div class="team-name">David Patel</div>
-      <div class="team-title">Chief Technology Officer</div>
+      <div class="team-name">Tim Farkas - Neuroscientist @ UCL</div>
+      <div class="team-title">Founder</div>
       <div class="team-bio">
-        Leading our engineering team with expertise in high-performance computing, neural simulation, and AI. Previously developed distributed systems for large-scale neural modeling at Google Brain and the Allen Institute.
+        Leading our neuro-scince efforts with experties in connectomics. Previousely worked on some of the earliest efforts in fruit fly brain uploading @ UoA and UCL.
       </div>
       <div class="team-skills">
         <div class="skill-label">Expertise:</div>
         <div class="skill-tags">
-          <span class="skill-tag">Neural Simulation</span>
-          <span class="skill-tag">High-Performance Computing</span>
-          <span class="skill-tag">AI Architecture</span>
+          <span class="skill-tag">Neuroscience</span>
+          <span class="skill-tag">Wetlab</span>
+          <span class="skill-tag">Machine Learning</span>
         </div>
       </div>
     </div>
@@ -534,17 +529,17 @@ hidden: false
       <div class="team-avatar">
         <img src="/images/team/team4.jpg" alt="Team Member 4" onerror="this.src='/images/chart.svg'; this.style.padding='15px';">
       </div>
-      <div class="team-name">Emma Rodriguez</div>
-      <div class="team-title">Research Director</div>
+      <div class="team-name">You?</div>
+      <div class="team-title">Founding Engineer</div>
       <div class="team-bio">
-        Pioneering our approach to brain digitization with a background in computational biology and neural network architecture. Published groundbreaking work on multi-scale brain modeling and synaptic digital twins.
+        AI / Neuroscience researcher with a backround in connectomics. Previousely worked in the Google Brain Team on protein folding and staining. 
       </div>
       <div class="team-skills">
         <div class="skill-label">Expertise:</div>
         <div class="skill-tags">
-          <span class="skill-tag">Neural Network Architecture</span>
-          <span class="skill-tag">Digital Brain Modeling</span>
-          <span class="skill-tag">Computational Biology</span>
+          <span class="skill-tag">Bio-chemistry</span>
+          <span class="skill-tag">Protein Staining</span>
+          <span class="skill-tag">AI Research</span>
         </div>
       </div>
     </div>
@@ -554,11 +549,11 @@ hidden: false
 <hr class="section-divider">
 
 <!-- Join Our Team Section -->
-<div class="centered-section" style="margin-bottom: 60px;">
+<div class="centered-section" style="margin-bottom: 30px;">
   <div class="centered-title" style="font-size: 3rem;">Join Our Team</div>
   <div class="centered-content">
-    <p>We're always looking for exceptional talent to help us push the boundaries of neuroscience and brain simulation technology.</p>
-    <p>If you're passionate about understanding and digitizing the human brain, we'd love to hear from you.</p>
+    <p>We're always looking for exceptional talent to help us push the boundaries of whole brain emulation.</p>
+    <p>If you're passionate about understanding or digitizing the human brain, we'd love to hear from you.</p>
     <button class="nav-button" style="margin-top: 20px; font-size: 1.1rem;" onclick="window.location.href='https://glebrazgar.github.io/Duality-Contact/'">Contact Us</button>
   </div>
 </div>
