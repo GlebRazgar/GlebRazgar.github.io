@@ -2,9 +2,9 @@
 layout: default
 ---
 
-AI x Neurotech    I     Accelerating brain uploading     I     P(AIB)=P(BIA)*P(A)/P(B)
+AI x Neurotech    I     Accelerating brain uploading @ <a href="https://glebrazgar.github.io/Duality/">Duality</a>     I     P(AIB)=P(BIA)*P(A)/P(B)
 
-<h2 class="section-title">Research</h2>
+<h2 class="se []ction-title">Research</h2>
 
 <ul class="research-list">
 {% assign sorted_research = site.research | sort: 'date' | reverse %}
