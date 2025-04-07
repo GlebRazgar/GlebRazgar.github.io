@@ -1,8 +1,7 @@
 ---
 title: "Network Controll Through Symbiosis"
-layout: post
-date: 2025-01-23
-excerpt: "Research on network control mechanisms through symbiotic relationships in neural systems."
+layout: duality-posts
+date: 2025-02-23
 hidden: true
 ---
 

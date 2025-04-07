@@ -1,12 +1,14 @@
 ---
-title: "Connectomics: Uploading The Mind"
-layout: post
+title: "Mapping The Mind: Introduction"
+authors: "Gleb Razgar"
+layout: duality-posts
 date: 2025-03-01
 hidden: true
 ---
 
 
-<p align="center"><img src="/images/fly.png" alt="Alt text" style="max-width: 80%; height: auto; border-radius: 10px;"></p>
+
+<p align="center"><img src="/images/fly_green.jpg" alt="Alt text" style="max-width: 80%; height: auto; border-radius: 10px;"></p>
 <br>
 
 <h3 align="center">1. Connectomics Overview</h3>
@@ -27,10 +29,10 @@ Generally speaking, we can split connectomes into two categories: low-resolution
 <h4 style="margin-bottom: 0"><u>2.1 Nanoscale Connectomics</u></h4> 
 Nanoscale connectomes are the microscopic maps of neuron-to-neuron connections, captured in tiny volumes of nervous tissue. Electron microscopy (EM) is the tool of choice here, offering the precision to see individual synapses. Back in 1986, the first full nervous system connectome was painstakingly mapped for C. elegans, using hand-annotated EM scans. Fast forward to today, and EM technology has evolved—improvements in image capture, alignment, and data labeling now allow us to map larger volumes with ease. EM has been pivotal in creating connectomes from various samples, including the entire brain and ventral nerve cord of adult fruit flies (Drosophila melanogaster) and sections of mouse and human cortex. The NIH is now ambitiously working on an EM connectome of a whole mouse brain.
 
-<p align="center" style="margin-bottom: 0;"><img src="/images/connectome2.png" alt="Alt text" style="max-width: 45%; height: auto; border-radius: 0px;"></p>
+<p align="center" style="margin-bottom: 0;"><img src="/images/connectome2.png" alt="Alt text" style="max-width: 45%; height: auto; border-radius: 0px; filter: invert(100%);"></p>
 
 <div style="width: 100%; text-align: justify;"></div><br>
-<p align="center"><img src="/images/multiconn.png" alt="Alt text" style="max-width: 80%; height: auto; border-radius: 0px; mix-blend-mode: multiply;"></p>
+<p align="center"><img src="/images/multiconn.png" alt="Alt text" style="max-width: 80%; height: auto; border-radius: 0px; filter: invert(100%);"></p>
 
 <div style="width: 80%; margin: auto; text-align: justify;">
   <p><b>Figure 1:</b> Connectome of a fruit fly (Drosophila melanogaster) obtained using Electron Microscopy, showing different neuronal types. The connectome consists of 140,000 neurons and is the size of a grain of sand.</p>
@@ -38,7 +40,7 @@ Nanoscale connectomes are the microscopic maps of neuron-to-neuron connections, 
 
 Electron microscopy reigns supreme in spatial resolution, making it essential for capturing the intricate dance of presynaptic and postsynaptic sites along with their delicate morphological nuances. However, this supremacy is not without challengers. X-ray nanotomography, which utilizes a synchrotron source to achieve sub-100 nm resolution, is gaining popularity. Its appeal lies in its ability to bypass the need for heavy metal staining and physical sectioning, offering potential for further refinement. In contrast, conventional light microscopy remains limited by diffraction, resulting in lower resolution, a topic I will delve into later. There are other methods being tested, for instance, stimulated emission depletion (STED) microscopy, which reconstructs neurites and identifies synaptic connections using fluorescent markers, but their resolution (130 nm+) or mapping speed tends to render them less applicable.
 
-<p align="center"><img src="/images/ssm.png" alt="Alt text" style="max-width: 80%; height: auto; border-radius: 0px; mix-blend-mode: multiply;"></p>
+<p align="center"><img src="/images/ssm.png" alt="Alt text" style="max-width: 80%; height: auto; border-radius: 0px;;"></p>
 
 <div style="width: 80%; margin: auto; text-align: justify;">
   <p><b>Figure 2:</b> Illustration showing how the fruit fly connectome, like the one above, was obtained. This involves slicing the fly's brain into ultra-thin sections and imaging each section with an electron microscope, after which a semi-supervised cellular classifier creates a detailed 3D reconstruction of neural structures.</p>
@@ -59,7 +61,7 @@ Macroscale connectomes are typically mapped using diffusion-weighted magnetic re
 
 So, you've got your brain imaging data. What next? Turn it into a graph neural network (GNN) to make it functional. Imagine each brain region as a node and the white matter connections as edges. The weights? They come from metrics like FA values or fiber counts. This graph setup lets us use GNN algorithms to dissect the brain's network dynamics, spot clusters of tightly-knit regions, and trace the flow of information through neural circuits. The beauty of the GNN framework lies in its dual ability to map the structural layout of brain connections and to learn how activity zips through the network. This computational method is poweful for systematically exploring brain organization and function at the network level.
 
-<p align="center"><img src="/images/matricies.png" alt="Alt text" style="max-width: 80%; height: auto; border-radius: 10px; mix-blend-mode: multiply;"></p>
+<p align="center"><img src="/images/matricies.png" alt="Alt text" style="max-width: 80%; height: auto; border-radius: 10px; filter: invert(100%) hue-rotate(270deg) saturate(80%);"></p>
 <div style="width: 80%; margin: auto; text-align: center;">
   <p><b>Figure 5:</b> Connectivity matrices of different species.</p>
 </div>
@@ -84,7 +86,7 @@ Now, let's talk about human connectomes and their quirks. Human connectomes have
 <h4 style="margin-bottom: 0"><u>4.1 Caenorhabditis Elegans</u></h4> 
 Caenorhabditis Elegans, the humble roundworm, is the darling of connectomics. We've mapped its entire connectome, primarily through serial-electron microscopy. This isn't just a static snapshot; it's a dynamic study of how its neural wiring evolves from birth to adulthood. The standout finding? As these worms age, their neural circuits become more interconnected. Yet, despite this monumental mapping feat, the C. Elegans connectome still holds secrets. Researchers suggest that comparative connectomics—juxtaposing brain networks across species—could unlock insights into behavioral correlations.
 
-<p align="center"><img src="/images/celegan.jpg" alt="Alt text" style="max-width: 80%; height: auto; border-radius: 10px; mix-blend-mode: multiply;"></p>
+<p align="center"><img src="/images/celegan.jpg" alt="Alt text" style="max-width: 80%; height: auto; border-radius: 10px; filter: invert(1) hue-rotate(30deg) saturate(1.5) brightness(0.8);"></p>
 <div style="width: 80%; margin: auto; text-align: center;">
   <p><b>Figure 6:</b>Connectome of a C.elecan</p>
 </div><br>
@@ -119,7 +121,7 @@ Electron microscopy reconstruction of human brain tissue offers the potential fo
 Mapping the human brain will require faster imaging techniques. Recent advances in expansion microscopy (ExM) offer promising solutions to accelerate human connectome mapping and address this need for faster techniques. ExM physically enlarges biological specimens while maintaining their structural integrity, allowing to aboundun slow and expensive electron microscopes in favour of conventional light microscopes to achieve effective nanoscale resolution, The technique works by embedding tissue in a swellable polymer that expands uniformly, increasing the physical size of the specimen while preserving relative spatial relationships between cellular structures. This physical magnification enables imaging of synaptic proteins and other nanoscale features using standard light microscopes, which can image larger volumes much faster than traditional EM approaches.
 
 
-<p align="center"><img src="/images/exm.jpg" alt="Alt text" style="max-width: 80%; height: auto; border-radius: 10px; mix-blend-mode: multiply; filter: brightness(1.2) contrast(1.1);"></p>
+<p align="center"><img src="/images/exm.jpg" alt="Alt text" style="max-width: 80%; height: auto; border-radius: 10px; filter: brightness(1.2) contrast(1.1) invert(1);"></p>
 <div style="width: 80%; margin: auto; text-align: center;">
   <p><b>Figure 1:</b>Expansion Microsope Proceedure.</p>
 </div><br>

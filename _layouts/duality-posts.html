@@ -1,17 +1,368 @@
 ---
-layout: post
+layout: default
 ---
 
 <style>
-  /* Hide the site header (including title) */
-  .site-header {
+  html {
+    overflow-x: hidden;
+    position: relative;
+    width: 100%;
+    margin: 0 !important;
+    padding: 0 !important;
+    min-height: 100vh;
+    background-color: black !important;
+    max-width: 100vw;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: black !important;
+    color: white !important;
+    max-width: 100vw !important;
+    width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow: hidden;
+  }
+  
+  /* Hide all the Jekyll elements we don't want */
+  .site-header, .post-header, .share-links, .post_navi, .site-footer, footer {
     display: none !important;
   }
   
-  /* Hide post navigation */
-  .post_navi {
-    display: none !important;
+  /* Override theme width constraints */
+  .page-content, .wrapper, .post-content {
+    padding: 0 !important;
+    max-width: 100% !important;
+    width: 100% !important;
+    overflow: hidden;
+    margin-bottom: 0 !important;
+    box-sizing: border-box;
+  }
+  
+  /* Navigation buttons - text with underline */
+  .nav-buttons {
+    position: fixed;
+    top: 20px;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    gap: 30px;
+    padding-right: 20px;
+  }
+  
+  .nav-button {
+    background-color: transparent;
+    color: white;
+    border: none;
+    padding: 8px 0;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: underline;
+    text-decoration-color: #5ED464;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 5px;
+  }
+  
+  .nav-button:hover {
+    color: #5ED464;
+  }
+  
+  /* Section divider */
+  .section-divider {
+    border: none;
+    height: 1px;
+    background: linear-gradient(to right, 
+                              rgba(94, 212, 100, 0.05), 
+                              rgba(94, 212, 100, 0.3) 20%, 
+                              rgba(94, 212, 100, 0.8) 40%, 
+                              rgba(94, 212, 100, 0.8) 60%, 
+                              rgba(94, 212, 100, 0.3) 80%, 
+                              rgba(94, 212, 100, 0.05));
+    width: 100%;
+    margin: 40px 0 20px;
+    position: relative;
+  }
+  
+  /* Override default hr style to use our section divider style */
+  hr {
+    border: none;
+    height: 1px;
+    background: linear-gradient(to right, 
+                              rgba(94, 212, 100, 0.05), 
+                              rgba(94, 212, 100, 0.3) 20%, 
+                              rgba(94, 212, 100, 0.8) 40%, 
+                              rgba(94, 212, 100, 0.8) 60%, 
+                              rgba(94, 212, 100, 0.3) 80%, 
+                              rgba(94, 212, 100, 0.05));
+    width: 100%;
+    margin: 40px 0 20px;
+    position: relative;
+  }
+  
+  /* Research content styling */
+  .research-container {
+    max-width: 60%;
+    width: 100%;
+    margin: 100px auto 60px;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+  
+  .research-title {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 3rem;
+    font-weight: bold;
+    color: #5ED464;
+    text-align: left;
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+  
+  .research-meta {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 1rem;
+    color: white;
+    margin-top: 0;
+    margin-bottom: 40px;
+  }
+  
+  /* Content styling */
+  .research-content {
+    color: white;
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  .research-content a {
+    color: #5ED464;
+    text-decoration: underline;
+  }
+  
+  /* Standard heading sizes to match Jekyll defaults */
+  .research-content h1 {
+    font-size: 2.5rem !important;
+    color: white !important;
+    font-family: "Times New Roman", Times, serif !important;
+    margin-top: 1.2em !important;
+    margin-bottom: 0.6em !important;
+  }
+  
+  .research-content h2 {
+    font-size: 2rem !important;
+    color: white !important;
+    font-family: "Times New Roman", Times, serif !important;
+    margin-top: 1.1em !important;
+    margin-bottom: 0.5em !important;
+  }
+  
+  .research-content h3 {
+    font-size: 1.75rem !important;
+    color: white !important;
+    font-family: "Times New Roman", Times, serif !important;
+    margin-top: 1em !important;
+    margin-bottom: 0.5em !important;
+  }
+  
+  .research-content h4 {
+    font-size: 1.3rem !important;
+    color: white !important;
+    font-family: "Times New Roman", Times, serif !important;
+    margin-top: 0.9em !important;
+    margin-bottom: 0.4em !important;
+  }
+  
+  .research-content h5 {
+    font-size: 1.1rem !important;
+    color: white !important;
+    font-family: "Times New Roman", Times, serif !important;
+    margin-top: 0.8em !important;
+    margin-bottom: 0.3em !important;
+  }
+  
+  .research-content h6 {
+    font-size: 1rem !important;
+    color: white !important;
+    font-family: "Times New Roman", Times, serif !important;
+    margin-top: 0.7em !important;
+    margin-bottom: 0.3em !important;
+  }
+  
+  .research-content img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+  }
+  
+  /* Override any inline styling for h4 elements */
+  h4[style] {
+    font-size: 1.3rem !important;
+  }
+  
+  /* Footer styling */
+  .custom-footer {
+    background-color: black !important;
+    color: white;
+    padding: 30px 0;
+    margin: 0 !important;
+    border-top: 0 !important;
+    text-align: center;
+    width: 100%;
+    position: relative;
+  }
+  
+  .custom-footer::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -1000px;
+    left: 0;
+    width: 100%;
+    height: 1000px;
+    background-color: black;
+    z-index: 5;
+  }
+  
+  .footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .footer-logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-family: "Times New Roman", Times, serif;
+    color: white;
+  }
+  
+  .footer-tagline {
+    font-style: italic;
+    margin-bottom: 20px;
+    color: rgba(255, 255, 255, 0.8);
+  }
+  
+  .footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 20px 0;
+  }
+  
+  .footer-link {
+    color: white !important;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+    font-weight: normal;
+  }
+  
+  .footer-link:hover {
+    color: #5ED464;
+  }
+  
+  .footer-copyright {
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.8);
+    margin-top: 20px;
+  }
+  
+  /* Responsive adjustments */
+  @media screen and (max-width: 768px) {
+    .research-container {
+      margin: 80px auto 40px;
+      padding: 0 15px;
+      max-width: 80%;
+    }
+    
+    .research-title {
+      font-size: 2.3rem;
+    }
+    
+    .research-meta {
+      font-size: 1rem;
+    }
+    
+    .nav-buttons {
+      right: 0;
+      gap: 15px;
+      padding-right: 15px;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .research-container {
+      margin: 60px auto 30px;
+      padding: 0 10px;
+      max-width: 90%;
+    }
+    
+    .research-title {
+      font-size: 2rem;
+    }
+    
+    .research-meta {
+      font-size: 1rem;
+    }
+    
+    .nav-buttons {
+      top: 10px;
+      right: 0;
+      gap: 10px;
+      padding-right: 10px;
+    }
+    
+    .nav-button {
+      font-size: 0.9rem;
+    }
   }
 </style>
 
-{{ content }}
+<!-- Navigation buttons -->
+<div class="nav-buttons">
+  <button class="nav-button" onclick="window.location.href='https://glebrazgar.github.io/Duality/'">Home</button>
+  <button class="nav-button" onclick="window.location.href='https://glebrazgar.github.io/Duality/team/'">Team</button>
+  <button class="nav-button" onclick="window.location.href='https://glebrazgar.github.io/Duality/research/'">Research</button>
+</div>
+
+<!-- Research content -->
+<div class="research-container">
+  <h1 class="research-title">{{ page.title }}</h1>
+  
+  {% if page.date and page.author or page.date and page.authors %}
+    <div class="research-meta">
+      {{ page.date | date: "%B %d, %Y" }} • 
+      {% if page.authors %}{{ page.authors }}{% else %}{{ page.author }}{% endif %}
+    </div>
+  {% elsif page.date %}
+    <div class="research-meta">
+      {{ page.date | date: "%B %d, %Y" }}
+    </div>
+  {% endif %}
+  
+  <div class="research-content">
+    {{ content }}
+  </div>
+</div>
+
+<!-- Green separator before footer -->
+<hr class="section-divider" style="margin-bottom: 0 !important;">
+
+<!-- Custom Footer -->
+<div class="custom-footer" style="margin-top: 0 !important; padding-top: 30px;">
+  <div class="footer-content">
+    <div class="footer-logo">Duality</div>
+    <div class="footer-tagline">Digitizing the human brain</div>
+    <div class="footer-links">
+      <a href="https://www.linkedin.com/in/gleb-razgar-6931a7220" class="footer-link">LinkedIn</a>
+      <a href="https://glebrazgar.github.io/Duality-Contact/" class="footer-link">Contact</a>
+      <a href="https://glebrazgar.github.io/Duality-Research/" class="footer-link">Research</a>
+    </div>
+    <div class="footer-copyright">© 2025 Duality. All rights reserved.</div>
+  </div>
+</div>
