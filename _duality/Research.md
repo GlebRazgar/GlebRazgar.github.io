@@ -226,6 +226,19 @@ hidden: true
       </li>
     {% endfor %}
   </ul>
+
+  <!-- Debug info -->
+  <div style="border: 1px solid #5ED464; padding: 15px; margin-bottom: 20px; color: white;">
+    <h3>Debug Information</h3>
+    <p>Collection source path: _duality/_duality-research</p>
+    <p>Number of research posts: {{ site.duality-research.size }}</p>
+    <p>Files in collection:</p>
+    <ul>
+    {% for item in site.duality-research %}
+      <li>{{ item.path }} - {{ item.title }}</li>
+    {% endfor %}
+    </ul>
+  </div>
 </div>
 
 <!-- Green separator before footer -->
