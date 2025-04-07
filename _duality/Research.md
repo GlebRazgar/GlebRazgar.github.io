@@ -113,9 +113,11 @@ hidden: true
   
   .research-title {
     font-family: 'C&C Red Alert', Helvetica, Arial, sans-serif;
-    font-size: 4rem;
+    font-size: 4.8rem;
+    font-weight: bold;
     color: #5ED464;
     text-align: center;
+    margin-top: 0;
     margin-bottom: 40px;
   }
   
@@ -135,7 +137,7 @@ hidden: true
     border-radius: 8px;
     padding: 0;
     background-color: rgba(94, 212, 100, 0.1);
-    border: 1px solid transparent; /* Transparent border initially */
+    border: 1px solid rgba(255, 255, 255, 0.1);
     transition: all 0.3s ease;
     position: relative;
     box-shadow: 0 0 0 rgba(94, 212, 100, 0); /* Initial no shadow */
