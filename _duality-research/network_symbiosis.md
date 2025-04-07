@@ -34,7 +34,7 @@ Hitherto, interpreting and steering AIs has mainly been done through two key len
 <p align="center"><img src="/images/SymbioteNet.png" alt="Alt text" style="max-width: 90%; height: auto; mix-blend-mode: multiply;"></p>
 
 <div style="width: 80%; margin: auto; text-align: justify;">
-  <p><b>Figure 1:</b> SymbioteNet (left) steering the primary neural network (right) by inhibiting it's representations</p>
+  <p><b>Figure 1:</b> SymbioteNet (left) steering the primary neural network (right) by interacting with it's weights and observing it's outputs</p>
 </div>
 
 <hr style="border-top: 1px solid black;">

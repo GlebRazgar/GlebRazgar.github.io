@@ -387,8 +387,11 @@ hidden: true
   <button class="nav-button" style="color: #5ED464;" onclick="window.location.href='https://glebrazgar.github.io/Duality/research/'">Research</button>
 </div>
 
+<!-- Spacer div that forces content down -->
+<div style="position: relative; width: 100%; height: 0px;"></div>
+
 <!-- Research content -->
-<div class="research-container">
+<div class="research-container" style="position: relative !important; padding-top: 20px !important;">
   <h1 class="research-title">Research</h1>
   
   <ul class="research-list">
