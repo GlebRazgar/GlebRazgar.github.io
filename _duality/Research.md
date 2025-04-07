@@ -1,11 +1,11 @@
 ---
 title: "Duality Research"
 layout: post
-permalink: /Duality-Research/
+permalink: /Duality/research/
 hidden: true
 ---
 
-<!-- URL of the post: https://glebrazgar.github.io/Duality-Research/ -->
+<!-- URL of the post: https://glebrazgar.github.io/Duality/research/ -->
 
 <!-- STYLING THE PAGE -->
 <style>
@@ -238,8 +238,8 @@ hidden: true
     <div class="footer-tagline">Digitizing the human brain</div>
     <div class="footer-links">
       <a href="https://www.linkedin.com/in/gleb-razgar-6931a7220" class="footer-link">LinkedIn</a>
-      <a href="https://glebrazgar.github.io/Duality-Contact/" class="footer-link">Contact</a>
-      <a href="https://glebrazgar.github.io/Duality-Research/" class="footer-link">Research</a>
+      <a href="https://glebrazgar.github.io/Duality/contact/" class="footer-link">Contact</a>
+      <a href="https://glebrazgar.github.io/Duality/research/" class="footer-link">Research</a>
     </div>
     <div class="footer-copyright">© 2025 Duality. All rights reserved.</div>
   </div>
