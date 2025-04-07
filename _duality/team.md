@@ -484,7 +484,7 @@ hidden: true
 <!-- Navigation buttons -->
 <div class="nav-buttons">
   <button class="nav-button" onclick="window.location.href='https://glebrazgar.github.io/Duality/'">Home</button>
-  <button class="nav-button" onclick="window.location.href='https://glebrazgar.github.io/Duality/contact/'">Contact</button>
+  <button class="nav-button" style="color: #5ED464;" onclick="window.location.href='https://glebrazgar.github.io/Duality/team/'">Team</button>
   <button class="nav-button" onclick="window.location.href='https://glebrazgar.github.io/Duality/research/'">Research</button>
 </div>
 

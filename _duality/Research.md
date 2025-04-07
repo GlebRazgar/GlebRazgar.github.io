@@ -106,6 +106,7 @@ hidden: true
     max-width: 800px;
     margin: 100px auto 60px;
     padding: 0 20px;
+    min-height: 60vh;
   }
   
   .research-title {
@@ -124,13 +125,13 @@ hidden: true
   .research-item {
     margin-bottom: 30px;
     border-radius: 8px;
-    padding: 20px;
-    background-color: rgba(94, 212, 100, 0.05);
+    padding: 0;
+    background-color: rgba(94, 212, 100, 0.1);
     transition: all 0.3s ease;
   }
   
   .research-item:hover {
-    background-color: rgba(94, 212, 100, 0.1);
+    background-color: rgba(94, 212, 100, 0.15);
     transform: translateY(-2px);
   }
   
@@ -141,6 +142,11 @@ hidden: true
     font-weight: 600;
     margin-bottom: 10px;
     text-decoration: none;
+    padding: 20px;
+  }
+  
+  .research-link:visited {
+    color: white;
   }
   
   .research-link:hover {
@@ -154,49 +160,92 @@ hidden: true
     margin-bottom: 10px;
   }
   
+  .research-content {
+    display: block;
+    padding: 0 20px 20px;
+  }
+  
+  .research-item:hover .research-date {
+    color: rgba(255, 255, 255, 0.6);
+  }
+  
+  .research-item:hover .research-excerpt {
+    color: #5ED464;
+  }
+  
   .custom-footer {
+    background-color: black !important;
+    color: white;
+    padding: 30px 0;
+    margin: 0 !important;
+    border-top: 0 !important;
+    text-align: center;
+    width: 100%;
+    position: relative;
+    z-index: 10;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+  
+  .custom-footer::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -1000px;
+    left: 0;
+    width: 100%;
+    height: 1000px;
     background-color: black;
-    padding: 40px 0;
-    margin-top: 60px;
+    z-index: 5;
+  }
+  
+  .custom-footer ~ * {
+    display: none !important;
   }
   
   .footer-content {
     max-width: 800px;
     margin: 0 auto;
-    text-align: center;
+    padding: 0 20px;
   }
   
   .footer-logo {
-    font-family: 'C&C Red Alert', Helvetica, Arial, sans-serif;
-    font-size: 2rem;
-    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
     margin-bottom: 10px;
+    font-family: "Times New Roman", Times, serif;
+    color: white;
   }
   
   .footer-tagline {
-    color: rgba(255, 255, 255, 0.6);
+    font-style: italic;
     margin-bottom: 20px;
+    color: rgba(255, 255, 255, 0.8);
   }
+
   
   .footer-links {
     display: flex;
     justify-content: center;
-    gap: 20px;
-    margin-bottom: 20px;
+    gap: 30px;
+    margin: 20px 0;
   }
   
   .footer-link {
-    color: white;
-    text-decoration: none;
+    color: white !important;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+    font-weight: normal;
   }
   
   .footer-link:hover {
-    color: #5ED464;
+    color: rgba(0, 0, 0, 0.7);
   }
   
   .footer-copyright {
-    color: rgba(255, 255, 255, 0.4);
     font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.8);
+    margin-top: 20px;
   }
 </style>
 
@@ -204,8 +253,7 @@ hidden: true
 <div class="nav-buttons">
   <button class="nav-button" onclick="window.location.href='https://glebrazgar.github.io/Duality/'">Home</button>
   <button class="nav-button" onclick="window.location.href='https://glebrazgar.github.io/Duality/team/'">Team</button>
-  <button class="nav-button" onclick="window.location.href='https://glebrazgar.github.io/Duality/research/'">Research</button>
-  <button class="nav-button" onclick="window.location.href='https://glebrazgar.github.io/Duality/contact/'">Contact</button>
+  <button class="nav-button" style="color: #5ED464;" onclick="window.location.href='https://glebrazgar.github.io/Duality/research/'">Research</button>
 </div>
 
 <!-- Research content -->
@@ -216,43 +264,31 @@ hidden: true
     {% assign sorted_research = site.duality-research | sort: 'date' | reverse %}
     {% for research in sorted_research %}
       <li class="research-item">
-        <a href="{{ research.url }}" class="research-link">{{ research.title }}</a>
-        {% if research.date %}
-          <span class="research-date">{{ research.date | date: "%B %d, %Y" }}</span>
-        {% endif %}
-        {% if research.excerpt %}
-          <p class="research-excerpt">{{ research.excerpt | strip_html | truncatewords: 30 }}</p>
-        {% endif %}
+        <a href="{{ research.url }}" class="research-link">{{ research.title }}
+          {% if research.date %}
+            <span class="research-date">{{ research.date | date: "%B %d, %Y" }}</span>
+          {% endif %}
+          {% if research.excerpt %}
+            <p class="research-excerpt">{{ research.excerpt | strip_html | truncatewords: 30 }}</p>
+          {% endif %}
+        </a>
       </li>
     {% endfor %}
   </ul>
-
-  <!-- Debug info -->
-  <div style="border: 1px solid #5ED464; padding: 15px; margin-bottom: 20px; color: white;">
-    <h3>Debug Information</h3>
-    <p>Collection source path: _duality/_duality-research</p>
-    <p>Number of research posts: {{ site.duality-research.size }}</p>
-    <p>Files in collection:</p>
-    <ul>
-    {% for item in site.duality-research %}
-      <li>{{ item.path }} - {{ item.title }}</li>
-    {% endfor %}
-    </ul>
-  </div>
 </div>
 
 <!-- Green separator before footer -->
-<hr class="section-divider">
+<hr class="section-divider" style="margin-bottom: 0 !important;">
 
-<!-- Custom Footer -->
-<div class="custom-footer">
+<!-- Custom Footer - make sure this is the last element -->
+<div class="custom-footer" style="margin-top: 0 !important; padding-top: 30px;">
   <div class="footer-content">
     <div class="footer-logo">Duality</div>
     <div class="footer-tagline">Digitizing the human brain</div>
     <div class="footer-links">
       <a href="https://www.linkedin.com/in/gleb-razgar-6931a7220" class="footer-link">LinkedIn</a>
-      <a href="https://glebrazgar.github.io/Duality/contact/" class="footer-link">Contact</a>
-      <a href="https://glebrazgar.github.io/Duality/research/" class="footer-link">Research</a>
+      <a href="https://glebrazgar.github.io/Duality-Contact/" class="footer-link">Contact</a>
+      <a href="https://glebrazgar.github.io/Duality-Research/" class="footer-link">Research</a>
     </div>
     <div class="footer-copyright">© 2025 Duality. All rights reserved.</div>
   </div>
