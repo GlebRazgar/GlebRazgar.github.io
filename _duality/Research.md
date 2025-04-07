@@ -397,9 +397,6 @@ hidden: true
           {% if research.date %}
             <span class="research-date">{{ research.date | date: "%B %d, %Y" }}</span>
           {% endif %}
-          {% if research.excerpt %}
-            <p class="research-excerpt">{{ research.excerpt | strip_html | truncatewords: 30 }}</p>
-          {% endif %}
         </a>
       </li>
     {% endfor %}
