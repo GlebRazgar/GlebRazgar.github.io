@@ -103,10 +103,12 @@ hidden: true
   
   /* Research list styling */
   .research-container {
-    max-width: 800px;
+    max-width: 60%;
+    width: 100%;
     margin: 100px auto 60px;
     padding: 0 20px;
     min-height: 60vh;
+    box-sizing: border-box;
   }
   
   .research-title {
@@ -120,6 +122,11 @@ hidden: true
   .research-list {
     list-style-type: none;
     padding: 0;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   
   /* Hover animation styling for research items */
@@ -132,6 +139,9 @@ hidden: true
     transition: all 0.3s ease;
     position: relative;
     box-shadow: 0 0 0 rgba(94, 212, 100, 0); /* Initial no shadow */
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
   }
   
   .research-item:hover {
@@ -148,6 +158,10 @@ hidden: true
     margin-bottom: 10px;
     text-decoration: none;
     padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
   }
   
   .research-link:visited {
@@ -176,6 +190,13 @@ hidden: true
   
   .research-item:hover .research-excerpt {
     color: #5ED464;
+  }
+  
+  .research-excerpt {
+    margin: 0;
+    padding: 0;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
   }
   
   .custom-footer {
@@ -256,6 +277,104 @@ hidden: true
   /* Remove the old glow effect class as it's no longer needed */
   .research-item-glow {
     display: none;
+  }
+  
+  /* Responsive adjustments */
+  @media screen and (max-width: 768px) {
+    .research-container {
+      margin: 80px auto 40px;
+      padding: 0 15px;
+      width: 100%;
+      max-width: 80%;
+    }
+    
+    .research-list {
+      width: 100%;
+      padding: 0;
+      margin: 0;
+    }
+    
+    .research-title {
+      font-size: 3rem;
+      width: 100%;
+      text-align: center;
+    }
+    
+    .research-link {
+      padding: 15px;
+      font-size: 1.2rem;
+      width: 100%;
+      box-sizing: border-box;
+    }
+    
+    .research-content {
+      padding: 0 15px 15px;
+      width: 100%;
+      box-sizing: border-box;
+    }
+    
+    .nav-buttons {
+      right: 5%;
+      gap: 15px;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .research-container {
+      margin: 60px auto 30px;
+      padding: 0 10px;
+      width: 100%;
+      max-width: 90%; /* Slightly wider on very small screens */
+    }
+    
+    .research-title {
+      font-size: 2.5rem;
+      width: 100%;
+      text-align: center;
+    }
+    
+    .research-list {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .research-item {
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      box-sizing: border-box;
+    }
+    
+    .research-link {
+      padding: 12px;
+      font-size: 1.1rem;
+      width: 100%;
+      box-sizing: border-box;
+      word-break: break-word;
+      text-align: left;
+    }
+    
+    .research-date {
+      width: 100%;
+      box-sizing: border-box;
+    }
+    
+    .research-excerpt {
+      width: 100%;
+      box-sizing: border-box;
+    }
+    
+    .nav-buttons {
+      top: 10px;
+      right: 10px;
+      gap: 10px;
+    }
+    
+    .nav-button {
+      font-size: 0.9rem;
+    }
   }
 </style>
 
