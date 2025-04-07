@@ -122,17 +122,22 @@ hidden: true
     padding: 0;
   }
   
+  /* Hover animation styling for research items */
   .research-item {
     margin-bottom: 30px;
     border-radius: 8px;
     padding: 0;
     background-color: rgba(94, 212, 100, 0.1);
+    border: 1px solid transparent; /* Transparent border initially */
     transition: all 0.3s ease;
+    position: relative;
+    box-shadow: 0 0 0 rgba(94, 212, 100, 0); /* Initial no shadow */
   }
   
   .research-item:hover {
-    background-color: rgba(94, 212, 100, 0.15);
-    transform: translateY(-2px);
+    transform: translateY(-5px); /* Lift up when hovered */
+    border: 1px solid #5ED464; /* Green border on hover */
+    box-shadow: 0 10px 20px rgba(94, 212, 100, 0.2); /* Green glow that follows box shape */
   }
   
   .research-link {
@@ -247,6 +252,11 @@ hidden: true
     color: rgba(255, 255, 255, 0.8);
     margin-top: 20px;
   }
+  
+  /* Remove the old glow effect class as it's no longer needed */
+  .research-item-glow {
+    display: none;
+  }
 </style>
 
 <!-- Navigation buttons -->
@@ -293,3 +303,18 @@ hidden: true
     <div class="footer-copyright">© 2025 Duality. All rights reserved.</div>
   </div>
 </div>
+
+<!-- Add JavaScript to handle the glow effect -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  // Get all research items
+  const researchItems = document.querySelectorAll('.research-item');
+  
+  // Add glow element to each research item
+  researchItems.forEach(item => {
+    const glow = document.createElement('div');
+    glow.className = 'research-item-glow';
+    item.appendChild(glow);
+  });
+});
+</script>
