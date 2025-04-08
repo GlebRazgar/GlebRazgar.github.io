@@ -29,10 +29,10 @@ Generally speaking, we can split connectomes into two categories: low-resolution
 <h4 style="margin-bottom: 0"><u>2.1 Nanoscale Connectomics</u></h4> 
 Nanoscale connectomes are the microscopic maps of neuron-to-neuron connections, captured in tiny volumes of nervous tissue. Electron microscopy (EM) is the tool of choice here, offering the precision to see individual synapses. Back in 1986, the first full nervous system connectome was painstakingly mapped for C. elegans, using hand-annotated EM scans. Fast forward to today, and EM technology has evolved—improvements in image capture, alignment, and data labeling now allow us to map larger volumes with ease. EM has been pivotal in creating connectomes from various samples, including the entire brain and ventral nerve cord of adult fruit flies (Drosophila melanogaster) and sections of mouse and human cortex. The NIH is now ambitiously working on an EM connectome of a whole mouse brain.
 
-<p align="center" style="margin-bottom: 0;"><img src="/images/full_fly.png" alt="Alt text" style="max-width: 45%; height: auto; border-radius: 0px; filter: invert(100%);"></p>
+<p align="center" style="margin-top: 50px; margin-bottom: -30px;"><img src="/images/full_fly.png" alt="Alt text" style="max-width: 45%; height: auto; border-radius: 0px;"></p>
 
 <div style="width: 100%; text-align: justify;"></div><br>
-<p align="center"><img src="/images/multiconn.png" alt="Alt text" style="max-width: 80%; height: auto; border-radius: 0px;"></p>
+<p align="center"><img src="/images/multiconn.png" alt="Alt text" style="max-width: 80%; height: auto; border-radius: 0px; margin-bottom: 40px"></p>
 
 <div style="width: 80%; margin: auto; text-align: justify;">
   <p><b>Figure 1:</b> Connectome of a fruit fly (Drosophila melanogaster) obtained using Electron Microscopy, showing different neuronal types. The connectome consists of 140,000 neurons and is the size of a grain of sand.</p>
@@ -40,7 +40,7 @@ Nanoscale connectomes are the microscopic maps of neuron-to-neuron connections, 
 
 Electron microscopy reigns supreme in spatial resolution, making it essential for capturing the intricate dance of presynaptic and postsynaptic sites along with their delicate morphological nuances. However, this supremacy is not without challengers. X-ray nanotomography, which utilizes a synchrotron source to achieve sub-100 nm resolution, is gaining popularity. Its appeal lies in its ability to bypass the need for heavy metal staining and physical sectioning, offering potential for further refinement. In contrast, conventional light microscopy remains limited by diffraction, resulting in lower resolution, a topic I will delve into later. There are other methods being tested, for instance, stimulated emission depletion (STED) microscopy, which reconstructs neurites and identifies synaptic connections using fluorescent markers, but their resolution (130 nm+) or mapping speed tends to render them less applicable.
 
-<p align="center"><img src="/images/ssm.png" alt="Alt text" style="max-width: 80%; height: auto; border-radius: 0px;;"></p>
+<p align="center"><img src="/images/green_single.png" alt="Alt text" style="max-width: 80%; height: auto; border-radius: 0px;;"></p>
 
 <div style="width: 80%; margin: auto; text-align: justify;">
   <p><b>Figure 2:</b> Illustration showing how the fruit fly connectome, like the one above, was obtained. This involves slicing the fly's brain into ultra-thin sections and imaging each section with an electron microscope, after which a semi-supervised cellular classifier creates a detailed 3D reconstruction of neural structures.</p>
@@ -50,7 +50,7 @@ Electron microscopy reigns supreme in spatial resolution, making it essential fo
 <h4 style="margin-bottom: 0"><u>2.1 Macroscale Connectomics</u></h4> 
 Macroscale connectomes are typically mapped using diffusion-weighted magnetic resonance imaging (dMRI) and functional magnetic resonance imaging (fMRI). dMRI is like the Google Maps of the brain, charting the main highways of white matter that connect the cortex to the subcortex. It does this by tracking the diffusion of water molecules, which reveal the orientation of these neural pathways. When paired with tractography, dMRI doesn't just stop at mapping; it reconstructs the brain's white matter tracts by measuring water diffusion in multiple directions, estimating local fiber orientations, and modeling the brain's fiber pathways. Tractography algorithms then take the baton, tracing the probable routes of these pathways to sketch out the brain's anatomical connectivity. From this data, we can extract metrics like fractional anisotropy (FA), mean diffusivity (MD), and connectivity strength, which help us assess the microstructural properties of white matter and quantify the robustness of long-range connections between brain regions. 
 
-<p align="center"><img src="/images/connectome_line.png" alt="Alt text" style="max-width: 80%; height: auto; border-radius: 10px;"></p>
+<p align="center"><img src="/images/connectome_line.png" alt="Alt text" style="max-width: 80%; height: auto; border-radius: 10px; margin-top: 40px; margin-bottom: 40px;"></p>
 <div style="width: 80%; margin: auto; text-align: justify;">
   <p><b>Figure 4:</b> High-level human brain connectome is mapped in a three-step process: 
   1. Diffusion-weighted MRI (dMRI) is used to chart the brain's white matter tracts.
@@ -86,7 +86,7 @@ Now, let's talk about human connectomes and their quirks. Human connectomes have
 <h4 style="margin-bottom: 0"><u>4.1 Caenorhabditis Elegans</u></h4> 
 Caenorhabditis Elegans, the humble roundworm, is the darling of connectomics. We've mapped its entire connectome, primarily through serial-electron microscopy. This isn't just a static snapshot; it's a dynamic study of how its neural wiring evolves from birth to adulthood. The standout finding? As these worms age, their neural circuits become more interconnected. Yet, despite this monumental mapping feat, the C. Elegans connectome still holds secrets. Researchers suggest that comparative connectomics—juxtaposing brain networks across species—could unlock insights into behavioral correlations.
 
-<p align="center"><img src="/images/celegan.jpg" alt="Alt text" style="max-width: 80%; height: auto; border-radius: 10px; filter: invert(1) hue-rotate(30deg) saturate(1.5) brightness(0.8);"></p>
+<p align="center"><img src="/images/celegan.png" alt="Alt text" style="max-width: 80%; height: auto; border-radius: 10px;"></p>
 <div style="width: 80%; margin: auto; text-align: center;">
   <p><b>Figure 6:</b>Connectome of a C.elecan</p>
 </div><br>
@@ -128,6 +128,12 @@ Mapping the human brain will require faster imaging techniques. Recent advances 
 
 
 Several labs have demonstrated successful expansion of human brain tissue samples by factors of 4-20x, achieving effective resolutions down to ~25nm. Thousands of studies have used EM at different scales, and it has been applied even to expand the whele brain in a single proceedure. At these scales, individual synapses become clearly visible under conventional microscopes. The faster imaging speeds of light microscopy, combined with the ability to process larger tissue volumes simultaneously, reduce the time required for human connectome mapping by orders of magnitude.
+
+<p align="center"><img src="/images/exm.jpg" alt="Alt text" style="max-width: 80%; height: auto; border-radius: 10px; filter: brightness(1.2) contrast(1.1) invert(1);"></p>
+<div style="width: 80%; margin: auto; text-align: center;">
+  <p><b>Figure 1:</b>Expansion Microsope Proceedure.</p>
+</div><br>
+
 
 Complementary technologies are also emerging to address the speed bottleneck in connectome mapping. Multi-beam scanning electron microscopes with 61-169 parallel beams increase throughput by orders of magnitude compared to single-beam systems. Advanced tissue clearing methods like CLARITY and iDISCO+ enable rapid whole-brain imaging with light-sheet microscopy while preserving molecular information. 
 
