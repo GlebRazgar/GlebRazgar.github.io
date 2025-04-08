@@ -119,6 +119,7 @@ hidden: true
     text-align: center;
     margin-top: 0;
     margin-bottom: 40px;
+    width: 100%;
   }
   
   .research-list {
@@ -288,6 +289,7 @@ hidden: true
       padding: 0 15px;
       width: 100%;
       max-width: 80%;
+      text-align: center !important;
     }
     
     .research-list {
@@ -297,9 +299,15 @@ hidden: true
     }
     
     .research-title {
-      font-size: 3rem;
-      width: 100%;
-      text-align: center;
+      font-size: 4rem !important;
+      width: 80% !important;
+      margin: 50px auto 30px !important;
+      text-align: center !important;
+      position: static !important;
+      transform: none !important;
+      left: auto !important;
+      float: none !important;
+      display: inline-block !important;
     }
     
     .research-link {
@@ -326,13 +334,20 @@ hidden: true
       margin: 60px auto 30px;
       padding: 0 10px;
       width: 100%;
-      max-width: 90%; /* Slightly wider on very small screens */
+      max-width: 90%;
+      text-align: center !important;
     }
     
     .research-title {
-      font-size: 2.5rem;
-      width: 100%;
-      text-align: center;
+      font-size: 3.5rem !important;
+      width: 80% !important;
+      margin: 60px auto 20px !important;
+      text-align: center !important;
+      position: static !important;
+      transform: none !important;
+      left: auto !important;
+      float: none !important;
+      display: inline-block !important;
     }
     
     .research-list {
@@ -392,7 +407,7 @@ hidden: true
 
 <!-- Research content -->
 <div class="research-container" style="position: relative !important; padding-top: 20px !important;">
-  <h1 class="research-title">Research</h1>
+  <h1 class="research-title" style="margin-top: 0; color: #5ED464; font-size: 4.8rem;">Research</h1>
   
   <ul class="research-list">
     {% assign sorted_research = site.duality-research | sort: 'date' | reverse %}
