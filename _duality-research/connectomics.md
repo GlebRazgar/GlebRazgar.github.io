@@ -121,7 +121,7 @@ Electron microscopy reconstruction of human brain tissue offers the potential fo
 Mapping the human brain will require faster imaging techniques. Recent advances in expansion microscopy (ExM) offer promising solutions to accelerate human connectome mapping and address this need for faster techniques. ExM physically enlarges biological specimens while maintaining their structural integrity, allowing to aboundun slow and expensive electron microscopes in favour of conventional light microscopes to achieve effective nanoscale resolution, The technique works by embedding tissue in a swellable polymer that expands uniformly, increasing the physical size of the specimen while preserving relative spatial relationships between cellular structures. This physical magnification enables imaging of synaptic proteins and other nanoscale features using standard light microscopes, which can image larger volumes much faster than traditional EM approaches.
 
 
-<p align="center"><img src="/images/exm.jpg" alt="Alt text" style="max-width: 80%; height: auto; border-radius: 10px; filter: brightness(1.2) contrast(1.1) invert(1);"></p>
+<p align="center"><img src="/images/exm.png" alt="Alt text" style="max-width: 80%; height: auto; border-radius: 10px;"></p>
 <div style="width: 80%; margin: auto; text-align: center;">
   <p><b>Figure 1:</b>Expansion Microsope Proceedure.</p>
 </div><br>
@@ -129,9 +129,9 @@ Mapping the human brain will require faster imaging techniques. Recent advances 
 
 Several labs have demonstrated successful expansion of human brain tissue samples by factors of 4-20x, achieving effective resolutions down to ~25nm. Thousands of studies have used EM at different scales, and it has been applied even to expand the whele brain in a single proceedure. At these scales, individual synapses become clearly visible under conventional microscopes. The faster imaging speeds of light microscopy, combined with the ability to process larger tissue volumes simultaneously, reduce the time required for human connectome mapping by orders of magnitude.
 
-<p align="center"><img src="/images/exm.jpg" alt="Alt text" style="max-width: 80%; height: auto; border-radius: 10px; filter: brightness(1.2) contrast(1.1) invert(1);"></p>
+<p align="center"><img src="/images/exm_results.png" alt="Alt text" style="max-width: 90%; height: auto; border-radius: 10px;"></p>
 <div style="width: 80%; margin: auto; text-align: center;">
-  <p><b>Figure 1:</b>Expansion Microsope Proceedure.</p>
+  <p><b>Figure 1:</b>Pre v/s  Post - Expansion Microsope imaging.</p>
 </div><br>
 
 
