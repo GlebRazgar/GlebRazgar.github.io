@@ -28,7 +28,7 @@ Nanoscale connectomes are the microscopic maps of neuron-to-neuron connections, 
 <p align="center" style="margin-bottom: 0;"><img src="/images/connectome2.png" alt="Alt text" style="max-width: 45%; height: auto; border-radius: 0px;"></p>
 
 <div style="width: 100%; text-align: justify;"></div><br>
-<p align="center"><img src="/images/multiconn.png" alt="Alt text" style="max-width: 80%; height: auto; border-radius: 0px; mix-blend-mode: multiply;"></p>
+<p align="center"><img src="/images/multiconn.jpg" alt="Alt text" style="max-width: 80%; height: auto; border-radius: 0px; mix-blend-mode: difference;"></p>
 
 <div style="width: 80%; margin: auto; text-align: justify;">
   <p><b>Figure 1:</b> Connectome of a fruit fly (Drosophila melanogaster) obtained using Electron Microscopy, showing different neuronal types. The connectome consists of 140,000 neurons and is the size of a grain of sand.</p>
@@ -46,7 +46,7 @@ Electron microscopy reigns supreme in spatial resolution, making it essential fo
 <h4 style="margin-bottom: 0"><u>2.1 Macroscale Connectomics</u></h4> 
 Macroscale connectomes are typically mapped using diffusion-weighted magnetic resonance imaging (dMRI) and functional magnetic resonance imaging (fMRI). dMRI is like the Google Maps of the brain, charting the main highways of white matter that connect the cortex to the subcortex. It does this by tracking the diffusion of water molecules, which reveal the orientation of these neural pathways. When paired with tractography, dMRI doesn't just stop at mapping; it reconstructs the brain's white matter tracts by measuring water diffusion in multiple directions, estimating local fiber orientations, and modeling the brain's fiber pathways. Tractography algorithms then take the baton, tracing the probable routes of these pathways to sketch out the brain's anatomical connectivity. From this data, we can extract metrics like fractional anisotropy (FA), mean diffusivity (MD), and connectivity strength, which help us assess the microstructural properties of white matter and quantify the robustness of long-range connections between brain regions. 
 
-<p align="center"><img src="/images/connectome_line.png" alt="Alt text" style="max-width: 80%; height: auto; border-radius: 10px;"></p>
+<p align="center"><img src="/images/connectome_seq.png" alt="Alt text" style="max-width: 80%; height: auto; border-radius: 10px; mix-blend-mode: multiply;"></p>
 <div style="width: 80%; margin: auto; text-align: justify;">
   <p><b>Figure 4:</b> High-level human brain connectome is mapped in a three-step process: 
   1. Diffusion-weighted MRI (dMRI) is used to chart the brain's white matter tracts.
@@ -82,7 +82,7 @@ Now, let's talk about human connectomes and their quirks. Human connectomes have
 <h4 style="margin-bottom: 0"><u>4.1 Caenorhabditis Elegans</u></h4> 
 Caenorhabditis Elegans, the humble roundworm, is the darling of connectomics. We've mapped its entire connectome, primarily through serial-electron microscopy. This isn't just a static snapshot; it's a dynamic study of how its neural wiring evolves from birth to adulthood. The standout finding? As these worms age, their neural circuits become more interconnected. Yet, despite this monumental mapping feat, the C. Elegans connectome still holds secrets. Researchers suggest that comparative connectomics—juxtaposing brain networks across species—could unlock insights into behavioral correlations.
 
-<p align="center"><img src="/images/celegan.jpg" alt="Alt text" style="max-width: 80%; height: auto; border-radius: 10px; mix-blend-mode: multiply;"></p>
+<p align="center"><img src="/images/celegan.png" alt="Alt text" style="max-width: 80%; height: auto; border-radius: 10px; mix-blend-mode: difference; filter: saturate(0.6);"></p>
 <div style="width: 80%; margin: auto; text-align: center;">
   <p><b>Figure 6:</b>Connectome of a C.elecan</p>
 </div><br>
