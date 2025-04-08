@@ -1,25 +1,10 @@
 ---
 title: "Network Controll Through Symbiosis"
+authors: "Gleb Razgar and Hiroki Kozuki"
 layout: duality-posts
 date: 2025-02-23
 hidden: true
 ---
-
-<br>
-<div class="table-container">
-  <table>
-    <tr>
-      <td align="center">
-        Gleb Razgar<br>
-        <a href="mailto:gleb.razgar@gmail.com">gleb.razgar@gmail.com</a>
-      </td>
-      <td align="center">
-        Hiroki Kozuki<br>
-        <a href="mailto:hirokozuki@icl.ac.uk">hirokozuki@icl.ac.uk</a>
-      </td>
-    </tr>
-  </table>
-</div>
 
 <h3 align="center">1. Background </h3>
 
@@ -30,7 +15,7 @@ Learning to read and control networks - human or otherwise is a logical goal we 
 
 Hitherto, interpreting and steering AIs has mainly been done through two key lenses: Mechanistic and Representational. Both deal with different units of analysis. [Representation engineering](https://glebrazgar.github.io/2025/01/10/RepE.html) (RepE) is a top-down study of the network effects exhibited by the populations of neurons, whilst Mechanistic Interpretability (MI) is a bottom-up study attempting to reverse engineer those effects from individual neurons and circuits. MI is precise but impractical, RepE is practical but imprecise. If we were to make it practical and precise to control AI models, both of the techniques are insufficient. To solve this, we propose network Symbiosis as a possible solution. 
 
-<p align="center"><img src="/images/SymbioteNet.png" alt="Alt text" style="max-width: 90%; height: auto; mix-blend-mode: multiply;"></p>
+<p align="center"><img src="/images/SymbioteNet-green.png" alt="Alt text" style="max-width: 90%; height: auto;"></p>
 
 <div style="width: 80%; margin: auto; text-align: justify;">
   <p><b>Figure 1:</b> SymbioteNet (left) steering the primary neural network (right) by interacting with it's weights and observing it's outputs</p>
@@ -78,14 +63,14 @@ These claims have been shown to be true across the networks, even though by caus
 <h4 style="margin-bottom: 0"><u>4.1 Basics </u></h4>
 Before scaling to larger networks like transformers, we conducted our experiment on the setup described in Section 2. Having trained and frozen the weights of the Primary MNIST CNN, we taught the SymbioteNet to inhibit each digit iteratively without misclassifying the unstated digit until its turn.
 
-<p align="center"><img src="/images/training.png" alt="Alt text" style="max-width: 80%; height: auto; mix-blend-mode: multiply;"></p>
+<p align="center"><img src="/images/training_loss-green.png" alt="Alt text" style="max-width: 80%; height: auto;"></p>
 <div style="width: 80%; margin: auto; text-align: justify;">
   <p><b>Figure 2:</b> Training and validation loss of SymbioteNet. As can be deduced from the validation loss, it takes the model significantly longer to learn the weight representations than for the CNN to learn classification.</p>
 </div>
 
 <h4 style="margin-bottom: 0"><u>4.2 Polysemanticity </u></h4>
 Smaller networks have the propensity to learn concepts easily, so, motivated by the BIMT paper, we induce polysemanticity by progressively pruning the weaker weights away during training of the Primary network (Figure 3). This forces the network to become more parameter efficient and forces concepts to superimpose in a mixed representation.
-<p align="center"><img src="/images/polysemanticity.png" alt="Alt text" style="max-width: 95%; height: auto; mix-blend-mode: multiply;"></p>
+<p align="center"><img src="/images/pruening-green.png" alt="Alt text" style="max-width: 95%; height: auto;"></p>
 <div style="width: 80%; margin: auto; text-align: justify;">
   <p><b>Figure 3:</b> Enforcement of polysemanticity through BIMT-like weight pruning.</p>
 </div>
@@ -95,7 +80,7 @@ After training both networks and freezing their weights, we test them on the uns
 
 Importantly, SymbioteNet is made two times smaller than the Primary network, such that it is forced to learn the compressed representation of the subsidiary model's weights rather than simply memorizing the digit activations. That's where the advantage of training SymbioteNet on the CNN's weights rather than activations really shines.
 
-<p align="center"><img src="/images/confusion_matrix.png" alt="Alt text" style="max-width: 60%; height: auto; mix-blend-mode: multiply;"></p>
+<p align="center"><img src="/images/confusion_matrix-green.png" alt="Alt text" style="max-width: 60%; height: auto;"></p>
 <div style="width: 80%; margin: auto; text-align: justify;">
   <p><b>Figure 4:</b> Confusion matrix showing SymbioteNet's success in learning the circuits of the Primary network and inhibiting them to correctly misclassify the digit 3 on command.</p>
 </div>
