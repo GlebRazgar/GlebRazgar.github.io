@@ -8,7 +8,7 @@ hidden: true
 
 
 
-<p align="center"><img src="/images/fly_green.png" alt="Alt text" style="max-width: 60%; height: auto; border-radius: 10px;"></p>
+<p align="center"><img src="/images/fly_green.png" alt="Alt text" style="max-width: 70%; height: auto; border-radius: 10px; margin-bottom: 0;"></p>
 <br>
 
 <h3 align="center">1. Connectomics Overview</h3>
@@ -34,7 +34,7 @@ Now, let's jump ahead from overview to specifics!
 <h4 style="margin-bottom: 0"><u>2.1 Nanoscale Connectomics</u></h4> 
 In high-res (nanoscale) connectomics the goal is to obtain tiny mechanistic maps of neuron-to-neuron, synapse-to-synapse connectivity. Electron microscopy (EM) is the tool of choice here thanks to it's awesome ~3-5nm precison, which is sufficient for image neurons down to their synapses. The issue with traditional optical microscopes is that they can't image samples bellow 200-300nm due to the diffraction limit of light. Instead, the EM works by bombarding heavy metal-stained tissue samples (typically with osmium, uranium, and lead) with accelerated electrons and detecting differential scattering of electrons between subcellular structures (think: cellular membranes, dentriates, synaptic vesicles, etc.,) all of which have differing electron densities. 
 
-<p align="center" style="margin-top: 50px; margin-bottom: -30px;"><img src="/images/full_fly.png" alt="Alt text" style="max-width: 60%; height: auto; border-radius: 0px;"></p>
+<p align="center" style="margin-top: 50px; margin-bottom: -30px;"><img src="/images/full_fly.png" alt="Alt text" style="max-width: 70%; height: auto; border-radius: 0px;"></p>
 
 <div style="width: 100%; text-align: justify;"></div><br>
 <p align="center"><img src="/images/multiconn.png" alt="Alt text" style="max-width: 80%; height: auto; border-radius: 0px; margin-bottom: 40px"></p>
