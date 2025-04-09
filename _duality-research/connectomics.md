@@ -8,7 +8,7 @@ hidden: true
 
 
 
-<p align="center"><img src="/images/fly_green.png" alt="Alt text" style="max-width: 80%; height: auto; border-radius: 10px;"></p>
+<p align="center"><img src="/images/fly_green.png" alt="Alt text" style="max-width: 60%; height: auto; border-radius: 10px;"></p>
 <br>
 
 <h3 align="center">1. Connectomics Overview</h3>
@@ -16,28 +16,25 @@ Death is bad engineering.
 
 Our brain - the jewel of consciousness - is a dynamic function. One that is dependent on its temporal dynamics, neuronal activations, and synaptic weights. As you could imagine, being able to model such a function would be **UNPRECEDENTED**. To model the brain is to simulate it. And simulating the brain gives us the ability to emulate **mental disorders**, **brain disease**, **drug development**, and possibly one day **<u>transgress death</u>**.  
 
-Connectomics is a discipline that tries to create such brain uploads. To be concrete, connectomics can be thought of as the study of brain wiring maps (connectomes), with a focus on how connectivity, individual synapses, cellular morphology, and cellular ultrastructure contribute to the makeup of a network. Since our brain is more than just its structural composition, connectomics then tries to overlay functional imaging on top of structural maps to get a comprehensive model of the brain... in fancier terms - a brain upload.
+Connectomics is a discipline that tries to create such brain uploads. To be concrete, connectomics can be thought of as the study of brain wiring maps (connectomes), with a focus on how connectivity, individual synapses, cellular morphology, and cellular ultrastructure contribute to the makeup of a network. Since our brain is more than just its structural composition, connectomics then tries to overlay functional imaging on top of structural maps to get a comprehensive model of the brain - or in fancier terms, a brain upload.
 
-As sci-fi as I make it sound, connectomics is anything but fiction. We've already mapped and simulated small animals at nanometer imaging resolution. Though human connectome hasn't yet been mapped due to the colosal size of our brain, at the current rate of progress you can expect to see one within the **next few years** (more on scalind laws later). Even if you are skeptical about achieving 1:1 human brain simulations, the universe where we have closely approximate human connectomes looks strikingly better than ours, and thus worth seriously entertaining. In light of such potential, this post tries to provide a holistic overview of connectomics, its methods, and the upcoming future.
+As sci-fi as I make it sound, connectomics is anything but fiction. We've already mapped and simulated small animals at nanometer imaging resolution. Though human connectome hasn't yet been mapped due to the colosal size of our brain, at the current rate of progress you can expect to see one within the **next few years** (more on scalind laws later). Even if you are skeptical about achieving 1:1 human brain simulations, a universe where we have even approximate human connectomes looks strikingly better than ours, and thus worth seriously entertaining. Even if drug testing can be simulated with a probablalistic degree of certanty - much like a weather forecast, this in itself would create new forms of medicine. In light of such possible future, this post tries to provide a holistic overview of connectomics, its methods, milestones, and future directions.
 
 <hr style="border-top: 1px solid black;">
 
 <h3 align="center">2. Methods</h3>
-Generally speaking, connectomics operates at two distinct units of analysis: low-resolution (~macroscale) or high-resolution (~nanoscale). With low-resolution imaging, researchers try to gauge abstract brain functions by using top-down functional and structural MRI to map large fiber tracts and gray matter regions within the brain, analyzing things like blood flow for functional insights and water diffusivity for structural details. 
-On the other hand, high-resolution connectomics focuses on mapping the brain at a mechanistic level - capturing all the substrate we can get our hands on with microscopes and histology.
+Generally speaking, connectomics research operates at two distinct units of analysis: low-resolution (~macroscale) or high-resolution (~nanoscale). With low-resolution imaging, researchers try to gauge abstract brain functions by using top-down functional and structural MRI to map large fiber tracts and gray matter regions within the brain, analyzing things like blood flow for functional insights and water diffusivity for structural details. 
+On the other hand, high-resolution connectomics focuses on mapping the brain at a mechanistic level - capturing all the substrate at the closest zoom with microscopes and histology to create highly detailed digital reconstructions of the organism.
 
-An important distinction between low vs high-res brain imaging apart from fidelity is their invasiveness. High-res imaging is **hyper** invasive as it requires physically cutting the brain into ~micrometer thick slices to image each individually, like in serial scanning electron microscopy (SSEM). This method, though fatal to the organism, provides the unprecedented fidelity required for high-precision uploading. On the other end of the spectrum, low-res imaging like MRI works on live brains, but as a result fails to capture the mechanistic detail required to accurately simulate a brain. Until we develop non-invasive techniques capable of nanoscale imaging, invasive high-resolution methods remain our most viable path to whole brain emulations.
-
-That said, lets dive into technicalities detail...
-
+An important distinction between low vs high-res brain imaging apart from fidelity is their invasiveness. High-res imaging is **hyper** invasive as it often requires physically cutting the brain into micrometer-thick slices and imaging each individually, like in serial scanning electron microscopy (SSEM). This method, though fatal to the organism, provides the unprecedented fidelity required for high-precision uploading. On the other end of the spectrum, low-res imaging like MRI works on live brains, but as a result fails to capture the mechanistic details required to accurately simulate a brain. There tends to be a clear correlation between invasiveness and the amount of information you can extract in connectomics, and until we develop non-invasive imaging methods with nanoscale resolution, methods like SSEM will be most promising for full brain simulation.  
+ 
+Now, let's jump ahead from overview to specifics! 
+<p align="center" style="color: #5ED464;"><em>Technical rabbit hole ahead—feel free to bypass</em></p>
 
 <h4 style="margin-bottom: 0"><u>2.1 Nanoscale Connectomics</u></h4> 
-In high-res (nanoscale) connectomics the goal is to obtain tiny mechanistic maps of neuron-to-neuron, synapse-to-synapse connectivity, captured in tiny volumes of brain tissue. Electron microscopy (EM) is the tool of choice here, offering ~3-5nm precison, which is sufficient to peek into individual synapses. EM functions by bombarding heavy metal-stained tissue samples with accelerated electrons and detecting their interactions with the sample's atomic structure. The differential scattering of electrons by electron-dense membranes versus cytoplasmic components generates the high-contrast images needed to identify synaptic junctions, vesicle pools, and postsynaptic densities with nanometer precision. 
+In high-res (nanoscale) connectomics the goal is to obtain tiny mechanistic maps of neuron-to-neuron, synapse-to-synapse connectivity. Electron microscopy (EM) is the tool of choice here thanks to it's awesome ~3-5nm precison, which is sufficient for image neurons down to their synapses. The issue with traditional optical microscopes is that they can't image samples bellow 200-300nm due to the diffraction limit of light. Instead, the EM works by bombarding heavy metal-stained tissue samples (typically with osmium, uranium, and lead) with accelerated electrons and detecting differential scattering of electrons between subcellular structures (think: cellular membranes, dentriates, synaptic vesicles, etc.,) all of which have differing electron densities. 
 
-**Back in 1986, the first full nervous system connectome was painstakingly mapped for a C.elegan worm, using hand-annotated EM. Fast forward to today, and EM technology has evolved along with image capture, alignment, and data labeling by 3 orders of magnitude. For reference it took over a decate to map 302 neurons of the C.elegan worm in 1980s and 3 years to map 100,000+ neurons of a fruit fly in 2023. Now there is an ongoing effort to map the mouse brain with ~70 million neurons by 2027 using EM.**
-
-Do you feel the acceleration? Humans aren't far down the line...
-<p align="center" style="margin-top: 50px; margin-bottom: -30px;"><img src="/images/full_fly.png" alt="Alt text" style="max-width: 45%; height: auto; border-radius: 0px;"></p>
+<p align="center" style="margin-top: 50px; margin-bottom: -30px;"><img src="/images/full_fly.png" alt="Alt text" style="max-width: 60%; height: auto; border-radius: 0px;"></p>
 
 <div style="width: 100%; text-align: justify;"></div><br>
 <p align="center"><img src="/images/multiconn.png" alt="Alt text" style="max-width: 80%; height: auto; border-radius: 0px; margin-bottom: 40px"></p>
@@ -46,14 +43,20 @@ Do you feel the acceleration? Humans aren't far down the line...
   <p><b>Figure 1:</b> Connectome of a fruit fly (Drosophila melanogaster) obtained using Electron Microscopy, showing different neuronal types. The connectome consists of 140,000 neurons and is the size of a grain of sand.</p>
 </div><br>
 
-Electron microscopy reigns supreme in spatial resolution, making it essential for capturing the intricate dance of presynaptic and postsynaptic sites along with their delicate morphological nuances. However, this supremacy is not without challengers. X-ray nanotomography, which utilizes a synchrotron source to achieve sub-100 nm resolution, is gaining popularity. Its appeal lies in its ability to bypass the need for heavy metal staining and physical sectioning, offering potential for further refinement. In contrast, conventional light microscopy remains limited by diffraction, resulting in lower resolution, a topic I will delve into later. There are other methods being tested, for instance, stimulated emission depletion (STED) microscopy, which reconstructs neurites and identifies synaptic connections using fluorescent markers, but their resolution (130 nm+) or mapping speed tends to render them less applicable.
+Alternatively to using very expensive and slow electron microscopes (~$2M per piece) to elucidate the structure, we can expand the brain itself and image it with a standard microscope! Expansion Microscopy (ExM) is a technique which allows to, quite litterally - physically enlarge the tissue ~20x while maintaining it's structural relationships. ExM works by embedding tissue in a swellable polymer (like a baby dyper matrix) that expands uniformly when you add water, increasing the physical size of the specimen whilst preserving it's composition. The beauty of ExM is that the physical magnification enables imaging of tissue at the nanoscale using standard light microscopes. 
 
-<p align="center"><img src="/images/green_single.png" alt="Alt text" style="max-width: 80%; height: auto; border-radius: 0px;;"></p>
 
-<div style="width: 80%; margin: auto; text-align: justify;">
-  <p><b>Figure 2:</b> Illustration showing how the fruit fly connectome, like the one above, was obtained. This involves slicing the fly's brain into ultra-thin sections and imaging each section with an electron microscope, after which a semi-supervised cellular classifier creates a detailed 3D reconstruction of neural structures.</p>
+<p align="center"><img src="/images/exm.png" alt="Alt text" style="max-width: 80%; height: auto; border-radius: 10px;"></p>
+<div style="width: 80%; margin: auto; text-align: center;">
+</div>
+<p align="center"><img src="/images/exm_results.png" alt="Alt text" style="max-width: 90%; height: auto; border-radius: 10px;"></p>
+<div style="width: 80%; margin: auto; text-align: center;">
+  <p><b>Figure 1:</b>Pre v/s  Post - Expansion Microsope imaging.</p>
 </div><br>
 
+EM reigns supreme in spatial resolution, but there are other technologies worth keeping an eye on. Un-arguably one of the most awesome connectomics methods is to use particle coliders called Synctrons to image the tissue via X-ray nanotomography. Synctron's appeal lies in it's ability to bypass the need for heavy metal staining and physical sectioning unlike in electron microscope. The way it works is by accelerating electrons to near light speed, and when then bending them to obtain incredibly potent X-ray beams (up to 10¹² photons/second) that are filtered to desired energy levels between 8-12 keV. Unlike conventional X-ray imaging that detects how tissues block X-rays, synchrotron-based connectomics measures how X-rays bend or phase shift when passing through brain sample due to different tissue refractive indicies. This reveals unmyelinated axons and cell boundaries without staining. In theory, a synctron can image a full human brain in less than a year at ~40nm resolution, which is faster than uising 350 electron microscopes in paralell!
+
+Numerous other brain imaging techniques exist and are in the making, but thats a conversation for another rabithole.
 
 <h4 style="margin-bottom: 0"><u>2.1 Macroscale Connectomics</u></h4> 
 Macroscale connectomes are typically mapped using diffusion-weighted magnetic resonance imaging (dMRI) and functional magnetic resonance imaging (fMRI). dMRI is like the Google Maps of the brain, charting the main highways of white matter that connect the cortex to the subcortex. It does so by tracking the diffusion of water molecules, which reveal the orientation of these neural pathways. When paired with tractography, dMRI doesn't stop at mapping, and reconstructs the brain's white matter tracts by measuring water diffusion in multiple directions, estimating local fiber orientations, and modeling the brain's fiber pathways. Tractography algorithms then take the baton, tracing the probable routes of these pathways to sketch out the brain's anatomical connectivity. From this data, we can extract metrics like fractional anisotropy (FA), mean diffusivity (MD), and connectivity strength, which help us assess the microstructural properties of white matter and quantify the robustness of long-range connections between brain regions. 
@@ -69,16 +72,19 @@ Macroscale connectomes are typically mapped using diffusion-weighted magnetic re
 
 So, you've got your brain imaging data. What next? Turn it into a graph neural network (GNN) to make it functional. Imagine each brain region as a node and the white matter connections as edges. The weights? They come from metrics like FA values or fiber counts. This graph setup lets us use GNN algorithms to dissect the brain's network dynamics, spot clusters of tightly-knit regions, and trace the flow of information through neural circuits. The beauty of the GNN framework lies in its dual ability to map the structural layout of brain connections and to learn how activity zips through the network. This computational method is poweful for systematically exploring brain organization and function at the network level.
 
+
 <p align="center"><img src="/images/matricies.png" alt="Alt text" style="max-width: 80%; height: auto; border-radius: 10px; filter: invert(100%) hue-rotate(270deg) saturate(80%);"></p>
 <div style="width: 80%; margin: auto; text-align: center;">
   <p><b>Figure 5:</b> Connectivity matrices of different species.</p>
 </div>
 
+<p align="center" style="color: #5ED464;"><em>Technical rabbit hole over—feel free to continue</em></p>
+
 <hr style="border-top: 1px solid black;">
 
 <h3 align="center">3. Applications</h3>
 
-By comparing the connectomes of the diseased and the healthy, we can glean insights into psychopathologies like neuropathic pain and potential therapies. Connectomics offers a window into the tangled web of mental illnesses and brain disorders. Advanced imaging technologies enhance our ability to track and even predict diseases based on historical data, though this is a time-consuming endeavor. Take schizophrenia and bipolar disorder, for instance—both share genetic roots, and studies show that individuals with higher polygenic scores for these conditions exhibit reduced connectivity in neuroimaging. This research marries imaging with genetics to probe the origins and outcomes of genetically linked disorders. Another study corroborates the link between connectivity and disease likelihood, noting that schizophrenia patients have less structurally complete brain networks. The Achilles' heel of connectomics is its current inability to capture whole-brain networks, complicating the task of drawing definitive cause-and-effect conclusions about neural pathways. While connectomics has been applied to stroke patients via MRI, the paucity of research in this niche means we can't yet make sweeping claims about strokes and connectivity. Some findings suggest a link between poor connectivity in the language system and motor coordination issues, but the evidence isn't robust enough for bold assertions. Behavioral disorders pose their own challenges, often diagnosed and treated based on symptoms that overlap across conditions. Connectomics has identified neuromarkers for social anxiety disorder (SAD) with high precision, improving symptom management. This burgeoning field holds promise for broad applications in all-things brain function related, as current research continues to build on neural networks and the associated psychopathology.
+By comparing even the most basic structural connectomes of the diseased and the healthy, we can glean into psychopathologies like neuropathic pain, mental illnesses and brain disorders. Advanced imaging technologies enhance our ability to track and even predict diseases based on historical data, though this is a time-consuming endeavor. Take schizophrenia and bipolar disorder, for instance—both share genetic roots, and studies show that individuals with higher polygenic scores for these conditions exhibit reduced connectivity in neuroimaging. This research marries imaging with genetics to probe the origins and outcomes of genetically linked disorders. Another study corroborates the link between connectivity and disease likelihood, noting that schizophrenia patients have less structurally complete brain networks. The Achilles' heel of connectomics is its current inability to capture whole-brain networks, complicating the task of drawing definitive cause-and-effect conclusions about neural pathways. While connectomics has been applied to stroke patients via MRI, the paucity of research in this niche means we can't yet make sweeping claims about strokes and connectivity. Some findings suggest a link between poor connectivity in the language system and motor coordination issues, but the evidence isn't robust enough for bold assertions. Behavioral disorders pose their own challenges, often diagnosed and treated based on symptoms that overlap across conditions. Connectomics has identified neuromarkers for social anxiety disorder (SAD) with high precision, improving symptom management. This burgeoning field holds promise for broad applications in all-things brain function related, as current research continues to build on neural networks and the associated psychopathology.
 
 When you compare the connectomes of healthy women and men, the data reveals something intriguing: women's connectomes are not just slightly better connected, but significantly so. They boast more edges, a higher minimum bipartition width, a larger eigengap, and a greater minimum vertex cover. In simpler terms, women's brains are like a finely tuned network machine, with fewer communication bottlenecks and superior expansion capabilities. The minimum bipartition width, a metric borrowed from computer network design, indicates how well a network can handle communication without congestion. A larger eigengap suggests that women's connectomes are better at expanding, akin to a network that can grow without losing its coherence. These factors collectively highlight a superior network connectivity in female braingraphs, offering a fascinating glimpse into the intricacies of human brain networks.
 
@@ -89,7 +95,7 @@ Now, let's talk about human connectomes and their quirks. Human connectomes have
 
 <hr style="border-top: 1px solid black;">
 
-<h3 align="center">4. History</h3>
+<h3 align="center">4. History & Progress</h3>
 
 <h4 style="margin-bottom: 0"><u>4.1 Caenorhabditis Elegans</u></h4> 
 Caenorhabditis Elegans, the humble roundworm, is the darling of connectomics. We've mapped its entire connectome, primarily through serial-electron microscopy. This isn't just a static snapshot; it's a dynamic study of how its neural wiring evolves from birth to adulthood. The standout finding? As these worms age, their neural circuits become more interconnected. Yet, despite this monumental mapping feat, the C. Elegans connectome still holds secrets. Researchers suggest that comparative connectomics—juxtaposing brain networks across species—could unlock insights into behavioral correlations.
@@ -122,37 +128,13 @@ Electron microscopy reconstruction of human brain tissue offers the potential fo
 
 <hr style="border-top: 1px solid black;">
 
-<h3 align="center">5. Speeding up Connectomics</h3>
-
-<h4 style="margin-bottom: 0"><u>5.1 Expansion Microscopy</u></h4> 
-
-Mapping the human brain will require faster imaging techniques. Recent advances in expansion microscopy (ExM) offer promising solutions to accelerate human connectome mapping and address this need for faster techniques. ExM physically enlarges biological specimens while maintaining their structural integrity, allowing to aboundun slow and expensive electron microscopes in favour of conventional light microscopes to achieve effective nanoscale resolution, The technique works by embedding tissue in a swellable polymer that expands uniformly, increasing the physical size of the specimen while preserving relative spatial relationships between cellular structures. This physical magnification enables imaging of synaptic proteins and other nanoscale features using standard light microscopes, which can image larger volumes much faster than traditional EM approaches.
-
-
-<p align="center"><img src="/images/exm.png" alt="Alt text" style="max-width: 80%; height: auto; border-radius: 10px;"></p>
-<div style="width: 80%; margin: auto; text-align: center;">
-  <p><b>Figure 1:</b>Expansion Microsope Proceedure.</p>
-</div><br>
-
-
-Several labs have demonstrated successful expansion of human brain tissue samples by factors of 4-20x, achieving effective resolutions down to ~25nm. Thousands of studies have used EM at different scales, and it has been applied even to expand the whele brain in a single proceedure. At these scales, individual synapses become clearly visible under conventional microscopes. The faster imaging speeds of light microscopy, combined with the ability to process larger tissue volumes simultaneously, reduce the time required for human connectome mapping by orders of magnitude.
-
-<p align="center"><img src="/images/exm_results.png" alt="Alt text" style="max-width: 90%; height: auto; border-radius: 10px;"></p>
-<div style="width: 80%; margin: auto; text-align: center;">
-  <p><b>Figure 1:</b>Pre v/s  Post - Expansion Microsope imaging.</p>
-</div><br>
-
-
-Complementary technologies are also emerging to address the speed bottleneck in connectome mapping. Multi-beam scanning electron microscopes with 61-169 parallel beams increase throughput by orders of magnitude compared to single-beam systems. Advanced tissue clearing methods like CLARITY and iDISCO+ enable rapid whole-brain imaging with light-sheet microscopy while preserving molecular information. 
-
-On the computational front, automated segmentation using transformers has improved reconstruction accuracy while reducing manual proofreading requirements. Platforms like VAST and Neuroglancer leverage cloud computing for distributed annotation of massive datasets. High-throughput automated synapse detection algorithms using deep learning achieve human-level accuracy while processing volumes thousands of times faster than manual annotation.
-
-These complementary approaches - from sample preparation to imaging to computational analysis - are creating a technological ecosystem that makes comprehensive connectome mapping increasingly feasible at larger scales even if the full brain mapping is currently ellusive. 
-
-
-
-
-
-<h3 align="center">6. The Future</h3>
+<h3 align="center">5. The Future</h3>
 There is an invisible path to the first human connectome. Cost, fidelity and speed are still to give way to this future, but once they do, massive gpu orchestras will buzz the melody of first human AIs.
 
+
+
+<!-- 
+
+**Back in 1986, the first full nervous system connectome was painstakingly mapped for a C.elegan worm, using hand-annotated EM. Fast forward to today, and EM has evolved along with image capture, alignment, and data labeling by 3 orders of magnitude. For reference it took over a decate to map 302 neurons of the C.elegan worm in 1980s and 3 years to map 100,000+ neurons of a fruit fly in 2023. Now there is an ongoing effort to map the mouse brain with ~70 million neurons by 2027 using EM.**
+
+**Do you feel the acceleration? Humans aren't far down the line...** -->
