@@ -49,7 +49,7 @@ Alternatively to using very expensive and slow electron microscopes (~$2M per pi
 <p align="center"><img src="/images/exm.png" alt="Alt text" style="max-width: 80%; height: auto; border-radius: 10px;"></p>
 <div style="width: 80%; margin: auto; text-align: center;">
 </div>
-<p align="center"><img src="/images/exm_results.png" alt="Alt text" style="max-width: 90%; height: auto; border-radius: 10px;"></p>
+<p align="center"><img src="/images/exm_results.png" alt="Alt text" style="max-width: 80%; height: auto; border-radius: 10px;"></p>
 <div style="width: 80%; margin: auto; text-align: center;">
   <p><b>Figure 1:</b>Pre v/s  Post - Expansion Microsope imaging.</p>
 </div><br>
