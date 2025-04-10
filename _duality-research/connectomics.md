@@ -14,25 +14,30 @@ hidden: true
 <h3 align="center">1. Connectomics Overview</h3>
 Death is bad engineering.
 
-Our brain - the jewel of consciousness - is a dynamic function. One that is dependent on its temporal dynamics, neuronal activations, and synaptic weights. As you could imagine, being able to model such a function would be **UNPRECEDENTED**. To model the brain is to simulate it. And simulating the brain gives us the ability to emulate **mental disorders**, **brain disease**, **drug development**, and possibly one day **<u>transgress death</u>**.  
+Our brain — the jewel of consciousness — is a dynamic function. One that is dependent on its temporal dynamics, neuronal activations, and synaptic weights. As you could imagine, being able to model such a function would be **UNPRECEDENTED**. To model the brain is to simulate it. And simulating the brain gives us the ability to emulate **mental disorders**, **brain disease**, **drug development**, and possibly one day **<u>transgress death</u>**.  
 
-What is popularly known as "brain uploading" is more formally studied as connectomics, a discipline dedicated to creating brain wiring diagrams (connectomes), with a focus on how connectivity, individual synapses, cellular morphology, and cellular ultrastructure contribute to the makeup of a network. Since our brain is more than just its structure, connectomics tries to overlay functional imaging on top of structural maps to get a full computational counterpart of the brain - or in fancier terms, a brain upload.
+What is popularly known as "brain uploading" is more formally studied as connectomics, a discipline dedicated to creating brain wiring diagrams (connectomes), with a focus on how connectivity, individual synapses, cellular morphology, and cellular ultrastructure contribute to the makeup of a network. Since our brain is more than just its structure, connectomics tries to overlay functional imaging on top of structural maps to get a full computational counterpart of the brain – or in fancier terms, a brain upload.
 
-As sci-fi as I make it sound, connectomics is anything but fiction. We've already mapped and simulated small animals at nanometer imaging resolution. Though human connectome hasn't yet been mapped due to the colosal size of our brain, at the current rate of progress you can expect to see one within the **next few years** (more on scalind laws later). Even if you are skeptical about achieving 1:1 human brain simulations, a universe where we have even approximate human connectomes looks strikingly better than ours, and thus worth seriously entertaining. Even if drug testing can be simulated with a probablalistic degree of certanty - much like a weather forecast, this in itself would create new forms of medicine. In light of such possible future, this post tries to provide a holistic overview of connectomics, its methods, milestones, and future directions.
+As sci-fi as I make it sound, connectomics is anything but fiction. We've already mapped and simulated small animals at nanometer imaging resolution. Though human connectome hasn't yet been mapped due to the colosal size of our brain, at the current rate of progress you can expect to see one within the **next few years** (more on scalind laws later). Even if you are skeptical about achieving 1:1 human brain simulations, a universe where we have even approximate human connectomes looks strikingly better than ours, and thus worth seriously entertaining. Even if drug testing can be simulated with a probablalistic degree of certanty, much like a weather forecast, this in itself would create new forms of medicine. In light of such possible future this post tries to provide a holistic overview of connectomics, its methods, milestones, and future directions.
 
 <hr style="border-top: 1px solid black;">
 
 <h3 align="center">2. Methods</h3>
 Generally speaking, connectomics research operates at two distinct units of analysis: low-resolution (~macroscale) or high-resolution (~nanoscale). With low-resolution imaging, researchers try to gauge abstract brain functions by using top-down functional and structural MRI to map large fiber tracts and gray matter regions within the brain, analyzing things like blood flow for functional insights and water diffusivity for structural details. 
-On the other hand, high-resolution connectomics focuses on mapping the brain at a mechanistic level - capturing all the substrate at the closest zoom with microscopes and histology to create highly detailed digital reconstructions of the organism.
+On the other hand, high-resolution connectomics focuses on mapping the brain at a mechanistic level - capturing all the substrate at the maximum obtainable resolution using microscopes and histology - with hopes of creating the finest digital reconstructions of the organism.
 
-An important distinction between low vs high-res brain imaging apart from fidelity is their invasiveness. High-res imaging is **hyper** invasive as it often requires physically cutting the brain into micrometer-thick slices and imaging each individually, like in serial scanning electron microscopy (SSEM). This method, though fatal to the organism, provides the unprecedented fidelity required for high-precision uploading. On the other end of the spectrum, low-res imaging like MRI works on live brains, but as a result fails to capture the mechanistic details required to accurately simulate a brain. There tends to be a clear correlation between invasiveness and the amount of information you can extract in connectomics, and until we develop non-invasive imaging methods with nanoscale resolution, methods like SSEM will be most promising for full brain simulation.  
- 
-Now, let's jump ahead from overview to specifics! 
-<p align="center" style="color: #5ED464;"><em>Technical rabbit hole ahead—feel free to bypass</em></p>
+An important distinction between low vs high-res brain imaging apart from fidelity is their invasiveness. High-res imaging is **hyper** invasive as it often requires physically cutting the brain into micrometer-thick slices and imaging each individually, like in serial scanning electron microscopy (SSEM). This method, though fatal to the organism, provides the unprecedented fidelity required for high-precision uploading. On the other end of the spectrum, low-res imaging like MRI works on live organisms, but as a result fails to capture the mechanistic details required to accurately simulate a brain. There tends to be a clear correlation between invasiveness and the amount of information you can extract in connectomics, and until we develop non-invasive imaging methods with nanoscale resolution, methods like SSEM will be most promising for full brain simulation.  
 
+Now, let's jump ahead from overview to specifics!  
+
+<br>
+<div style="position: relative; text-align: center;">
+  <hr style="border-top: 1px solid black; margin: 0;">
+  <p style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background-color: black; margin: 0; padding: 0 10px; color: #5ED464;"><em>Technical rabbit hole ahead—feel free to bypass</em></p>
+</div>
+<br>
 <h4 style="margin-bottom: 0"><u>2.1 Nanoscale Connectomics</u></h4> 
-In high-res (nanoscale) connectomics the goal is to obtain tiny mechanistic maps of neuron-to-neuron, synapse-to-synapse connectivity. Electron microscopy (EM) is the tool of choice here thanks to it's awesome ~3-5nm precison, which is sufficient for image neurons down to their synapses. The issue with traditional optical microscopes is that they can't image samples bellow 200-300nm due to the diffraction limit of light. Instead, the EM works by bombarding heavy metal-stained tissue samples (typically with osmium, uranium, and lead) with accelerated electrons and detecting differential scattering of electrons between subcellular structures (think: cellular membranes, dentriates, synaptic vesicles, etc.,) all of which have differing electron densities. 
+In high-res (nanoscale) connectomics the goal is to obtain tiny mechanistic maps of neuron-to-neuron, synapse-to-synapse connectivity. Electron microscopy (EM) is the tool of choice here thanks to it's awesome ~3-5nm precison, which is sufficient for imaging neurons down to their synapses. The issue with traditional optical microscopes is that they can't image samples below 200-300nm due to the diffraction limit of light. Instead, the EM works by bombarding heavy metal-stained tissue samples (typically with osmium, uranium, and lead) with accelerated electrons and detecting differential scattering of electrons between subcellular structures (think: cellular membranes, dentriates, synaptic vesicles, etc.,) all of which have differing electron densities. Despite their stellar resolution EM microscopes are expensive (~$2M) and really slow (imaging rate of ~10-100 μm³/s) due to beam dwell time, serial sectioning, and heavy metal staining overheads.
 
 <p align="center" style="margin-top: 50px; margin-bottom: -30px;"><img src="/images/full_fly.png" alt="Alt text" style="max-width: 70%; height: auto; border-radius: 0px;"></p>
 
@@ -40,10 +45,10 @@ In high-res (nanoscale) connectomics the goal is to obtain tiny mechanistic maps
 <p align="center"><img src="/images/multiconn.png" alt="Alt text" style="max-width: 80%; height: auto; border-radius: 0px; margin-bottom: 40px"></p>
 
 <div style="width: 80%; margin: auto; text-align: justify;">
-  <p><b>Figure 1:</b> Connectome of a fruit fly (Drosophila melanogaster) obtained using Electron Microscopy, showing different neuronal types. The connectome consists of 140,000 neurons and is the size of a grain of sand.</p>
+  <p><b>Figure 1:</b> Connectome of a fruit fly (Drosophila melanogaster) obtained using Electron Microscopy, showing different neuronal circuits. The connectome consists of 140,000 neurons and is the size of a grain of sand.</p>
 </div><br>
 
-Alternatively to using very expensive and slow electron microscopes (~$2M per piece) to elucidate the structure, we can expand the brain itself and image it with a standard microscope! Expansion Microscopy (ExM) is a technique which allows to, quite litterally - physically enlarge the tissue ~20x while maintaining it's structural relationships. ExM works by embedding tissue in a swellable polymer (like a baby dyper matrix) that expands uniformly when you add water, increasing the physical size of the specimen whilst preserving it's composition. The beauty of ExM is that the physical magnification enables imaging of tissue at the nanoscale using standard light microscopes. 
+Alternatively to using very expensive and slow electron microscopes to elucidate the structure, we can expand the brain itself and image it with a standard microscope! Expansion Microscopy (ExM) is a technique which allows to, quite litterally - physically enlarge the tissue ~20x while maintaining it's structural relationships. ExM works by embedding tissue in a swellable polymer (like a baby dyper matrix) that expands uniformly when you add water, increasing the physical size of the specimen whilst preserving it's composition. The beauty of ExM is that the physical magnification enables imaging of tissue at the nanoscale using standard light microscopes. 
 
 
 <p align="center"><img src="/images/exm.png" alt="Alt text" style="max-width: 80%; height: auto; border-radius: 10px;"></p>
@@ -78,9 +83,12 @@ So, you've got your brain imaging data. What next? Turn it into a graph neural n
   <p><b>Figure 5:</b> Connectivity matrices of different species.</p>
 </div>
 
-<p align="center" style="color: #5ED464;"><em>Technical rabbit hole over—feel free to continue</em></p>
-
-<hr style="border-top: 1px solid black;">
+<br>
+<div style="position: relative; text-align: center;">
+  <hr style="border-top: 1px solid black; margin: 0;">
+  <p style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background-color: black; margin: 0; padding: 0 10px; color: #5ED464;"><em>Technical rabbit hole end</em></p>
+</div>
+<br>
 
 <h3 align="center">3. Applications</h3>
 
