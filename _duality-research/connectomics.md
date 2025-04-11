@@ -122,7 +122,10 @@ As for high-res mapping: The first human nanoscale brain connectome milestone ca
 
 <hr style="border-top: 1px solid black;">
 
-<h3 align="center">5. The Future</h3>
+<h3 align="center">5. Future </h3>
+TBD
+
+<h3 align="center">6. Conclusion </h3>
 There is an invisible path to the first human connectome. Cost, fidelity and speed are still to give way to this future, but once they do, massive gpu orchestras will buzz the melody of first human AIs.
 
 
