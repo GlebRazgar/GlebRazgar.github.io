@@ -91,7 +91,7 @@ So, you've got your brain imaging data. What next? Turn it into a graph neural n
 <br>
 
 <h3 align="center">3. Applications</h3>
-Digitizing brains may prove simpler than deciding what to do with them afterward. The possibilities certainly stretch beyond my imagination. Neuroscience, robotics, and AI unhobbling seems to be the most pertinent, but I trust that you dear reader can simulate your own possible favorites, and instead meet you in the next section.
+Digitizing brains may prove simpler than deciding what to do with them afterward. The possibilities certainly stretch beyond my imagination. Neuroscience, robotics, and AI unhobbling seem to be the most obviouse, but I trust that you - my dear reader, can simulate your own hopes for the outcome.
 
 <hr style="border-top: 1px solid black;">
 
