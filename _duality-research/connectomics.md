@@ -118,7 +118,7 @@ As for uploading us humans, there has been just as much work put into mapping ou
 
 At the low-res connectomics: The Human Connectome Project (HCP), launched in 2009, mapped structural connectivity using diffusion MRI tractography to trace white matter pathways and functional connectivity using resting-state fMRI to identify correlated activity patterns. Though it operates at millimeter resolution and thus doesnt allow to simulate the brain accurately, it mapped out the whole-brain coverage across all cortical and subcortical regions in about 1,200+ living humans which provides context about brain's architecture that will be usefull coming forth in nanoscale brain mapping.
 
-As for high-res mapping: The first human nanoscale brain connectome milestone came in 2022-2023 with the mapping of a cubic millimeter of temporal cortex tissue from a neurosurgical sample. This "H01" dataset, produced by Harvard's Lichtman lab in collaboration with Google Research mapped approximately 50,000 neurons and 130 million synapses (1/1,000,000th of our brain size). This is the first big step on the brain uploading moon!
+As for high-res mapping: The first human nanoscale brain connectome milestone came in 2022-2023 with the mapping of a cubic millimeter of temporal cortex tissue from a neurosurgical sample. This "H01" dataset, produced by Harvard's Lichtman lab in collaboration with Google Research mapped approximately 50,000 neurons and 130 million synapses (1/1,000,000th of our brain size). Small volume? Yep. But thats how the start of acceleration towards full human brain uploading looks like.
 
 <hr style="border-top: 1px solid black;">
 
