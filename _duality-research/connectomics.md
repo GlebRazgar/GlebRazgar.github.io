@@ -131,7 +131,7 @@ As for high-res mapping: The first human nanoscale brain connectome milestone ca
 <h3 align="center">5. Path Forward </h3>
 To witness human emulations within the next decade three key disciplines need "unhobbling":
 
-<div class="table-container" style="overflow-x: auto; width: 80%; margin: auto;">
+<div class="table-container" style="overflow-x: auto; width: 85%; margin: auto;">
   <table cellspacing="0" cellpadding="6" border="1.5" style="border: 1.5px solid #5ED464; border-collapse: collapse; width: 100%; background-color: black; font-size: 0.65em;">
     <caption style="caption-side: top; padding: 10px; color: #5ED464;"><b>Table 2.</b> Innovations Needed for Full Human Brain Uploading.</caption>
     <thead>
