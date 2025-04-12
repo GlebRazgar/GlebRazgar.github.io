@@ -2,7 +2,7 @@
 title: "Mapping The Mind:"
 authors: "Gleb Razgar"
 layout: duality-posts
-date: 2025-03-01
+date: 2025-04-11
 hidden: true
 ---
 
@@ -14,9 +14,9 @@ hidden: true
 <h3 align="center">1. Overview</h3>
 Death is bad engineering.
 
-Our brain — the jewel of consciousness — is a dynamic function. One that is dependent on its temporal dynamics, neuronal activations, and synaptic weights. As you could imagine, being able to model such a function would be **UNPRECEDENTED**. To model the brain is to simulate it. And simulating the brain gives us the ability to emulate **brain disease**, **drug development**, **consciouseness** and possibly one day **<u>transgress death</u>**.  
+Our brain — the jewel of consciousness — is a dynamic function. One that is dependent on its temporal dynamics, neuronal activations, and synaptic weights. As you could imagine, being able to model such a function would be **UNPRECEDENTED**. To model the brain is to simulate it. And simulating the brain gives us the ability to emulate **brain diseases**, **drug development**, **consciouseness** and possibly one day **<u>transgress death</u>**.  
 
-What is popularly known as "brain uploading" is more formally studied as connectomics, a discipline dedicated to creating brain wiring diagrams (connectomes), with a focus on how synaptic connectivity, cellular morphology, and cellular ultrastructure contribute to the makeup of a network. Since our brain is more than just its structure, connectomics tries to elucidate and overlay functional and structural information to obtain a full computational counterpart to brain – or in fancier terms, a brain upload.
+What is popularly known as "brain uploading" is more formally studied as connectomics, a discipline dedicated to creating brain wiring maps (connectomes), with a focus on how synaptic connectivity, cellular morphology, and cellular ultrastructure contribute to the makeup of a network. Since our brain is more than just its structure, connectomics tries to elucidate and overlay functional and structural information to obtain a full computational counterpart to the brain – or in cooler terms, a brain upload.
 
 As sci-fi as I make it sound, connectomics is anything but fiction. We've already mapped and simulated small animals at nanometer imaging resolution. Though human connectome hasn't yet been mapped due to the colosal size of our brain, at the current rate of progress you can expect to see one within the **next few years** (more on scalind laws later). Even if you are skeptical about achieving 1:1 human brain simulations, a universe where we have even approximate human connectomes looks strikingly better than ours, and thus worth seriously entertaining. Even if drug testing can be simulated with a probablalistic degree of certanty, much like a weather forecast, this in itself would create new forms of medicine. In light of such possible future this post tries to provide a holistic overview of connectomics, its methods, milestones, and future directions.
 
@@ -27,9 +27,9 @@ Generally speaking, connectomics research operates at two distinct units of anal
 
 On the other hand, high-resolution connectomics focuses on mapping the brain at a mechanistic level – capturing all the substrate at the maximum obtainable resolution, both through structural methods (e.g: microscopy, histology, etc.) and functional methods (e.g: calcium imaging, array tmomography, etc.) – all in vein of creating the finest digital reconstructions of the organism.
 
-An important distinction between low vs high-res brain imaging apart from fidelity is their invasiveness. High-res imaging is **hyper** invasive as it often requires physically cutting the brain into micrometer-thick slices and imaging each individually, like in serial scanning electron microscopy (SSEM). This method, though fatal to the organism, provides the unprecedented fidelity required for high-precision uploading. On the other end of the spectrum, low-res imaging like MRI works on live organisms, but as a result fails to capture the mechanistic details required to accurately simulate a brain. There tends to be a clear correlation between invasiveness and the amount of information you can extract in connectomics, and until we develop non-invasive imaging methods with nanoscale resolution, methods like SSEM will be most promising for full brain simulation.  
+An important distinction between low vs high-res brain imaging apart from fidelity is their invasiveness. High-res imaging is **hyper** invasive as it often requires physically cutting the brain into micrometer-thick slices and imaging each individually, like in serial scanning electron microscopy (SSEM). This method, though fatal to the organism, provides the unprecedented fidelity required for high-precision uploading. On the other end of the spectrum, low-res imaging like MRI works on live organisms, but as a result fails to capture the mechanistic details required to accurately simulate a brain. There tends to be a clear correlation between invasiveness and the amount of information you can extract in connectomics, and until we develop non-invasive imaging methods with nanoscale resolution, methods like SSEM will be most promising for detailed brain mapping.  
 
-Now, let's jump ahead from overview to specifics!  
+Now let's jump from the overview to specifics!  
 
 <br>
 <div style="position: relative; text-align: center;">
@@ -37,6 +37,7 @@ Now, let's jump ahead from overview to specifics!
   <p style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background-color: black; margin: 0; padding: 0 10px; color: #5ED464;"><em>Technical rabbit hole ahead—feel free to bypass</em></p>
 </div>
 <br>
+
 <h4 style="margin-bottom: 0"><u>2.1 Nanoscale Connectomics</u></h4> 
 In high-res (nanoscale) connectomics the goal is to obtain tiny mechanistic maps of neuron-to-neuron, synapse-to-synapse connectivity. Electron microscopy (EM) is the tool of choice here thanks to it's awesome ~3-5nm precison, which is sufficient for imaging neurons down to their synapses. The issue with traditional optical microscopes is that they can't image samples below 200-300nm due to the diffraction limit of light. Instead, the EM works by bombarding heavy metal-stained tissue samples (typically with osmium, uranium, and lead) with accelerated electrons and detecting differential scattering of electrons between subcellular structures (think: cellular membranes, dentriates, synaptic vesicles, etc.,) all of which have differing electron densities. Despite their stellar resolution EM microscopes are expensive (~$2M) and really slow (imaging rate of ~10-100 μm³/s) due to beam dwell time, serial sectioning, and heavy metal staining overheads.
 
@@ -56,7 +57,7 @@ Alternatively to using very expensive and slow electron microscopes to elucidate
 </div>
 <p align="center"><img src="/images/exm_results.png" alt="Alt text" style="max-width: 80%; height: auto; border-radius: 10px;"></p>
 <div style="width: 80%; margin: auto; text-align: center;">
-  <p><b>Figure 1:</b>Pre v/s  Post - Expansion Microsope imaging.</p>
+  <p><b>Figure 1:</b>Pre expansion (left) and post expansion microsope imaging (right).</p>
 </div><br>
 
 EM reigns supreme in spatial resolution, but there are other technologies worth keeping an eye on. Un-arguably one of the most awesome connectomics methods is to use particle coliders called Synctrons to image the tissue via X-ray nanotomography. Synctron's appeal lies in it's ability to bypass the need for heavy metal staining and physical sectioning unlike in electron microscope. The way it works is by accelerating electrons to near light speed, and when then bending them to obtain incredibly potent X-ray beams (up to 10¹² photons/second) that are filtered to desired energy levels between 8-12 keV. Unlike conventional X-ray imaging that detects how tissues block X-rays, synchrotron-based connectomics measures how X-rays bend or phase shift when passing through brain sample due to different tissue refractive indicies. This reveals unmyelinated axons and cell boundaries without staining. In theory, a synctron can image a full human brain in less than a year at ~40nm resolution, which is faster than uising 350 electron microscopes in paralell!
@@ -91,11 +92,13 @@ So, you've got your brain imaging data. What next? Turn it into a graph neural n
 <br>
 
 <h3 align="center">3. Applications</h3>
-Digitizing brains may prove simpler than deciding what to do with them afterward. The possibilities certainly stretch beyond my imagination. Neuroscience, robotics, and AI unhobbling seem to be the most obviouse, but I trust that you - my dear reader, can simulate your own hopes for the outcome.
+Digitizing brains may prove simpler than deciding what to do with them afterward. The possibilities certainly stretch beyond my imagination. Neuroscience, robotics, and AI catalyzation seem to be the most obviouse, but I trust that you - my dear reader, can simulate your own hopes for the outcome.
 
 <hr style="border-top: 1px solid black;">
 
 <h3 align="center">4. Progress</h3>
+
+Some of the highlight organisms mapped to date:
 
 <h4 style="margin-bottom: 0"><u>4.1 Caenorhabditis Elegans</u></h4> 
 Back in 1986, the first full nervous system connectome was painstakingly mapped for a C.elegan worm, using hand-annotated electron microscopy. The work kicked off a series c.elegan investigations that ended up winning a nobel prize in 2002. C. elegans became a staple in neuroscience for its simplicity of having just 302 neurons & 5000 synaptic connections. Unfortunately it turns out it's neurons lack the complex electrophysiological properties and synaptic plasticity that are the hallmarks of human neurons. In short, it's an interesting organism, but turned out not to be insightful enough. Thus, when compute, AI and microscopes allowed for it researchers jumped on to mapping next promising organism - the fruit fly.
@@ -113,20 +116,153 @@ Moving up the evolutionary tree, researchers have recently mapped a cubic millim
 
 More interestingly, building on this success, the Intelligence Advanced Research Projects Activity (IARPA) has now launched an even more ambitious project called MICrONS Petascale, aiming to mapp the complete mouse brain of approximately 70 million neurons with hundreds of billions of connections. That will require processing exabytes of imaging data and is expected to be a human genome level isnights bombshell. 
 
-<h4 style="margin-bottom: 0"><u>4.3 Human Connectome Project</u></h4> 
-As for uploading us humans, there has been just as much work put into mapping our brain.
+<h4 style="margin-bottom: 0"><u>4.3 Human</u></h4> 
+As for uploading us – humans, there has been just as much work put into digitizing our brain.
 
 At the low-res connectomics: The Human Connectome Project (HCP), launched in 2009, mapped structural connectivity using diffusion MRI tractography to trace white matter pathways and functional connectivity using resting-state fMRI to identify correlated activity patterns. Though it operates at millimeter resolution and thus doesnt allow to simulate the brain accurately, it mapped out the whole-brain coverage across all cortical and subcortical regions in about 1,200+ living humans which provides context about brain's architecture that will be usefull coming forth in nanoscale brain mapping.
 
 As for high-res mapping: The first human nanoscale brain connectome milestone came in 2022-2023 with the mapping of a cubic millimeter of temporal cortex tissue from a neurosurgical sample. This "H01" dataset, produced by Harvard's Lichtman lab in collaboration with Google Research mapped approximately 50,000 neurons and 130 million synapses (1/1,000,000th of our brain size). Small volume? Yep. But thats how the start of acceleration towards full human brain uploading looks like.
 
+<h4 style="margin-bottom: 0"><u>4.4 Scaling Laws</u></h4> 
+
+
 <hr style="border-top: 1px solid black;">
 
-<h3 align="center">5. Future </h3>
-TBD
+<h3 align="center">5. Path Forward </h3>
+To witness human emulations within the next decade three key disciplines need "unhobbling":
+
+<div class="table-container" style="overflow-x: auto; width: 80%; margin: auto;">
+  <table cellspacing="0" cellpadding="6" border="1.5" style="border: 1.5px solid #5ED464; border-collapse: collapse; width: 100%; background-color: black; font-size: 0.65em;">
+    <caption style="caption-side: top; padding: 10px; color: #5ED464;"><b>Table 2.</b> Innovations Needed for Full Human Brain Uploading.</caption>
+    <thead>
+      <tr style="background-color: rgba(94, 212, 100, 0.1);">
+        <th style="border: 1.5px solid #5ED464; background-color: rgba(94, 212, 100, 0.1); color: #5ED464; text-align: center; font-weight: bold;">Domain</th>
+        <th style="border: 1.5px solid #5ED464; background-color: rgba(94, 212, 100, 0.1); color: #5ED464; text-align: center;">Current Limitations</th>
+        <th style="border: 1.5px solid #5ED464; background-color: rgba(94, 212, 100, 0.1); color: #5ED464; text-align: center;">Innovations Needed</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- SOFTWARE SECTION -->
+      <tr style="background-color: rgba(94, 212, 100, 0.1);">
+        <td style="border: 1.5px solid #5ED464; background-color: rgba(94, 212, 100, 0.1); color: #5ED464; text-align: left; vertical-align: middle; font-weight: bold;" rowspan="4">Software</td>
+        <td style="border: 1.5px solid #5ED464; background-color: rgba(94, 212, 100, 0.1); color: #5ED464; text-align: left; border-bottom: 1px dashed #5ED464;">
+          • Reconstruction algorithms (Neuron proofreading accounts for 95% of connectomics costs due to poor AI performance, requiring manual human labour).
+        </td>
+        <td style="border: 1.5px solid #5ED464; background-color: rgba(94, 212, 100, 0.1); color: #5ED464; text-align: left; border-bottom: 1px dashed #5ED464;">
+          • Improved AI reconstruction models (with a better attention mechanism)
+        </td>
+      </tr>
+      <tr style="background-color: rgba(94, 212, 100, 0.1);">
+        <td style="border: 1.5px solid #5ED464; background-color: rgba(94, 212, 100, 0.1); color: #5ED464; text-align: left; border-bottom: 1px dashed #5ED464;">
+          • Simulation environments (integration of sensory and motor systems with simulated brains, modelling neuro-plasticity, etc.).
+        </td>
+        <td style="border: 1.5px solid #5ED464; background-color: rgba(94, 212, 100, 0.1); color: #5ED464; text-align: left; border-bottom: 1px dashed #5ED464;">
+          • Holistic simulation engine
+        </td>
+      </tr>
+      <tr style="background-color: rgba(94, 212, 100, 0.1);">
+        <td style="border: 1.5px solid #5ED464; background-color: rgba(94, 212, 100, 0.1); color: #5ED464; text-align: left; border-bottom: 1px dashed #5ED464;">
+          • Compression algorithms (a human connectome will make up exabytes of data).
+        </td>
+        <td style="border: 1.5px solid #5ED464; background-color: rgba(94, 212, 100, 0.1); color: #5ED464; text-align: left; border-bottom: 1px dashed #5ED464;">
+          • Specialised compression algorithms for neuronal data.
+        </td>
+      </tr>
+      <tr style="background-color: rgba(94, 212, 100, 0.1);">
+        <td style="border: 1.5px solid #5ED464; background-color: rgba(94, 212, 100, 0.1); color: #5ED464; text-align: left;">
+          • Low number of computational researchers - bottlenecking iteration speed.
+        </td>
+        <td style="border: 1.5px solid #5ED464; background-color: rgba(94, 212, 100, 0.1); color: #5ED464; text-align: left;">
+          • Automated AI research pipelines
+        </td>
+      </tr>
+      
+      <!-- HARDWARE SECTION -->
+      <tr style="background-color: rgba(94, 212, 100, 0.1);">
+        <td style="border: 1.5px solid #5ED464; background-color: rgba(94, 212, 100, 0.1); color: #5ED464; text-align: left; vertical-align: middle; font-weight: bold;" rowspan="5">Hardware</td>
+        <td style="border: 1.5px solid #5ED464; background-color: rgba(94, 212, 100, 0.1); color: #5ED464; text-align: left; border-bottom: 1px dashed #5ED464;">
+          • Electron microscope (EM) costs ($1M-$2M) and speed of imaging (10-100 μm³/s.)
+        </td>
+        <td style="border: 1.5px solid #5ED464; background-color: rgba(94, 212, 100, 0.1); color: #5ED464; text-align: left; border-bottom: 1px dashed #5ED464;">
+          • Cheaper and faster EMs (a feasible 2x cost reduction and 10x-20x speed increase would allow mapping the brain in under a decade). ExM improvements described in the wetlab row below seem more feasible.
+        </td>
+      </tr>
+      <tr style="background-color: rgba(94, 212, 100, 0.1);">
+        <td style="border: 1.5px solid #5ED464; background-color: rgba(94, 212, 100, 0.1); color: #5ED464; text-align: left; border-bottom: 1px dashed #5ED464;">
+          • Hardware storage requirements (our colleagues at MIT estimate a $200M cost in storage for the 100x compressed dataset today)
+        </td>
+        <td style="border: 1.5px solid #5ED464; background-color: rgba(94, 212, 100, 0.1); color: #5ED464; text-align: left; border-bottom: 1px dashed #5ED464;">
+          • Exascale data centres (10x-per-decade cost reduction rate is to be expected, going from $200M ➝ $20M by 2030).
+        </td>
+      </tr>
+      <tr style="background-color: rgba(94, 212, 100, 0.1);">
+        <td style="border: 1.5px solid #5ED464; background-color: rgba(94, 212, 100, 0.1); color: #5ED464; text-align: left; border-bottom: 1px dashed #5ED464;">
+          • Destructive sample imaging
+        </td>
+        <td style="border: 1.5px solid #5ED464; background-color: rgba(94, 212, 100, 0.1); color: #5ED464; text-align: left; border-bottom: 1px dashed #5ED464;">
+          • Non-destructive nanoscale imaging method (like nanoscale muon-tomography).
+        </td>
+      </tr>
+      <tr style="background-color: rgba(94, 212, 100, 0.1);">
+        <td style="border: 1.5px solid #5ED464; background-color: rgba(94, 212, 100, 0.1); color: #5ED464; text-align: left; border-bottom: 1px dashed #5ED464;">
+          • Manual wetlab work
+        </td>
+        <td style="border: 1.5px solid #5ED464; background-color: rgba(94, 212, 100, 0.1); color: #5ED464; text-align: left; border-bottom: 1px dashed #5ED464;">
+          • Automated robotics wetlab.
+        </td>
+      </tr>
+      <tr style="background-color: rgba(94, 212, 100, 0.1);">
+        <td style="border: 1.5px solid #5ED464; background-color: rgba(94, 212, 100, 0.1); color: #5ED464; text-align: left;">
+          • Compute demands (1:1 biophysical simulations would require up to ~5.5e20 FLOP/s, which approaches limits of current megaclusters)
+        </td>
+        <td style="border: 1.5px solid #5ED464; background-color: rgba(94, 212, 100, 0.1); color: #5ED464; text-align: left;">
+          • Brain-like neuromorphic computing or better GPUs (to facilitate compute demands).
+        </td>
+      </tr>
+      
+      <!-- WETWARE SECTION -->
+      <tr style="background-color: rgba(94, 212, 100, 0.1);">
+        <td style="border: 1.5px solid #5ED464; background-color: rgba(94, 212, 100, 0.1); color: #5ED464; text-align: left; vertical-align: middle; font-weight: bold;" rowspan="4">Wetware</td>
+        <td style="border: 1.5px solid #5ED464; background-color: rgba(94, 212, 100, 0.1); color: #5ED464; text-align: left; border-bottom: 1px dashed #5ED464;">
+          • Expansion microscopy (ExM) zoom (as an alternative to the EM cost & speed bottleneck).
+        </td>
+        <td style="border: 1.5px solid #5ED464; background-color: rgba(94, 212, 100, 0.1); color: #5ED464; text-align: left; border-bottom: 1px dashed #5ED464;">
+          • Larger expansion ExM protocol.
+        </td>
+      </tr>
+      <tr style="background-color: rgba(94, 212, 100, 0.1);">
+        <td style="border: 1.5px solid #5ED464; background-color: rgba(94, 212, 100, 0.1); color: #5ED464; text-align: left; border-bottom: 1px dashed #5ED464;">
+          • Incomplete molecular characterization during EM imaging (not an issue with expansion microscopy).
+        </td>
+        <td style="border: 1.5px solid #5ED464; background-color: rgba(94, 212, 100, 0.1); color: #5ED464; text-align: left; border-bottom: 1px dashed #5ED464;">
+          • Create staining protocols for EM imaging.
+        </td>
+      </tr>
+      <tr style="background-color: rgba(94, 212, 100, 0.1);">
+        <td style="border: 1.5px solid #5ED464; background-color: rgba(94, 212, 100, 0.1); color: #5ED464; text-align: left; border-bottom: 1px dashed #5ED464;">
+          • Scalability of protein staining (thusfar only tested on smaller organisms).
+        </td>
+        <td style="border: 1.5px solid #5ED464; background-color: rgba(94, 212, 100, 0.1); color: #5ED464; text-align: left; border-bottom: 1px dashed #5ED464;">
+          • Scale protein staining and barcoding to larger organisms.
+        </td>
+      </tr>
+      <tr style="background-color: rgba(94, 212, 100, 0.1);">
+        <td style="border: 1.5px solid #5ED464; background-color: rgba(94, 212, 100, 0.1); color: #5ED464; text-align: left;">
+          • Nanometer functional imaging scalability (currently limited to small neuron populations)
+        </td>
+        <td style="border: 1.5px solid #5ED464; background-color: rgba(94, 212, 100, 0.1); color: #5ED464; text-align: left;">
+          • Scale nanometer functional imaging methods to larger organisms (or invent a more suitable method).
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div style="width: 85%; margin: auto; text-align: justify;">
+  <p><b>Table 2:</b> The table summarizes current limitations and corresponding innovations required across software, hardware, and wetware domains to advance connectomics toward complete brain mapping. These are some of the most common limitations and innovations raised by dozzens of connectomics researchers we interviewed.</p>
+</div>
 
 <h3 align="center">6. Conclusion </h3>
-There is an invisible path to the first human connectome. Cost, fidelity and speed are still to give way to this future, but once they do, massive gpu orchestras will buzz the melody of first human AIs.
+There is an invisible path to the first human uploads. Cost, fidelity and speed of connectomics are still to give way to this future, but once they do, massive gpu orchestras will buzz the melody of first human AIs.
 
 
 
