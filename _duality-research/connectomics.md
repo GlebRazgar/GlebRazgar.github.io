@@ -345,7 +345,7 @@ To witness human emulations within the next decade three key disciplines need "u
   <p><b>Table 2:</b> The table summarizes current limitations and corresponding innovations required across software, hardware, and wetware domains to advance connectomics toward complete brain uploading. These are some of the most common limitations and innovations raised by dozens of connectomics researchers we interviewed. The numerics of the table are largely based on fermi estimates of my own as well as of my colleagues from MIT, and should be viewed as educated guesess.</p>
 </div>
 
-Considering that those sectors are accelerating exponentially, it is probable that each of those innovations will be reached this very decade. 
+Considering that software, hardware and wetwear sectors are accelerating exponentially, it is probable that each of those innovations will be reached this very decade. 
 The first uploaded intelligence will cost $1-10 billion — prohibitive for most — but like the human genome project (but orders of magnitude more crucial), which plummeted from $3 billion to $400, it should come as no surprise that brain uploads too will likely drop in price by orders of magnitude within a few years after the first upload. I hope you are excited. 
 
 
