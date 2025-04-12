@@ -8,7 +8,7 @@ hidden: true
 
 
 
-<p align="center"><img src="/images/fly green.png" alt="Alt text" style="max-width: 70%; height: auto; border-radius: 10px; margin-bottom: 0;"></p>
+<p align="center"><img src="/images/fly green.png" alt="Alt text" style="max-width: 70%; height: auto; border-radius: 10px; margin-bottom: -40px;"></p>
 <br>
 
 <h3 align="center">1. Overview</h3>
@@ -79,7 +79,7 @@ Macroscale connectomes are typically mapped using diffusion-weighted magnetic re
 So, you've got your brain imaging data. What next? Turn it into a graph neural network (GNN) to make it functional. Imagine each brain region as a node and the white matter connections as edges. The weights? They come from metrics like FA values or fiber counts. This graph setup lets us use GNN algorithms to dissect the brain's network dynamics, spot clusters of tightly-knit regions, and trace the flow of information through neural circuits. The beauty of the GNN framework lies in its dual ability to map the structural layout of brain connections and to learn how activity zips through the network. This computational method is poweful for systematically exploring brain organization and function at the network level.
 
 
-<p align="center"><img src="/images/matricies.png" alt="Alt text" style="max-width: 80%; height: auto; border-radius: 10px; filter: invert(100%) hue-rotate(270deg) saturate(80%);"></p>
+<p align="center"><img src="/images/matricies_green.png" alt="Alt text" style="max-width: 80%; height: auto; border-radius: 10px;"></p>
 <div style="width: 80%; margin: auto; text-align: center;">
   <p><b>Figure 5:</b> Connectivity matrices of different species.</p>
 </div>
