@@ -137,6 +137,8 @@ To witness human emulations within the next decade three key disciplines need "u
         <th style="border: 1.5px solid #5ED464; background-color: rgba(94, 212, 100, 0.1); color: #5ED464; text-align: center; font-weight: bold;">Domain</th>
         <th style="border: 1.5px solid #5ED464; background-color: rgba(94, 212, 100, 0.1); color: #5ED464; text-align: center;">Current Limitations</th>
         <th style="border: 1.5px solid #5ED464; background-color: rgba(94, 212, 100, 0.1); color: #5ED464; text-align: center;">Innovations Needed</th>
+        <th style="border: 1.5px solid #5ED464; background-color: rgba(94, 212, 100, 0.1); color: #5ED464; text-align: center;">Urgency /10</th>
+        <th style="border: 1.5px solid #5ED464; background-color: rgba(94, 212, 100, 0.1); color: #5ED464; text-align: center;">Feasibility /10</th>
       </tr>
     </thead>
     <tbody>
@@ -144,34 +146,60 @@ To witness human emulations within the next decade three key disciplines need "u
       <tr style="background-color: rgba(94, 212, 100, 0.1);">
         <td style="border: 1.5px solid #5ED464; background-color: rgba(94, 212, 100, 0.1); color: #5ED464; text-align: left; vertical-align: middle; font-weight: bold;" rowspan="4">Software</td>
         <td style="border: 1.5px solid #5ED464; background-color: rgba(94, 212, 100, 0.1); color: #5ED464; text-align: left; border-bottom: 1px dashed #5ED464;">
-          • Reconstruction algorithms (Neuron proofreading accounts for 95% of connectomics costs due to poor AI performance, requiring manual human labour).
+          • Compression algorithms	
         </td>
         <td style="border: 1.5px solid #5ED464; background-color: rgba(94, 212, 100, 0.1); color: #5ED464; text-align: left; border-bottom: 1px dashed #5ED464;">
-          • Improved AI reconstruction models (with a better attention mechanism)
+          • Specialised compression algorithms for neuronal data. <br> [Sparse matrix compression achieving 100x-150x compression of the original dataset]
         </td>
-      </tr>
-      <tr style="background-color: rgba(94, 212, 100, 0.1);">
-        <td style="border: 1.5px solid #5ED464; background-color: rgba(94, 212, 100, 0.1); color: #5ED464; text-align: left; border-bottom: 1px dashed #5ED464;">
-          • Simulation environments (integration of sensory and motor systems with simulated brains, modelling neuro-plasticity, etc.).
+        <td style="border: 1.5px solid #5ED464; background-color: rgba(94, 212, 100, 0.1); color: #5ED464; text-align: center; border-bottom: 1px dashed #5ED464;">
+          7
         </td>
-        <td style="border: 1.5px solid #5ED464; background-color: rgba(94, 212, 100, 0.1); color: #5ED464; text-align: left; border-bottom: 1px dashed #5ED464;">
-          • Holistic simulation engine
+        <td style="border: 1.5px solid #5ED464; background-color: rgba(94, 212, 100, 0.1); color: #5ED464; text-align: center; border-bottom: 1px dashed #5ED464;">
+          10
         </td>
       </tr>
       <tr style="background-color: rgba(94, 212, 100, 0.1);">
         <td style="border: 1.5px solid #5ED464; background-color: rgba(94, 212, 100, 0.1); color: #5ED464; text-align: left; border-bottom: 1px dashed #5ED464;">
-          • Compression algorithms (a human connectome will make up exabytes of data).
+          • Simulation environments
         </td>
         <td style="border: 1.5px solid #5ED464; background-color: rgba(94, 212, 100, 0.1); color: #5ED464; text-align: left; border-bottom: 1px dashed #5ED464;">
-          • Specialised compression algorithms for neuronal data.
+          • Holistic simulation engine. <br>[Integration of sensory and motor systems with simulated brains, modelling neuro-plasticity, etc.,]
+        </td>
+        <td style="border: 1.5px solid #5ED464; background-color: rgba(94, 212, 100, 0.1); color: #5ED464; text-align: center; border-bottom: 1px dashed #5ED464;">
+          5
+        </td>
+        <td style="border: 1.5px solid #5ED464; background-color: rgba(94, 212, 100, 0.1); color: #5ED464; text-align: center; border-bottom: 1px dashed #5ED464;">
+          8
+        </td>
+      </tr>
+      <tr style="background-color: rgba(94, 212, 100, 0.1);">
+        <td style="border: 1.5px solid #5ED464; background-color: rgba(94, 212, 100, 0.1); color: #5ED464; text-align: left; border-bottom: 1px dashed #5ED464;">
+          • Benchmarks
+        </td>
+        <td style="border: 1.5px solid #5ED464; background-color: rgba(94, 212, 100, 0.1); color: #5ED464; text-align: left; border-bottom: 1px dashed #5ED464;">
+          • Standardized metrics to validate simulations.<br>
+          [Benchmarks to validate simulation accuracy and "human-likeness"]
+        </td>
+        <td style="border: 1.5px solid #5ED464; background-color: rgba(94, 212, 100, 0.1); color: #5ED464; text-align: center; border-bottom: 1px dashed #5ED464;">
+          8
+        </td>
+        <td style="border: 1.5px solid #5ED464; background-color: rgba(94, 212, 100, 0.1); color: #5ED464; text-align: center; border-bottom: 1px dashed #5ED464;">
+          10
         </td>
       </tr>
       <tr style="background-color: rgba(94, 212, 100, 0.1);">
         <td style="border: 1.5px solid #5ED464; background-color: rgba(94, 212, 100, 0.1); color: #5ED464; text-align: left;">
-          • Low number of computational researchers - bottlenecking iteration speed.
+          • Neuron segmentation and proofreading
         </td>
         <td style="border: 1.5px solid #5ED464; background-color: rgba(94, 212, 100, 0.1); color: #5ED464; text-align: left;">
-          • Automated AI research pipelines
+          • AI reconstruction models with better attention mechanics.<br>
+          [Current neuron reconstruction accounts for 95% of connectomics costs due to human leabelling need. Automated proofreading will solve this]
+        </td>
+        <td style="border: 1.5px solid #5ED464; background-color: rgba(94, 212, 100, 0.1); color: #5ED464; text-align: center;">
+          9
+        </td>
+        <td style="border: 1.5px solid #5ED464; background-color: rgba(94, 212, 100, 0.1); color: #5ED464; text-align: center;">
+          10
         </td>
       </tr>
       
@@ -179,26 +207,44 @@ To witness human emulations within the next decade three key disciplines need "u
       <tr style="background-color: rgba(94, 212, 100, 0.1);">
         <td style="border: 1.5px solid #5ED464; background-color: rgba(94, 212, 100, 0.1); color: #5ED464; text-align: left; vertical-align: middle; font-weight: bold;" rowspan="5">Hardware</td>
         <td style="border: 1.5px solid #5ED464; background-color: rgba(94, 212, 100, 0.1); color: #5ED464; text-align: left; border-bottom: 1px dashed #5ED464;">
-          • Electron microscope (EM) costs ($1M-$2M) and speed of imaging (10-100 μm³/s.)
+          • Electron microscope cost and speed
         </td>
         <td style="border: 1.5px solid #5ED464; background-color: rgba(94, 212, 100, 0.1); color: #5ED464; text-align: left; border-bottom: 1px dashed #5ED464;">
-          • Cheaper and faster EMs (a feasible 2x cost reduction and 10x-20x speed increase would allow mapping the brain in under a decade). ExM improvements described in the wetlab row below seem more feasible.
+          • Cheaper and faster EMs<br> [2x cost reduction (\$2M ➝ \$1M) and 10x-20x imaging speed increase (~50μm³/s ➝ 1000μm³/s) would make EM imaging feasable]
         </td>
-      </tr>
-      <tr style="background-color: rgba(94, 212, 100, 0.1);">
-        <td style="border: 1.5px solid #5ED464; background-color: rgba(94, 212, 100, 0.1); color: #5ED464; text-align: left; border-bottom: 1px dashed #5ED464;">
-          • Hardware storage requirements (our colleagues at MIT estimate a $200M cost in storage for the 100x compressed dataset today)
+        <td style="border: 1.5px solid #5ED464; background-color: rgba(94, 212, 100, 0.1); color: #5ED464; text-align: center; border-bottom: 1px dashed #5ED464;">
+          10
         </td>
-        <td style="border: 1.5px solid #5ED464; background-color: rgba(94, 212, 100, 0.1); color: #5ED464; text-align: left; border-bottom: 1px dashed #5ED464;">
-          • Exascale data centres (10x-per-decade cost reduction rate is to be expected, going from $200M ➝ $20M by 2030).
+        <td style="border: 1.5px solid #5ED464; background-color: rgba(94, 212, 100, 0.1); color: #5ED464; text-align: center; border-bottom: 1px dashed #5ED464;">
+          7
         </td>
       </tr>
       <tr style="background-color: rgba(94, 212, 100, 0.1);">
         <td style="border: 1.5px solid #5ED464; background-color: rgba(94, 212, 100, 0.1); color: #5ED464; text-align: left; border-bottom: 1px dashed #5ED464;">
-          • Destructive sample imaging
+          • Data storage cost
         </td>
         <td style="border: 1.5px solid #5ED464; background-color: rgba(94, 212, 100, 0.1); color: #5ED464; text-align: left; border-bottom: 1px dashed #5ED464;">
-          • Non-destructive nanoscale imaging method (like nanoscale muon-tomography).
+          • Exascale data centres. <br>[10x reduction in data storage cost would be helpful (from \$200M ➝ \$20M) for a 100x compressed human connectome. Generally there is a 10x-per-decade cost reduction in data storage by default, but can we speed it up?]
+        </td>
+        <td style="border: 1.5px solid #5ED464; background-color: rgba(94, 212, 100, 0.1); color: #5ED464; text-align: center; border-bottom: 1px dashed #5ED464;">
+          10
+        </td>
+        <td style="border: 1.5px solid #5ED464; background-color: rgba(94, 212, 100, 0.1); color: #5ED464; text-align: center; border-bottom: 1px dashed #5ED464;">
+          5
+        </td>
+      </tr>
+      <tr style="background-color: rgba(94, 212, 100, 0.1);">
+        <td style="border: 1.5px solid #5ED464; background-color: rgba(94, 212, 100, 0.1); color: #5ED464; text-align: left; border-bottom: 1px dashed #5ED464;">
+          • Compute cost
+        </td>
+        <td style="border: 1.5px solid #5ED464; background-color: rgba(94, 212, 100, 0.1); color: #5ED464; text-align: left; border-bottom: 1px dashed #5ED464;">
+          • Brain-like neuromorphic/biohybrid computing or cheaper GPU clusters.<br> [Cheaper mass compute will be neccessary. 1:1 biophysical simulations will require up to ~5.5×10²⁰ FLOP/s. Mores law will reduce prices by default, but can we design more brain-like hardware to speed it up?]
+        </td>
+        <td style="border: 1.5px solid #5ED464; background-color: rgba(94, 212, 100, 0.1); color: #5ED464; text-align: center; border-bottom: 1px dashed #5ED464;">
+          7
+        </td>
+        <td style="border: 1.5px solid #5ED464; background-color: rgba(94, 212, 100, 0.1); color: #5ED464; text-align: center; border-bottom: 1px dashed #5ED464;">
+          5
         </td>
       </tr>
       <tr style="background-color: rgba(94, 212, 100, 0.1);">
@@ -206,15 +252,28 @@ To witness human emulations within the next decade three key disciplines need "u
           • Manual wetlab work
         </td>
         <td style="border: 1.5px solid #5ED464; background-color: rgba(94, 212, 100, 0.1); color: #5ED464; text-align: left; border-bottom: 1px dashed #5ED464;">
-          • Automated robotics wetlab.
+          • Automated robotics wetlab <br>[Cutting, imaging and staning apparature which will allow to increase the complexity of wetlab protocols whilst removing human error]
+        </td>
+        <td style="border: 1.5px solid #5ED464; background-color: rgba(94, 212, 100, 0.1); color: #5ED464; text-align: center; border-bottom: 1px dashed #5ED464;">
+          4
+        </td>
+        <td style="border: 1.5px solid #5ED464; background-color: rgba(94, 212, 100, 0.1); color: #5ED464; text-align: center; border-bottom: 1px dashed #5ED464;">
+          7
         </td>
       </tr>
       <tr style="background-color: rgba(94, 212, 100, 0.1);">
         <td style="border: 1.5px solid #5ED464; background-color: rgba(94, 212, 100, 0.1); color: #5ED464; text-align: left;">
-          • Compute demands (1:1 biophysical simulations would require up to ~5.5e20 FLOP/s, which approaches limits of current megaclusters)
+          • Destructive sample imaging
         </td>
         <td style="border: 1.5px solid #5ED464; background-color: rgba(94, 212, 100, 0.1); color: #5ED464; text-align: left;">
-          • Brain-like neuromorphic computing or better GPUs (to facilitate compute demands).
+          • Non-destructive nanoscale imaging method<br>
+          [Imaging akin to nanoscale muon-tomography which can non-invasively scan the brain down to a synapse]
+        </td>
+        <td style="border: 1.5px solid #5ED464; background-color: rgba(94, 212, 100, 0.1); color: #5ED464; text-align: center;">
+          10
+        </td>
+        <td style="border: 1.5px solid #5ED464; background-color: rgba(94, 212, 100, 0.1); color: #5ED464; text-align: center;">
+          3
         </td>
       </tr>
       
@@ -222,34 +281,61 @@ To witness human emulations within the next decade three key disciplines need "u
       <tr style="background-color: rgba(94, 212, 100, 0.1);">
         <td style="border: 1.5px solid #5ED464; background-color: rgba(94, 212, 100, 0.1); color: #5ED464; text-align: left; vertical-align: middle; font-weight: bold;" rowspan="4">Wetware</td>
         <td style="border: 1.5px solid #5ED464; background-color: rgba(94, 212, 100, 0.1); color: #5ED464; text-align: left; border-bottom: 1px dashed #5ED464;">
-          • Expansion microscopy (ExM) zoom (as an alternative to the EM cost & speed bottleneck).
+          • Expansion microscopy magnification
         </td>
         <td style="border: 1.5px solid #5ED464; background-color: rgba(94, 212, 100, 0.1); color: #5ED464; text-align: left; border-bottom: 1px dashed #5ED464;">
-          • Larger expansion ExM protocol.
+          • Faster expansion microscopy protocols<br>
+          [Current ExM protocols achieves 10-40x expansion (25x = ~20nm) which is already enough, yet getting a consistent isotropic 40x zoom would equate it to EM resolution]
+        </td>
+        <td style="border: 1.5px solid #5ED464; background-color: rgba(94, 212, 100, 0.1); color: #5ED464; text-align: center; border-bottom: 1px dashed #5ED464;">
+          6
+        </td>
+        <td style="border: 1.5px solid #5ED464; background-color: rgba(94, 212, 100, 0.1); color: #5ED464; text-align: center; border-bottom: 1px dashed #5ED464;">
+          8
         </td>
       </tr>
       <tr style="background-color: rgba(94, 212, 100, 0.1);">
         <td style="border: 1.5px solid #5ED464; background-color: rgba(94, 212, 100, 0.1); color: #5ED464; text-align: left; border-bottom: 1px dashed #5ED464;">
-          • Incomplete molecular characterization during EM imaging (not an issue with expansion microscopy).
+          • Lack of electron microscopy staning protocols
         </td>
         <td style="border: 1.5px solid #5ED464; background-color: rgba(94, 212, 100, 0.1); color: #5ED464; text-align: left; border-bottom: 1px dashed #5ED464;">
-          • Create staining protocols for EM imaging.
+          • Staining protocols for EM imaging.<br>
+          Incomplete molecular characterization during electron microscopy imaging means we miss functional details of the upload. This is an issue with electron and synctron imaging, but not expansion microscopy. 
+        </td>
+        <td style="border: 1.5px solid #5ED464; background-color: rgba(94, 212, 100, 0.1); color: #5ED464; text-align: center; border-bottom: 1px dashed #5ED464;">
+          7
+        </td>
+        <td style="border: 1.5px solid #5ED464; background-color: rgba(94, 212, 100, 0.1); color: #5ED464; text-align: center; border-bottom: 1px dashed #5ED464;">
+          6
         </td>
       </tr>
       <tr style="background-color: rgba(94, 212, 100, 0.1);">
         <td style="border: 1.5px solid #5ED464; background-color: rgba(94, 212, 100, 0.1); color: #5ED464; text-align: left; border-bottom: 1px dashed #5ED464;">
-          • Scalability of protein staining (thusfar only tested on smaller organisms).
+          • Scalability of protein profiling
         </td>
         <td style="border: 1.5px solid #5ED464; background-color: rgba(94, 212, 100, 0.1); color: #5ED464; text-align: left; border-bottom: 1px dashed #5ED464;">
-          • Scale protein staining and barcoding to larger organisms.
+          • More scalable protein barcoding protocols. [Currnet protocols requie multiple rounds of staining/washesand need testing on larger organisms]
+        </td>
+        <td style="border: 1.5px solid #5ED464; background-color: rgba(94, 212, 100, 0.1); color: #5ED464; text-align: center; border-bottom: 1px dashed #5ED464;">
+          10
+        </td>
+        <td style="border: 1.5px solid #5ED464; background-color: rgba(94, 212, 100, 0.1); color: #5ED464; text-align: center; border-bottom: 1px dashed #5ED464;">
+          8
         </td>
       </tr>
       <tr style="background-color: rgba(94, 212, 100, 0.1);">
         <td style="border: 1.5px solid #5ED464; background-color: rgba(94, 212, 100, 0.1); color: #5ED464; text-align: left;">
-          • Nanometer functional imaging scalability (currently limited to small neuron populations)
+          • Scalability of functional nanoscale imaging
         </td>
         <td style="border: 1.5px solid #5ED464; background-color: rgba(94, 212, 100, 0.1); color: #5ED464; text-align: left;">
-          • Scale nanometer functional imaging methods to larger organisms (or invent a more suitable method).
+          • New nanometer functional imaging methods that can scale to whole brain neuron populations <br>
+          [Current methods like voltage imaging, calcium imaging, etc., are eather indirect, damaging or unscalable to whole brains. Thus methods like fUS with ~15 micrometers theoretical limit that scale to larger neuron populations could be the remedy]
+        </td>
+        <td style="border: 1.5px solid #5ED464; background-color: rgba(94, 212, 100, 0.1); color: #5ED464; text-align: center;">
+          10
+        </td>
+        <td style="border: 1.5px solid #5ED464; background-color: rgba(94, 212, 100, 0.1); color: #5ED464; text-align: center;">
+          6
         </td>
       </tr>
     </tbody>
