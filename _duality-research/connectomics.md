@@ -123,8 +123,6 @@ At the low-res connectomics: The Human Connectome Project (HCP), launched in 200
 
 As for high-res mapping: The first human nanoscale brain connectome milestone came in 2022-2023 with the mapping of a cubic millimeter of temporal cortex tissue from a neurosurgical sample. This "H01" dataset, produced by Harvard's Lichtman lab in collaboration with Google Research mapped approximately 50,000 neurons and 130 million synapses (1/1,000,000th of our brain size). Small volume? Yep. But thats how the start of acceleration towards full human brain uploading looks like.
 
-<h4 style="margin-bottom: 0"><u>4.4 Scaling Laws</u></h4> 
-
 
 <hr style="border-top: 1px solid black;">
 
