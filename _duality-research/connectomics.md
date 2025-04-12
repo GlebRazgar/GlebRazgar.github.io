@@ -11,10 +11,10 @@ hidden: true
 <p align="center"><img src="/images/fly green.png" alt="Alt text" style="max-width: 75%; height: auto; border-radius: 10px; margin-bottom: -40px;"></p>
 <br>
 
-<h3 align="center">1. Overview</h3>
+<h3 align="center">1. Introduction</h3>
 Death is bad engineering.
 
-Our brain — the jewel of consciousness — is a dynamic function. One that is dependent on its temporal dynamics, neuronal activations, and synaptic weights. As you could imagine, being able to model such a function would be **UNPRECEDENTED**. To model the brain is to simulate it. And simulating the brain gives us the ability to emulate **brain diseases**, **drug development**, **consciouseness** and possibly one day **<u>transgress death</u>**.  
+Our brain — the jewel of consciousness — is a dynamic function. One that is dependent on its temporal dynamics, neuronal activations, and synaptic weights. As you could imagine, being able to model such a function would be **UNPRECEDENTED**. To model the brain is to simulate it. And simulating the brain gives us the ability to emulate **brain diseases**, **drug development**, **intelligence** and possibly one day **<u>consciousness</u>**.  
 
 What is popularly known as "brain uploading" is more formally studied as connectomics, a discipline dedicated to creating brain wiring maps (connectomes), with a focus on how synaptic connectivity, cellular morphology, and cellular ultrastructure contribute to the makeup of a network. Since our brain is more than just its structure, connectomics tries to elucidate and overlay functional and structural information to obtain a full computational counterpart to the brain – or in cooler terms, a brain upload.
 
@@ -106,7 +106,7 @@ Back in 1986, the first full nervous system connectome was painstakingly mapped 
 <p align="center"><img src="/images/celegan.png" alt="Alt text" style="max-width: 80%; height: auto; border-radius: 10px;"></p>
 <div style="width: 80%; margin: auto; text-align: center;">
   <p><b>Figure 6:</b>Connectome of a C.elecan</p>
-</div><br>
+</div>
 
 <h4 style="margin-bottom: 0"><u>4.1 Fruit Fly</u></h4> 
 The next uploaded brain followed to be that of a fruit fly Drosophilia. This was snapped using a higher-throughput ssTEM pipeline and segmented by a seperate lab using an automated CNNs pipeline which allowed the field to jump from a mere 302 neurons and 5000 synaptic connections to ~100,000 neurons and 20 million synaptic connections (a 330 and 4,000-fold increase respectively). Unlike C. elegans, Drosophila exhibits complex cognitive behaviors including associative learning, sleep regulation, and decision-making that involve neural circuits with organizational principles shared with mammals. These mechanics makes the fly connectome particularly interesting to simulate since they provide testable models for understanding how neural circuits integrate behaviors similar to human brain dynamics. It goes without saying that evolutionarily we are still vastly different, and thus aught to move closer to the human objective.
