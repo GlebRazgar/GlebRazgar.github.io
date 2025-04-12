@@ -1,5 +1,5 @@
 ---
-title: "Mapping The Mind"
+title: "Mind to Machine: Overview"
 authors: "Gleb Razgar"
 layout: duality-posts
 date: 2025-04-11
@@ -11,7 +11,7 @@ hidden: true
 <p align="center"><img src="/images/fly green.png" alt="Alt text" style="max-width: 75%; height: auto; border-radius: 10px; margin-bottom: -40px;"></p>
 <br>
 
-<h3 align="center">1. Overview</h3>
+<h3 align="center">1. Introduction</h3>
 Death is bad engineering.
 
 Our brain — the jewel of consciousness — is a dynamic function. One that is dependent on its temporal dynamics, neuronal activations, and synaptic weights. As you could imagine, being able to model such a function would be **UNPRECEDENTED**. To model the brain is to simulate it. And simulating the brain gives us the ability to emulate **brain diseases**, **drug development**, **consciouseness** and possibly one day **<u>transgress death</u>**.  
