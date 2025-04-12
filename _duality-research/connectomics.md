@@ -1,5 +1,5 @@
 ---
-title: "Mapping The Mind:"
+title: "Mapping The Mind"
 authors: "Gleb Razgar"
 layout: duality-posts
 date: 2025-04-11
