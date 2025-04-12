@@ -8,7 +8,7 @@ hidden: true
 
 
 
-<p align="center"><img src="/images/fly green.png" alt="Alt text" style="max-width: 70%; height: auto; border-radius: 10px; margin-bottom: -40px;"></p>
+<p align="center"><img src="/images/fly green.png" alt="Alt text" style="max-width: 75%; height: auto; border-radius: 10px; margin-bottom: -40px;"></p>
 <br>
 
 <h3 align="center">1. Overview</h3>
