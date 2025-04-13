@@ -12,11 +12,25 @@ hidden: true
 <br>
 
 <h3 align="center">1. Introduction</h3>
-Death is bad engineering.
+Darwin never anticipated life turning digital to escape death, yet this might change within our lifetime.
+
+<!-- HOW IT SHOULD START:
+The legacy system of mortality is due for an upgrade. Brain uploading might be it.
+1. Brain uploading, is   PUNCHY STARTING STATEMENT (hinting that uploading will be possible in our lifetime)
+2. Intro of why we should persue it, even if we fall short. 
+Whilst Darwin never anticipated digital evolution, it is now knocking on our door. 
+
+Neuroscientists can now "upload" small animals, and in the coming decades we might be able to upload humans.  we might be able to do the same to humans. Soon, we might be able to upload humans. -->
+
+<!-- Darwin never anticipated life turning digital to escape death, yet this might change within our lifetime. , yet it is probable that 
+
+As of recently we can "upload" organisms, and perhaps within our lifetime - humans.
+
+Our brain — the jewel of consciousness — is a dynamic function. One that is dependent on its temporal dynamics, neuronal activations, and synaptic weights. To model the brain is to simulate it, and simulating the brain gives us the ability to simulate **brain diseases**, **drug development**, **intelligence**, and possibly one day **<u>transgress death</u>**. Even if we end up falling short of 1:1 human brain simulations, a universe where we have even approximate brain models (much like weather forecasts) looks strikingly better than ours, and thus worth seriously entertaining. Year-long drug development trials for neuroscience might get compressed to day-long digital runs. Intelligent systems might become more comprehensible, and as a result creation of aligned AI prove tractable. The intellectual debate of how far it can go is all yours, but the core premise is in possible prosperity. -->
 
 Our brain — the jewel of consciousness — is a dynamic function. One that is dependent on its temporal dynamics, neuronal activations, and synaptic weights. As you could imagine, being able to model such a function would be **UNPRECEDENTED**. To model the brain is to "upload" it, and uploading the brain gives us the ability to simulate **brain diseases**, **drug development**, **intelligence**, and possibly one day **<u>transgress death</u>**.  
 
-Whilst Darwin never anticipated digital evolution, it is now knocking on our door. As sci-fi as it sounds, brain uploading is no longer fictional. We've already quietly digitized small animals (more on each later), and are currently working up the tech to do the same to much larger human brains. Even if we end up falling short of 1:1 human brain simulations, a universe where we have even approximate brain models (much like weather forecasts) looks strikingly better than ours, and thus worth seriously entertaining. Year-long drug development trials for neuroscience might get compressed to day-long digital runs. Intelligent systems might become more comprehensible, and thus creation of aligned AI prove tractable. The intellectual debate of how far it can go is all yours, but the core premise is in possible prosperity.
+As sci-fi as it sounds, brain uploading is no longer fictional. Neuroscientists already quietly digitized small animals (more on each later), and are currently working up the tech to do the same to much larger human brains. Even if we end up falling short of 1:1 human brain simulations, a universe where we have even approximate brain models (much like weather forecasts) looks strikingly better than ours, and thus worth seriously entertaining. Year-long drug development trials for neuroscience might get compressed to day-long digital runs. Intelligent systems might become more comprehensible, and thus creation of aligned AI prove tractable. The intellectual debate of how far it can go is all yours, but the core premise is in possible prosperity.
 
 In light of such a possible future, this post tries to provide a holistic overview of the current uploading research, its methods, milestones, and future directions.
 
@@ -49,7 +63,7 @@ In high-res (nanoscale) connectomics, the goal is to obtain tiny mechanistic map
 <p align="center"><img src="/images/multiconn.png" alt="Alt text" style="max-width: 80%; height: auto; border-radius: 0px; margin-bottom: 40px"></p>
 
 <div style="width: 80%; margin: auto; text-align: justify;">
-  <p><b>Figure 1:</b> Connectome of a fruit fly (Drosophila melanogaster) obtained using Electron Microscopy, showing different neuronal circuits. The connectome consists of 140,000 neurons and is the size of a grain of sand.</p>
+  <p><b>Figure 2:</b> Connectome of a fruit fly (Drosophila melanogaster) obtained using Electron Microscopy, showing different neuronal circuits. The connectome consists of 140,000 neurons and is the size of a grain of sand.</p>
 </div><br>
 
 Alternatively to using very expensive and slow electron microscopes to elucidate the structure, we can expand the brain itself and image it with a standard microscope! Expansion Microscopy (ExM) is a method which allows to, quite literally – physically enlarge the tissue ~20x while maintaining its structural relationships. ExM works by embedding tissue in a swellable polymer (like a baby diaper matrix) that expands uniformly when you add water, increasing the physical size of the specimen whilst preserving its composition. The beauty of ExM is that the physical magnification enables imaging of tissue at the nanoscale using standard light microscopes. 
@@ -66,7 +80,7 @@ Unarguably one of the most awesome connectomics methods is to use particle colli
 
 Numerous other brain imaging techniques exist and are in the making, but that's a conversation for another rabbithole.
 
-<h4 style="margin-bottom: 0"><u>2.1 Macroscale Connectomics</u></h4> 
+<h4 style="margin-bottom: 0"><u>2.2 Macroscale Connectomics</u></h4> 
 Macroscale connectomes are typically mapped using diffusion-weighted magnetic resonance imaging (dMRI) and functional magnetic resonance imaging (fMRI). dMRI is like the Google Maps of the brain, charting the main highways of white matter that connect the cortex to the subcortex. It does so by tracking the diffusion of water molecules, which reveal the orientation of these neural pathways. When paired with tractography, dMRI doesn't stop at mapping, and reconstructs the brain's white matter tracts by measuring water diffusion in multiple directions, estimating local fiber orientations, and modeling the brain's fiber pathways. Tractography algorithms then take the baton, tracing the probable routes of these pathways to sketch out the brain's anatomical connectivity. From this data, we can extract metrics like fractional anisotropy (FA), mean diffusivity (MD), and connectivity strength, which help us assess the microstructural properties of white matter and quantify the robustness of long-range connections between brain regions. 
 
 <p align="center"><img src="/images/connectome_line.png" alt="Alt text" style="max-width: 80%; height: auto; border-radius: 10px; margin-top: 40px; margin-bottom: 40px;"></p>
@@ -77,8 +91,40 @@ Macroscale connectomes are typically mapped using diffusion-weighted magnetic re
   3. Nodes are defined by identifying brain regions connected by the edges.</p>
 </div><br>
 
+<h4 style="margin-bottom: 0"><u>2.3 Moddelling </u></h4> 
 
-So, you've got your brain imaging data. What next? Turn it into a graph neural network (GNN) to make it functional. Imagine each brain region as a node and the white matter connections as edges. The weights? They come from metrics like FA values or fiber counts. This graph setup lets us use GNN algorithms to dissect the brain's network dynamics, spot clusters of tightly-knit regions, and trace the flow of information through neural circuits. The beauty of the GNN framework lies in its dual ability to map the structural layout of brain connections and to learn how activity zips through the network. This computational method is powerful for systematically exploring brain organization and function at the network level.
+Once you have the brain imaging data, the next step is to turn it into a functioning model. Though there isn't a definitive solution to converting data into simulations, The most standard proceedure is to:
+
+1. Pre-Proccessing
+   - Aligning all the imaged slices correctly into a 3D volume 
+   - Removing of artifacts  
+2. Segmentation & proofreading
+  - Segmenting tissue using ML models (U-nets, flood filling networks, local shape descriptors) to outline cell bodies, trace axons, dendrites, and synaptic connections.
+  - Proofread and correct errors of automated segmentation (incorrect connections, missed branches, and false mergers)
+  - [In barcoded specimens: using molecular barcodes to verify neuron identity and connections]
+3. Classification 
+   - cell types (glia, astrocytes, etc.)
+4. Connectome graph creation.
+  - Convert the 3D reconstruction into a structured graph representation
+  - Define nodes (neurons) and edges (synaptic connections)
+  - Add metadata about neuron types, molecular properties and synaptic strengths
+5. Simulation Model Building
+   -  Choosing neuron models and parameters (LIF, Hodgkin-Huxley, etc.)
+   -  Setting neurotransmitter types and receptor responses
+   -  Implementing neuroplasticity mechanisms based on avaliable data (short & long-term plasticity)
+6. Environment/Body Integration 
+   - Connect sensory inputs to appropriate neurons
+   - Map motor outputs to effectors
+   - Create physical model of environment for interaction
+7. Execution 
+   - Infrastructure setup (partitioning the network across gpus, setting up memory management, etc.,)
+   - Initialization (membrane potential, ion concentration, etc.)
+   - Validation testing (comparing actual brains neural activity patterns to to the model) 
+8. Parameter Calibration
+   -  Use functional data (calcium/voltage imaging) to tune neuron parameters
+   -  Calibrate neuroplasticity rules based on available data
+
+ <!-- The data will be raw, so it requires proccessing.  What next? Turn it into a graph neural network (GNN) to make it functional. Imagine each brain region as a node and the white matter connections as edges. The weights? They come from metrics like FA values or fiber counts. This graph setup lets us use GNN algorithms to dissect the brain's network dynamics, spot clusters of tightly-knit regions, and trace the flow of information through neural circuits. The beauty of the GNN framework lies in its dual ability to map the structural layout of brain connections and to learn how activity zips through the network. This computational method is powerful for systematically exploring brain organization and function at the network level. -->
 
 
 <p align="center"><img src="/images/matricies_green.png" alt="Alt text" style="max-width: 80%; height: auto; border-radius: 10px;"></p>
@@ -93,11 +139,11 @@ So, you've got your brain imaging data. What next? Turn it into a graph neural n
 </div>
 <br>
 
-<h3 align="center">4. Progress</h3>
+<h3 align="center">3. Progress</h3>
 
 Some of the highlight organisms mapped to date:
 
-<h4 style="margin-bottom: 0"><u>4.1 Caenorhabditis Elegans</u></h4> 
+<h4 style="margin-bottom: 0"><u>3.1 Caenorhabditis Elegans</u></h4> 
 Back in 1986, the first full nervous system connectome was painstakingly mapped for a C.elegans (CE) worm, using hand-annotated electron microscopy. The work kicked off a series of CE investigations that ended up winning a Nobel prize in 2002. This worm became a staple in neuroscience for it's simplicity of having just 302 neurons & 5000 synaptic connections. Today, we can simulate CEs down to a synapse using the most accurate biophysical models on hand. Despite being a useful and simple organism, CEs turned out to lack the complex electrophysiological properties and synaptic plasticity that are the hallmarks of human neurons. In short, it's an interesting organism, but now insightful enough. Thus, when compute, AI and microscopes allowed for it, researchers jumped on to mapping next promising organism - the fruit fly.
 
 <p align="center"><img src="/images/celegan.png" alt="Alt text" style="max-width: 80%; height: auto; border-radius: 10px;"></p>
@@ -105,15 +151,15 @@ Back in 1986, the first full nervous system connectome was painstakingly mapped 
   <p><b>Figure 6:</b>Connectome of a C.elecan</p>
 </div>
 
-<h4 style="margin-bottom: 0"><u>4.1 Fruit Fly</u></h4> 
+<h4 style="margin-bottom: 0"><u>3.2 Fruit Fly</u></h4> 
 The next uploaded brain followed to be that of a fruit fly Drosophila. This was snapped using a higher-throughput ssTEM pipeline and segmented by a separate lab using an automated CNNs pipeline which allowed the field to jump from a mere 302 neurons and 5000 synaptic connections to ~100,000 neurons and 20 million synaptic connections (a 330 and 4,000-fold increase respectively). Unlike C. elegans, Drosophila exhibits complex cognitive behaviors including associative learning, sleep regulation, and decision-making that involve neural circuits with organizational principles shared with mammals. These mechanics make the fly connectome particularly interesting to simulate since they provide testable models for understanding how neural circuits integrate behaviors similar to human brain dynamics. It goes without saying that evolutionarily we are still vastly different, and thus ought to move closer to the human objective.
 
-<h4 style="margin-bottom: 0"><u>4.3 Mouse</u></h4> 
+<h4 style="margin-bottom: 0"><u>3.3 Mouse</u></h4> 
 Moving up the evolutionary tree, researchers have recently mapped a cubic millimeter of mouse visual cortex—a landmark achievement known as the MICrONS (Machine Intelligence from Cortical Networks) project. This cubic millimeter contains approximately 120,000 neurons and 650 million synapses, representing another scale jump from the fruit fly. Critically, this volume is large enough to capture complete local circuits and long-range projections that implement visual processing computations analogous to those in humans. Another fancy part is that the mouse brain architecture shares fundamental cortical organization, cell types, and circuit motifs with human brains. 
 
 More interestingly, building on this success, the Intelligence Advanced Research Projects Activity (IARPA) has now launched an even more ambitious project called MICrONS Petascale, aiming to map the complete mouse brain of approximately 70 million neurons with hundreds of billions of connections. That will require processing exabytes of imaging data and is expected to be a human genome level insights bombshell. 
 
-<h4 style="margin-bottom: 0"><u>4.3 Human</u></h4> 
+<h4 style="margin-bottom: 0"><u>3.4 Human</u></h4> 
 As for uploading us – humans, there has been just as much work put into digitizing our brain.
 
 At the low-res connectomics: The Human Connectome Project (HCP), launched in 2009, mapped structural connectivity using diffusion MRI tractography to trace white matter pathways and functional connectivity using resting-state fMRI to identify correlated activity patterns. Though it operates at millimeter resolution and thus doesnt allow to simulate the brain accurately, it mapped out the whole-brain coverage across all cortical and subcortical regions in about 1,200+ living humans which provides context about brain's architecture that will be usefull coming forth in nanoscale brain mapping.
@@ -123,7 +169,7 @@ As for high-res mapping: The first human nanoscale brain connectome milestone ca
 
 <hr style="border-top: 1px solid black;">
 
-<h3 align="center">5. Path Forward </h3>
+<h3 align="center">4. Path Forward </h3>
 To witness human emulations within the next decade three key disciplines need "unhobbling":
 
 <div class="table-container" style="overflow-x: auto; width: 85%; margin: auto;">
@@ -342,11 +388,11 @@ To witness human emulations within the next decade three key disciplines need "u
   <p><b>Table 2:</b> The table summarizes current limitations and corresponding innovations required across software, hardware, and wetware domains to advance connectomics toward complete brain uploading. These are some of the most common limitations and innovations raised by dozens of connectomics researchers I interviewed. The numerics of the table are largely based on fermi estimates of my own as well as of my colleagues from MIT, and should be viewed as educated guesess.</p>
 </div>
 
-Considering that software, hardware and wetwear sectors are accelerating exponentially, it is probable that each of those innovations will be reached this very decade. 
+Considering that software, hardware and wetwear sectors are accelerating nonlinearly, it is probable that each of those innovations will be reached this very decade. 
 The first uploaded intelligence effort will likely cost \$1-\$10 billion — prohibitive for most — but like the human genome project which plummeted from \$3 billion to \$400, it should come as no surprise that brain uploads too will likely drop in price by orders of magnitude within a few years after the first upload. I hope you are excited. 
 
 
-<h3 align="center">6. Conclusion </h3>
+<h3 align="center">5. Conclusion </h3>
 There is an invisible path to the first human uploads. Cost, fidelity and speed of connectomics are still to give way to this future, but once they do, massive GPU orchestras will buzz the melody of the first human AIs.
 
 
