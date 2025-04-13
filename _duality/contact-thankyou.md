@@ -125,5 +125,5 @@ hidden: false
 
 <div class="thankyou-container">
   <div class="thankyou-title">Thank you. We will get back to you ASAP.</div>
-  <a href="https://glebrazgar.github.io/Duality/" class="home-button">Return To Home Page</a>
+  <a href="https://glebrazgar.github.io/Duality/contact-thankyou/" class="home-button">Return To Home Page</a>
 </div>
