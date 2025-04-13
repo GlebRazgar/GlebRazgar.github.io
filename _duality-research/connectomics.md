@@ -93,11 +93,6 @@ So, you've got your brain imaging data. What next? Turn it into a graph neural n
 </div>
 <br>
 
-<h3 align="center">3. Applications</h3>
-Digitizing brains may prove simpler than deciding what to do with them afterward. The possibilities certainly stretch beyond my imagination, and as as such I will leave it to you - my dear reader, to philosophise about the outcomes you wish to occur. 
-
-<hr style="border-top: 1px solid black;">
-
 <h3 align="center">4. Progress</h3>
 
 Some of the highlight organisms mapped to date:
