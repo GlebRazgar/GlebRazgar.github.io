@@ -1328,7 +1328,7 @@ hidden: true
     <div class="section-content">
       <p>Humanity doesn't understand the brain — and yet tries to cure it, enhance it, and replicate it.</p>
 
-      <p>We aim to solve this by mapping the first human brain at nano-scale resolution, and turn it into a brain simulation that enables brain disease emulation, digital drug development and production of the first human AIs.</p>
+      <p>We aim to solve this by aiming to create the first human brain upload. This will enable digital drug simulations, disease emulation, and production of the first human AIs.</p>
     </div>
   </div>
 </div>
@@ -1461,7 +1461,7 @@ hidden: true
     <div class="footer-links">
       <a href="https://www.linkedin.com/in/gleb-razgar-6931a7220" class="footer-link">LinkedIn</a>
       <a href="https://glebrazgar.github.io/Duality/contact/" class="footer-link">Contact</a>
-      <a href="https://glebrazgar.github.io/Duality-Research/" class="footer-link">Research</a>
+      <a href="https://glebrazgar.github.io/Duality/research" class="footer-link">Research</a>
     </div>
     <div class="footer-copyright">© 2025 Duality. All rights reserved.</div>
   </div>
