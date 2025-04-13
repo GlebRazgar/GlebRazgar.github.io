@@ -14,11 +14,13 @@ hidden: true
 <h3 align="center">1. Introduction</h3>
 Death is bad engineering.
 
-Our brain — the jewel of consciousness — is a dynamic function. One that is dependent on its temporal dynamics, neuronal activations, and synaptic weights. As you could imagine, being able to model such a function would be **UNPRECEDENTED**. To model the brain is to simulate it. And simulating the brain gives us the ability to emulate **brain diseases**, **drug development**, **intelligence**, and possibly one day **<u>consciousness</u>**.  
+Our brain — the jewel of consciousness — is a dynamic function. One that is dependent on its temporal dynamics, neuronal activations, and synaptic weights. As you could imagine, being able to model or "upload" such a function would be **UNPRECEDENTED**. To model the brain is to simulate it, and simulating the brain gives us the ability to emulate **brain diseases**, **drug development**, **intelligence**, and possibly one day **<u>transgress death digitally</u>**.  
 
-What is popularly known as "brain uploading" is more formally studied as connectomics, a discipline dedicated to creating brain wiring maps (connectomes), with a focus on how synaptic connectivity, cellular morphology, and cellular ultrastructure contribute to the makeup of a network. Since our brain is more than just its structure, connectomics tries to elucidate and overlay functional and structural information to obtain a full computational counterpart to the brain – or in cooler terms, a brain upload.
+Though Darwin never anticipated digital evolution, within our liftime we might see the first human uploads. As sci-fi as it sounds, brain uploading is anything but fiction. We've already quitely digitized small animals (more on each later), and are currently working up the tech to do the same to much larger - human brains.
 
-As sci-fi as I make it sound, connectomics is anything but fiction. We've already mapped and simulated small animals at nanometer imaging resolution. Though the human connectome hasn't yet been mapped due to the colossal size of our brain, at the current rate of progress, you can expect to see one within the **next few years** (more on scaling laws later). Even if you are skeptical about achieving 1:1 human brain simulations, a universe where we have even approximate human connectomes looks strikingly better than ours, and thus worth seriously entertaining. Even if drug testing can be simulated with a probabilistic degree of certainty, much like a weather forecast, this in itself would create new forms of medicine. In light of such a possible future, this post tries to provide a holistic overview of connectomics, its methods, milestones, and future directions.
+What is popularly known as "brain uploading" is more formally studied as connectomics, a discipline dedicated to creating brain wiring maps (connectomes), with a focus on how synaptic connectivity, cellular morphology, and cellular ultrastructure contribute to the makeup of a network. Since our brain is more than just its structure, connectomics tries to elucidate and overlay functional and structural information to obtain a full computational counterpart to the brain – or in cooler terms, a brain upload. 
+
+Human connectome hasn't yet been mapped due to the colossal size of our brain, yet under the current rate of progress in connectomics, you can likely expect to see one within the **next decade**. Even if you are skeptical about witnessing 1:1 human brain simulations, a universe where we have even approximate human connectomes looks strikingly better than ours, and thus worth seriously entertaining. Even if drug testing can be simulated with a probabilistic degree of certainty, much like a weather forecast, this in itself would create new forms of medicine. In light of such a possible future, this post tries to provide a holistic overview of connectomics, its methods, milestones, and future directions.
 
 <hr style="border-top: 1px solid black;">
 
@@ -92,7 +94,7 @@ So, you've got your brain imaging data. What next? Turn it into a graph neural n
 <br>
 
 <h3 align="center">3. Applications</h3>
-Digitizing brains may prove simpler than deciding what to do with them afterward. The possibilities certainly stretch beyond my imagination. Neuroscience, robotics, and AI catalyzation seem to be the most obviouse, but I trust that you - my dear reader, can simulate your own hopes for the outcome.
+Digitizing brains may prove simpler than deciding what to do with them afterward. The possibilities certainly stretch beyond my imagination, and as as such I will leave it to you - my dear reader, to philosophise about the outcomes you wish to occur. 
 
 <hr style="border-top: 1px solid black;">
 
