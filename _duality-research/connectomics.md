@@ -343,7 +343,7 @@ To witness human emulations within the next decade three key disciplines need "u
 </div>
 
 Considering that software, hardware and wetwear sectors are accelerating exponentially, it is probable that each of those innovations will be reached this very decade. 
-The first uploaded intelligence will cost \$1-\$10 billion — prohibitive for most — but like the human genome project (but orders of magnitude more crucial), which plummeted from \$3 billion to \$400, it should come as no surprise that brain uploads too will likely drop in price by orders of magnitude within a few years after the first upload. I hope you are excited. 
+The first uploaded intelligence effort will likely cost \$1-\$10 billion — prohibitive for most — but like the human genome project which plummeted from \$3 billion to \$400, it should come as no surprise that brain uploads too will likely drop in price by orders of magnitude within a few years after the first upload. I hope you are excited. 
 
 
 <h3 align="center">6. Conclusion </h3>
