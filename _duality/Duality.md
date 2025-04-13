@@ -1326,9 +1326,9 @@ hidden: true
       <div class="section-title"><span style="color: #5ED464;">Mission</span></div>
     </div>
     <div class="section-content">
-      <p>Humanity doesn't understand the brain — and yet tries to cure it, enhance it, and replicate it.</p>
+      <p>We don't understand the brain — and thus can't cure it, enhance it, or replicate it.</p>
 
-      <p>We aim to solve this by aiming to create the first human brain upload. This will enable digital drug simulations, disease emulation, and production of the first human AIs.</p>
+      <p>Duality aims to solve this by creating the first human brain upload. This will enable digital drug simulations, disease emulation, and production of first human AIs.</p>
     </div>
   </div>
 </div>
@@ -1384,7 +1384,7 @@ hidden: true
       </div>
       <div class="backing-title">Simulate</div>
       <div class="backing-text">
-        Lastly, we make sure the digital brain is functionally identical to the original and can be simulated in any environment.
+        Lastly, we aim to simulate the brain in different environments; testing drugs, intelligence, and conciouseness of the uploaded mind.
       </div>
       <div class="backing-preference">
         <div class="preference-label">Simulatable Scope:</div>
