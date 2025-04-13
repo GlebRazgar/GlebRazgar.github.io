@@ -555,7 +555,7 @@ hidden: true
         <p>We're always looking for exceptional talent to help us push the boundaries of whole brain emulation.</p>
         <p>If you're passionate about understanding or digitizing the human brain, we'd love to hear from you.</p>
       </div>
-      <button id="funding-button" class="contact-button" onclick="window.location.href='https://glebrazgar.github.io/Duality-Contact/'">Get in Touch</button>
+      <button id="funding-button" class="contact-button" onclick="window.location.href='https://glebrazgar.github.io/Duality/contact/'">Get in Touch</button>
     </div>
   </div>
 </div>
@@ -570,8 +570,8 @@ hidden: true
     <div class="footer-tagline">Digitizing the human brain</div>
     <div class="footer-links">
       <a href="https://www.linkedin.com/in/gleb-razgar-6931a7220" class="footer-link">LinkedIn</a>
-      <a href="https://glebrazgar.github.io/Duality-Contact/" class="footer-link">Contact</a>
-      <a href="https://glebrazgar.github.io/Duality-Research/" class="footer-link">Research</a>
+      <a href="https://glebrazgar.github.io/Duality/contact/" class="footer-link">Contact</a>
+      <a href="https://glebrazgar.github.io/Duality/research/" class="footer-link">Research</a>
     </div>
     <div class="footer-copyright">© 2025 Duality. All rights reserved.</div>
   </div>

@@ -12,7 +12,7 @@ hidden: true
 <br>
 
 <h3 align="center">1. Introduction</h3>
-Darwin never anticipated life turning digital to escape death, yet this might change within our lifetime.
+<!-- Darwin never anticipated life evolving digital to escape death, yet this might change within our lifetime. -->
 
 <!-- HOW IT SHOULD START:
 The legacy system of mortality is due for an upgrade. Brain uploading might be it.
@@ -28,7 +28,7 @@ As of recently we can "upload" organisms, and perhaps within our lifetime - huma
 
 Our brain — the jewel of consciousness — is a dynamic function. One that is dependent on its temporal dynamics, neuronal activations, and synaptic weights. To model the brain is to simulate it, and simulating the brain gives us the ability to simulate **brain diseases**, **drug development**, **intelligence**, and possibly one day **<u>transgress death</u>**. Even if we end up falling short of 1:1 human brain simulations, a universe where we have even approximate brain models (much like weather forecasts) looks strikingly better than ours, and thus worth seriously entertaining. Year-long drug development trials for neuroscience might get compressed to day-long digital runs. Intelligent systems might become more comprehensible, and as a result creation of aligned AI prove tractable. The intellectual debate of how far it can go is all yours, but the core premise is in possible prosperity. -->
 
-Our brain — the jewel of consciousness — is a dynamic function. One that is dependent on its temporal dynamics, neuronal activations, and synaptic weights. As you could imagine, being able to model such a function would be **UNPRECEDENTED**. To model the brain is to "upload" it, and uploading the brain gives us the ability to simulate **brain diseases**, **drug development**, **intelligence**, and possibly one day **<u>transgress death</u>**.  
+Our brain — the crown jewel of consciousness — is a dynamic function. One that is dependent on its temporal dynamics, neuronal activations, and synaptic weights. As you could imagine, being able to model or "upload" such a function would be **UNPRECEDENTED**. To model the brain is to "upload" it, and uploading the brain gives us the ability to simulate **brain diseases**, **drug development**, **intelligence**, and possibly one day **<u>consciousness</u>**.  
 
 As sci-fi as it sounds, brain uploading is no longer fictional. Neuroscientists already quietly digitized small animals (more on each later), and are currently working up the tech to do the same to much larger human brains. Even if we end up falling short of 1:1 human brain simulations, a universe where we have even approximate brain models (much like weather forecasts) looks strikingly better than ours, and thus worth seriously entertaining. Year-long drug development trials for neuroscience might get compressed to day-long digital runs. Intelligent systems might become more comprehensible, and thus creation of aligned AI prove tractable. The intellectual debate of how far it can go is all yours, but the core premise is in possible prosperity.
 
