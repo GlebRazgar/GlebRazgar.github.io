@@ -14,11 +14,11 @@ hidden: true
 <h3 align="center">1. Introduction</h3>
 In the coming decade, uploaded minds might be born.
 
-Darwin never anticipated life and evolution turning digital, yet this has already changed. As sci-fi as it sounds, brain uploading is no longer fictional. Neuroscientists recently quietly digitized small animals (more on each later), and are currently working up the technology to do the same to much larger, human brains.
+Darwin never anticipated life and evolution turning digital, yet this has already changed. As sci-fi as it sounds, brain uploading has happened. Unbenounced to most, neuroscientists have uploaded multiple small animals (more on each later), and are currently working up the technology to do the same on humans.
 
-Even if we end up falling short of 1:1 human brain simulations, a universe where we have even approximate brain models (much like weather forecasts) looks strikingly better than ours, and thus worth seriously entertaining. Year-long drug development trials for neuroscience might get compressed to day-long digital runs. Intelligent systems might become more comprehensible, and thus creation of aligned AI prove tractable. The intellectual debate of how far it can go is all yours, but the core premise is in possible prosperity.
+A universe with even approximate brain models looks strikingly better than ours, and thus worth entertaining. Year-long drug development trials in neuroscience might get compressed to day-long digital runs. Intelligent systems might become more transparent, and thus creation of aligned AI systems turn trivial. The intellectual discussion of how far brain uploading can go is long, but the core premise is in prosperity.
 
-In light of such a possible future, this post tries to provide a holistic overview of the current uploading research, its methods, milestones, and future directions.
+In light of such a possible future, this piece tries to provide a holistic overview of the current uploading research, its methods, milestones, and future directions.
 
 <!-- HOW IT SHOULD START:
 The legacy system of mortality is due for an upgrade. Brain uploading might be it.
@@ -93,11 +93,11 @@ Macroscale connectomes are typically mapped using diffusion-weighted magnetic re
   3. Nodes are defined by identifying brain regions connected by the edges.</p>
 </div><br>
 
-<h4 style="margin-bottom: 0"><u>2.3 Moddelling </u></h4> 
+<h4 style="margin-bottom: 0"><u>2.3 Simulating </u></h4> 
 
-Once you have the brain imaging data, the next step is to turn it into a functioning model. Though there isn't a definitive solution to converting data into simulations, The most standard proceedure is to:
+Once you have the brain imaging data, the next step is to turn it into a functioning model. Though there isn't a definitive solution to converting data into simulations, The most standard procedure is as follows:
 
-<div class="table-container" style="overflow-x: auto; width: 85%; margin: auto;">
+<div class="table-container" style="overflow-x: auto; width: 80%; margin: auto;">
   <table cellspacing="0" cellpadding="6" border="1.5" style="border: 1.5px solid #5ED464; border-collapse: collapse; width: 100%; background-color: black; font-size: 0.65em;">
     <caption style="caption-side: top; padding: 10px; color: #5ED464;"><b>Table 2.</b> Complete Brain Simulation Process.</caption>
     <thead>
@@ -225,7 +225,7 @@ Once you have the brain imaging data, the next step is to turn it into a functio
     </tbody>
   </table>
 </div>
-<div style="width: 85%; margin: auto; text-align: justify; margin-bottom: 30px;">
+<div style="width: 80%; margin: auto; text-align: justify; margin-bottom: 30px;">
   <p><b>Table 2:</b> The eight key steps in the brain simulation process, from initial tissue imaging preparation to final model calibration. Each step builds upon the previous, creating a complete digital representation of brain functionality.</p>
 </div>
 
@@ -234,7 +234,7 @@ Once you have the brain imaging data, the next step is to turn it into a functio
 
 <p align="center"><img src="/images/matricies_green.png" alt="Alt text" style="max-width: 80%; height: auto; border-radius: 10px;"></p>
 <div style="width: 80%; margin: auto; text-align: center;">
-  <p><b>Figure 5:</b> Connectivity matrices of different species.</p>
+  <p><b>Figure 5:</b> Connectivity matrices of different species obrained through structural imaging. These matricies are then used as bedrocks for building simulation models.</p>
 </div>
 
 <br>
@@ -246,7 +246,7 @@ Once you have the brain imaging data, the next step is to turn it into a functio
 
 <h3 align="center">3. Progress</h3>
 
-Some of the highlight organisms mapped to date:
+Some of the highlight organisms uploaded to date:
 
 <h4 style="margin-bottom: 0"><u>3.1 Caenorhabditis Elegans</u></h4> 
 Back in 1986, the first full nervous system connectome was painstakingly mapped for a C.elegans (CE) worm, using hand-annotated electron microscopy. The work kicked off a series of CE investigations that ended up winning a Nobel prize in 2002. This worm became a staple in neuroscience for it's simplicity of having just 302 neurons & 5000 synaptic connections. Today, we can simulate CEs down to a synapse using the most accurate biophysical models on hand. Despite being a useful and simple organism, CEs turned out to lack the complex electrophysiological properties and synaptic plasticity that are the hallmarks of human neurons. In short, it's an interesting organism, but now insightful enough. Thus, when compute, AI and microscopes allowed for it, researchers jumped on to mapping next promising organism - the fruit fly.
