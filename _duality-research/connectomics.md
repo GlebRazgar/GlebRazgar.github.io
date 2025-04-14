@@ -490,7 +490,7 @@ To witness human emulations within the next decade three key disciplines need "u
   </table>
 </div>
 <div style="width: 85%; margin: auto; text-align: justify;">
-  <p><b>Table 2:</b> The table summarizes current limitations and corresponding innovations required across software, hardware, and wetware domains to advance connectomics toward complete brain uploading. These are some of the most common limitations and innovations raised by dozens of connectomics researchers I interviewed. The numerics of the table are largely based on fermi estimates of my own as well as of my colleagues from MIT, and should be viewed as educated guesess.</p>
+  <p><b>Table 2:</b> The key limitations and corresponding innovations required across software, hardware, and wetware domains to advance connectomics toward complete brain uploading. These are some of the most common limitations and innovations raised by dozens of connectomics researchers I interviewed. The numerics of the table are largely based on fermi estimates of my own as well as of my colleagues from MIT, and should be viewed as educated guesess.</p>
 </div>
 
 Considering that software, hardware and wetwear sectors are accelerating nonlinearly, it is probable that each of those innovations will be reached this very decade. 
