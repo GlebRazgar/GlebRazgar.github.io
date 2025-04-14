@@ -1326,9 +1326,9 @@ hidden: true
       <div class="section-title"><span style="color: #5ED464;">Mission</span></div>
     </div>
     <div class="section-content">
-      <p>We don't understand the brain — and thus can't cure it, enhance it, or replicate it.</p>
+      <p>Humanity doesnt know how the brain works — and thus can't cure, enhance, or replicate it.</p>
 
-      <p>Duality aims to solve this by creating the first human brain upload. This will enable digital drug simulations, disease emulation, and production of first human AIs.</p>
+      <p>We aim to solve this by creating the first human brain uploads. This will enable digital simulations of drug development, brain disease treatment, and production of the first "Uploaded AIs".</p>
     </div>
   </div>
 </div>
@@ -1361,7 +1361,7 @@ hidden: true
     
     <div class="backing-box">
       <div class="backing-icon">
-        <img src="/images/brain-net.svg" width="96" height="96" alt="Neural network icon" style="fill: #5ED464;">
+        <img src="/images/brain.svg" width="96" height="96" alt="Brain icon" style="fill: #5ED464;">
       </div>
       <div class="backing-title">Digitize</div>
       <div class="backing-text">
@@ -1380,7 +1380,7 @@ hidden: true
     
     <div class="backing-box">
       <div class="backing-icon">
-        <img src="/images/brain.svg" width="96" height="96" alt="Brain icon" style="fill: #5ED464;">
+        <img src="/images/brain-net.svg" width="96" height="96" alt="Neural network icon" style="fill: #5ED464;">
       </div>
       <div class="backing-title">Simulate</div>
       <div class="backing-text">
