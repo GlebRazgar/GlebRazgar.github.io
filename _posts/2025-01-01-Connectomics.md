@@ -12,18 +12,19 @@ Death is bad engineering.
 
 Our brain - the jewel of consciousness - is a dynamic function. One that is dependent on its temporal dynamics, neuronal activations, and synaptic weights. As you could imagine, being able to model such a function would be **UN-PRECEDENTED**. To model the brain is to simulate it. And simulating the brain gives us the ability to emulate **mental disorders**, **brain disease**, **drug responses**, and possibly one day **<u>transgress death</u>**.
 
-Connectomics is a discipline that tries to create such brain uploads. To be concrete, connectomics is the production and study of connectomes: maps of connections within an organism’s nervous system. More generally, it can be thought of as the study of neuronal wiring diagrams with a focus on how structural connectivity, individual synapses, cellular morphology, and cellular ultrastructure contribute to the makeup of a network. Because these structures are extremely complex, methods within this field use a high-throughput application of functional and structural neural imaging in order to increase the speed, efficiency, and resolution of these nervous system maps.
-
-While the complete human connectome remains unmapped today, this will change in the **upcoming few years**. In light of such a future, this post provides a holistic overview of connectomics, its methods, applications, and upcoming directions.
-
 <hr style="border-top: 1px solid black;">
 
 <h3 align="center">2. Methods</h3>
+What is popularly known as "brain uploading" is more formally studied as connectomics, a discipline dedicated to creating brain wiring maps (connectomes), with a focus on how synaptic connectivity, cellular morphology, and cellular ultrastructure contribute to the makeup of a network. Since our brain is a dynamic function represented by more than just its structure, connectomics tries to elucidate and overlay functional and structural information to obtain a full computational counterpart to the brain – or in cooler terms, a brain upload. 
 
-Generally speaking, we can split connectomes into two categories: low-resolution (~macroscale) and high-resolution (~nanoscale), each focusing on different levels of analysis. Macroscale connectomics involves the use of high-level functional and structural MRI data to map large fiber tracts and functional gray matter regions within the brain, analyzing aspects such as blood flow for functional insights and water diffusivity for structural details. On the other hand, nanoscale connectomics focuses on mapping the entire connectome of small organisms through microscopy and histology, capturing all the connections present in their central nervous systems.
+Generally speaking, connectomics research operates at two distinct units of analysis: low-resolution (~macroscale) or high-resolution (~nanoscale). With low-resolution imaging, researchers try to map abstract brain structrue by using top-down functional and structural methods (e.g., MRI, MEG, etc.), to map large fiber tracts and gray matter regions within the brain, analyzing things like blood flow for functional insights and water diffusivity for structural details. 
+
+On the other hand, high-resolution connectomics focuses on mapping the brain at a mechanistic level – capturing all the substrate at the maximum obtainable resolution, both through structural methods (e.g., microscopy, histology, etc.) and functional methods (e.g., calcium imaging, array tomography, etc.) – all in the vein of creating the finest digital reconstructions of the organism.
+
+An important distinction between low vs high-res brain imaging apart from fidelity is their invasiveness. High-res imaging is **hyper** invasive as it often requires physically cutting the brain into micrometer-thick slices and imaging each individually, like in serial scanning electron microscopy (SSEM). This method, though fatal to the organism, provides unprecedented fidelity required for high-precision uploading. On the other end of the spectrum, low-res imaging like MRI works on live organisms, but as a result fails to capture the mechanistic details required to accurately simulate a brain. There tends to be a clear correlation between invasiveness and the amount of information you can extract in connectomics, and until we develop non-invasive imaging methods with nanoscale resolution, methods like SSEM will be most promising for detailed brain mapping.  
 
 <h4 style="margin-bottom: 0"><u>2.1 Nanoscale Connectomics</u></h4> 
-Nanoscale connectomes are the microscopic maps of neuron-to-neuron connections, captured in tiny volumes of nervous tissue. Electron microscopy (EM) is the tool of choice here, offering the precision to see individual synapses. Back in 1986, the first full nervous system connectome was painstakingly mapped for C. elegans, using hand-annotated EM scans. Fast forward to today, and EM technology has evolved—improvements in image capture, alignment, and data labeling now allow us to map larger volumes with ease. EM has been pivotal in creating connectomes from various samples, including the entire brain and ventral nerve cord of adult fruit flies (Drosophila melanogaster) and sections of mouse and human cortex. The NIH is now ambitiously working on an EM connectome of a whole mouse brain.
+In high-res (nanoscale) connectomics, the goal is to obtain tiny mechanistic maps of neuron-to-neuron, synapse-to-synapse connectivity. Electron microscopy (EM) is the tool of choice here thanks to its awesome ~3-5nm precision, which is sufficient for imaging neurons down to their synapses. The issue with traditional optical microscopes is that they can't image samples below 200-300nm due to the diffraction limit of light. Instead, the EM works by bombarding heavy metal-stained tissue samples (typically with osmium, uranium, and lead) with accelerated electrons and detecting differential scattering of electrons between subcellular structures (think: cellular membranes, dendrites, synaptic vesicles, etc.,) all of which have differing electron densities. Despite their stellar resolution EM microscopes are expensive (~$2M) and really slow (imaging rate of ~10-100 μm³/s) due to beam dwell time, serial sectioning, and heavy metal staining overheads.
 
 <p align="center" style="margin-bottom: 0;"><img src="/images/connectome2.png" alt="Alt text" style="max-width: 45%; height: auto; border-radius: 0px;"></p>
 
@@ -34,17 +35,25 @@ Nanoscale connectomes are the microscopic maps of neuron-to-neuron connections, 
   <p><b>Figure 1:</b> Connectome of a fruit fly (Drosophila melanogaster) obtained using Electron Microscopy, showing different neuronal types. The connectome consists of 140,000 neurons and is the size of a grain of sand.</p>
 </div><br>
 
-Electron microscopy reigns supreme in spatial resolution, making it essential for capturing the intricate dance of presynaptic and postsynaptic sites along with their delicate morphological nuances. However, this supremacy is not without challengers. X-ray nanotomography, which utilizes a synchrotron source to achieve sub-100 nm resolution, is gaining popularity. Its appeal lies in its ability to bypass the need for heavy metal staining and physical sectioning, offering potential for further refinement. In contrast, conventional light microscopy remains limited by diffraction, resulting in lower resolution, a topic I will delve into later. There are other methods being tested, for instance, stimulated emission depletion (STED) microscopy, which reconstructs neurites and identifies synaptic connections using fluorescent markers, but their resolution (130 nm+) or mapping speed tends to render them less applicable.
+Alternatively to using very expensive and slow electron microscopes to elucidate the structure, we can expand the brain itself and image it with a standard microscope! Expansion Microscopy (ExM) is a method which allows to, quite literally – physically enlarge the tissue ~20x while maintaining its structural relationships. ExM works by embedding tissue in a swellable polymer (like a baby diaper matrix) that expands uniformly when you add water, increasing the physical size of the specimen whilst preserving its composition. The beauty of ExM is that the physical magnification enables imaging of tissue at the nanoscale using standard light microscopes. 
+
+
+<p align="center"><img src="/images/exm.jpg" alt="Alt text" style="max-width: 80%; height: auto; border-radius: 10px; mix-blend-mode: multiply; filter: brightness(1.2) contrast(1.1);"></p>
+<div style="width: 80%; margin: auto; text-align: center;">
+  <p><b>Figure 1:</b>Expansion Microsope Proceedure.</p>
+</div><br>
 
 <p align="center"><img src="/images/ssm.png" alt="Alt text" style="max-width: 80%; height: auto; border-radius: 0px; mix-blend-mode: multiply;"></p>
-
 <div style="width: 80%; margin: auto; text-align: justify;">
   <p><b>Figure 2:</b> Illustration showing how the fruit fly connectome, like the one above, was obtained. This involves slicing the fly's brain into ultra-thin sections and imaging each section with an electron microscope, after which a semi-supervised cellular classifier creates a detailed 3D reconstruction of neural structures.</p>
 </div><br>
 
+Unarguably one of the most futuristic connectomics methods is to use a particle collider called Synchrotrons to image the tissue via X-ray nanotomography. Synchrotron's appeal lies in its ability to bypass the need for heavy metal staining and physical sectioning unlike in electron microscope. The way it works is by accelerating electrons to near light speed, and then bending them to obtain incredibly potent X-ray beams (up to 10¹² photons/second) that are filtered to desired energy levels between 8-12 keV. Unlike conventional X-ray imaging that detects how tissues block X-rays, synchrotron-based connectomics measures how X-rays bend or phase shift when passing through brain sample due to different tissue refractive indices. This reveals unmyelinated axons and cell boundaries without staining. In theory, a synchrotron can image a full human brain in less than a year at ~40nm resolution, which is faster than using 350 electron microscopes in parallel!
+
+Numerous other brain imaging techniques exist and are in the making, but that's a conversation for another rabbithole.
 
 <h4 style="margin-bottom: 0"><u>2.1 Macroscale Connectomics</u></h4> 
-Macroscale connectomes are typically mapped using diffusion-weighted magnetic resonance imaging (dMRI) and functional magnetic resonance imaging (fMRI). dMRI is like the Google Maps of the brain, charting the main highways of white matter that connect the cortex to the subcortex. It does this by tracking the diffusion of water molecules, which reveal the orientation of these neural pathways. When paired with tractography, dMRI doesn't just stop at mapping; it reconstructs the brain's white matter tracts by measuring water diffusion in multiple directions, estimating local fiber orientations, and modeling the brain's fiber pathways. Tractography algorithms then take the baton, tracing the probable routes of these pathways to sketch out the brain's anatomical connectivity. From this data, we can extract metrics like fractional anisotropy (FA), mean diffusivity (MD), and connectivity strength, which help us assess the microstructural properties of white matter and quantify the robustness of long-range connections between brain regions. 
+Macroscale connectomes are typically mapped using diffusion-weighted magnetic resonance imaging (dMRI) and functional magnetic resonance imaging (fMRI). dMRI is like the Google Maps of the brain, charting the main highways of white matter that connect the cortex to the subcortex. It does so by tracking the diffusion of water molecules, which reveal the orientation of these neural pathways. When paired with tractography, dMRI doesn't stop at mapping, and reconstructs the brain's white matter tracts by measuring water diffusion in multiple directions, estimating local fiber orientations, and modeling the brain's fiber pathways. Tractography algorithms then take the baton, tracing the probable routes of these pathways to sketch out the brain's anatomical connectivity. From this data, we can extract metrics like fractional anisotropy (FA), mean diffusivity (MD), and connectivity strength, which help us assess the microstructural properties of white matter and quantify the robustness of long-range connections between brain regions. 
 
 <p align="center"><img src="/images/connectome_seq.png" alt="Alt text" style="max-width: 80%; height: auto; border-radius: 10px; mix-blend-mode: multiply;"></p>
 <div style="width: 80%; margin: auto; text-align: justify;">
@@ -54,87 +63,404 @@ Macroscale connectomes are typically mapped using diffusion-weighted magnetic re
   3. Nodes are defined by identifying brain regions connected by the edges.</p>
 </div><br>
 
+<h4 style="margin-bottom: 0"><u>2.3 Simulating </u></h4> 
 
-So, you've got your brain imaging data. What next? Turn it into a graph neural network (GNN) to make it functional. Imagine each brain region as a node and the white matter connections as edges. The weights? They come from metrics like FA values or fiber counts. This graph setup lets us use GNN algorithms to dissect the brain's network dynamics, spot clusters of tightly-knit regions, and trace the flow of information through neural circuits. The beauty of the GNN framework lies in its dual ability to map the structural layout of brain connections and to learn how activity zips through the network. This computational method is poweful for systematically exploring brain organization and function at the network level.
+Once you have the brain imaging data, the next step is to turn it into a functioning model. Though there isn't a definitive solution to converting data into simulations, The most standard procedure is as follows:
+
+<div class="table-container" style="overflow-x: auto; width: 80%; margin: auto;">
+  <table cellspacing="0" cellpadding="6" border="1.5" style="border: 1.5px solid black; border-collapse: collapse; width: 100%; background-color: black; font-size: 0.65em;">
+    <caption style="caption-side: top; padding: 10px; color: #5ED464;"><b>Table 2.</b> Complete Brain Simulation Process.</caption>
+    <thead>
+      <tr>
+        <th style="border: 1.5px solid black; color: #5ED464; text-align: center; font-weight: bold; width: 30%;">Step</th>
+        <th style="border: 1.5px solid black; color: #5ED464; text-align: center; font-weight: bold; width: 70%;">Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="border: 1.5px solid black; color: #5ED464; text-align: left; vertical-align: middle; font-weight: bold;" rowspan="2">1. Pre-Processing</td>
+        <td style="border: 1.5px solid black; color: #5ED464; text-align: left; border-bottom: 1px dashed black;">
+          • Aligning all the imaged slices correctly into a 3D volume
+        </td>
+      </tr>
+      <tr>
+        <td style="border: 1.5px solid black; color: #5ED464; text-align: left;">
+          • Removing of artifacts
+        </td>
+      </tr>
+      
+      <tr>
+        <td style="border: 1.5px solid black; color: #5ED464; text-align: left; vertical-align: middle; font-weight: bold;" rowspan="3">2. Segmentation & Proofreading</td>
+        <td style="border: 1.5px solid black; color: #5ED464; text-align: left; border-bottom: 1px dashed black;">
+          • Segmenting tissue using ML models (U-nets, flood filling networks, local shape descriptors) to outline cell bodies, trace axons, dendrites, and synaptic connections
+        </td>
+      </tr>
+      <tr>
+        <td style="border: 1.5px solid black; color: #5ED464; text-align: left; border-bottom: 1px dashed black;">
+          • Proofreading and correcting errors of automated segmentation (incorrect connections, missed branches, and false mergers)
+        </td>
+      </tr>
+      <tr>
+        <td style="border: 1.5px solid black; color: #5ED464; text-align: left;">
+          • In barcoded specimens: using molecular barcodes to verify neuron identity and connections
+        </td>
+      </tr>
+      
+      <tr>
+        <td style="border: 1.5px solid black; color: #5ED464; text-align: left; vertical-align: middle; font-weight: bold;">3. Classification</td>
+        <td style="border: 1.5px solid black; color: #5ED464; text-align: left;">
+          • Classification and labelling of cell types (glia, astrocytes, etc.)
+        </td>
+      </tr>
+      
+      <tr>
+        <td style="border: 1.5px solid black; color: #5ED464; text-align: left; vertical-align: middle; font-weight: bold;" rowspan="3">4. Connectome Graph Creation</td>
+        <td style="border: 1.5px solid black; color: #5ED464; text-align: left; border-bottom: 1px dashed black;">
+          • Converting the 3D reconstruction into a structured graph representation
+        </td>
+      </tr>
+      <tr>
+        <td style="border: 1.5px solid black; color: #5ED464; text-align: left; border-bottom: 1px dashed black;">
+          • Defining nodes (neurons) and edges (synaptic connections)
+        </td>
+      </tr>
+      <tr>
+        <td style="border: 1.5px solid black; color: #5ED464; text-align: left;">
+          • Adding metadata about neuron types, molecular properties and synaptic strengths
+        </td>
+      </tr>
+      
+      <tr>
+        <td style="border: 1.5px solid black; color: #5ED464; text-align: left; vertical-align: middle; font-weight: bold;" rowspan="3">5. Simulation Model Building</td>
+        <td style="border: 1.5px solid black; color: #5ED464; text-align: left; border-bottom: 1px dashed black;">
+          • Choosing neuron models and parameters (LIF, Hodgkin-Huxley, etc.)
+        </td>
+      </tr>
+      <tr>
+        <td style="border: 1.5px solid black; color: #5ED464; text-align: left; border-bottom: 1px dashed black;">
+          • Setting neurotransmitter types and receptor responses
+        </td>
+      </tr>
+      <tr>
+        <td style="border: 1.5px solid black; color: #5ED464; text-align: left;">
+          • Implementing neuroplasticity mechanisms based on available data (short & long-term plasticity)
+        </td>
+      </tr>
+      
+      <tr>
+        <td style="border: 1.5px solid black; color: #5ED464; text-align: left; vertical-align: middle; font-weight: bold;" rowspan="3">6. Environment/Body Integration</td>
+        <td style="border: 1.5px solid black; color: #5ED464; text-align: left; border-bottom: 1px dashed black;">
+          • Connecting sensory inputs to appropriate neurons
+        </td>
+      </tr>
+      <tr>
+        <td style="border: 1.5px solid black; color: #5ED464; text-align: left; border-bottom: 1px dashed black;">
+          • Mapping motor outputs to effectors
+        </td>
+      </tr>
+      <tr>
+        <td style="border: 1.5px solid black; color: #5ED464; text-align: left;">
+          • Creating physical model of environment for interaction
+        </td>
+      </tr>
+      
+      <tr>
+        <td style="border: 1.5px solid black; color: #5ED464; text-align: left; vertical-align: middle; font-weight: bold;" rowspan="3">7. Execution</td>
+        <td style="border: 1.5px solid black; color: #5ED464; text-align: left; border-bottom: 1px dashed black;">
+          • Setting up infrastructure (partitioning the network across GPUs, setting up memory management, etc.)
+        </td>
+      </tr>
+      <tr>
+        <td style="border: 1.5px solid black; color: #5ED464; text-align: left; border-bottom: 1px dashed black;">
+          • Initializating (membrane potential, ion concentration, etc.)
+        </td>
+      </tr>
+      <tr>
+        <td style="border: 1.5px solid black; color: #5ED464; text-align: left;">
+          • Validation testing (comparing actual brain's neural activity patterns to the model)
+        </td>
+      </tr>
+      
+      <tr>
+        <td style="border: 1.5px solid black; color: #5ED464; text-align: left; vertical-align: middle; font-weight: bold;" rowspan="2">8. Parameter Calibration</td>
+        <td style="border: 1.5px solid black; color: #5ED464; text-align: left; border-bottom: 1px dashed black;">
+          • Tuning nueorn parameters based on functional data (calcium/voltage/etc., imaging)
+        </td>
+      </tr>
+      <tr>
+        <td style="border: 1.5px solid black; color: #5ED464; text-align: left;">
+          • Calibrating neuroplasticity rules based on available data
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div style="width: 80%; margin: auto; text-align: justify; margin-bottom: 30px;">
+  <p><b>Table 1:</b> The key steps of the brain simulation procedure, from initial tissue imaging preparation to final model calibration. The steps consecutively build on each other to create a complete digital representation of the original brain.</p>
+</div>
 
 <p align="center"><img src="/images/matricies.png" alt="Alt text" style="max-width: 80%; height: auto; border-radius: 10px; mix-blend-mode: multiply;"></p>
 <div style="width: 80%; margin: auto; text-align: center;">
-  <p><b>Figure 5:</b> Connectivity matrices of different species.</p>
+  <p><b>Figure 5:</b> Connectivity matrices of different species obrained through structural imaging. These matricies are then used as bedrocks for building simulation models.</p>
 </div>
 
 <hr style="border-top: 1px solid black;">
 
-<h3 align="center">3. Applications</h3>
+<h3 align="center">4. Progress</h3>
 
-By comparing the connectomes of the diseased and the healthy, we can glean insights into psychopathologies like neuropathic pain and potential therapies. Connectomics offers a window into the tangled web of mental illnesses and brain disorders. Advanced imaging technologies enhance our ability to track and even predict diseases based on historical data, though this is a time-consuming endeavor. Take schizophrenia and bipolar disorder, for instance—both share genetic roots, and studies show that individuals with higher polygenic scores for these conditions exhibit reduced connectivity in neuroimaging. This research marries imaging with genetics to probe the origins and outcomes of genetically linked disorders. Another study corroborates the link between connectivity and disease likelihood, noting that schizophrenia patients have less structurally complete brain networks. The Achilles' heel of connectomics is its current inability to capture whole-brain networks, complicating the task of drawing definitive cause-and-effect conclusions about neural pathways. While connectomics has been applied to stroke patients via MRI, the paucity of research in this niche means we can't yet make sweeping claims about strokes and connectivity. Some findings suggest a link between poor connectivity in the language system and motor coordination issues, but the evidence isn't robust enough for bold assertions. Behavioral disorders pose their own challenges, often diagnosed and treated based on symptoms that overlap across conditions. Connectomics has identified neuromarkers for social anxiety disorder (SAD) with high precision, improving symptom management. This burgeoning field holds promise for broad applications in all-things brain function related, as current research continues to build on neural networks and the associated psychopathology.
+Some of the highlight organisms uploaded to date:
 
-When you compare the connectomes of healthy women and men, the data reveals something intriguing: women's connectomes are not just slightly better connected, but significantly so. They boast more edges, a higher minimum bipartition width, a larger eigengap, and a greater minimum vertex cover. In simpler terms, women's brains are like a finely tuned network machine, with fewer communication bottlenecks and superior expansion capabilities. The minimum bipartition width, a metric borrowed from computer network design, indicates how well a network can handle communication without congestion. A larger eigengap suggests that women's connectomes are better at expanding, akin to a network that can grow without losing its coherence. These factors collectively highlight a superior network connectivity in female braingraphs, offering a fascinating glimpse into the intricacies of human brain networks.
-
-Local measures of difference between populations of those graph have been also introduced (e.g. to compare case versus control groups). Those can be found by using either an adjusted t-test, or a sparsity model, with the aim of finding statistically significant connections which are different among those groups.
-
-Now, let's talk about human connectomes and their quirks. Human connectomes have an individual variability, which can be measured with the cumulative distribution function. By analyzing the individual variability of the human connectomes in distinct cerebral areas, it was found that the frontal and the limbic lobes are more conservative, and the edges in the temporal and occipital lobes are more diverse. A "hybrid" conservative/diverse distribution was detected in the paracentral lobule and the fusiform gyrus. Smaller cortical areas were also evaluated: precentral gyri are found to be more conservative, and the postcentral and the superior temporal gyri to be very diverse, going to show vast diffs between connectomes.
-
-
-<hr style="border-top: 1px solid black;">
-
-<h3 align="center">4. History</h3>
-
-<h4 style="margin-bottom: 0"><u>4.1 Caenorhabditis Elegans</u></h4> 
-Caenorhabditis Elegans, the humble roundworm, is the darling of connectomics. We've mapped its entire connectome, primarily through serial-electron microscopy. This isn't just a static snapshot; it's a dynamic study of how its neural wiring evolves from birth to adulthood. The standout finding? As these worms age, their neural circuits become more interconnected. Yet, despite this monumental mapping feat, the C. Elegans connectome still holds secrets. Researchers suggest that comparative connectomics—juxtaposing brain networks across species—could unlock insights into behavioral correlations.
+<h4 style="margin-bottom: 0"><u>3.1 Caenorhabditis Elegans</u></h4> 
+Back in 1986, the first full nervous system connectome was painstakingly mapped for a C.elegans (CE) worm, using hand-annotated electron microscopy. The work kicked off a series of CE investigations that ended up winning a Nobel prize in 2002. This worm became a staple in neuroscience for it's simplicity of having just 302 neurons & 5000 synaptic connections. Today, we can simulate CEs down to a synapse using the most accurate biophysical models on hand. Despite being a useful and simple organism, CEs turned out to lack the complex electrophysiological properties and synaptic plasticity that are the hallmarks of human neurons. In short, it's an interesting organism, but now insightful enough. Thus, when compute, AI and microscopes allowed for it, researchers jumped on to mapping next promising organism - the fruit fly.
 
 <p align="center"><img src="/images/celegan.png" alt="Alt text" style="max-width: 80%; height: auto; border-radius: 10px; mix-blend-mode: difference; filter: saturate(0.6);"></p>
 <div style="width: 80%; margin: auto; text-align: center;">
   <p><b>Figure 6:</b>Connectome of a C.elecan</p>
 </div><br>
 
-C. elegans is a staple in neuroscience for its simplicity (302 neurons & 5000 synaptic connections), but let's not overstate its utility for human brain modeling. Its neurons lack the complex electrophysiological properties and synaptic plasticity that are hallmarks of human neurons. The neurotransmitter systems in C. elegans are basic, lacking the intricate signaling pathways found in humans. While uploading its neural data is insightful, it underscores the limitations of using C. elegans to model human brain functions.
 
-<h4 style="margin-bottom: 0"><u>4.1 Fruit Fly</u></h4> 
-In the past decade, thanks to leaps in EM data collection and image processing, we've churned out synapse-scale connectome datasets for the fruit fly, Drosophila melanogaster, both in its adult and larval stages.
+<h4 style="margin-bottom: 0"><u>3.2 Fruit Fly</u></h4> 
+The next uploaded brain followed to be that of a fruit fly Drosophila. This was snapped using a higher-throughput ssTEM pipeline and segmented by a separate lab using an automated CNNs pipeline which allowed the field to jump from a mere 302 neurons and 5000 synaptic connections to ~100,000 neurons and 20 million synaptic connections (a 330 and 4,000-fold increase respectively). Unlike C. elegans, Drosophila exhibits complex cognitive behaviors including associative learning, sleep regulation, and decision-making that involve neural circuits with organizational principles shared with mammals. These mechanics make the fly connectome particularly interesting to simulate since they provide testable models for understanding how neural circuits integrate behaviors similar to human brain dynamics. It goes without saying that evolutionarily we are still vastly different, and thus ought to move closer to the human objective.
 
-The crown jewel of these datasets is the FlyWire segmentation of the female adult fly brain (FAFB) volume, capturing the entire adult brain. This was snapped at Janelia Research Campus using a cutting-edge high-throughput ssTEM pipeline. Over at Princeton, Dr. Sebastian Seung's lab deployed CNNs to auto-segment neurons and pinpoint synaptic sites. This automated groundwork set the stage for a colossal community endeavor, where fly neuroscientists dove in to refine neuronal morphologies, fix errors, and enrich data with cell types and other attributes. This was the FlyWire project, spearheaded by Dr. Seung and Dr. Mala Murthy, alongside a vast network of scientists and labs known as the FlyWire Consortium. The result? A full brain connectome, now open to the public and ready for exploration via the FlyWire Codex. 
+<h4 style="margin-bottom: 0"><u>3.3 Mouse</u></h4> 
+Moving up the evolutionary tree, researchers have recently mapped a cubic millimeter of mouse visual cortex—a landmark achievement known as the MICrONS (Machine Intelligence from Cortical Networks) project. This cubic millimeter contains approximately 120,000 neurons and 650 million synapses, representing another scale jump from the fruit fly. Critically, this volume is large enough to capture complete local circuits and long-range projections that implement visual processing computations analogous to those in humans. Another fancy part is that the mouse brain architecture shares fundamental cortical organization, cell types, and circuit motifs with human brains. 
 
-There are other fruit fly datasets, such as the Hemibrain dataset and the ventral nerve cord datasets (FANC and MANC), which provide detailed insights into the fly's central brain and nerve cord, respectively. These datasets, available on platforms like neuPrint if you decide to find them.
+More interestingly, building on this success, the Intelligence Advanced Research Projects Activity (IARPA) has now launched an even more ambitious project called MICrONS Petascale, aiming to map the complete mouse brain of approximately 70 million neurons with hundreds of billions of connections. That will require processing exabytes of imaging data and is expected to be a human genome level insights bombshell. 
 
-<h4 style="margin-bottom: 0"><u>4.3 Mouse</u></h4> 
-An online database known as MouseLight displays over 1000 neurons mapped in the mouse brain based on a collective database of sub-micron resolution images of these brains. This platform illustrates the thalamus, hippocampus, cerebral cortex, and hypothalamus based on single-cell projections. Imaging technology to produce this mouse brain does not allow an in-depth look at synapses but can show axonal arborizations which contain many synapses. A limiting factor to studying mouse connectomes, much like with humans, is the complexity of labeling all the cell types of the mouse brain; This is a process that would require the reconstruction of 100,000+ neurons and the imaging technology is advanced enough to do so.
+<h4 style="margin-bottom: 0"><u>3.4 Human</u></h4> 
+As for uploading us – humans, there has been just as much work put into digitizing our brain.
 
-Mice models in the lab have provided insight into genetic brain disorders, one study manipulated mice with a deletion of 22q11.2 (chromosome 22, a likely known genetic risk factor that leads to schizophrenia). The findings of this study showed that this impaired neural activity in mice's working memory is similar to what it does in humans.
+At the low-res connectomics: The Human Connectome Project (HCP), launched in 2009, mapped structural connectivity using diffusion MRI tractography to trace white matter pathways and functional connectivity using resting-state fMRI to identify correlated activity patterns. Though it operates at millimeter resolution and thus doesnt allow to simulate the brain accurately, it mapped out the whole-brain coverage across all cortical and subcortical regions in about 1,200+ living humans which provides context about brain's architecture that will be usefull coming forth in nanoscale brain mapping.
 
-<h4 style="margin-bottom: 0"><u>4.3 Human Connectome Project</u></h4> 
-The Human Connectome Project (HCP), launched in 2009 by the National Institutes of Health, aimed to construct a comprehensive map of neural connections in the human brain. The project utilized advanced neuroimaging techniques, primarily diffusion MRI and resting-state functional MRI, to analyze brain connectivity patterns across a large cohort of healthy adults. Through the development of specialized acquisition protocols and analysis pipelines, the HCP has generated standardized connectivity data at approximately 2mm resolution, enabling the identification of major white matter pathways and functional networks. The project has also established protocols for data sharing, leading to the creation of a substantial open-access database of human brain connectivity.
+As for high-res mapping: The first human nanoscale brain connectome milestone came in 2022-2023 with the mapping of a cubic millimeter of temporal cortex tissue from a neurosurgical sample. This "H01" dataset, produced by Harvard's Lichtman lab in collaboration with Google Research mapped approximately 50,000 neurons and 130 million synapses (1/1,000,000th of our brain size). Small volume? Yep. But thats how the start of acceleration towards full human brain uploading looks like.
 
-While the HCP represents a significant advancement in understanding human brain organization, it operates at a macroscopic scale, mapping connections between brain regions rather than individual neurons. Unlike the complete neural reconstructions achieved in C. elegans or Drosophila, the HCP cannot resolve individual synaptic connections or local circuit architecture. This limitation stems from the fundamental resolution constraints of MRI-based techniques.
-
-Electron microscopy reconstruction of human brain tissue offers the potential for synapse-level mapping of neural circuits. Modern EM techniques can achieve resolutions below 5nm, sufficient to identify individual synaptic vesicles and postsynaptic densities. However, scaling these approaches to human brain volumes presents substantial technical challenges. At current imaging speeds and computational capabilities, it would take an estimated several thousand years to fully map a human brain at the synaptic level. Mapping just 1 cubic millimeter of brain tissue currently takes months of imaging time and generates petabytes of data requiring extensive processing. 
 
 <hr style="border-top: 1px solid black;">
 
-<h3 align="center">5. Speeding up Connectomics</h3>
 
-<h4 style="margin-bottom: 0"><u>5.1 Expansion Microscopy</u></h4> 
+<h3 align="center">4. Path Forward </h3>
+To witness human emulations within the next decade three key disciplines need "unhobbling":
 
-Mapping the human brain will require faster imaging techniques. Recent advances in expansion microscopy (ExM) offer promising solutions to accelerate human connectome mapping and address this need for faster techniques. ExM physically enlarges biological specimens while maintaining their structural integrity, allowing to aboundun slow and expensive electron microscopes in favour of conventional light microscopes to achieve effective nanoscale resolution, The technique works by embedding tissue in a swellable polymer that expands uniformly, increasing the physical size of the specimen while preserving relative spatial relationships between cellular structures. This physical magnification enables imaging of synaptic proteins and other nanoscale features using standard light microscopes, which can image larger volumes much faster than traditional EM approaches.
+<div class="table-container" style="overflow-x: auto; width: 85%; margin: auto;">
+  <table cellspacing="0" cellpadding="6" border="1.5" style="border: 1.5px solid #5ED464; border-collapse: collapse; width: 100%; background-color: black; font-size: 0.65em;">
+    <caption style="caption-side: top; padding: 10px; color: #5ED464;"><b>Table 2.</b> Innovations Needed for Full Human Brain Uploading.</caption>
+    <thead>
+      <tr style="background-color: rgba(94, 212, 100, 0.1);">
+        <th style="border: 1.5px solid #5ED464; background-color: rgba(94, 212, 100, 0.1); color: #5ED464; text-align: center; font-weight: bold;">Domain</th>
+        <th style="border: 1.5px solid #5ED464; background-color: rgba(94, 212, 100, 0.1); color: #5ED464; text-align: center;">Current Limitations</th>
+        <th style="border: 1.5px solid #5ED464; background-color: rgba(94, 212, 100, 0.1); color: #5ED464; text-align: center;">Innovations Needed</th>
+        <th style="border: 1.5px solid #5ED464; background-color: rgba(94, 212, 100, 0.1); color: #5ED464; text-align: center;">Urgency /10</th>
+        <th style="border: 1.5px solid #5ED464; background-color: rgba(94, 212, 100, 0.1); color: #5ED464; text-align: center;">Feasibility /10</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- SOFTWARE SECTION -->
+      <tr style="background-color: rgba(94, 212, 100, 0.1);">
+        <td style="border: 1.5px solid #5ED464; background-color: rgba(94, 212, 100, 0.1); color: #5ED464; text-align: left; vertical-align: middle; font-weight: bold;" rowspan="4">Software</td>
+        <td style="border: 1.5px solid #5ED464; background-color: rgba(94, 212, 100, 0.1); color: #5ED464; text-align: left; border-bottom: 1px dashed #5ED464;">
+          • Compression algorithms	
+        </td>
+        <td style="border: 1.5px solid #5ED464; background-color: rgba(94, 212, 100, 0.1); color: #5ED464; text-align: left; border-bottom: 1px dashed #5ED464;">
+          • Specialised compression algorithms for neuronal data. <br> [Sparse matrix compression achieving 100x-150x compression of the original dataset]
+        </td>
+        <td style="border: 1.5px solid #5ED464; background-color: rgba(94, 212, 100, 0.1); color: #5ED464; text-align: center; border-bottom: 1px dashed #5ED464;">
+          7
+        </td>
+        <td style="border: 1.5px solid #5ED464; background-color: rgba(94, 212, 100, 0.1); color: #5ED464; text-align: center; border-bottom: 1px dashed #5ED464;">
+          10
+        </td>
+      </tr>
+      <tr style="background-color: rgba(94, 212, 100, 0.1);">
+        <td style="border: 1.5px solid #5ED464; background-color: rgba(94, 212, 100, 0.1); color: #5ED464; text-align: left; border-bottom: 1px dashed #5ED464;">
+          • Simulation environments
+        </td>
+        <td style="border: 1.5px solid #5ED464; background-color: rgba(94, 212, 100, 0.1); color: #5ED464; text-align: left; border-bottom: 1px dashed #5ED464;">
+          • Holistic simulation engine. <br>[Integration of sensory and motor systems with simulated brains, modelling neuro-plasticity, etc.,]
+        </td>
+        <td style="border: 1.5px solid #5ED464; background-color: rgba(94, 212, 100, 0.1); color: #5ED464; text-align: center; border-bottom: 1px dashed #5ED464;">
+          5
+        </td>
+        <td style="border: 1.5px solid #5ED464; background-color: rgba(94, 212, 100, 0.1); color: #5ED464; text-align: center; border-bottom: 1px dashed #5ED464;">
+          8
+        </td>
+      </tr>
+      <tr style="background-color: rgba(94, 212, 100, 0.1);">
+        <td style="border: 1.5px solid #5ED464; background-color: rgba(94, 212, 100, 0.1); color: #5ED464; text-align: left; border-bottom: 1px dashed #5ED464;">
+          • Benchmarks
+        </td>
+        <td style="border: 1.5px solid #5ED464; background-color: rgba(94, 212, 100, 0.1); color: #5ED464; text-align: left; border-bottom: 1px dashed #5ED464;">
+          • Standardized metrics to validate simulations.<br>
+          [Benchmarks to validate simulation accuracy and "human-likeness"]
+        </td>
+        <td style="border: 1.5px solid #5ED464; background-color: rgba(94, 212, 100, 0.1); color: #5ED464; text-align: center; border-bottom: 1px dashed #5ED464;">
+          8
+        </td>
+        <td style="border: 1.5px solid #5ED464; background-color: rgba(94, 212, 100, 0.1); color: #5ED464; text-align: center; border-bottom: 1px dashed #5ED464;">
+          10
+        </td>
+      </tr>
+      <tr style="background-color: rgba(94, 212, 100, 0.1);">
+        <td style="border: 1.5px solid #5ED464; background-color: rgba(94, 212, 100, 0.1); color: #5ED464; text-align: left;">
+          • Neuron segmentation and proofreading
+        </td>
+        <td style="border: 1.5px solid #5ED464; background-color: rgba(94, 212, 100, 0.1); color: #5ED464; text-align: left;">
+          • AI reconstruction models with better attention mechanics.<br>
+          [Current neuron reconstruction accounts for 95% of connectomics costs due to human leabelling need. Automated proofreading will solve this]
+        </td>
+        <td style="border: 1.5px solid #5ED464; background-color: rgba(94, 212, 100, 0.1); color: #5ED464; text-align: center;">
+          9
+        </td>
+        <td style="border: 1.5px solid #5ED464; background-color: rgba(94, 212, 100, 0.1); color: #5ED464; text-align: center;">
+          10
+        </td>
+      </tr>
+      
+      <!-- HARDWARE SECTION -->
+      <tr style="background-color: rgba(94, 212, 100, 0.1);">
+        <td style="border: 1.5px solid #5ED464; background-color: rgba(94, 212, 100, 0.1); color: #5ED464; text-align: left; vertical-align: middle; font-weight: bold;" rowspan="5">Hardware</td>
+        <td style="border: 1.5px solid #5ED464; background-color: rgba(94, 212, 100, 0.1); color: #5ED464; text-align: left; border-bottom: 1px dashed #5ED464;">
+          • Electron microscope cost and speed
+        </td>
+        <td style="border: 1.5px solid #5ED464; background-color: rgba(94, 212, 100, 0.1); color: #5ED464; text-align: left; border-bottom: 1px dashed #5ED464;">
+          • Cheaper and faster EMs<br> [2x cost reduction (\$2M ➝ \$1M) and 10x-20x imaging speed increase (~50μm³/s ➝ 1000μm³/s) would make EM imaging feasible]
+        </td>
+        <td style="border: 1.5px solid #5ED464; background-color: rgba(94, 212, 100, 0.1); color: #5ED464; text-align: center; border-bottom: 1px dashed #5ED464;">
+          10
+        </td>
+        <td style="border: 1.5px solid #5ED464; background-color: rgba(94, 212, 100, 0.1); color: #5ED464; text-align: center; border-bottom: 1px dashed #5ED464;">
+          7
+        </td>
+      </tr>
+      <tr style="background-color: rgba(94, 212, 100, 0.1);">
+        <td style="border: 1.5px solid #5ED464; background-color: rgba(94, 212, 100, 0.1); color: #5ED464; text-align: left; border-bottom: 1px dashed #5ED464;">
+          • Data storage cost
+        </td>
+        <td style="border: 1.5px solid #5ED464; background-color: rgba(94, 212, 100, 0.1); color: #5ED464; text-align: left; border-bottom: 1px dashed #5ED464;">
+          • Exascale data centres. <br>[10x reduction in data storage cost would be helpful (from \$200M ➝ \$20M) for a 100x compressed human connectome. Generally there is a 10x-per-decade cost reduction in data storage by default, but can we speed it up?]
+        </td>
+        <td style="border: 1.5px solid #5ED464; background-color: rgba(94, 212, 100, 0.1); color: #5ED464; text-align: center; border-bottom: 1px dashed #5ED464;">
+          10
+        </td>
+        <td style="border: 1.5px solid #5ED464; background-color: rgba(94, 212, 100, 0.1); color: #5ED464; text-align: center; border-bottom: 1px dashed #5ED464;">
+          5
+        </td>
+      </tr>
+      <tr style="background-color: rgba(94, 212, 100, 0.1);">
+        <td style="border: 1.5px solid #5ED464; background-color: rgba(94, 212, 100, 0.1); color: #5ED464; text-align: left; border-bottom: 1px dashed #5ED464;">
+          • Compute cost
+        </td>
+        <td style="border: 1.5px solid #5ED464; background-color: rgba(94, 212, 100, 0.1); color: #5ED464; text-align: left; border-bottom: 1px dashed #5ED464;">
+          • Brain-like neuromorphic/biohybrid computing or cheaper GPU clusters.<br> [Cheaper mass compute will be neccessary. 1:1 biophysical simulations will require up to ~5.5×10²⁰ FLOP/s. Mores law will reduce prices by default, but can we design more brain-like hardware to speed it up?]
+        </td>
+        <td style="border: 1.5px solid #5ED464; background-color: rgba(94, 212, 100, 0.1); color: #5ED464; text-align: center; border-bottom: 1px dashed #5ED464;">
+          7
+        </td>
+        <td style="border: 1.5px solid #5ED464; background-color: rgba(94, 212, 100, 0.1); color: #5ED464; text-align: center; border-bottom: 1px dashed #5ED464;">
+          5
+        </td>
+      </tr>
+      <tr style="background-color: rgba(94, 212, 100, 0.1);">
+        <td style="border: 1.5px solid #5ED464; background-color: rgba(94, 212, 100, 0.1); color: #5ED464; text-align: left; border-bottom: 1px dashed #5ED464;">
+          • Manual wetlab work
+        </td>
+        <td style="border: 1.5px solid #5ED464; background-color: rgba(94, 212, 100, 0.1); color: #5ED464; text-align: left; border-bottom: 1px dashed #5ED464;">
+          • Automated robotics wetlab <br>[Cutting, imaging and staning apparature which will allow to increase the complexity of wetlab protocols whilst removing human error]
+        </td>
+        <td style="border: 1.5px solid #5ED464; background-color: rgba(94, 212, 100, 0.1); color: #5ED464; text-align: center; border-bottom: 1px dashed #5ED464;">
+          4
+        </td>
+        <td style="border: 1.5px solid #5ED464; background-color: rgba(94, 212, 100, 0.1); color: #5ED464; text-align: center; border-bottom: 1px dashed #5ED464;">
+          7
+        </td>
+      </tr>
+      <tr style="background-color: rgba(94, 212, 100, 0.1);">
+        <td style="border: 1.5px solid #5ED464; background-color: rgba(94, 212, 100, 0.1); color: #5ED464; text-align: left;">
+          • Destructive sample imaging
+        </td>
+        <td style="border: 1.5px solid #5ED464; background-color: rgba(94, 212, 100, 0.1); color: #5ED464; text-align: left;">
+          • Non-destructive nanoscale imaging method<br>
+          [Imaging akin to nanoscale muon-tomography which can non-invasively scan the brain down to a synapse]
+        </td>
+        <td style="border: 1.5px solid #5ED464; background-color: rgba(94, 212, 100, 0.1); color: #5ED464; text-align: center;">
+          10
+        </td>
+        <td style="border: 1.5px solid #5ED464; background-color: rgba(94, 212, 100, 0.1); color: #5ED464; text-align: center;">
+          3
+        </td>
+      </tr>
+      
+      <!-- WETWARE SECTION -->
+      <tr style="background-color: rgba(94, 212, 100, 0.1);">
+        <td style="border: 1.5px solid #5ED464; background-color: rgba(94, 212, 100, 0.1); color: #5ED464; text-align: left; vertical-align: middle; font-weight: bold;" rowspan="4">Wetware</td>
+        <td style="border: 1.5px solid #5ED464; background-color: rgba(94, 212, 100, 0.1); color: #5ED464; text-align: left; border-bottom: 1px dashed #5ED464;">
+          • Expansion microscopy magnification
+        </td>
+        <td style="border: 1.5px solid #5ED464; background-color: rgba(94, 212, 100, 0.1); color: #5ED464; text-align: left; border-bottom: 1px dashed #5ED464;">
+          • Faster expansion microscopy protocols<br>
+          [Current ExM protocols achieves 10-40x expansion (25x = ~20nm) which is already enough, yet getting a consistent isotropic 40x zoom would equate it to EM resolution]
+        </td>
+        <td style="border: 1.5px solid #5ED464; background-color: rgba(94, 212, 100, 0.1); color: #5ED464; text-align: center; border-bottom: 1px dashed #5ED464;">
+          6
+        </td>
+        <td style="border: 1.5px solid #5ED464; background-color: rgba(94, 212, 100, 0.1); color: #5ED464; text-align: center; border-bottom: 1px dashed #5ED464;">
+          8
+        </td>
+      </tr>
+      <tr style="background-color: rgba(94, 212, 100, 0.1);">
+        <td style="border: 1.5px solid #5ED464; background-color: rgba(94, 212, 100, 0.1); color: #5ED464; text-align: left; border-bottom: 1px dashed #5ED464;">
+          • Lack of electron microscopy staining protocols
+        </td>
+        <td style="border: 1.5px solid #5ED464; background-color: rgba(94, 212, 100, 0.1); color: #5ED464; text-align: left; border-bottom: 1px dashed #5ED464;">
+          • Staining protocols for EM imaging.<br>
+          Incomplete molecular characterization during electron microscopy imaging means we miss functional details of the upload. This is an issue with electron and synchrotron imaging, but not expansion microscopy. 
+        </td>
+        <td style="border: 1.5px solid #5ED464; background-color: rgba(94, 212, 100, 0.1); color: #5ED464; text-align: center; border-bottom: 1px dashed #5ED464;">
+          7
+        </td>
+        <td style="border: 1.5px solid #5ED464; background-color: rgba(94, 212, 100, 0.1); color: #5ED464; text-align: center; border-bottom: 1px dashed #5ED464;">
+          6
+        </td>
+      </tr>
+      <tr style="background-color: rgba(94, 212, 100, 0.1);">
+        <td style="border: 1.5px solid #5ED464; background-color: rgba(94, 212, 100, 0.1); color: #5ED464; text-align: left; border-bottom: 1px dashed #5ED464;">
+          • Scalability of protein profiling
+        </td>
+        <td style="border: 1.5px solid #5ED464; background-color: rgba(94, 212, 100, 0.1); color: #5ED464; text-align: left; border-bottom: 1px dashed #5ED464;">
+          • More scalable protein barcoding protocols. [Current protocols require multiple rounds of staining/washes and need testing on larger organisms]
+        </td>
+        <td style="border: 1.5px solid #5ED464; background-color: rgba(94, 212, 100, 0.1); color: #5ED464; text-align: center; border-bottom: 1px dashed #5ED464;">
+          10
+        </td>
+        <td style="border: 1.5px solid #5ED464; background-color: rgba(94, 212, 100, 0.1); color: #5ED464; text-align: center; border-bottom: 1px dashed #5ED464;">
+          8
+        </td>
+      </tr>
+      <tr style="background-color: rgba(94, 212, 100, 0.1);">
+        <td style="border: 1.5px solid #5ED464; background-color: rgba(94, 212, 100, 0.1); color: #5ED464; text-align: left;">
+          • Scalability of functional nanoscale imaging
+        </td>
+        <td style="border: 1.5px solid #5ED464; background-color: rgba(94, 212, 100, 0.1); color: #5ED464; text-align: left;">
+          • New nanometer functional imaging methods that can scale to whole brain neuron populations <br>
+          [Current methods like voltage imaging, calcium imaging, etc., are either indirect, damaging or unscalable to whole brains. Thus methods like fUS with ~15 micrometers theoretical limit that scale to larger neuron populations could be the remedy]
+        </td>
+        <td style="border: 1.5px solid #5ED464; background-color: rgba(94, 212, 100, 0.1); color: #5ED464; text-align: center;">
+          10
+        </td>
+        <td style="border: 1.5px solid #5ED464; background-color: rgba(94, 212, 100, 0.1); color: #5ED464; text-align: center;">
+          6
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div style="width: 85%; margin: auto; text-align: justify;">
+  <p><b>Table 2:</b> The key limitations and corresponding innovations required across software, hardware, and wetware domains to advance connectomics toward complete brain uploading. These are some of the most common limitations and innovations raised by dozens of connectomics researchers I interviewed. The numerics of the table are largely based on fermi estimates of my own as well as of my colleagues from MIT, and should be viewed as educated guesess.</p>
+</div>
+
+Considering that software, hardware and wetwear sectors are accelerating nonlinearly, it is probable that each of those innovations will be reached this very decade. 
+The first uploaded intelligence effort will likely cost \$1-\$10 billion — prohibitive for most — but like the human genome project which plummeted from \$3 billion to \$400, it should come as no surprise that brain uploads too will likely drop in price by orders of magnitude within a few years after the first upload. I hope you are excited. 
 
 
-<p align="center"><img src="/images/exm.jpg" alt="Alt text" style="max-width: 80%; height: auto; border-radius: 10px; mix-blend-mode: multiply; filter: brightness(1.2) contrast(1.1);"></p>
-<div style="width: 80%; margin: auto; text-align: center;">
-  <p><b>Figure 1:</b>Expansion Microsope Proceedure.</p>
-</div><br>
-
-
-Several labs have demonstrated successful expansion of human brain tissue samples by factors of 4-20x, achieving effective resolutions down to ~25nm. Thousands of studies have used EM at different scales, and it has been applied even to expand the whele brain in a single proceedure. At these scales, individual synapses become clearly visible under conventional microscopes. The faster imaging speeds of light microscopy, combined with the ability to process larger tissue volumes simultaneously, reduce the time required for human connectome mapping by orders of magnitude.
-
-Complementary technologies are also emerging to address the speed bottleneck in connectome mapping. Multi-beam scanning electron microscopes with 61-169 parallel beams increase throughput by orders of magnitude compared to single-beam systems. Advanced tissue clearing methods like CLARITY and iDISCO+ enable rapid whole-brain imaging with light-sheet microscopy while preserving molecular information. 
-
-On the computational front, automated segmentation using transformers has improved reconstruction accuracy while reducing manual proofreading requirements. Platforms like VAST and Neuroglancer leverage cloud computing for distributed annotation of massive datasets. High-throughput automated synapse detection algorithms using deep learning achieve human-level accuracy while processing volumes thousands of times faster than manual annotation.
-
-These complementary approaches - from sample preparation to imaging to computational analysis - are creating a technological ecosystem that makes comprehensive connectome mapping increasingly feasible at larger scales even if the full brain mapping is currently ellusive. 
-
-
-
-
-
-<h3 align="center">6. The Future</h3>
-There is an invisible path to the first human connectome. Cost, fidelity and speed are still to give way to this future, but once they do, massive gpu orchestras will buzz the melody of first human AIs.
+<h3 align="center">5. Conclusion </h3>
+There is an invisible path to the first human uploads. Cost, fidelity and speed of connectomics are still to give way to this future, but once they do, massive GPU orchestras will buzz the melody of the first human AIs.
 
