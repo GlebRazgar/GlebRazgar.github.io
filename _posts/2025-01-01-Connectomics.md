@@ -12,6 +12,8 @@ Death is bad engineering.
 
 Our brain - the jewel of consciousness - is a dynamic function. One that is dependent on its temporal dynamics, neuronal activations, and synaptic weights. As you could imagine, being able to model such a function would be **UN-PRECEDENTED**. To model the brain is to simulate it. And simulating the brain gives us the ability to emulate **mental disorders**, **brain disease**, **drug responses**, and possibly one day **<u>transgress death</u>**.
 
+In light of such a possible future, this piece tries to provide a holistic overview of the current uploading research, its methods, milestones, and future directions.
+
 <hr style="border-top: 1px solid black;">
 
 <h3 align="center">2. Methods</h3>
@@ -43,11 +45,6 @@ Alternatively to using very expensive and slow electron microscopes to elucidate
   <p><b>Figure 1:</b>Expansion Microsope Proceedure.</p>
 </div><br>
 
-<p align="center"><img src="/images/ssm.png" alt="Alt text" style="max-width: 80%; height: auto; border-radius: 0px; mix-blend-mode: multiply;"></p>
-<div style="width: 80%; margin: auto; text-align: justify;">
-  <p><b>Figure 2:</b> Illustration showing how the fruit fly connectome, like the one above, was obtained. This involves slicing the fly's brain into ultra-thin sections and imaging each section with an electron microscope, after which a semi-supervised cellular classifier creates a detailed 3D reconstruction of neural structures.</p>
-</div><br>
-
 Unarguably one of the most futuristic connectomics methods is to use a particle collider called Synchrotrons to image the tissue via X-ray nanotomography. Synchrotron's appeal lies in its ability to bypass the need for heavy metal staining and physical sectioning unlike in electron microscope. The way it works is by accelerating electrons to near light speed, and then bending them to obtain incredibly potent X-ray beams (up to 10¹² photons/second) that are filtered to desired energy levels between 8-12 keV. Unlike conventional X-ray imaging that detects how tissues block X-rays, synchrotron-based connectomics measures how X-rays bend or phase shift when passing through brain sample due to different tissue refractive indices. This reveals unmyelinated axons and cell boundaries without staining. In theory, a synchrotron can image a full human brain in less than a year at ~40nm resolution, which is faster than using 350 electron microscopes in parallel!
 
 Numerous other brain imaging techniques exist and are in the making, but that's a conversation for another rabbithole.
@@ -68,127 +65,127 @@ Macroscale connectomes are typically mapped using diffusion-weighted magnetic re
 Once you have the brain imaging data, the next step is to turn it into a functioning model. Though there isn't a definitive solution to converting data into simulations, The most standard procedure is as follows:
 
 <div class="table-container" style="overflow-x: auto; width: 80%; margin: auto;">
-  <table cellspacing="0" cellpadding="6" border="1.5" style="border: 1.5px solid black; border-collapse: collapse; width: 100%; background-color: black; font-size: 0.65em;">
-    <caption style="caption-side: top; padding: 10px; color: #5ED464;"><b>Table 2.</b> Complete Brain Simulation Process.</caption>
+  <table cellspacing="0" cellpadding="6" border="1.5" style="border: 1.5px solid black; border-collapse: collapse; width: 100%; font-size: 0.65em;">
+    <caption style="caption-side: top; padding: 10px; color: black;"><b>Table 2.</b> Complete Brain Simulation Process.</caption>
     <thead>
       <tr>
-        <th style="border: 1.5px solid black; color: #5ED464; text-align: center; font-weight: bold; width: 30%;">Step</th>
-        <th style="border: 1.5px solid black; color: #5ED464; text-align: center; font-weight: bold; width: 70%;">Description</th>
+        <th style="border: 1.5px solid black; color: black; text-align: center; font-weight: bold; width: 30%;">Step</th>
+        <th style="border: 1.5px solid black; color: black; text-align: center; font-weight: bold; width: 70%;">Description</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td style="border: 1.5px solid black; color: #5ED464; text-align: left; vertical-align: middle; font-weight: bold;" rowspan="2">1. Pre-Processing</td>
-        <td style="border: 1.5px solid black; color: #5ED464; text-align: left; border-bottom: 1px dashed black;">
+        <td style="border: 1.5px solid black; color: black; text-align: left; vertical-align: middle; font-weight: bold;" rowspan="2">1. Pre-Processing</td>
+        <td style="border: 1.5px solid black; color: black; text-align: left; border-bottom: 1px dashed black;">
           • Aligning all the imaged slices correctly into a 3D volume
         </td>
       </tr>
       <tr>
-        <td style="border: 1.5px solid black; color: #5ED464; text-align: left;">
+        <td style="border: 1.5px solid black; color: black; text-align: left;">
           • Removing of artifacts
         </td>
       </tr>
       
       <tr>
-        <td style="border: 1.5px solid black; color: #5ED464; text-align: left; vertical-align: middle; font-weight: bold;" rowspan="3">2. Segmentation & Proofreading</td>
-        <td style="border: 1.5px solid black; color: #5ED464; text-align: left; border-bottom: 1px dashed black;">
+        <td style="border: 1.5px solid black; color: black; text-align: left; vertical-align: middle; font-weight: bold;" rowspan="3">2. Segmentation & Proofreading</td>
+        <td style="border: 1.5px solid black; color: black; text-align: left; border-bottom: 1px dashed black;">
           • Segmenting tissue using ML models (U-nets, flood filling networks, local shape descriptors) to outline cell bodies, trace axons, dendrites, and synaptic connections
         </td>
       </tr>
       <tr>
-        <td style="border: 1.5px solid black; color: #5ED464; text-align: left; border-bottom: 1px dashed black;">
+        <td style="border: 1.5px solid black; color: black; text-align: left; border-bottom: 1px dashed black;">
           • Proofreading and correcting errors of automated segmentation (incorrect connections, missed branches, and false mergers)
         </td>
       </tr>
       <tr>
-        <td style="border: 1.5px solid black; color: #5ED464; text-align: left;">
+        <td style="border: 1.5px solid black; color: black; text-align: left;">
           • In barcoded specimens: using molecular barcodes to verify neuron identity and connections
         </td>
       </tr>
       
       <tr>
-        <td style="border: 1.5px solid black; color: #5ED464; text-align: left; vertical-align: middle; font-weight: bold;">3. Classification</td>
-        <td style="border: 1.5px solid black; color: #5ED464; text-align: left;">
+        <td style="border: 1.5px solid black; color: black; text-align: left; vertical-align: middle; font-weight: bold;">3. Classification</td>
+        <td style="border: 1.5px solid black; color: black; text-align: left;">
           • Classification and labelling of cell types (glia, astrocytes, etc.)
         </td>
       </tr>
       
       <tr>
-        <td style="border: 1.5px solid black; color: #5ED464; text-align: left; vertical-align: middle; font-weight: bold;" rowspan="3">4. Connectome Graph Creation</td>
-        <td style="border: 1.5px solid black; color: #5ED464; text-align: left; border-bottom: 1px dashed black;">
+        <td style="border: 1.5px solid black; color: black; text-align: left; vertical-align: middle; font-weight: bold;" rowspan="3">4. Connectome Graph Creation</td>
+        <td style="border: 1.5px solid black; color: black; text-align: left; border-bottom: 1px dashed black;">
           • Converting the 3D reconstruction into a structured graph representation
         </td>
       </tr>
       <tr>
-        <td style="border: 1.5px solid black; color: #5ED464; text-align: left; border-bottom: 1px dashed black;">
+        <td style="border: 1.5px solid black; color: black; text-align: left; border-bottom: 1px dashed black;">
           • Defining nodes (neurons) and edges (synaptic connections)
         </td>
       </tr>
       <tr>
-        <td style="border: 1.5px solid black; color: #5ED464; text-align: left;">
+        <td style="border: 1.5px solid black; color: black; text-align: left;">
           • Adding metadata about neuron types, molecular properties and synaptic strengths
         </td>
       </tr>
       
       <tr>
-        <td style="border: 1.5px solid black; color: #5ED464; text-align: left; vertical-align: middle; font-weight: bold;" rowspan="3">5. Simulation Model Building</td>
-        <td style="border: 1.5px solid black; color: #5ED464; text-align: left; border-bottom: 1px dashed black;">
+        <td style="border: 1.5px solid black; color: black; text-align: left; vertical-align: middle; font-weight: bold;" rowspan="3">5. Simulation Model Building</td>
+        <td style="border: 1.5px solid black; color: black; text-align: left; border-bottom: 1px dashed black;">
           • Choosing neuron models and parameters (LIF, Hodgkin-Huxley, etc.)
         </td>
       </tr>
       <tr>
-        <td style="border: 1.5px solid black; color: #5ED464; text-align: left; border-bottom: 1px dashed black;">
+        <td style="border: 1.5px solid black; color: black; text-align: left; border-bottom: 1px dashed black;">
           • Setting neurotransmitter types and receptor responses
         </td>
       </tr>
       <tr>
-        <td style="border: 1.5px solid black; color: #5ED464; text-align: left;">
+        <td style="border: 1.5px solid black; color: black; text-align: left;">
           • Implementing neuroplasticity mechanisms based on available data (short & long-term plasticity)
         </td>
       </tr>
       
       <tr>
-        <td style="border: 1.5px solid black; color: #5ED464; text-align: left; vertical-align: middle; font-weight: bold;" rowspan="3">6. Environment/Body Integration</td>
-        <td style="border: 1.5px solid black; color: #5ED464; text-align: left; border-bottom: 1px dashed black;">
+        <td style="border: 1.5px solid black; color: black; text-align: left; vertical-align: middle; font-weight: bold;" rowspan="3">6. Environment/Body Integration</td>
+        <td style="border: 1.5px solid black; color: black; text-align: left; border-bottom: 1px dashed black;">
           • Connecting sensory inputs to appropriate neurons
         </td>
       </tr>
       <tr>
-        <td style="border: 1.5px solid black; color: #5ED464; text-align: left; border-bottom: 1px dashed black;">
+        <td style="border: 1.5px solid black; color: black; text-align: left; border-bottom: 1px dashed black;">
           • Mapping motor outputs to effectors
         </td>
       </tr>
       <tr>
-        <td style="border: 1.5px solid black; color: #5ED464; text-align: left;">
+        <td style="border: 1.5px solid black; color: black; text-align: left;">
           • Creating physical model of environment for interaction
         </td>
       </tr>
       
       <tr>
-        <td style="border: 1.5px solid black; color: #5ED464; text-align: left; vertical-align: middle; font-weight: bold;" rowspan="3">7. Execution</td>
-        <td style="border: 1.5px solid black; color: #5ED464; text-align: left; border-bottom: 1px dashed black;">
+        <td style="border: 1.5px solid black; color: black; text-align: left; vertical-align: middle; font-weight: bold;" rowspan="3">7. Execution</td>
+        <td style="border: 1.5px solid black; color: black; text-align: left; border-bottom: 1px dashed black;">
           • Setting up infrastructure (partitioning the network across GPUs, setting up memory management, etc.)
         </td>
       </tr>
       <tr>
-        <td style="border: 1.5px solid black; color: #5ED464; text-align: left; border-bottom: 1px dashed black;">
+        <td style="border: 1.5px solid black; color: black; text-align: left; border-bottom: 1px dashed black;">
           • Initializating (membrane potential, ion concentration, etc.)
         </td>
       </tr>
       <tr>
-        <td style="border: 1.5px solid black; color: #5ED464; text-align: left;">
+        <td style="border: 1.5px solid black; color: black; text-align: left;">
           • Validation testing (comparing actual brain's neural activity patterns to the model)
         </td>
       </tr>
       
       <tr>
-        <td style="border: 1.5px solid black; color: #5ED464; text-align: left; vertical-align: middle; font-weight: bold;" rowspan="2">8. Parameter Calibration</td>
-        <td style="border: 1.5px solid black; color: #5ED464; text-align: left; border-bottom: 1px dashed black;">
+        <td style="border: 1.5px solid black; color: black; text-align: left; vertical-align: middle; font-weight: bold;" rowspan="2">8. Parameter Calibration</td>
+        <td style="border: 1.5px solid black; color: black; text-align: left; border-bottom: 1px dashed black;">
           • Tuning nueorn parameters based on functional data (calcium/voltage/etc., imaging)
         </td>
       </tr>
       <tr>
-        <td style="border: 1.5px solid black; color: #5ED464; text-align: left;">
+        <td style="border: 1.5px solid black; color: black; text-align: left;">
           • Calibrating neuroplasticity rules based on available data
         </td>
       </tr>
@@ -242,211 +239,211 @@ As for high-res mapping: The first human nanoscale brain connectome milestone ca
 To witness human emulations within the next decade three key disciplines need "unhobbling":
 
 <div class="table-container" style="overflow-x: auto; width: 85%; margin: auto;">
-  <table cellspacing="0" cellpadding="6" border="1.5" style="border: 1.5px solid black; border-collapse: collapse; width: 100%; background-color: black; font-size: 0.65em;">
-    <caption style="caption-side: top; padding: 10px; color: #5ED464;"><b>Table 2.</b> Innovations Needed for Full Human Brain Uploading.</caption>
+  <table cellspacing="0" cellpadding="6" border="1.5" style="border: 1.5px solid black; border-collapse: collapse; width: 100%; font-size: 0.65em;">
+    <caption style="caption-side: top; padding: 10px; color: black;"><b>Table 2.</b> Innovations Needed for Full Human Brain Uploading.</caption>
     <thead>
       <tr>
-        <th style="border: 1.5px solid black; color: #5ED464; text-align: center; font-weight: bold;">Domain</th>
-        <th style="border: 1.5px solid black; color: #5ED464; text-align: center;">Current Limitations</th>
-        <th style="border: 1.5px solid black; color: #5ED464; text-align: center;">Innovations Needed</th>
-        <th style="border: 1.5px solid black; color: #5ED464; text-align: center;">Urgency /10</th>
-        <th style="border: 1.5px solid black; color: #5ED464; text-align: center;">Feasibility /10</th>
+        <th style="border: 1.5px solid black; color: black; text-align: center; font-weight: bold;">Domain</th>
+        <th style="border: 1.5px solid black; color: black; text-align: center;">Current Limitations</th>
+        <th style="border: 1.5px solid black; color: black; text-align: center;">Innovations Needed</th>
+        <th style="border: 1.5px solid black; color: black; text-align: center;">Urgency /10</th>
+        <th style="border: 1.5px solid black; color: black; text-align: center;">Feasibility /10</th>
       </tr>
     </thead>
     <tbody>
       <!-- SOFTWARE SECTION -->
       <tr>
-        <td style="border: 1.5px solid black; color: #5ED464; text-align: left; vertical-align: middle; font-weight: bold;" rowspan="4">Software</td>
-        <td style="border: 1.5px solid black; color: #5ED464; text-align: left; border-bottom: 1px dashed black;">
+        <td style="border: 1.5px solid black; color: black; text-align: left; vertical-align: middle; font-weight: bold;" rowspan="4">Software</td>
+        <td style="border: 1.5px solid black; color: black; text-align: left; border-bottom: 1px dashed black;">
           • Compression algorithms	
         </td>
-        <td style="border: 1.5px solid black; color: #5ED464; text-align: left; border-bottom: 1px dashed black;">
+        <td style="border: 1.5px solid black; color: black; text-align: left; border-bottom: 1px dashed black;">
           • Specialised compression algorithms for neuronal data. <br> [Sparse matrix compression achieving 100x-150x compression of the original dataset]
         </td>
-        <td style="border: 1.5px solid black; color: #5ED464; text-align: center; border-bottom: 1px dashed black;">
+        <td style="border: 1.5px solid black; color: black; text-align: center; border-bottom: 1px dashed black;">
           7
         </td>
-        <td style="border: 1.5px solid black; color: #5ED464; text-align: center; border-bottom: 1px dashed black;">
+        <td style="border: 1.5px solid black; color: black; text-align: center; border-bottom: 1px dashed black;">
           10
         </td>
       </tr>
       <tr>
-        <td style="border: 1.5px solid black; color: #5ED464; text-align: left; border-bottom: 1px dashed black;">
+        <td style="border: 1.5px solid black; color: black; text-align: left; border-bottom: 1px dashed black;">
           • Simulation environments
         </td>
-        <td style="border: 1.5px solid black; color: #5ED464; text-align: left; border-bottom: 1px dashed black;">
+        <td style="border: 1.5px solid black; color: black; text-align: left; border-bottom: 1px dashed black;">
           • Holistic simulation engine. <br>[Integration of sensory and motor systems with simulated brains, modelling neuro-plasticity, etc.,]
         </td>
-        <td style="border: 1.5px solid black; color: #5ED464; text-align: center; border-bottom: 1px dashed black;">
+        <td style="border: 1.5px solid black; color: black; text-align: center; border-bottom: 1px dashed black;">
           5
         </td>
-        <td style="border: 1.5px solid black; color: #5ED464; text-align: center; border-bottom: 1px dashed black;">
+        <td style="border: 1.5px solid black; color: black; text-align: center; border-bottom: 1px dashed black;">
           8
         </td>
       </tr>
       <tr>
-        <td style="border: 1.5px solid black; color: #5ED464; text-align: left; border-bottom: 1px dashed black;">
+        <td style="border: 1.5px solid black; color: black; text-align: left; border-bottom: 1px dashed black;">
           • Benchmarks
         </td>
-        <td style="border: 1.5px solid black; color: #5ED464; text-align: left; border-bottom: 1px dashed black;">
+        <td style="border: 1.5px solid black; color: black; text-align: left; border-bottom: 1px dashed black;">
           • Standardized metrics to validate simulations.<br>
           [Benchmarks to validate simulation accuracy and "human-likeness"]
         </td>
-        <td style="border: 1.5px solid black; color: #5ED464; text-align: center; border-bottom: 1px dashed black;">
+        <td style="border: 1.5px solid black; color: black; text-align: center; border-bottom: 1px dashed black;">
           8
         </td>
-        <td style="border: 1.5px solid black; color: #5ED464; text-align: center; border-bottom: 1px dashed black;">
+        <td style="border: 1.5px solid black; color: black; text-align: center; border-bottom: 1px dashed black;">
           10
         </td>
       </tr>
       <tr>
-        <td style="border: 1.5px solid black; color: #5ED464; text-align: left;">
+        <td style="border: 1.5px solid black; color: black; text-align: left;">
           • Neuron segmentation and proofreading
         </td>
-        <td style="border: 1.5px solid black; color: #5ED464; text-align: left;">
+        <td style="border: 1.5px solid black; color: black; text-align: left;">
           • AI reconstruction models with better attention mechanics.<br>
           [Current neuron reconstruction accounts for 95% of connectomics costs due to human leabelling need. Automated proofreading will solve this]
         </td>
-        <td style="border: 1.5px solid black; color: #5ED464; text-align: center;">
+        <td style="border: 1.5px solid black; color: black; text-align: center;">
           9
         </td>
-        <td style="border: 1.5px solid black; color: #5ED464; text-align: center;">
+        <td style="border: 1.5px solid black; color: black; text-align: center;">
           10
         </td>
       </tr>
       
       <!-- HARDWARE SECTION -->
       <tr>
-        <td style="border: 1.5px solid black; color: #5ED464; text-align: left; vertical-align: middle; font-weight: bold;" rowspan="5">Hardware</td>
-        <td style="border: 1.5px solid black; color: #5ED464; text-align: left; border-bottom: 1px dashed black;">
+        <td style="border: 1.5px solid black; color: black; text-align: left; vertical-align: middle; font-weight: bold;" rowspan="5">Hardware</td>
+        <td style="border: 1.5px solid black; color: black; text-align: left; border-bottom: 1px dashed black;">
           • Electron microscope cost and speed
         </td>
-        <td style="border: 1.5px solid black; color: #5ED464; text-align: left; border-bottom: 1px dashed black;">
+        <td style="border: 1.5px solid black; color: black; text-align: left; border-bottom: 1px dashed black;">
           • Cheaper and faster EMs<br> [2x cost reduction (\$2M ➝ \$1M) and 10x-20x imaging speed increase (~50μm³/s ➝ 1000μm³/s) would make EM imaging feasible]
         </td>
-        <td style="border: 1.5px solid black; color: #5ED464; text-align: center; border-bottom: 1px dashed black;">
+        <td style="border: 1.5px solid black; color: black; text-align: center; border-bottom: 1px dashed black;">
           10
         </td>
-        <td style="border: 1.5px solid black; color: #5ED464; text-align: center; border-bottom: 1px dashed black;">
+        <td style="border: 1.5px solid black; color: black; text-align: center; border-bottom: 1px dashed black;">
           7
         </td>
       </tr>
       <tr>
-        <td style="border: 1.5px solid black; color: #5ED464; text-align: left; border-bottom: 1px dashed black;">
+        <td style="border: 1.5px solid black; color: black; text-align: left; border-bottom: 1px dashed black;">
           • Data storage cost
         </td>
-        <td style="border: 1.5px solid black; color: #5ED464; text-align: left; border-bottom: 1px dashed black;">
+        <td style="border: 1.5px solid black; color: black; text-align: left; border-bottom: 1px dashed black;">
           • Exascale data centres. <br>[10x reduction in data storage cost would be helpful (from \$200M ➝ \$20M) for a 100x compressed human connectome. Generally there is a 10x-per-decade cost reduction in data storage by default, but can we speed it up?]
         </td>
-        <td style="border: 1.5px solid black; color: #5ED464; text-align: center; border-bottom: 1px dashed black;">
+        <td style="border: 1.5px solid black; color: black; text-align: center; border-bottom: 1px dashed black;">
           10
         </td>
-        <td style="border: 1.5px solid black; color: #5ED464; text-align: center; border-bottom: 1px dashed black;">
+        <td style="border: 1.5px solid black; color: black; text-align: center; border-bottom: 1px dashed black;">
           5
         </td>
       </tr>
       <tr>
-        <td style="border: 1.5px solid black; color: #5ED464; text-align: left; border-bottom: 1px dashed black;">
+        <td style="border: 1.5px solid black; color: black; text-align: left; border-bottom: 1px dashed black;">
           • Compute cost
         </td>
-        <td style="border: 1.5px solid black; color: #5ED464; text-align: left; border-bottom: 1px dashed black;">
+        <td style="border: 1.5px solid black; color: black; text-align: left; border-bottom: 1px dashed black;">
           • Brain-like neuromorphic/biohybrid computing or cheaper GPU clusters.<br> [Cheaper mass compute will be neccessary. 1:1 biophysical simulations will require up to ~5.5×10²⁰ FLOP/s. Mores law will reduce prices by default, but can we design more brain-like hardware to speed it up?]
         </td>
-        <td style="border: 1.5px solid black; color: #5ED464; text-align: center; border-bottom: 1px dashed black;">
+        <td style="border: 1.5px solid black; color: black; text-align: center; border-bottom: 1px dashed black;">
           7
         </td>
-        <td style="border: 1.5px solid black; color: #5ED464; text-align: center; border-bottom: 1px dashed black;">
+        <td style="border: 1.5px solid black; color: black; text-align: center; border-bottom: 1px dashed black;">
           5
         </td>
       </tr>
       <tr>
-        <td style="border: 1.5px solid black; color: #5ED464; text-align: left; border-bottom: 1px dashed black;">
+        <td style="border: 1.5px solid black; color: black; text-align: left; border-bottom: 1px dashed black;">
           • Manual wetlab work
         </td>
-        <td style="border: 1.5px solid black; color: #5ED464; text-align: left; border-bottom: 1px dashed black;">
+        <td style="border: 1.5px solid black; color: black; text-align: left; border-bottom: 1px dashed black;">
           • Automated robotics wetlab <br>[Cutting, imaging and staning apparature which will allow to increase the complexity of wetlab protocols whilst removing human error]
         </td>
-        <td style="border: 1.5px solid black; color: #5ED464; text-align: center; border-bottom: 1px dashed black;">
+        <td style="border: 1.5px solid black; color: black; text-align: center; border-bottom: 1px dashed black;">
           4
         </td>
-        <td style="border: 1.5px solid black; color: #5ED464; text-align: center; border-bottom: 1px dashed black;">
+        <td style="border: 1.5px solid black; color: black; text-align: center; border-bottom: 1px dashed black;">
           7
         </td>
       </tr>
       <tr>
-        <td style="border: 1.5px solid black; color: #5ED464; text-align: left;">
+        <td style="border: 1.5px solid black; color: black; text-align: left;">
           • Destructive sample imaging
         </td>
-        <td style="border: 1.5px solid black; color: #5ED464; text-align: left;">
+        <td style="border: 1.5px solid black; color: black; text-align: left;">
           • Non-destructive nanoscale imaging method<br>
           [Imaging akin to nanoscale muon-tomography which can non-invasively scan the brain down to a synapse]
         </td>
-        <td style="border: 1.5px solid black; color: #5ED464; text-align: center;">
+        <td style="border: 1.5px solid black; color: black; text-align: center;">
           10
         </td>
-        <td style="border: 1.5px solid black; color: #5ED464; text-align: center;">
+        <td style="border: 1.5px solid black; color: black; text-align: center;">
           3
         </td>
       </tr>
       
       <!-- WETWARE SECTION -->
       <tr>
-        <td style="border: 1.5px solid black; color: #5ED464; text-align: left; vertical-align: middle; font-weight: bold;" rowspan="4">Wetware</td>
-        <td style="border: 1.5px solid black; color: #5ED464; text-align: left; border-bottom: 1px dashed black;">
+        <td style="border: 1.5px solid black; color: black; text-align: left; vertical-align: middle; font-weight: bold;" rowspan="4">Wetware</td>
+        <td style="border: 1.5px solid black; color: black; text-align: left; border-bottom: 1px dashed black;">
           • Expansion microscopy magnification
         </td>
-        <td style="border: 1.5px solid black; color: #5ED464; text-align: left; border-bottom: 1px dashed black;">
+        <td style="border: 1.5px solid black; color: black; text-align: left; border-bottom: 1px dashed black;">
           • Faster expansion microscopy protocols<br>
           [Current ExM protocols achieves 10-40x expansion (25x = ~20nm) which is already enough, yet getting a consistent isotropic 40x zoom would equate it to EM resolution]
         </td>
-        <td style="border: 1.5px solid black; color: #5ED464; text-align: center; border-bottom: 1px dashed black;">
+        <td style="border: 1.5px solid black; color: black; text-align: center; border-bottom: 1px dashed black;">
           6
         </td>
-        <td style="border: 1.5px solid black; color: #5ED464; text-align: center; border-bottom: 1px dashed black;">
+        <td style="border: 1.5px solid black; color: black; text-align: center; border-bottom: 1px dashed black;">
           8
         </td>
       </tr>
       <tr>
-        <td style="border: 1.5px solid black; color: #5ED464; text-align: left; border-bottom: 1px dashed black;">
+        <td style="border: 1.5px solid black; color: black; text-align: left; border-bottom: 1px dashed black;">
           • Lack of electron microscopy staining protocols
         </td>
-        <td style="border: 1.5px solid black; color: #5ED464; text-align: left; border-bottom: 1px dashed black;">
+        <td style="border: 1.5px solid black; color: black; text-align: left; border-bottom: 1px dashed black;">
           • Staining protocols for EM imaging.<br>
           Incomplete molecular characterization during electron microscopy imaging means we miss functional details of the upload. This is an issue with electron and synchrotron imaging, but not expansion microscopy. 
         </td>
-        <td style="border: 1.5px solid black; color: #5ED464; text-align: center; border-bottom: 1px dashed black;">
+        <td style="border: 1.5px solid black; color: black; text-align: center; border-bottom: 1px dashed black;">
           7
         </td>
-        <td style="border: 1.5px solid black; color: #5ED464; text-align: center; border-bottom: 1px dashed black;">
+        <td style="border: 1.5px solid black; color: black; text-align: center; border-bottom: 1px dashed black;">
           6
         </td>
       </tr>
       <tr>
-        <td style="border: 1.5px solid black; color: #5ED464; text-align: left; border-bottom: 1px dashed black;">
+        <td style="border: 1.5px solid black; color: black; text-align: left; border-bottom: 1px dashed black;">
           • Scalability of protein profiling
         </td>
-        <td style="border: 1.5px solid black; color: #5ED464; text-align: left; border-bottom: 1px dashed black;">
+        <td style="border: 1.5px solid black; color: black; text-align: left; border-bottom: 1px dashed black;">
           • More scalable protein barcoding protocols. [Current protocols require multiple rounds of staining/washes and need testing on larger organisms]
         </td>
-        <td style="border: 1.5px solid black; color: #5ED464; text-align: center; border-bottom: 1px dashed black;">
+        <td style="border: 1.5px solid black; color: black; text-align: center; border-bottom: 1px dashed black;">
           10
         </td>
-        <td style="border: 1.5px solid black; color: #5ED464; text-align: center; border-bottom: 1px dashed black;">
+        <td style="border: 1.5px solid black; color: black; text-align: center; border-bottom: 1px dashed black;">
           8
         </td>
       </tr>
       <tr>
-        <td style="border: 1.5px solid black; color: #5ED464; text-align: left;">
+        <td style="border: 1.5px solid black; color: black; text-align: left;">
           • Scalability of functional nanoscale imaging
         </td>
-        <td style="border: 1.5px solid black; color: #5ED464; text-align: left;">
+        <td style="border: 1.5px solid black; color: black; text-align: left;">
           • New nanometer functional imaging methods that can scale to whole brain neuron populations <br>
           [Current methods like voltage imaging, calcium imaging, etc., are either indirect, damaging or unscalable to whole brains. Thus methods like fUS with ~15 micrometers theoretical limit that scale to larger neuron populations could be the remedy]
         </td>
-        <td style="border: 1.5px solid black; color: #5ED464; text-align: center;">
+        <td style="border: 1.5px solid black; color: black; text-align: center;">
           10
         </td>
-        <td style="border: 1.5px solid black; color: #5ED464; text-align: center;">
+        <td style="border: 1.5px solid black; color: black; text-align: center;">
           6
         </td>
       </tr>
