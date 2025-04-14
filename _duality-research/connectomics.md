@@ -12,7 +12,13 @@ hidden: true
 <br>
 
 <h3 align="center">1. Introduction</h3>
-<!-- Darwin never anticipated life evolving digital to escape death, yet this might change within our lifetime. -->
+In the coming decade, uploaded minds might be born.
+
+Darwin never anticipated life and evolution turning digital, yet this has already changed. As sci-fi as it sounds, brain uploading is no longer fictional. Neuroscientists recently quietly digitized small animals (more on each later), and are currently working up the technology to do the same to much larger, human brains.
+
+Even if we end up falling short of 1:1 human brain simulations, a universe where we have even approximate brain models (much like weather forecasts) looks strikingly better than ours, and thus worth seriously entertaining. Year-long drug development trials for neuroscience might get compressed to day-long digital runs. Intelligent systems might become more comprehensible, and thus creation of aligned AI prove tractable. The intellectual debate of how far it can go is all yours, but the core premise is in possible prosperity.
+
+In light of such a possible future, this post tries to provide a holistic overview of the current uploading research, its methods, milestones, and future directions.
 
 <!-- HOW IT SHOULD START:
 The legacy system of mortality is due for an upgrade. Brain uploading might be it.
@@ -28,16 +34,12 @@ As of recently we can "upload" organisms, and perhaps within our lifetime - huma
 
 Our brain — the jewel of consciousness — is a dynamic function. One that is dependent on its temporal dynamics, neuronal activations, and synaptic weights. To model the brain is to simulate it, and simulating the brain gives us the ability to simulate **brain diseases**, **drug development**, **intelligence**, and possibly one day **<u>transgress death</u>**. Even if we end up falling short of 1:1 human brain simulations, a universe where we have even approximate brain models (much like weather forecasts) looks strikingly better than ours, and thus worth seriously entertaining. Year-long drug development trials for neuroscience might get compressed to day-long digital runs. Intelligent systems might become more comprehensible, and as a result creation of aligned AI prove tractable. The intellectual debate of how far it can go is all yours, but the core premise is in possible prosperity. -->
 
-Our brain — the crown jewel of consciousness — is poorly understood, and even more poorly cured. The brain can be described as a function. One that is dependent on its temporal dynamics, neuronal activations, and synaptic weights. As you could imagine, being able to model or "upload" such a function would be **UNPRECEDENTED**. To upload the brain is to simulate it, and simulating the brain gives us the ability to emulate **brain diseases**, **drug development**, **intelligence**, and possibly one day **<u>consciousness</u>**.  
-
-As sci-fi as it sounds, brain uploading is no longer fictional. Neuroscientists already quietly digitized small animals (more on each later), and are currently working up the tech to do the same to much larger human brains. Even if we end up falling short of 1:1 human brain simulations, a universe where we have even approximate brain models (much like weather forecasts) looks strikingly better than ours, and thus worth seriously entertaining. Year-long drug development trials for neuroscience might get compressed to day-long digital runs. Intelligent systems might become more comprehensible, and thus creation of aligned AI prove tractable. The intellectual debate of how far it can go is all yours, but the core premise is in possible prosperity.
-
-In light of such a possible future, this post tries to provide a holistic overview of the current uploading research, its methods, milestones, and future directions.
+<!-- Our brain — the crown jewel of consciousness — is poorly understood, and even more poorly cured. The brain can be described as a function. One that is dependent on its temporal dynamics, neuronal activations, and synaptic weights. As you could imagine, being able to model or "upload" such a function would be **UNPRECEDENTED**. To upload the brain is to simulate it, and simulating the brain gives us the ability to emulate **brain diseases**, **drug development**, **intelligence**, and possibly one day **<u>consciousness</u>**.   -->
 
 <hr style="border-top: 1px solid black;">
 
 <h3 align="center">2. Methods</h3>
-What is popularly known as "brain uploading" is more formally studied as connectomics, a discipline dedicated to creating brain wiring maps (connectomes), with a focus on how synaptic connectivity, cellular morphology, and cellular ultrastructure contribute to the makeup of a network. Since our brain is more than just its structure, connectomics tries to elucidate and overlay functional and structural information to obtain a full computational counterpart to the brain – or in cooler terms, a brain upload. 
+What is popularly known as "brain uploading" is more formally studied as connectomics, a discipline dedicated to creating brain wiring maps (connectomes), with a focus on how synaptic connectivity, cellular morphology, and cellular ultrastructure contribute to the makeup of a network. Since our brain is a dynamic function represented by more than just its structure, connectomics tries to elucidate and overlay functional and structural information to obtain a full computational counterpart to the brain – or in cooler terms, a brain upload. 
 
 Generally speaking, connectomics research operates at two distinct units of analysis: low-resolution (~macroscale) or high-resolution (~nanoscale). With low-resolution imaging, researchers try to map abstract brain structrue by using top-down functional and structural methods (e.g., MRI, MEG, etc.), to map large fiber tracts and gray matter regions within the brain, analyzing things like blood flow for functional insights and water diffusivity for structural details. 
 
