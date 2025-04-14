@@ -226,7 +226,7 @@ Once you have the brain imaging data, the next step is to turn it into a functio
   </table>
 </div>
 <div style="width: 80%; margin: auto; text-align: justify; margin-bottom: 30px;">
-  <p><b>Table 1:</b> The key steps of the brain simulation procedure, from initial tissue imaging preparation to final model calibration. The steps consecutively build on each other, creating a complete digital representation of the original brain.</p>
+  <p><b>Table 1:</b> The key steps of the brain simulation procedure, from initial tissue imaging preparation to final model calibration. The steps consecutively build on each other to create a complete digital representation of the original brain.</p>
 </div>
 
  <!-- The data will be raw, so it requires proccessing.  What next? Turn it into a graph neural network (GNN) to make it functional. Imagine each brain region as a node and the white matter connections as edges. The weights? They come from metrics like FA values or fiber counts. This graph setup lets us use GNN algorithms to dissect the brain's network dynamics, spot clusters of tightly-knit regions, and trace the flow of information through neural circuits. The beauty of the GNN framework lies in its dual ability to map the structural layout of brain connections and to learn how activity zips through the network. This computational method is powerful for systematically exploring brain organization and function at the network level. -->
