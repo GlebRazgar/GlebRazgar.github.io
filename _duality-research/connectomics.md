@@ -127,36 +127,36 @@ Once you have the brain imaging data, the next step is to turn it into a functio
       </tr>
       <tr style="background-color: rgba(94, 212, 100, 0.1);">
         <td style="border: 1.5px solid #5ED464; background-color: rgba(94, 212, 100, 0.1); color: #5ED464; text-align: left; border-bottom: 1px dashed #5ED464;">
-          • Proofread and correct errors of automated segmentation (incorrect connections, missed branches, and false mergers)
+          • Proofreading and correcting errors of automated segmentation (incorrect connections, missed branches, and false mergers)
         </td>
       </tr>
       <tr style="background-color: rgba(94, 212, 100, 0.1);">
         <td style="border: 1.5px solid #5ED464; background-color: rgba(94, 212, 100, 0.1); color: #5ED464; text-align: left;">
-          • [In barcoded specimens: using molecular barcodes to verify neuron identity and connections]
+          • In barcoded specimens: using molecular barcodes to verify neuron identity and connections
         </td>
       </tr>
       
       <tr style="background-color: rgba(94, 212, 100, 0.1);">
         <td style="border: 1.5px solid #5ED464; background-color: rgba(94, 212, 100, 0.1); color: #5ED464; text-align: left; vertical-align: middle; font-weight: bold;">3. Classification</td>
         <td style="border: 1.5px solid #5ED464; background-color: rgba(94, 212, 100, 0.1); color: #5ED464; text-align: left;">
-          • Cell types (glia, astrocytes, etc.)
+          • Classification and labelling of cell types (glia, astrocytes, etc.)
         </td>
       </tr>
       
       <tr style="background-color: rgba(94, 212, 100, 0.1);">
         <td style="border: 1.5px solid #5ED464; background-color: rgba(94, 212, 100, 0.1); color: #5ED464; text-align: left; vertical-align: middle; font-weight: bold;" rowspan="3">4. Connectome Graph Creation</td>
         <td style="border: 1.5px solid #5ED464; background-color: rgba(94, 212, 100, 0.1); color: #5ED464; text-align: left; border-bottom: 1px dashed #5ED464;">
-          • Convert the 3D reconstruction into a structured graph representation
+          • Converting the 3D reconstruction into a structured graph representation
         </td>
       </tr>
       <tr style="background-color: rgba(94, 212, 100, 0.1);">
         <td style="border: 1.5px solid #5ED464; background-color: rgba(94, 212, 100, 0.1); color: #5ED464; text-align: left; border-bottom: 1px dashed #5ED464;">
-          • Define nodes (neurons) and edges (synaptic connections)
+          • Defining nodes (neurons) and edges (synaptic connections)
         </td>
       </tr>
       <tr style="background-color: rgba(94, 212, 100, 0.1);">
         <td style="border: 1.5px solid #5ED464; background-color: rgba(94, 212, 100, 0.1); color: #5ED464; text-align: left;">
-          • Add metadata about neuron types, molecular properties and synaptic strengths
+          • Adding metadata about neuron types, molecular properties and synaptic strengths
         </td>
       </tr>
       
@@ -180,29 +180,29 @@ Once you have the brain imaging data, the next step is to turn it into a functio
       <tr style="background-color: rgba(94, 212, 100, 0.1);">
         <td style="border: 1.5px solid #5ED464; background-color: rgba(94, 212, 100, 0.1); color: #5ED464; text-align: left; vertical-align: middle; font-weight: bold;" rowspan="3">6. Environment/Body Integration</td>
         <td style="border: 1.5px solid #5ED464; background-color: rgba(94, 212, 100, 0.1); color: #5ED464; text-align: left; border-bottom: 1px dashed #5ED464;">
-          • Connect sensory inputs to appropriate neurons
+          • Connecting sensory inputs to appropriate neurons
         </td>
       </tr>
       <tr style="background-color: rgba(94, 212, 100, 0.1);">
         <td style="border: 1.5px solid #5ED464; background-color: rgba(94, 212, 100, 0.1); color: #5ED464; text-align: left; border-bottom: 1px dashed #5ED464;">
-          • Map motor outputs to effectors
+          • Mapping motor outputs to effectors
         </td>
       </tr>
       <tr style="background-color: rgba(94, 212, 100, 0.1);">
         <td style="border: 1.5px solid #5ED464; background-color: rgba(94, 212, 100, 0.1); color: #5ED464; text-align: left;">
-          • Create physical model of environment for interaction
+          • Creating physical model of environment for interaction
         </td>
       </tr>
       
       <tr style="background-color: rgba(94, 212, 100, 0.1);">
         <td style="border: 1.5px solid #5ED464; background-color: rgba(94, 212, 100, 0.1); color: #5ED464; text-align: left; vertical-align: middle; font-weight: bold;" rowspan="3">7. Execution</td>
         <td style="border: 1.5px solid #5ED464; background-color: rgba(94, 212, 100, 0.1); color: #5ED464; text-align: left; border-bottom: 1px dashed #5ED464;">
-          • Infrastructure setup (partitioning the network across GPUs, setting up memory management, etc.)
+          • Setting up infrastructure (partitioning the network across GPUs, setting up memory management, etc.)
         </td>
       </tr>
       <tr style="background-color: rgba(94, 212, 100, 0.1);">
         <td style="border: 1.5px solid #5ED464; background-color: rgba(94, 212, 100, 0.1); color: #5ED464; text-align: left; border-bottom: 1px dashed #5ED464;">
-          • Initialization (membrane potential, ion concentration, etc.)
+          • Initializating (membrane potential, ion concentration, etc.)
         </td>
       </tr>
       <tr style="background-color: rgba(94, 212, 100, 0.1);">
@@ -214,19 +214,19 @@ Once you have the brain imaging data, the next step is to turn it into a functio
       <tr style="background-color: rgba(94, 212, 100, 0.1);">
         <td style="border: 1.5px solid #5ED464; background-color: rgba(94, 212, 100, 0.1); color: #5ED464; text-align: left; vertical-align: middle; font-weight: bold;" rowspan="2">8. Parameter Calibration</td>
         <td style="border: 1.5px solid #5ED464; background-color: rgba(94, 212, 100, 0.1); color: #5ED464; text-align: left; border-bottom: 1px dashed #5ED464;">
-          • Use functional data (calcium/voltage imaging) to tune neuron parameters
+          • Tuning nueorn parameters based on functional data (calcium/voltage/etc., imaging)
         </td>
       </tr>
       <tr style="background-color: rgba(94, 212, 100, 0.1);">
         <td style="border: 1.5px solid #5ED464; background-color: rgba(94, 212, 100, 0.1); color: #5ED464; text-align: left;">
-          • Calibrate neuroplasticity rules based on available data
+          • Calibrating neuroplasticity rules based on available data
         </td>
       </tr>
     </tbody>
   </table>
 </div>
 <div style="width: 80%; margin: auto; text-align: justify; margin-bottom: 30px;">
-  <p><b>Table 2:</b> The eight key steps in the brain simulation process, from initial tissue imaging preparation to final model calibration. Each step builds upon the previous, creating a complete digital representation of brain functionality.</p>
+  <p><b>Table 1:</b> The key steps of the brain simulation procedure, from initial tissue imaging preparation to final model calibration. The steps consecutively build on each other, creating a complete digital representation of the original brain.</p>
 </div>
 
  <!-- The data will be raw, so it requires proccessing.  What next? Turn it into a graph neural network (GNN) to make it functional. Imagine each brain region as a node and the white matter connections as edges. The weights? They come from metrics like FA values or fiber counts. This graph setup lets us use GNN algorithms to dissect the brain's network dynamics, spot clusters of tightly-knit regions, and trace the flow of information through neural circuits. The beauty of the GNN framework lies in its dual ability to map the structural layout of brain connections and to learn how activity zips through the network. This computational method is powerful for systematically exploring brain organization and function at the network level. -->
@@ -279,7 +279,7 @@ To witness human emulations within the next decade three key disciplines need "u
 
 <div class="table-container" style="overflow-x: auto; width: 85%; margin: auto;">
   <table cellspacing="0" cellpadding="6" border="1.5" style="border: 1.5px solid #5ED464; border-collapse: collapse; width: 100%; background-color: black; font-size: 0.65em;">
-    <caption style="caption-side: top; padding: 10px; color: #5ED464;"><b>Table 1.</b> Innovations Needed for Full Human Brain Uploading.</caption>
+    <caption style="caption-side: top; padding: 10px; color: #5ED464;"><b>Table 2.</b> Innovations Needed for Full Human Brain Uploading.</caption>
     <thead>
       <tr style="background-color: rgba(94, 212, 100, 0.1);">
         <th style="border: 1.5px solid #5ED464; background-color: rgba(94, 212, 100, 0.1); color: #5ED464; text-align: center; font-weight: bold;">Domain</th>
