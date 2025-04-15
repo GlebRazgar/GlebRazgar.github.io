@@ -12,11 +12,11 @@ hidden: true
 <br>
 
 <h3 align="center">1. Introduction</h3>
-In the coming decade, uploaded minds might be born.
+In the coming decade, human uploads might be born.
 
-Darwin never anticipated life and evolution turning digital, yet this has already changed. As sci-fi as it sounds, brain uploading has happened. Unbeknownst to most, neuroscientists have uploaded multiple small animals (more on each later), and are currently working up the technology to do the same on humans.
+Darwin never anticipated life and evolution turning digital, yet unbeknownst to most, this has already changed. As sci-fi as it sounds, brain uploading has happened. Neuroscientists have uploaded multiple small animals (more on each later), and are currently working up the technology to upload humans.
 
-A universe with even approximate brain models looks strikingly better than ours, and thus worth entertaining. Year-long drug development trials in neuroscience might get compressed to day-long digital runs. Intelligent systems might become more transparent, and thus creation of aligned AI systems turn trivial. The intellectual discussion of how far brain uploading can go is long, but the core premise is in prosperity.
+A universe with even approximate human brain simulations looks strikingly better than ours, and thus worth seriously entertaining. Year-long drug development trials in neuroscience might get compressed to day-long digital runs. Intelligent systems might become more transparent, and thus creation of aligned AI systems turn trivial. The intellectual discussion of how far brain uploading can go is long, but the core premise is in prosperity.
 
 In light of such a possible future, this piece tries to provide a holistic overview of the current uploading research, its methods, milestones, and future directions.
 
