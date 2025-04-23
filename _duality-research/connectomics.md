@@ -75,7 +75,7 @@ Alternatively to using very expensive and slow electron microscopes to elucidate
 </div>
 <p align="center"><img src="/images/exm_results.png" alt="Alt text" style="max-width: 80%; height: auto; border-radius: 10px;"></p>
 <div style="width: 80%; margin: auto; text-align: center;">
-  <p><b>Figure 1:</b>Pre expansion (left) and post expansion microsope imaging (right).</p>
+  <p><b>Figure 3:</b>Pre expansion (left) and post expansion microsope imaging (right).</p>
 </div><br>
 
 Unarguably one of the most futuristic connectomics methods is to use a particle collider called Synchrotrons to image the tissue via X-ray nanotomography. Synchrotron's appeal lies in its ability to bypass the need for heavy metal staining and physical sectioning unlike in electron microscope. The way it works is by accelerating electrons to near light speed, and then bending them to obtain incredibly potent X-ray beams (up to 10¹² photons/second) that are filtered to desired energy levels between 8-12 keV. Unlike conventional X-ray imaging that detects how tissues block X-rays, synchrotron-based connectomics measures how X-rays bend or phase shift when passing through brain sample due to different tissue refractive indices. This reveals unmyelinated axons and cell boundaries without staining. In theory, a synchrotron can image a full human brain in less than a year at ~40nm resolution, which is faster than using 350 electron microscopes in parallel!
