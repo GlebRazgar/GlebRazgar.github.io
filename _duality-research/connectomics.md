@@ -39,7 +39,7 @@ Our brain — the jewel of consciousness — is a dynamic function. One that is 
 <hr style="border-top: 1px solid black;">
 
 <h3 align="center">2. Methods</h3>
-What is popularly known as "brain uploading" is more formally studied as connectomics, a discipline dedicated to creating brain wiring maps (connectomes), with a focus on how synaptic connectivity, cellular morphology, and cellular ultrastructure contribute to the makeup of a network. Since our brain is a dynamic function represented by more than just its structure, connectomics tries to elucidate and overlay functional and structural information to obtain a full computational counterpart to the brain – or in cooler terms, a brain upload. 
+What is popularly known as "brain uploading" is more formally studied as connectomics, a discipline dedicated to creating brain wiring maps (connectomes), with a focus on how synaptic connectivity, cellular morphology, and cellular ultrastructure contribute to the makeup of a network. Since our brain is a dynamic function represented by more than just its structure, causal connectomics tries to elucidate and overlay functional and structural information to obtain a full computational counterpart to the brain – or in cooler terms, a brain upload. 
 
 Generally speaking, connectomics research operates at two distinct units of analysis: low-resolution (~macroscale) or high-resolution (~nanoscale). With low-resolution imaging, researchers try to map abstract brain structrue by using top-down functional and structural methods (e.g., MRI, MEG, etc.), to map large fiber tracts and gray matter regions within the brain, analyzing things like blood flow for functional insights and water diffusivity for structural details. 
 
