@@ -7,17 +7,15 @@ layout: post
 <p align="center"><img src="/images/fly.png" alt="Alt text" style="max-width: 80%; height: auto; border-radius: 10px;"></p>
 <br>
 
-<h3 align="center">1. Connectomics Overview</h3>
-Death is bad engineering.
+<h3 align="center">1. Introduction</h3>
+Our brain - the jewel of consciousness - is a dynamic function. One that would be **UN-PRECEDENTED** to model. To model the brain is to simulate it, and simulating the brain could give us the ability to emulate **brain disorders**, **drug development**, and possibly one day **<u>consciousness</u>**.
 
-Our brain - the jewel of consciousness - is a dynamic function. One that is dependent on its temporal dynamics, neuronal activations, and synaptic weights. As you could imagine, being able to model such a function would be **UN-PRECEDENTED**. To model the brain is to simulate it. And simulating the brain gives us the ability to emulate **mental disorders**, **brain disease**, **drug responses**, and possibly one day **<u>transgress death</u>**.
-
-In light of such a possible future, this piece tries to provide a holistic overview of the current uploading research, its methods, milestones, and future directions.
+In light of such a possible future, this piece tries to provide a holistic overview of the current brain emulation research, its methods, milestones, and future directions.
 
 <hr style="border-top: 1px solid black;">
 
 <h3 align="center">2. Methods</h3>
-What is popularly known as "brain uploading" is more formally studied as connectomics, a discipline dedicated to creating brain wiring maps (connectomes), with a focus on how synaptic connectivity, cellular morphology, and cellular ultrastructure contribute to the makeup of a network. Since our brain is a dynamic function represented by more than just its structure, connectomics tries to elucidate and overlay functional and structural information to obtain a full computational counterpart to the brain – or in cooler terms, a brain upload. 
+What is popularly known as "brain emulation" is more formally studied as connectomics, a discipline dedicated to creating brain wiring maps (connectomes), with a focus on how synaptic connectivity, cellular morphology, and cellular ultrastructure contribute to the makeup of a network. Since brain activity is defined by structure and function, causal connectomics takes this further and overlays functional information on-top of structural in the aim of achieving a computational brain equivalent – or in cooler terms, a brain upload. 
 
 Generally speaking, connectomics research operates at two distinct units of analysis: low-resolution (~macroscale) or high-resolution (~nanoscale). With low-resolution imaging, researchers try to map abstract brain structrue by using top-down functional and structural methods (e.g., MRI, MEG, etc.), to map large fiber tracts and gray matter regions within the brain, analyzing things like blood flow for functional insights and water diffusivity for structural details. 
 
@@ -34,7 +32,7 @@ In high-res (nanoscale) connectomics, the goal is to obtain tiny mechanistic map
 <p align="center"><img src="/images/multiconn.jpg" alt="Alt text" style="max-width: 80%; height: auto; border-radius: 0px; mix-blend-mode: difference;"></p>
 
 <div style="width: 80%; margin: auto; text-align: justify;">
-  <p><b>Figure 1:</b> Connectome of a fruit fly (Drosophila melanogaster) obtained using Electron Microscopy, showing different neuronal types. The connectome consists of 140,000 neurons and is the size of a grain of sand.</p>
+  <p><b>Figure 2:</b> Connectome of a fruit fly (Drosophila melanogaster) obtained using Electron Microscopy, showing different neuronal types. The connectome consists of 140,000 neurons and is the size of a grain of sand.</p>
 </div><br>
 
 Alternatively to using very expensive and slow electron microscopes to elucidate the structure, we can expand the brain itself and image it with a standard microscope! Expansion Microscopy (ExM) is a method which allows to, quite literally – physically enlarge the tissue ~20x while maintaining its structural relationships. ExM works by embedding tissue in a swellable polymer (like a baby diaper matrix) that expands uniformly when you add water, increasing the physical size of the specimen whilst preserving its composition. The beauty of ExM is that the physical magnification enables imaging of tissue at the nanoscale using standard light microscopes. 
@@ -42,7 +40,7 @@ Alternatively to using very expensive and slow electron microscopes to elucidate
 
 <p align="center"><img src="/images/exm.jpg" alt="Alt text" style="max-width: 80%; height: auto; border-radius: 10px; mix-blend-mode: multiply; filter: brightness(1.2) contrast(1.1);"></p>
 <div style="width: 80%; margin: auto; text-align: center;">
-  <p><b>Figure 1:</b>Expansion Microsope Proceedure.</p>
+  <p><b>Figure 3:</b>Expansion Microsope Proceedure.</p>
 </div><br>
 
 Unarguably one of the most futuristic connectomics methods is to use a particle collider called Synchrotrons to image the tissue via X-ray nanotomography. Synchrotron's appeal lies in its ability to bypass the need for heavy metal staining and physical sectioning unlike in electron microscope. The way it works is by accelerating electrons to near light speed, and then bending them to obtain incredibly potent X-ray beams (up to 10¹² photons/second) that are filtered to desired energy levels between 8-12 keV. Unlike conventional X-ray imaging that detects how tissues block X-rays, synchrotron-based connectomics measures how X-rays bend or phase shift when passing through brain sample due to different tissue refractive indices. This reveals unmyelinated axons and cell boundaries without staining. In theory, a synchrotron can image a full human brain in less than a year at ~40nm resolution, which is faster than using 350 electron microscopes in parallel!
