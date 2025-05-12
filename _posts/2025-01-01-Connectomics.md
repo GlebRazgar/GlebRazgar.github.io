@@ -271,9 +271,10 @@ To witness human emulations within the next decade three key disciplines need "u
         </td>
         <td style="border: 1.5px solid black; color: black; text-align: left; border-bottom: 1px dashed black;">
           • Holistic simulation engine. <br>[Integration of sensory and motor systems with simulated brains, modelling neuro-plasticity, etc.,]
+          • Without simulations the field will not catch attention or find viability, making it imperative.
         </td>
         <td style="border: 1.5px solid black; color: black; text-align: center; border-bottom: 1px dashed black;">
-          5
+          9
         </td>
         <td style="border: 1.5px solid black; color: black; text-align: center; border-bottom: 1px dashed black;">
           8
