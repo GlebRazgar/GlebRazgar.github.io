@@ -1328,7 +1328,7 @@ hidden: true
     <div class="section-content">
       <p>Humanity doesnt know how the brain works — and thus can't cure, enhance, or replicate it.</p>
 
-      <p>We aim to solve this by creating the first human brain uploads. This will enable digital simulations of drug development, brain disease treatment, and production of the first "Uploaded AIs".</p>
+      <p>We aim to solve this by accelerating humanity towards the first human brain uploads. Beginning with simulating small organisms and scaling upwards, we aim to enable in silico drug development, brain disease treatment, and production of the first "Uploaded Intelligence".</p>
     </div>
   </div>
 </div>
