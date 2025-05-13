@@ -1411,7 +1411,7 @@ hidden: true
     <!-- Step 1 content (Left side) -->
     <div class="timeline-item left">
       <div class="step-number">Step 1: <span class="step-highlight">Raise Funds</span></div>
-      <div class="step-description">We are raising $500k pre-seed with the aim of uploading the first human brain.</div>
+      <div class="step-description">We are raising $500k pre-seed with the aim of uploading the first vertibrate.</div>
     </div>
     
     <!-- Step 2 content (Right side) -->
