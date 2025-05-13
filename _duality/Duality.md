@@ -1417,7 +1417,7 @@ hidden: true
     <!-- Step 2 content (Right side) -->
     <div class="timeline-item right">
       <div class="step-number">Step 2: <span class="step-highlight">Make History</span></div>
-      <div class="step-description">Scaling our early research to species with larger brains - humans - will give way to new forms of simulation treatments.</div>
+      <div class="step-description">Proving the capacity for digital drug-like pertubation will give way to new forms of simulation medicine.</div>
     </div>
     
     <!-- Step 3 content (Left side) -->
