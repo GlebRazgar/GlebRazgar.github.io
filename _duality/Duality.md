@@ -1314,7 +1314,7 @@ hidden: true
   <canvas id="title-canvas" style="position: absolute; left: 0; top: 0; width: 100%; height: 100%;"></canvas>
   
   <!-- Subtitle slogan - now visible from the start -->
-  <h2 class="header-subtitle" style="font-family: Helvetica, Arial, sans-serif; color: #5ED464; position: absolute; width: 100%; bottom: 32px; font-weight: 300; font-size: 2rem;">Human brain uploading</h2>
+  <h2 class="header-subtitle" style="font-family: Helvetica, Arial, sans-serif; color: #5ED464; position: absolute; width: 100%; bottom: 32px; font-weight: 300; font-size: 2rem;">Accelerating brain uploading</h2>
 </div>
 
 <hr class="section-divider">
