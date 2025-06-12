@@ -530,7 +530,7 @@ hidden: true
       </div>
     </div>
     
-    <!-- Team Member 3 -->
+    <!-- Team Member 3
     <div class="team-box">
       <div class="team-name"><span class="name-part">Tim Farkas</span></div>
       <div class="team-title"><i>Founder x Neuroscientist</i></div>
@@ -546,7 +546,7 @@ hidden: true
         </div>
       </div>
     </div>
-    
+     -->
     <!-- Team Member 4 -->
     <div class="team-box">
       <div class="team-name"><span class="name-part">You?</span></div>
