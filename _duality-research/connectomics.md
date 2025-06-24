@@ -12,7 +12,7 @@ hidden: true
 <br>
 
 <h3 align="center">1. Introduction</h3>
-In the coming decade, human uploads will be born.
+In the coming decade, human uploads might be born.
 
 Darwin never anticipated life and evolution turning digital, yet unbeknownst to most, the change is already in motion. As sci-fi as it sounds, brain uploading has nascently happened. Neuroscientists have digitally copied multiple small animal brains (more on each later), and are now working up the technology to do the same on humans.
 
