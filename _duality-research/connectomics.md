@@ -12,7 +12,7 @@ hidden: true
 <br>
 
 <h3 align="center">1. Introduction</h3>
-In the coming decade, computerised souls might be created.
+In the coming decade, virtual humans might be born.
 
 Darwin never anticipated life and evolution turning digital, yet the change is now in motion. Neuroscientists have digitally copied multiple small animal brains (more on each later), and are now working up the technology to upload humans.
 
