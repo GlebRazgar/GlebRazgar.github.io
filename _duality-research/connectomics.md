@@ -12,9 +12,9 @@ hidden: true
 <br>
 
 <h3 align="center">1. Introduction</h3>
-Before long, human mind may emerge in code.
+Very soon, virtual humans may be born.
 
-Darwin never anticipated life and evolution turning digital, yet as you read this, the change is in motion. Neuroscientists have digitally copied multiple small animal brains (more on each later), and are now working up the technology to upload humans.
+Though Darwin never foresaw evolution turning digital, the change is underway. Neuroscientists have digitized multiple small animal brains (more on each later), and are now working up the technology to upload humans.
 
 The world with even approximate human brain uploads looks strikingly better than ours, and thus worth seriously entertaining. Year-long brain medication trials might get compressed to day-long virtual runs. Neurodegenerative diseases might undergo in silico treatment. And human intelligence might become more decodable – easing the development of aligned AI. The implications of brain uploading are complex, but it's core premise is hopeful.
 
