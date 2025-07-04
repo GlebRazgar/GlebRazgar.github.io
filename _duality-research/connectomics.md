@@ -12,11 +12,11 @@ hidden: true
 <br>
 
 <h3 align="center">1. Introduction</h3>
-Very soon, virtual humans may be born.
+Before late, virtual humans may be born.
 
-Though Darwin never foresaw evolution turning digital, the change is underway. Neuroscientists have digitized multiple small animal brains (more on each later), and are now working up the technology to upload humans.
+Though Darwin never foresaw evolution turning digital, the change is underway. Neuroscientists have digitized small animal brains (more on each later) – and are now aiming at humans.
 
-The world with even approximate human brain uploads looks strikingly better than ours, and thus worth seriously entertaining. Year-long brain medication trials might get compressed to day-long virtual runs. Neurodegenerative diseases might undergo in silico treatment. And human intelligence might become more decodable – easing the development of aligned AI. The implications of brain uploading are complex, but it's core premise is hopeful.
+The world with even approximate virtual human brains looks strikingly better than ours, and thus worth seriously entertaining. Year-long brain medication trials might get compressed to day-long virtual runs. Neurodegenerative diseases might undergo in silico treatment. And human intelligence might become more decodable – easing the development of aligned AI. The implications of brain uploading are complex, but it's core premise is hopeful.
 
 In light of such a possible future, this piece tries to provide a holistic overview of the current uploading research, its methods, milestones, and future directions.
 
