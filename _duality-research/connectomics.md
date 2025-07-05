@@ -14,7 +14,7 @@ hidden: true
 <h3 align="center">1. Introduction</h3>
 Before late, virtual humans may be born.
 
-Though Darwin never imagined evolution turning digital, uploaded minds are coming online. Neuroscientists have recently digitized multiple tiny brains (more on each later), and are now inching towards simulating humans.
+Though Darwin never imagined evolution turning digital, uploaded minds are coming online. Neuroscientists have digitized multiple tiny brains (more on each later), and are now inching towards simulating humans.
 
 The world with even approximate human brain "uploads" looks strikingly better than todays, and thus worth seriously entertaining. Year-long brain medication trials might get compressed to day-long virtual runs. Neurodegenerative diseases might undergo in-silico treatment. And neuron-level simulation access might clarify how intelligence forms — easing the development of AI with human properties. I’ll be the first to admit: brain uploading is double-edged — philosophically, economically and existentially — but the upside is too consequential to ignore.
 
