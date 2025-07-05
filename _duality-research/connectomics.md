@@ -14,11 +14,11 @@ hidden: true
 <h3 align="center">1. Introduction</h3>
 Before late, virtual humans may be born.
 
-Though Darwin never imagined evolution turning digital, uploaded minds are coming online. Neuroscientists digitized multiple tiny brains (more on each later), and are now inching towards simulating humans.
+Though Darwin never imagined evolution turning digital, uploaded minds are coming online. Neuroscientists have recently digitized multiple tiny brains (more on each later), and are now inching towards simulating humans.
 
-The world with even approximate human "brain uploads" looks strikingly better than todays, and thus worth seriously entertaining. Year-long brain medication trials might get compressed to day-long virtual runs. Neurodegenerative diseases might undergo simulation treatment. And human intelligence might become more decodable – easing the development of aligned AI. I’ll be the first to admit: brain uploading is double-edged — philosophically, economically and existentially — but the upside is too consequential to ignore.
+The world with even approximate human brain "uploads" looks strikingly better than todays, and thus worth seriously entertaining. Year-long brain medication trials might get compressed to day-long virtual runs. Neurodegenerative diseases might undergo in-silico treatment. And neuron-level simulation access might clarify how intelligence forms — easing the development of AI with human properties. I’ll be the first to admit: brain uploading is double-edged — philosophically, economically and existentially — but the upside is too consequential to ignore.
 
-In light of such a possible future, this piece tries to provide a holistic overview of the current uploading research, its methods, milestones, and future directions.
+In light of such a possible future, this piece tries to provide a holistic overview of the current brain uploading research, its methods, milestones, and future directions.
 
 <!-- HOW IT SHOULD START:
 The legacy system of mortality is due for an upgrade. Brain uploading might be it.
@@ -39,7 +39,7 @@ Our brain — the jewel of consciousness — is a dynamic function. One that is 
 <hr style="border-top: 1px solid black;">
 
 <h3 align="center">2. Methods</h3>
-What is popularly known as "brain uploading" is more formally studied as connectomics, a discipline dedicated to creating brain wiring maps (connectomes), with a focus on how synaptic connectivity, cellular morphology, and cellular ultrastructure contribute to the makeup of a network. Since brain activity is defined by structure and function, causal connectomics takes this further and overlays functional information on-top of structural in the aim of achieving a computational brain equivalent – or in cooler terms, a brain upload. 
+What is popularly known as brain uploading is more formally studied as connectomics, a discipline dedicated to creating brain wiring maps (connectomes), with a focus on how synaptic connectivity, cellular morphology, and cellular ultrastructure contribute to the makeup of a network. Since brain activity is defined by structure and function, causal connectomics takes this further and overlays functional information on-top of structural in the aim of achieving a computational brain equivalent – or in cooler terms, a brain upload. 
 
 Generally speaking, connectomics research operates at two distinct units of analysis: low-resolution (~macroscale) or high-resolution (~nanoscale). With low-resolution imaging, researchers try to map abstract brain structrue by using top-down functional and structural methods (e.g., MRI, MEG, etc.), to map large fiber tracts and gray matter regions within the brain, analyzing things like blood flow for functional insights and water diffusivity for structural details. 
 
