@@ -2,7 +2,7 @@
 layout: default
 ---
 
-AI x Neurotech    I     Accelerating brain uploading @ <a href="https://glebrazgar.github.io/Duality/">Duality</a>     I     P(AIB)=P(BIA)*P(A)/P(B)
+AI x Neurotech    I     Accelerating brain uploading @ <a href="https://duality.nexus/">Duality</a>     I     P(AIB)=P(BIA)*P(A)/P(B)
 
 <h2 class="se []ction-title">Research</h2>
 

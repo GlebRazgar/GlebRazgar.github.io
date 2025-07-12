@@ -1297,7 +1297,7 @@ hidden: true
 <!-- Navigation buttons -->
 <div class="nav-buttons">
   <button class="nav-button" style="color: #5ED464;" onclick="window.location.href='https://glebrazgar.github.io/Duality/'">Home</button>
-  <button class="nav-button" onclick="window.location.href='https://glebrazgar.github.io/Duality/team/'">Team</button>
+  <!-- <button class="nav-button" onclick="window.location.href='https://glebrazgar.github.io/Duality/team/'">Team</button> -->
   <button class="nav-button" onclick="window.location.href='https://glebrazgar.github.io/Duality/research/'">Research</button>
 </div>
 
@@ -1457,7 +1457,7 @@ hidden: true
 <div class="custom-footer" style="margin-top: 0 !important; padding-top: 30px;">
   <div class="footer-content">
     <div class="footer-logo">Duality</div>
-    <div class="footer-tagline">Digitizing the human brain</div>
+    <div class="footer-tagline">Bending mind-space</div>
     <div class="footer-links">
       <a href="https://www.linkedin.com/in/gleb-razgar-6931a7220" class="footer-link">LinkedIn</a>
       <a href="https://glebrazgar.github.io/Duality/contact/" class="footer-link">Contact</a>
