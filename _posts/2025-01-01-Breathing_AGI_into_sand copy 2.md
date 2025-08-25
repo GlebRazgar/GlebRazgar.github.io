@@ -19,7 +19,7 @@ The collective emergence, however, will not be limited to human society. Conciev
 
 We breathed reason into sand by the linear combination of human labour, and now this reason will breathe super-intelligence into society via the linear combination of itself.
 
-There is no shortage of wild speculations on the post-ASI society, but the future is too stochastic to make accurate bets. Instead, let's consider a more important question: How do we maximize the speed to ASI through this linear combination of agents?
+There is no shortage of wild speculations on the post-ASI society, but the future is too stochastic to make accurate bets. Instead, let's consider a more important question: How do we maximize the speed to ASI through this linear combination of AI systems?
 
 In its conception, ASI doesn't get a choice, so it's to be expected that it will be predicated on our existing societal cladding. ASI will be built in Moloch, and we can thereby deduce what parts of social structures it will likely emerge from.
 
