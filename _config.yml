@@ -33,12 +33,6 @@ collections:
   research:
     output: true
     permalink: /:title/
-  duality:
-    output: true
-    permalink: /Duality/:title/
-  duality-research:
-    output: true
-    permalink: /Duality/research/:title/
 defaults:
   - scope:
       path: ""
