@@ -142,17 +142,6 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
 }
 
-/* Bionic paragraph font on blog posts. See BIONIC_FONT.md. */
-.post-content p {
-  font-weight: 400;
-}
-.post-content p .bionic-b {
-  font-weight: 700;
-}
-.post-content p .bionic-s {
-  font-weight: 600;
-}
-
 /* Global scrollbar styling */
 ::-webkit-scrollbar {
   height: 8px;
