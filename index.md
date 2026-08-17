@@ -26,6 +26,17 @@ AI x Neurotech    I     Accelerating connectomics     I     P(AIB)=P(BIA)*P(A)/P
 {% endfor %}
 </ul>
 
+<h2 class="section-title">Microblog</h2>
+
+<ul class="posts-list">
+{% assign sorted_microblog = site.microblog | where_exp: "entry", "entry.hidden != true" | sort: 'date' | reverse %}
+{% for entry in sorted_microblog %}
+  <li>
+    <a href="{{ entry.url }}">{{ entry.title }}</a> - {{ entry.date | date: "%B %d, %Y" }}
+  </li>
+{% endfor %}
+</ul>
+
 <!-- Added image below Posts section -->
 <div style="text-align: center; margin-top: 20px; margin-bottom: -20px;">
   <img src="./images/first-neuron.jpg" alt="First Neuron" style="max-width: 30%; height: auto; border-radius: 10px; mix-blend-mode: multiply; display: block; margin: 10px auto -40px auto;">

@@ -33,6 +33,9 @@ collections:
   research:
     output: true
     permalink: /:title/
+  microblog:
+    output: true
+    permalink: /:title/
 defaults:
   - scope:
       path: ""
