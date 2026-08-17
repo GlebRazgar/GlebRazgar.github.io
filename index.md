@@ -4,7 +4,7 @@ layout: default
 
 AI x Neurotech    I     Accelerating connectomics     I     P(AIB)=P(BIA)*P(A)/P(B)
 
-<h2 class="se []ction-title">Research</h2>
+<h2 class="section-title">Research</h2>
 
 <ul class="research-list">
 {% assign sorted_research = site.research | sort: 'date' | reverse %}
