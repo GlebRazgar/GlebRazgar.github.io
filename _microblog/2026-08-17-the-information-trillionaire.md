@@ -13,6 +13,8 @@ This is all to say that underneath all the abstractions we deal with on daily ba
 
 To that end, i romanticise about becoming rich with information. An information trillionaire if you will.
 
+<div style="float: right; margin: 0.4em 0 0.4em 1em; padding: 0.2em 0.6em; border-left: 2px solid #999; font-style: italic; color: #888; font-size: 0.85em; line-height: 1.2;">← Aug 18th addition</div>
+
 **II. What is information wealth?**  
 Unlike with money, information richness is tricky to define. For all you know, some tic-tock kid sponging up bits -- scroll by scroll --  is the wealthiest mind in town. Yet, this would be like calling someone rich based solely on the money flowing into a pocket with a hole in it. Little, if any, of that scrolling is actually absorbed.
 
