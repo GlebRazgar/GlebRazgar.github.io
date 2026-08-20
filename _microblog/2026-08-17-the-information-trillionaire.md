@@ -35,4 +35,4 @@ That is the kind of wealth I romanticise accumulating.
 
 <div style="float: right; margin: 0.4em 0 0.4em 1em; padding: 0.2em 0.6em; border-left: 2px solid #999; font-style: italic; color: #888; font-size: 0.85em; line-height: 1.2;">← Aug 19th addition</div>
 
-**III. How do I get informationally rich? -- Infinity stones of info-richness**
+**III. How do I get informationally rich? -- Infinity stones of bit-wealth**
