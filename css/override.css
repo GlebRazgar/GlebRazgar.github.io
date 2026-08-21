@@ -144,12 +144,16 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Home page entry lists: numbered, title on top, date underneath */
 .entry-list {
-  list-style: decimal;
-  padding-left: 1.6em;
+  list-style: decimal inside;
+  padding-left: 0;
   margin-top: 0.5em;
 }
 .entry-list li {
-  margin-bottom: 1.1em;
+  padding: 0.6em 0;
+  border-bottom: 1px solid #000;
+}
+.entry-list li:last-child {
+  border-bottom: none;
 }
 .entry-list li::marker {
   color: #666;
@@ -160,6 +164,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .entry-list .entry-date {
   margin-top: 0.15em;
+  margin-left: 1.6em;
   font-size: 0.85rem;
   color: #888;
 }
