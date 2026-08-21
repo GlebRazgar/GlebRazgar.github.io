@@ -4,6 +4,7 @@ date: 2026-08-17
 layout: post
 ---
 
+**I. The hidden currency**
 Information is the fundamental currency of the world.
 It is the unit of exchange underlying money, relationships and energy.
 Dollars, in all their capitalistic might, abstract away much richer information about whatever is being sold or purchased. "A bottle of wine aged for 10 years in Venice" can be compressed down to a $100 figure. A single number that encodes something about the effort of the seller and the demand of the consumer.
@@ -13,7 +14,6 @@ This is all to say that the world runs on abstractions. It is an onion, and trag
 
 To that end, I romanticise about getting closer to truth. Learning to better traverse the layers of the onion and come back up richer in information. Learning to become an information trillionaire.
 
-<div style="float: right; margin: 0.4em 0 0.4em 1em; padding: 0.2em 0.6em; border-left: 2px solid #999; font-style: italic; color: #888; font-size: 0.85em; line-height: 1.2;">← Aug 18th addition</div>
 
 **II. Information as capital**  
 Information, like money can be of strong or weak currency. Useful, or useless. If there is a concept such as informational wealth, it would feel appropriate to define it as the possession of **useful** information.
@@ -31,9 +31,8 @@ For instance, a person who understands probability does not need to memorise hun
 And as it goes with wealth, when you are poor, money compounds linearly, when you are middle class, it compounds quadratically, and when you are rich, it compounds exponentially.
 I think the same holds with informational wealth. The bigger your network of useful models becomes, the cheaper each new piece of useful information becomes to acquire, and thus the more their value compounds over time.
 
-<div style="float: right; margin: 0.4em 0 0.4em 1em; padding: 0.2em 0.6em; border-left: 2px solid #999; font-style: italic; color: #888; font-size: 0.85em; line-height: 1.2;">← Aug 20th addition</div>
 
-**III. **How to get bit-rich**
+**III. How to get bit-rich**
 Since there exists more and less useful information, there must exist more and less useful methods for acquiring it, processing it, and transmitting it.
 For instance, I think some school subjects teach objectively better models for processing information than others. If you're lucky, Astrology might teach you facts about our planet system (in addition to all the metaphysical woo), but Astronomy will equip you with models of gravity, which you could use to reason about many planets, even those you haven't seen before.
 
@@ -41,7 +40,8 @@ I think the defining skill of the informationally wealthy is thus in identifying
 
 **In that sense, the highest-yield information is the one that helps you interpret other information**.
 
-So, chase the subjects that give you the best bang for your buck.
-In my case, I want to describe the world precisely (maths), question what any of it means (philosophy), manipulate it even at the smallest scales (physics), and involve other people in my objectives (economics / sociology).
+So, chase things that make everything else easier to understand in your world.
 
-The goal is not to know everything, but to learn the things that make everything else easier to understand.
+In my case, I want to learn to describe the world precisely, which calls for charting the depths of maths; question what any of it means, which means finding good models in philosophy; manipulate it even at the smallest of scales, which demands physics; rally people towards shared objectives, which takes understanding sociology; and share the joy of life along the way, which calls for learning to be human.
+
+Information is endless, so you'll dig through a lot of dirt before you strike gold. But the digging compounds, such that every model you unearth makes the next one easier to find.
