@@ -144,19 +144,24 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Home page entry lists: numbered, title on top, date underneath */
 .entry-list {
-  list-style: decimal inside;
-  padding-left: 0;
-  margin-top: 0.5em;
+  list-style: none;
+  padding: 0;
+  margin: 0.5em 0 0 0;
+  counter-reset: entry;
 }
 .entry-list li {
+  counter-increment: entry;
   padding: 0.6em 0;
   border-bottom: 1px solid #000;
 }
 .entry-list li:last-child {
   border-bottom: none;
 }
-.entry-list li::marker {
+.entry-list li::before {
+  content: counter(entry, decimal-leading-zero);
   color: #666;
+  margin-right: 0.6em;
+  font-variant-numeric: tabular-nums;
 }
 .entry-list .entry-title {
   font-size: 1.2rem;
@@ -164,7 +169,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .entry-list .entry-date {
   margin-top: 0.15em;
-  margin-left: 1.6em;
+  margin-left: 2em;
   font-size: 0.85rem;
   color: #888;
 }

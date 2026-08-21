@@ -2,7 +2,7 @@
 layout: default
 ---
 
-AI x Neurotech    I     Accelerating connectomics     I     P(AIB)=P(BIA)*P(A)/P(B)
+AI x Neurotech    I     Conquering the universe     I     P(AIB)=P(BIA)*P(A)/P(B)
 
 <h2 class="section-title">Research</h2>
 
