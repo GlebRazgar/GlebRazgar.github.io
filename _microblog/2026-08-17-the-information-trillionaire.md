@@ -4,7 +4,7 @@ date: 2026-08-17
 layout: post
 ---
 
-**I. The Currency Beneath Everything**  
+**I. The currency beneath everything**  
 Information is the fundamental currency of the world.  
 It is the unit of exchange underlying money, relationships and energy.  
 Dollars, in all their capitalistic might, abstract away much richer information about whatever is being sold or purchased. "A bottle of wine aged for 10 years in Venice" can be compressed down to a $100 figure. A single number that encodes something about the effort of the seller and the demand of the consumer.  
@@ -15,7 +15,7 @@ This is all to say that the world runs on abstractions. It is an onion, and trag
 To that end, I romanticise about getting closer to truth. Learning to better traverse the layers of the onion and come back up richer in information. Learning to become an information trillionaire.
 
 
-**II. What Makes Information Valuable**  
+**II. What makes information valuable**  
 Information, like money can be of strong or weak currency. Useful, or useless. If there is a concept such as informational wealth, it would feel appropriate to define it as the possession of **useful** information.
 
 By that standard, a TikTok kid sponging up bits -- scroll by scroll -- likely isn't becoming the wealthiest mind in town, regardless of how many bits pass before his eyes, because little of that information gets retained by the end of the day, and can be made useful.  
@@ -32,7 +32,7 @@ And as it goes with wealth, when you are poor, money compounds linearly, when yo
 I think the same holds with informational wealth. The bigger your network of useful models becomes, the cheaper each new piece of useful information becomes to acquire, and thus the more their value compounds over time.
 
 
-**III. How to Become Information-Rich**  
+**III. How to become information-rich**  
 Since there exists more and less useful information, there must exist more and less useful methods for acquiring it, processing it, and transmitting it.  
 For instance, I think some school subjects teach objectively better models for processing information than others. If you're lucky, Astrology might teach you facts about our planet system (in addition to all the metaphysical woo), but Astronomy will equip you with models of gravity, which you could use to reason about many planets, even those you haven't seen before.
 
