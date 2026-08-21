@@ -6,36 +6,39 @@ AI x Neurotech    I     Accelerating connectomics     I     P(AIB)=P(BIA)*P(A)/P
 
 <h2 class="section-title">Research</h2>
 
-<ul class="research-list">
+<ol class="entry-list">
 {% assign sorted_research = site.research | sort: 'date' | reverse %}
 {% for research in sorted_research %}
   <li>
-    <a href="{{ research.url }}">{{ research.title }}</a> - {{ research.date | date: "%B %d, %Y" }}
+    <a class="entry-title" href="{{ research.url }}">{{ research.title }}</a>
+    <div class="entry-date">{{ research.date | date: "%B %d, %Y" }}</div>
   </li>
 {% endfor %}
-</ul>
+</ol>
 
 <h2 class="section-title">Posts</h2>
 
-<ul class="posts-list">
+<ol class="entry-list">
 {% assign sorted_posts = site.posts | where_exp: "post", "post.hidden != true" | sort: 'date' | reverse %}
 {% for post in sorted_posts %}
   <li>
-    <a href="{{ post.url }}">{{ post.title }}</a> - {{ post.date | date: "%B %d, %Y" }}
+    <a class="entry-title" href="{{ post.url }}">{{ post.title }}</a>
+    <div class="entry-date">{{ post.date | date: "%B %d, %Y" }}</div>
   </li>
 {% endfor %}
-</ul>
+</ol>
 
 <h2 class="section-title">Microblog</h2>
 
-<ul class="posts-list">
+<ol class="entry-list">
 {% assign sorted_microblog = site.microblog | where_exp: "entry", "entry.hidden != true" | sort: 'date' | reverse %}
 {% for entry in sorted_microblog %}
   <li>
-    <a href="{{ entry.url }}">{{ entry.title }}</a> - {{ entry.date | date: "%B %d, %Y" }}
+    <a class="entry-title" href="{{ entry.url }}">{{ entry.title }}</a>
+    <div class="entry-date">{{ entry.date | date: "%B %d, %Y" }}</div>
   </li>
 {% endfor %}
-</ul>
+</ol>
 
 <!-- Added image below Posts section -->
 <div style="text-align: center; margin-top: 20px; margin-bottom: -20px;">

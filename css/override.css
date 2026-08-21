@@ -142,6 +142,28 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
 }
 
+/* Home page entry lists: numbered, title on top, date underneath */
+.entry-list {
+  list-style: decimal;
+  padding-left: 1.6em;
+  margin-top: 0.5em;
+}
+.entry-list li {
+  margin-bottom: 1.1em;
+}
+.entry-list li::marker {
+  color: #666;
+}
+.entry-list .entry-title {
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+.entry-list .entry-date {
+  margin-top: 0.15em;
+  font-size: 0.85rem;
+  color: #888;
+}
+
 /* Orange link color across the site */
 a,
 a:visited {
