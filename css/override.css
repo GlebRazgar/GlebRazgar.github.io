@@ -152,20 +152,28 @@ h1, h2, h3, h4, h5, h6 {
 .entry-list li {
   counter-increment: entry;
   padding: 0.4em 0;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  column-gap: 0.6em;
+  align-items: baseline;
 }
 .entry-list li::before {
   content: counter(entry, decimal-leading-zero);
   color: #666;
-  margin-right: 0.6em;
   font-variant-numeric: tabular-nums;
+  grid-column: 1;
+  grid-row: 1 / span 2;
 }
 .entry-list .entry-title {
+  grid-column: 2;
+  grid-row: 1;
   font-size: 1.2rem;
   text-decoration: none;
 }
 .entry-list .entry-date {
-  margin-top: 0.15em;
-  margin-left: 2em;
+  grid-column: 2;
+  grid-row: 2;
+  margin: 0.15em 0 0 0;
   font-size: 0.85rem;
   color: #888;
 }
