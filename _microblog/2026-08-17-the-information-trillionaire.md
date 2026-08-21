@@ -45,4 +45,4 @@ So, chase things that make everything else easier to understand in your world.
 In my case, I want to learn to describe the world precisely, which calls for charting the depths of maths; question what any of it means, which means finding good models in philosophy; manipulate it even at the smallest of scales, which demands physics; rally people towards shared objectives, which takes understanding sociology; and share the joy of life along the way, which calls for learning to be human.
 
 There is no end to how deep you can go, so you'll dig through a lot of dirt before striking gold. But good models compound, so every one that you do get will make the next one easier to find.  
-Happy searching!
+Happy digging!
