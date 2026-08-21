@@ -44,4 +44,5 @@ So, chase things that make everything else easier to understand in your world.
 
 In my case, I want to learn to describe the world precisely, which calls for charting the depths of maths; question what any of it means, which means finding good models in philosophy; manipulate it even at the smallest of scales, which demands physics; rally people towards shared objectives, which takes understanding sociology; and share the joy of life along the way, which calls for learning to be human.
 
-Information is endless, so you'll dig through a lot of dirt before you strike gold. But the digging compounds, such that every model you unearth makes the next one easier to find.
+The information onion is bottomless, so you'll dig through a lot of dirt before striking gold. But since good models compound, every one you unearth makes the next one easier to find.  
+Happy digging!
