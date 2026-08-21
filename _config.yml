@@ -33,7 +33,7 @@ collections:
   research:
     output: true
     permalink: /:title/
-  microblog:
+  wandering:
     output: true
     permalink: /:title/
 defaults:

@@ -28,10 +28,10 @@ AI x Neurotech    I     Conquering the universe     I     P(AIB)=P(BIA)*P(A)/P(B
 {% endfor %}
 </ol>
 
-<h2 class="section-title">Microblog</h2>
+<h2 class="section-title">Wandering</h2>
 
 <ol class="entry-list">
-{% assign sorted_microblog = site.microblog | where_exp: "entry", "entry.hidden != true" | sort: 'date' | reverse %}
+{% assign sorted_microblog = site.wandering | where_exp: "entry", "entry.hidden != true" | sort: 'date' | reverse %}
 {% for entry in sorted_microblog %}
   <li>
     <a class="entry-title" href="{{ entry.url }}">{{ entry.title }}</a>
