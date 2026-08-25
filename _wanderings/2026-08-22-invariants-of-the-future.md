@@ -1,5 +1,5 @@
 ---
-title: "Invariants of the future"
+title: "On Change"
 date: 2026-08-22
 layout: post
 ---

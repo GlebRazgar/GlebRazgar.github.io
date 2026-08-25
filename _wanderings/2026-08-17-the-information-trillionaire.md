@@ -1,5 +1,5 @@
 ---
-title: "The Information Trillionaire"
+title: "On Information"
 date: 2026-08-17
 layout: post
 ---
